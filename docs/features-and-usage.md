@@ -70,8 +70,15 @@ npm --prefix site run check:seo
 `check:links` walks the built pages, the markdown alternates and the llms files, and fails if
 any internal link does not resolve or any page link lacks its trailing slash. `check:seo` fails
 if any page lacks a title, a single H1, a description of 50 to 200 characters, a canonical URL,
-a social image, valid JSON-LD or its markdown alternate, or if `llms.txt` does not list every
-page. It checks structure and metadata only, never the wording of a teaching. `lint:md` lints every markdown file in the repository against `.markdownlint-cli2.jsonc`. CI
+a social image, valid JSON-LD or its markdown alternate. For search engines it also fails if a
+content page is marked noindex, if the canonical URL does not match the page's own address, the
+`og:url`, the Article JSON-LD or the end of the breadcrumb trail, if an Open Graph or Twitter
+card tag is missing, if two pages share a title, if the sitemap and the pages do not list exactly
+the same addresses, or if `robots.txt` shuts a crawler out, omits the sitemap or stops naming
+the main AI crawlers. For language models and answer engines it fails if `llms.txt` does not
+open with a heading and a summary, links a file that was not built or misses any page, if
+`llms-full.txt` misses any page, if a markdown alternate does not open with the same heading as
+its page, or if `_headers` stops serving the alternates as noindex. It checks structure and metadata only, never the wording of a teaching. `lint:md` lints every markdown file in the repository against `.markdownlint-cli2.jsonc`. CI
 runs all three on every pull request.
 
 ## Toolkit gates and skills
