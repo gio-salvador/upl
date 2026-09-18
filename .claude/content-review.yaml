@@ -10,11 +10,17 @@ content_types:
     # broken sentences only; it must never propose rewording doctrine (CLAUDE.md, decision 2).
     lenses: [consistency, titles, citation, ip, domain-accuracy, audience-reader, editor]
     persona: seeker
-    machine_checks: ["bash scripts/check.sh site"]
+    # The consistency lens holds every teaching to the beliefs and the balance between
+    # traditions in this page (CLAUDE.md, decisions 7 and 8).
+    consistency_with: "docs/doctrine-guardrails.md"
+    machine_checks: ["python3 scripts/check-doctrine.py --report", "bash scripts/check.sh site"]
     notes: >-
       domain-accuracy checks statements ABOUT other traditions, named figures, quantum physics
       and the cited books for factual accuracy. It does not judge UPL's own beliefs, which are
       doctrine and not claims to verify. Findings on wording are advisory and go to the author.
+      consistency treats a contradiction of a belief in docs/doctrine-guardrails.md as a
+      blocker, and a page that leans on one tradition, ranks traditions or misuses a
+      tradition's own term as a major. A failed doctrine gate is never waived by the reviewer.
 
   repo_docs:
     match: "{README.md,CONTRIBUTING.md,SECURITY.md,docs/**/*.md}"

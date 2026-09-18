@@ -23,10 +23,19 @@ contributors.
 - Markdown style is enforced by markdownlint (`.markdownlint-cli2.jsonc`) in CI.
 - Links between pages are relative and point at the `.md` file.
 
+## Doctrine and balance
+
+- A page under `content/` must not contradict the core beliefs, and must not lean on one
+  tradition. The rules are in [doctrine-guardrails.md](doctrine-guardrails.md). Enforced by
+  `scripts/check-doctrine.py` in `scripts/check.sh`, and by review.
+- The pages under `content/1-foundations/` and `content/2-doctrine/` are locked by
+  fingerprint. A change to one is recorded by the author. Enforced by the same gate.
+
 ## Locked decisions
 
 The decisions that must not be broken (single source, no rewording of teachings, static site,
-public tier) are in `CLAUDE.md` at the repository root. Enforced by review and by the
+public tier, true to the core beliefs, balance between traditions) are in `CLAUDE.md` at the
+repository root. Enforced by review and by the
 `process-locked` lens in `.claude/plan-review.yaml`.
 
 ## Single source

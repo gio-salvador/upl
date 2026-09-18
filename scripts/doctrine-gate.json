@@ -1,0 +1,59 @@
+{
+  "_about": "Configuration of scripts/check-doctrine.py. The rules are explained in docs/doctrine-guardrails.md. Changing a cap, a marker or a pattern here changes what may be published, so it is the author's decision.",
+
+  "scan": ["content/**/*.md"],
+
+  "core": ["content/1-foundations/**/*.md", "content/2-doctrine/**/*.md"],
+
+  "balance": {
+    "page_cap": 0.6,
+    "page_min_mentions": 5,
+    "section_cap": 0.5,
+    "section_min_mentions": 6,
+    "corpus_cap": 0.35
+  },
+
+  "_traditions": "Words that name a tradition, its figures, its scriptures or its own terms of art. Karma and dharma are not listed: the teachings have adopted them as their own concepts. Matching ignores case and respects word boundaries.",
+  "traditions": {
+    "Christianity": ["christ\\w*", "jesus", "bible", "biblical", "gospels?", "church(es)?", "new testament", "sermon on the mount"],
+    "Islam": ["islam\\w*", "muslims?", "muhammad", "qur['’]?an", "koran", "tawhid", "ummah", "zakat", "ilm", "fitrah", "allah", "sufi\\w*", "hajj", "ramadan", "sharia"],
+    "Buddhism": ["buddh\\w*", "dhammapada", "nirvana", "sangha", "zen", "vipassana", "eightfold path", "noble truths?"],
+    "Hinduism": ["hindu\\w*", "vedas?", "vedic", "upanishads?", "bhagavad", "gita", "brahman", "atman", "krishna"],
+    "Seicho-no-Ie": ["taniguchi", "seicho[- ]no[- ]ie", "shinsokan"],
+    "Judaism": ["juda\\w*", "jewish", "torah", "talmud"],
+    "Taoism": ["tao\\w*", "dao\\w*", "lao ?tzu", "laozi"],
+    "Confucianism": ["confuci\\w*"],
+    "Sikhism": ["sikh\\w*", "guru nanak"],
+    "Bahá'í Faith": ["bah[aá]['’]?[ií]\\w*", "bah[aá]['’]?u['’]?ll[aá]h"],
+    "Hawaiian tradition": ["ho['ʻ’]?oponopono", "hawaiian"],
+    "Indigenous traditions": ["indigenous", "first nations", "native american"]
+  },
+
+  "_dedicated": "Pages whose subject is one tradition. They may name only that tradition, and they are left out of the section and corpus shares.",
+  "dedicated": {
+    "content/2-doctrine/enlightened-figures/jesus.md": "Christianity",
+    "content/2-doctrine/enlightened-figures/muhammad.md": "Islam",
+    "content/2-doctrine/enlightened-figures/buddha.md": "Buddhism",
+    "content/2-doctrine/enlightened-figures/masaharu-taniguchi.md": "Seicho-no-Ie",
+    "content/3-practice/meditation/buddhist-meditation.md": "Buddhism",
+    "content/3-practice/meditation/shinsokan-meditation.md": "Seicho-no-Ie",
+    "content/3-practice/meditation/hooponopono-meditation.md": "Hawaiian tradition"
+  },
+
+  "_contrary": "Language that contradicts a core belief outright. This is a floor, not a judgement of doctrine: anything subtler is for the review lens and the author.",
+  "contrary": [
+    { "id": "exclusive-truth", "belief": "Respect for the Wisdom of World Traditions", "pattern": "\\b(the )?(one|only) true (religion|faith|path|church|god|prophet)\\b" },
+    { "id": "exclusive-way", "belief": "Respect for the Wisdom of World Traditions", "pattern": "\\bthe only (way|path|road) to (god|salvation|enlightenment|the divine|heaven|truth)\\b" },
+    { "id": "false-religion", "belief": "Respect for the Wisdom of World Traditions", "pattern": "\\bfalse (religion|faith|prophet|god|teaching)s?\\b" },
+    { "id": "slur-for-outsiders", "belief": "Compassionate Action", "pattern": "\\b(infidels?|heathens?|heretics?|apostates?|kafirs?|kuffar|unbelievers?|idolaters?)\\b" },
+    { "id": "ranking-traditions", "belief": "Respect for the Wisdom of World Traditions", "pattern": "\\b(truest|highest|purest|most complete|final|perfected|superior|inferior) (religion|revelation|faith|tradition|scripture)s?\\b" },
+    { "id": "ranking-comparison", "belief": "Respect for the Wisdom of World Traditions", "pattern": "\\b(superior|inferior) to (all |every |any )?(other )?(religion|faith|tradition|scripture|teaching|belief)s?\\b" },
+    { "id": "scriptural-literalism", "belief": "Engaging with Holy Texts", "pattern": "\\b(inerran\\w+|infallible (word|text|scripture|book)|must be (read|taken|understood) literally)\\b" },
+    { "id": "eternal-punishment", "belief": "Death as a Transformative Journey", "pattern": "\\beternal (damnation|punishment|hellfire|torment)\\b" },
+    { "id": "against-medicine", "belief": "Trust in Science and Modern Medicine", "pattern": "\\b(reject|refuse|avoid|distrust|shun|abandon)\\w* (all |any )?(modern |conventional |western )?(medicine|medical treatment|vaccin\\w+|science)\\b" },
+    { "id": "forced-belief", "belief": "Purpose", "pattern": "\\b(must|shall|have to) (convert|renounce (their|his|her) (faith|religion))\\b" }
+  ],
+
+  "_exceptions": "A contrary-language match that is legitimate, for example a quotation the page goes on to reject. Each entry names the file, the rule id and the reason.",
+  "exceptions": []
+}

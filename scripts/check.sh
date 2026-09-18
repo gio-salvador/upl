@@ -17,6 +17,9 @@ if [ "$what" = all ] || [ "$what" = site ]; then
 fi
 
 if [ "$what" = all ] || [ "$what" = gates ]; then
+  # The doctrine gate: core beliefs, balance between traditions, locked core pages.
+  python3 -m unittest discover -q -s scripts/tests
+  python3 scripts/check-doctrine.py
   python3 "$T/config/docs/check-docs.py" --root . --exclude 'plans/*'
   bash "$T/scripts/check-doc-claims.sh"
   bash "$T/scripts/check-plan-structure.sh"

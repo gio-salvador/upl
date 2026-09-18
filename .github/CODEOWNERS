@@ -2,3 +2,8 @@
 *            @gio-salvador
 /content/    @gio-salvador
 /paper/      @gio-salvador
+# The rules a teaching is held to, and the record of what the author has accepted.
+/docs/doctrine-guardrails.md     @gio-salvador
+/scripts/check-doctrine.py       @gio-salvador
+/scripts/doctrine-gate.json      @gio-salvador
+/scripts/doctrine-baseline.json  @gio-salvador
