@@ -34,7 +34,10 @@ flowchart LR
 `infra/` defines the Cloudflare Pages project with OpenTofu: a direct-upload project with no
 git source, so nothing is published except by the deploy workflow. State is kept in a Cloudflare
 R2 bucket through the S3-compatible backend; the bucket, its endpoint and every credential are
-GitHub secrets and never appear in a file. `.github/workflows/iac.yml` checks formatting and
+GitHub secrets and never appear in a file. `infra/domain.tf` attaches the custom domain (the apex and `www`), the DNS records that point at
+the Pages project, DNSSEC and the no-email records; it looks the zone up by name and does
+nothing while the `SITE_DOMAIN` repository variable is empty.
+`.github/workflows/iac.yml` checks formatting and
 validity on every change to `infra/`. Planning on pull requests and applying on `main` are off
 until the repository variable `IAC_ENABLED` is set to `true`.
 

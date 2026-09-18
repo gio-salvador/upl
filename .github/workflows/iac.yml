@@ -1,6 +1,6 @@
 name: IaC
 
-# OpenTofu for the Cloudflare Pages project. fmt and validate always run. plan (on pull
+# OpenTofu for the Cloudflare Pages project and, once SITE_DOMAIN is set, its custom domain. fmt and validate always run. plan (on pull
 # requests) and apply (on main) stay off until the repository variable IAC_ENABLED is 'true',
 # which is set once the state bucket and the secrets exist. Adapted from salvador-cloud-site
 # (MIT), see THIRD-PARTY-NOTICES.md.
@@ -95,6 +95,7 @@ jobs:
           TF_VAR_cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           TF_VAR_pages_project_name: ${{ vars.PAGES_PROJECT_NAME }}
           TF_VAR_site_origin: ${{ vars.SITE }}
+          TF_VAR_site_domain: ${{ vars.SITE_DOMAIN }}
         run: tofu plan -input=false -no-color -lock=false | tee tfplan.txt
 
       - name: Post plan to the pull request
@@ -150,4 +151,5 @@ jobs:
           TF_VAR_cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           TF_VAR_pages_project_name: ${{ vars.PAGES_PROJECT_NAME }}
           TF_VAR_site_origin: ${{ vars.SITE }}
+          TF_VAR_site_domain: ${{ vars.SITE_DOMAIN }}
         run: tofu apply -input=false -auto-approve

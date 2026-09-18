@@ -27,8 +27,12 @@ The main risks are an unwanted change to the canonical text and a compromised si
 - New dependency versions are held back for 7 days (`site/.npmrc` and
   `.github/dependabot.yml`), which keeps freshly published malicious releases out.
 - Cloudflare credentials exist only as GitHub secrets. The API token is scoped to Cloudflare
-  Pages on one account. OpenTofu state is stored outside the repository, and `infra/.gitignore`
+  Pages on one account and, once the custom domain is attached, to reading the one zone and
+  editing its DNS. OpenTofu state is stored outside the repository, and `infra/.gitignore`
   keeps state and variable files out of git.
+- The custom domain's zone is signed with DNSSEC and publishes a null MX, SPF `-all`, an empty
+  DKIM key and DMARC `p=reject`, because the domain sends no email (`infra/domain.tf`). HSTS
+  omits `includeSubDomains` and `preload` until every subdomain is known to be HTTPS-only.
 - Deploys run only from `main` and from branches of this repository; pull requests from forks
   never receive secrets. The branch name used for a preview alias is reduced to safe characters
   before use.
