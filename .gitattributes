@@ -1,0 +1,29 @@
+# === Default: normalise text files to LF on commit ===
+* text=auto eol=lf
+
+# === Explicit text classifications ===
+*.md text
+*.ts text
+*.astro text
+*.mjs text
+*.json text
+*.yml text
+*.css text
+*.svg text
+
+# === Binary files (never normalised) ===
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.avif binary
+*.ico binary
+*.pdf binary
+*.woff2 binary
+
+# === Lockfiles: minimise diff noise ===
+package-lock.json -diff
+
+# === GitHub linguist hints ===
+content/** linguist-documentation
+docs/** linguist-documentation

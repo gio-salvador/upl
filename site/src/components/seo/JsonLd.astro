@@ -1,0 +1,8 @@
+---
+// Emits Schema.org JSON-LD blocks. These are data, not executable script, so the
+// strict script-src in public/_headers does not apply to them.
+// Adapted from salvador-cloud-site (MIT), see THIRD-PARTY-NOTICES.md.
+interface Props { data: Record<string, unknown>[] }
+const { data } = Astro.props;
+---
+{data.map((block) => <script is:inline type="application/ld+json" set:html={JSON.stringify(block)} />)}

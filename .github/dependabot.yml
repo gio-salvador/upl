@@ -1,0 +1,24 @@
+version: 2
+updates:
+  # The website is the only package; its manifest and lockfile both live in /site.
+  - package-ecosystem: npm
+    directory: "/site"
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore(deps)"
+    groups:
+      astro:
+        patterns: ["astro", "@astrojs/*"]
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    commit-message:
+      prefix: "ci(deps)"
