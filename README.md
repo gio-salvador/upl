@@ -36,6 +36,7 @@ npm --prefix site run build
 | [site/](site/) | The website (Astro). It reads `content/` directly and holds no teachings of its own. |
 | `infra/` | OpenTofu for the Cloudflare Pages project. |
 | `scripts/` | `check.sh`, the single gate entry point that CI also runs, and `visual-changed.sh`, which decides whether the rendering gate is needed. |
+| `.github/` | CI, deploy, security and infrastructure workflows, CODEOWNERS, Dependabot and the pull request template. |
 | `.claude/` | The pinned toolkit gates and the skill manifests for this repository. |
 | [docs/](docs/README.md) | Documentation for this repository: how it is organised and how to change it. |
 
@@ -48,6 +49,9 @@ See the [docs index](docs/README.md).
 Report vulnerabilities through [SECURITY.md](SECURITY.md); the security model is described in
 [docs/security.md](docs/security.md). To contribute, read [CONTRIBUTING.md](CONTRIBUTING.md).
 
-No licence has been chosen yet; until one is added, all rights are reserved by the author.
-Code adapted from other projects is credited in
+Two licences apply, both set out in [LICENSE](LICENSE). The teachings in `content/` and the
+founding paper in `paper/` are under
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/): share, translate and adapt
+them with credit, say what you changed, and keep the result under the same licence. The website
+code and everything else is under the MIT licence. Work taken from other projects is credited in
 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).

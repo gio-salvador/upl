@@ -13,6 +13,7 @@ export function websiteSchema(origin: URL): Record<string, unknown> {
     url: origin.href,
     inLanguage: 'en-GB',
     author: { '@type': 'Person', name: site.author },
+    license: site.licenceUrl,
   };
 }
 
@@ -32,6 +33,7 @@ export function articleSchema(origin: URL, page: { title: string; description: s
     inLanguage: 'en-GB',
     author,
     publisher: author,
+    license: site.licenceUrl,
     image: new URL(site.ogImage, origin).href,
     isPartOf: { '@type': 'WebSite', name: site.name, url: origin.href },
     about: { '@type': 'Thing', name: `${site.name} (${site.alternateName})` },
@@ -46,6 +48,7 @@ export function paperSchema(origin: URL): Record<string, unknown> {
     '@type': 'ScholarlyArticle',
     name: `${site.name} (${site.alternateName})`,
     author,
+    license: site.licenceUrl,
     inLanguage: 'en-GB',
     encodingFormat: 'application/pdf',
     url: new URL(site.paperPath, origin).href,

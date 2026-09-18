@@ -78,7 +78,8 @@ a deep page, its markdown alternate, and the redirect for a page address without
 ## 6. Protect `main`
 
 Once the repository is public (or on a paid GitHub plan), add a branch ruleset on `main`: pull
-request required, the three CI checks and the Deploy check required, signed commits, no force
+request required, the four CI checks (site gate, rendering gate, toolkit gates, gitleaks) and
+the Deploy check required, signed commits, no force
 push, no deletion. On a private repository on the free plan GitHub refuses this; that is a
 recorded gap, not a pass.
 

@@ -169,8 +169,9 @@ into this repository; they stay machine-wide.
   wanted anyway and validates, so it is kept. The profile records your name, email and signing
   key id, which will be public with the repository; they are already public in the signed
   commits, so this adds nothing new, but it is yours to veto.
-- **D7 OPEN: licence.** Recommendation: CC BY-SA 4.0 for `content/` and `paper/`, MIT for the
-  site code, stated in one LICENSE file with two sections, as salvador-cloud-site does.
+- **D7 TAKEN 2026-09-18: licence.** CC BY-SA 4.0 for `content/` and `paper/`, MIT for the
+  code and everything else, both held by the author in person rather than by the company,
+  stated in one LICENSE file with sections, as salvador-cloud-site does.
   Language models and search engines treat a clear licence as a signal that text may be quoted.
 - **D8 OPEN: GitHub CLI account.** The active `gh` account on this machine is gio-deone, which
   cannot see gio-salvador/upl. Opening pull requests needs `gh auth switch`, which also
@@ -185,7 +186,7 @@ One pull request per step. Each leaves `main` green.
 | 1 | Repository structure, content, site, imported scaffolding, link gate, cache fix, toolkit profile | approval to commit and open it; D8 | merged 2026-09-18, pull request 1 |
 | 2 | Toolkit: vendored gates, CI gate job, manifests, CLAUDE.md, single check entry point | nothing | merged 2026-09-18, pull request 4 |
 | 3 | Discoverability: llms files, markdown alternates, robots policy, Article JSON-LD, social image, description check | D5 | merged 2026-09-18, pull request 9, built on the recommendation (allow) |
-| 4 | Security: security.txt, both audits run and every code finding fixed; LICENSE waits on D7 | D7 | merged 2026-09-18, pull request 12; LICENSE still waits on D7 |
+| 4 | Security: security.txt, both audits run and every code finding fixed; LICENSE waits on D7 | D7 | merged 2026-09-18, pull request 12; LICENSE added afterwards, once D7 was taken |
 | 5 | IaC: infra folder, iac workflow (fmt and validate live; plan and apply gated off) | nothing to merge | merged 2026-09-18, pull request 10 |
 | 6 | Deploy workflow with credential skip, preview deployments, smoke test; docs updated to the new model | nothing to merge | merged 2026-09-18, pull request 11; upload and smoke test not yet exercised |
 | 7 | Go live: create the API token, account id and state secrets; first apply; enable the gates; set the branch ruleset | D3, and the secrets, which only you can create | next; steps in docs/runbook-go-live.md |

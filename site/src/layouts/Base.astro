@@ -61,6 +61,7 @@ const current = (id: string) => (path === `/${id}/` ? 'page' : path.startsWith(`
           {parts.map((p) => <a href={`/${p.id}/`}>{p.data.title}</a>)}
           <a href={site.paperPath}>Founding paper (PDF)</a>
         </nav>
+        <p class="licence">The teachings are by {site.author} and are shared under <a rel="license" href={site.licenceUrl}>{site.licenceName}</a>: copy, translate and adapt them with credit.</p>
       </div>
     </footer>
   </body>

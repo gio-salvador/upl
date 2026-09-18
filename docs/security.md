@@ -56,7 +56,6 @@ Recorded by the security and gitops audits of 2026-09-18, and closed by the owne
 - **No server-side protection of `main`.** GitHub refuses rulesets, secret scanning and push
   protection on a private repository on the free plan. Until the repository is public, only the
   local hooks enforce pull-request-only and signed commits.
-- **No licence.** The author has not chosen one. It must exist before the repository is public.
 - **Sensitive-token scan in CI is off until the `SENSITIVE_TOKENS` secret is set.** The local
   pre-push hook runs the scan meanwhile.
 

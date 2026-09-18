@@ -57,7 +57,8 @@ own, so a build never disturbs a running dev server. Both outputs are ignored by
 bash scripts/check.sh
 ```
 
-That one command runs everything CI runs. `bash scripts/check.sh site` runs only the first four
+That one command runs everything CI runs except the gitleaks history scan, which the pre-push
+hook covers. `bash scripts/check.sh site` runs only the first four
 site checks below, `bash scripts/check.sh mobile` only the rendering gate, and
 `bash scripts/check.sh gates` runs only the doctrine gate and the toolkit gates.
 
@@ -70,7 +71,9 @@ npm --prefix site run check:mobile
 ```
 
 `check:links` walks the built pages, the markdown alternates and the llms files, and fails if
-any internal link does not resolve or any page link lacks its trailing slash. `check:mobile` opens every built page in headless Chromium at 320, 375, 768 and 1280 pixels
+any internal link does not resolve or any page link lacks its trailing slash.
+
+`check:mobile` opens every built page in headless Chromium at 320, 375, 768 and 1280 pixels
 wide and fails on horizontal overflow at any width, a missing viewport tag or `main` landmark,
 or, on phone widths, a navigation link under 44 pixels tall or a breadcrumb link under 24. It
 needs Chromium once: `npx --prefix site playwright install chromium`. It is the slow check, so
@@ -78,7 +81,9 @@ it is skipped when nothing that can affect rendering has changed: `scripts/visua
 compares against `main` and counts the teachings, the site's pages, layouts, styles, config and
 dependencies as visual, and docs, plans, infrastructure, SEO metadata and response headers as
 not. It fails open: if it cannot tell, the gate runs. Pushes to `main` always run it, and
-`bash scripts/check.sh mobile` forces it. `check:seo` fails
+`bash scripts/check.sh mobile` forces it.
+
+`check:seo` fails
 if any page lacks a title, a single H1, a description of 50 to 200 characters, a canonical URL,
 a social image, valid JSON-LD or its markdown alternate. For search engines it also fails if a
 content page is marked noindex, if the canonical URL does not match the page's own address, the
@@ -88,8 +93,12 @@ the same addresses, or if `robots.txt` shuts a crawler out, omits the sitemap or
 the main AI crawlers. For language models and answer engines it fails if `llms.txt` does not
 open with a heading and a summary, links a file that was not built or misses any page, if
 `llms-full.txt` misses any page, if a markdown alternate does not open with the same heading as
-its page, or if `_headers` stops serving the alternates as noindex. It checks structure and metadata only, never the wording of a teaching. `lint:md` lints every markdown file in the repository against `.markdownlint-cli2.jsonc`. CI
-runs all three on every pull request.
+its page, or if `_headers` stops serving the alternates as noindex. It checks structure and
+metadata only, never the wording of a teaching.
+
+`lint:md` lints every markdown file in the repository against `.markdownlint-cli2.jsonc`. CI
+runs the first four on every pull request, and the rendering gate when something visual
+changed.
 
 ## Toolkit gates and skills
 
@@ -120,8 +129,8 @@ node site/scripts/generate-og.mjs
 Deployment is automatic: a merge to `main` runs `.github/workflows/deploy.yml`, which runs the
 full site gate, uploads the built site to Cloudflare Pages by direct upload, and smoke-tests the
 live address. A pull request from a branch of this repository gets a preview deployment on a
-branch alias, so a change can be read as a site before it is merged. Nothing is uploaded if any
-gate fails.
+branch alias, so a change can be read as a site before it is merged. Nothing is uploaded if the
+site gate fails.
 
 The site is fully static: plain HTML and CSS with no server code and no client-side JavaScript,
 so it fits the Cloudflare Pages free plan (as of September 2026: up to 20,000 files and 25 MiB
