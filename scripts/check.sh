@@ -35,6 +35,8 @@ if [ "$what" = all ] || [ "$what" = gates ]; then
   python3 scripts/check-doctrine.py
   # The cross-reference gate: one owner per concept, recorded overlaps, no page changed unseen.
   python3 scripts/check-content-index.py
+  # The infrastructure posture gate: secrets, provider pinning, state backend, DNSSEC, no-email.
+  python3 scripts/check-infra.py
   python3 "$T/config/docs/check-docs.py" --root . --exclude 'plans/*'
   bash "$T/scripts/check-doc-claims.sh"
   bash "$T/scripts/check-plan-structure.sh"

@@ -38,7 +38,12 @@ GitHub secrets and never appear in a file. `infra/domain.tf` attaches the custom
 the Pages project, DNSSEC and the no-email records; it looks the zone up by name and does
 nothing while the `SITE_DOMAIN` repository variable is empty.
 `.github/workflows/iac.yml` checks formatting and
-validity on every change to `infra/`. Planning on pull requests and applying on `main` are off
+validity on every change to `infra/`, and scans it with Trivy for general misconfiguration and
+for secrets. Trivy has no rules for the Cloudflare provider, so the posture that matters here is
+held by `scripts/check-infra.py`, which reads the files and fails if a secret-shaped variable
+is not marked sensitive, a credential or a state location is written as a literal, the provider
+is not pinned to one version with a committed lock file, the state is not locked, or DNSSEC or
+any of the no-email records is weakened. Planning on pull requests and applying on `main` are off
 until the repository variable `IAC_ENABLED` is set to `true`.
 
 `.github/workflows/deploy.yml` is the only path to production: on a push to `main` it runs the
@@ -54,7 +59,8 @@ below when something visual changed, the doctrine gate
 (`scripts/check-doctrine.py`, which holds the teachings to the core beliefs and to a balance
 between traditions, see [doctrine-guardrails.md](doctrine-guardrails.md)) the cross-reference gate
 (`scripts/check-content-index.py`, which keeps one owner page per concept and a register of
-overlaps between pages, see [cross-reference.md](cross-reference.md)) and the vendored
+overlaps between pages, see [cross-reference.md](cross-reference.md)), the infrastructure
+posture gate (`scripts/check-infra.py`, described under Infrastructure) and the vendored
 toolkit gates in `.claude/toolkit/`. `CLAUDE.md` holds the locked decisions an agent or contributor must not
 break.
 

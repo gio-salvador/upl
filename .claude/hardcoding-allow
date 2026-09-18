@@ -1,0 +1,2 @@
+# Allowlist for the hardcoding gate: one `pattern  # justification` per line.
+.claude/toolkit/gitops/setup-gitops.sh:25  # vendored toolkit file, never edited by hand; the line is a comment that records a removed exemption rule, not a path any code reads
