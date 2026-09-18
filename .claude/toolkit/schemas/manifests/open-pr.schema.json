@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-open-pr manifest",
+  "description": "Optional. Absent means the universal flow with conventional defaults and gitops.repocheck. Present means it supplies the project specifics.",
+  "type": "object",
+  "properties": {
+    "default_branch": {
+      "type": "string"
+    },
+    "branch_prefixes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pre_steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "skill"
+        ],
+        "properties": {
+          "skill": {
+            "type": "string"
+          },
+          "when": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "commit_trailer": {
+      "type": "string"
+    },
+    "pre_pr_checks": {
+      "type": "array",
+      "description": "Commands run before the pull request is created. A bare string, or an object when the command carries a condition or a note.",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "artifact_regen": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "run"
+        ],
+        "properties": {
+          "when": {
+            "type": "string"
+          },
+          "run": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "pr_template": {
+      "type": "string"
+    },
+    "gate": {
+      "type": "object",
+      "description": "A project gate layered on the universal flow. Its doc outranks the skill.",
+      "properties": {
+        "doc": {
+          "type": "string"
+        },
+        "attestation_required": {
+          "type": "boolean"
+        },
+        "hook": {
+          "type": "string"
+        }
+      }
+    },
+    "parallel_clones": {
+      "type": "object"
+    }
+  }
+}

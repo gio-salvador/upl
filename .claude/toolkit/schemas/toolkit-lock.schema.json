@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://salvador.cloud/schemas/toolkit-lock.schema.json",
+  "title": "Toolkit lockfile",
+  "description": "Records exactly which toolkit version a repository runs, so an upgrade is a reviewable diff and 'which rules was this repository held to in March' is answerable (Goal G5).",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "profile",
+    "installed_at"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "const": "salvadorcloud-ai-toolkit"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^v?[0-9]+\\.[0-9]+\\.[0-9]+(-[0-9]+-g[0-9a-f]+)?$",
+      "description": "A released version, or a git describe of a checkout ahead of its newest tag (v0.5.2-5-g99d2c68). The bare version would send a reader to a tag holding different code while the toolkit is developed unreleased."
+    },
+    "commit": {
+      "type": "string",
+      "description": "Source commit, when vendored from a checkout."
+    },
+    "profile": {
+      "enum": [
+        "gates",
+        "full"
+      ],
+      "description": "gates: CI-runnable checks only. full: adds skills and agents."
+    },
+    "installed_at": {
+      "type": "string"
+    },
+    "files": {
+      "type": "array",
+      "description": "What was vendored, so drift in the vendored copy is detectable.",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

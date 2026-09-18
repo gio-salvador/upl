@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-job-fit manifest",
+  "description": "The candidate's verifiable record, which is the only source of truth a fit assessment may draw on. Without record_files the agent would be scoring a job against nothing.",
+  "type": "object",
+  "properties": {
+    "candidate_name": {
+      "type": "string"
+    },
+    "voice": {
+      "type": "string"
+    },
+    "record_files": {
+      "type": [
+        "array",
+        "string"
+      ]
+    },
+    "fact_source": {
+      "type": [
+        "string",
+        "array"
+      ]
+    },
+    "strands": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "apply_target": {
+      "type": "string"
+    },
+    "facts": {
+      "type": "string",
+      "description": "Disclosure registry: supplies ranged forms and forbidden tokens so a tailoring edit cannot breach an NDA."
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "record_files"
+  ]
+}

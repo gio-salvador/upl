@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-book-publish manifest",
+  "description": "Where the publishing package is assembled. Everything here is an output location; the content comes from the agents the skill drives.",
+  "type": "object",
+  "properties": {
+    "default_slug": {
+      "type": "string"
+    },
+    "book_config": {
+      "type": "string"
+    },
+    "structure": {
+      "type": "string"
+    },
+    "marketing_dir": {
+      "type": "string"
+    },
+    "publish_dir": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "string"
+    },
+    "front_matter": {
+      "type": "string"
+    },
+    "back_matter": {
+      "type": "string"
+    },
+    "pricing_recommendation": {
+      "type": "string"
+    },
+    "checklist": {
+      "type": "string"
+    },
+    "marketing_options": {
+      "type": "string"
+    },
+    "design_guide": {
+      "type": "string"
+    },
+    "marketplace": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "publish_dir"
+  ]
+}

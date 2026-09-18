@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-regulatory-check manifest",
+  "description": "Scope and conventions for regulatory verification. Every key is optional: absent, the global mirror and standard disclaimer apply.",
+  "type": "object",
+  "properties": {
+    "mirror": {
+      "type": "string"
+    },
+    "jurisdictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "regimes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "extra_reference_dirs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reference_register": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "findings_dir": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "findings_pattern": {
+      "type": "string"
+    },
+    "disclaimer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "version": {
+      "type": "integer"
+    }
+  }
+}

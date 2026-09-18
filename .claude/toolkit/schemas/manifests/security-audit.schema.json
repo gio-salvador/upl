@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-security-audit manifest",
+  "description": "How one repository is security-audited. The posture decides everything downstream, so it is the one required key: third-party posture forbids building, installing or resolving the code under audit, and guessing that wrong is the mistake that executes it.",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "posture": {
+      "enum": [
+        "in-house",
+        "third-party"
+      ],
+      "description": "in-house: findings are defects with a remediation path. third-party: findings are an adopt / pin / vendor / reject decision, and the audit is read-only by construction. Required when this file exists; inferred from the origin remote when it does not, falling to third-party."
+    },
+    "asvs_level": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "OWASP ASVS level the secure-practice lane is judged at. Defaults to 1."
+    },
+    "scope": {
+      "type": "object",
+      "description": "include/exclude globs. An excluded path is unaudited, not passing, so exclusions belong here where they are reviewable.",
+      "properties": {
+        "include": {
+          "type": [
+            "array",
+            "string"
+          ]
+        },
+        "exclude": {
+          "type": [
+            "array",
+            "string"
+          ]
+        }
+      }
+    },
+    "exposure": {
+      "type": "object",
+      "description": "Third-party posture: the surface this code will actually be given. Exploitability is scoped to it, because a vulnerable path that is never mounted is not a finding.",
+      "properties": {
+        "entry_points": {
+          "type": [
+            "array",
+            "string"
+          ]
+        }
+      }
+    },
+    "tools": {
+      "type": "object",
+      "description": "Per-lane tool overrides. Absent means the lane defaults. A named tool that is not installed FAILs the lane, it never skips it.",
+      "properties": {
+        "sast": {
+          "type": [
+            "array",
+            "string"
+          ]
+        },
+        "secrets": {
+          "type": [
+            "array",
+            "string"
+          ]
+        },
+        "sca": {
+          "type": [
+            "array",
+            "string"
+          ]
+        },
+        "sbom": {
+          "type": [
+            "array",
+            "string"
+          ]
+        },
+        "iac": {
+          "type": [
+            "array",
+            "string"
+          ]
+        },
+        "ci": {
+          "type": [
+            "array",
+            "string"
+          ]
+        }
+      }
+    },
+    "baseline": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Path to the suppression file. Every entry carries a justification and an expiry date; an expired suppression is itself a finding."
+    },
+    "report_surface": {
+      "type": "string",
+      "description": "The sc-nda-check surface the report is written for. The report quotes code, paths and secret names, so it is sensitive output in its own right."
+    },
+    "severity_overrides": {
+      "type": "object",
+      "description": "Per-rule or per-CWE severity adjustments, with a reason. Blanket downgrades are how a report stops being read."
+    }
+  },
+  "required": [
+    "posture"
+  ]
+}

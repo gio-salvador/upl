@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-import-design manifest",
+  "description": "Where an export lands, where tokens live, and the fail-closed gates it must pass. hard_blocks is required: an import that can skip its blocks is not gated.",
+  "type": "object",
+  "properties": {
+    "intake_dir": {
+      "type": "string"
+    },
+    "export_glob": {
+      "type": "string"
+    },
+    "scratch_dir": {
+      "type": "string",
+      "description": "Gitignored staging OUTSIDE the repository, so a rejected import leaves nothing behind."
+    },
+    "policy_docs": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "token_sot": {
+      "type": [
+        "string",
+        "array"
+      ],
+      "description": "Single source of truth for design tokens. Never inline a literal."
+    },
+    "fonts_dir": {
+      "type": "string"
+    },
+    "asset_dir": {
+      "type": "string"
+    },
+    "raster_dir": {
+      "type": "string"
+    },
+    "deviation_log": {
+      "type": "string"
+    },
+    "component_idiom": {
+      "type": "string"
+    },
+    "hard_blocks": {
+      "type": [
+        "array",
+        "object"
+      ],
+      "description": "Fail-closed gates. All must pass before anything enters the repository."
+    },
+    "verify": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "visual_check": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "token_sot",
+    "hard_blocks"
+  ]
+}

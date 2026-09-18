@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-companion-review manifest",
+  "description": "The derived artefacts, the prose they distil, and the gate that settles facts before judgement. Without the index and the source units there is nothing to compare.",
+  "type": "object",
+  "properties": {
+    "artefact_index": {
+      "type": "string"
+    },
+    "source_units": {
+      "type": [
+        "string",
+        "array"
+      ]
+    },
+    "id_pattern": {
+      "type": "string"
+    },
+    "source_map": {
+      "type": "string"
+    },
+    "pre_gate": {
+      "type": "string",
+      "description": "Deterministic gate run FIRST, so the lenses argue about judgement rather than facts."
+    },
+    "reference_mirror": {
+      "type": "string"
+    },
+    "context_files": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "lenses": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "governs_principle": {
+      "type": "string"
+    },
+    "report_dir": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "artefact_index",
+    "source_units"
+  ]
+}

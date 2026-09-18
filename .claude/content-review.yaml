@@ -1,0 +1,24 @@
+# sc-content-review manifest. The orchestrator and the reviewer lenses are generic; project
+# specifics live here. Surface is `public` for everything: this repository will be public.
+
+content_types:
+
+  teaching:
+    match: "content/**/*.md"
+    surface: public
+    # The teachings keep the voice of the founding paper. The editor lens may flag typos and
+    # broken sentences only; it must never propose rewording doctrine (CLAUDE.md, decision 2).
+    lenses: [consistency, titles, citation, ip, domain-accuracy, audience-reader, editor]
+    persona: seeker
+    machine_checks: ["bash scripts/check.sh site"]
+    notes: >-
+      domain-accuracy checks statements ABOUT other traditions, named figures, quantum physics
+      and the cited books for factual accuracy. It does not judge UPL's own beliefs, which are
+      doctrine and not claims to verify. Findings on wording are advisory and go to the author.
+
+  repo_docs:
+    match: "{README.md,CONTRIBUTING.md,SECURITY.md,docs/**/*.md}"
+    surface: public
+    voice: giovanni
+    lenses: [domain-accuracy, consistency, titles, editor]
+    machine_checks: ["bash scripts/check.sh gates"]

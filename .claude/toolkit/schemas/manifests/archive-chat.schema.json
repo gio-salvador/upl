@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-archive-chat manifest",
+  "description": "Manifest for sc-archive-chat. Merged 2026-08-28 from archive-check.schema.json when sc-archive-check was folded into sc-archive-chat: the check half's keys (delivery, gate, scratch, protected_paths, concurrent_agents, extra_checks) and the routing half's keys (destinations, unroutable, post_route, claim_skill, compose_skill) now share one file, because one skill reads both. `destinations` is needed for routing only. --check requires none of it, and the check half works with no manifest at all, which is why nothing here is globally required.",
+  "type": "object",
+  "properties": {
+    "destinations": {
+      "type": [
+        "object",
+        "array"
+      ],
+      "description": "Each kind of outcome and its durable home."
+    },
+    "unroutable": {
+      "enum": [
+        "blocker",
+        "note"
+      ],
+      "default": "blocker",
+      "description": "What happens to a finding with no declared destination. Defaults to blocker: archiving around an unroutable finding is how work is lost."
+    },
+    "post_route": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claim_skill": {
+      "type": "string"
+    },
+    "compose_skill": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "delivery": {
+      "type": "string",
+      "enum": [
+        "pr",
+        "commit",
+        "dirty-ok"
+      ],
+      "description": "Delivery policy. Default: pr when the root has a git remote, else commit."
+    },
+    "gate": {
+      "type": "string",
+      "description": "Verification command. Default: none, and nothing is claimed to pass without one."
+    },
+    "gate_timeout_s": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 300
+    },
+    "scratch": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Globs that count as leftovers when untracked and attributed to this session."
+    },
+    "protected_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Never staged, cleaned or reverted by this skill."
+    },
+    "concurrent_agents": {
+      "type": "boolean",
+      "default": true,
+      "description": "This repo is routinely worked by several agents at once. Default true: always attribute before judging."
+    },
+    "extra_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "when": {
+            "type": "string"
+          },
+          "require": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "require"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

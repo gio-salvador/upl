@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Run record",
+  "description": "One measured run. The efficiency observer cites these rather than impressions (Goal G58). Records the SHAPE of a run and never its content: no claims, no client material, no file contents, so a record is safe to read on any surface.",
+  "type": "object",
+  "required": [
+    "run",
+    "task",
+    "outcome"
+  ],
+  "properties": {
+    "run": {
+      "type": "string",
+      "description": "ISO-8601 UTC timestamp."
+    },
+    "task": {
+      "type": "string",
+      "description": "One line: what the run was for."
+    },
+    "work_unit": {
+      "type": "string"
+    },
+    "units": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "tool_calls": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "review_rounds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "description": "Per unit. A value equal to the cap means that unit never converged."
+    },
+    "rework": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Units reopened after being called done: the expensive failure the round count hides."
+    },
+    "pivots": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "degraded_checks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Gates that could not run, and why. A clean run with three gates unable to execute passed less than it appears to have."
+    },
+    "outcome": {
+      "enum": [
+        "complete",
+        "escalated",
+        "abandoned"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

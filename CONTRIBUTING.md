@@ -41,9 +41,7 @@ Then add the key to your GitHub account as a signing key: <https://github.com/se
 3. Before pushing, run the same checks CI runs:
 
    ```bash
-   npm --prefix site run lint:md
-   npm --prefix site run build
-   npm --prefix site run check:links
+   bash scripts/check.sh
    ```
 
 4. Open a pull request using the [template](.github/pull_request_template.md).

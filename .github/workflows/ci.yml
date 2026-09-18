@@ -44,6 +44,18 @@ jobs:
       - name: Link check
         run: npm --prefix site run check:links
 
+  gates:
+    name: Toolkit gates (docs, claims, plans, hardcoding, public readiness)
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      # The gates are the pinned copy vendored under .claude/toolkit, so CI needs no access to
+      # the toolkit repository and an upgrade arrives as a reviewable diff.
+      - name: Run vendored gates
+        run: bash scripts/check.sh gates
+
   gitleaks:
     name: Secret scan (gitleaks)
     runs-on: ubuntu-24.04

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-book-build manifest",
+  "description": "The unit hierarchy, the maps that own claims and dependencies, and the gates. Without the skeleton and content map there is no contract to build against.",
+  "type": "object",
+  "properties": {
+    "unit_noun": {
+      "type": "string"
+    },
+    "project_root": {
+      "type": "string"
+    },
+    "skeleton_path": {
+      "type": "string"
+    },
+    "content_map_path": {
+      "type": "string"
+    },
+    "dependency_map_path": {
+      "type": "string"
+    },
+    "project_descriptor": {
+      "type": "string"
+    },
+    "consistency_policy": {
+      "type": "string"
+    },
+    "change_impact": {
+      "type": "string"
+    },
+    "audience_doc": {
+      "type": "string"
+    },
+    "style_guide": {
+      "type": "string"
+    },
+    "preflights": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "validate_cmd": {
+      "type": "string"
+    },
+    "lenses": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "loop": {
+      "type": "object"
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "project_root",
+    "skeleton_path",
+    "content_map_path"
+  ]
+}

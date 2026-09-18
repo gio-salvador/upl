@@ -23,6 +23,12 @@ contributors.
 - Markdown style is enforced by markdownlint (`.markdownlint-cli2.jsonc`) in CI.
 - Links between pages are relative and point at the `.md` file.
 
+## Locked decisions
+
+The decisions that must not be broken (single source, no rewording of teachings, static site,
+public tier) are in `CLAUDE.md` at the repository root. Enforced by review and by the
+`process-locked` lens in `.claude/plan-review.yaml`.
+
 ## Single source
 
 `content/` is the only place the teachings are written. The site renders it and must not hold

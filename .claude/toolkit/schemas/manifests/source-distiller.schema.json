@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-source-distiller manifest",
+  "description": "Read-only access to the evidence base and the gitignored home for the anonymised extraction log. The log path must stay out of version control: the whole point is that raw engagement evidence never enters a repository.",
+  "type": "object",
+  "properties": {
+    "governance": {
+      "type": [
+        "array",
+        "string",
+        "object"
+      ]
+    },
+    "registry": {
+      "type": "string"
+    },
+    "source_material_doc": {
+      "type": "string"
+    },
+    "db": {},
+    "output_log": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "registry",
+    "output_log"
+  ]
+}

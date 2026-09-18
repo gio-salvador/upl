@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-chapter-write manifest",
+  "description": "Where one unit is written and what contract governs it. The content map is required: writing without its contract slice is how single ownership is lost.",
+  "type": "object",
+  "properties": {
+    "unit_noun": {
+      "type": "string"
+    },
+    "unit_path": {
+      "type": "string"
+    },
+    "unit_template": {
+      "type": "string"
+    },
+    "front_matter_schema": {
+      "type": "string"
+    },
+    "citation_marker": {
+      "type": "string"
+    },
+    "content_map_path": {
+      "type": "string"
+    },
+    "dependency_map_path": {
+      "type": "string"
+    },
+    "skeleton_path": {
+      "type": "string"
+    },
+    "project_descriptor": {
+      "type": "string"
+    },
+    "research_path": {
+      "type": "string"
+    },
+    "audience_doc": {
+      "type": "string"
+    },
+    "style_guide": {
+      "type": "string"
+    },
+    "lenses": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "loop": {
+      "type": "object"
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "unit_path",
+    "content_map_path"
+  ]
+}

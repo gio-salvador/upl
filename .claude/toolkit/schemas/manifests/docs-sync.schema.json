@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-docs-sync manifest",
+  "description": "Maps this repository's paths onto the fleet documentation standard. Every key is optional: the standard's defaults apply where one is absent, so zero-config works.",
+  "type": "object",
+  "properties": {
+    "skills_dir": { "type": "string" },
+    "agents_dir": { "type": "string" },
+    "rules_dir": { "type": "string" },
+    "docs_root": { "type": "string" },
+    "reference_root": { "type": ["string", "null"] },
+    "index_file": { "type": "string" },
+    "reference_index": { "type": ["string", "null"] },
+    "readme_file": { "type": "string" },
+    "architecture_file": { "type": "string" },
+    "diagrams_file": { "type": ["string", "null"] },
+    "required_pages": { "type": "object" },
+    "exclude": { "type": "array", "items": { "type": "string" } },
+    "accuracy_scope": { "type": "array" },
+    "semantic_nda": { "enum": ["auto", "on", "off"] },
+    "parity_check": { "type": ["string", "null"] },
+    "diagram_check": { "type": ["string", "null"] },
+    "version": { "type": "integer" }
+  }
+}

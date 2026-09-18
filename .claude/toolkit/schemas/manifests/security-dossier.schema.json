@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-security-dossier manifest",
+  "description": "Which security domains this repository's dossier covers, and what surface its canvas may be published to. The surface is required: the dossier is the most complete attack plan the toolkit can generate about a system, and publishing it without a declared surface is an undeclared outward send.",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "surface": {
+      "type": "string",
+      "description": "The sc-nda-check surface the canvas is cleared for. Required. An undeclared surface is treated as public, the most restrictive, and the canvas is withheld until the check passes."
+    },
+    "canvas": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Local path the canvas HTML is written to before any publish. The local file is always written; publishing is gated."
+    },
+    "domains": {
+      "type": [
+        "array",
+        "object"
+      ],
+      "description": "Domains to cover, each naming its owning tool. Absent means every applicable domain. A domain omitted here is unrun, and unrun is reported as unrun, never as passing."
+    },
+    "posture_source": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Where posture is resolved from. Defaults to .claude/security-audit.yaml, so a repository declares its posture once."
+    },
+    "posture_baseline": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Path to the locked infrastructure posture baseline. Without one the sc-security-posture domain has nothing to detect a weakening from and is reported N-A rather than invented."
+    },
+    "correlation": {
+      "type": "object",
+      "description": "Compound-risk correlation settings. Correlation is the only place the dossier raises a severity, and it must show the chain that justifies it."
+    }
+  },
+  "required": [
+    "surface"
+  ]
+}

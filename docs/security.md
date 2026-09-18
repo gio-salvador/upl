@@ -28,6 +28,7 @@ The main risks are an unwanted change to the canonical text and a compromised si
 | Gate | Where |
 | ---- | ----- |
 | Markdown lint, site build and link gate | `.github/workflows/ci.yml`, job `build` |
+| Toolkit gates: docs, doc claims, plan structure, hardcoded paths and secrets, public readiness | `.github/workflows/ci.yml`, job `gates`, running `scripts/check.sh gates` |
 | Secret scan of the full history (gitleaks) | `.github/workflows/ci.yml`, job `gitleaks` |
 | Dependency CVE scan (OSV-Scanner), weekly | `.github/workflows/security.yml` |
 | CodeQL and OpenSSF Scorecard | `security.yml` and `scorecard.yml`; both run only once the repository is public |

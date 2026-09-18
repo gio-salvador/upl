@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-cv-build manifest",
+  "description": "The candidate, the document set, the build pipeline and the locked editorial rules. The engine is generic; everything specific is here.",
+  "type": "object",
+  "required": ["candidate", "source_root", "output_dir", "documents", "commands"],
+  "properties": {
+    "candidate": { "type": ["object", "string"] },
+    "source_root": { "type": "string" },
+    "output_dir": { "type": "string", "description": "Generated and gitignored. Never hand-edited." },
+    "default_document": { "type": "string" },
+    "surface": { "enum": ["cv", "pitch", "site", "book", "linkedin", "public", "internal"] },
+    "versioning": { "type": "object" },
+    "documents": { "type": ["array", "object"] },
+    "commands": { "type": "object", "description": "Run these, never an ad-hoc invocation." },
+    "editorial": { "type": ["object", "array"] },
+    "consistency": { "type": ["object", "array"] },
+    "verification": { "type": ["array", "object"] },
+    "external_deps": { "type": ["array", "object"] }
+  }
+}

@@ -4,6 +4,10 @@ Parts of this repository are adapted from the Salvador Cloud website repository,
 is licensed under the MIT licence. Only code and configuration were taken; no content, brand
 assets, or documentation.
 
+The folder `.claude/toolkit/` is a vendored, unmodified copy of part of the
+salvadorcloud-ai-toolkit, licensed under Apache-2.0. The exact version is recorded in
+`.claude/toolkit.lock`.
+
 ## Adapted files
 
 - `site/src/components/seo/Meta.astro`

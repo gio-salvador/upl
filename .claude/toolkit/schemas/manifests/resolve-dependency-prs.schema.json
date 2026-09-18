@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-resolve-dependency-prs manifest",
+  "description": "The ecosystem and its commands. package_manager is required because the whole strategy turns on whether updates serialise on a shared lockfile.",
+  "type": "object",
+  "properties": {
+    "package_manager": {
+      "enum": [
+        "pnpm",
+        "npm",
+        "yarn",
+        "bundler",
+        "pip",
+        "poetry",
+        "cargo",
+        "go"
+      ]
+    },
+    "lockfile": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The single shared lockfile that serialises merges, or null where none exists."
+    },
+    "lockfile_only_install": {
+      "type": "string"
+    },
+    "full_check": {
+      "type": "string"
+    },
+    "audit_cmd": {
+      "type": "string"
+    },
+    "overrides": {},
+    "version_pin": {
+      "type": "string"
+    },
+    "pr_creation_skill": {
+      "type": "string"
+    },
+    "lessons_doc": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "package_manager"
+  ]
+}

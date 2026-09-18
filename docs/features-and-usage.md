@@ -47,6 +47,13 @@ never leaves stale links behind. Both outputs are ignored by git.
 ## Check your work
 
 ```bash
+bash scripts/check.sh
+```
+
+That one command runs everything CI runs. `bash scripts/check.sh site` runs only the three site
+checks below, and `bash scripts/check.sh gates` runs only the toolkit gates.
+
+```bash
 npm --prefix site run lint:md
 npm --prefix site run build
 npm --prefix site run check:links
@@ -55,6 +62,18 @@ npm --prefix site run check:links
 `check:links` walks the built pages and fails if any internal link does not resolve or any
 page link lacks its trailing slash. `lint:md` lints every markdown file in the repository against `.markdownlint-cli2.jsonc`. CI
 runs all three on every pull request.
+
+## Toolkit gates and skills
+
+The repository adopts the salvadorcloud-ai-toolkit at a pinned version: `.claude/toolkit.lock`
+records the version and `.claude/toolkit/` holds the vendored gates. They check the docs
+structure, that every path the docs name exists, plan structure, hardcoded paths and secrets,
+and public readiness. Move to a newer toolkit version with `sct update`, which produces a
+reviewable diff; never edit the vendored copy by hand.
+
+Manifests under `.claude/` configure the toolkit's skills for this repository:
+`content-review.yaml` (review lenses for the teachings and for the docs), `docs-sync.yaml`,
+`plan-review.yaml` and `open-pr.yaml`.
 
 ## Page descriptions
 

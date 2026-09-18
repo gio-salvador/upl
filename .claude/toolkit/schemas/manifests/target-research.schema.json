@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-target-research manifest",
+  "description": "The candidate's record and the disclosure registry, so research is tied to provable experience and cannot leak an engagement.",
+  "type": "object",
+  "properties": {
+    "candidate_name": {
+      "type": "string"
+    },
+    "voice": {
+      "type": "string"
+    },
+    "record_files": {
+      "type": [
+        "array",
+        "string"
+      ]
+    },
+    "fact_source": {
+      "type": [
+        "string",
+        "array"
+      ]
+    },
+    "facts": {
+      "type": "string"
+    },
+    "downstream": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "record_files"
+  ]
+}

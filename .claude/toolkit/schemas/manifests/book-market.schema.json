@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-book-market manifest",
+  "description": "Where the research, the scored options and the launch plan live. The marketplace decides which ranking mechanics and which store rules apply.",
+  "type": "object",
+  "properties": {
+    "default_slug": {
+      "type": "string"
+    },
+    "book_config": {
+      "type": "string"
+    },
+    "marketing_dir": {
+      "type": "string"
+    },
+    "research_files": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "bestseller_strategy": {
+      "type": "string"
+    },
+    "marketing_options": {
+      "type": "string"
+    },
+    "launch_plan": {
+      "type": "string"
+    },
+    "marketplace": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "marketing_dir"
+  ]
+}

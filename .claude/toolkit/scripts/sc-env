@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+# sc-env - the single accessor for environment configuration (Goal G22).
+#
+# The sibling of sc-secret, and the same shape for the same reason: one entry point, a declared
+# resolution order, and provenance on request. Scattered direct reads of the environment are how
+# a variable ends up with three different defaults in three files and no way to find them.
+#
+# A VARIABLE IS DECLARED BEFORE IT IS USED. `.claude/env.yaml` lists every variable this
+# repository reads, with its type, whether it is required, its default and one line saying what
+# it is for. `sc-env check` fails when a required variable has no value, naming it. A tool
+# reading an undeclared variable is a finding, not a convenience.
+#
+# Values are NOT secrets. A secret goes through sc-secret, never here, and `check` says so if a
+# declared variable's name looks like a credential.
+#
+# Resolution: process environment > .env (gitignored) > declared default.
+#
+# Usage:
+#   sc-env get <NAME>          print the value
+#   sc-env where <NAME>        which layer answers, without printing the value
+#   sc-env check               every required variable resolves; exit 1 otherwise
+#   sc-env list                declared variables and their purpose
+set -uo pipefail
+. "$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/lib/common.sh"
+root="$(sct_root)" || exit 2
+decl="$root/.claude/env.yaml"
+envfile="$root/.env"
+
+die() { echo "sc-env: $*" >&2; exit 2; }
+[ -r "$decl" ] || { [ "${1:-}" = "check" ] && { echo "sc-env: no .claude/env.yaml: nothing declared, nothing to check"; exit 0; }; die "no declaration at .claude/env.yaml"; }
+
+declared() { awk '/^[[:space:]]*-[[:space:]]*name:/ { sub(/^[[:space:]]*-[[:space:]]*name:[[:space:]]*/,""); print }' "$decl"; }
+field() { # NAME FIELD
+  awk -v want="$1" -v f="$2" '
+    /^[[:space:]]*-[[:space:]]*name:/ { n=$0; sub(/^.*name:[[:space:]]*/,"",n); cur=(n==want) }
+    cur && $0 ~ "^[[:space:]]+"f":" { sub(/^[[:space:]]*[a-z_]+:[[:space:]]*/,""); gsub(/^["\x27]|["\x27]$/,""); print; exit }
+  ' "$decl"
+}
+from_envfile() { [ -r "$envfile" ] && awk -F= -v k="$1" '$1==k { sub(/^[^=]*=/,""); print; exit }' "$envfile"; }
+
+resolve() { # NAME -> value, layer
+  local n="$1" v
+  v="$(printenv "$n" 2>/dev/null || true)"; [ -n "$v" ] && { printf '%s\t%s' "$v" "process-env"; return 0; }
+  v="$(from_envfile "$n")";               [ -n "$v" ] && { printf '%s\t%s' "$v" "dotenv"; return 0; }
+  v="$(field "$n" default)";              [ -n "$v" ] && { printf '%s\t%s' "$v" "declared-default"; return 0; }
+  return 1
+}
+
+case "${1:-}" in
+  get)   [ $# -ge 2 ] || die "get needs a name"; r="$(resolve "$2")" || die "$2 has no value in any layer"; printf '%s\n' "${r%%$'\t'*}" ;;
+  where) [ $# -ge 2 ] || die "where needs a name"; r="$(resolve "$2")" || { echo "$2: unresolved"; exit 1; }; printf '%s: %s\n' "$2" "${r##*$'\t'}" ;;
+  list)  while IFS= read -r n; do printf '  %-28s %s\n' "$n" "$(field "$n" purpose)"; done < <(declared) ;;
+  check)
+    missing=0; suspicious=0
+    while IFS= read -r n; do
+      # A name ending in _FILE, _PATH or _DIR points AT something, it is not the thing.
+      # Without this the check flags its own token-list path, and a guard that cries wolf on
+      # its own configuration is a guard people learn to ignore.
+      case "$n" in
+        *_FILE|*_PATH|*_DIR) ;;
+        *TOKEN*|*SECRET*|*PASSWORD*|*KEY*)
+        sct_warn "$n looks like a credential: it belongs in sc-secret, not in environment declarations"
+        suspicious=$((suspicious+1)) ;;
+      esac
+      if ! resolve "$n" >/dev/null; then
+        [ "$(field "$n" required)" = "true" ] && { sct_block "$n is required and resolves in no layer"; missing=$((missing+1)); }
+      fi
+    done < <(declared)
+    [ "$missing" -gt 0 ] && exit 1
+    [ "$suspicious" -eq 0 ] && echo "sc-env: all declared variables resolve"
+    ;;
+  *) sed -n '20,25p' "$0"; exit 2 ;;
+esac

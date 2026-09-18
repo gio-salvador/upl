@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-plan-review manifest",
+  "description": "Declares which plans are reviewable here and which lenses judge them.",
+  "type": "object",
+  "required": [
+    "plan_globs",
+    "lenses"
+  ],
+  "properties": {
+    "plan_globs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constitution": {
+      "type": "string"
+    },
+    "rule_library": {
+      "type": "string"
+    },
+    "lenses": {
+      "type": [
+        "array",
+        "object"
+      ],
+      "description": "One entry per lens, either as a list or keyed by lens id. Each carries the role it plays and what it must ground its claims in, which is what makes a lens verify against the repository rather than trust the plan.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "grounds_in": {
+            "type": [
+              "string",
+              "array"
+            ]
+          },
+          "when": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string"
+          },
+          "grounds_in": {
+            "type": [
+              "string",
+              "array"
+            ]
+          },
+          "when": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "loop": {
+      "type": "object",
+      "properties": {
+        "cap": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    }
+  }
+}

@@ -182,8 +182,8 @@ One pull request per step. Each leaves `main` green.
 
 | Step | Pull request | Needs from you | Status |
 | ---- | ------------ | -------------- | ------ |
-| 1 | Repository structure, content, site, imported scaffolding, link gate, cache fix, toolkit profile | approval to commit and open it; D8 | work done, uncommitted |
-| 2 | Toolkit: vendored gates, CI gate job, manifests | nothing | not started |
+| 1 | Repository structure, content, site, imported scaffolding, link gate, cache fix, toolkit profile | approval to commit and open it; D8 | merged 2026-09-18, pull request 1 |
+| 2 | Toolkit: vendored gates, CI gate job, manifests, CLAUDE.md, single check entry point | nothing | in review |
 | 3 | Discoverability: llms files, markdown alternates, robots policy, Article JSON-LD, social image, description check | D5 | not started |
 | 4 | Security: security.txt, audit findings, LICENSE, readiness scan | D7 | not started |
 | 5 | IaC: infra folder, iac workflow (fmt and validate live; plan and apply gated off) | nothing to merge | not started |
