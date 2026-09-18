@@ -6,8 +6,8 @@ assets, or documentation.
 
 The folder `.claude/toolkit/` is a vendored, unmodified copy of part of the
 salvadorcloud-ai-toolkit, licensed under Apache-2.0. The exact version is recorded in
-`.claude/toolkit.lock`, and the licence text is at
-[LICENSES/Apache-2.0.txt](LICENSES/Apache-2.0.txt).
+`.claude/toolkit.lock`, and the licence text travels with the copy, at
+[.claude/toolkit/LICENSE](.claude/toolkit/LICENSE).
 
 The licence of this repository's own work is in [LICENSE](LICENSE).
 

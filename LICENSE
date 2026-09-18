@@ -69,8 +69,8 @@ Section C: third-party work
 Work taken from other projects keeps its own licence and copyright notice:
 
   - `.claude/toolkit/**` is a vendored copy of part of the
-    salvadorcloud-ai-toolkit, under Apache-2.0. The licence text is at
-    `LICENSES/Apache-2.0.txt`.
+    salvadorcloud-ai-toolkit, under Apache-2.0. The licence text travels with
+    the copy, at `.claude/toolkit/LICENSE`.
   - Files adapted from the Salvador Cloud website repository are under the MIT
     licence, copyright (c) 2026 Salvador Cloud Ltd.
   - `site/src/assets/hero-crepuscular-rays.jpg` is in the public domain under

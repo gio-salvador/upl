@@ -5,7 +5,7 @@
 # statement rather than a hope. It runs on every push and in CI, so the property is maintained
 # continuously instead of audited once.
 #
-# Four checks:
+# Five checks:
 #   1. instance data      - nothing listed in instance-manifest.yaml is tracked, and each entry
 #                           is gitignored. BLOCK.
 #   2. sensitive tokens   - no token from the external sensitive-token list appears in a tracked
@@ -13,6 +13,8 @@
 #   3. identity in logic  - tool logic does not hardcode an identity that belongs in a profile.
 #                           BLOCK (it is both a leak and a G18/G36 violation).
 #   4. secret-shaped file - no tracked file whose NAME says secret. BLOCK.
+#   5. root licence       - a public-tier repository tracks a LICENSE at its root. WARN, and
+#                           BLOCK under --strict.
 #
 # WHERE THE TOKEN LIST LIVES, AND WHY NOT HERE. The list of client names and personal
 # identifiers is itself sensitive: committing it to a repository that may be published would
@@ -155,6 +157,31 @@ while IFS= read -r f; do
       sct_block "secret-shaped file is tracked: $f"; blocks=$((blocks+1)) ;;
   esac
 done < <(sct_tracked "$root")
+
+# ---- 5. a public-tier repository carries a root LICENSE -------------------------------------
+# Published code with no licence is all-rights-reserved by default, which is rarely what the
+# author meant and never what a reader can tell. The documentation standard already requires a
+# public repository to LINK its LICENSE (config/docs/standard.md, security and licence
+# pointers); nothing checked the file was there, and this gate passed on a public-tier repository
+# that had none.
+#
+# TIER comes from the repository profile first and git config second. The profile is committed,
+# so it is the one a CI checkout can read; git config is per-clone and absent there. A
+# private-tier repository is not asked: no licence is a legitimate state for code nobody
+# receives. TRACKED, not merely present on disk, because publication ships commits.
+tier="$(sct_yaml_get "$root/.claude/profile.yaml" gitops.tier 2>/dev/null || true)"
+[ -n "$tier" ] || tier="$(git -C "$root" config --get gitops.tier 2>/dev/null || true)"
+if [ "$tier" = "public" ]; then
+  # Counted, not `grep -q`: under pipefail a -q that exits on its first match can SIGPIPE the
+  # listing and turn a found licence into a failed pipeline in a large repository.
+  lic="$(sct_tracked "$root" | grep -ciE '^(LICEN[SC]E|COPYING|UNLICENSE)([.-][^/]*)?$' || true)"
+  if [ "${lic:-0}" -eq 0 ]; then
+    sct_warn "public-tier repository tracks no root LICENSE: published without one, the code is all rights reserved"
+    sct_note "add a LICENSE at the repository root and link it from the README (config/docs/standard.md)"
+    warns=$((warns+1))
+    [ "$strict" -eq 1 ] && { sct_block "--strict: refusing to pass a public-tier repository with no root LICENSE"; blocks=$((blocks+1)); }
+  fi
+fi
 
 if [ "$blocks" -gt 0 ]; then
   printf 'check-public-ready: %d blocking finding(s), %d warning(s)\n' "$blocks" "$warns" >&2
