@@ -38,6 +38,11 @@ GitHub secrets and never appear in a file. `.github/workflows/iac.yml` checks fo
 validity on every change to `infra/`. Planning on pull requests and applying on `main` are off
 until the repository variable `IAC_ENABLED` is set to `true`.
 
+`.github/workflows/deploy.yml` is the only path to production: on a push to `main` it runs the
+site gate, uploads the built site with Wrangler, and smoke-tests the live site. Pull requests from
+branches of this repository get a preview deployment. It skips the upload while the Cloudflare
+secrets are absent.
+
 ## Gates
 
 `scripts/check.sh` is the single gate entry point, used by CI and before every pull request. It

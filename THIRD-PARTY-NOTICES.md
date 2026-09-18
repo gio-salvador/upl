@@ -16,7 +16,8 @@ salvadorcloud-ai-toolkit, licensed under Apache-2.0. The exact version is record
 - `site/public/_headers` (header values)
 - `.github/workflows/ci.yml`, `.github/workflows/security.yml`,
   `.github/workflows/scorecard.yml`
-- `infra/providers.tf`, `infra/backend.tf`, `infra/pages.tf`, `.github/workflows/iac.yml`
+- `infra/providers.tf`, `infra/backend.tf`, `infra/pages.tf`, `.github/workflows/iac.yml`,
+  `.github/workflows/deploy.yml`
 - `.editorconfig`, `.gitattributes`
 
 ## Licence
