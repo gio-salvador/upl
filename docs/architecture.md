@@ -72,7 +72,8 @@ mobile fix that breaks the desktop view fails too. Touch-target sizes are set in
 
 All presentation lives in `site/src/styles/global.css` and `site/src/layouts/Base.astro`; the
 teachings carry none. The stylesheet defines the colour tokens for the light and dark schemes
-(text colours hold at least 4.5:1 contrast), the type scale, and print rules. Two typefaces are
+(text colours hold at least 4.5:1 contrast on the page and on cards, enforced by
+`site/scripts/check-contrast.mjs`), the type scale, and print rules. Two typefaces are
 self-hosted from pinned npm packages, because the Content-Security-Policy allows fonts from
 this origin only: Cormorant Garamond for headings and Source Serif 4 for text.
 

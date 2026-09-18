@@ -1,11 +1,17 @@
 ---
 import Base from '../layouts/Base.astro';
 import SunMark from '../components/SunMark.astro';
+import { allEntries, childrenOf } from '../lib/nav';
+
+const parts = childrenOf(await allEntries(), 'index');
 ---
 <Base title="Page not found" description="This page does not exist on the Unified Path of Light site. Return to the beginning of the path." noindex>
   <article class="lost">
     <SunMark size={56} />
     <h1>Page not found</h1>
-    <p>This page does not exist. <a href="/">Return to the beginning of the path.</a></p>
+    <p>This page does not exist. <a href="/">Return to the beginning of the path</a>, or go to one of its parts:</p>
+    <ul class="parts">
+      {parts.map((p) => <li><a href={`/${p.id}/`}>{p.data.title}</a></li>)}
+    </ul>
   </article>
 </Base>

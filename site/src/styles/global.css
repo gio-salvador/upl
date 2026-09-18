@@ -116,6 +116,8 @@ article h2 + ol:has(> li > a:only-child) > li > a:focus-visible { outline: none;
 
 .lost { padding-block: clamp(1rem, 6vw, 4rem); text-align: center; }
 .lost h1::after { margin-inline: auto; }
+.lost .parts { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 1.5rem; padding: 0; list-style: none; }
+.lost .parts a { display: inline-flex; align-items: center; min-height: 2.75rem; }
 
 .site-footer { border-top: 1px solid var(--rule); background: var(--surface); color: var(--muted); font-size: 0.95rem; }
 .site-footer .bar { padding-block: 1.25rem; }

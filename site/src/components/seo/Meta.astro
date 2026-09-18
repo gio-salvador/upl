@@ -11,7 +11,11 @@ interface Props {
 }
 
 const { title, description, ogType = 'website', noindex } = Astro.props;
-const fullTitle = title === site.name ? title : `${title} | ${site.name}`;
+// Search results show about 60 characters. A long page title keeps its own words and drops the
+// site name, which og:site_name and the WebSite JSON-LD still carry.
+const TITLE_LIMIT = 60;
+const branded = `${title} | ${site.name}`;
+const fullTitle = title === site.name || branded.length > TITLE_LIMIT ? title : branded;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const image = new URL(site.ogImage, Astro.site).href;
 ---
