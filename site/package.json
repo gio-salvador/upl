@@ -13,7 +13,8 @@
     "lint:md": "cd .. && markdownlint-cli2 \"**/*.md\"",
     "check:links": "node scripts/check-links.mjs",
     "check:seo": "node scripts/check-seo.mjs",
-    "check:mobile": "node scripts/check-mobile.mjs"
+    "check:mobile": "node scripts/check-mobile.mjs",
+    "check:contrast": "node scripts/check-contrast.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "7.3.1",

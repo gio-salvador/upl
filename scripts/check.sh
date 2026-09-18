@@ -16,6 +16,7 @@ if [ "$what" = all ] || [ "$what" = site ]; then
   npm --prefix site run build
   npm --prefix site run check:links
   npm --prefix site run check:seo
+  npm --prefix site run check:contrast
 fi
 
 # The rendering gate is the slow one. Under `all` it is skipped when nothing that can affect
