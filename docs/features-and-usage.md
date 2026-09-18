@@ -66,7 +66,12 @@ npm --prefix site run check:mobile
 any internal link does not resolve or any page link lacks its trailing slash. `check:mobile` opens every built page in headless Chromium at 320, 375, 768 and 1280 pixels
 wide and fails on horizontal overflow at any width, a missing viewport tag or `main` landmark,
 or, on phone widths, a navigation link under 44 pixels tall or a breadcrumb link under 24. It
-needs Chromium once: `npx --prefix site playwright install chromium`. `check:seo` fails
+needs Chromium once: `npx --prefix site playwright install chromium`. It is the slow check, so
+it is skipped when nothing that can affect rendering has changed: `scripts/visual-changed.sh`
+compares against `main` and counts the teachings, the site's pages, layouts, styles, config and
+dependencies as visual, and docs, plans, infrastructure, SEO metadata and response headers as
+not. It fails open: if it cannot tell, the gate runs. Pushes to `main` always run it, and
+`bash scripts/check.sh mobile` forces it. `check:seo` fails
 if any page lacks a title, a single H1, a description of 50 to 200 characters, a canonical URL,
 a social image, valid JSON-LD or its markdown alternate, or if `llms.txt` does not list every
 page. It checks structure and metadata only, never the wording of a teaching. `lint:md` lints every markdown file in the repository against `.markdownlint-cli2.jsonc`. CI
