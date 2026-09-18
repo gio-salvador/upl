@@ -6,7 +6,7 @@ is kept in the Sequence table and updated as steps land.
 
 ## What was asked for
 
-In the requester's words, across four messages on 2026-09-18:
+In the requester's words, across five messages on 2026-09-18:
 
 1. "what about IaC and pushing code to cloudflare autonomously when it hits main?"
 2. "what about importing tools from salvadorcloud-tools?" (read as the salvadorcloud-ai-toolkit
@@ -14,6 +14,9 @@ In the requester's words, across four messages on 2026-09-18:
 3. "current website links are broken due to the lack of trailing slashes, fix it."
 4. "also fix all the security and seo and GEO, AEO, AIO, LLMO"
 5. "Create a plan to execute everything you need so you don't get lost."
+6. Later the same day, the production domain was decided: unifiedpathoflight.com, with its
+   nameservers already pointing at Cloudflare. This settles D4 and turns step 8 from reserved
+   into a concrete step.
 
 Standing constraints from earlier the same day: the site must be static and must run on the
 Cloudflare Pages free plan; the repository will be made public once the content is ready.
@@ -33,12 +36,16 @@ Cloudflare Pages free plan; the repository will be made public once the content 
    machine-readable, attributable, well-structured text).
 6. **The security posture meets the public tier before the repository is public.** Serves
    request 4 and the public-tier GitOps rule.
+7. **The site is served from its own domain, and the domain is code.** Serves request 6 and
+   goal 3: the custom domain, its DNS records, DNSSEC and the no-email records are OpenTofu
+   resources, reviewed and reverted like everything else.
 
 Non-goals:
 
-- **No custom domain, DNS, DNSSEC or email records in this plan.** They are the obvious next
-  step after the Pages project exists, and they are excluded because no domain has been chosen
-  (D3). The design leaves room for them; step 8 is reserved.
+- **No email on the domain, and no HSTS preload.** The domain publishes records saying it sends
+  no email. HSTS keeps its present value; step 8 records what must be true before it is
+  upgraded.
+- **No redirect from www to the apex in this plan.** The www name serves the same site (D9).
 - **No redesign of the site.** Reading components and visual identity are a separate piece of
   work. This plan changes what machines see, not what the pages look like.
 - **No content changes.** The teachings are not edited for keywords. Discoverability comes from
@@ -72,6 +79,8 @@ Non-goals:
    a social sharing image.
 7. Public-tier security items: security.txt, a branch ruleset on `main`, a security audit of
    the repository, a post-deploy header smoke test, a licence.
+8. The custom domain: nothing attaches unifiedpathoflight.com to the Pages project, and its zone
+   holds no records for the site, no DNSSEC and no statement about email.
 
 ## The design
 
@@ -149,6 +158,57 @@ into this repository; they stay machine-wide.
   dev-only and not reachable from the built site.
 - Run the toolkit's public-readiness scan before visibility changes.
 
+### Custom domain (goal 7)
+
+`infra/domain.tf` holds everything, and all of it is off while the `site_domain` variable is
+empty, the same way `site_origin` and `pages_project_name` already behave. CI passes the
+`SITE_DOMAIN` repository variable, so merging the code changes nothing until the author sets it.
+
+- The zone is looked up by name within the account (a `cloudflare_zone` data source). No zone
+  id is written in the repository.
+- Two `cloudflare_pages_domain` resources, the apex and www (D9), and two proxied CNAME records
+  pointing at the pages.dev address. The apex CNAME works because Cloudflare flattens it.
+- `cloudflare_zone_dnssec` signs the zone. It takes effect only once the DS record is at the
+  registrar, which is the author's step unless the registrar is Cloudflare.
+- Four records say the domain sends no email: a null MX, SPF `-all`, an empty wildcard DKIM
+  key, and DMARC `p=reject` with strict alignment. Each of the three extras (www, DNSSEC,
+  no-email) has its own switch, on by default.
+- The API token widens from Pages edit to Pages edit plus Zone read and DNS edit on the one
+  zone. Checked against Cloudflare's API reference on 2026-09-18: listing zones accepts Zone
+  Read, and both the DNS record and the DNSSEC endpoints accept DNS Write, which the dashboard
+  calls Zone, DNS, Edit. The author widens it; no token is created or changed by this plan's
+  code.
+- The pages.dev address is the incumbent origin and does not go away: a Pages project always
+  keeps it. After the move it serves the same build, whose canonical URLs name the apex, the
+  same arrangement D9 accepts for the www name. Nothing in the repository holds a second copy of the
+  origin: the build, the deploy workflow and `infra/pages.tf` all fall back to pages.dev only
+  while `SITE` is empty.
+- The site never hardcodes its origin. It comes from `SITE`, so the move is an ordered
+  procedure, not a code change: apply, wait for the certificate, set `SITE`, redeploy. The
+  order is in `docs/runbook-go-live.md`, step 8.
+
+**HSTS is left as it is** (`max-age=31536000`, no `includeSubDomains`, no `preload`). Before
+`includeSubDomains` is added, all of these must be true:
+
+1. Every name that exists under the domain serves HTTPS only, including any that is not
+   proxied by Cloudflare, and no name is planned that cannot (a device, a third-party service
+   on plain HTTP, a verification host).
+2. `http://unifiedpathoflight.com/` and `http://www.unifiedpathoflight.com/` both answer with a
+   redirect to HTTPS on the same host.
+3. The custom domain has served the site without a certificate fault for long enough that the
+   author is confident in it; a suggested minimum is one month.
+
+Before `preload` is added, on top of those: the header on the apex carries `includeSubDomains`
+and has done so without trouble, and the author accepts that leaving the preload list takes
+months and is outside their control. Each upgrade is a one-line change to
+`site/public/_headers` in its own pull request, and the smoke test's HSTS assertion is
+tightened in the same change.
+
+Not included, and why: a redirect from www to the apex and the zone's Always Use HTTPS setting
+both need a wider token (redirect rules, zone settings) than DNS edit; CAA records are left to
+Cloudflare, which adds the ones its certificate authorities need. If condition 2 fails after
+go-live, Always Use HTTPS is turned on by hand in the dashboard and recorded here.
+
 ## Open decisions
 
 - **D1 TAKEN: deploy by GitHub Actions direct upload, not Cloudflare's git build.** The request
@@ -160,8 +220,9 @@ into this repository; they stay machine-wide.
   unified-path-of-light in your personal Cloudflare account, not the Salvador Cloud Ltd one,
   with its own state bucket. A religion's site should not sit inside a company's account or
   share its state. The code takes both as variables, so this blocks only the first apply.
-- **D4 OPEN: domain.** None chosen. The site works on the pages.dev address meanwhile. Step 8
-  waits on this.
+- **D4 TAKEN by the author, 2026-09-18: the domain is unifiedpathoflight.com, with DNS on
+  Cloudflare.** The nameservers already point at Cloudflare, so the zone is in the same account
+  as the Pages project. This unblocks step 8.
 - **D5 OPEN: AI crawlers allowed by name.** Recommendation: allow. Reversing it later stops new
   crawling but does not recall what was read.
 - **D6 TAKEN, with a correction:** `sct init` was run on 2026-09-18 by mistake, while asking it
@@ -172,9 +233,17 @@ into this repository; they stay machine-wide.
 - **D7 OPEN: licence.** Recommendation: CC BY-SA 4.0 for `content/` and `paper/`, MIT for the
   site code, stated in one LICENSE file with two sections, as salvador-cloud-site does.
   Language models and search engines treat a clear licence as a signal that text may be quoted.
-- **D8 OPEN: GitHub CLI account.** The active `gh` account on this machine is gio-deone, which
-  cannot see gio-salvador/upl. Opening pull requests needs `gh auth switch`, which also
-  affects your other sessions, so it is yours to do or to approve.
+- **D8 OPEN: GitHub CLI account.** The active `gh` account on this machine is not the one that
+  owns this repository and cannot see it. Opening pull requests needs `gh auth switch`, which
+  also affects your other sessions, so it is yours to do or to approve.
+
+- **D9 TAKEN by the plan, yours to veto: www is a second Pages domain, not a redirect.** Every page already names the apex
+  as its canonical URL, so search engines fold the two together. A redirect would need a
+  redirect ruleset and a wider token for a small gain. Reversible: set `site_domain_www` to
+  false, or add the redirect later.
+- **D10 TAKEN by the plan, yours to veto: DNSSEC and the no-email records are part of step 8, as code.** A domain with no
+  SPF or DMARC can be spoofed by anyone, and a religion's name is worth protecting from that.
+  Reversible by one variable each, with the DS ordering in the runbook.
 
 ## Sequence
 
@@ -189,12 +258,15 @@ One pull request per step. Each leaves `main` green.
 | 5 | IaC: infra folder, iac workflow (fmt and validate live; plan and apply gated off) | nothing to merge | merged 2026-09-18, pull request 10 |
 | 6 | Deploy workflow with credential skip, preview deployments, smoke test; docs updated to the new model | nothing to merge | merged 2026-09-18, pull request 11; upload and smoke test not yet exercised |
 | 7 | Go live: create the API token, account id and state secrets; first apply; enable the gates; set the branch ruleset | D3, and the secrets, which only you can create | next; steps in docs/runbook-go-live.md |
-| 8 | Custom domain, DNS, HSTS upgrade | D4 | reserved |
+| 8 | Custom domain as code: Pages domains for the apex and www, proxied DNS records, DNSSEC, no-email records, the `SITE_DOMAIN` variable in the iac workflow, the runbook's domain step. HSTS is not upgraded; its conditions are recorded | to merge: nothing. To take effect, after step 7: widen the token, clear colliding zone records, set `SITE_DOMAIN`, apply, publish the DS record, then set `SITE` and redeploy | code in this pull request; inert until `SITE_DOMAIN` is set |
 
 Load-bearing order: 1 before everything (nothing can be reviewed until it is committed). 5
 before 7 (apply needs the code). 6 before 7 (the first deploy needs a project, and the project
 needs the workflow's name for it). 3 and 4 are independent of 5 and 6 and can land in either
-order.
+order. 8 can merge at any time because it is inert, but takes effect only after 7 (the Pages
+domain needs the project, and the apply needs the token and the state). Inside 8, `SITE` changes
+only after the certificate is active: a canonical URL or a sitemap pointing at an address that
+fails TLS is worse than one pointing at pages.dev.
 
 ## Cross-dependencies
 
@@ -203,6 +275,9 @@ order.
 | 6 depends on 5 for the project name | The deploy command and the OpenTofu resource must name the same project; it is a single variable read by both. |
 | 7 depends on a token with no IP lock | Runners have changing addresses. The reference repository hit this: its local token was IP-locked and unusable from CI. |
 | Smoke test in 6 depends on `SITE` | Until a domain exists it must target the pages.dev address, so the address is a variable, not a literal. |
+| 8 depends on a wider token | The zone lookup and the DNS records fail with a permission error under the Pages-only token, so the token is widened before `SITE_DOMAIN` is set. |
+| Inside 8: `SITE` after the certificate | The deploy smoke test targets `SITE`. Set too early, it fails on TLS and the deploy goes red. |
+| Inside 8: DS record after DNSSEC, and removed before it | The DS record at the registrar must match a signed zone. Turning signing off while the DS record remains makes the domain stop resolving. |
 | Inside 3: llms files depend on the route map | They must use the same path-to-route function as the pages, or they will link to addresses that do not exist. The link gate is extended to cover them. |
 | Inside 4: LICENSE before readiness scan | The scan treats a missing licence as a finding. |
 
@@ -210,8 +285,21 @@ order.
 
 - **A deploy publishes unreviewed doctrine.** Survivable because `main` is PR-only and the
   ruleset (step 7) makes that server-side, not just a local hook.
-- **A leaked Cloudflare token.** Scoped to Pages edit on one account, stored only as a GitHub
-  secret, never in a file; gitleaks runs on every push. Rotation is one command.
+- **A leaked Cloudflare token.** Scoped to Pages edit on one account and, from step 8, zone
+  read and DNS edit on one zone; stored only as a GitHub secret, never in a file; gitleaks runs
+  on every push. Rotation is one command. The wider scope means a leak could repoint the
+  domain, which is why the scope stops at one zone and excludes zone settings and rulesets.
+- **Records already in the zone collide with the apply.** OpenTofu does not overwrite a record
+  it did not create; the apply fails cleanly and the runbook says which records to clear first.
+- **DNSSEC misordering takes the domain offline.** Possible when turning it off, or if a stale
+  DS record from elsewhere is already at the registrar; the runbook covers both, and
+  `infra/domain.tf` states the order.
+- **The narrow token turns out not to be enough at apply time.** The scopes were checked
+  against the API reference, not against a live apply. If the apply fails on permissions, the
+  answer is recorded here and the token is widened by the one missing permission, never to all
+  zones or zone settings.
+- **The no-email records block real mail later.** They are one variable, and the runbook says
+  to turn it off before the domain is ever used for email.
 - **State file loss.** One resource; it can be re-imported in a minute. Accepted.
 - **The Cloudflare provider's next major changes resource shapes.** Pinned exactly; Dependabot
   raises the bump as a reviewable diff.
@@ -221,7 +309,8 @@ order.
 
 ## What this plan does not do
 
-It does not choose a domain, a licence or a Cloudflare account for you. It does not create
+It does not choose a licence or a Cloudflare account for you. It does not run the apply that
+attaches the domain, widen the token or change a repository variable: those are yours. It does not create
 credentials or type them anywhere. It does not make the repository public. It does not edit the
 teachings. It does not redesign the site.
 
@@ -239,18 +328,34 @@ on the public address within ten minutes, with no manual step, and the smoke tes
   error.
 - `tofu plan` on `main` reports no changes after apply: the dashboard and the code agree.
 
+For step 8, once the author has carried out the runbook's step 8:
+
+- `cd infra && tofu validate && tofu fmt -check` exits 0, and `tofu plan` with `site_domain`
+  empty shows no domain, DNS or DNSSEC resource. (Proven on 2026-09-18.)
+- `curl -sI https://unifiedpathoflight.com/` and the same for www return 200 with the CSP and
+  HSTS headers, and `curl -sI http://unifiedpathoflight.com/` returns a redirect to HTTPS.
+- `curl -s https://unifiedpathoflight.com/sitemap-index.xml` and `/robots.txt` name only
+  `https://unifiedpathoflight.com`, and the Deploy run's smoke test is green against it.
+- `dig +short MX unifiedpathoflight.com` prints `0 .`, `dig +short TXT
+  _dmarc.unifiedpathoflight.com` contains `p=reject`, and `dig +dnssec
+  unifiedpathoflight.com` from a validating resolver carries the `ad` flag.
+- `tofu plan` on `main` still reports no changes.
+
 Negative criteria: no gate was loosened or skipped to get green; no secret appears in any file
 or log; no second copy of the teachings exists outside `content/` except generated build
-output; no teaching was reworded for search.
+output; no teaching was reworded for search; no zone id or account id appears in any file; the HSTS
+header did not gain `includeSubDomains` or `preload` without its conditions being met.
 
-Rollback: steps 1 to 6 are each a single revert. Step 7 is not: the Pages project, the token
+Rollback: steps 1 to 6 are each a single revert. Step 8's code is a single revert while
+`SITE_DOMAIN` is empty; once applied, it is undone in the order the runbook gives (`SITE` back,
+redeploy, DS record removed, then `SITE_DOMAIN` emptied and applied). Step 7 is not: the Pages project, the token
 and the secrets exist outside git and are removed with `tofu destroy` and by revoking the
 token.
 
 ## Acceptance
 
 The repository is public-tier compliant and ready to be made public. Merging to `main` builds,
-checks and publishes the site to Cloudflare Pages on the free plan. The Pages project is defined
-in code. The toolkit's gates run in CI at a pinned version. A person, a search engine and a
+checks and publishes the site to Cloudflare Pages on the free plan, served at
+unifiedpathoflight.com. The Pages project, the domain and its DNS are defined in code. The toolkit's gates run in CI at a pinned version. A person, a search engine and a
 language model can each find any teaching, read it in a form suited to them, and see who wrote
 it and under what licence.

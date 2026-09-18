@@ -4,3 +4,10 @@
 cloudflare_account_id = ""
 pages_project_name    = "unified-path-of-light"
 site_origin           = ""
+
+# The custom domain. Leave site_domain empty and nothing below has any effect.
+# Set site_origin to https://<site_domain> only after the domain is active (see the runbook).
+site_domain          = "unifiedpathoflight.com"
+site_domain_www      = true
+site_domain_dnssec   = true
+site_domain_no_email = true
