@@ -46,7 +46,8 @@ The main risks are an unwanted change to the canonical text and a compromised si
 | Every page rendered at four widths: overflow, viewport, landmark, touch targets. Skipped on a pull request that changes nothing visual; always run on `main` | `.github/workflows/ci.yml`, job `mobile` |
 | Toolkit gates: docs, doc claims, plan structure, hardcoded paths and secrets, public readiness, and the sensitive-token scan when the `SENSITIVE_TOKENS` secret is set. Once the repository is public the job fails if the secret is missing | `.github/workflows/ci.yml`, job `gates`, running `scripts/check.sh gates` |
 | Site gate before any upload, then a smoke test of the live headers and key addresses | `.github/workflows/deploy.yml` |
-| OpenTofu format and validate; plan and apply once enabled | `.github/workflows/iac.yml` |
+| OpenTofu format and validate, and a Trivy scan for misconfiguration and secrets; plan and apply once enabled | `.github/workflows/iac.yml` |
+| Infrastructure posture: sensitive variables, no literal credentials or state location, exact provider pin and lock file, state locking, DNSSEC and the no-email records | `scripts/check-infra.py`, run by `scripts/check.sh gates` |
 | Secret scan of the full history (gitleaks) | `.github/workflows/ci.yml`, job `gitleaks` |
 | Dependency CVE scan (OSV-Scanner), weekly, on every push to `main` and on every pull request from a branch of this repository; fails on a finding | `.github/workflows/security.yml` |
 | CodeQL (weekly, on `main` and on pull requests) and OpenSSF Scorecard | `security.yml` and `scorecard.yml`; both run only once the repository is public |

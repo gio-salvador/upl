@@ -51,6 +51,34 @@ jobs:
         working-directory: infra
         run: tofu validate
 
+  static-scan:
+    name: Static scan (Trivy misconfiguration and secrets)
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # The Trivy binary, pinned by version and verified by SHA-256, like gitleaks in ci.yml.
+      # Trivy has no rules for the Cloudflare provider: it covers the general OpenTofu checks and
+      # secrets in the files. The Cloudflare posture itself is held by scripts/check-infra.py,
+      # which the toolkit gates job in ci.yml runs on every pull request.
+      - name: Install Trivy
+        env:
+          TRIVY_VERSION: 0.74.0
+          TRIVY_SHA256: 2ae6fe3ee734b7fdf11335663e18c75ea12dccc76062f09f164a3b0f8be4371a
+        run: |
+          set -euo pipefail
+          url="https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-64bit.tar.gz"
+          curl -fsSL "$url" -o trivy.tar.gz
+          echo "${TRIVY_SHA256}  trivy.tar.gz" | sha256sum -c -
+          tar -xzf trivy.tar.gz trivy
+          sudo install -m 0755 trivy /usr/local/bin/trivy
+
+      - name: Scan infra
+        run: trivy fs --scanners misconfig,secret --severity MEDIUM,HIGH,CRITICAL --exit-code 1 infra
+
   plan:
     name: tofu plan (pull request comment)
     runs-on: ubuntu-24.04

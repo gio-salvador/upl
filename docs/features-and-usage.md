@@ -67,7 +67,8 @@ bash scripts/check.sh
 That one command runs everything CI runs except the gitleaks history scan, which the pre-push
 hook covers. `bash scripts/check.sh site` runs only the first four
 site checks below, `bash scripts/check.sh mobile` only the rendering gate, and
-`bash scripts/check.sh gates` runs only the doctrine gate and the toolkit gates.
+`bash scripts/check.sh gates` runs only the doctrine gate, the cross-reference gate, the
+infrastructure posture gate and the toolkit gates.
 
 ```bash
 npm --prefix site run lint:md
