@@ -39,6 +39,7 @@ The main risks are an unwanted change to the canonical text and a compromised si
 | Gate | Where |
 | ---- | ----- |
 | Markdown lint, site build, link gate and SEO gate (`scripts/check.sh site`) | `.github/workflows/ci.yml`, job `build` |
+| Every page rendered at four widths: overflow, viewport, landmark, touch targets. Skipped on a pull request that changes nothing visual; always run on `main` | `.github/workflows/ci.yml`, job `mobile` |
 | Toolkit gates: docs, doc claims, plan structure, hardcoded paths and secrets, public readiness, and the sensitive-token scan when the `SENSITIVE_TOKENS` secret is set | `.github/workflows/ci.yml`, job `gates`, running `scripts/check.sh gates` |
 | Site gate before any upload, then a smoke test of the live headers and key addresses | `.github/workflows/deploy.yml` |
 | OpenTofu format and validate; plan and apply once enabled | `.github/workflows/iac.yml` |

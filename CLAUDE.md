@@ -37,6 +37,9 @@ apply in full. This file adds only what is specific to this repository.
    `--accept-core` or `--waive-imbalance`, and never edit `scripts/doctrine-baseline.json` or
    loosen `scripts/doctrine-gate.json`, to make the gate pass. If the gate fails, fix the page
    or stop and ask.
+10. **Every page renders correctly on phone and desktop.** No horizontal overflow from 320
+    pixels wide upwards, navigation touch targets of at least 44 pixels. Never weaken
+    `site/scripts/check-mobile.mjs` to make a page pass; fix the page.
 
 ## Working
 

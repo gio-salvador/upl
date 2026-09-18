@@ -14,6 +14,7 @@ salvadorcloud-ai-toolkit, licensed under Apache-2.0. The exact version is record
 - `site/src/components/seo/JsonLd.astro`
 - `site/src/lib/structured-data.ts`
 - `site/public/_headers` (header values)
+- `site/scripts/check-mobile.mjs` (the checks and their thresholds)
 - `.github/workflows/ci.yml`, `.github/workflows/security.yml`,
   `.github/workflows/scorecard.yml`
 - `infra/providers.tf`, `infra/backend.tf`, `infra/pages.tf`, `.github/workflows/iac.yml`,

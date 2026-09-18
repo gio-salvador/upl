@@ -20,6 +20,8 @@ contributors.
 - The H1 matches `title`. One H1 per page.
 - `description` front matter is optional and overrides the generated page description.
 - Every folder has a `README.md` listing its pages in `order`. Enforced by review.
+- Every page must render without horizontal overflow from 320 pixels wide upwards, with touch
+  targets of at least 44 pixels for navigation. Enforced by `site/scripts/check-mobile.mjs` in CI.
 - Markdown style is enforced by markdownlint (`.markdownlint-cli2.jsonc`) in CI.
 - Links between pages are relative and point at the `.md` file.
 

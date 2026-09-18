@@ -52,6 +52,14 @@ between traditions, see [doctrine-guardrails.md](doctrine-guardrails.md)) and th
 toolkit gates in `.claude/toolkit/`. `CLAUDE.md` holds the locked decisions an agent or contributor must not
 break.
 
+## Rendering on phone and desktop
+
+The layout is one fluid column, capped at 44rem, with no breakpoints to maintain. It is held
+correct by a gate, not by inspection: `site/scripts/check-mobile.mjs` renders every page at
+phone, tablet and desktop widths. Desktop widths run the same overflow check as phones, so a
+mobile fix that breaks the desktop view fails too. Touch-target sizes are set in
+`site/src/styles/global.css`.
+
 ## Search and sharing
 
 `site/src/layouts/Base.astro` gives every page a title, description, canonical URL, Open Graph

@@ -48,7 +48,8 @@ npm --prefix site run dev
 `npm --prefix site run build` writes the static site to a dist folder inside `site/`. Both
 commands first copy `paper/` into the site's public folder, so the founding paper can be
 downloaded from the site, and clear Astro's content cache, so a change to the link rewriter
-never leaves stale links behind. Both outputs are ignored by git.
+never leaves stale links behind. Dev and build keep separate caches and each clears only its
+own, so a build never disturbs a running dev server. Both outputs are ignored by git.
 
 ## Check your work
 
@@ -56,19 +57,28 @@ never leaves stale links behind. Both outputs are ignored by git.
 bash scripts/check.sh
 ```
 
-That one command runs everything CI runs. `bash scripts/check.sh site` runs only the four site
-checks below, and `bash scripts/check.sh gates` runs only the doctrine gate and the toolkit
-gates.
+That one command runs everything CI runs. `bash scripts/check.sh site` runs only the first four
+site checks below, `bash scripts/check.sh mobile` only the rendering gate, and
+`bash scripts/check.sh gates` runs only the doctrine gate and the toolkit gates.
 
 ```bash
 npm --prefix site run lint:md
 npm --prefix site run build
 npm --prefix site run check:links
 npm --prefix site run check:seo
+npm --prefix site run check:mobile
 ```
 
 `check:links` walks the built pages, the markdown alternates and the llms files, and fails if
-any internal link does not resolve or any page link lacks its trailing slash. `check:seo` fails
+any internal link does not resolve or any page link lacks its trailing slash. `check:mobile` opens every built page in headless Chromium at 320, 375, 768 and 1280 pixels
+wide and fails on horizontal overflow at any width, a missing viewport tag or `main` landmark,
+or, on phone widths, a navigation link under 44 pixels tall or a breadcrumb link under 24. It
+needs Chromium once: `npx --prefix site playwright install chromium`. It is the slow check, so
+it is skipped when nothing that can affect rendering has changed: `scripts/visual-changed.sh`
+compares against `main` and counts the teachings, the site's pages, layouts, styles, config and
+dependencies as visual, and docs, plans, infrastructure, SEO metadata and response headers as
+not. It fails open: if it cannot tell, the gate runs. Pushes to `main` always run it, and
+`bash scripts/check.sh mobile` forces it. `check:seo` fails
 if any page lacks a title, a single H1, a description of 50 to 200 characters, a canonical URL,
 a social image, valid JSON-LD or its markdown alternate. For search engines it also fails if a
 content page is marked noindex, if the canonical URL does not match the page's own address, the
