@@ -31,6 +31,13 @@ without the website.
    python3 scripts/check-doctrine.py --report
    ```
 
+5. Check it against the [cross-reference matrix](cross-reference.md): give any new concept one
+   owner in `scripts/content-index.json`, record any overlap you leave as a finding, then:
+
+   ```bash
+   python3 scripts/check-content-index.py --record
+   ```
+
 The website picks the page up on the next build. Nothing in `site/` needs to change.
 
 ## Add a section
