@@ -1,0 +1,14 @@
+{
+  "config": {
+    "default": true,
+    // Prose flows; no fixed line length.
+    "MD013": false,
+    // Pages carry `title` front matter and a matching H1; do not count the title as a second H1.
+    "MD025": { "front_matter_title": "" },
+    // Section pages repeat sub-headings such as "In this section".
+    "MD024": { "siblings_only": true },
+    "MD003": { "style": "atx" },
+    "MD004": { "style": "dash" }
+  },
+  "ignores": ["**/node_modules/**", "site/dist/**", "site/.astro/**"]
+}

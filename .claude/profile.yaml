@@ -1,0 +1,25 @@
+# Repository profile. The single place this repository describes itself (TK-009).
+# Skill manifests inherit from this and hold only what is genuinely skill-specific.
+# Written by `sct init` on 2026-09-18. Fields it could not infer are listed under `todo`.
+# Schema: schemas/repo-profile.schema.json
+
+version: 1
+
+repo:
+  name: upl
+  purpose: "The canonical text of the Unified Path of Light (Synphotodosism) as a markdown hierarchy, and the static website that publishes it."
+
+identity:
+  account: gio-salvador
+  name: Giovanni Salvador
+  email: giovanni@salvador.cloud
+  signing_key: 4731C77A7244EA68
+  remote: git@github.com:gio-salvador/upl.git
+
+gitops:
+  tier: public
+  main_policy: pr-only
+
+concurrency:
+  model: worktree
+

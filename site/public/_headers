@@ -1,0 +1,21 @@
+# Security response headers for Cloudflare Pages. Values ported from salvador-cloud-site
+# infra/headers.tf (MIT, see THIRD-PARTY-NOTICES.md) and tightened: this site ships no
+# scripts and only external stylesheets, so nothing needs 'unsafe-inline'.
+# HSTS deliberately omits includeSubDomains and preload: add them only once the custom
+# domain and all of its subdomains are known to be HTTPS-only.
+/*
+  Strict-Transport-Security: max-age=31536000
+  Content-Security-Policy: default-src 'none'; base-uri 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; manifest-src 'self'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), autoplay=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), usb=(), screen-wake-lock=(), serial=(), interest-cohort=()
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
+
+# The founding paper is a PDF. Browser PDF viewers need their own inline resources, so the
+# page CSP and embedder policy are lifted for it; the other headers still apply.
+/paper/*
+  ! Content-Security-Policy
+  ! Cross-Origin-Embedder-Policy

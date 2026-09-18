@@ -1,0 +1,28 @@
+{
+  "name": "upl-site",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "sync-paper": "node scripts/sync-paper.mjs",
+    "predev": "npm run sync-paper && npm run clean-cache",
+    "prebuild": "npm run sync-paper && npm run clean-cache",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint:md": "cd .. && markdownlint-cli2 \"**/*.md\"",
+    "clean-cache": "node scripts/clear-content-cache.mjs",
+    "check:links": "node scripts/check-links.mjs"
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "7.3.1",
+    "@astrojs/sitemap": "3.7.4",
+    "astro": "7.3.3"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "0.23.2"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  }
+}

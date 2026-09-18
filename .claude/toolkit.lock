@@ -1,0 +1,7 @@
+# Records exactly which toolkit version this repository runs, so an upgrade is a reviewable
+# diff rather than silent drift (Goal G5). Written by `sct init` and `sct vendor`.
+name: salvadorcloud-ai-toolkit
+version: v0.7.1-7-g4197f8f
+commit: 4197f8fbf97fc1a66df2788ef05b805ad98f0643
+profile: gates
+installed_at: "2026-09-18T13:48:57Z"   # quoted: unquoted, YAML reads it as a datetime, not a string
