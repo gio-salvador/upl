@@ -11,6 +11,7 @@ it. The teachings themselves are not here; they live in [content/](../content/RE
 | [doctrine-guardrails.md](doctrine-guardrails.md) | The beliefs a teaching must stay true to, the balance between traditions, and the gate that enforces both. |
 | [cross-reference.md](cross-reference.md) | The matrix of concepts, their owner pages and the known overlaps between pages. Generated; updated before any merge that touches the teachings. |
 | [site-review.md](site-review.md) | A page-by-page review of the website from 18 September 2026, with proposed improvements. |
+| [agents/](agents/README.md) | The Claude Code agents of this repository, starting with the steward of the teachings. |
 | [security.md](security.md) | What is protected and how to report a problem. |
 | [runbook-go-live.md](runbook-go-live.md) | The one-time steps that connect the repository to Cloudflare. |
 

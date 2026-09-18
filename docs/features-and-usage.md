@@ -119,6 +119,12 @@ Manifests under `.claude/` configure the toolkit's skills for this repository:
 `content-review.yaml` (review lenses for the teachings and for the docs), `docs-sync.yaml`,
 `plan-review.yaml` and `open-pr.yaml`.
 
+## Work on the teachings with the steward agent
+
+`upl-teaching-steward` reviews pages against the core beliefs, proposes improvements for the
+author to approve, and drafts new pages. How to call it and what it refuses to do are in
+[agents/upl-teaching-steward.md](agents/upl-teaching-steward.md).
+
 ## Page descriptions
 
 Each page's search and social description is the first paragraph of its text, cut to about 160

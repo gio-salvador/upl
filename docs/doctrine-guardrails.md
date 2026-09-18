@@ -116,6 +116,9 @@ and absent in spirit. That is what review is for.
 
 ## 4. Review
 
+- `upl-teaching-steward` ([agents/upl-teaching-steward.md](agents/upl-teaching-steward.md))
+  reviews a page against these beliefs, proposes improvements for the author to approve, and
+  drafts new pages. It judges what the gate cannot count.
 - `sc-content-review` reads this page as the reference for its `consistency` lens on every
   teaching (`.claude/content-review.yaml`), and runs the gate as a machine check first.
 - `sc-plan-review` holds any plan that touches `content/` to these rules through its

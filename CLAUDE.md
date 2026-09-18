@@ -55,6 +55,11 @@ apply in full. This file adds only what is specific to this repository.
   re-read against the matrix; never run it just to make the gate pass.
 - The toolkit copy under `.claude/toolkit/` is vendored at a pinned version. Never edit it by
   hand; change it with `sct update`.
+- Every Claude Code file written for this repository starts with `upl-`: agents, skills, rules,
+  commands. Toolkit manifests and the vendored toolkit keep their own names
+  ([docs/conventions.md](docs/conventions.md)).
+- To review, improve or draft a teaching, use the `upl-teaching-steward` agent
+  ([docs/agents/upl-teaching-steward.md](docs/agents/upl-teaching-steward.md)).
 - Plans live in `docs/plans/` and follow the fleet plan template.
 - Default voice for repository documentation: Giovanni. The teachings keep the voice of the
   founding paper.
