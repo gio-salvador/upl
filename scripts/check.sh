@@ -3,7 +3,8 @@
 #   scripts/check.sh            everything
 #   scripts/check.sh gates      only the vendored toolkit gates (no Node needed)
 #   scripts/check.sh site       only the site checks
-#   scripts/check.sh mobile     only the mobile and desktop rendering gate (needs a build)
+#   scripts/check.sh mobile     only the mobile and desktop rendering gate, always
+# Under `all` the rendering gate is skipped when scripts/visual-changed.sh finds nothing visual.
 set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
 what="${1:-all}"
@@ -17,7 +18,12 @@ if [ "$what" = all ] || [ "$what" = site ]; then
   npm --prefix site run check:seo
 fi
 
-if [ "$what" = all ] || [ "$what" = mobile ]; then
+# The rendering gate is the slow one. Under `all` it is skipped when nothing that can affect
+# rendering has changed since main; `mobile` always runs it.
+run_mobile=0
+[ "$what" = mobile ] && run_mobile=1
+if [ "$what" = all ] && bash scripts/visual-changed.sh; then run_mobile=1; fi
+if [ "$run_mobile" = 1 ]; then
   [ -d site/dist ] || npm --prefix site run build
   npm --prefix site run check:mobile
 fi
