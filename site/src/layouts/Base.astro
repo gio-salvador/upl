@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Meta from '../components/seo/Meta.astro';
 import JsonLd from '../components/seo/JsonLd.astro';
+import SunMark from '../components/SunMark.astro';
 import { allEntries, childrenOf } from '../lib/nav';
 import { site } from '../lib/site';
 import { articleSchema, breadcrumbListSchema, paperSchema, websiteSchema, type Crumb } from '../lib/structured-data';
@@ -18,33 +19,49 @@ interface Props {
 const { title, description = site.tagline, crumbs = [], ogType, noindex, article } = Astro.props;
 const siteName = site.name;
 const origin = Astro.site!;
-const isHome = Astro.url.pathname === '/';
+const path = Astro.url.pathname;
+const isHome = path === '/';
 const jsonLd = [
   websiteSchema(origin),
   ...(isHome ? [paperSchema(origin)] : []),
-  ...(article ? [articleSchema(origin, { title, description, href: Astro.url.pathname })] : []),
+  ...(article ? [articleSchema(origin, { title, description, href: path })] : []),
   ...(crumbs.length ? [breadcrumbListSchema(origin, crumbs)] : []),
 ];
 const parts = childrenOf(await allEntries(), 'index');
+// Marks the part the reader is in: "page" on the part's own page, "true" on pages inside it.
+const current = (id: string) => (path === `/${id}/` ? 'page' : path.startsWith(`/${id}/`) ? 'true' : undefined);
 ---
 <!doctype html>
 <html lang="en-GB">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <Meta title={title} description={description} ogType={ogType} noindex={noindex} />
-    {(article || isHome) && <link rel="alternate" type="text/markdown" href={`${Astro.url.pathname}index.md`} />}
+    {(article || isHome) && <link rel="alternate" type="text/markdown" href={`${path}index.md`} />}
     <JsonLd data={jsonLd} />
   </head>
   <body>
-    <header>
-      <a class="brand" href="/">{siteName}</a>
-      <nav>
-        {parts.map((p) => <a href={`/${p.id}/`}>{p.data.title}</a>)}
-      </nav>
+    <a class="skip" href="#main">Skip to the text</a>
+    <header class="site-header">
+      <div class="bar">
+        <a class="brand" href="/" aria-current={isHome ? 'page' : undefined}><SunMark />{siteName}</a>
+        <nav aria-label="Parts">
+          {parts.map((p) => <a href={`/${p.id}/`} aria-current={current(p.id)}>{p.data.title}</a>)}
+        </nav>
+      </div>
     </header>
-    <main><slot /></main>
-    <footer>{site.alternateName}: {site.tagline.toLowerCase()}</footer>
+    <slot name="hero" />
+    <main id="main"><slot /></main>
+    <footer class="site-footer">
+      <div class="bar">
+        <p class="colophon"><SunMark size={22} /><span><strong>{site.alternateName}</strong>: {site.tagline.toLowerCase()}</span></p>
+        <nav aria-label="Footer">
+          {parts.map((p) => <a href={`/${p.id}/`}>{p.data.title}</a>)}
+          <a href={site.paperPath}>Founding paper (PDF)</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

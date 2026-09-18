@@ -8,6 +8,17 @@ The folder `.claude/toolkit/` is a vendored, unmodified copy of part of the
 salvadorcloud-ai-toolkit, licensed under Apache-2.0. The exact version is recorded in
 `.claude/toolkit.lock`.
 
+## Fonts and images
+
+- Cormorant Garamond (Christian Thalmann) and Source Serif 4 (Adobe), both under the SIL Open
+  Font Licence 1.1. They are installed from the `@fontsource/cormorant-garamond` and
+  `@fontsource-variable/source-serif-4` npm packages, which carry the licence text, and are
+  served from this site's own origin.
+- `site/src/assets/hero-crepuscular-rays.jpg`: "Crepuscular rays over pine forest" by
+  W.carter, from Wikimedia Commons, dedicated to the public domain under CC0 1.0. Resized;
+  otherwise unchanged. Source:
+  <https://commons.wikimedia.org/wiki/File:Crepuscular_rays_over_pine_forest.jpg>
+
 ## Adapted files
 
 - `site/src/components/seo/Meta.astro`
