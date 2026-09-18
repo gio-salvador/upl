@@ -19,6 +19,11 @@ The main risks are an unwanted change to the canonical text and a compromised si
   (`inlineStylesheets: 'never'` in `site/astro.config.mjs`) so the policy holds. The site loads
   no executable scripts and no third-party resources. The policy is lifted for `/paper/*` only,
   so browsers can display the PDF.
+- Text from `content/` is never trusted to be markup-safe. Astro escapes it in pages and
+  attributes, and the JSON-LD blocks escape `<` so a title cannot close the block.
+- A CI or Cloudflare build without the `SITE` variable fails, so localhost addresses can never
+  be published.
+- `/.well-known/security.txt` points reporters at the private advisory form.
 - New dependency versions are held back for 7 days (`site/.npmrc` and
   `.github/dependabot.yml`), which keeps freshly published malicious releases out.
 - Cloudflare credentials exist only as GitHub secrets. The API token is scoped to Cloudflare
@@ -33,15 +38,28 @@ The main risks are an unwanted change to the canonical text and a compromised si
 
 | Gate | Where |
 | ---- | ----- |
-| Markdown lint, site build, link gate and SEO gate | `.github/workflows/ci.yml`, job `build` |
-| Toolkit gates: docs, doc claims, plan structure, hardcoded paths and secrets, public readiness | `.github/workflows/ci.yml`, job `gates`, running `scripts/check.sh gates` |
+| Markdown lint, site build, link gate and SEO gate (`scripts/check.sh site`) | `.github/workflows/ci.yml`, job `build` |
+| Toolkit gates: docs, doc claims, plan structure, hardcoded paths and secrets, public readiness, and the sensitive-token scan when the `SENSITIVE_TOKENS` secret is set | `.github/workflows/ci.yml`, job `gates`, running `scripts/check.sh gates` |
 | Site gate before any upload, then a smoke test of the live headers and key addresses | `.github/workflows/deploy.yml` |
 | OpenTofu format and validate; plan and apply once enabled | `.github/workflows/iac.yml` |
 | Secret scan of the full history (gitleaks) | `.github/workflows/ci.yml`, job `gitleaks` |
-| Dependency CVE scan (OSV-Scanner), weekly | `.github/workflows/security.yml` |
+| Dependency CVE scan (OSV-Scanner), weekly and on every push to `main`; fails on a finding | `.github/workflows/security.yml` |
 | CodeQL and OpenSSF Scorecard | `security.yml` and `scorecard.yml`; both run only once the repository is public |
 
-All actions are pinned by commit SHA.
+All actions are pinned by commit SHA, and no checkout leaves credentials behind.
+
+## Known gaps
+
+Recorded by the security and gitops audits of 2026-09-18, and closed by the owner, not by code:
+
+- **No server-side protection of `main`.** GitHub refuses rulesets, secret scanning and push
+  protection on a private repository on the free plan. Until the repository is public, only the
+  local hooks enforce pull-request-only and signed commits.
+- **No licence.** The author has not chosen one. It must exist before the repository is public.
+- **Sensitive-token scan in CI is off until the `SENSITIVE_TOKENS` secret is set.** The local
+  pre-push hook runs the scan meanwhile.
+
+The steps that close them are in [runbook-go-live.md](runbook-go-live.md).
 
 ## Reporting
 

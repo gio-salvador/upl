@@ -5,8 +5,9 @@ variable "cloudflare_api_token" {
 }
 
 variable "cloudflare_account_id" {
-  description = "The Cloudflare account that owns the Pages project."
+  description = "The Cloudflare account that owns the Pages project. Marked sensitive so it is masked in plan output, which the IaC workflow posts as a pull request comment."
   type        = string
+  sensitive   = true
 }
 
 variable "pages_project_name" {

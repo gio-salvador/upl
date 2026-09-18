@@ -20,14 +20,16 @@
   ! Content-Security-Policy
   ! Cross-Origin-Embedder-Policy
 
-# Machine-facing text. Served as UTF-8. The markdown alternates duplicate the HTML pages, so
-# search engines are asked to index the HTML only; crawlers may still fetch and read them.
+# Machine-facing text. The markdown alternates duplicate the HTML pages, so search engines are
+# asked to index the HTML only; crawlers may still fetch and read them.
 /*.md
-  Content-Type: text/markdown; charset=utf-8
   X-Robots-Tag: noindex
 
-/llms.txt
-  Content-Type: text/plain; charset=utf-8
+# The social image and the icon are meant to be shown on other sites. Link previews that load
+# them straight from here would be blocked by a same-origin resource policy, so it is lifted
+# for these two files only.
+/og-default.png
+  ! Cross-Origin-Resource-Policy
 
-/llms-full.txt
-  Content-Type: text/plain; charset=utf-8
+/favicon.svg
+  ! Cross-Origin-Resource-Policy
