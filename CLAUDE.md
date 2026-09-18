@@ -23,10 +23,28 @@ apply in full. This file adds only what is specific to this repository.
 6. **Respect for the traditions named in the text.** Connecting text written for this
    repository describes other religions and their figures accurately and without ranking them.
 
+7. **A teaching stays true to the core beliefs.** New or changed text under `content/` must not
+   contradict the beliefs listed in [docs/doctrine-guardrails.md](docs/doctrine-guardrails.md).
+   The ten core principles are the fixed centre: only the author adds, removes or redefines
+   one.
+8. **The traditions are kept in balance.** No tradition is the default lens. A page that
+   illustrates a belief through a tradition uses at least two, or none, and draws across the
+   range the teachings name (Christianity, Islam, Buddhism, Hinduism, Seicho-no-Ie and the
+   others), varying which comes first. Pages dedicated to one figure or practice are the
+   exception. The early text leans on Islam more than was intended; do not copy that pattern,
+   and do not reword those pages unless the author asks (decision 2).
+9. **The doctrine baseline is the author's.** Never run `scripts/check-doctrine.py` with
+   `--accept-core` or `--waive-imbalance`, and never edit `scripts/doctrine-baseline.json` or
+   loosen `scripts/doctrine-gate.json`, to make the gate pass. If the gate fails, fix the page
+   or stop and ask.
+
 ## Working
 
-- One gate entry point: `bash scripts/check.sh`. It runs the site checks and the vendored
-  toolkit gates. CI runs the same script.
+- One gate entry point: `bash scripts/check.sh`. It runs the site checks, the doctrine gate
+  and the vendored toolkit gates. CI runs the same script.
+- Before writing or changing anything under `content/`, read
+  [docs/doctrine-guardrails.md](docs/doctrine-guardrails.md), and check the result with
+  `python3 scripts/check-doctrine.py --report`.
 - The toolkit copy under `.claude/toolkit/` is vendored at a pinned version. Never edit it by
   hand; change it with `sct update`.
 - Plans live in `docs/plans/` and follow the fleet plan template.

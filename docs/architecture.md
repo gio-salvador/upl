@@ -32,8 +32,10 @@ flowchart LR
 ## Gates
 
 `scripts/check.sh` is the single gate entry point, used by CI and before every pull request. It
-runs the site checks (markdown lint, build, link gate) and the vendored toolkit gates in
-`.claude/toolkit/`. `CLAUDE.md` holds the locked decisions an agent or contributor must not
+runs the site checks (markdown lint, build, link gate), the doctrine gate
+(`scripts/check-doctrine.py`, which holds the teachings to the core beliefs and to a balance
+between traditions, see [doctrine-guardrails.md](doctrine-guardrails.md)) and the vendored
+toolkit gates in `.claude/toolkit/`. `CLAUDE.md` holds the locked decisions an agent or contributor must not
 break.
 
 ## Search and sharing

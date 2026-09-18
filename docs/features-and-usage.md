@@ -24,6 +24,12 @@ without the website.
    ```
 
 3. Add it to the numbered list in that folder's `README.md`, at the position matching `order`.
+4. Check it against the core beliefs and the balance between traditions
+   ([doctrine-guardrails.md](doctrine-guardrails.md)):
+
+   ```bash
+   python3 scripts/check-doctrine.py --report
+   ```
 
 The website picks the page up on the next build. Nothing in `site/` needs to change.
 
@@ -51,7 +57,8 @@ bash scripts/check.sh
 ```
 
 That one command runs everything CI runs. `bash scripts/check.sh site` runs only the four site
-checks below, and `bash scripts/check.sh gates` runs only the toolkit gates.
+checks below, and `bash scripts/check.sh gates` runs only the doctrine gate and the toolkit
+gates.
 
 ```bash
 npm --prefix site run lint:md
