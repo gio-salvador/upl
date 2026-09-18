@@ -1,18 +1,21 @@
 ---
 import { render } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { allEntries, trail, type Entry } from '../lib/nav';
+import { allEntries, neighbours, trail, type Entry } from '../lib/nav';
 import { describe } from '../lib/describe';
 
 export async function getStaticPaths() {
   const entries = await allEntries();
   return entries
     .filter((entry) => entry.id !== 'index')
-    .map((entry) => ({ params: { slug: entry.id }, props: { entry, crumbs: trail(entries, entry.id) } }));
+    .map((entry) => ({
+      params: { slug: entry.id },
+      props: { entry, crumbs: trail(entries, entry.id), ...neighbours(entries, entry.id) },
+    }));
 }
 
-interface Props { entry: Entry; crumbs: Entry[] }
-const { entry, crumbs } = Astro.props;
+interface Props { entry: Entry; crumbs: Entry[]; previous?: Entry; next?: Entry }
+const { entry, crumbs, previous, next } = Astro.props;
 const { Content } = await render(entry);
 const breadcrumbs = [
   { label: 'Home', href: '/' },
@@ -20,9 +23,15 @@ const breadcrumbs = [
 ];
 ---
 <Base title={entry.data.title} description={describe(entry.data, entry.body)} crumbs={breadcrumbs} ogType="article" article>
-  <p class="crumbs">
+  <nav class="crumbs" aria-label="Breadcrumb">
     <a href="/">Home</a>
-    {crumbs.map((c) => <span> / <a href={`/${c.id}/`}>{c.data.title}</a></span>)}
-  </p>
+    {crumbs.map((c) => <span><span class="sep" aria-hidden="true">/</span><a href={`/${c.id}/`}>{c.data.title}</a></span>)}
+  </nav>
   <article><Content /></article>
+  <nav class="pager" aria-label="Reading order">
+    {previous
+      ? <a class="previous" rel="prev" href={`/${previous.id}/`}><span>Previous</span><strong>{previous.data.title}</strong></a>
+      : <a class="previous" rel="prev" href="/"><span>Previous</span><strong>Home</strong></a>}
+    {next && <a class="next" rel="next" href={`/${next.id}/`}><span>Next</span><strong>{next.data.title}</strong></a>}
+  </nav>
 </Base>
