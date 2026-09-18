@@ -35,8 +35,9 @@ contributors.
 
 ## Locked decisions
 
-The decisions that must not be broken (single source, no rewording of teachings, static site,
-public tier, true to the core beliefs, balance between traditions) are in `CLAUDE.md` at the
+The ten decisions that must not be broken (among them: single source, no rewording of
+teachings, static site, public tier, true to the core beliefs, balance between traditions, the
+author's doctrine baseline, correct rendering on phone and desktop) are in `CLAUDE.md` at the
 repository root. Enforced by review and by the
 `process-locked` lens in `.claude/plan-review.yaml`.
 

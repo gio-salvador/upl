@@ -7,5 +7,8 @@ export const site = {
   paperPath: '/paper/unified-path-of-light-synphotodosism.pdf',
   ogImage: '/og-default.png',
   author: 'Giovanni S. Salvador',
+  // The licence of the teachings and the founding paper; see LICENSE at the repository root.
+  licenceName: 'CC BY-SA 4.0',
+  licenceUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
   locale: 'en_GB',
 };

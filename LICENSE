@@ -1,0 +1,81 @@
+Unified Path of Light (Synphotodosism): licence.
+
+This repository holds two kinds of work under two licences. Sections A, B and C
+below say which licence applies to a given file.
+
+================================================================================
+Section A: the teachings (CC BY-SA 4.0)
+================================================================================
+
+The following paths are licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International licence (CC BY-SA 4.0):
+
+  content/**
+  paper/**
+
+Copyright (c) 2026 Giovanni S. Salvador
+
+Full legal text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+Plain summary:   https://creativecommons.org/licenses/by-sa/4.0/
+SPDX identifier: CC-BY-SA-4.0
+
+In short, and without replacing the legal text: you may copy, share, translate
+and adapt the teachings, for any purpose, provided that you
+
+  - credit "Unified Path of Light (Synphotodosism), by Giovanni S. Salvador" and
+    link to the page or file you used, or to this repository;
+  - name the licence and link to it;
+  - say whether you changed the text; and
+  - share anything you build from it under the same licence.
+
+The canonical text is the one in `content/` in this repository, as published by
+the author. The licence does not let anyone present a changed version as the
+canonical text, or suggest that the author endorses a changed version or its
+use. The names "Unified Path of Light" and "Synphotodosism" are not licensed as
+trade marks by this file.
+
+================================================================================
+Section B: code and everything else (MIT)
+================================================================================
+
+Every file not covered by Section A or Section C, including `site/`, `scripts/`,
+`infra/`, `.github/`, `docs/` and the files at the top of the repository, is
+licensed under the MIT licence:
+
+Copyright (c) 2026 Giovanni S. Salvador
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+================================================================================
+Section C: third-party work
+================================================================================
+
+Work taken from other projects keeps its own licence and copyright notice:
+
+  - `.claude/toolkit/**` is a vendored copy of part of the
+    salvadorcloud-ai-toolkit, under Apache-2.0. The licence text is at
+    `LICENSES/Apache-2.0.txt`.
+  - Files adapted from the Salvador Cloud website repository are under the MIT
+    licence, copyright (c) 2026 Salvador Cloud Ltd.
+  - `site/src/assets/hero-crepuscular-rays.jpg` is in the public domain under
+    CC0 1.0.
+  - The fonts are under the SIL Open Font Licence 1.1 and are installed from npm
+    packages that carry the licence text.
+
+The full list, with sources and notices, is in THIRD-PARTY-NOTICES.md.

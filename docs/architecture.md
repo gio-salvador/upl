@@ -49,7 +49,8 @@ secrets are absent.
 ## Gates
 
 `scripts/check.sh` is the single gate entry point, used by CI and before every pull request. It
-runs the site checks (markdown lint, build, link gate), the doctrine gate
+runs the site checks (markdown lint, build, link gate, SEO gate), the rendering gate described
+below when something visual changed, the doctrine gate
 (`scripts/check-doctrine.py`, which holds the teachings to the core beliefs and to a balance
 between traditions, see [doctrine-guardrails.md](doctrine-guardrails.md)) and the vendored
 toolkit gates in `.claude/toolkit/`. `CLAUDE.md` holds the locked decisions an agent or contributor must not
@@ -77,7 +78,7 @@ Three things are drawn from structure rather than written into a teaching:
 
 - A numbered list of links that follows a heading (every "Contents" and "In this section"
   list) is shown as a set of cards. The markdown stays a plain list.
-- Every page ends with a pager to the previous and next page in reading order, worked out by
+- Every teaching page ends with a pager to the previous and next page in reading order, worked out by
   `readingOrder` in `site/src/lib/nav.ts` from the same `order` front matter as the navigation.
 - The home page opens with one photograph, `site/src/assets/hero-crepuscular-rays.jpg`, served
   in AVIF, WebP and JPEG at four widths by Astro's image pipeline at build time.
@@ -105,6 +106,10 @@ same route function as the pages (`site/src/lib/machine-text.ts`):
 carries Article JSON-LD, and the home page describes the founding paper. No dates are emitted,
 because the text carries none. The social image is drawn by `site/scripts/generate-og.mjs` and
 committed as `site/public/og-default.png`.
+
+The licence of the teachings (CC BY-SA 4.0, see `LICENSE`) is stated once, in
+`site/src/lib/site.ts`, and from there reaches the footer of every page as a `rel="license"`
+link, the `license` property of the JSON-LD, and the head of `llms.txt` and `llms-full.txt`.
 
 ## Decisions
 

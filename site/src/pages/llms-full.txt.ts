@@ -11,6 +11,6 @@ export const GET: APIRoute = async ({ site }) => {
   const pages = [root, ...readingOrder(entries)].map(
     (e) => `<!-- ${new URL(pagePath(e.id), site).href} -->\n\n${markdownFor(e).trim()}`,
   );
-  const head = `# ${meta.name} (${meta.alternateName}): full text\n\n> ${meta.summary}\n\nAuthor and founder: ${meta.author}.`;
+  const head = `# ${meta.name} (${meta.alternateName}): full text\n\n> ${meta.summary}\n\nAuthor and founder: ${meta.author}. Licence: ${meta.licenceName} (${meta.licenceUrl}).`;
   return new Response(`${[head, ...pages].join('\n\n---\n\n')}\n`);
 };

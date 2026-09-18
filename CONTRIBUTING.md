@@ -38,7 +38,7 @@ Then add the key to your GitHub account as a signing key: <https://github.com/se
    `chore/<short>`. Nothing is committed directly to `main`.
 2. Use conventional commits: `feat`, `fix`, `docs`, `chore`, `refactor`, `test`, `style`,
    `perf`, `build`, `ci`, `revert`.
-3. Before pushing, run the same checks CI runs:
+3. Before pushing, run the same gates CI runs (the pre-push hook adds the secret scan):
 
    ```bash
    bash scripts/check.sh
@@ -52,6 +52,12 @@ Then add the key to your GitHub account as a signing key: <https://github.com/se
 Naming, front matter, and writing conventions are in
 [docs/conventions.md](docs/conventions.md).
 
-## 5. Security
+## 5. Licence of contributions
+
+By opening a pull request you agree that your contribution is licensed under the licence that
+covers the files it touches, as set out in [LICENSE](LICENSE): CC BY-SA 4.0 for `content/` and
+`paper/`, MIT for everything else.
+
+## 6. Security
 
 Never commit a secret. To report a vulnerability, follow [SECURITY.md](SECURITY.md).
