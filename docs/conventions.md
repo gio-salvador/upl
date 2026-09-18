@@ -9,6 +9,11 @@ contributors.
   and `docs/`. Enforced by review.
 - The five top-level parts of `content/` carry a numeric prefix (`1-foundations`). Nothing
   below them does.
+- Everything written for Claude Code in this repository carries the `upl-` prefix: agents
+  (`.claude/agents/upl-*.md`), skills (`.claude/skills/upl-*/`), rules, commands and anything
+  of the kind added later. The prefix keeps a project-local tool from shadowing a fleet tool,
+  which carries `sc-`. The toolkit's own manifests (`content-review.yaml` and the others) and
+  the vendored `.claude/toolkit/` keep the names the toolkit reads them by. Enforced by review.
 - Branches and commits follow the conventional-commit style (`feat:`, `fix:`, `docs:`).
   Changes land through pull requests, never directly on `main`. Enforced by the local git
   hooks and, once enabled, the branch ruleset.
