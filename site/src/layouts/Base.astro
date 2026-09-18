@@ -4,7 +4,7 @@ import Meta from '../components/seo/Meta.astro';
 import JsonLd from '../components/seo/JsonLd.astro';
 import { allEntries, childrenOf } from '../lib/nav';
 import { site } from '../lib/site';
-import { breadcrumbListSchema, websiteSchema, type Crumb } from '../lib/structured-data';
+import { articleSchema, breadcrumbListSchema, paperSchema, websiteSchema, type Crumb } from '../lib/structured-data';
 
 interface Props {
   title: string;
@@ -12,11 +12,19 @@ interface Props {
   crumbs?: Crumb[];
   ogType?: 'website' | 'article';
   noindex?: boolean;
+  /** Set on content pages: emits Article JSON-LD and the markdown alternate link. */
+  article?: boolean;
 }
-const { title, description = site.tagline, crumbs = [], ogType, noindex } = Astro.props;
+const { title, description = site.tagline, crumbs = [], ogType, noindex, article } = Astro.props;
 const siteName = site.name;
 const origin = Astro.site!;
-const jsonLd = [websiteSchema(origin), ...(crumbs.length ? [breadcrumbListSchema(origin, crumbs)] : [])];
+const isHome = Astro.url.pathname === '/';
+const jsonLd = [
+  websiteSchema(origin),
+  ...(isHome ? [paperSchema(origin)] : []),
+  ...(article ? [articleSchema(origin, { title, description, href: Astro.url.pathname })] : []),
+  ...(crumbs.length ? [breadcrumbListSchema(origin, crumbs)] : []),
+];
 const parts = childrenOf(await allEntries(), 'index');
 ---
 <!doctype html>
@@ -26,6 +34,7 @@ const parts = childrenOf(await allEntries(), 'index');
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <Meta title={title} description={description} ogType={ogType} noindex={noindex} />
+    {(article || isHome) && <link rel="alternate" type="text/markdown" href={`${Astro.url.pathname}index.md`} />}
     <JsonLd data={jsonLd} />
   </head>
   <body>

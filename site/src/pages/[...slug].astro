@@ -19,7 +19,7 @@ const breadcrumbs = [
   ...[...crumbs, entry].map((e) => ({ label: e.data.title, href: `/${e.id}/` })),
 ];
 ---
-<Base title={entry.data.title} description={describe(entry.data, entry.body)} crumbs={breadcrumbs} ogType="article">
+<Base title={entry.data.title} description={describe(entry.data, entry.body)} crumbs={breadcrumbs} ogType="article" article>
   <p class="crumbs">
     <a href="/">Home</a>
     {crumbs.map((c) => <span> / <a href={`/${c.id}/`}>{c.data.title}</a></span>)}

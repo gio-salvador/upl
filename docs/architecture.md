@@ -44,6 +44,19 @@ tags (`components/seo/Meta.astro`) and Schema.org JSON-LD for the site and its b
 `sitemap-index.xml` and `robots.txt`. All absolute URLs come from the `SITE` environment
 variable.
 
+For language models and answer engines the build also writes, from the same entries and the
+same route function as the pages (`site/src/lib/machine-text.ts`):
+
+- a markdown alternate of every page, at the page's address plus `index.md`, announced in the
+  page head with `rel="alternate" type="text/markdown"`;
+- `llms.txt`, a short orientation and a linked outline of every page;
+- `llms-full.txt`, the whole text in reading order in one file.
+
+`robots.txt` allows every crawler and names the main AI crawlers explicitly. Each content page
+carries Article JSON-LD, and the home page describes the founding paper. No dates are emitted,
+because the text carries none. The social image is drawn by `site/scripts/generate-og.mjs` and
+committed as `site/public/og-default.png`.
+
 ## Decisions
 
 - **Content sits outside the site.** The text must outlive any website technology and stay

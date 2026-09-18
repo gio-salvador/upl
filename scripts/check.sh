@@ -13,6 +13,7 @@ if [ "$what" = all ] || [ "$what" = site ]; then
   npm --prefix site run lint:md
   npm --prefix site run build
   npm --prefix site run check:links
+  npm --prefix site run check:seo
 fi
 
 if [ "$what" = all ] || [ "$what" = gates ]; then
