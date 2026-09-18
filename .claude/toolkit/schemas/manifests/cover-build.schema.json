@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-cover-build manifest",
+  "description": "The generator, the dimensions, and the blind persona panel. Personas are required: an unscored cover is an opinion, and the panel is what makes it a verdict.",
+  "type": "object",
+  "properties": {
+    "default_slug": {
+      "type": "string"
+    },
+    "generator_command": {
+      "type": "string"
+    },
+    "dimensions": {
+      "type": "string"
+    },
+    "thumb_px": {
+      "type": "integer",
+      "description": "The browse-thumbnail legibility test size. A cover that fails here fails in the store."
+    },
+    "design_guide": {
+      "type": "string"
+    },
+    "inputs": {},
+    "outputs": {},
+    "personas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "marketplace": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "generator_command",
+    "personas"
+  ]
+}

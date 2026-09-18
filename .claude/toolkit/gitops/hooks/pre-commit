@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# Shared gitops hook (both tiers): branch guard (PR-only) + staged lint/format.
+# Attached via core.hooksPath by claude/gitops/setup-gitops.sh.
+set -euo pipefail
+
+root="$(git rev-parse --show-toplevel)"
+branch="$(git rev-parse --abbrev-ref HEAD)"
+
+# PR-only everywhere: refuse direct commits on the default branch.
+# Emergency bypass: GITOPS_ALLOW_MAIN=1 (logged loudly).
+case "$branch" in
+  main|master)
+    if [ "${GITOPS_ALLOW_MAIN:-}" = "1" ]; then
+      echo "pre-commit: !! GITOPS_ALLOW_MAIN=1 — allowing a direct commit on $branch. This bypasses PR-only policy." >&2
+    else
+      cat >&2 <<EOF
+pre-commit: direct commits to '$branch' are blocked (PR-only policy).
+  Create a feature branch:  git switch -c feat/<name>
+  Emergency override:       GITOPS_ALLOW_MAIN=1 git commit ...
+EOF
+      exit 1
+    fi
+    ;;
+esac
+
+# Run lint-staged if the repo provides it (Node repos). Best-effort, repo-local.
+if [ -f "$root/package.json" ] && grep -q '"lint-staged"' "$root/package.json" 2>/dev/null; then
+  if command -v pnpm >/dev/null 2>&1 && [ -f "$root/pnpm-lock.yaml" ]; then
+    (cd "$root" && pnpm exec lint-staged) || { echo "pre-commit: lint-staged failed." >&2; exit 1; }
+  elif command -v npx >/dev/null 2>&1; then
+    (cd "$root" && npx --no-install lint-staged) || { echo "pre-commit: lint-staged failed." >&2; exit 1; }
+  fi
+fi
+exit 0

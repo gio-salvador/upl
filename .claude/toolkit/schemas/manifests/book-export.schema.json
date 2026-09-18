@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-book-export manifest",
+  "description": "The manuscript, the matter around it, and the toolchain that renders it. output_path is a build artefact and is never hand-edited.",
+  "type": "object",
+  "properties": {
+    "default_slug": {
+      "type": "string"
+    },
+    "chapters_dir": {
+      "type": "string"
+    },
+    "front_matter": {
+      "type": "string"
+    },
+    "back_matter": {
+      "type": "string"
+    },
+    "metadata_file": {
+      "type": "string"
+    },
+    "output_path": {
+      "type": "string"
+    },
+    "stylesheet": {
+      "type": "string"
+    },
+    "design_guide": {
+      "type": "string"
+    },
+    "build_command": {
+      "type": "string"
+    },
+    "render_command": {
+      "type": "string"
+    },
+    "toolchain": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "marketplace": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "chapters_dir",
+    "output_path"
+  ]
+}

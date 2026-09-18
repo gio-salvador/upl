@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-technical manifest",
+  "description": "The reader's depth and the frameworks the lens maps claims to, so a mapping can be checked rather than asserted.",
+  "type": "object",
+  "properties": {
+    "audience": {
+      "type": "string"
+    },
+    "persona_doc": {
+      "type": "string"
+    },
+    "domain_scope": {
+      "type": [
+        "array",
+        "object",
+        "string"
+      ]
+    },
+    "frameworks": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "glossary": {
+      "type": "string"
+    },
+    "research_dir": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    }
+  }
+}

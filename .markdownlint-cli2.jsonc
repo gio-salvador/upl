@@ -10,5 +10,5 @@
     "MD003": { "style": "atx" },
     "MD004": { "style": "dash" }
   },
-  "ignores": ["**/node_modules/**", "site/dist/**", "site/.astro/**"]
+  "ignores": ["**/node_modules/**", ".claude/toolkit/**", "site/dist/**", "site/.astro/**"]
 }

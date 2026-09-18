@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Efficiency proposal (Goal G57)",
+  "description": "One entry in a repository's efficiency-proposal tracker. Structured rather than prose so the rule that efficiency never buys itself with quality can be checked, not merely instructed.",
+  "type": "object",
+  "required": ["id", "title", "target", "observation", "proposed_change", "quality", "confidence", "recommendation"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "target": { "type": "string", "minLength": 1 },
+    "observation": { "type": "string", "minLength": 1 },
+    "estimated_cost_today": { "type": "string" },
+    "proposed_change": { "type": "string", "minLength": 1 },
+    "quality": {
+      "type": "object",
+      "required": ["verdict", "argument"],
+      "properties": {
+        "verdict": {
+          "enum": ["neutral", "positive", "not-safe"],
+          "description": "not-safe is a legitimate outcome: it records what was considered and rejected. It simply may not be recommended for adoption."
+        },
+        "invariants_touched": { "type": "array", "items": { "type": "string" } },
+        "argument": { "type": "string", "minLength": 1 }
+      }
+    },
+    "confidence": { "enum": ["high", "medium", "low"] },
+    "what_would_confirm": { "type": "string" },
+    "recommendation": { "enum": ["adopt", "trial-one-unit", "needs-blast-radius-check", "hold"] },
+    "run": { "type": "string" }
+  }
+}

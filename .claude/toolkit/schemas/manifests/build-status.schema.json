@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-build-status manifest",
+  "description": "Where the units live and which fields to roll up. Purely diagnostic: this manifest drives a report, never a write.",
+  "type": "object",
+  "properties": {
+    "unit_word": {
+      "type": "string"
+    },
+    "project_file": {
+      "type": "string"
+    },
+    "units": {
+      "type": [
+        "object",
+        "array",
+        "string"
+      ]
+    },
+    "ledger": {},
+    "coverage": {},
+    "next_actions": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "units"
+  ]
+}

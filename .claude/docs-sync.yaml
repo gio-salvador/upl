@@ -1,0 +1,11 @@
+# sc-docs-sync manifest. docs/ documents the repository; content/ is the teachings and is
+# not managed by docs-sync.
+version: 1
+docs_root: docs
+index_file: docs/README.md
+readme_file: README.md
+architecture_file: docs/architecture.md
+exclude:
+  - "plans/*"
+semantic_nda: auto
+parity_check: "bash scripts/check.sh gates"

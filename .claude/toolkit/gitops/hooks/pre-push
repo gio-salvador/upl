@@ -1,0 +1,264 @@
+#!/usr/bin/env bash
+# Shared gitops hook (both tiers): signed-commit verify + gitleaks secret scan +
+# NDA forbidden-token scan + optional repo check, over the range being pushed.
+# Attached via core.hooksPath by claude/gitops/setup-gitops.sh.
+#
+# Tier and config are read from per-repo git config (set by the installer):
+#   gitops.tier        public | private
+#   gitops.repocheck   optional shell command run before push (e.g. "make check")
+# Fail-closed on the security-critical steps; never weaken to pass.
+set -euo pipefail
+
+root="$(git rev-parse --show-toplevel)"
+tier="$(git config --get gitops.tier || echo private)"
+repocheck="$(git config --get gitops.repocheck || true)"
+
+# Resolve the canonical NDA scanner's REPO ROOT from projects.json (fallback to $HOME path).
+# The scanner derives its config via `git rev-parse --show-toplevel`, so it must be invoked
+# with cwd inside the site repo.
+resolve_site_root() {
+  local cfg="$HOME/.claude/config/projects.json" base=""
+  if [ -r "$cfg" ] && command -v jq >/dev/null 2>&1; then
+    base="$(jq -r '.projects.salvador_cloud_site // empty' "$cfg" 2>/dev/null || true)"
+    base="${base/#\~/$HOME}"
+  fi
+  [ -n "$base" ] || base="$HOME/projects/salvador-cloud-site"
+  printf '%s' "$base"
+}
+
+# Determine the commit range being pushed: read stdin (git's pre-push protocol);
+# fall back to upstream..HEAD, then origin/main..HEAD, then all of HEAD.
+ranges=()
+while read -r _local_ref local_sha _remote_ref remote_sha; do
+  [ -z "${local_sha:-}" ] && continue
+  case "$local_sha" in *[!0]*) ;; *) continue ;; esac   # all-zero = branch delete
+  if printf '%s' "$remote_sha" | grep -q '[^0]'; then
+    ranges+=("$remote_sha..$local_sha")
+  else
+    # New branch (no remote ref yet): gate only the commits THIS push introduces,
+    # i.e. those not already on the remote default branch — not all of history
+    # (which may contain pre-signing-era commits we are not responsible for).
+    base="$(git symbolic-ref --quiet refs/remotes/origin/HEAD 2>/dev/null || true)"
+    [ -n "$base" ] || { git rev-parse --verify --quiet origin/main >/dev/null && base="origin/main"; }
+    [ -n "$base" ] || { git rev-parse --verify --quiet origin/master >/dev/null && base="origin/master"; }
+    if [ -n "$base" ]; then ranges+=("$base..$local_sha"); else ranges+=("$local_sha"); fi
+  fi
+done
+if [ "${#ranges[@]}" -eq 0 ]; then
+  up="$(git rev-parse --abbrev-ref --symbolic-full-name '@{u}' 2>/dev/null || true)"
+  if [ -n "$up" ]; then ranges=("$up..HEAD")
+  elif git rev-parse --verify --quiet origin/main >/dev/null; then ranges=("origin/main..HEAD")
+  else ranges=("HEAD"); fi
+fi
+
+# Gate only the commits THIS push introduces: exclude any commit already reachable from an
+# origin remote-tracking ref. After a rebase onto an updated default branch, the force-push
+# range (old-branch-tip..new) sweeps in the default branch's own commits, which may be unsigned
+# (e.g. an unsigned squash-merge tip) — those are already on the remote, not ours to re-gate.
+# A genuinely new commit is never on origin/*, so this never lets a new unsigned commit through.
+commits_in_range() { for r in "${ranges[@]}"; do git rev-list "$r" --not --remotes=origin 2>/dev/null || true; done | sort -u; }
+
+# 0) IDENTITY. Verified immediately before the push, never once at session start: the forge's
+#    active account is global mutable state and a concurrent session can move it underneath
+#    this one. Degrades to a warning where nothing is declared, so adopting the toolkit never
+#    breaks an existing repository on day one.
+guard=""
+for cand in "$root/.claude/toolkit/hooks/identity-guard.sh" \
+            "${CLAUDE_CONFIG_HOME:-$HOME/.claude}/hooks/identity-guard.sh"; do
+  [ -x "$cand" ] && { guard="$cand"; break; }
+done
+if [ -n "$guard" ]; then
+  bash "$guard" --quiet || { echo "pre-push: identity check failed. Push refused." >&2; exit 1; }
+else
+  echo "pre-push: identity guard not found - skipping (declare it by vendoring the toolkit)." >&2
+fi
+
+# 1) SIGNED COMMITS (required everywhere). Verify every pushed commit is signed.
+unsigned=0
+while read -r sha; do
+  [ -z "$sha" ] && continue
+  sig="$(git show -s --format='%G?' "$sha" 2>/dev/null || echo N)"
+  case "$sig" in G|U|E) ;; *) echo "pre-push: commit $sha is not signed ($sig)." >&2; unsigned=1 ;; esac
+done < <(commits_in_range)
+if [ "$unsigned" -ne 0 ]; then
+  echo "pre-push: unsigned commits in push (signing required). Configure signing or rebase --exec 'git commit --amend -S --no-edit'." >&2
+  exit 1
+fi
+
+# 2) GITLEAKS secret scan over the pushed range (fail-closed if missing).
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "pre-push: gitleaks not installed — required for secret scanning. brew install gitleaks" >&2
+  exit 1
+fi
+for r in "${ranges[@]}"; do
+  case "$r" in
+    *..*) gl_range="$r" ;;
+    *)    gl_range="$r" ;;   # single ref: scan all reachable
+  esac
+  if ! gitleaks detect --no-banner --redact --log-opts="$gl_range" --source "$root" >/dev/null 2>&1; then
+    echo "pre-push: gitleaks found a potential secret in $gl_range. Inspect with: gitleaks detect --log-opts='$gl_range' --source '$root' --verbose" >&2
+    exit 1
+  fi
+done
+
+# 3) NDA FORBIDDEN-TOKEN scan (universal, tier-scoped).
+#    public: scan commit messages AND file diffs (the repo IS a public surface, so client
+#            names in content are violations too).
+#    private: scan commit MESSAGES only — file content may legitimately name clients
+#            (e.g. the facts ledger, book research notes); messages must never name them.
+site_root="$(resolve_site_root)"
+scanner="$site_root/scripts/lib/scan-forbidden-tokens.sh"
+if [ -x "$scanner" ]; then
+  if [ "$tier" = "public" ]; then
+    feed() { for r in "${ranges[@]}"; do git log --format='%B' "$r" 2>/dev/null || true; git diff "$r" 2>/dev/null || true; done; }
+  else
+    feed() { for r in "${ranges[@]}"; do git log --format='%B' "$r" 2>/dev/null || true; done; }
+  fi
+  # Invoke with cwd in the site repo so the scanner finds its own config.
+  feed | ( cd "$site_root" && bash "$scanner" ) || { echo "pre-push: NDA forbidden-token scan failed — content blocked. (tier=$tier)" >&2; exit 1; }
+else
+  # Fall back to the toolkit's own generic gate before failing closed. The canonical scanner
+  # lives in one repository; a public-tier repo on a machine without that checkout still needs
+  # a real check, not an unusable hook.
+  generic=""
+  for cand in "$root/.claude/toolkit/scripts/check-public-ready.sh" \
+              "${CLAUDE_CONFIG_HOME:-$HOME/.claude}/scripts/check-public-ready.sh"; do
+    [ -x "$cand" ] && { generic="$cand"; break; }
+  done
+  if [ -n "$generic" ]; then
+    if [ "$tier" = "public" ]; then
+      bash "$generic" --strict || { echo "pre-push: public-readiness gate failed - content blocked." >&2; exit 1; }
+    else
+      bash "$generic" || { echo "pre-push: public-readiness gate failed - content blocked." >&2; exit 1; }
+    fi
+  elif [ "$tier" = "public" ]; then
+    echo "pre-push: no token scanner available (required for public tier)." >&2
+    exit 1
+  else
+    echo "pre-push: no token scanner available - skipping (private tier, advisory)." >&2
+  fi
+fi
+
+# 4) Optional repo check (full local CI parity), if configured.
+if [ -n "$repocheck" ]; then
+  echo "pre-push: running repo check: $repocheck"
+  ( cd "$root" && eval "$repocheck" ) || { echo "pre-push: repo check failed." >&2; exit 1; }
+fi
+
+# 5) VENDORED TOOLKIT DRIFT.
+#
+# WHY THIS GATE EXISTS. A repository that vendors the toolkit runs ITS OWN copy of these gates,
+# and `pre-push` prefers that copy over the machine-wide one. So a stale vendored copy does not
+# merely lag: it SHADOWS the fixed gate with the broken one, and it does so silently, because a
+# guard that is running looks exactly like a guard that is correct.
+#
+# That is not hypothetical. Six repositories here vendored 0.6.4 and kept running an
+# identity-guard that compared `gh`'s LOCAL LABEL instead of asking the forge -- the precise bug
+# 0.6.5 fixed. Every one of them reported "identity matches the profile" while doing so. Nothing
+# on the machine would have said a word; it was found by reading the files.
+#
+# So drift becomes a blocking condition at the moment it would ship, and the check reuses
+# `sct vendor --check`, which vendors to a temporary directory and diffs, rather than a second
+# comparison that could itself drift from the first.
+#
+# DEGRADES LOUDLY, NEVER SILENTLY. `sct` is not part of the `gates` vendor profile, so a
+# consuming repository may not have it. A check that cannot run says so (G44); it is only fatal
+# under --strict/CI, because failing every offline push over an unreachable toolkit would get
+# this hook deleted.
+#
+# TWO DIFFERENT THINGS, ONLY ONE OF WHICH IS THIS HOOK'S BUSINESS.
+#
+#   (a) The pin is BEHIND A RELEASE. That is the real failure: a released fix exists and this
+#       repository is still running the superseded copy. Blocking is right, and forcing the
+#       re-vendor is the whole point.
+#   (b) The toolkit CHECKOUT is merely ahead of the newest release, carrying unreleased commits.
+#       `sct_pin_state` deliberately does not call that stale (TK-072), because there is nothing
+#       the operator can do about it until a release happens.
+#
+# `sct vendor --check` cannot tell these apart: it diffs against the toolkit checkout AS IT IS,
+# so during ordinary development it reports every consuming repository as mismatched. Wiring it
+# here naively would block every push on the machine after every unreleased commit -- a gate that
+# fires constantly for a reason nobody can act on, which is a gate that gets deleted. So the pin
+# state decides first, and the content diff runs only where a diff actually means a hand-edit.
+if [ -d "$root/.claude/toolkit" ]; then
+  sct_bin=""
+  for cand in "$(command -v sct 2>/dev/null || true)" \
+              "${CLAUDE_CONFIG_HOME:-$HOME/.claude}/toolkit/bin/sct" \
+              "$root/.claude/toolkit/bin/sct"; do
+    [ -n "$cand" ] && [ -x "$cand" ] && { sct_bin="$cand"; break; }
+  done
+  # THE MACHINE-WIDE LIB FIRST, and this order is load-bearing rather than a preference.
+  # `sct_pin_state` answers "behind which release?" by reading the toolkit's git TAGS, and
+  # `sct_home` resolves from the sourced file's own location. Sourced from the VENDORED copy it
+  # therefore resolves to `.claude/toolkit`, which is a plain directory with no tags, so every
+  # pin classifies as `unknown` and the check silently degrades to off in exactly the
+  # repositories it exists to protect. Sourced from the machine-wide lib it resolves to the
+  # toolkit checkout, where the tags are.
+  lib=""
+  for cand in "${CLAUDE_CONFIG_HOME:-$HOME/.claude}/lib/common.sh" \
+              "$root/.claude/toolkit/lib/common.sh"; do
+    [ -r "$cand" ] && { lib="$cand"; break; }
+  done
+  pin="$(sed -n 's/^version:[[:space:]]*//p' "$root/.claude/toolkit.lock" 2>/dev/null | tr -d '"'"'"' ' | head -1)"
+
+  if [ -n "$lib" ] && [ -n "$pin" ]; then
+    state="$( . "$lib" 2>/dev/null; sct_pin_state "$pin" 2>/dev/null || true )"
+    case "$state" in
+      behind\ *)
+        echo "pre-push: the vendored toolkit is $state - it is running SUPERSEDED gates." >&2
+        echo "pre-push: pre-push prefers this repository's vendored copy over the machine-wide one," >&2
+        echo "pre-push: so a stale copy does not lag, it SHADOWS the fixed gates while reporting success." >&2
+        echo "pre-push: run 'sct vendor' and commit the result as a reviewable diff." >&2
+        exit 1 ;;
+      current|current+*)
+        # NOT STALE. Whether the content diff is meaningful now depends on something the pin
+        # state cannot see: `sct_pin_state` compares the pin to the newest RELEASE, so it says
+        # `current` for a pin of 0.6.6 even while the toolkit CHECKOUT sits at 0.6.7-unreleased.
+        # `vendor --check` diffs against that checkout, so running it here would report every
+        # correctly-vendored repository as "hand-edited" the moment the toolkit gains an
+        # unreleased commit. The diff is only meaningful when the checkout is the very version
+        # the lockfile names; otherwise the difference is just upstream work in progress.
+        # THE OLD GATE HERE WAS `VERSION file == pin`, AND IT IS GONE. It existed because
+        # `vendor --check` used to diff against the toolkit checkout as it stood, so running it
+        # at any other moment reported every correctly-vendored repository as hand-edited. The
+        # rail was the best available proxy for "is the diff meaningful", and it leaked: the
+        # VERSION file moves only on release while content moves on every commit, so a checkout
+        # three commits and one new gate past the tag still read as the pinned version. That gap
+        # is where the incident lived, and a client repository was blocked by it.
+        #
+        # `vendor --check` now verifies the vendored tree against the hash manifest written
+        # beside the lockfile at vendor time. It consults no toolkit checkout, so it is correct
+        # at any pin distance and the proxy is not needed.
+        #
+        # 1 AND 3 ARE DIFFERENT FINDINGS AND ONLY ONE OF THEM STOPS A PUSH. "The copy was
+        # edited" is a verified mismatch and blocking is right. "I could not verify" is a
+        # degradation, and G44 says it must say so, not that it must stop the work.
+        if [ -n "$sct_bin" ]; then
+          # `( ... ); rc=$?` DIES UNDER set -e. A compound command exiting non-zero is not
+          # exempt just because the next line reads $?, so the shell exits AT the subshell and
+          # every arm below is unreachable. The 3-arm written to degrade rather than block had
+          # therefore never once executed: a push was refused as a side effect of the hook
+          # dying, not by any decision in it. `|| rc_vc=$?` keeps the status and the control.
+          rc_vc=0
+          ( cd "$root" && "$sct_bin" vendor --check >/dev/null 2>&1 ) || rc_vc=$?
+          case "$rc_vc" in
+            0) ;;
+            3) echo "pre-push: the vendored toolkit predates integrity manifests - drift check DEGRADED TO OFF." >&2
+               echo "pre-push: run 'sct vendor' once to write one; this is not a failure." >&2
+               [ "${GITOPS_STRICT:-0}" = "1" ] && { echo "pre-push: strict mode: a check that cannot run is a failure." >&2; exit 1; } ;;
+            *) echo "pre-push: the vendored toolkit has been altered since it was vendored ($pin)." >&2
+               echo "pre-push: an edited vendored gate behaves differently from the version its lockfile names." >&2
+               echo "pre-push: run 'sct vendor' to restore it. Details: sct vendor --check" >&2
+               exit 1 ;;
+          esac
+        fi ;;
+      *)
+        echo "pre-push: cannot classify the vendored toolkit pin ('${pin:-unset}') - drift check DEGRADED TO OFF." >&2
+        [ "${GITOPS_STRICT:-0}" = "1" ] && { echo "pre-push: strict mode: a check that cannot run is a failure." >&2; exit 1; } ;;
+    esac
+  else
+    echo "pre-push: no toolkit lockfile or lib - vendored-toolkit drift check DEGRADED TO OFF (not skipped silently)." >&2
+    [ "${GITOPS_STRICT:-0}" = "1" ] && { echo "pre-push: strict mode: a check that cannot run is a failure." >&2; exit 1; }
+  fi
+fi
+exit 0

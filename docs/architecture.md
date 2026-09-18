@@ -29,6 +29,13 @@ flowchart LR
 - The markdown links between pages point at `.md` files so they work on GitHub. The link
   rewriter turns them into site routes at build time.
 
+## Gates
+
+`scripts/check.sh` is the single gate entry point, used by CI and before every pull request. It
+runs the site checks (markdown lint, build, link gate) and the vendored toolkit gates in
+`.claude/toolkit/`. `CLAUDE.md` holds the locked decisions an agent or contributor must not
+break.
+
 ## Search and sharing
 
 `site/src/layouts/Base.astro` gives every page a title, description, canonical URL, Open Graph

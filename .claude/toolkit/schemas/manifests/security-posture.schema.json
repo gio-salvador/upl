@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-security-posture manifest",
+  "description": "The locked posture baseline a diff is judged against. Without baseline there is nothing to detect a weakening from, and the lens becomes an opinion.",
+  "type": "object",
+  "properties": {
+    "baseline_docs": {
+      "type": [
+        "array",
+        "string"
+      ]
+    },
+    "iac_paths": {
+      "type": [
+        "array",
+        "string"
+      ]
+    },
+    "baseline": {
+      "type": [
+        "object",
+        "array"
+      ],
+      "description": "The tracked posture: headers, CSP, DNS and email records, WAF and rate limits, pinning. A change that lowers any of it is a finding."
+    },
+    "plan_revision_process": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "baseline"
+  ]
+}

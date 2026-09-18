@@ -27,3 +27,6 @@ package-lock.json -diff
 # === GitHub linguist hints ===
 content/** linguist-documentation
 docs/** linguist-documentation
+
+# === Vendored toolkit (pinned copy, never edited by hand) ===
+.claude/toolkit/** linguist-vendored

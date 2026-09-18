@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-brand-design manifest",
+  "description": "The declared brand identity and the token single source of truth the lens judges a diff against. Without token_sot there is no way to tell a stray literal from a legitimate value.",
+  "type": "object",
+  "properties": {
+    "brand_docs": {
+      "type": [
+        "array",
+        "string"
+      ]
+    },
+    "token_sot": {
+      "type": [
+        "string",
+        "array"
+      ]
+    },
+    "design_paths": {
+      "type": [
+        "array",
+        "string"
+      ]
+    },
+    "deviation_log": {
+      "type": "string"
+    },
+    "imagery_policy": {},
+    "intake_default": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "token_sot",
+    "design_paths"
+  ]
+}

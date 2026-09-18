@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-efficiency-optimizer manifest",
+  "description": "Tells the observer what quality means here, so it can never propose trading it away.",
+  "type": "object",
+  "required": ["invariants_doc", "output_path", "work_unit"],
+  "properties": {
+    "invariants_doc": {
+      "type": ["string", "array"],
+      "description": "The quality rules the optimizer must never trade against. Required: without it the agent would judge cost against nothing."
+    },
+    "output_path": {
+      "type": "string",
+      "description": "Append-only tracker, resolved inside the repository root. Never shared between projects."
+    },
+    "work_unit": { "type": "string" },
+    "review_loop": {
+      "type": "object",
+      "properties": {
+        "cap": { "type": "integer", "minimum": 1 },
+        "reviewer_types": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "structure_doc": { "type": ["string", "array"] },
+    "context": { "type": "object" }
+  }
+}

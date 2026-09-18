@@ -1,0 +1,246 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://salvador.cloud/schemas/repo-profile.schema.json",
+  "title": "Repository profile",
+  "description": "The single place a repository describes itself. Skill manifests inherit from this and hold only what is genuinely skill-specific (TK-009). Written by `sct init`; validated by `sct validate`.",
+  "type": "object",
+  "required": [
+    "version",
+    "repo",
+    "identity",
+    "gitops"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "self_contained": {
+      "type": "boolean",
+      "default": false,
+      "description": "Skip the optional global instance layer entirely. Set true for a repository that must resolve identically on any machine."
+    },
+    "repo": {
+      "type": "object",
+      "required": [
+        "name",
+        "purpose"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "purpose": {
+          "type": "string",
+          "description": "One sentence: what this repository is."
+        },
+        "content_surfaces": {
+          "type": "array",
+          "description": "Which disclosure surfaces this repository produces content for.",
+          "items": {
+            "enum": [
+              "cv",
+              "pitch",
+              "site",
+              "book",
+              "linkedin",
+              "public",
+              "internal",
+              "none"
+            ]
+          }
+        },
+        "boundaries": {
+          "type": "array",
+          "description": "What deliberately lives elsewhere, and where (Goal G32).",
+          "items": {
+            "type": "object",
+            "required": [
+              "holds",
+              "location"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "holds": {
+                "type": "string"
+              },
+              "location": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "description": "Git and forge identity for this repository (Goals G62, G63). Never inherited by luck.",
+      "required": [
+        "email"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "account": {
+          "type": "string",
+          "description": "Forge account that must be active for API calls."
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "signing_key": {
+          "type": "string"
+        },
+        "ssh_alias": {
+          "type": "string",
+          "description": "Host alias the remote must use, when not the default."
+        },
+        "remote": {
+          "type": "string"
+        }
+      }
+    },
+    "gitops": {
+      "type": "object",
+      "required": [
+        "tier"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "tier": {
+          "enum": [
+            "public",
+            "private",
+            "exempt"
+          ]
+        },
+        "repo_check": {
+          "type": "string",
+          "description": "Command run before push."
+        },
+        "main_policy": {
+          "enum": [
+            "pr-only",
+            "direct"
+          ],
+          "default": "pr-only"
+        }
+      }
+    },
+    "concurrency": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "model": {
+          "enum": [
+            "worktree",
+            "shared"
+          ],
+          "default": "worktree"
+        },
+        "reason": {
+          "type": "string",
+          "description": "Required when model is shared: why isolation is not affordable here."
+        }
+      }
+    },
+    "context": {
+      "type": "object",
+      "description": "What the reviewer lenses reason with. Paths are relative to the repository root.",
+      "additionalProperties": false,
+      "properties": {
+        "voice": {
+          "type": "string"
+        },
+        "personas": {
+          "type": "string"
+        },
+        "glossary": {
+          "type": "string"
+        },
+        "fact_source": {
+          "type": "string"
+        },
+        "evidence_markers": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "INTERNAL",
+              "PUBLIC",
+              "ASSUMPTION",
+              "UNVERIFIED",
+              "NEEDS-SOURCE"
+            ]
+          }
+        }
+      }
+    },
+    "state": {
+      "type": "object",
+      "description": "Durable state skills produce and later depend on (Goal G39).",
+      "additionalProperties": false,
+      "properties": {
+        "generated": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Rebuildable, never hand-edited, each with a --check mode."
+        },
+        "authored": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "local_only": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Gitignored, each with a committed .example."
+        }
+      }
+    },
+    "efficiency": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "observer_threshold_tool_calls": {
+          "type": "integer",
+          "default": 40,
+          "description": "The standing observer engages above this size (TK-015)."
+        },
+        "review_loop_cap": {
+          "type": "integer",
+          "default": 3
+        },
+        "record_path": {
+          "type": "string",
+          "default": ".claude/efficiency/run-records.yaml",
+          "description": "Append-only run records (Goal G58). Must resolve inside the repository."
+        },
+        "context_budget_lines": {
+          "type": "integer",
+          "default": 400,
+          "description": "Per-file line budget for skills and agents (Goal G60). Declaring it makes the check blocking in this repository."
+        }
+      }
+    },
+    "todo": {
+      "type": "array",
+      "description": "Fields `sct init` could not infer. Non-empty means the profile is incomplete, and validate reports it.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "enforce_instruction_ownership": {
+      "type": "boolean",
+      "default": false,
+      "description": "Make the instruction-ownership check blocking here. Off by default: the fleet rules are the toolkit's, and failing a host's build over its vocabulary is how an inherited gate gets deleted."
+    }
+  }
+}

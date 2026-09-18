@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-data-flow-map manifest",
+  "description": "Where a repository's data-flow register lives, what surface its canvas may be published to, and the jurisdictions and processors the map is judged against. The surface is required: the canvas names processors, hostnames and where personal data sits, and publishing it without a declared surface is an undeclared outward send.",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "register": {
+      "type": "string",
+      "description": "Path the machine-readable register is written to. Defaults to .claude/data-flow/register.yaml. Regenerated deterministically: a second consecutive run is a zero diff."
+    },
+    "surface": {
+      "type": "string",
+      "description": "The sc-nda-check surface the canvas is cleared for. Required: an undeclared surface is treated as public, the most restrictive, and the canvas is withheld until the check passes."
+    },
+    "canvas": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Local path the canvas HTML is written to before any publish. The local file is always written; publishing is gated."
+    },
+    "jurisdictions": {
+      "type": [
+        "array",
+        "string"
+      ],
+      "description": "Regimes the map is read against (e.g. uk-gdpr, eu-gdpr, hipaa, pci-dss). Drives which sink rules are blockers."
+    },
+    "processors": {
+      "type": [
+        "array",
+        "object"
+      ],
+      "description": "Known third-party processors and their transfer mechanism. A sink resolving to a processor absent here is an unknown destination, which is a finding."
+    },
+    "classification_extensions": {
+      "type": "object",
+      "description": "Additional classes beyond the shipped taxonomy. Extensions add classes; they never redefine or relax a shipped one."
+    },
+    "scope": {
+      "type": "object",
+      "properties": {
+        "include": {
+          "type": [
+            "array",
+            "string"
+          ]
+        },
+        "exclude": {
+          "type": [
+            "array",
+            "string"
+          ]
+        }
+      },
+      "description": "An excluded path is unmapped, not clean, so exclusions belong here where they are reviewable."
+    }
+  },
+  "required": [
+    "surface"
+  ]
+}

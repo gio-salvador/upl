@@ -1,0 +1,26 @@
+# Paths where the long-dash rule is BLOCKING (Goal G7, TK-025).
+#
+# Staged deliberately: a gate that would freeze an unmigrated repository gets bypassed instead
+# of adopted. Newly authored material is held to the rule from the first commit; the inherited
+# corpus is advisory until migrated, and the flip condition is recorded in TK-025.
+#
+# One prefix per line. A tracked file whose path starts with a prefix here is blocking.
+README.md
+CHARTER.md
+SECURITY.md
+CHANGELOG.md
+docs/README.md
+docs/architecture.md
+docs/conventions.md
+docs/features-and-usage.md
+docs/security.md
+docs/decisions/
+docs/plans/
+config/evidence-vocabulary.md
+config/global-claude.md.example
+config/voice/
+schemas/
+lib/
+bin/
+scripts/
+tests/

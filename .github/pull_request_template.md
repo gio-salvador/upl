@@ -6,8 +6,7 @@
 
 ## Checklist
 
-- [ ] `npm --prefix site run build` and `npm --prefix site run check:links` pass
-- [ ] `npm --prefix site run lint:md` passes
+- [ ] `bash scripts/check.sh` passes
 - [ ] New or moved pages under `content/` have `title` and `order` front matter and are
       listed in their folder's `README.md`
 - [ ] A change to the wording of a teaching is called out above, separately from

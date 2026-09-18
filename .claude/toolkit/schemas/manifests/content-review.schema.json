@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-content-review manifest",
+  "description": "Declares this repository's content types and the reviewer lenses each one is gated by. Without content_types the orchestrator cannot match a file to a type and must stop rather than guess.",
+  "type": "object",
+  "required": ["content_types"],
+  "properties": {
+    "content_types": {
+      "type": "object",
+      "description": "Keyed by content-type name. Each declares how a file is matched and what judges it.",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "match": { "type": ["string", "array"] },
+          "surface": { "enum": ["cv", "pitch", "site", "book", "linkedin", "public", "internal"] },
+          "voice": { "type": "string" },
+          "persona": { "type": "string" },
+          "scaffold": { "type": "array" },
+          "lenses": {
+            "type": "array",
+            "items": {
+              "enum": ["domain-accuracy", "citation", "ip", "audience-reader", "editor",
+                       "consistency", "scaffold", "titles", "ats-safety", "technical",
+                       "regulatory", "security-posture", "brand-design", "nda", "plain-language"]
+            }
+          },
+          "machine_checks": { "type": "array", "items": { "type": "string" } },
+          "consistency_with": { "type": ["string", "array"] },
+          "fact_source": { "type": ["string", "array"] },
+          "length_band": { "type": ["string", "object"] }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+# Vendored toolkit defaults: the lowest layer of the resolution chain (TK-010).
+#
+# Anything here must be safe in ANY repository, on ANY machine, for ANY operator. A value that
+# is only right for one person belongs in the instance overlay, not here.
+version: 1
+
+gitops:
+  tier: private            # the safe default: a repository is treated as private until declared public
+  main_policy: pr-only
+
+concurrency:
+  model: worktree          # TK-013
+
+efficiency:
+  observer_threshold_tool_calls: 40
+  review_loop_cap: 3
+
+context:
+  voice: core              # config/voice/core.md, the voice-neutral invariants
+  evidence_markers: [INTERNAL, PUBLIC, ASSUMPTION, UNVERIFIED, NEEDS-SOURCE]
+
+docs:
+  root: docs
+  index: README.md
+  required_pages: [features-and-usage, architecture, security, conventions]

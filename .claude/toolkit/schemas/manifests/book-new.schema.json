@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-book-new manifest",
+  "description": "The folder layout and the templates a new project is scaffolded from.",
+  "type": "object",
+  "properties": {
+    "unit_noun": {
+      "type": "string"
+    },
+    "project_root": {
+      "type": "string"
+    },
+    "subfolders": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "descriptor_template": {
+      "type": "string"
+    },
+    "skeleton_template": {
+      "type": "string"
+    },
+    "content_map_template": {
+      "type": "string"
+    },
+    "dependency_map_template": {
+      "type": "string"
+    },
+    "skeleton_path": {
+      "type": "string"
+    },
+    "content_map_path": {
+      "type": "string"
+    },
+    "dependency_map_path": {
+      "type": "string"
+    },
+    "plan_review_path": {
+      "type": "string"
+    },
+    "default_audience": {
+      "type": "string"
+    },
+    "navigation_baseline": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "project_root"
+  ]
+}

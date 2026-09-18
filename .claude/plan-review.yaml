@@ -1,0 +1,65 @@
+# sc-plan-review manifest. The skill and the sc-plan-reviewer agent stay generic.
+plan_globs:
+  - "docs/plans/**/*.md"
+
+constitution: "CLAUDE.md"
+rule_library: "docs/"
+
+lenses:
+  accuracy:
+    when: always
+    role: >-
+      Verify, do not trust. Open every file, script, workflow, config key and path the plan
+      names and mark each claim CONFIRMED or WRONG with file:line. A wrong factual claim is a
+      blocker; an unverifiable assertion or a missed dependency is a major.
+    grounds_in:
+      - "site/astro.config.mjs"
+      - "site/package.json"
+      - "site/public/_headers"
+      - ".github/workflows/"
+      - "scripts/check.sh"
+      - ".claude/profile.yaml"
+
+  process-locked:
+    when: always
+    role: >-
+      Hold the plan to the locked decisions in CLAUDE.md: content/ is the single source, no
+      teaching is reworded, the site stays static on the Cloudflare Pages free plan, public
+      tier from day one, PR-only with signed commits. Flag any step that weakens one.
+    grounds_in:
+      - "CLAUDE.md"
+      - "docs/conventions.md"
+
+  completeness-sequencing:
+    when: always
+    role: >-
+      Check that the plan states goals, at least one non-goal and falsifiable success
+      criteria, that each step is one pull request leaving main green, and that every
+      load-bearing ordering is stated with its reason. A missing Goals or Success criteria
+      section is a blocker.
+    grounds_in:
+      - "docs/plans/"
+
+  public-surface:
+    when: always
+    role: >-
+      The plan is a committed document in a repository that will be public. Check its body for
+      secrets, account identifiers, client or engagement names, and any security detail that
+      would help an attacker (unpatched weaknesses, token scopes beyond what is needed to
+      review the plan).
+    grounds_in:
+      - "CLAUDE.md"
+      - "docs/security.md"
+
+  security-posture:
+    when: "the plan touches .github/workflows/, infra/, site/public/_headers or credentials"
+    role: >-
+      Judge the change against the posture in docs/security.md: SHA-pinned actions, least
+      privilege workflow permissions, no inline secrets, no CSP weakening, no new third-party
+      origin, deploy only from main.
+    grounds_in:
+      - "docs/security.md"
+      - "site/public/_headers"
+
+loop:
+  cap: 3
