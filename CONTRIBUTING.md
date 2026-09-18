@@ -17,7 +17,7 @@ npm --prefix site install
 npm --prefix site run dev
 ```
 
-Node.js 22.12 or later is required. See
+Node.js 22.19 or later is required. See
 [docs/features-and-usage.md](docs/features-and-usage.md) for how to add a page or a section.
 
 ### Signed commits required

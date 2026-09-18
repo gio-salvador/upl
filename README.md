@@ -7,7 +7,7 @@ it. It is for anyone who wants to read, study, or contribute to the teachings.
 ## Setup
 
 Reading needs nothing: start at [content/README.md](content/README.md). The website needs
-Node.js 22.12 or later:
+Node.js 22.19 or later:
 
 ```bash
 npm --prefix site install
