@@ -25,10 +25,13 @@ lenses:
     role: >-
       Hold the plan to the locked decisions in CLAUDE.md: content/ is the single source, no
       teaching is reworded, the site stays static on the Cloudflare Pages free plan, public
-      tier from day one, PR-only with signed commits. Flag any step that weakens one.
+      tier from day one, PR-only with signed commits, teachings true to the core beliefs, the
+      traditions kept in balance, the doctrine baseline changed only by the author. Flag any
+      step that weakens one.
     grounds_in:
       - "CLAUDE.md"
       - "docs/conventions.md"
+      - "docs/doctrine-guardrails.md"
 
   completeness-sequencing:
     when: always
