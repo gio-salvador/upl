@@ -6,3 +6,5 @@
 !.env.example
 *.pem
 *.key
+.dev.vars
+.wrangler/

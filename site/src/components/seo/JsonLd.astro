@@ -4,5 +4,8 @@
 // Adapted from salvador-cloud-site (MIT), see THIRD-PARTY-NOTICES.md.
 interface Props { data: Record<string, unknown>[] }
 const { data } = Astro.props;
+// JSON.stringify leaves `<` alone, so a title containing `</script>` would close the block and
+// inject markup into the head. Escaping `<` keeps the JSON valid and the block closed.
+const encode = (block: Record<string, unknown>) => JSON.stringify(block).replace(/</g, '\\u003c');
 ---
-{data.map((block) => <script is:inline type="application/ld+json" set:html={JSON.stringify(block)} />)}
+{data.map((block) => <script is:inline type="application/ld+json" set:html={encode(block)} />)}

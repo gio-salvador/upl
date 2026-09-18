@@ -19,11 +19,13 @@ concurrency:
 
 jobs:
   build:
-    name: Lint markdown + build site + link check
+    name: Site gate (lint, build, links, SEO)
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
@@ -35,14 +37,11 @@ jobs:
       - name: Install
         run: npm --prefix site ci
 
-      - name: Markdownlint
-        run: npm --prefix site run lint:md
-
-      - name: Build
-        run: npm --prefix site run build
-
-      - name: Link check
-        run: npm --prefix site run check:links
+      # The same entry point as the pre-PR check: markdown lint, build, link gate, SEO gate.
+      - name: Site gate
+        env:
+          SITE: ${{ vars.SITE || format('https://{0}.pages.dev', vars.PAGES_PROJECT_NAME || 'unified-path-of-light') }}
+        run: bash scripts/check.sh site
 
   gates:
     name: Toolkit gates (docs, claims, plans, hardcoding, public readiness)
@@ -50,11 +49,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       # The gates are the pinned copy vendored under .claude/toolkit, so CI needs no access to
       # the toolkit repository and an upgrade arrives as a reviewable diff.
+      # The sensitive-token list is never committed. When the SENSITIVE_TOKENS secret holds it
+      # (one token per line), the public-readiness gate scans every tracked file against it.
+      # Without the secret that one check is off, and says so.
       - name: Run vendored gates
-        run: bash scripts/check.sh gates
+        env:
+          SENSITIVE_TOKENS: ${{ secrets.SENSITIVE_TOKENS }}
+        run: |
+          set -euo pipefail
+          if [ -n "${SENSITIVE_TOKENS}" ]; then
+            SCT_TOKENS_FILE="$(mktemp)"
+            printf '%s\n' "${SENSITIVE_TOKENS}" > "${SCT_TOKENS_FILE}"
+            export SCT_TOKENS_FILE
+          else
+            echo "::notice title=Token scan off::The SENSITIVE_TOKENS secret is not set, so the sensitive-token scan did not run."
+          fi
+          bash scripts/check.sh gates
 
   gitleaks:
     name: Secret scan (gitleaks)
@@ -63,6 +78,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          persist-credentials: false
           fetch-depth: 0
 
       # The gitleaks binary, pinned by version and verified by SHA-256.

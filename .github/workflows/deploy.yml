@@ -36,6 +36,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
@@ -120,6 +122,7 @@ jobs:
           for path in /sitemap-index.xml /robots.txt /llms.txt /llms-full.txt /foundations/purpose/ /foundations/purpose/index.md; do
             curl -sf "${ORIGIN}${path}" -o /dev/null || { echo "::error::${path} is not reachable"; exit 1; }
           done
+          curl -sI "${ORIGIN}/llms-full.txt" | grep -i '^content-type:' | grep -iq 'utf-8' || { echo "::error::llms-full.txt is not served as UTF-8"; exit 1; }
           # A page link without its slash must redirect, not 404.
           code="$(curl -s -o /dev/null -w '%{http_code}' "${ORIGIN}/foundations")"
           case "$code" in 301|308) ;; *) echo "::error::/foundations returned ${code}, expected a redirect to /foundations/"; exit 1 ;; esac

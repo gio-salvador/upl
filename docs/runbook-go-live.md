@@ -65,6 +65,10 @@ Variables (same page, Variables tab):
 `gh secret set <NAME>` prompts for each value without echoing it, which keeps secrets out of
 your shell history.
 
+Optional but recommended: a `SENSITIVE_TOKENS` secret holding your sensitive-token list, one
+token per line. CI then scans every tracked file against it on every pull request. The list
+itself never enters the repository.
+
 ## 5. Deploy
 
 Run the Deploy workflow from the Actions tab, or merge any pull request. The run uploads the
@@ -77,6 +81,20 @@ Once the repository is public (or on a paid GitHub plan), add a branch ruleset o
 request required, the three CI checks and the Deploy check required, signed commits, no force
 push, no deletion. On a private repository on the free plan GitHub refuses this; that is a
 recorded gap, not a pass.
+
+## 7. Repository settings
+
+These are account settings, so they are yours to apply:
+
+```bash
+gh api -X PUT repos/gio-salvador/upl/vulnerability-alerts
+gh api -X PUT repos/gio-salvador/upl/automated-security-fixes
+gh api -X PATCH repos/gio-salvador/upl -F delete_branch_on_merge=true
+```
+
+The first two turn on Dependabot alerts and security updates, which the free plan offers on a
+private repository. Once the repository is public, also turn on secret scanning and push
+protection in Settings, Code security.
 
 ## Rolling back
 
