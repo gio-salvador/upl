@@ -21,3 +21,15 @@ export function trail(entries: Entry[], id: string): Entry[] {
     .map((_, i) => entries.find((e) => e.id === parts.slice(0, i + 1).join('/')))
     .filter((e): e is Entry => Boolean(e));
 }
+
+/** Every page in reading order: each section is followed by its own pages, depth first. */
+export function readingOrder(entries: Entry[], id = 'index'): Entry[] {
+  return childrenOf(entries, id).flatMap((child) => [child, ...readingOrder(entries, child.id)]);
+}
+
+/** The pages before and after `id` in reading order, for the pager at the foot of a page. */
+export function neighbours(entries: Entry[], id: string): { previous?: Entry; next?: Entry } {
+  const order = readingOrder(entries);
+  const at = order.findIndex((e) => e.id === id);
+  return { previous: order[at - 1], next: order[at + 1] };
+}

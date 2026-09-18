@@ -52,11 +52,33 @@ break.
 
 ## Rendering on phone and desktop
 
-The layout is one fluid column, capped at 44rem, with no breakpoints to maintain. It is held
-correct by a gate, not by inspection: `site/scripts/check-mobile.mjs` renders every page at
+The text is one fluid column capped at a reading measure of 42rem; the header and footer share
+a wider bar. There are two breakpoints, both in `site/src/styles/global.css`: on a phone the
+five parts stay on one row that scrolls sideways inside the header, and from 36rem the pager
+sits in two columns. It is held correct by a gate, not by inspection: `site/scripts/check-mobile.mjs` renders every page at
 phone, tablet and desktop widths. Desktop widths run the same overflow check as phones, so a
 mobile fix that breaks the desktop view fails too. Touch-target sizes are set in
 `site/src/styles/global.css`.
+
+## Presentation
+
+All presentation lives in `site/src/styles/global.css` and `site/src/layouts/Base.astro`; the
+teachings carry none. The stylesheet defines the colour tokens for the light and dark schemes
+(text colours hold at least 4.5:1 contrast), the type scale, and print rules. Two typefaces are
+self-hosted from pinned npm packages, because the Content-Security-Policy allows fonts from
+this origin only: Cormorant Garamond for headings and Source Serif 4 for text.
+
+Three things are drawn from structure rather than written into a teaching:
+
+- A numbered list of links that follows a heading (every "Contents" and "In this section"
+  list) is shown as a set of cards. The markdown stays a plain list.
+- Every page ends with a pager to the previous and next page in reading order, worked out by
+  `readingOrder` in `site/src/lib/nav.ts` from the same `order` front matter as the navigation.
+- The home page opens with one photograph, `site/src/assets/hero-crepuscular-rays.jpg`, served
+  in AVIF, WebP and JPEG at four widths by Astro's image pipeline at build time.
+
+The header marks the part the reader is in with `aria-current`, and a skip link leads to the
+text.
 
 ## Search and sharing
 
