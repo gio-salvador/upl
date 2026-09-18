@@ -68,9 +68,14 @@ Variables (same page, Variables tab):
 `gh secret set <NAME>` prompts for each value without echoing it, which keeps secrets out of
 your shell history.
 
-Optional but recommended: a `SENSITIVE_TOKENS` secret holding your sensitive-token list, one
-token per line. CI then scans every tracked file against it on every pull request. The list
-itself never enters the repository.
+Required before the repository is public, and recommended now: a `SENSITIVE_TOKENS` secret
+holding your sensitive-token list, one token per line. CI then scans every tracked file against
+it on every pull request. The list itself never enters the repository. Once the repository is
+public, the toolkit gates job fails until this secret exists.
+
+```bash
+gh secret set SENSITIVE_TOKENS < path/to/your-token-list.txt
+```
 
 ## 5. Deploy
 
@@ -82,9 +87,13 @@ a deep page, its markdown alternate, and the redirect for a page address without
 
 Once the repository is public (or on a paid GitHub plan), add a branch ruleset on `main`: pull
 request required, the four CI checks (site gate, rendering gate, toolkit gates, gitleaks) and
-the Deploy check required, signed commits, no force
-push, no deletion. On a private repository on the free plan GitHub refuses this; that is a
-recorded gap, not a pass.
+the Deploy check required, signed commits, no force push, no deletion. Add the OSV-Scanner and
+CodeQL checks from the Security workflow to the required set once each has run on a pull
+request. On a private repository on the free plan GitHub refuses this; that is a recorded gap,
+not a pass.
+
+In the same sitting, under Settings, Code security, turn on secret scanning and push
+protection. GitHub does not turn them on by itself when a repository becomes public.
 
 ## 7. Repository settings
 
