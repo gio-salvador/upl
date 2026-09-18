@@ -33,6 +33,15 @@ contributors.
 - The pages under `content/1-foundations/` and `content/2-doctrine/` are locked by
   fingerprint. A change to one is recorded by the author. Enforced by the same gate.
 
+## Cross-references
+
+- Every concept has one owner page, every page has a status, and every known overlap between
+  pages is a recorded finding. The index is `scripts/content-index.json` and the readable view
+  is [cross-reference.md](cross-reference.md). Enforced by `scripts/check-content-index.py` in
+  `scripts/check.sh`.
+- A new or changed page under `content/` fails the gate until it has been re-read against the
+  matrix and recorded with `--record`, so the matrix is updated before any merge.
+
 ## Locked decisions
 
 The ten decisions that must not be broken (among them: single source, no rewording of

@@ -52,7 +52,9 @@ secrets are absent.
 runs the site checks (markdown lint, build, link gate, SEO gate), the rendering gate described
 below when something visual changed, the doctrine gate
 (`scripts/check-doctrine.py`, which holds the teachings to the core beliefs and to a balance
-between traditions, see [doctrine-guardrails.md](doctrine-guardrails.md)) and the vendored
+between traditions, see [doctrine-guardrails.md](doctrine-guardrails.md)) the cross-reference gate
+(`scripts/check-content-index.py`, which keeps one owner page per concept and a register of
+overlaps between pages, see [cross-reference.md](cross-reference.md)) and the vendored
 toolkit gates in `.claude/toolkit/`. `CLAUDE.md` holds the locked decisions an agent or contributor must not
 break.
 

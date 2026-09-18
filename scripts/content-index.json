@@ -1,0 +1,928 @@
+{
+  "_about": "The cross-reference index of the teachings. Read docs/cross-reference.md first. Concepts, page status and findings are kept by hand; fingerprints are stamped by scripts/check-content-index.py --record after the changed pages have been re-read against the index; mentions are worked out from the terms on every run.",
+  "concepts": {
+    "name": {
+      "label": "The name Synphotodosism",
+      "owner": "content/1-foundations/name-mission-and-vision.md",
+      "terms": [
+        "synphotodos\\w+"
+      ]
+    },
+    "mission-and-vision": {
+      "label": "Mission and vision",
+      "owner": "content/1-foundations/name-mission-and-vision.md",
+      "terms": [
+        "mission",
+        "vision"
+      ]
+    },
+    "purpose": {
+      "label": "Purpose",
+      "owner": "content/1-foundations/purpose.md",
+      "terms": [
+        "purpose"
+      ]
+    },
+    "unity": {
+      "label": "Unity",
+      "owner": "content/1-foundations/core-beliefs/unity.md",
+      "terms": [
+        "unity",
+        "oneness"
+      ]
+    },
+    "spiritual-evolution": {
+      "label": "Spiritual evolution and practice",
+      "owner": "content/1-foundations/core-beliefs/spiritual-evolution-and-practice.md",
+      "terms": [
+        "spiritual (evolution|growth|development)",
+        "spiritual practices?"
+      ],
+      "elaborated_in": [
+        "content/3-practice/README.md"
+      ]
+    },
+    "ethical-living": {
+      "label": "Ethical and moral living",
+      "owner": "content/1-foundations/core-beliefs/ethical-and-moral-living.md",
+      "terms": [
+        "ethical (living|conduct)",
+        "ethical and moral"
+      ],
+      "elaborated_in": [
+        "content/2-doctrine/ethical-and-moral-development/README.md",
+        "content/2-doctrine/ethical-and-moral-development/ethical-living-as-spiritual-practice.md"
+      ]
+    },
+    "family": {
+      "label": "Family",
+      "owner": "content/1-foundations/core-beliefs/inclusive-family-structures-and-fitrah.md",
+      "terms": [
+        "famil(y|ies|ial)"
+      ],
+      "elaborated_in": [
+        "content/4-way-of-life/family/README.md"
+      ]
+    },
+    "fitrah": {
+      "label": "Fitrah",
+      "owner": "content/1-foundations/core-beliefs/inclusive-family-structures-and-fitrah.md",
+      "terms": [
+        "fitrah"
+      ]
+    },
+    "compassion": {
+      "label": "Compassionate action",
+      "owner": "content/1-foundations/core-beliefs/compassionate-action.md",
+      "terms": [
+        "compassion\\w*"
+      ]
+    },
+    "interconnectedness": {
+      "label": "Interconnectedness",
+      "owner": "content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md",
+      "terms": [
+        "interconnected\\w*"
+      ],
+      "elaborated_in": [
+        "content/4-way-of-life/environmental-stewardship/principle-of-interconnectedness.md"
+      ]
+    },
+    "learning": {
+      "label": "Pursuit of knowledge and continuous learning",
+      "owner": "content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md",
+      "terms": [
+        "knowledge",
+        "(continuous|continual|lifelong) (learning|education)"
+      ],
+      "elaborated_in": [
+        "content/4-way-of-life/continuous-learning/README.md"
+      ]
+    },
+    "world-traditions": {
+      "label": "Respect for the wisdom of world traditions",
+      "owner": "content/1-foundations/core-beliefs/respect-for-the-wisdom-of-world-traditions.md",
+      "terms": [
+        "(spiritual |religious |world |diverse |various )traditions"
+      ],
+      "elaborated_in": [
+        "content/2-doctrine/enlightened-figures/README.md",
+        "content/3-practice/holy-texts.md",
+        "content/3-practice/prayer.md"
+      ]
+    },
+    "environment": {
+      "label": "Environmental stewardship",
+      "owner": "content/1-foundations/core-beliefs/environmental-stewardship.md",
+      "terms": [
+        "environment\\w*",
+        "stewardship",
+        "sustainab\\w+"
+      ],
+      "elaborated_in": [
+        "content/4-way-of-life/environmental-stewardship/README.md"
+      ]
+    },
+    "community": {
+      "label": "Community and fellowship",
+      "owner": "content/1-foundations/core-beliefs/community-and-social-welfare.md",
+      "terms": [
+        "communit(y|ies)",
+        "fellowship"
+      ],
+      "elaborated_in": [
+        "content/4-way-of-life/community-and-fellowship/README.md"
+      ]
+    },
+    "positive-thinking": {
+      "label": "Positive thinking",
+      "owner": "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md",
+      "terms": [
+        "positive thinking"
+      ],
+      "elaborated_in": [
+        "content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md",
+        "content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md"
+      ]
+    },
+    "gratitude": {
+      "label": "Gratitude",
+      "owner": "content/3-practice/gratitude-affirmations/README.md",
+      "terms": [
+        "gratitude",
+        "grateful\\w*",
+        "thankful\\w*"
+      ],
+      "elaborated_in": [
+        "content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md"
+      ]
+    },
+    "mindful-action": {
+      "label": "Mindful action",
+      "owner": "content/3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action.md",
+      "terms": [
+        "mindful action"
+      ]
+    },
+    "divine-light": {
+      "label": "Divine light",
+      "owner": "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md",
+      "terms": [
+        "divine light",
+        "light of divinity"
+      ]
+    },
+    "god": {
+      "label": "God",
+      "owner": "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md",
+      "terms": [
+        "god(['’]s)?"
+      ]
+    },
+    "quantum-physics": {
+      "label": "Quantum physics",
+      "owner": "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md",
+      "terms": [
+        "quantum"
+      ]
+    },
+    "enlightened-figures": {
+      "label": "Enlightened figures",
+      "owner": "content/2-doctrine/enlightened-figures/README.md",
+      "terms": [
+        "enlightened figures?"
+      ]
+    },
+    "soul": {
+      "label": "The immortal soul",
+      "owner": "content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md",
+      "terms": [
+        "souls?(['’]s)?"
+      ],
+      "elaborated_in": [
+        "content/2-doctrine/soul-karma-dharma-and-death/README.md"
+      ]
+    },
+    "cocoon": {
+      "label": "The silkworm and cocoon image",
+      "owner": "content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md",
+      "terms": [
+        "cocoons?",
+        "silkworm"
+      ]
+    },
+    "karma": {
+      "label": "Karma",
+      "owner": "content/2-doctrine/soul-karma-dharma-and-death/karma.md",
+      "terms": [
+        "karma"
+      ],
+      "elaborated_in": [
+        "content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md"
+      ]
+    },
+    "dharma": {
+      "label": "Dharma",
+      "owner": "content/2-doctrine/soul-karma-dharma-and-death/dharma.md",
+      "terms": [
+        "dharma"
+      ],
+      "elaborated_in": [
+        "content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md"
+      ]
+    },
+    "liberation": {
+      "label": "Liberation",
+      "owner": "content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md",
+      "terms": [
+        "liberat\\w+"
+      ]
+    },
+    "death": {
+      "label": "Death",
+      "owner": "content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md",
+      "terms": [
+        "death"
+      ],
+      "elaborated_in": [
+        "content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md"
+      ]
+    },
+    "consciousness": {
+      "label": "Consciousness",
+      "owner": "content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md",
+      "terms": [
+        "consciousness"
+      ]
+    },
+    "meditation": {
+      "label": "Meditation",
+      "owner": "content/3-practice/meditation/README.md",
+      "terms": [
+        "meditat\\w+"
+      ]
+    },
+    "prayer": {
+      "label": "Prayer",
+      "owner": "content/3-practice/prayer.md",
+      "terms": [
+        "prayers?"
+      ]
+    },
+    "holy-texts": {
+      "label": "Holy texts",
+      "owner": "content/3-practice/holy-texts.md",
+      "terms": [
+        "(holy|sacred) texts?"
+      ]
+    },
+    "rituals": {
+      "label": "Rituals and celebrations",
+      "owner": "content/4-way-of-life/community-and-fellowship/community-engagement.md",
+      "terms": [
+        "rituals?",
+        "celebrations?"
+      ]
+    },
+    "marriage": {
+      "label": "Marriage",
+      "owner": "content/4-way-of-life/family/marriage.md",
+      "terms": [
+        "marriage"
+      ]
+    },
+    "divorce": {
+      "label": "Divorce",
+      "owner": "content/4-way-of-life/family/divorce.md",
+      "terms": [
+        "divorce"
+      ]
+    },
+    "sobriety": {
+      "label": "Sobriety",
+      "owner": "content/4-way-of-life/holistic-wellbeing/sobriety.md",
+      "terms": [
+        "sobriety",
+        "drugs?"
+      ]
+    },
+    "medicine": {
+      "label": "Science and modern medicine",
+      "owner": "content/4-way-of-life/holistic-wellbeing/science-and-modern-medicine.md",
+      "terms": [
+        "medicine",
+        "medical"
+      ]
+    },
+    "science": {
+      "label": "Science and technology",
+      "owner": "content/4-way-of-life/continuous-learning/sciences-and-technology.md",
+      "terms": [
+        "scienc\\w+",
+        "scientific",
+        "technolog\\w+"
+      ]
+    },
+    "arts": {
+      "label": "Arts and creativity",
+      "owner": "content/4-way-of-life/continuous-learning/arts-and-creative-expression.md",
+      "terms": [
+        "arts?",
+        "creativ\\w+"
+      ]
+    },
+    "tawhid": {
+      "label": "Tawhid",
+      "owner": "content/2-doctrine/enlightened-figures/muhammad.md",
+      "terms": [
+        "tawhid"
+      ]
+    },
+    "ummah": {
+      "label": "Ummah",
+      "owner": "content/1-foundations/core-beliefs/community-and-social-welfare.md",
+      "terms": [
+        "ummah"
+      ]
+    },
+    "zakat": {
+      "label": "Zakat",
+      "owner": "content/1-foundations/core-beliefs/ethical-and-moral-living.md",
+      "terms": [
+        "zakat"
+      ]
+    },
+    "eightfold-path": {
+      "label": "Eightfold Path",
+      "owner": "content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md",
+      "terms": [
+        "eightfold path"
+      ]
+    },
+    "seicho-no-ie": {
+      "label": "Seicho-No-Ie",
+      "owner": "content/2-doctrine/enlightened-figures/masaharu-taniguchi.md",
+      "terms": [
+        "seicho[- ]no[- ]ie"
+      ]
+    },
+    "shinsokan": {
+      "label": "Shinsokan",
+      "owner": "content/3-practice/meditation/shinsokan-meditation.md",
+      "terms": [
+        "shinsokan"
+      ]
+    },
+    "hooponopono": {
+      "label": "Ho'oponopono",
+      "owner": "content/3-practice/meditation/hooponopono-meditation.md",
+      "terms": [
+        "ho['ʻ’]?oponopono"
+      ]
+    },
+    "pantheism": {
+      "label": "Pantheism",
+      "owner": "content/5-context/comparative-analysis.md",
+      "terms": [
+        "panthe\\w+"
+      ]
+    },
+    "socinianism": {
+      "label": "Socinianism",
+      "owner": "content/5-context/historical-context.md",
+      "terms": [
+        "socinian\\w*"
+      ]
+    }
+  },
+  "findings": [
+    {
+      "id": "X01",
+      "type": "conflicting",
+      "status": "open",
+      "pages": [
+        "content/4-way-of-life/holistic-wellbeing/README.md",
+        "content/4-way-of-life/holistic-wellbeing/science-and-modern-medicine.md"
+      ],
+      "note": "The section introduction asks for \"a cautious engagement with science and modern medicine\"; the page under it is titled \"Trust in Science and Modern Medicine\". The author decides which stance stands.",
+      "concept": "medicine"
+    },
+    {
+      "id": "X02",
+      "type": "conflicting",
+      "status": "open",
+      "pages": [
+        "content/5-context/comparative-analysis.md",
+        "content/1-foundations/core-beliefs/unity.md",
+        "content/1-foundations/author-note.md"
+      ],
+      "note": "Comparative Analysis says UPL \"doesn't focus on a singular personal deity\"; Unity reflects on \"the oneness and absolute sovereignty of God\" and the Author Note speaks of \"God's infinite love\". A reader can take these as two different ideas of God.",
+      "concept": "god"
+    },
+    {
+      "id": "X03",
+      "type": "conflicting",
+      "status": "open",
+      "pages": [
+        "content/5-context/comparative-analysis.md",
+        "content/2-doctrine/enlightened-figures/buddha.md"
+      ],
+      "note": "Comparative Analysis says UPL refrains from \"affirming suffering as an inherent characteristic of life\"; the Buddha page honours his \"insights into the nature of suffering\". The two are compatible only if the first is read narrowly."
+    },
+    {
+      "id": "X04",
+      "type": "ambiguous",
+      "status": "open",
+      "pages": [
+        "content/1-foundations/name-mission-and-vision.md",
+        "content/1-foundations/purpose.md"
+      ],
+      "note": "Two statements of the mission. Name, Mission, and Vision names compassion, wisdom and enlightenment through unity, ethical living and continuous learning; Purpose says the mission \"pivots around\" freedom, acceptance, ethical living, love and continuous spiritual growth.",
+      "concept": "mission-and-vision"
+    },
+    {
+      "id": "X05",
+      "type": "ambiguous",
+      "status": "open",
+      "pages": [
+        "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md",
+        "content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md"
+      ],
+      "note": "The core belief and the practice section carry almost the same title and do not link to each other. A reader or a search engine cannot tell which is the statement and which the elaboration.",
+      "concept": "positive-thinking"
+    },
+    {
+      "id": "X06",
+      "type": "ambiguous",
+      "status": "open",
+      "pages": [
+        "content/1-foundations/core-beliefs/environmental-stewardship.md",
+        "content/4-way-of-life/environmental-stewardship/README.md"
+      ],
+      "note": "The core belief and the way-of-life section share a name and do not link to each other.",
+      "concept": "environment"
+    },
+    {
+      "id": "X07",
+      "type": "ambiguous",
+      "status": "open",
+      "pages": [
+        "content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md",
+        "content/4-way-of-life/environmental-stewardship/principle-of-interconnectedness.md"
+      ],
+      "note": "Two pages are named for interconnectedness. The core belief names it only in its title and speaks of knowledge; the other treats it only for nature. No page states the concept in general.",
+      "concept": "interconnectedness"
+    },
+    {
+      "id": "X08",
+      "type": "ambiguous",
+      "status": "open",
+      "pages": [
+        "content/3-practice/other-practices.md",
+        "content/3-practice/README.md"
+      ],
+      "note": "Other Practices is a general statement about practice, which the part introduction already gives. Its title promises a list it does not contain."
+    },
+    {
+      "id": "X09",
+      "type": "redundant",
+      "status": "open",
+      "pages": [
+        "content/2-doctrine/soul-karma-dharma-and-death/README.md",
+        "content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md"
+      ],
+      "note": "The silkworm and cocoon image is given in full on both pages, a result of splitting the paper.",
+      "concept": "cocoon"
+    },
+    {
+      "id": "X10",
+      "type": "redundant",
+      "status": "open",
+      "pages": [
+        "content/1-foundations/core-beliefs/community-and-social-welfare.md",
+        "content/1-foundations/core-beliefs/ethical-and-moral-living.md"
+      ],
+      "note": "Ummah is explained on both pages.",
+      "concept": "ummah"
+    },
+    {
+      "id": "X11",
+      "type": "redundant",
+      "status": "open",
+      "pages": [
+        "content/1-foundations/core-beliefs/ethical-and-moral-living.md",
+        "content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md"
+      ],
+      "note": "Zakat is explained on both pages.",
+      "concept": "zakat"
+    },
+    {
+      "id": "X12",
+      "type": "redundant",
+      "status": "open",
+      "pages": [
+        "content/1-foundations/core-beliefs/unity.md",
+        "content/2-doctrine/enlightened-figures/muhammad.md",
+        "content/5-context/historical-context.md"
+      ],
+      "note": "Tawhid is explained on the first two pages and named again on the third.",
+      "concept": "tawhid"
+    },
+    {
+      "id": "X13",
+      "type": "redundant",
+      "status": "open",
+      "pages": [
+        "content/4-way-of-life/community-and-fellowship/community-engagement.md",
+        "content/4-way-of-life/environmental-stewardship/mindful-interaction-with-the-environment.md"
+      ],
+      "note": "Both pages have a subsection on rituals and celebrations. They do not disagree, but neither points to the other, and no page lists the observances.",
+      "concept": "rituals"
+    },
+    {
+      "id": "X14",
+      "type": "redundant",
+      "status": "open",
+      "pages": [
+        "content/3-practice/gratitude-affirmations/README.md",
+        "content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md"
+      ],
+      "note": "Both pages define gratitude as a spiritual discipline in similar words.",
+      "concept": "gratitude"
+    },
+    {
+      "id": "X15",
+      "type": "redundant",
+      "status": "open",
+      "pages": [
+        "content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md",
+        "content/3-practice/meditation/hooponopono-meditation.md"
+      ],
+      "note": "Ho'oponopono is glossed as reconciliation and forgiveness on both pages.",
+      "concept": "hooponopono"
+    },
+    {
+      "id": "X19",
+      "type": "redundant",
+      "status": "open",
+      "pages": [
+        "content/2-doctrine/ethical-and-moral-development/README.md",
+        "content/2-doctrine/soul-karma-dharma-and-death/README.md"
+      ],
+      "note": "Both section introductions end on the same phrase, \"the soul's progression towards enlightenment and unity with the divine\". Found by the wording check, not by reading.",
+      "concept": "soul"
+    },
+    {
+      "id": "X16",
+      "type": "redundant",
+      "status": "accepted",
+      "pages": [
+        "content/2-doctrine/ethical-and-moral-development/README.md",
+        "content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md"
+      ],
+      "note": "The section introduction lists the four sources of ethics that the page under it then treats one by one.",
+      "reason": "An introduction that previews its section. Keep the two lists in step."
+    },
+    {
+      "id": "X17",
+      "type": "redundant",
+      "status": "accepted",
+      "pages": [
+        "content/README.md",
+        "content/1-foundations/abstract.md",
+        "content/5-context/conclusion.md"
+      ],
+      "note": "The home page, the Abstract and the Conclusion each summarise the whole. The home page's first sentence repeats the Abstract's.",
+      "reason": "These are the summary pages of the founding paper. A change of doctrine must be carried into all three."
+    },
+    {
+      "id": "X18",
+      "type": "redundant",
+      "status": "accepted",
+      "pages": [
+        "content/README.md",
+        "site/src/lib/site.ts"
+      ],
+      "note": "The site configuration holds its own one-paragraph summary of the religion, used in llms.txt and structured data. It is a description, not a teaching, but it is doctrine-shaped text outside content/ and can drift from it.",
+      "reason": "Machine-facing metadata, allowed by locked decision 3. Re-read it whenever the home page or the Abstract changes."
+    }
+  ],
+  "pages": {
+    "content/1-foundations/README.md": {
+      "status": "current",
+      "fingerprint": "66275d70a4486fd57cf0f7e358f222e2d35085d9652465853234cef911fd3da7"
+    },
+    "content/1-foundations/abstract.md": {
+      "status": "current",
+      "fingerprint": "a82f5bd5f9989cffb46f7930a81d8938fb8171885983eb39b54dbe2684f60afe"
+    },
+    "content/1-foundations/author-note.md": {
+      "status": "current",
+      "fingerprint": "be3ccf58b8492559abfe3e56ed447526758c991d719db30682ff60552916fe37"
+    },
+    "content/1-foundations/core-beliefs/README.md": {
+      "status": "current",
+      "fingerprint": "46130f365c6a82a663be7db6f193bb95db28e1222ec8fe1b88f3bd8fdc3ef0f0"
+    },
+    "content/1-foundations/core-beliefs/community-and-social-welfare.md": {
+      "status": "current",
+      "fingerprint": "25723429c9ee65c81393ecde336f4ae1676e09d1a8c2e690da75081b09481150"
+    },
+    "content/1-foundations/core-beliefs/compassionate-action.md": {
+      "status": "current",
+      "fingerprint": "477692d5ba3f304760e52f88b940a3ab58201943e0ccfab36c84e71536a7bb93"
+    },
+    "content/1-foundations/core-beliefs/environmental-stewardship.md": {
+      "status": "current",
+      "fingerprint": "9407b0c7285810baf5a7d6cc8c0ca3405ac08e95b53c797c4cb2f20dc4459ff6"
+    },
+    "content/1-foundations/core-beliefs/ethical-and-moral-living.md": {
+      "status": "current",
+      "fingerprint": "96fcdde168848787f351e537b9b37595bb253e5d1cf233fdd2dbe36444b78b96"
+    },
+    "content/1-foundations/core-beliefs/inclusive-family-structures-and-fitrah.md": {
+      "status": "current",
+      "fingerprint": "235056832d310e2a878e6cb2e60bb837caa66f0fe7e3705eb80e9b83b14ef3a6"
+    },
+    "content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md": {
+      "status": "current",
+      "fingerprint": "389ae99dd650c489f6c14536c0b606851b8d2154332c84b41432684d204fce10"
+    },
+    "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md": {
+      "status": "current",
+      "fingerprint": "8112f12e8dae3674a0c649efdb898552d6b3dacd852cbae16881f00f26895003"
+    },
+    "content/1-foundations/core-beliefs/respect-for-the-wisdom-of-world-traditions.md": {
+      "status": "current",
+      "fingerprint": "63be103c438025e7f35ab1be743b2a27b4f2d0f47f42bdd9f8e177bb4c883580"
+    },
+    "content/1-foundations/core-beliefs/spiritual-evolution-and-practice.md": {
+      "status": "current",
+      "fingerprint": "b3e9b28dfc63b9bb7088d4e933459d026aac3884fce9cc039e58d8bcc664aa9b"
+    },
+    "content/1-foundations/core-beliefs/unity.md": {
+      "status": "current",
+      "fingerprint": "bd2b8a12f37c7653fd92cd338a4b57522ab49fb2d6135d21586b884e9867f1ab"
+    },
+    "content/1-foundations/name-mission-and-vision.md": {
+      "status": "current",
+      "fingerprint": "f0f98dfae8db8a422170855bcb0bb5bbbe0c2fdef885c966edae63a50feb74b3"
+    },
+    "content/1-foundations/purpose.md": {
+      "status": "current",
+      "fingerprint": "d13ef83b5d51cc188b9d76b41c5d1edc3c5867b7eab9cf18e9541bc0661ae478"
+    },
+    "content/2-doctrine/README.md": {
+      "status": "current",
+      "fingerprint": "978ea3b6df0b97d71f1e879186a82600053a8aabc8be91cb9bb08b611574b432"
+    },
+    "content/2-doctrine/enlightened-figures/README.md": {
+      "status": "current",
+      "fingerprint": "56d0a1634647e749f60a9e2db86519ddadbc76523342f5c69e94d6102291cee8"
+    },
+    "content/2-doctrine/enlightened-figures/buddha.md": {
+      "status": "current",
+      "fingerprint": "6349fc1170e641f2e10ffa1664160c67c65b43c35d6127882005a0054a367eda"
+    },
+    "content/2-doctrine/enlightened-figures/jesus.md": {
+      "status": "current",
+      "fingerprint": "ae8c21e89df2346f3fdcde2b8110cbeb0324774b60e64382b0866beffb5e63df"
+    },
+    "content/2-doctrine/enlightened-figures/masaharu-taniguchi.md": {
+      "status": "current",
+      "fingerprint": "8c00b54eea21d94a2df72ebd22647c2b840b01000f17ab04ace55ded1bb431b6"
+    },
+    "content/2-doctrine/enlightened-figures/muhammad.md": {
+      "status": "current",
+      "fingerprint": "4cdf29072ca98c174f738404993068a30f4c47c92d594bc0346a2eb6c9821113"
+    },
+    "content/2-doctrine/enlightened-figures/other-spiritual-leaders.md": {
+      "status": "current",
+      "fingerprint": "92d9b210fd9de46356043f17bb38e1aca9a78c641505bb902b5f783cf4d56952"
+    },
+    "content/2-doctrine/ethical-and-moral-development/README.md": {
+      "status": "current",
+      "fingerprint": "db5d4416d631f5358e13228f54fbbbd20cd0eb9c85239eb8aa41e53b0d92f01e"
+    },
+    "content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md": {
+      "status": "current",
+      "fingerprint": "eaeea4aeabcd9100a3b4464884384b2e8b466bc7e36bd442e20cf2c6112c3812"
+    },
+    "content/2-doctrine/ethical-and-moral-development/ethical-living-as-spiritual-practice.md": {
+      "status": "current",
+      "fingerprint": "b569cd8c7eb41a135f0416ac5868b7d6321ab1efd647a9a17a9c60feb7b07872"
+    },
+    "content/2-doctrine/ethical-and-moral-development/fabric-of-ethics.md": {
+      "status": "current",
+      "fingerprint": "26224427a9c0288288df1eb8bcad4cf0dcaa0f37804b6a25b975b4967305d7ee"
+    },
+    "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md": {
+      "status": "current",
+      "fingerprint": "f427cd6e489b9c63c2a1071623e4265ad775ffe8ccbeb4c1552bff3aa8b511b0"
+    },
+    "content/2-doctrine/soul-karma-dharma-and-death/README.md": {
+      "status": "current",
+      "fingerprint": "082062f2ed3220d153df7ef51a03c12c8cd89c60ba3112428da51d0a5dea76e2"
+    },
+    "content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md": {
+      "status": "current",
+      "fingerprint": "9c3971865016d786488c40245ee0f55135f771fd490011c16c626b364f3a5a26"
+    },
+    "content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md": {
+      "status": "current",
+      "fingerprint": "57af6db82d00c7b96924fa1ce2714b5e61476cde47562afa27b9e0f3b54a95fa"
+    },
+    "content/2-doctrine/soul-karma-dharma-and-death/dharma.md": {
+      "status": "current",
+      "fingerprint": "3ccff9a45085dc9dec6667f7652425a51c050d86f09a1f45fc5c30d2fc043595"
+    },
+    "content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md": {
+      "status": "current",
+      "fingerprint": "a77f081230a7e129c900cd869810451386df79ec7ed768914f456df0bc9ee3ea"
+    },
+    "content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md": {
+      "status": "current",
+      "fingerprint": "2cd30d6d83c8ba00740adb331427cf40aa0f3d8fd1bdc02912b086e4b6251790"
+    },
+    "content/2-doctrine/soul-karma-dharma-and-death/karma.md": {
+      "status": "current",
+      "fingerprint": "deafd56a7915643a69c54f22f41d0cdd557c8698e501c915985da67af81fba16"
+    },
+    "content/3-practice/README.md": {
+      "status": "current",
+      "fingerprint": "4e2dc67d41f0996075ef4e1d0938ca615a5d31e4a5aabfa16d01f920d611635e"
+    },
+    "content/3-practice/gratitude-affirmations/README.md": {
+      "status": "current",
+      "fingerprint": "84a2e002e02e7fa8e7434b8fda63da9ba161846861be833a5c6afbbc064e5c92"
+    },
+    "content/3-practice/gratitude-affirmations/earth-and-environment.md": {
+      "status": "current",
+      "fingerprint": "7c5b8dfddf7e00008f7db004d2973c53d2ce7fa60746fc050226919e3dc0b7c6"
+    },
+    "content/3-practice/gratitude-affirmations/gift-of-life.md": {
+      "status": "current",
+      "fingerprint": "08b6a0deb19f17f78cb534347d98e60bd16a63a9055960b8de2c5d33b200a50b"
+    },
+    "content/3-practice/gratitude-affirmations/lifes-blessings.md": {
+      "status": "current",
+      "fingerprint": "7a01986147341971912cd038f20229e96c1c73f02954bb2d0356c2aed8107904"
+    },
+    "content/3-practice/gratitude-affirmations/relationships.md": {
+      "status": "current",
+      "fingerprint": "6b15b149aaf494871b5f8cc3ddf02a0e00b474a1393964575158434562662ee3"
+    },
+    "content/3-practice/holy-texts.md": {
+      "status": "current",
+      "fingerprint": "d86d0337f67ee4385dfe30f7a58bc5737c2e617dfcd13a1a6ad8976bfbabd2de"
+    },
+    "content/3-practice/meditation/README.md": {
+      "status": "current",
+      "fingerprint": "37bd8d142aa9a4a42c01a673310a9adea94064849a03b936b43b3230b37d0e83"
+    },
+    "content/3-practice/meditation/buddhist-meditation.md": {
+      "status": "current",
+      "fingerprint": "8ef012c8d1594fea15409c48603a7959c8e4f52b2d3039283e590df4171b5d1c"
+    },
+    "content/3-practice/meditation/hooponopono-meditation.md": {
+      "status": "current",
+      "fingerprint": "435148b6ca940aa41372d2eaa65b472132371ab2932262081349797e176690da"
+    },
+    "content/3-practice/meditation/shinsokan-meditation.md": {
+      "status": "current",
+      "fingerprint": "17dc23e6148b53821f89428117eb7ec0b265b0de78043cb35ff6bde748aad408"
+    },
+    "content/3-practice/other-practices.md": {
+      "status": "current",
+      "fingerprint": "422e6b865626e4e1511a75b38107d710806eb49a4e876039fe9ea468fc51df00"
+    },
+    "content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md": {
+      "status": "current",
+      "fingerprint": "701027a536e0546d63f04055cc7072cc7a2c162d0d755b1fbfb99e28c22f8fee"
+    },
+    "content/3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action.md": {
+      "status": "current",
+      "fingerprint": "546b412a20dda139b9ba629a38516c1b640e8a7357f9d360b02b0c7efbaab28e"
+    },
+    "content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md": {
+      "status": "current",
+      "fingerprint": "5b5b4fb1c37b333c5c901adacc61064647110f2e8ed970d0c98c9e0dbba796f4"
+    },
+    "content/3-practice/prayer.md": {
+      "status": "current",
+      "fingerprint": "38d69b0b244aa4bd9667afbc00e35f00e20e1cada137a1120e5358ba70e56e2b"
+    },
+    "content/4-way-of-life/README.md": {
+      "status": "current",
+      "fingerprint": "3c60df37917823bc5ede8a8a12131babb3fae394c839a1d8f87704eef0a00129"
+    },
+    "content/4-way-of-life/community-and-fellowship/README.md": {
+      "status": "current",
+      "fingerprint": "dafc6bfef920fde8b70447dbbb6286c60a37f065e2246783941dcbf09c4bb17a"
+    },
+    "content/4-way-of-life/community-and-fellowship/community-engagement.md": {
+      "status": "current",
+      "fingerprint": "cf7e6d886f6ad4cd4e9c6abbcccb85682a5f873081a07ed31e34cc097eed64a2"
+    },
+    "content/4-way-of-life/community-and-fellowship/global-spiritual-network.md": {
+      "status": "current",
+      "fingerprint": "0a5dae55b241189029a89e8f2e10abc52bb7bf45181dd4c24dbb2ecff39616ca"
+    },
+    "content/4-way-of-life/community-and-fellowship/role-of-community.md": {
+      "status": "current",
+      "fingerprint": "7441e55eeafb2da1d46d8c06943fd2c57445c81f41da037c348649cb2b43de95"
+    },
+    "content/4-way-of-life/continuous-learning/README.md": {
+      "status": "current",
+      "fingerprint": "79156ee1af77aba455b1434ffcb73df26ba2f24de23fe64af4b35ab6b3f2dc7f"
+    },
+    "content/4-way-of-life/continuous-learning/arts-and-creative-expression.md": {
+      "status": "current",
+      "fingerprint": "da85af15d8237e76878e18f637647890c40a738f8333e83b265f5d74619730be"
+    },
+    "content/4-way-of-life/continuous-learning/professional-development.md": {
+      "status": "current",
+      "fingerprint": "b8112ef941f1442f3f8f1be38a59da4ecb969d75fd4b7fa9519392d7fed5d436"
+    },
+    "content/4-way-of-life/continuous-learning/sciences-and-technology.md": {
+      "status": "current",
+      "fingerprint": "d90ac04adf6e3d7c2cc482b1236bed638269cf70522fd003f7c0e55e7f49c3a0"
+    },
+    "content/4-way-of-life/environmental-stewardship/README.md": {
+      "status": "current",
+      "fingerprint": "e2a3e1859b8918440f810ff640a80d3e02e21da54f98edc44e04b340dc5b0341"
+    },
+    "content/4-way-of-life/environmental-stewardship/education-and-community-involvement.md": {
+      "status": "current",
+      "fingerprint": "f0e534cdcf0418b4ffba82041adc37f67396ef363c458ad9c945ae5a3e159932"
+    },
+    "content/4-way-of-life/environmental-stewardship/mindful-interaction-with-the-environment.md": {
+      "status": "current",
+      "fingerprint": "0c4f5d006ac94bc2585583b42f0bc8bb5572ff97bdfda9cccd0e963e4a7c31c4"
+    },
+    "content/4-way-of-life/environmental-stewardship/principle-of-interconnectedness.md": {
+      "status": "current",
+      "fingerprint": "920eb0705af40977cd540f38f50c73f1d540fc0206110b6c3ba0b78394ea3b42"
+    },
+    "content/4-way-of-life/environmental-stewardship/spiritual-dimension.md": {
+      "status": "current",
+      "fingerprint": "6b278494f9d87d3e4998cb957040f617011bd0d52a4ca46bd48d352901e654d3"
+    },
+    "content/4-way-of-life/family/README.md": {
+      "status": "current",
+      "fingerprint": "88716db6a92808a5bcbd2f24d71ed556eb25bfc66904b3c812550c9956bf23ee"
+    },
+    "content/4-way-of-life/family/cooperative-growth-and-support.md": {
+      "status": "current",
+      "fingerprint": "5e7cf2a2c763377651d44eb2dbed3de0de5b1d9f2ae7f51f4e859d7fc278d4f4"
+    },
+    "content/4-way-of-life/family/divorce.md": {
+      "status": "current",
+      "fingerprint": "ffc5907b27e587d8e49551455e16fc857323d7cf3ccc24ef812bcfd719fa4936"
+    },
+    "content/4-way-of-life/family/inclusive-familial-structures.md": {
+      "status": "current",
+      "fingerprint": "7a7ac2dc83cea68afdd5da131d461efbdbccf83d7422e725f086dd0c6c9ad15c"
+    },
+    "content/4-way-of-life/family/marriage.md": {
+      "status": "current",
+      "fingerprint": "bb568e812c65ae7b1eeef658b102422510c75cd59dfc2926def58a7cb54725ff"
+    },
+    "content/4-way-of-life/holistic-wellbeing/README.md": {
+      "status": "current",
+      "fingerprint": "2e38c743636fc6a7ce6dee7745a2bf2132fc056f61ecb2fed377fc45ad62e724"
+    },
+    "content/4-way-of-life/holistic-wellbeing/science-and-modern-medicine.md": {
+      "status": "current",
+      "fingerprint": "c59bda790edc82898933aba3da86922b3e0d590d5450beb571946ce2a569ff7a"
+    },
+    "content/4-way-of-life/holistic-wellbeing/sobriety.md": {
+      "status": "current",
+      "fingerprint": "71f6befe13ed7f2bdf7a42777e1d89f003673779a94dc4d3506a16929884d72b"
+    },
+    "content/5-context/README.md": {
+      "status": "current",
+      "fingerprint": "eccc3d1bfc811be9620f494a0892f165ce46ef55d060b31ae63cd26adfa08e90"
+    },
+    "content/5-context/comparative-analysis.md": {
+      "status": "current",
+      "fingerprint": "17d4479a9c9ace0e69073e81d11d023061bff0c97dd6569d9dab065b675c48fb"
+    },
+    "content/5-context/conclusion.md": {
+      "status": "current",
+      "fingerprint": "f06be1c0e502dcf14dc85ce6173e13b61b89ad95087f9741a613390d2a1eeb45"
+    },
+    "content/5-context/historical-context.md": {
+      "status": "current",
+      "fingerprint": "45dcb4a9a2696828c56afac3e4f7c6d6d832b6395fc81d3d2ffe2679587e9c75"
+    },
+    "content/5-context/references.md": {
+      "status": "current",
+      "fingerprint": "e616256858e48995cc6082fbaeff0c1aef38c17dcb5af020dc456aa15a150460"
+    },
+    "content/README.md": {
+      "status": "current",
+      "fingerprint": "9d69538d79d79f8a11ecc16d1b41c8e1a496e930be479c527b28081d20b79988"
+    }
+  }
+}

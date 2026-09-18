@@ -48,6 +48,11 @@ apply in full. This file adds only what is specific to this repository.
 - Before writing or changing anything under `content/`, read
   [docs/doctrine-guardrails.md](docs/doctrine-guardrails.md), and check the result with
   `python3 scripts/check-doctrine.py --report`.
+- Any change under `content/` also updates the cross-reference matrix before it merges: read
+  [docs/cross-reference.md](docs/cross-reference.md), update `scripts/content-index.json` where
+  the page touches a concept or a finding, then run
+  `python3 scripts/check-content-index.py --record`. `--record` states that the pages were
+  re-read against the matrix; never run it just to make the gate pass.
 - The toolkit copy under `.claude/toolkit/` is vendored at a pinned version. Never edit it by
   hand; change it with `sct update`.
 - Plans live in `docs/plans/` and follow the fleet plan template.
