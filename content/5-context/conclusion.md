@@ -9,7 +9,7 @@ The Unified Path of Light (UPL) offers a compelling synthesis of quantum physics
 
 UPL honours the teachings of various enlightened figures, considering them complementary and providing diverse insights into universal truths and ethics. These spiritual guides serve as beacons on our collective journey towards unity and the embodiment of divine light in everyday life.
 
-Soul, karma, and dharma shape spiritual evolution and liberation. It teaches that humans, while materially engaged, are spiritual beings meant to transcend physical existence through ethical conduct and alignment with cosmic order, moving towards greater freedom and enlightenment.
+Soul, karma, and dharma shape spiritual evolution and liberation. UPL teaches that humans, while materially engaged, are spiritual beings meant to transcend physical existence through ethical conduct and alignment with cosmic order, moving towards greater freedom and enlightenment.
 
 UPL embraces a holistic view of family, respecting diversity while promoting individual growth and collective spiritual nurturing. This approach fosters a family structure grounded in love, acceptance, and mutual respect.
 
