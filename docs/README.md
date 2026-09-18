@@ -9,6 +9,7 @@ it. The teachings themselves are not here; they live in [content/](../content/RE
 | [architecture.md](architecture.md) | The parts of the repository and how content flows into the site. |
 | [conventions.md](conventions.md) | Naming, front matter, ordering, and writing conventions. |
 | [security.md](security.md) | What is protected and how to report a problem. |
+| [runbook-go-live.md](runbook-go-live.md) | The one-time steps that connect the repository to Cloudflare. |
 
 Working plans live in [plans/](plans/). The current one is
 [launch readiness](plans/2026-09-18-launch-readiness.md).

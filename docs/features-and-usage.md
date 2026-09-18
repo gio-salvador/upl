@@ -93,24 +93,22 @@ node site/scripts/generate-og.mjs
 
 ## Deploy to Cloudflare Pages
 
-The site is fully static: the build produces plain HTML and CSS with no server code and no
-client-side JavaScript, so it fits the Cloudflare Pages free plan (as of September 2026: up to
-20,000 files and 25 MiB per file; the build is about 80 files).
+Deployment is automatic: a merge to `main` runs `.github/workflows/deploy.yml`, which runs the
+full site gate, uploads the built site to Cloudflare Pages by direct upload, and smoke-tests the
+live address. A pull request from a branch of this repository gets a preview deployment on a
+branch alias, so a change can be read as a site before it is merged. Nothing is uploaded if any
+gate fails.
 
-Connect the GitHub repository in the Cloudflare dashboard with these build settings:
+The site is fully static: plain HTML and CSS with no server code and no client-side JavaScript,
+so it fits the Cloudflare Pages free plan (as of September 2026: up to 20,000 files and 25 MiB
+per file; the build is about 250 files). Direct uploads do not use the plan's monthly build
+allowance.
 
-| Setting | Value |
-| --------- | ------- |
-| Framework preset | Astro |
-| Root directory | `site` |
-| Build command | `npm run build` |
-| Build output directory | `dist` |
+The Pages project itself is defined in `infra/` and managed by `.github/workflows/iac.yml`. The
+one-time account setup is in [runbook-go-live.md](runbook-go-live.md). Until it is done, the
+workflow builds and checks the site, skips the upload with a notice, and stays green.
 
-Also set the environment variable `SITE` to the public origin (for example
-`https://example.org`). Canonical URLs, the sitemap, and `robots.txt` are built from it;
-without it they point at `localhost`.
-
-Cloudflare clones the whole repository, so the build can still read `../content` and
-`../paper`. The Node.js version comes from `site/.node-version`. Response headers are set in
-`site/public/_headers`, and `site/src/pages/404.astro` becomes the `404.html` that Pages serves
-for unknown paths.
+The public origin comes from the `SITE` repository variable; canonical URLs, the sitemap and
+`robots.txt` are built from it. Response headers are set in `site/public/_headers`, and
+`site/src/pages/404.astro` becomes the `404.html` that Pages serves for unknown paths. The
+Node.js version comes from `site/.node-version`.

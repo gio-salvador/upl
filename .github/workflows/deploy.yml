@@ -1,0 +1,126 @@
+name: Deploy
+
+# Publishes the site to Cloudflare Pages by direct upload.
+#   push to main      -> production deployment, then a smoke test of the live site
+#   pull request      -> preview deployment on a branch alias (same-repo branches only)
+# The full site gate (lint, build, link gate, SEO gate) runs first; nothing is uploaded if it
+# fails. While the Cloudflare secrets are absent the upload is skipped with a notice and the
+# job stays green. Adapted from salvador-cloud-site (MIT), see THIRD-PARTY-NOTICES.md.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false # never cancel a deploy mid-flight
+
+env:
+  PROJECT: ${{ vars.PAGES_PROJECT_NAME || 'unified-path-of-light' }}
+
+jobs:
+  deploy:
+    name: Build, gate and deploy to Cloudflare Pages
+    runs-on: ubuntu-24.04
+    # Secrets are not available to pull requests from forks.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: site/.node-version
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Resolve origin and branch alias
+        id: target
+        env:
+          SITE_VAR: ${{ vars.SITE }}
+          HEAD_REF: ${{ github.head_ref }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          origin="${SITE_VAR:-https://${PROJECT}.pages.dev}"
+          echo "origin=${origin%/}" >> "$GITHUB_OUTPUT"
+          if [ "$EVENT" = "pull_request" ]; then
+            # The branch name is attacker-influenced text: reduce it to a safe alias.
+            alias="$(printf '%s' "$HEAD_REF" | tr '[:upper:]' '[:lower:]' | tr -c 'a-z0-9' '-' | cut -c1-28 | sed 's/^-*//; s/-*$//')"
+            echo "branch=${alias:-preview}" >> "$GITHUB_OUTPUT"
+          else
+            echo "branch=main" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install
+        run: npm --prefix site ci
+
+      # Canonical URLs always point at production, including on previews.
+      - name: Lint, build, link gate, SEO gate
+        env:
+          SITE: ${{ steps.target.outputs.origin }}
+        run: bash scripts/check.sh site
+
+      - name: Check for deploy credentials
+        id: creds
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -n "$CF_TOKEN" ] && [ -n "$CF_ACCOUNT" ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Deploy skipped::CLOUDFLARE_API_TOKEN or CLOUDFLARE_ACCOUNT_ID is not set. The build and gates ran; nothing was uploaded. See docs/runbook-go-live.md."
+          fi
+
+      - name: Deploy via Wrangler
+        id: wrangler
+        if: steps.creds.outputs.present == 'true'
+        uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0 # v4.0.0
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4.84.1"
+          command: pages deploy site/dist --project-name=${{ env.PROJECT }} --branch=${{ steps.target.outputs.branch }} --commit-dirty=true
+
+      - name: Report the deployment address
+        if: steps.creds.outputs.present == 'true'
+        env:
+          URL: ${{ steps.wrangler.outputs.deployment-url }}
+        run: echo "Deployed to ${URL}" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Smoke test the live site
+        if: steps.creds.outputs.present == 'true' && github.event_name != 'pull_request'
+        env:
+          ORIGIN: ${{ steps.target.outputs.origin }}
+        run: |
+          set -euo pipefail
+          # Wait for the new deployment to be the one answering.
+          for _ in $(seq 1 12); do
+            curl -sf "${ORIGIN}/llms.txt" -o /dev/null && break
+            sleep 10
+          done
+          headers="$(curl -sI "${ORIGIN}/")"
+          check() { printf '%s' "$headers" | grep -iq "$1" || { echo "::error::missing or weak header: $2"; exit 1; }; }
+          check "content-security-policy: default-src 'none'" "Content-Security-Policy"
+          check "strict-transport-security: max-age=" "Strict-Transport-Security"
+          check "x-frame-options: deny" "X-Frame-Options"
+          check "x-content-type-options: nosniff" "X-Content-Type-Options"
+          for path in /sitemap-index.xml /robots.txt /llms.txt /llms-full.txt /foundations/purpose/ /foundations/purpose/index.md; do
+            curl -sf "${ORIGIN}${path}" -o /dev/null || { echo "::error::${path} is not reachable"; exit 1; }
+          done
+          # A page link without its slash must redirect, not 404.
+          code="$(curl -s -o /dev/null -w '%{http_code}' "${ORIGIN}/foundations")"
+          case "$code" in 301|308) ;; *) echo "::error::/foundations returned ${code}, expected a redirect to /foundations/"; exit 1 ;; esac
+          echo "Smoke test passed for ${ORIGIN}" >> "$GITHUB_STEP_SUMMARY"
