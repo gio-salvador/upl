@@ -85,6 +85,8 @@ for (const file of pages) {
   need(/<meta name="viewport" content="[^"]*width=device-width/.test(html), page, 'no responsive viewport');
   const title = attr(html, /<title>([^<]+)<\/title>/);
   if (title) titles.set(title, [...(titles.get(title) ?? []), page]);
+  // A title longer than a search result shows must not spend its length on the site name.
+  need(!title || plain(title).length <= 60 || !/ \| /.test(title), page, `title is ${plain(title ?? '').length} characters and still carries the site name`);
   need(/"@type":"WebSite"/.test(html), page, 'no WebSite JSON-LD');
   const alternate = attr(html, /<link rel="alternate" type="text\/markdown" href="([^"]+)"/);
   need(alternate && existsSync(join(dist, alternate)), page, 'no markdown alternate, or it was not built');
