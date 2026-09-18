@@ -24,6 +24,12 @@ without the website.
    ```
 
 3. Add it to the numbered list in that folder's `README.md`, at the position matching `order`.
+4. Check it against the core beliefs and the balance between traditions
+   ([doctrine-guardrails.md](doctrine-guardrails.md)):
+
+   ```bash
+   python3 scripts/check-doctrine.py --report
+   ```
 
 The website picks the page up on the next build. Nothing in `site/` needs to change.
 
@@ -51,8 +57,9 @@ own, so a build never disturbs a running dev server. Both outputs are ignored by
 bash scripts/check.sh
 ```
 
-That one command runs everything CI runs. `bash scripts/check.sh site` runs only the first four site
-checks below, `bash scripts/check.sh mobile` only the rendering gate, and `bash scripts/check.sh gates` runs only the toolkit gates.
+That one command runs everything CI runs. `bash scripts/check.sh site` runs only the first four
+site checks below, `bash scripts/check.sh mobile` only the rendering gate, and
+`bash scripts/check.sh gates` runs only the doctrine gate and the toolkit gates.
 
 ```bash
 npm --prefix site run lint:md
@@ -73,8 +80,15 @@ dependencies as visual, and docs, plans, infrastructure, SEO metadata and respon
 not. It fails open: if it cannot tell, the gate runs. Pushes to `main` always run it, and
 `bash scripts/check.sh mobile` forces it. `check:seo` fails
 if any page lacks a title, a single H1, a description of 50 to 200 characters, a canonical URL,
-a social image, valid JSON-LD or its markdown alternate, or if `llms.txt` does not list every
-page. It checks structure and metadata only, never the wording of a teaching. `lint:md` lints every markdown file in the repository against `.markdownlint-cli2.jsonc`. CI
+a social image, valid JSON-LD or its markdown alternate. For search engines it also fails if a
+content page is marked noindex, if the canonical URL does not match the page's own address, the
+`og:url`, the Article JSON-LD or the end of the breadcrumb trail, if an Open Graph or Twitter
+card tag is missing, if two pages share a title, if the sitemap and the pages do not list exactly
+the same addresses, or if `robots.txt` shuts a crawler out, omits the sitemap or stops naming
+the main AI crawlers. For language models and answer engines it fails if `llms.txt` does not
+open with a heading and a summary, links a file that was not built or misses any page, if
+`llms-full.txt` misses any page, if a markdown alternate does not open with the same heading as
+its page, or if `_headers` stops serving the alternates as noindex. It checks structure and metadata only, never the wording of a teaching. `lint:md` lints every markdown file in the repository against `.markdownlint-cli2.jsonc`. CI
 runs all three on every pull request.
 
 ## Toolkit gates and skills
