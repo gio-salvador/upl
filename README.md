@@ -34,6 +34,7 @@ npm --prefix site run build
 | [content/](content/README.md) | The teachings. The single canonical source; everything else renders it. |
 | [paper/](paper/) | The founding paper (PDF), the source of record for the first version of the text. |
 | [site/](site/) | The website (Astro). It reads `content/` directly and holds no teachings of its own. |
+| `infra/` | OpenTofu for the Cloudflare Pages project. |
 | `scripts/` | `check.sh`, the single gate entry point that CI also runs. |
 | `.claude/` | The pinned toolkit gates and the skill manifests for this repository. |
 | [docs/](docs/README.md) | Documentation for this repository: how it is organised and how to change it. |

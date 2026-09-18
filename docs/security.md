@@ -21,6 +21,9 @@ The main risks are an unwanted change to the canonical text and a compromised si
   so browsers can display the PDF.
 - New dependency versions are held back for 7 days (`site/.npmrc` and
   `.github/dependabot.yml`), which keeps freshly published malicious releases out.
+- Cloudflare credentials exist only as GitHub secrets. The API token is scoped to Cloudflare
+  Pages on one account. OpenTofu state is stored outside the repository, and `infra/.gitignore`
+  keeps state and variable files out of git.
 - Never commit a secret, token, or credential, even as an example.
 
 ## Gates and scans
@@ -29,6 +32,7 @@ The main risks are an unwanted change to the canonical text and a compromised si
 | ---- | ----- |
 | Markdown lint, site build, link gate and SEO gate | `.github/workflows/ci.yml`, job `build` |
 | Toolkit gates: docs, doc claims, plan structure, hardcoded paths and secrets, public readiness | `.github/workflows/ci.yml`, job `gates`, running `scripts/check.sh gates` |
+| OpenTofu format and validate; plan and apply once enabled | `.github/workflows/iac.yml` |
 | Secret scan of the full history (gitleaks) | `.github/workflows/ci.yml`, job `gitleaks` |
 | Dependency CVE scan (OSV-Scanner), weekly | `.github/workflows/security.yml` |
 | CodeQL and OpenSSF Scorecard | `security.yml` and `scorecard.yml`; both run only once the repository is public |

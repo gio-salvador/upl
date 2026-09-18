@@ -14,6 +14,15 @@ updates:
       astro:
         patterns: ["astro", "@astrojs/*"]
 
+  - package-ecosystem: terraform
+    directory: "/infra"
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    commit-message:
+      prefix: "chore(deps)"
+
   - package-ecosystem: github-actions
     directory: "/"
     schedule:

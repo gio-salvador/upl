@@ -8,6 +8,8 @@
 *.mjs text
 *.json text
 *.yml text
+*.tf text
+*.hcl text
 *.css text
 *.svg text
 

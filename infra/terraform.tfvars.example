@@ -1,0 +1,6 @@
+# Copy to terraform.tfvars (git-ignored) for a local run. Never commit real values.
+# The API token is NOT set here: pass it as TF_VAR_cloudflare_api_token in the environment.
+
+cloudflare_account_id = ""
+pages_project_name    = "unified-path-of-light"
+site_origin           = ""

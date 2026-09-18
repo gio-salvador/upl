@@ -183,10 +183,10 @@ One pull request per step. Each leaves `main` green.
 | Step | Pull request | Needs from you | Status |
 | ---- | ------------ | -------------- | ------ |
 | 1 | Repository structure, content, site, imported scaffolding, link gate, cache fix, toolkit profile | approval to commit and open it; D8 | merged 2026-09-18, pull request 1 |
-| 2 | Toolkit: vendored gates, CI gate job, manifests, CLAUDE.md, single check entry point | nothing | in review |
-| 3 | Discoverability: llms files, markdown alternates, robots policy, Article JSON-LD, social image, description check | D5 | in review, built on the recommendation (allow) |
+| 2 | Toolkit: vendored gates, CI gate job, manifests, CLAUDE.md, single check entry point | nothing | merged 2026-09-18, pull request 4 |
+| 3 | Discoverability: llms files, markdown alternates, robots policy, Article JSON-LD, social image, description check | D5 | merged 2026-09-18, pull request 9, built on the recommendation (allow) |
 | 4 | Security: security.txt, audit findings, LICENSE, readiness scan | D7 | not started |
-| 5 | IaC: infra folder, iac workflow (fmt and validate live; plan and apply gated off) | nothing to merge | not started |
+| 5 | IaC: infra folder, iac workflow (fmt and validate live; plan and apply gated off) | nothing to merge | in review |
 | 6 | Deploy workflow with credential skip, preview deployments, smoke test; docs updated to the new model | nothing to merge | not started |
 | 7 | Go live: create the API token, account id and state secrets; first apply; enable the gates; set the branch ruleset | D3, and the secrets, which only you can create | not started |
 | 8 | Custom domain, DNS, HSTS upgrade | D4 | reserved |
