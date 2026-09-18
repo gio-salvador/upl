@@ -36,9 +36,9 @@ Cloudflare Pages free plan; the repository will be made public once the content 
 
 Non-goals:
 
-- **No custom domain, DNS, DNSSEC or email records in this plan.** They are the obvious next
-  step after the Pages project exists, and they are excluded because no domain has been chosen
-  (D3). The design leaves room for them; step 8 is reserved.
+- **Custom domain, DNS, DNSSEC and email records were out of scope when this plan was written,**
+  because no domain had been chosen. The domain was chosen on 2026-09-18 (D4), so step 8 now
+  carries that work; it stays last, after the Pages project exists.
 - **No redesign of the site.** Reading components and visual identity are a separate piece of
   work. This plan changes what machines see, not what the pages look like.
 - **No content changes.** The teachings are not edited for keywords. Discoverability comes from
@@ -160,8 +160,9 @@ into this repository; they stay machine-wide.
   unified-path-of-light in your personal Cloudflare account, not the Salvador Cloud Ltd one,
   with its own state bucket. A religion's site should not sit inside a company's account or
   share its state. The code takes both as variables, so this blocks only the first apply.
-- **D4 OPEN: domain.** None chosen. The site works on the pages.dev address meanwhile. Step 8
-  waits on this.
+- **D4 TAKEN: the domain is unifiedpathoflight.com**, with its nameservers pointing to Cloudflare, so
+  the zone sits beside the Pages project. Decided 2026-09-18. The site works on the pages.dev
+  address until step 8 is applied.
 - **D5 OPEN: AI crawlers allowed by name.** Recommendation: allow. Reversing it later stops new
   crawling but does not recall what was read.
 - **D6 TAKEN, with a correction:** `sct init` was run on 2026-09-18 by mistake, while asking it
@@ -189,7 +190,7 @@ One pull request per step. Each leaves `main` green.
 | 5 | IaC: infra folder, iac workflow (fmt and validate live; plan and apply gated off) | nothing to merge | merged 2026-09-18, pull request 10 |
 | 6 | Deploy workflow with credential skip, preview deployments, smoke test; docs updated to the new model | nothing to merge | merged 2026-09-18, pull request 11; upload and smoke test not yet exercised |
 | 7 | Go live: create the API token, account id and state secrets; first apply; enable the gates; set the branch ruleset | D3, and the secrets, which only you can create | next; steps in docs/runbook-go-live.md |
-| 8 | Custom domain, DNS, HSTS upgrade | D4 | reserved |
+| 8 | Custom domain and DNS as code (`infra/domain.tf`), off until `SITE_DOMAIN` is set; DNSSEC and no-email records as switches; HSTS upgrade deferred until every subdomain is HTTPS-only | the wider API token, the `SITE_DOMAIN` and then `SITE` variables, after step 7 | code in review; apply waits on step 7; steps in docs/runbook-go-live.md |
 
 Load-bearing order: 1 before everything (nothing can be reviewed until it is committed). 5
 before 7 (apply needs the code). 6 before 7 (the first deploy needs a project, and the project

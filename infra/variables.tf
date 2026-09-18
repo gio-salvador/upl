@@ -1,5 +1,5 @@
 variable "cloudflare_api_token" {
-  description = "Cloudflare API token with Account > Cloudflare Pages > Edit. Must not be IP-locked, because CI runners have changing addresses."
+  description = "Cloudflare API token with Account > Cloudflare Pages > Edit and, once site_domain is set, Zone > DNS > Edit and Zone > Zone > Read on that one zone. Must not be IP-locked, because CI runners have changing addresses."
   type        = string
   sensitive   = true
 }
@@ -26,4 +26,27 @@ variable "site_origin" {
   description = "Public origin of the production site, no trailing slash. Leave empty to use the pages.dev address until a custom domain exists."
   type        = string
   default     = ""
+}
+
+variable "site_domain" {
+  description = "The custom domain, bare, for example unifiedpathoflight.com. Its zone must be in this Cloudflare account. Empty means no custom domain: nothing in domain.tf is created. CI passes the SITE_DOMAIN repository variable."
+  type        = string
+  default     = ""
+
+  validation {
+    condition     = var.site_domain == "" || can(regex("^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$", var.site_domain))
+    error_message = "site_domain is a bare lower-case host name, with no scheme, path or trailing dot."
+  }
+}
+
+variable "enable_dnssec" {
+  description = "Turn on DNSSEC for the zone. Complete only once the DS record is at the registrar."
+  type        = bool
+  default     = false
+}
+
+variable "lock_down_email" {
+  description = "Publish null MX, SPF -all, DMARC reject and an empty DKIM key, for a domain that never sends or receives email. These records break real mail, including Cloudflare Email Routing."
+  type        = bool
+  default     = false
 }

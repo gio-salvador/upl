@@ -4,3 +4,9 @@
 cloudflare_account_id = ""
 pages_project_name    = "unified-path-of-light"
 site_origin           = ""
+
+# The custom domain. Leave site_domain empty until the zone is in this account; leave
+# site_origin empty until the certificate is active (see docs/runbook-go-live.md).
+site_domain     = ""
+enable_dnssec   = false
+lock_down_email = false

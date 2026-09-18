@@ -95,6 +95,9 @@ jobs:
           TF_VAR_cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           TF_VAR_pages_project_name: ${{ vars.PAGES_PROJECT_NAME }}
           TF_VAR_site_origin: ${{ vars.SITE }}
+          TF_VAR_site_domain: ${{ vars.SITE_DOMAIN }}
+          TF_VAR_enable_dnssec: ${{ vars.ENABLE_DNSSEC == 'true' }}
+          TF_VAR_lock_down_email: ${{ vars.LOCK_DOWN_EMAIL == 'true' }}
         run: tofu plan -input=false -no-color -lock=false | tee tfplan.txt
 
       - name: Post plan to the pull request
@@ -150,4 +153,7 @@ jobs:
           TF_VAR_cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           TF_VAR_pages_project_name: ${{ vars.PAGES_PROJECT_NAME }}
           TF_VAR_site_origin: ${{ vars.SITE }}
+          TF_VAR_site_domain: ${{ vars.SITE_DOMAIN }}
+          TF_VAR_enable_dnssec: ${{ vars.ENABLE_DNSSEC == 'true' }}
+          TF_VAR_lock_down_email: ${{ vars.LOCK_DOWN_EMAIL == 'true' }}
         run: tofu apply -input=false -auto-approve

@@ -27,7 +27,7 @@ The main risks are an unwanted change to the canonical text and a compromised si
 - New dependency versions are held back for 7 days (`site/.npmrc` and
   `.github/dependabot.yml`), which keeps freshly published malicious releases out.
 - Cloudflare credentials exist only as GitHub secrets. The API token is scoped to Cloudflare
-  Pages on one account. OpenTofu state is stored outside the repository, and `infra/.gitignore`
+  Pages on one account and, once the custom domain is attached, to DNS on its one zone. OpenTofu state is stored outside the repository, and `infra/.gitignore`
   keeps state and variable files out of git.
 - Deploys run only from `main` and from branches of this repository; pull requests from forks
   never receive secrets. The branch name used for a preview alias is reduced to safe characters

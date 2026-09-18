@@ -96,8 +96,43 @@ The first two turn on Dependabot alerts and security updates, which the free pla
 private repository. Once the repository is public, also turn on secret scanning and push
 protection in Settings, Code security.
 
+## 8. Attach the custom domain
+
+The domain is unifiedpathoflight.com. Its nameservers already point to Cloudflare, so its zone
+must be in the same account as the Pages project. Do this after step 5 has deployed once.
+
+1. Widen the API token from step 2 (or create a new one and replace the secret) with two more
+   permissions, limited to the unifiedpathoflight.com zone: Zone, DNS, Edit and Zone, Zone,
+   Read. Still no IP restriction.
+2. In the Cloudflare dashboard, check the zone's DNS records. If the apex or `www` already has
+   an A, AAAA or CNAME record (a parking page, for example), delete it, or the apply fails on
+   the conflict.
+3. Set the repository variable `SITE_DOMAIN` to `unifiedpathoflight.com`, then run the IaC
+   workflow (or merge a pull request that touches `infra/`). The plan should add four
+   resources: a Pages domain and a CNAME record for the apex and for `www`.
+4. Wait for the certificates. The `custom_domain_status` output shows each host; both should
+   read `active`, usually within a few minutes. `https://unifiedpathoflight.com/` then answers
+   with the site.
+5. Only now set the repository variable `SITE` to `https://unifiedpathoflight.com` (no trailing
+   slash) and run the Deploy workflow. Canonical URLs, the sitemap, `robots.txt`, the llms
+   files and the smoke test all move to the new origin in that one deploy. Moving `SITE`
+   before the certificate is active would make the smoke test fail and publish canonical URLs
+   that do not answer yet.
+
+Two optional switches, each a repository variable set to `true`:
+
+| Variable | What it does | Turn it on when |
+| -------- | ------------ | --------------- |
+| `ENABLE_DNSSEC` | Signs the zone | Always worth it. With Cloudflare as the registrar the DS record is added for you; with another registrar, copy the DS record from the dashboard's DNS settings to the registrar, or it stays pending. |
+| `LOCK_DOWN_EMAIL` | Publishes a null MX, SPF `-all`, DMARC `reject` and an empty DKIM key, so nobody can forge mail from the domain | Only if the domain will never send or receive email. These records break real mail, including Cloudflare Email Routing. |
+
+The HSTS header in `site/public/_headers` deliberately leaves out `includeSubDomains` and
+`preload`. Add them only when every subdomain of unifiedpathoflight.com, present and planned,
+is HTTPS-only: preload is slow to undo. That is a separate, reviewed change to `_headers`.
+
 ## Rolling back
 
 A bad deployment: in the Cloudflare dashboard, Pages, the project, Deployments, choose the last
 good one and roll back to it; then revert the pull request. Removing everything: `tofu destroy`
-in `infra/`, then revoke the API token and the R2 token.
+in `infra/`, then revoke the API token and the R2 token. To detach only the custom domain, set `SITE`
+back to the pages.dev address and deploy, then clear `SITE_DOMAIN` and apply.

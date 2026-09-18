@@ -38,6 +38,14 @@ GitHub secrets and never appear in a file. `.github/workflows/iac.yml` checks fo
 validity on every change to `infra/`. Planning on pull requests and applying on `main` are off
 until the repository variable `IAC_ENABLED` is set to `true`.
 
+The custom domain, unifiedpathoflight.com, is in `infra/domain.tf`. Its nameservers point to
+Cloudflare, so the zone sits in the same account as the Pages project. The file attaches the
+apex and `www` to the project and adds a proxied CNAME for each; DNSSEC and the records for a
+domain that sends no email are separate switches, both off by default. All of it is off until
+the `SITE_DOMAIN` repository variable is set. The site itself never names its domain: the
+origin still comes from `SITE`, which moves to the custom domain only once its certificate is
+active.
+
 `.github/workflows/deploy.yml` is the only path to production: on a push to `main` it runs the
 site gate, uploads the built site with Wrangler, and smoke-tests the live site. Pull requests from
 branches of this repository get a preview deployment. It skips the upload while the Cloudflare

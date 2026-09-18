@@ -12,3 +12,8 @@ output "site_origin" {
   description = "Set the SITE repository variable to this, so canonical URLs, the sitemap and robots.txt are correct."
   value       = local.site_origin
 }
+
+output "custom_domain_status" {
+  description = "Certificate and validation status of each custom host. Move the SITE variable to the custom domain only once every host is active."
+  value       = { for host, d in cloudflare_pages_domain.site : host => d.status }
+}
