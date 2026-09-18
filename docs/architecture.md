@@ -29,6 +29,15 @@ flowchart LR
 - The markdown links between pages point at `.md` files so they work on GitHub. The link
   rewriter turns them into site routes at build time.
 
+## Infrastructure
+
+`infra/` defines the Cloudflare Pages project with OpenTofu: a direct-upload project with no
+git source, so nothing is published except by the deploy workflow. State is kept in a Cloudflare
+R2 bucket through the S3-compatible backend; the bucket, its endpoint and every credential are
+GitHub secrets and never appear in a file. `.github/workflows/iac.yml` checks formatting and
+validity on every change to `infra/`. Planning on pull requests and applying on `main` are off
+until the repository variable `IAC_ENABLED` is set to `true`.
+
 ## Gates
 
 `scripts/check.sh` is the single gate entry point, used by CI and before every pull request. It
