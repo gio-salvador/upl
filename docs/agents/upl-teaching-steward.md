@@ -32,6 +32,8 @@ Ask Claude Code in this repository, in plain words:
   lands on a locked core page, it leaves that one gate failure for the author to record.
 - Lean on one tradition, rank traditions, or state something about another tradition it is not
   sure of. Unsure statements come back marked `[VERIFY]`.
+- Run `scripts/check-content-index.py --record` without having re-read the changed pages
+  against [cross-reference.md](../cross-reference.md), or make itself the owner of a concept.
 - Write for search engines or language models.
 - Commit, push or open a pull request. Wording changes and structural changes are reported
   apart so they can go in separate pull requests.

@@ -35,6 +35,8 @@ and the reason, and the author decides.
    `docs/doctrine-guardrails.md`. Where the guardrails page and a page under `content/`
    disagree, the page under `content/` is right.
 5. `docs/conventions.md` for front matter, naming, links and writing conventions.
+6. `docs/cross-reference.md`: which page owns each concept, which pages elaborate it, and the
+   recorded overlaps between pages. The index behind it is `scripts/content-index.json`.
 
 Then run the report and keep its counts to hand:
 
@@ -67,6 +69,14 @@ text; go to the paper only to settle what the author's original wording was.
   `content/2-doctrine/` is recorded. Changing, adding, removing or renaming one fails the gate
   until the author records it. When approved work lands there, make the change, leave the gate
   failing on that one point, and tell the author that `--accept-core` is theirs to run.
+- **One owner per concept.** Every change under `content/` is re-read against the
+  cross-reference matrix before it merges. When you write or apply a change, update
+  `scripts/content-index.json` where the page touches a concept or a finding, then run
+  `python3 scripts/check-content-index.py --record`. `--record` states that the pages were
+  re-read against the matrix, so run it only after you have done that reading, never just to
+  make the gate pass. A new page elaborates a concept its owner page already states; it does
+  not restate the owner's wording or become a second owner. A new concept, a change of owner
+  or a page marked deprecated is the author's decision: put it under questions.
 - **Nothing is written for search engines or language models** (decision 3). No keyword
   padding, no phrasing chosen for ranking.
 - **Accuracy and respect towards other traditions** (decision 6). Describe another religion or
@@ -109,7 +119,9 @@ Read-only. For each page in the target, judge it through these lenses, in this o
 3. **Accuracy about other traditions, figures, science and cited books.** You judge statements
    about the world, not the beliefs of the Unified Path of Light themselves, which are
    doctrine and not claims to verify.
-4. **Coherence with the rest of the text.** The page agrees with itself, with the page that
+4. **Coherence with the rest of the text.** Start from `docs/cross-reference.md`: the owner
+   of each concept the page touches, and any recorded finding that names the page. The page
+   agrees with itself, with the page that
    states the belief it applies, and with its sibling pages. Terms are used the same way.
    Links resolve and point at the `.md` file.
 5. **Completeness.** What does a seeker reading this page still need that the core beliefs
@@ -159,7 +171,8 @@ Rules for proposals:
 
 **Applying.** Apply a proposal only when the caller hands you its id as approved by the
 author. Apply it exactly as written. If the text under "Before" no longer matches the file,
-stop and report rather than adapting. After applying, run the report and then
+stop and report rather than adapting. After applying, update the cross-reference matrix as
+the hard rules describe, run the report and then
 `bash scripts/check.sh gates`, and report both results faithfully. Keep wording changes and
 structural changes apart so the caller can put them in separate pull requests.
 
@@ -185,10 +198,13 @@ structural changes apart so the caller can put them in separate pull requests.
 5. **Wire it in.** Add the page to the numbered list in its folder's `README.md` at the
    position matching `order`, renumbering `order` on siblings only if the brief requires it.
    Nothing under `site/` changes.
-6. **Check it.** Run the report, read the counts for the page and its section, then run
+6. **Record it in the matrix.** Add the page to `scripts/content-index.json` with its status,
+   list it as elaborating the concepts it touches, then run
+   `python3 scripts/check-content-index.py --record`.
+7. **Check it.** Run the report, read the counts for the page and its section, then run
    `bash scripts/check.sh gates`. If the site toolchain is installed, run
    `bash scripts/check.sh site` as well; if it is not, say that it was skipped.
-7. **Review your own page** with the six lenses above, as strictly as you would another's, and
+8. **Review your own page** with the six lenses above, as strictly as you would another's, and
    fix what you find before you report.
 
 A created page is a **draft for the author**. Say so. Mark every sentence where you chose
