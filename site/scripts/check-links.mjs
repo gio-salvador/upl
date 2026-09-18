@@ -11,16 +11,16 @@ if (!existsSync(dist)) {
   process.exit(2);
 }
 
-const htmlFiles = (dir) =>
+const filesWith = (dir, test) =>
   readdirSync(dir).flatMap((name) => {
     const path = join(dir, name);
-    if (statSync(path).isDirectory()) return htmlFiles(path);
-    return name.endsWith('.html') ? [path] : [];
+    if (statSync(path).isDirectory()) return filesWith(path, test);
+    return test(name) ? [path] : [];
   });
 
 const problems = [];
 let checked = 0;
-for (const file of htmlFiles(dist)) {
+for (const file of filesWith(dist, (name) => name.endsWith('.html'))) {
   const html = readFileSync(file, 'utf8');
   for (const [, href] of html.matchAll(/href="([^"]+)"/g)) {
     if (!href.startsWith('/') || href.startsWith('//')) continue;
@@ -31,6 +31,25 @@ for (const file of htmlFiles(dist)) {
     if (!isFile && !path.endsWith('/')) problems.push(`${page}: ${href} has no trailing slash`);
     const target = join(dist, isFile ? path : join(path, 'index.html'));
     if (!existsSync(target)) problems.push(`${page}: ${href} does not resolve to a built file`);
+  }
+}
+
+// The machine-facing files (markdown alternates, llms.txt, llms-full.txt) link with markdown
+// syntax, root-relative or absolute on the site's own origin.
+const origin = /^https?:\/\/[^/]+/;
+for (const file of filesWith(dist, (name) => name.endsWith('.md') || /^llms.*\.txt$/.test(name))) {
+  const text = readFileSync(file, 'utf8');
+  for (const [, raw] of text.matchAll(/\]\(([^)\s]+)\)/g)) {
+    const href = raw.replace(origin, '');
+    if (!href.startsWith('/')) {
+      if (!/^[a-z]+:/i.test(raw) && !raw.startsWith('#')) problems.push(`${relative(dist, file)}: ${raw} is a relative link and will not resolve`);
+      continue;
+    }
+    checked += 1;
+    const path = decodeURIComponent(href.split('#')[0]);
+    if (!existsSync(join(dist, path.endsWith('/') ? join(path, 'index.html') : path))) {
+      problems.push(`${relative(dist, file)}: ${raw} does not resolve to a built file`);
+    }
   }
 }
 

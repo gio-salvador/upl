@@ -19,3 +19,15 @@
 /paper/*
   ! Content-Security-Policy
   ! Cross-Origin-Embedder-Policy
+
+# Machine-facing text. Served as UTF-8. The markdown alternates duplicate the HTML pages, so
+# search engines are asked to index the HTML only; crawlers may still fetch and read them.
+/*.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Robots-Tag: noindex
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8

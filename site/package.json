@@ -12,7 +12,8 @@
     "preview": "astro preview",
     "lint:md": "cd .. && markdownlint-cli2 \"**/*.md\"",
     "clean-cache": "node scripts/clear-content-cache.mjs",
-    "check:links": "node scripts/check-links.mjs"
+    "check:links": "node scripts/check-links.mjs",
+    "check:seo": "node scripts/check-seo.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "7.3.1",

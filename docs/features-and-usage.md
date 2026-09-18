@@ -50,17 +50,21 @@ never leaves stale links behind. Both outputs are ignored by git.
 bash scripts/check.sh
 ```
 
-That one command runs everything CI runs. `bash scripts/check.sh site` runs only the three site
+That one command runs everything CI runs. `bash scripts/check.sh site` runs only the four site
 checks below, and `bash scripts/check.sh gates` runs only the toolkit gates.
 
 ```bash
 npm --prefix site run lint:md
 npm --prefix site run build
 npm --prefix site run check:links
+npm --prefix site run check:seo
 ```
 
-`check:links` walks the built pages and fails if any internal link does not resolve or any
-page link lacks its trailing slash. `lint:md` lints every markdown file in the repository against `.markdownlint-cli2.jsonc`. CI
+`check:links` walks the built pages, the markdown alternates and the llms files, and fails if
+any internal link does not resolve or any page link lacks its trailing slash. `check:seo` fails
+if any page lacks a title, a single H1, a description of 50 to 200 characters, a canonical URL,
+a social image, valid JSON-LD or its markdown alternate, or if `llms.txt` does not list every
+page. It checks structure and metadata only, never the wording of a teaching. `lint:md` lints every markdown file in the repository against `.markdownlint-cli2.jsonc`. CI
 runs all three on every pull request.
 
 ## Toolkit gates and skills
@@ -78,7 +82,14 @@ Manifests under `.claude/` configure the toolkit's skills for this repository:
 ## Page descriptions
 
 Each page's search and social description is the first paragraph of its text, cut to about 160
-characters. To override it, add a `description` line to the page's front matter.
+characters. To override it, add a `description` line to the page's front matter. A page whose first
+paragraph is shorter than 50 characters gets a standard closing sentence appended.
+
+To redraw the social sharing image after a design change:
+
+```bash
+node site/scripts/generate-og.mjs
+```
 
 ## Deploy to Cloudflare Pages
 
