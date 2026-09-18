@@ -1,2 +1,8 @@
 .DS_Store
 .claude/settings.local.json
+
+# Secret-shaped files never belong here
+.env*
+!.env.example
+*.pem
+*.key
