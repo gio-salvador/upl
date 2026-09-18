@@ -14,13 +14,16 @@ apply in full. This file adds only what is specific to this repository.
    request and is called out in the pull request body.
 3. **No teaching is edited for search engines or language models.** Discoverability comes from
    structure and metadata.
-4. **The site is static and must run on the Cloudflare Pages free plan.** No server code, no
+4. **Every page renders correctly on phone and desktop.** No horizontal overflow from 320
+   pixels wide upwards, navigation touch targets of at least 44 pixels. Never weaken
+   `site/scripts/check-mobile.mjs` to make a page pass; fix the page.
+5. **The site is static and must run on the Cloudflare Pages free plan.** No server code, no
    Pages Functions, no client-side JavaScript unless the author approves it and the
    Content-Security-Policy in `site/public/_headers` is updated in the same change.
-5. **Public tier from day one.** The repository is private for now and will be public. Treat
+6. **Public tier from day one.** The repository is private for now and will be public. Treat
    every file as public: no secrets, no personal data beyond the author's public identity, no
    client or engagement material of any kind.
-6. **Respect for the traditions named in the text.** Connecting text written for this
+7. **Respect for the traditions named in the text.** Connecting text written for this
    repository describes other religions and their figures accurately and without ranking them.
 
 ## Working

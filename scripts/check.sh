@@ -3,6 +3,7 @@
 #   scripts/check.sh            everything
 #   scripts/check.sh gates      only the vendored toolkit gates (no Node needed)
 #   scripts/check.sh site       only the site checks
+#   scripts/check.sh mobile     only the mobile and desktop rendering gate (needs a build)
 set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
 what="${1:-all}"
@@ -14,6 +15,11 @@ if [ "$what" = all ] || [ "$what" = site ]; then
   npm --prefix site run build
   npm --prefix site run check:links
   npm --prefix site run check:seo
+fi
+
+if [ "$what" = all ] || [ "$what" = mobile ]; then
+  [ -d site/dist ] || npm --prefix site run build
+  npm --prefix site run check:mobile
 fi
 
 if [ "$what" = all ] || [ "$what" = gates ]; then
