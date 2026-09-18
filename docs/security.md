@@ -44,12 +44,12 @@ The main risks are an unwanted change to the canonical text and a compromised si
 | ---- | ----- |
 | Markdown lint, site build, link gate and SEO gate (`scripts/check.sh site`) | `.github/workflows/ci.yml`, job `build` |
 | Every page rendered at four widths: overflow, viewport, landmark, touch targets. Skipped on a pull request that changes nothing visual; always run on `main` | `.github/workflows/ci.yml`, job `mobile` |
-| Toolkit gates: docs, doc claims, plan structure, hardcoded paths and secrets, public readiness, and the sensitive-token scan when the `SENSITIVE_TOKENS` secret is set | `.github/workflows/ci.yml`, job `gates`, running `scripts/check.sh gates` |
+| Toolkit gates: docs, doc claims, plan structure, hardcoded paths and secrets, public readiness, and the sensitive-token scan when the `SENSITIVE_TOKENS` secret is set. Once the repository is public the job fails if the secret is missing | `.github/workflows/ci.yml`, job `gates`, running `scripts/check.sh gates` |
 | Site gate before any upload, then a smoke test of the live headers and key addresses | `.github/workflows/deploy.yml` |
 | OpenTofu format and validate; plan and apply once enabled | `.github/workflows/iac.yml` |
 | Secret scan of the full history (gitleaks) | `.github/workflows/ci.yml`, job `gitleaks` |
-| Dependency CVE scan (OSV-Scanner), weekly and on every push to `main`; fails on a finding | `.github/workflows/security.yml` |
-| CodeQL and OpenSSF Scorecard | `security.yml` and `scorecard.yml`; both run only once the repository is public |
+| Dependency CVE scan (OSV-Scanner), weekly, on every push to `main` and on every pull request from a branch of this repository; fails on a finding | `.github/workflows/security.yml` |
+| CodeQL (weekly, on `main` and on pull requests) and OpenSSF Scorecard | `security.yml` and `scorecard.yml`; both run only once the repository is public |
 
 All actions are pinned by commit SHA, and no checkout leaves credentials behind.
 
@@ -61,7 +61,15 @@ Recorded by the security and gitops audits of 2026-09-18, and closed by the owne
   protection on a private repository on the free plan. Until the repository is public, only the
   local hooks enforce pull-request-only and signed commits.
 - **Sensitive-token scan in CI is off until the `SENSITIVE_TOKENS` secret is set.** The local
-  pre-push hook runs the scan meanwhile.
+  pre-push hook runs the scan meanwhile. The gap cannot outlive the private period: once the
+  repository is public, the CI job fails until the secret exists.
+- **Recorded exception: deploys use long-lived Cloudflare credentials, not OIDC.** The fleet
+  standard asks for short-lived, federated credentials in CI. Cloudflare offers no OIDC
+  federation for Pages uploads or for R2, so the deploy and infrastructure workflows hold an
+  API token and the state bucket's keys as GitHub secrets. What limits the risk: the token is
+  scoped to one account's Pages project and one zone, it is never given to a pull request from
+  a fork, the infrastructure workflow stays off until `IAC_ENABLED` is set, and the token can be
+  revoked in one step from the Cloudflare dashboard. Revisit if Cloudflare adds OIDC.
 
 The steps that close them are in [runbook-go-live.md](runbook-go-live.md).
 

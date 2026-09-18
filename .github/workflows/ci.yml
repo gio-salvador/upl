@@ -113,16 +113,24 @@ jobs:
       # the toolkit repository and an upgrade arrives as a reviewable diff.
       # The sensitive-token list is never committed. When the SENSITIVE_TOKENS secret holds it
       # (one token per line), the public-readiness gate scans every tracked file against it.
-      # Without the secret that one check is off, and says so.
+      # Without the secret that one check is off, and says so. That is tolerated only while the
+      # repository is private: once it is public the job fails closed, because a skipped scan
+      # must never read as a pass on a public surface. Pull requests from forks never receive
+      # secrets, so they are scanned when they reach main instead.
       - name: Run vendored gates
         env:
           SENSITIVE_TOKENS: ${{ secrets.SENSITIVE_TOKENS }}
+          VISIBILITY: ${{ github.event.repository.visibility }}
+          FROM_FORK: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository }}
         run: |
           set -euo pipefail
           if [ -n "${SENSITIVE_TOKENS}" ]; then
             SCT_TOKENS_FILE="$(mktemp)"
             printf '%s\n' "${SENSITIVE_TOKENS}" > "${SCT_TOKENS_FILE}"
             export SCT_TOKENS_FILE
+          elif [ "${VISIBILITY}" = public ] && [ "${FROM_FORK}" != true ]; then
+            echo "::error title=Token scan off::This repository is public and the SENSITIVE_TOKENS secret is not set. Set it (docs/runbook-go-live.md, step 4) so the sensitive-token scan runs."
+            exit 1
           else
             echo "::notice title=Token scan off::The SENSITIVE_TOKENS secret is not set, so the sensitive-token scan did not run."
           fi
