@@ -15,18 +15,18 @@
 
   "_traditions": "Words that name a tradition, its figures, its scriptures or its own terms of art. Karma and dharma are not listed: the teachings have adopted them as their own concepts. Matching ignores case and respects word boundaries.",
   "traditions": {
-    "Christianity": ["christ\\w*", "jesus", "bible", "biblical", "gospels?", "church(es)?", "new testament", "sermon on the mount"],
+    "Christianity": ["christ\\w*", "jesus", "(?<!hebrew )bible", "biblical", "gospels?", "church(es)?", "new testament", "sermon on the mount", "samaritan"],
     "Islam": ["islam\\w*", "muslims?", "muhammad", "qur['’]?an", "koran", "tawhid", "ummah", "zakat", "ilm", "fitrah", "allah", "sufi\\w*", "hajj", "ramadan", "sharia"],
-    "Buddhism": ["buddh\\w*", "dhammapada", "nirvana", "sangha", "zen", "vipassana", "eightfold path", "noble truths?"],
-    "Hinduism": ["hindu\\w*", "vedas?", "vedic", "upanishads?", "bhagavad", "gita", "brahman", "atman", "krishna"],
+    "Buddhism": ["buddh\\w*", "dhammapada", "nirvana", "sangha", "zen", "vipassana", "eightfold path", "noble truths?", "sutta", "huayan"],
+    "Hinduism": ["hindu\\w*", "vedas?", "vedic", "upanishads?", "bhagavad", "gita", "brahman", "atman", "krishna", "rig veda"],
     "Seicho-no-Ie": ["taniguchi", "seicho[- ]no[- ]ie", "shinsokan"],
-    "Judaism": ["juda\\w*", "jewish", "torah", "talmud"],
+    "Judaism": ["juda\\w*", "jewish", "torah", "talmud", "hebrew bible", "leviticus", "hillel", "maimonides", "tzedakah", "mishneh torah"],
     "Taoism": ["tao\\w*", "dao\\w*", "lao ?tzu", "laozi"],
     "Confucianism": ["confuci\\w*"],
-    "Sikhism": ["sikh\\w*", "guru nanak"],
+    "Sikhism": ["sikh\\w*", "guru nanak", "gurus?", "guru granth sahib", "langar", "seva"],
     "Bahá'í Faith": ["bah[aá]['’]?[ií]\\w*", "bah[aá]['’]?u['’]?ll[aá]h"],
-    "Hawaiian tradition": ["ho['ʻ’]?oponopono", "hawaiian"],
-    "Indigenous traditions": ["indigenous", "first nations", "native american"]
+    "Hawaiian tradition": ["ho['ʻ’]?oponopono", "hawaiian", "[ʻ']?[āa]ina"],
+    "Indigenous traditions": ["indigenous", "first nations", "native american", "m[aā]ori", "haudenosaunee"]
   },
 
   "_dedicated": "Pages whose subject is one tradition. They may name only that tradition, and they are left out of the section and corpus shares.",

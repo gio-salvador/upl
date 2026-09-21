@@ -325,7 +325,7 @@ made for D1.
 
 **The Author Note: no change proposed.** "God's infinite love" stays, under D1 point 2.
 
-## Tradition balance, step 3: proposed wording, waiting for the author
+## Tradition balance, step 3: wording approved and applied
 
 Four core beliefs rewritten under decision B2 of the
 [tradition balance plan](plans/2026-09-21-tradition-balance.md), and the rename under B3. Each
@@ -339,9 +339,12 @@ it is the author's to write.** Each draft below keeps the author's existing sent
 states the belief, completed only where it was a fragment, and says so. Everything after it is
 offered for the author to rework, not only to approve. Approve, change or decline by id.
 
-Nothing here is applied. When it is, the four pages are locked pages, so the baseline is recorded
-with `--accept-core`, and the cleared imbalance records are removed with `--waive-imbalance`; the
-author gave that instruction on 21 September 2026 for the wording approved from this list.
+The author approved P15 to P20 on 21 September 2026, keeping the three closing paragraphs the
+drafter had flagged as its own, and the proposals were applied exactly as written. On the
+author's instruction the baseline was recorded with `--accept-core` and `--waive-imbalance`.
+Verified by comparing the baseline before and after: four fingerprints changed (the index and
+three beliefs), one was swapped for the rename, five page records and the section record for the
+core beliefs were removed, and nothing was added.
 
 ### P15. Unity
 
@@ -496,11 +499,20 @@ author gave that instruction on 21 September 2026 for the wording approved from 
   the same book; on these pages it is named as the Torah. "Seva" is counted for Sikhism, where
   it is sourced, though Hinduism uses the word too.
 
-### What the four pages do to the numbers
+### What the four pages did to the numbers
 
-Counted with the words in P20: the core beliefs section goes from Islam alone to Islam at about a
-quarter, and five recorded imbalances clear (the four pages and the index). The exact figures are
-reported when the change is applied, not estimated here.
+Counted with the words in P20. Known imbalances went from 13 to 7: the four pages, the index and
+the core beliefs section all cleared. The whole text is now Islam 25 per cent, Buddhism 16,
+Seicho-no-Ie 14, Christianity 13, Hinduism 10, Judaism 10, Sikhism 6, Taoism 3, the Hawaiian
+tradition 3 and the indigenous traditions 1. Before this work began Islam stood at 40.
+
+Two things the gates caught when the pages were applied:
+
+- The Seicho-No-Ie sentence on the child of God now stands on both belief 4 and the God page in
+  nearly the same words. The author approved both, so it is recorded as an accepted overlap (X20)
+  to be kept in step.
+- "Hebrew Bible" was being counted for Christianity, because "bible" is one of Christianity's
+  words. The gate now leaves "bible" alone when "Hebrew" comes before it, under decision B8.
 
 ## What these decisions open
 

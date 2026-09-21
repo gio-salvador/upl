@@ -4,17 +4,17 @@
     "content/1-foundations/README.md": "66275d70a4486fd57cf0f7e358f222e2d35085d9652465853234cef911fd3da7",
     "content/1-foundations/abstract.md": "a82f5bd5f9989cffb46f7930a81d8938fb8171885983eb39b54dbe2684f60afe",
     "content/1-foundations/author-note.md": "f13bd22a0c45428bdd5d2f7dff14b01cef557d6b731305aec0c15265812bba68",
-    "content/1-foundations/core-beliefs/README.md": "46130f365c6a82a663be7db6f193bb95db28e1222ec8fe1b88f3bd8fdc3ef0f0",
+    "content/1-foundations/core-beliefs/README.md": "1e40605f2844841a21069875f5a1e594b95725be78770c4c9113b02e00e2ee4b",
     "content/1-foundations/core-beliefs/community-and-social-welfare.md": "25723429c9ee65c81393ecde336f4ae1676e09d1a8c2e690da75081b09481150",
-    "content/1-foundations/core-beliefs/compassionate-action.md": "477692d5ba3f304760e52f88b940a3ab58201943e0ccfab36c84e71536a7bb93",
+    "content/1-foundations/core-beliefs/compassionate-action.md": "b372b7f7b827e5a97508e244665e6eb2834f3e4b9e58bab9f44ee9a80cc5d494",
     "content/1-foundations/core-beliefs/environmental-stewardship.md": "9407b0c7285810baf5a7d6cc8c0ca3405ac08e95b53c797c4cb2f20dc4459ff6",
     "content/1-foundations/core-beliefs/ethical-and-moral-living.md": "96fcdde168848787f351e537b9b37595bb253e5d1cf233fdd2dbe36444b78b96",
-    "content/1-foundations/core-beliefs/inclusive-family-structures-and-fitrah.md": "235056832d310e2a878e6cb2e60bb837caa66f0fe7e3705eb80e9b83b14ef3a6",
+    "content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md": "b1b05bdaf34eea26f2221c4a3baa6b23e7f82b3c12aeef46fd37cfd1b39bc9a5",
     "content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md": "389ae99dd650c489f6c14536c0b606851b8d2154332c84b41432684d204fce10",
     "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md": "8112f12e8dae3674a0c649efdb898552d6b3dacd852cbae16881f00f26895003",
-    "content/1-foundations/core-beliefs/respect-for-the-wisdom-of-world-traditions.md": "63be103c438025e7f35ab1be743b2a27b4f2d0f47f42bdd9f8e177bb4c883580",
+    "content/1-foundations/core-beliefs/respect-for-the-wisdom-of-world-traditions.md": "eee39e2dc9660cd7d57fb14e0379253a66cc3c9416c913d3e98db2f1d883727e",
     "content/1-foundations/core-beliefs/spiritual-evolution-and-practice.md": "b3e9b28dfc63b9bb7088d4e933459d026aac3884fce9cc039e58d8bcc664aa9b",
-    "content/1-foundations/core-beliefs/unity.md": "bd2b8a12f37c7653fd92cd338a4b57522ab49fb2d6135d21586b884e9867f1ab",
+    "content/1-foundations/core-beliefs/unity.md": "0997a5d91297ca4d54c5de9084e49f89d14f6a1793c472028e03363e3e6496da",
     "content/1-foundations/name-mission-and-vision.md": "f0f98dfae8db8a422170855bcb0bb5bbbe0c2fdef885c966edae63a50feb74b3",
     "content/1-foundations/purpose.md": "d13ef83b5d51cc188b9d76b41c5d1edc3c5867b7eab9cf18e9541bc0661ae478",
     "content/2-doctrine/README.md": "978ea3b6df0b97d71f1e879186a82600053a8aabc8be91cb9bb08b611574b432",
@@ -38,17 +38,9 @@
     "content/2-doctrine/soul-karma-dharma-and-death/karma.md": "deafd56a7915643a69c54f22f41d0cdd557c8698e501c915985da67af81fba16"
   },
   "pages": {
-    "content/1-foundations/core-beliefs/README.md": {
-      "tradition": "Islam",
-      "sha256": "46130f365c6a82a663be7db6f193bb95db28e1222ec8fe1b88f3bd8fdc3ef0f0"
-    },
     "content/1-foundations/core-beliefs/community-and-social-welfare.md": {
       "tradition": "Islam",
       "sha256": "25723429c9ee65c81393ecde336f4ae1676e09d1a8c2e690da75081b09481150"
-    },
-    "content/1-foundations/core-beliefs/compassionate-action.md": {
-      "tradition": "Islam",
-      "sha256": "477692d5ba3f304760e52f88b940a3ab58201943e0ccfab36c84e71536a7bb93"
     },
     "content/1-foundations/core-beliefs/environmental-stewardship.md": {
       "tradition": "Islam",
@@ -58,10 +50,6 @@
       "tradition": "Islam",
       "sha256": "96fcdde168848787f351e537b9b37595bb253e5d1cf233fdd2dbe36444b78b96"
     },
-    "content/1-foundations/core-beliefs/inclusive-family-structures-and-fitrah.md": {
-      "tradition": "Islam",
-      "sha256": "235056832d310e2a878e6cb2e60bb837caa66f0fe7e3705eb80e9b83b14ef3a6"
-    },
     "content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md": {
       "tradition": "Islam",
       "sha256": "389ae99dd650c489f6c14536c0b606851b8d2154332c84b41432684d204fce10"
@@ -70,28 +58,15 @@
       "tradition": "Islam",
       "sha256": "8112f12e8dae3674a0c649efdb898552d6b3dacd852cbae16881f00f26895003"
     },
-    "content/1-foundations/core-beliefs/respect-for-the-wisdom-of-world-traditions.md": {
-      "tradition": "Islam",
-      "sha256": "63be103c438025e7f35ab1be743b2a27b4f2d0f47f42bdd9f8e177bb4c883580"
-    },
     "content/1-foundations/core-beliefs/spiritual-evolution-and-practice.md": {
       "tradition": "Islam",
       "sha256": "b3e9b28dfc63b9bb7088d4e933459d026aac3884fce9cc039e58d8bcc664aa9b"
-    },
-    "content/1-foundations/core-beliefs/unity.md": {
-      "tradition": "Islam",
-      "sha256": "bd2b8a12f37c7653fd92cd338a4b57522ab49fb2d6135d21586b884e9867f1ab"
     },
     "content/4-way-of-life/environmental-stewardship/README.md": {
       "tradition": "Indigenous traditions",
       "sha256": "e2a3e1859b8918440f810ff640a80d3e02e21da54f98edc44e04b340dc5b0341"
     }
   },
-  "sections": {
-    "content/1-foundations/core-beliefs": {
-      "tradition": "Islam",
-      "share": 1.0
-    }
-  },
+  "sections": {},
   "corpus": null
 }
