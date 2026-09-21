@@ -9,6 +9,8 @@ UPL asks its followers to demonstrate and perform a profound respect for the env
 
 The peoples UPL learns from here include the Māori, whose kaitiaki are guardians named by their own iwi; the Mohawk and the other Haudenosaunee nations, whose Ohén:ton Karihwatéhkwen, the words that come before all else, gives thanks to the living world; and Native Hawaiians, for whom mālama ʻāina is a duty of care owed to the land. The same reverence is found elsewhere: in the Jewish rule against needless destruction, in Francis of Assisi's song to Brother Sun and Sister Water, and in Seicho-No-Ie's harmony of God, nature and humankind.
 
+This section elaborates the core belief [Environmental Stewardship](../../1-foundations/core-beliefs/environmental-stewardship.md).
+
 ## In this section
 
 1. [The Principle of Interconnectedness](principle-of-interconnectedness.md)
