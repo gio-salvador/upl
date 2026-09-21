@@ -63,7 +63,7 @@ The author's, before the step that needs each.
 | 2 | Give each fragment its subject and verb. Proposals P74 to P81; the God page's opening goes with step 3 | 8 | Wording | Done |
 | 3 | Bring the God page, Abstract, Continuum page and Conclusion into line with D1, D2 and D5. Proposals P82 to P85 | 4 | Wording | Done |
 | 4 | Remove the ranking phrases from Purpose and Comparative Analysis; gloss Socinianism. Proposals P86 to P88 | 3 | Wording | Applied, awaiting review |
-| 5 | Give Jesus, Muhammad, the Buddha and Taniguchi what Laozi and Guru Nanak have; settle the liberation page and the Fabric of Ethics | 6 | Wording | - |
+| 5 | Give Jesus, Muhammad, the Buddha and Taniguchi what Laozi and Guru Nanak have; settle the liberation page and the Fabric of Ethics. Proposals P89 to P94 | 6 | Wording | Applied, awaiting review |
 | 6 | Break the long paragraphs, set the four lost headings in bold, fix one ʻokina. No word changes. Proposals P69 to P73; the reordering of belief 6 was withdrawn when checked | 5 | Structure | Done |
 | 7 | Small polish on 12 good pages, and the author's own words: follower naming, alcohol, marriage, the divorce title, the affirmations, the home page | 20 | Wording | - |
 

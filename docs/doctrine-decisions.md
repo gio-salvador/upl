@@ -2154,6 +2154,133 @@ redone before the merge.
 - Notes: the source adds that the Socinians did not think Jesus a "mere man" but the unique Son of
   God; the gloss says only what they denied of the Trinity, which is why the paper names them.
 
+## Page clarity, step 5: the thin pages, applied for the author's review
+
+Step 5 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Jesus, Muhammad, the Buddha
+and Masaharu Taniguchi each had 50 to 74 words that said their teaching fits UPL and not what it
+was, while Laozi and Guru Nanak had 115 words of content. Each of the four gains one paragraph,
+after the author's, built only from sources already in the register. Two more doctrine pages are
+settled. Every page stays under 200 words.
+
+**Checked before asking.** Applied in a scratch tree and run through the doctrine, matrix and
+source gates and the lint. The first run found one overlap, the Samaritan sentence repeating
+Compassionate Action; the draft was reworded and the second run was clean, apart from the expected
+notice that six locked pages changed, which needs the author's `--accept-core`. Dedicated pages
+are outside the balance shares, and no page goes out of balance.
+
+**Applied ahead of review, on the author's instruction.** On 21 September 2026 the author, away
+from the desk, asked for the remaining pull requests to be prepared "as if I had accepted all
+your suggestions", to be reviewed one by one afterwards and changed as needed. So P89 to P94 are
+applied in this pull request as written, and `--accept-core` was run under that instruction: the
+baseline compared before and after shows the fingerprints of the six pages named here changed
+and nothing else. Nothing is merged. If the author changes or drops a proposal, the page and the
+baseline are redone before the merge.
+
+### P89. Jesus and the Message of Love and Forgiveness
+
+- Page: `content/2-doctrine/enlightened-figures/jesus.md`. Locked. Addition, after the author's paragraph:
+
+  > He summed up the law in two commandments, love of God and love of neighbour, and when
+  > asked who the neighbour is he answered with a story, in which the one who cares for a
+  > stranger left wounded on the road is a Samaritan, an outsider to those listening. He
+  > taught his followers to love their enemies, to forgive without keeping count, and to
+  > give, pray and fast where no one is watching. At the last supper he knelt and washed his
+  > disciples' feet. UPL honours him as a teacher of the light. It does not take up the
+  > doctrines the churches hold about him, which the Comparative Analysis sets out.
+
+- "Comparative Analysis" links to that page.
+- Sources: S37, S40, S32, S36, S33, S43.
+
+### P90. Muhammad and the Unity of God
+
+- Page: `content/2-doctrine/enlightened-figures/muhammad.md`. Locked. Addition:
+
+  > The Qur'an teaches that God is one and is the Light of the heavens and the earth, that
+  > there is no compulsion in religion, and that no soul bears the burden of another.
+  > Muhammad taught that the best people are those best in character, and that the merciful
+  > are shown mercy. He said that Islam is built on five things, among them daily prayer,
+  > the giving of alms, the fast and the pilgrimage, and these still shape the life of
+  > Muslims.
+
+- Sources: S88, S101, S167, S171, S160, S100, S92.
+- Notes: no dates are given, because none is in the register. The five are named as his saying
+  (S92), a Sunni formulation.
+
+### P91. Buddha and the Path to Enlightenment
+
+- Page: `content/2-doctrine/enlightened-figures/buddha.md`. Locked.
+- (a) The author's second sentence credits him with "the interconnectedness of existence", which
+  belief 6 now credits to later Buddhists (S74, S75). From "His emphasis on the
+  interconnectedness of existence and personal spiritual development" to:
+
+  > His emphasis on the way all things arise in dependence on one another, and on personal
+  > spiritual development,
+
+- (b) Addition:
+
+  > In his first discourse he set out four noble truths: that there is suffering, that it
+  > has an origin, that it can cease, and that there is a path to its ceasing. That path has
+  > eight parts and is a middle way between indulgence and self-mortification. He taught
+  > mindfulness of breathing as a path to liberation, and the cultivation of love for all
+  > beings. He asked that a teaching be tested and not simply accepted, and spoke of his own
+  > as a raft, to be used and then set down.
+
+- Sources: S69, S85, S73, S79, S81, S74.
+- Notes: the four truths are given in the words of the discourse, which never says "life is
+  suffering" (S69).
+
+### P92. Masaharu Taniguchi and the Power of Positive Thinking
+
+- Page: `content/2-doctrine/enlightened-figures/masaharu-taniguchi.md`. Locked. Addition:
+
+  > He founded Seicho-No-Ie in Japan in 1930. At the centre of his teaching is the True
+  > Image: the perfect world created by God, in which every person is a child of God. He
+  > taught that all religions emanate from one universal God, that what a person thinks,
+  > says and does shapes the world they meet, and that gratitude, to parents and ancestors
+  > above all, opens the way to harmony with all things. His holy sutra, the Nectarean
+  > Shower of Holy Doctrines, gives UPL its image of the body as the soul's cocoon. UPL
+  > honours this teaching without taking up everything he said: it holds that illness and
+  > the material world are real, and his political views are no part of it.
+
+- Sources: S06, S05, S113, S116, S114, S07, S115, S118.
+- Notes: the last sentence carries decision D2 and the caution recorded with S118, so that the
+  page never reads as endorsing everything he said.
+
+### P93. Integration of Karma and Dharma in the Soul's Liberation
+
+- Page: `content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md`.
+  Locked.
+- (a) Every other page calls the cocoon the body; this one calls it "spiritual". From "individuals
+  refine their spiritual 'cocoons,'" to:
+
+  > individuals refine their 'cocoons,'
+
+- (b) "Liberation" is never defined. Addition, as a second paragraph:
+
+  > By liberation UPL means the soul's freedom from what obscures its light. What form the
+  > soul's journey takes after death, UPL has not yet defined.
+
+- Notes: the second sentence of (b) states the open doctrinal question as the author answered it
+  on 21 September 2026, "yet to be defined". It is honest, and it is the author's to include or
+  leave out; (a) and the first sentence stand without it.
+
+### P94. The Fabric of Ethics (decision C8)
+
+- Page: `content/2-doctrine/ethical-and-moral-development/fabric-of-ethics.md`. Locked.
+- The page is 50 words and one image. C8 asks whether to fold it into the section introduction
+  or give it a second paragraph. Drafted here is the second paragraph, which draws out what the
+  image already implies and names no tradition:
+
+  > The image says three things about an ethical life. No single thread makes the cloth:
+  > character is built from many small choices. A thread once woven stays: what is done
+  > becomes part of who one is. And a flaw can be worked into the pattern: a wrong that is
+  > mended, by making it good and seeking forgiveness, is not the ruin of the cloth but part
+  > of its weave.
+
+- Notes: the mending of a wrong "by making it good and seeking forgiveness" echoes the Karma page
+  in different words. If the author prefers to fold the page away, that is a structural change
+  with a redirect, and this proposal is dropped.
+
 ## Open doctrinal questions
 
 Questions the text does not answer and the author has said are not yet decided. No page states or
