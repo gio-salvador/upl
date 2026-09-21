@@ -18,8 +18,7 @@ sentence.
    was split. The smallest repair is two or three words each.
 2. **Physics.** Decision D1 says the teaching is given "in the language of light, and not as a
    claim of physics". The God page, the Abstract and the Conclusion still make the claim, and one
-   statement about the observer effect is wrong as physics. The Continuum page names its own
-   position wrongly.
+   statement about the observer effect is wrong as physics.
 3. **Tone towards other religions.** Purpose and Comparative Analysis each carry a phrase that
    ranks, against belief 7 and locked decision 6.
 4. **Thin pages.** Jesus, Muhammad, the Buddha and Taniguchi get 50 to 74 words and no content of
@@ -78,7 +77,7 @@ sentence.
 | [Dharma: The Path of Righteousness and Duty](../content/2-doctrine/soul-karma-dharma-and-death/dharma.md) | Good | Clear about what UPL takes and what it leaves. | - |
 | [Integration of Karma and Dharma in the Soul's Liberation](../content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md) | Fix | 83 abstract words. Calls the cocoon "spiritual" where every other page calls it the body. "Liberation" is never defined, and what follows death is still an open question. | 5 |
 | [Death as a Transformative Journey](../content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md) | Good | Opens on a command without a subject ("View death…"). Otherwise clear.  Mended in step 2. | - |
-| [The Continuum of Life and Consciousness](../content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md) | Fix | The second sentence is hard to follow. It calls the view "dualism" while describing consciousness as "an intrinsic aspect of reality", which is a different position. | 3 |
+| [The Continuum of Life and Consciousness](../content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md) | Fix | The second sentence is hard to follow. The review first said the page misnames its position; on checking, the paper it cites takes the same position under the same name (S192), so only the sentence needs mending. | 3 |
 | [Ethical and Moral Development: The Cornerstone of UPL](../content/2-doctrine/ethical-and-moral-development/README.md) | Good | The registers and the five commitments are the clearest statement of what UPL asks. | - |
 | [The Fabric of Ethics](../content/2-doctrine/ethical-and-moral-development/fabric-of-ethics.md) | Fix | 50 words and one image. It adds nothing the introduction has not said. | 5 |
 | [Incorporating Diverse Ethical Teachings](../content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md) | Fix | Four paragraphs whose subjects read like lost headings ("Islamic Emphasis on Community and Justice highlights…"). Names four traditions where belief 3 names six. | 6 |

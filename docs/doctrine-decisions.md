@@ -1948,6 +1948,134 @@ compared before and after shows the fingerprints of those two pages changed and 
 
   > UPL sees technology as a powerful tool that, when used ethically, can enhance…
 
+## Page clarity, step 3: physics as analogy, waiting for the author
+
+Step 3 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Decision D1 says the teaching
+about light is given "in the language of light, and not as a claim of physics". Four pages still
+said otherwise, or left the later decisions out. On 21 September 2026 the author decided C2:
+quantum physics stays on the God page as analogy only, and "literal" and the observer-effect
+sentence go.
+
+**Checked before asking.** Applied in a scratch tree and run through the doctrine, matrix and
+source gates and the lint: clean, apart from the expected notice that three locked pages changed
+(the God page, the Abstract, the Continuum page), which needs the author's `--accept-core`. No
+page goes out of balance and no new overlap appears. The physics was read directly from the
+Stanford Encyclopedia of Philosophy (S197, S198) before a word was drafted.
+
+**One finding withdrawn in the checking.** The review said the Continuum page names its own
+position wrongly, calling it dualism while describing consciousness as intrinsic to reality. The
+paper the page cites does exactly that: Chalmers takes experience as fundamental and calls the
+view "naturalistic dualism" (S192). The page is consistent with its source, and only its tangled
+sentence is mended.
+
+### P82. God, Quantum Physics, and the Light of Divinity
+
+- Page: `content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md`. Locked.
+- (a) The opening, which has no subject. From "To envision the universe as an intricate
+  tapestry…" to:
+
+  > UPL envisions the universe as an intricate tapestry…
+
+- (b) Second paragraph, its second and third sentences. From "Quantum physics uncovers a reality
+  where distances collapse under the phenomenon of entanglement and existence blurs into states
+  of potentiality until observed, mirroring the omnipresence and creative dynamism of the divine
+  light. These scientific insights do not contradict but rather complement the spiritual
+  intuition of a universe created and sustained by a singular, unifying light." to:
+
+  > Quantum physics describes a reality where particles that have once interacted remain
+  > correlated however far apart they are, which it calls entanglement, and where, until a
+  > measurement is made, the theory gives only the probabilities of what it will find. UPL
+  > finds in these an image of the omnipresence and creative dynamism of the divine light.
+  > These scientific insights do not prove the spiritual intuition of a universe created and
+  > sustained by a singular, unifying light, and they do not contradict it.
+
+- (c) Third paragraph. From "the light that underpins and unites the cosmos through the laws and
+  mysterious principles quantum physics begins to reveal. This divine light serves both as a
+  literal and metaphorical foundation for existence," to:
+
+  > the light that underpins and unites the cosmos. This divine light is the foundation of
+  > existence,
+
+- (d) Last paragraph, first sentence. From "such as non-locality, reflecting the divine light's
+  omnipresence; potentiality, echoing the limitless creative possibilities of the divine; and
+  the observer effect, highlighting human consciousness's role in shaping reality, serve as
+  scientific analogies for spiritual truths." to:
+
+  > such as non-locality, reflecting the divine light's omnipresence, and potentiality,
+  > echoing the limitless creative possibilities of the divine, serve as analogies for
+  > spiritual truths.
+
+- (e) Last sentence. From "The intertwining of quantum mechanics and the concept of divine light
+  affirms a holistic view of existence," to:
+
+  > Setting quantum mechanics beside the concept of divine light offers a holistic view of
+  > existence,
+
+- Sources: S197, S198.
+- Notes: entanglement does not make distance collapse, and the theory does not say that existence
+  blurs until someone looks: it gives probabilities for what a measurement will find (S197,
+  S198). That consciousness shapes physical reality was one physicist's proposal and is not the
+  theory (S198), so the clause goes, as C2 decided. The title keeps "Quantum Physics": the page
+  still draws the analogy, and now says that it is one.
+
+### P83. Abstract
+
+- Page: `content/1-foundations/abstract.md`. Locked.
+- (a) From "drawing from quantum physics and ancient and contemporary spiritual teachings." to:
+
+  > drawing on ancient and contemporary spiritual teachings and finding parallels in quantum
+  > physics.
+
+- (b) From "the karma law," to:
+
+  > the law of karma,
+
+### P84. The Continuum of Life and Consciousness
+
+- Page: `content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md`.
+  Locked.
+- One word, in the sentence that has "question" and "questions" side by side. From "which
+  questions how physical processes" to:
+
+  > which asks how physical processes
+
+- Source: S192, for leaving the rest alone.
+
+### P85. Conclusion
+
+- Page: `content/5-context/conclusion.md`. Not locked.
+- (a) The first sentence. From "The Unified Path of Light (UPL) offers a compelling synthesis of
+  quantum physics and spiritual wisdom, promoting unity, enlightenment, and ethical harmony." to:
+
+  > The Unified Path of Light (UPL) brings together spiritual wisdom from many traditions and
+  > sets it beside the discoveries of modern science, promoting unity, enlightenment, and
+  > ethical harmony.
+
+- (b) Decision D2, which the Conclusion leaves out. Added to the paragraph on health, after
+  "…promoting an integrative approach to health.":
+
+  > UPL heals the spirit and trusts medicine with the body, and a follower who is ill never
+  > sets medical care aside for spiritual or alternative remedies.
+
+- (c) Decision D5. Added at the end of the paragraph on learning:
+
+  > What is learned is put to use: UPL keeps its own teachings open to correction by the
+  > evidence.
+
+- (d) "At UPL" twice makes a teaching sound like an institution. From "Community and fellowship
+  at UPL" and "Continuous learning at UPL" to:
+
+  > Community and fellowship in UPL
+
+  and
+
+  > Continuous learning in UPL
+
+- Notes: (b) and (c) are worded afresh so that they do not repeat the pages that own those
+  commitments, which the matrix gate would flag. The Conclusion also says nothing of prayer,
+  meditation or the holy texts; adding a paragraph would lengthen a summary, so it is left for the
+  author to ask for.
+
 ## Open doctrinal questions
 
 Questions the text does not answer and the author has said are not yet decided. No page states or
