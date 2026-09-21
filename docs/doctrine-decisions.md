@@ -122,6 +122,39 @@ is still one owner. In the matrix, "soul" and "consciousness" stay separate conc
 Continuum page owns the philosophical argument, but the soul concept gains the other names as
 terms, so every page that uses any of them is indexed under it.
 
+### D5. Knowledge, the arts and technology serve spiritual evolution (21 September 2026)
+
+In the author's words, given while belief 6 was being rewritten: "UPL also preaches that
+everyone should study the sciences and engineering, that greater knowledge brings wisdom and
+helps its followers better understand our world, this life, and perhaps even contribute to it."
+The author asked whether the continuous pursuit of art belongs in the same belief, "such as
+music, painting, poetry, dance", and then added: "UPL also believes that the development of
+science, engineering, arts and therefore technology is directly correlated to our civilization's
+spiritual evolution, that technology as it matures will help us enlighten, be better human
+beings, share knowledge, improve our medicines and general health, improve our quality of life,
+and eventually through continuous study and improvement of these fields we may transform the
+earth into a paradisiac place with no misery, hunger, or disease."
+
+What the drafting had to respect:
+
+1. **Technology is a means, steered by ethics.** Sciences and Technology already says technology
+   enhances well-being "when used ethically"; Environmental Stewardship exists because
+   technology has also harmed the Earth; Sobriety asks followers to avoid industrialised food. A
+   sentence saying technology *will* make us better would contradict them and is not true of
+   history. The drafts say it *can*, "guided by ethics", and keep the author's own "may" for the
+   paradise, as a hope. This matches how the forecast about AI and quantum computing entered the
+   medicine page (D2).
+2. **A belief, not a measurement.** "Directly correlated" is the language of statistics and
+   invites a statistical answer. The drafts say "bound up with".
+3. **The arts stand beside technology, not behind it.** Technology comes from science and
+   engineering. The drafts say "science, engineering and the arts, and the technology that comes
+   from them".
+4. **The teachings invite and do not command.** "Preaches" and "everyone should" became
+   "encourages", with "each according to their gifts and their chances", which is the drafter's.
+5. **This widens a core principle**, which locked decision 7 reserves to the author, and it is
+   the author who is widening it. It adds no eleventh principle: it says what the sixth already
+   meant, and brings it into line with the Continuous Learning section that elaborates it.
+
 ## Wording approved and applied
 
 The author approved all fourteen proposals on 21 September 2026 ("accept and apply all"), and
@@ -614,7 +647,9 @@ between pages; the source gate passing.
 
 - Before: "The Islamic emphasis on Ilm, or knowledge-seeking, aligns well with UPL's commitment
   to continuous learning, reflection, and the integration of diverse spiritual insights."
-- After (revised 21 September 2026 on the author's teaching):
+- After. Two versions, both carrying decision D5; the author chooses.
+
+  **Version B, recommended: the belief here, the vision on Sciences and Technology (with P28).** 343 words.
 
   > UPL holds that nothing in existence stands alone, and that to learn is to discover how
   > things are joined. It commits its followers to continuous learning, reflection, and the
@@ -626,7 +661,9 @@ between pages; the source gate passing.
   > perhaps even to contribute to them. The arts belong here too. Music, painting, poetry,
   > dance and every other art are ways of knowing as well as of making: they train
   > attention, they carry what cannot be said plainly, and they let a person give something
-  > back.
+  > back. UPL believes that the growth of science, engineering and the arts, and of the
+  > technology that comes from them, is bound up with the spiritual evolution of our
+  > civilisation.
   >
   > The Buddha taught that things arise in dependence on one another, and he taught it to
   > explain how suffering arises and how it ends. Later Buddhists drew a wider vision from
@@ -643,6 +680,47 @@ between pages; the source gate passing.
   > blameless and praised by the wise. The Bhagavad Gita names knowledge as one of the paths
   > to the divine.
 
+  **Version A: everything in belief 6.** 411 words, where the other core beliefs run from 80 to 180.
+
+  > UPL holds that nothing in existence stands alone, and that to learn is to discover how
+  > things are joined. It commits its followers to continuous learning, reflection, and the
+  > integration of diverse spiritual insights.
+  >
+  > This learning is not only spiritual. UPL encourages everyone to study the sciences and
+  > engineering, each according to their gifts and their chances. Greater knowledge brings
+  > wisdom, and helps its followers to better understand our world and this life, and
+  > perhaps even to contribute to them. The arts belong here too. Music, painting, poetry,
+  > dance and every other art are ways of knowing as well as of making: they train
+  > attention, they carry what cannot be said plainly, and they let a person give something
+  > back.
+  >
+  > UPL believes that the growth of science, engineering and the arts, and of the technology
+  > that comes from them, is bound up with the spiritual evolution of our civilisation. As
+  > technology matures, guided by ethics, it can help us towards enlightenment and help us
+  > to be better human beings: to share knowledge, to improve our medicines and our health,
+  > and to raise the quality of life. UPL holds the hope that through the continuous study
+  > and improvement of these fields we may in time transform the Earth into a paradise, a
+  > place without misery, hunger or disease.
+  >
+  > The Buddha taught that things arise in dependence on one another, and he taught it to
+  > explain how suffering arises and how it ends. Later Buddhists drew a wider vision from
+  > it. The Huayan school of China pictured the world as the net of Indra, in which every
+  > jewel reflects every other, and in our own time Thich Nhat Hanh called this interbeing.
+  > It is from these that UPL takes its sense of a world in which nothing stands alone. A
+  > late Upanishad says that for the generous of heart the whole world is one family.
+  >
+  > On the seeking of knowledge the traditions speak almost with one voice. Islam calls the
+  > seeking of knowledge Ilm, and the Qur'an teaches the believer to pray for an increase in
+  > it. Judaism holds the study of Torah equal to all other duties, and honours a dispute
+  > carried on for the sake of Heaven. The Buddha told the Kalamas not to rely on tradition,
+  > scripture or clever reasoning alone, but to take up what they find to be wholesome,
+  > blameless and praised by the wise. The Bhagavad Gita names knowledge as one of the paths
+  > to the divine.
+
+- Why B is recommended: a core belief states the belief, and the pages that elaborate it carry
+  the rest. Sciences and Technology already owns this subject and has a section called
+  "Technology as a Tool for Good". It is also not a locked page. The plan names as a risk that a
+  core belief of forty words becomes an essay.
 - The author's teaching, given when the first draft was shown: "UPL also preaches that everyone
   should study the sciences and engineering, that greater knowledge brings wisdom and helps its
   followers better understand our world, this life, and perhaps even contribute to it." The
@@ -675,7 +753,7 @@ between pages; the source gate passing.
   the Qur'anic prayer and not in the hadith with the weak chain. The Kalamas are told to reject
   bare reasoning too, and the test includes the praise of the wise. The Upanishad is called
   late, which it is.
-- Gates, run on the revised draft before it was shown: doctrine gate, the page comes into
+- Gates, run on both versions before they were shown: doctrine gate, the page comes into
   balance and its record clears, and no contrary-language pattern matches; matrix gate, clean,
   with no shared wording against the Sciences and Technology or the Arts pages; source gate,
   passing. When applied this closes finding X07.
@@ -793,6 +871,29 @@ between pages; the source gate passing.
   practice pages. Fixed in the matrix, not in the wording: the belief is now recorded as
   elaborating those two concepts, and the gate lets a page that elaborates a concept be covered
   by its cells. Clean on the second run.
+
+### P28. Sciences and Technology: the vision (goes with version B of P24)
+
+- Addition, as a new last paragraph under "Technology as a Tool for Good". Not a locked page.
+- After:
+
+  > As technology matures, guided by ethics, it can help us towards enlightenment and help
+  > us to be better human beings: to share knowledge, to improve our medicines and our
+  > health, and to raise the quality of life. UPL holds the hope that through the continuous
+  > study and improvement of these fields we may in time transform the Earth into a
+  > paradise, a place without misery, hunger or disease.
+
+- What is kept: the author's teaching of 21 September 2026 (D5), in the author's order and
+  nearly the author's words: enlightenment, better human beings, shared knowledge, medicines and
+  health, quality of life, and the Earth made a paradise without misery, hunger or disease.
+- **The drafter's:** "guided by ethics", and "can" for the author's "will". They keep the
+  paragraph in agreement with the sentence just above it on the same page, which says technology
+  enhances well-being "when used ethically". The author's own "may" is kept for the paradise.
+- No tradition is named. Several traditions hold a hope of this kind and none has a recorded
+  source yet; the Bahá'í teaching on the harmony of science and religion is the nearest, and
+  would be sourced first.
+- Gates, run before this was shown: doctrine gate, no imbalance and no contrary-language match;
+  matrix gate, clean, with no shared wording against belief 6; source gate, passing.
 
 ### First-named traditions across the ten
 
