@@ -1,6 +1,7 @@
 ---
 title: "Unified Path of Light (Synphotodosism)"
 order: 0
+description: "The canonical text of the Unified Path of Light, or Synphotodosism: a spiritual framework of unity, enlightenment and ethical living that learns from many traditions."
 ---
 
 # Unified Path of Light (Synphotodosism)

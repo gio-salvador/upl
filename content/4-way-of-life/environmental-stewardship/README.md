@@ -1,6 +1,7 @@
 ---
 title: "Environmental Stewardship and the Sacredness of Nature"
 order: 3
+description: "Care for the Earth as spiritual practice: nature as sacred, all life as interconnected, and the peoples and traditions UPL learns this from."
 ---
 
 # Environmental Stewardship and the Sacredness of Nature

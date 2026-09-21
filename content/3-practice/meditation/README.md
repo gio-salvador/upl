@@ -1,6 +1,7 @@
 ---
 title: "Incorporating Various Forms of Meditation"
 order: 4
+description: "Three forms of meditation UPL draws on: Buddhist mindfulness and loving-kindness, the Shinsokan of Seicho-No-Ie, and Hawaiian hoʻoponopono."
 ---
 
 # Incorporating Various Forms of Meditation

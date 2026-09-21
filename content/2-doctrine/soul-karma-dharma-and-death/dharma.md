@@ -1,6 +1,7 @@
 ---
 title: "Dharma: The Path of Righteousness and Duty"
 order: 3
+description: "Dharma is each person's own path of right action, found by conscience and not assigned by birth, in harmony with the cosmic order."
 ---
 
 # Dharma: The Path of Righteousness and Duty

@@ -1,6 +1,7 @@
 ---
 title: "Positive Thinking and the Power of Gratefulness"
 order: 1
+description: "Positive thinking as a spiritual discipline, with gratefulness at its centre, changing how a person sees and meets the world."
 ---
 
 # Positive Thinking and the Power of Gratefulness

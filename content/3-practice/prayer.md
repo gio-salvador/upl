@@ -1,6 +1,7 @@
 ---
 title: "Adopting Prayers from Various Traditions"
 order: 3
+description: "UPL prays the prayers of many traditions as attunement to the divine light, with three examples: the Lord's Prayer, an Upanishad's prayer and al-Fatiha."
 ---
 
 # Adopting Prayers from Various Traditions

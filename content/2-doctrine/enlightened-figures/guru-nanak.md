@@ -1,6 +1,7 @@
 ---
 title: "Guru Nanak and the One Light in All"
 order: 6
+description: "Guru Nanak, first of the Sikh Gurus, is honoured for teaching that the one Light is within all, and for joining devotion, equality and service."
 ---
 
 # Guru Nanak and the One Light in All

@@ -1,6 +1,7 @@
 ---
 title: "Buddha and the Path to Enlightenment"
 order: 3
+description: "The Buddha is honoured for his teaching on suffering and impermanence, and for a path of mindfulness, ethical conduct and compassion."
 ---
 
 # Buddha and the Path to Enlightenment

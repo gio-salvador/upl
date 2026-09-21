@@ -1,6 +1,7 @@
 ---
 title: "Comparative Analysis"
 order: 2
+description: "Where UPL agrees with and differs from Christianity, Islam, Judaism, Hinduism, Buddhism, the New Age movement, the Bahá'í Faith and pantheism."
 ---
 
 # Comparative Analysis

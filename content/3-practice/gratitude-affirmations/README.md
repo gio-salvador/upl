@@ -1,6 +1,7 @@
 ---
 title: "Gratitude Affirmations and Contemplative Practices"
 order: 2
+description: "Gratitude as a daily spiritual discipline, practised through affirmations and reflection, with four affirmations to begin from."
 ---
 
 # Gratitude Affirmations and Contemplative Practices

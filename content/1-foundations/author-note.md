@@ -1,6 +1,7 @@
 ---
 title: "Author Note"
 order: 1
+description: "A personal note from the founder, Giovanni S. Salvador, on the faith in divine love that moved him to set out the Unified Path of Light."
 ---
 
 # Author Note

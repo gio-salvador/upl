@@ -1,6 +1,7 @@
 ---
 title: "Holistic Well-being: Embracing Health, Science, and Sobriety"
 order: 4
+description: "UPL's approach to wellbeing of body, mind and spirit: sobriety, trust in science and modern medicine, and mindful choices."
 ---
 
 # Holistic Well-being: Embracing Health, Science, and Sobriety

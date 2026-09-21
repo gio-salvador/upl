@@ -1,6 +1,7 @@
 ---
 title: "Trust in Science and Modern Medicine"
 order: 2
+description: "UPL heals the spirit and medicine treats the body. A follower who is ill never relies on spiritual or alternative remedies alone."
 ---
 
 # Trust in Science and Modern Medicine

@@ -23,7 +23,8 @@ contributors.
 - Every page under `content/` has `title` and `order` front matter. Enforced by the site
   build, which fails on a missing or mistyped field (`site/src/content.config.ts`).
 - The H1 matches `title`. One H1 per page.
-- `description` front matter is optional and overrides the generated page description.
+- Every page carries `description` front matter: one sentence of 50 to 200 characters, unique to
+  the page, saying what the page says and no more. It feeds the search snippet and link previews.
 - Every folder has a `README.md` listing its pages in `order`. Enforced by review.
 - Every page must render without horizontal overflow from 320 pixels wide upwards, with touch
   targets of at least 44 pixels for navigation. Enforced by `site/scripts/check-mobile.mjs` in CI.

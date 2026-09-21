@@ -1,6 +1,7 @@
 ---
 title: "The Fabric of Ethics"
 order: 1
+description: "Ethical development pictured as a tapestry: each action, decision and intention a thread in the record of the soul's journey."
 ---
 
 # The Fabric of Ethics

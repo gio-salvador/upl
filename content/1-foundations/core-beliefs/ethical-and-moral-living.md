@@ -1,6 +1,7 @@
 ---
 title: "Ethical and Moral Living"
 order: 3
+description: "UPL asks for justice, compassion and fairness in all dealings, and regular giving: ethics that is lived and not only believed."
 ---
 
 # Ethical and Moral Living

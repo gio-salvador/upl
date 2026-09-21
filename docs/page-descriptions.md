@@ -1,4 +1,4 @@
-# Page descriptions: drafts for the author
+# Page descriptions
 
 One sentence for each page, to go in its front matter as `description`. The site uses it for the
 search-result snippet, the link preview and the contents cards; today it falls back to the page's
@@ -11,7 +11,11 @@ the lint pass. The doctrine gate reports no imbalance. It does report the 37 loc
 changed, because a page's fingerprint includes its front matter, so applying these needs the
 author's `--accept-core`. The matrix fingerprints need `--record`.
 
-To change one, edit it here; to approve, say which parts.
+**Approved and applied.** The author approved all 81 on 21 September 2026 and they are in each
+page's front matter, word for word. `--accept-core` was run on the author's explicit instruction;
+the baseline compared before and after shows the fingerprints of the 37 locked pages changed and
+nothing else. From here the front matter is the source: to change a description, change it on the
+page. This table is the record of what was approved.
 
 ## Home
 

@@ -1,6 +1,7 @@
 ---
 title: "Buddhist Meditation Practices"
 order: 1
+description: "Mindfulness of breathing and the cultivation of love for all beings: two Buddhist practices a follower of UPL may take up."
 ---
 
 # Buddhist Meditation Practices

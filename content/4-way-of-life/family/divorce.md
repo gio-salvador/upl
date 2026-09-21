@@ -1,6 +1,7 @@
 ---
 title: "Divorce as a Respectable Ultimatum"
 order: 4
+description: "UPL works to keep families whole, and accepts divorce as a last resort when it is the most compassionate course."
 ---
 
 # Divorce as a Respectable Ultimatum

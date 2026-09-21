@@ -1,6 +1,7 @@
 ---
 title: "Interconnectedness and the Pursuit of Knowledge"
 order: 6
+description: "UPL holds that nothing stands alone, and encourages lifelong learning in the spirit, the sciences and the arts, correcting our path as the evidence asks."
 ---
 
 # Interconnectedness and the Pursuit of Knowledge

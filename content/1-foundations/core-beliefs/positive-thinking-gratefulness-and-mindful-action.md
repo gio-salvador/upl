@@ -1,6 +1,7 @@
 ---
 title: "Positive Thinking, Gratefulness, and Mindful Action"
 order: 10
+description: "UPL asks its followers to practise positive thinking, gratefulness and mindful action, and says where each comes from among the traditions."
 ---
 
 # Positive Thinking, Gratefulness, and Mindful Action

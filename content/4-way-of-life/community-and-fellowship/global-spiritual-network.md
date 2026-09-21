@@ -1,6 +1,7 @@
 ---
 title: "Building a Global Spiritual Network"
 order: 3
+description: "UPL sees its community as a worldwide fellowship, joined by shared ideals and by gatherings held across any distance."
 ---
 
 # Building a Global Spiritual Network

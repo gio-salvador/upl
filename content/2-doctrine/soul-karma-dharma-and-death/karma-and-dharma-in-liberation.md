@@ -1,6 +1,7 @@
 ---
 title: "Integration of Karma and Dharma in the Soul's Liberation"
 order: 4
+description: "How awareness of karma and commitment to dharma work together to free the soul from its cocoon for a larger realm of existence."
 ---
 
 # Integration of Karma and Dharma in the Soul's Liberation

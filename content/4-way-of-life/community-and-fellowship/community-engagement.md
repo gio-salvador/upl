@@ -1,6 +1,7 @@
 ---
 title: "Practices of Community Engagement"
 order: 2
+description: "How a UPL community gathers: group meditation and prayer, study circles, service and philanthropy, and shared celebrations."
 ---
 
 # Practices of Community Engagement

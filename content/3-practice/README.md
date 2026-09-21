@@ -1,6 +1,7 @@
 ---
 title: "Practices and Rituals"
 order: 3
+description: "The spiritual practices of the Unified Path of Light: gratitude, prayer, meditation and sacred texts from many traditions, freely chosen."
 ---
 
 # Practices and Rituals

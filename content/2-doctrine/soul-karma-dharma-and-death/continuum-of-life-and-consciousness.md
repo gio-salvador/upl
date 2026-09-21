@@ -1,6 +1,7 @@
 ---
 title: "The Continuum of Life and Consciousness"
 order: 6
+description: "UPL holds that consciousness is an intrinsic part of reality and does not end with the body, a view reached by philosophy and by scripture."
 ---
 
 # The Continuum of Life and Consciousness

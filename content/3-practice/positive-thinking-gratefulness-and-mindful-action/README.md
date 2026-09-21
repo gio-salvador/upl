@@ -1,6 +1,7 @@
 ---
 title: "The Integration of Positive Thinking, Gratefulness, and Mindful Action"
 order: 1
+description: "How positive thinking, gratefulness and mindful action work together as one practice, drawing on Seicho-No-Ie, hoʻoponopono and other traditions."
 ---
 
 # The Integration of Positive Thinking, Gratefulness, and Mindful Action

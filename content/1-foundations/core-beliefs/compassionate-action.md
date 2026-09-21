@@ -1,6 +1,7 @@
 ---
 title: "Compassionate Action"
 order: 5
+description: "UPL calls for compassion towards all beings: it begins with those nearest and reaches the stranger, the opponent and every living thing."
 ---
 
 # Compassionate Action

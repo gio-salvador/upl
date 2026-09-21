@@ -1,6 +1,7 @@
 ---
 title: "Jesus and the Message of Love and Forgiveness"
 order: 1
+description: "Jesus is honoured for his teaching of love, compassion and forgiveness, and for the love of neighbour that binds a community of light."
 ---
 
 # Jesus and the Message of Love and Forgiveness

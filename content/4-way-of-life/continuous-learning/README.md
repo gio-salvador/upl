@@ -1,6 +1,7 @@
 ---
 title: "Continuous Learning: Expanding Knowledge and Creativity"
 order: 5
+description: "Lifelong learning in work, the sciences, technology and the arts, as part of spiritual growth and of taking part in the world."
 ---
 
 # Continuous Learning: Expanding Knowledge and Creativity

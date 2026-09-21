@@ -1,6 +1,7 @@
 ---
 title: "Cooperative Growth and Support"
 order: 3
+description: "Working on oneself strengthens the family: partners support each other's growth with encouragement, resilience and love."
 ---
 
 # Cooperative Growth and Support

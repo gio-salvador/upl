@@ -1,6 +1,7 @@
 ---
 title: "The Immortal Soul and Its Evolution Beyond Matter"
 order: 1
+description: "Soul, spirit, consciousness and true self are names for one essence, an immortal emanation of divine light that outgrows the body as a silkworm its cocoon."
 ---
 
 # The Immortal Soul and Its Evolution Beyond Matter
