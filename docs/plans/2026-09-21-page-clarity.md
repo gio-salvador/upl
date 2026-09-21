@@ -1,6 +1,6 @@
 # Make every page clear, consistent and easy to follow
 
-**Status: in progress.** Steps 1 and 6 are done, 21 September 2026. The review behind it is
+**Status: in progress.** Steps 1, 2 and 6 are done, 21 September 2026. The review behind it is
 [page-clarity-review.md](../page-clarity-review.md); the description drafts are
 [page-descriptions.md](../page-descriptions.md).
 
@@ -47,7 +47,7 @@ The author's, before the step that needs each.
 | Id | Question | Needed by |
 | -- | -------- | --------- |
 | C1 | Approve, or edit, the 81 descriptions. **Decided 21 September 2026: all approved.** | Step 1 |
-| C2 | The God page: keep quantum physics as analogy only, and drop "literal" and the observer-effect sentence? Recommended: yes, it is what D1 already says. | Step 3 |
+| C2 | The God page: keep quantum physics as analogy only, and drop "literal" and the observer-effect sentence? **Decided 21 September 2026: yes.** | Step 3 |
 | C3 | One name for a follower. Recommended: "follower", already the most used, with "Synphotodosist" kept where the name itself is the point. | Step 7 |
 | C4 | Does sobriety include alcohol? | Step 7 |
 | C5 | Who may marry: any two adults? | Step 7 |
@@ -60,7 +60,7 @@ The author's, before the step that needs each.
 | Step | What | Pages | Kind | Status |
 | ---- | ---- | ----: | ---- | ------ |
 | 1 | Descriptions into front matter (S5 in the site review). Showing them on the contents cards (S6) is a site change and goes in its own pull request | 81 | Metadata | Done |
-| 2 | Give each fragment its subject and verb. Proposals P74 to P81; the God page's opening goes with step 3 | 7 | Wording | Drafted |
+| 2 | Give each fragment its subject and verb. Proposals P74 to P81; the God page's opening goes with step 3 | 8 | Wording | Done |
 | 3 | Bring the God page, Abstract, Continuum page and Conclusion into line with D1, D2 and D5 | 4 | Wording | - |
 | 4 | Remove the ranking phrases from Purpose and Comparative Analysis; gloss Socinianism | 3 | Wording | - |
 | 5 | Give Jesus, Muhammad, the Buddha and Taniguchi what Laozi and Guru Nanak have; settle the liberation page and the Fabric of Ethics | 6 | Wording | - |

@@ -1848,12 +1848,13 @@ the page is left as it is.
 - "Ho'oponopono" becomes "Hoʻoponopono", as everywhere else in the text. The 70-word sentence it
   sits in cannot be shortened without changing words, so it waits for step 7.
 
-## Page clarity, step 2: the openings without a subject, waiting for the author
+## Page clarity, step 2: the openings without a subject, approved and applied
 
-Step 2 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Nine openings on seven pages
+Step 2 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Eight openings on seven pages
 began as headings or instructions in the founding paper and became first sentences when it was
 split: "To value…", "View death…", "Prioritise…". Each gets the fewest words that make it a
-sentence, and nothing else in it changes. The verb follows the registers of decision D6: what UPL
+sentence, and nothing else in it changes. An eighth page, Continuous Learning, has a grammatical
+slip of the same origin. The verb follows the registers of decision D6: what UPL
 holds is "values", "views", "teaches", "sees"; what it asks of conduct is "encourages". The God
 page opens the same way and is left to step 3, where the rest of that page is settled.
 
@@ -1861,6 +1862,10 @@ page opens the same way and is left to step 3, where the rest of that page is se
 source gates and the lint: clean, apart from the expected notice that two locked pages changed
 (The Role of Enlightened Figures and Death as a Transformative Journey), which needs the author's
 `--accept-core`. No page goes out of balance and no new overlap appears.
+
+**Approved and applied.** The author approved P74 to P81 on 21 September 2026 and they were
+applied as written. `--accept-core` was run on the author's explicit instruction; the baseline
+compared before and after shows the fingerprints of those two pages changed and nothing else.
 
 ### P74. The Role of Enlightened Figures
 
