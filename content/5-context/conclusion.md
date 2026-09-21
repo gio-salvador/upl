@@ -6,7 +6,7 @@ description: "The conclusion of the founding paper: a summary of UPL's teaching,
 
 # Conclusion
 
-The Unified Path of Light (UPL) offers a compelling synthesis of quantum physics and spiritual wisdom, promoting unity, enlightenment, and ethical harmony. Here, we are seen as interconnected emanations of divine light, invited to foster a deeper understanding of our cosmos and purpose.
+The Unified Path of Light (UPL) brings together spiritual wisdom from many traditions and sets it beside the discoveries of modern science, promoting unity, enlightenment, and ethical harmony. Here, we are seen as interconnected emanations of divine light, invited to foster a deeper understanding of our cosmos and purpose.
 
 UPL honours the teachings of various enlightened figures, considering them complementary and providing diverse insights into universal truths and ethics. These spiritual guides serve as beacons on our collective journey towards unity and the embodiment of divine light in everyday life.
 
@@ -18,10 +18,10 @@ Fostering ethical development weaves together teachings from diverse traditions.
 
 The integration of positive thinking, gratitude, and mindful action offers a pathway to enlightenment, highlighting the role of individuals as co-creators of a harmonious reality.
 
-Community and fellowship at UPL embody interconnectedness, compassion, and collective growth. This spiritual-social infrastructure serves as a blueprint for manifesting spiritual principles within social relationships and community life.
+Community and fellowship in UPL embody interconnectedness, compassion, and collective growth. This spiritual-social infrastructure serves as a blueprint for manifesting spiritual principles within social relationships and community life.
 
 Environmental stewardship, as championed by UPL, reflects the core values of respect for all life and the pursuit of harmony. Advocating for sustainable practices and active participation in restoration efforts, UPL empowers adherents to contribute to the well-being of the planet.
 
-UPL's philosophy comprises a life of virtue, sobriety, and mindful living, promoting an integrative approach to health. It guides individuals towards a harmonious existence, deeply connected to their spiritual essence.
+UPL's philosophy comprises a life of virtue, sobriety, and mindful living, promoting an integrative approach to health. UPL heals the spirit and trusts medicine with the body, and a follower who is ill never sets medical care aside for spiritual or alternative remedies. It guides individuals towards a harmonious existence, deeply connected to their spiritual essence.
 
-Continuous learning at UPL is a holistic practice that includes professional development, scientific exploration, and creativity. It fosters a vibrant and enlightened community dedicated to personal growth, societal advancement, and spiritual understanding.
+Continuous learning in UPL is a holistic practice that includes professional development, scientific exploration, and creativity. It fosters a vibrant and enlightened community dedicated to personal growth, societal advancement, and spiritual understanding. What is learned is put to use: UPL keeps its own teachings open to correction by the evidence.

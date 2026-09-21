@@ -18,8 +18,7 @@ sentence.
    was split. The smallest repair is two or three words each.
 2. **Physics.** Decision D1 says the teaching is given "in the language of light, and not as a
    claim of physics". The God page, the Abstract and the Conclusion still make the claim, and one
-   statement about the observer effect is wrong as physics. The Continuum page names its own
-   position wrongly.
+   statement about the observer effect is wrong as physics.
 3. **Tone towards other religions.** Purpose and Comparative Analysis each carry a phrase that
    ranks, against belief 7 and locked decision 6.
 4. **Thin pages.** Jesus, Muhammad, the Buddha and Taniguchi get 50 to 74 words and no content of
@@ -43,7 +42,7 @@ sentence.
 | ---- | ------- | ------- | ---- |
 | [Foundations](../content/1-foundations/README.md) | Good | Says what the part holds in one sentence. | - |
 | [Author Note](../content/1-foundations/author-note.md) | Good | Personal and ornate, as a founder's note may be. Leave it. | - |
-| [Abstract](../content/1-foundations/abstract.md) | Fix | "The karma law" is awkward; "drawing from quantum physics" says more than the God page now allows; the last sentence describes the paper, not the site. | 3 |
+| [Abstract](../content/1-foundations/abstract.md) | Good | "The karma law" is awkward; "drawing from quantum physics" says more than the God page now allows; the last sentence describes the paper, not the site.  Mended in step 3. | - |
 | [Name, Mission, and Vision](../content/1-foundations/name-mission-and-vision.md) | Good | Clear structure. Heavy with abstract nouns, but each section says one thing. | - |
 | [Purpose](../content/1-foundations/purpose.md) | Fix | Hardest Foundations page to read: four long paragraphs, one tangled sentence ("bridging the chasm created by contrasting the extremes"). "Outdated worldviews", "chains of dogmatic tradition" and "inadequacies of existing religious structures" sit badly beside belief 7. | 4 |
 | [Core Beliefs and Principles](../content/1-foundations/core-beliefs/README.md) | Good | A list. It becomes useful once the cards carry descriptions. | 1 |
@@ -63,7 +62,7 @@ sentence.
 | Page | Verdict | Finding | Step |
 | ---- | ------- | ------- | ---- |
 | [Doctrine](../content/2-doctrine/README.md) | Good | One sentence, accurate. | - |
-| [God, Quantum Physics, and the Light of Divinity](../content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md) | Fix | The page argues with itself. One paragraph says the teaching is "not a claim of physics"; three others say light is a "literal" foundation, that existence "blurs into states of potentiality until observed", and that the observer effect shows consciousness shaping reality, which is not what physics says. It opens on a fragment, and the central paragraph runs to 170 words. | 3 |
+| [God, Quantum Physics, and the Light of Divinity](../content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md) | Good | The page argues with itself. One paragraph says the teaching is "not a claim of physics"; three others say light is a "literal" foundation, that existence "blurs into states of potentiality until observed", and that the observer effect shows consciousness shaping reality, which is not what physics says. It opens on a fragment, and the central paragraph runs to 170 words.  Mended in step 3. | - |
 | [The Role of Enlightened Figures](../content/2-doctrine/enlightened-figures/README.md) | Good | Opens without a subject ("To value…").  Mended in step 2. | - |
 | [Jesus and the Message of Love and Forgiveness](../content/2-doctrine/enlightened-figures/jesus.md) | Fix | 49 words. Says his teaching fits UPL, not what he taught. Laozi and Guru Nanak get twice the space and real content. | 5 |
 | [Muhammad and the Unity of God](../content/2-doctrine/enlightened-figures/muhammad.md) | Fix | 50 words, same pattern. | 5 |
@@ -78,7 +77,7 @@ sentence.
 | [Dharma: The Path of Righteousness and Duty](../content/2-doctrine/soul-karma-dharma-and-death/dharma.md) | Good | Clear about what UPL takes and what it leaves. | - |
 | [Integration of Karma and Dharma in the Soul's Liberation](../content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md) | Fix | 83 abstract words. Calls the cocoon "spiritual" where every other page calls it the body. "Liberation" is never defined, and what follows death is still an open question. | 5 |
 | [Death as a Transformative Journey](../content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md) | Good | Opens on a command without a subject ("View death…"). Otherwise clear.  Mended in step 2. | - |
-| [The Continuum of Life and Consciousness](../content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md) | Fix | The second sentence is hard to follow. It calls the view "dualism" while describing consciousness as "an intrinsic aspect of reality", which is a different position. | 3 |
+| [The Continuum of Life and Consciousness](../content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md) | Good | The second sentence is hard to follow. The review first said the page misnames its position; on checking, the paper it cites takes the same position under the same name (S192), so only the sentence needs mending.  Mended in step 3. | - |
 | [Ethical and Moral Development: The Cornerstone of UPL](../content/2-doctrine/ethical-and-moral-development/README.md) | Good | The registers and the five commitments are the clearest statement of what UPL asks. | - |
 | [The Fabric of Ethics](../content/2-doctrine/ethical-and-moral-development/fabric-of-ethics.md) | Fix | 50 words and one image. It adds nothing the introduction has not said. | 5 |
 | [Incorporating Diverse Ethical Teachings](../content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md) | Fix | Four paragraphs whose subjects read like lost headings ("Islamic Emphasis on Community and Justice highlights…"). Names four traditions where belief 3 names six. | 6 |
@@ -139,5 +138,5 @@ sentence.
 | [Context](../content/5-context/README.md) | Good | Clear. | - |
 | [Historical Context](../content/5-context/historical-context.md) | Fix | Socinianism is named and never explained; most readers will not know it. | 4 |
 | [Comparative Analysis](../content/5-context/comparative-analysis.md) | Fix | Opens "UPL is unique in that it combines scientific understanding with… spiritual traditions", and four paragraphs later says the Bahá'í Faith does the same. "A mere philosophical stance" ranks pantheism, against locked decision 6. | 4 |
-| [Conclusion](../content/5-context/conclusion.md) | Fix | Calls UPL "a compelling synthesis of quantum physics and spiritual wisdom", which decision D1 stepped back from. It omits medicine (D2), learning and correction (D5), and practice. "At UPL" makes a teaching sound like an institution. | 3 |
+| [Conclusion](../content/5-context/conclusion.md) | Good | Calls UPL "a compelling synthesis of quantum physics and spiritual wisdom", which decision D1 stepped back from. It omits medicine (D2), learning and correction (D5), and practice. "At UPL" makes a teaching sound like an institution.  Mended in step 3. | - |
 | [References](../content/5-context/references.md) | Good | Clear. Editions and years would help a reader find the books. | 7 |

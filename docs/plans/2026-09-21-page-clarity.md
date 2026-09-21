@@ -1,6 +1,6 @@
 # Make every page clear, consistent and easy to follow
 
-**Status: in progress.** Steps 1, 2 and 6 are done, 21 September 2026. The review behind it is
+**Status: in progress.** Steps 1, 2, 3 and 6 are done, 21 September 2026. The review behind it is
 [page-clarity-review.md](../page-clarity-review.md); the description drafts are
 [page-descriptions.md](../page-descriptions.md).
 
@@ -61,7 +61,7 @@ The author's, before the step that needs each.
 | ---- | ---- | ----: | ---- | ------ |
 | 1 | Descriptions into front matter (S5 in the site review). Showing them on the contents cards (S6) is a site change and goes in its own pull request | 81 | Metadata | Done |
 | 2 | Give each fragment its subject and verb. Proposals P74 to P81; the God page's opening goes with step 3 | 8 | Wording | Done |
-| 3 | Bring the God page, Abstract, Continuum page and Conclusion into line with D1, D2 and D5 | 4 | Wording | - |
+| 3 | Bring the God page, Abstract, Continuum page and Conclusion into line with D1, D2 and D5. Proposals P82 to P85 | 4 | Wording | Done |
 | 4 | Remove the ranking phrases from Purpose and Comparative Analysis; gloss Socinianism | 3 | Wording | - |
 | 5 | Give Jesus, Muhammad, the Buddha and Taniguchi what Laozi and Guru Nanak have; settle the liberation page and the Fabric of Ethics | 6 | Wording | - |
 | 6 | Break the long paragraphs, set the four lost headings in bold, fix one ʻokina. No word changes. Proposals P69 to P73; the reordering of belief 6 was withdrawn when checked | 5 | Structure | Done |
