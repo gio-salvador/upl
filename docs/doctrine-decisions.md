@@ -1487,21 +1487,27 @@ sickness and death are nonexistent", so the credit names the debt and the differ
   > Shower of Holy Doctrines, says that when the time comes a person leaves the body as the
   > silkworm leaves its cocoon and rises to the world of spirit, and that the essence of a
   > person is life, for which there can be no death. The Bhagavad Gita says of the soul that
-  > it lays aside a worn-out body as a person lays aside worn-out clothes for new ones. UPL
-  > holds with both that the soul goes on. It differs from the sutra in one thing: the sutra
-  > calls death unreal, and UPL teaches that death is real, a passage in a journey that does
-  > not end.
+  > it lays aside a worn-out body as a person lays aside worn-out clothes for new ones. When
+  > the sutra says that death is not real, it means that death is not the end: it seems
+  > final, and it is not. UPL holds with both that the soul goes on, and that death is a
+  > passage in a journey that does not end.
 
 - Sources: S07, S08; S196.
-- Notes: the author's paragraph stays whole. The last sentence is the drafter's and is doctrine:
-  it states the difference the author decided in D1, point 5, that UPL does not call death or
-  suffering unreal. A second voice, as the balance rule asks, from the Bhagavad Gita, read
-  directly.
-- **A question for the author.** The Gita verse teaches rebirth: the soul casts off one body
-  "and enters a new one". UPL's pages speak of the soul emerging into "a broader, freer realm"
-  and never say whether it returns to another life. The draft keeps the verse's own words ("for
-  new ones") and does not settle it. Whether UPL teaches rebirth is a gap in the doctrine that
-  only the author can fill.
+- Notes: the author's paragraph stays whole. A second voice, as the balance rule asks, from the
+  Bhagavad Gita, read directly.
+- **Corrected on the author's reading of the sutra.** The first draft said UPL "differs from the
+  sutra" because the sutra calls death unreal. The author, who holds the sutra and confirmed the
+  three passages against it on 21 September 2026, answered: "death being not real in seichonoie
+  means that death is not the end, death not being real means that it seems final, but it's
+  not". So on death there is no difference to state, and the draft now gives the sutra's meaning
+  in the author's words. Where UPL does part from Seicho-No-Ie is on illness and suffering,
+  which UPL holds to be real and to call for real help (decision D1, point 5, and D2); that
+  stays as decided.
+- **Rebirth: yet to be defined.** The Gita verse teaches rebirth: the soul casts off one body
+  "and enters a new one". Asked whether UPL teaches rebirth, the author answered on 21 September
+  2026 that it is yet to be defined. The draft attributes the verse to the Gita and says only
+  that "the soul goes on", which holds either way. No page should state or deny rebirth until
+  the author decides.
 
 **P59. The Continuum of Life and Consciousness. Addition, after the existing text. Locked page.**
 
@@ -1544,6 +1550,15 @@ sickness and death are nonexistent", so the credit names the debt and the differ
 
 - **A Christian form of meditation** is sourced and would be a new page under Practice. It is a
   new teaching more than a matter of balance, so it is left for the author to ask for.
+
+## Open doctrinal questions
+
+Questions the text does not answer and the author has said are not yet decided. No page states or
+denies these until the author does.
+
+- **Rebirth.** Whether the soul returns to another life. The pages speak of the soul emerging into
+  "a broader, freer realm", and Karma speaks of "future conditions and paths for evolution", which
+  can be read either way. The author, 21 September 2026: "yet to be defined".
 
 ## What these decisions open
 

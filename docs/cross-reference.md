@@ -355,8 +355,8 @@ truly meets the teachings and where it does not.
 | Tradition | Relation | Sources | Note |
 | --- | --- | --- | --- |
 | Christianity | contrary | S38, S157, S133, S134, S158, S159 | Eternal punishment is classical teaching, Catholic and Protestant. Orthodoxy speaks of hell as the experience of God's love by those who reject it. Universal restoration, held by Gregory of Nyssa, is a minority hope the confessions condemn. UPL does not teach eternal punishment. |
-| Seicho-no-Ie | origin | S07, S08 | The author's source for these pages: a person leaves the body-cocoon and rises to the world of spirit, and the essence of a person is life. The sutra also calls death nonexistent; UPL teaches that death is real, a passage (decision D1, point 5). |
-| Hinduism | independent | S196, S195 | The soul lays aside a worn-out body as worn-out clothes, and takes another. The verse teaches rebirth; UPL's pages do not say whether the soul returns. |
+| Seicho-no-Ie | origin | S07, S08 | The author's source for these pages: a person leaves the body-cocoon and rises to the world of spirit, and the essence of a person is life. The sutra's "death is not real" means, on the author's reading, that death is not the end: it seems final, and it is not. No difference from UPL on death; the difference is on illness (see Science and modern medicine). |
+| Hinduism | independent | S196, S195 | The soul lays aside a worn-out body as worn-out clothes, and takes another. The verse teaches rebirth, which UPL has not yet defined. |
 
 **Consciousness**, owned by [2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness](../content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md)
 
