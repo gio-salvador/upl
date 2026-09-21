@@ -100,33 +100,37 @@ a source in the [source register](sources.md).
   written as agreement.
 - **C, contrary.** It teaches otherwise. Said openly, in Comparative Analysis.
 
-| Teaching | Hinduism | Islam | Christianity | Sikhism | Seicho-no-Ie | Buddhism | Judaism | Indigenous traditions | Hawaiian tradition | Shared by |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | ---: |
-| Unity | H | H | H | H | H | | | | | 5 |
-| Spiritual evolution and practice | H | H | H | | H | H | H | | | 6 |
-| Ethical and moral living | H | H | H | H | | H | H | | | 6 |
-| Innate goodness (Fitrah) | | O | | | H | R | H | | | 3 |
-| Compassionate action | H | H | I | H | | H | O | | | 6 |
-| Interconnectedness | H | | | | H | H | | H | H | 5 |
-| Pursuit of knowledge and continuous learning | H | H | | | | H | H | | | 4 |
-| Respect for the wisdom of world traditions | R | H | | | H | R | | | | 2 |
-| Environmental stewardship | | H | H | | H | | H | H | H | 6 |
-| Community and fellowship | | H | H | H | | H | | | | 4 |
-| Positive thinking | | H | R | | O | R | | | | 2 |
-| Gratitude | | H | | | H | | | H | | 3 |
-| Mindful action | H | | H | | | H | H | | | 4 |
-| Divine light | H | H | H | H | H | | R | | | 5 |
-| The immortal soul (also spirit, consciousness of the person, true self) | H | | | | H | C | | | | 2 |
-| The silkworm and cocoon image | | | | | O | | | | | 1 |
-| Karma | O | | | | | | | | | 1 |
-| Dharma | O | | | | | R | | | | 1 |
-| Death | | | C | | | | | | | 0 |
-| Prayer | H | H | H | | | | | | | 3 |
-| Holy texts | H | | H | | | H | | | | 3 |
-| Sobriety | | | | H | | H | | | | 2 |
-| Science and modern medicine | | | R | | C | | H | | | 1 |
-| Shinsokan | | | | | O | | | | | 1 |
-| Ho'oponopono | | | | | | | | | O | 1 |
+| Teaching | Hinduism | Islam | Christianity | Sikhism | Seicho-no-Ie | Taoism | Judaism | Buddhism | Indigenous traditions | Hawaiian tradition | Bahá'í Faith | Shared by |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | ---: |
+| Unity | H | H | H | H | H | H | R | | | | | 6 |
+| Spiritual evolution and practice | H | H | H | | H | | H | H | | | | 6 |
+| Ethical and moral living | H | H | H | H | | H | H | H | | | | 7 |
+| Family | | C | C | | H | | C | | | | | 1 |
+| Innate goodness (Fitrah) | | O | C | | H | | H | R | | | | 3 |
+| Compassionate action | H | H | I | H | | | O | H | | | | 6 |
+| Interconnectedness | H | | | | H | | | H | H | H | H | 6 |
+| Pursuit of knowledge and continuous learning | H | H | | | | | H | H | | | | 4 |
+| Respect for the wisdom of world traditions | R | H | R | | H | | R | R | | | R | 2 |
+| Environmental stewardship | | H | H | | H | | H | | H | H | | 6 |
+| Community and fellowship | | H | H | H | | | | H | | | | 4 |
+| Positive thinking | | H | R | | O | | | R | | | | 2 |
+| Gratitude | | H | H | | H | | H | | H | | | 5 |
+| Mindful action | H | | H | | | | H | H | | | | 4 |
+| Divine light | H | H | H | H | H | | R | | | | | 5 |
+| God | | H | | | | H | H | C | | | | 3 |
+| The immortal soul (also spirit, consciousness of the person, true self) | H | R | R | | H | | H | C | | | | 3 |
+| The silkworm and cocoon image | | | | | O | | | | | | | 1 |
+| Karma | O | | | | | | | | | | | 1 |
+| Dharma | O | | | | | | | R | | | | 1 |
+| Death | | | C | | | | | | | | | 0 |
+| Meditation | | | H | | H | | | H | | R | | 3 |
+| Prayer | H | H | H | | | | | | | | | 3 |
+| Holy texts | H | | H | | | | | H | | | | 3 |
+| Sobriety | | | | H | | | | H | | | | 2 |
+| Science and modern medicine | | | R | | C | | H | | | | | 1 |
+| Science and technology | | | | | | | | | | | H | 1 |
+| Shinsokan | | | | | O | | | | | | | 1 |
+| Ho'oponopono | | | | | | | | | | O | | 1 |
 
 How many of these teachings each tradition shares in, resembles or stands against. This is
 the second measure of balance, beside the count of mentions: it shows where a tradition
@@ -135,14 +139,16 @@ truly meets the teachings and where it does not.
 | Tradition | Shares in | Of which origin | Resembles only | Contrary |
 | --- | ---: | ---: | ---: | ---: |
 | Hinduism | 13 | 2 | 1 | |
-| Islam | 13 | 1 | | |
-| Christianity | 10 | | 2 | 1 |
+| Islam | 14 | 1 | 1 | 1 |
+| Christianity | 12 | | 4 | 3 |
 | Sikhism | 6 | | | |
-| Seicho-no-Ie | 12 | 3 | | 1 |
-| Buddhism | 9 | | 4 | 1 |
-| Judaism | 8 | 1 | 1 | |
+| Seicho-no-Ie | 14 | 3 | | 1 |
+| Taoism | 3 | | | |
+| Judaism | 11 | 1 | 3 | 1 |
+| Buddhism | 10 | | 4 | 2 |
 | Indigenous traditions | 3 | | | |
-| Hawaiian tradition | 3 | 1 | | |
+| Hawaiian tradition | 3 | 1 | 1 | |
+| Bahá'í Faith | 2 | | 1 | |
 
 ### The cells
 
@@ -153,15 +159,17 @@ truly meets the teachings and where it does not.
 | Hinduism | independent | S64 | "That thou art". Identity of self and ultimate reality is one school's reading of three. |
 | Islam | independent | S88, S101 | The oneness of God, and God as the Light of the heavens and the earth. |
 | Christianity | independent | S32, S44 | "You are the light of the world" and "God is light" are different sayings with different subjects. |
-| Sikhism | independent | S103, S110 | One creator, and the Lord's Light within all. |
+| Sikhism | independent | S103, S110, S191 | One creator, and the Lord's Light within all. |
 | Seicho-no-Ie | independent | S05, S06 | Only the perfect world God created truly exists. |
+| Taoism | independent | S129, S130 | All things depend on the One. Zhuangzi's "all things and I are one" is at once undercut by its own author, so not a plain creed. |
+| Judaism | resembles | S181 | The oneness of God, which is not the oneness of all existence. |
 
 **Spiritual evolution and practice**, owned by [1-foundations/core-beliefs/spiritual-evolution-and-practice](../content/1-foundations/core-beliefs/spiritual-evolution-and-practice.md)
 
 | Tradition | Relation | Sources | Note |
 | --- | --- | --- | --- |
 | Islam | independent | S92 | Prayer, fasting and pilgrimage among the five. |
-| Hinduism | independent | S56, S57 | Paths of action, knowledge and devotion for different temperaments. The fourfold scheme is modern (S58). |
+| Hinduism | independent | S56, S57, S190 | Paths of action, knowledge and devotion for different temperaments. The fourfold scheme is Vivekananda's, from the winter of 1895 to 1896 (S190, read in snippets only; S58 is weaker). |
 | Buddhism | independent | S69, S85 | The eightfold path; mindfulness of breathing as a path to liberation. |
 | Christianity | independent | S33 | Giving, prayer and fasting, done in secret. |
 | Judaism | independent | S28, S24 | The day of rest; study. |
@@ -177,15 +185,26 @@ truly meets the teachings and where it does not.
 | Hinduism | independent | S59, S61, S62 | Non-injury as a virtue. Not general pacifism. |
 | Buddhism | independent | S70, S77 | Right speech and action; the five precepts. |
 | Sikhism | independent | S106 | Work for what you eat and give some of what you have. |
+| Taoism | independent | S129 | Gentleness, economy and not putting oneself first; contentment; against delighting in war, while allowing force under necessity. Not pacifism. |
+
+**Family**, owned by [1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness](../content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md)
+
+| Tradition | Relation | Sources | Note |
+| --- | --- | --- | --- |
+| Christianity | contrary | S140, S141, S134, S142, S143 | Classically marriage is between a man and a woman. Some churches now marry same-sex couples, with protection for those who dissent: the Episcopal Church and the Methodist Church in Britain. So "most churches, classically", not "Christianity". |
+| Islam | contrary | S169 | Classical teaching: marriage between a man and a woman. 4:1 is the textual anchor; 30:21 alone does not establish it. A small number of progressive voices dissent. |
+| Judaism | contrary | S176, S177, S178 | Classical law: a woman is betrothed to a man. The Reform movement affirms same-gender unions and leaves officiating to each rabbi; the Conservative movement approved rites in 2012 as distinct from classical betrothal. Orthodoxy does not permit them. |
+| Seicho-no-Ie | independent | S116 | Gratitude to parents and ancestors as a practice of the family. |
 
 **Innate goodness (Fitrah)**, owned by [1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness](../content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md)
 
 | Tradition | Relation | Sources | Note |
 | --- | --- | --- | --- |
-| Islam | origin | S89 | The word and the teaching as the page uses it. Cite the verse; the hadith (S90) names other traditions. |
-| Judaism | independent | S22 | Made in the image of God. |
+| Islam | origin | S89, S170, S171 | The word and the teaching as the page uses it. Adam was forgiven, and no soul bears another's burden. Cite the verse; the hadith (S90) names other traditions. |
+| Judaism | independent | S22, S174, S175 | Made in the image of God; the soul placed within me is pure; no sin inherited from our ancestors. Judaism still teaches an inclination to evil. |
 | Seicho-no-Ie | independent | S05 | Already perfect, a child of God. |
-| Buddhism | resembles | S83, S84 | Buddha-nature is a Mahayana teaching of the potential for awakening, contested within Mahayana, and not the goodness of a soul. Needs a further source. |
+| Buddhism | resembles | S124, S125, S83 | Buddha-nature is a Mahayana teaching of the potential for, or nature of, buddhahood in all beings. It is not a soul, it is not in early Buddhism in that form, and Mahayana schools disagree on what it is. |
+| Christianity | contrary | S131, S134, S133, S132 | Original sin, stated three ways that must be kept apart. Catholic: a transmitted state, sin only by analogy and not a personal fault, nature wounded and not destroyed. Reformed: the guilt of the first sin imputed. Orthodox: mortality inherited, guilt not. Christianity also holds the image of God (S147). |
 
 **Compassionate action**, owned by [1-foundations/core-beliefs/compassionate-action](../content/1-foundations/core-beliefs/compassionate-action.md)
 
@@ -204,9 +223,10 @@ truly meets the teachings and where it does not.
 | --- | --- | --- | --- |
 | Buddhism | independent | S75, S76 | The Huayan school's net of Indra and Thich Nhat Hanh's interbeing. Early dependent origination (S74) explains the arising of suffering and only resembles this. |
 | Hinduism | independent | S65 | The whole world as a family: a late text about a detached sage. |
-| Indigenous traditions | independent | S119, S120 | Māori kaitiakitanga; the Haudenosaunee Thanksgiving Address. Each is that people's own, not a general ethic. |
+| Indigenous traditions | independent | S119, S120, S187, S189 | Māori kaitiakitanga; the Haudenosaunee Thanksgiving Address. Each is that people's own, not a general ethic. |
 | Hawaiian tradition | independent | S121 | Aloha ʻāina and mālama ʻāina, political as well as ecological. |
 | Seicho-no-Ie | independent | S117 | Grand Harmony of God, Nature, and Human Beings. |
+| Bahá'í Faith | independent | S185 | The oneness of humanity, one human family. |
 
 **Pursuit of knowledge and continuous learning**, owned by [1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge](../content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md)
 
@@ -222,9 +242,12 @@ truly meets the teachings and where it does not.
 | Tradition | Relation | Sources | Note |
 | --- | --- | --- | --- |
 | Seicho-no-Ie | independent | S113 | All religions emanate from one universal God. The nearest statement of UPL's own premise. |
-| Islam | independent | S93 | One community, said after a list of earlier prophets. Translations differ. |
+| Islam | independent | S93, S166, S167, S168 | Honours earlier prophets and forbids compulsion in religion. Verses are read both inclusively (2:62) and exclusively (3:85); both are living positions and the page takes no side. |
 | Hinduism | resembles | S51 | "To what is One, sages give many a title" names Vedic gods. Reading it as a statement about all religions is modern. |
 | Buddhism | resembles | S81 | The teaching as a raft, a means and not an end. It is about the Buddha's own teaching, not about other religions. |
+| Christianity | resembles | S138, S137, S139, S135, S136, S134 | A range. Catholic teaching rejects nothing true and holy in other religions and holds that those who do not know Christ may be saved, always through Christ: inclusivist, not pluralist. The Reformed confession excludes. Universal restoration is a minority hope (S159). None of these says what UPL says. |
+| Bahá'í Faith | resembles | S183, S184, S186 | The religions come from one source, as successive chapters of one religion. But Bahá'u'lláh is the latest Messenger with divine authority for this age, so it is not simple pluralism and must not be described as such. |
+| Judaism | resembles | S179, S180 | Chosenness is widely understood as responsibility and not superiority, though not by every Jewish thinker. Not a teaching about other religions. |
 
 **Environmental stewardship**, owned by [1-foundations/core-beliefs/environmental-stewardship](../content/1-foundations/core-beliefs/environmental-stewardship.md)
 
@@ -232,8 +255,8 @@ truly meets the teachings and where it does not.
 | --- | --- | --- | --- |
 | Islam | independent | S96, S97 | Successors upon the earth, often understood as stewardship; do not be excessive. |
 | Judaism | independent | S20, S21 | Do not destroy: a rabbinic extension of a verse on fruit trees. The environmental reading is modern. |
-| Christianity | independent | S46, S47 | Francis of Assisi, patron of those who promote ecology; the Canticle of the Creatures. |
-| Indigenous traditions | independent | S119, S120 | |
+| Christianity | independent | S46, S47, S155, S156 | Francis of Assisi, patron of those who promote ecology, and his Canticle, which names Sir Brother Sun, Sister Moon, Brother Wind, Sister Water, Brother Fire, Sister Mother Earth and Sister Bodily Death. |
+| Indigenous traditions | independent | S119, S120, S187, S188, S189 | Māori kaitiakitanga, a guardianship given by the local iwi to its own; the Mohawk Ohén:ton Karihwatéhkwen, "the words that come before all else". Each is that people's own and not a general ethic. |
 | Hawaiian tradition | independent | S121 | |
 | Seicho-no-Ie | independent | S117 | |
 
@@ -251,7 +274,7 @@ truly meets the teachings and where it does not.
 | Tradition | Relation | Sources | Note |
 | --- | --- | --- | --- |
 | Seicho-no-Ie | origin | S113 | The law of the mind: thought, word and deed shape the phenomenal world. |
-| Islam | independent | S98 | Gratitude, which is sourced. The page also credits Islam with positive conduct and mindful awareness, for which no source is recorded yet. |
+| Islam | independent | S98, S160, S161, S162, S163 | Gratitude; good character; ihsan; and taqwa, mindfulness of God, whose object is God and not the present moment. The author's claim that Islamic ethics encourage positive conduct and mindful awareness is sourced in this sense. |
 | Buddhism | resembles | S68 | Mind or intention comes first, leading speech and action. It does not say thoughts create reality. |
 | Christianity | resembles | S33 | Do not be anxious: trust, turning on "seek first God's Kingdom", not the power of thought. |
 
@@ -260,8 +283,10 @@ truly meets the teachings and where it does not.
 | Tradition | Relation | Sources | Note |
 | --- | --- | --- | --- |
 | Islam | independent | S98 | Gratitude is met with increase. |
-| Indigenous traditions | independent | S120 | Thanks to each part of the natural world, before all else. |
+| Indigenous traditions | independent | S120, S188, S189 | Thanks to each part of the natural world, said before anything important. Cite the Mohawk bodies (S188, S189) in place of the secondary S120. |
 | Seicho-no-Ie | independent | S114, S116 | Reconciliation with all things; gratitude to ancestors. The English wording of the Grand Harmony message is not to be quoted yet. |
+| Judaism | independent | S172, S173 | The waking prayer of thanks, and grace after meals. |
+| Christianity | independent | S148, S149 | In everything give thanks; the psalms of thanksgiving. |
 
 **Mindful action**, owned by [3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action](../content/3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action.md)
 
@@ -283,13 +308,25 @@ truly meets the teachings and where it does not.
 | Seicho-no-Ie | independent | S05 | The person as a child of God. UPL credits the phrase and keeps its own (decision D1). |
 | Judaism | resembles | S22 | Humankind in the image of God. The verse does not say what the image is; the mystical teaching of divine sparks is not recorded here and is to be described, not absorbed. |
 
+**God**, owned by [2-doctrine/god-quantum-physics-and-the-light-of-divinity](../content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md)
+
+| Tradition | Relation | Sources | Note |
+| --- | --- | --- | --- |
+| Buddhism | contrary | S126, S127, S128 | Early Buddhism denies a creator, not the gods, and rejects the view that a creator causes all we experience because it removes responsibility. The poisoned arrow (S128) is about speculation in general and does not mention a creator. |
+| Taoism | independent | S129, S112 | The Tao of the Tao Te Ching is a source before Heaven and Earth, "the Mother of all things", and not a personal creator. Near to UPL's impersonal source. Later religious Daoism has gods. |
+| Judaism | independent | S181 | The Shema. "The Eternal alone" in the current JPS, exclusive loyalty; "the Lord is one" is the liturgical reading. A personal God, which UPL's is not. |
+| Islam | independent | S88, S101 | The oneness of God, and God as light. A personal God, which UPL's is not. |
+
 **The immortal soul (also spirit, consciousness of the person, true self)**, owned by [2-doctrine/soul-karma-dharma-and-death/immortal-soul](../content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md)
 
 | Tradition | Relation | Sources | Note |
 | --- | --- | --- | --- |
 | Hinduism | independent | S64 | The atman. |
 | Seicho-no-Ie | independent | S05 | Man is not matter but spiritual existence. |
-| Buddhism | contrary | S82 | Nothing in body or mind is a permanent, unchanging self. UPL parts from Buddhism here and says so (decision D3). |
+| Buddhism | contrary | S82, S124 | Nothing in body or mind is a permanent, unchanging self, and Buddha-nature is explicitly not a soul. UPL parts from Buddhism here and says so (decision D3). |
+| Christianity | resembles | S144, S145, S146 | The soul is immortal, but the hope is the resurrection of the body, with which the soul is reunited. UPL's cocoon image, a body left behind, differs. |
+| Islam | resembles | S164, S165 | The spirit is breathed into the human being; the classical teaching is bodily resurrection and judgement. 17:85 may not be about the human soul at all. |
+| Judaism | independent | S174 | The soul placed within me is pure. |
 
 **The silkworm and cocoon image**, owned by [2-doctrine/soul-karma-dharma-and-death/immortal-soul](../content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md)
 
@@ -314,7 +351,16 @@ truly meets the teachings and where it does not.
 
 | Tradition | Relation | Sources | Note |
 | --- | --- | --- | --- |
-| Christianity | contrary | S38 | The passage on the least of these ends in eternal punishment, which UPL does not teach. |
+| Christianity | contrary | S38, S157, S133, S134, S158, S159 | Eternal punishment is classical teaching, Catholic and Protestant. Orthodoxy speaks of hell as the experience of God's love by those who reject it. Universal restoration, held by Gregory of Nyssa, is a minority hope the confessions condemn. UPL does not teach eternal punishment. |
+
+**Meditation**, owned by [3-practice/meditation](../content/3-practice/meditation/README.md)
+
+| Tradition | Relation | Sources | Note |
+| --- | --- | --- | --- |
+| Buddhism | independent | S85, S73 | |
+| Seicho-no-Ie | independent | S115 | |
+| Hawaiian tradition | resembles | S122 | Hoʻoponopono is a way of setting relationships right more than a meditation. |
+| Christianity | independent | S150, S151, S152, S153, S154 | Lectio Divina, four steps and then action; the Jesus Prayer, which asks for a spiritual guide; centering prayer, a method of the 1970s that some Catholics criticise. Not on any page yet. |
 
 **Prayer**, owned by [3-practice/prayer](../content/3-practice/prayer.md)
 
@@ -346,6 +392,12 @@ truly meets the teachings and where it does not.
 | Judaism | independent | S03, S04 | Saving a life comes before almost every other duty. |
 | Christianity | resembles | S35 | Healing with a word, read as teaching about faith and not as a technique. |
 | Seicho-no-Ie | contrary | S115 | In the True Image there is no disease. UPL holds that illness is real and is treated (decisions D1 and D2). |
+
+**Science and technology**, owned by [4-way-of-life/continuous-learning/sciences-and-technology](../content/4-way-of-life/continuous-learning/sciences-and-technology.md)
+
+| Tradition | Relation | Sources | Note |
+| --- | --- | --- | --- |
+| Bahá'í Faith | independent | S182 | Religion and science as the two wings on which human intelligence soars. |
 
 **Shinsokan**, owned by [3-practice/meditation/shinsokan-meditation](../content/3-practice/meditation/shinsokan-meditation.md)
 

@@ -58,7 +58,8 @@
           "relation": "independent",
           "sources": [
             "S103",
-            "S110"
+            "S110",
+            "S191"
           ],
           "note": "One creator, and the Lord's Light within all."
         },
@@ -69,6 +70,21 @@
             "S06"
           ],
           "note": "Only the perfect world God created truly exists."
+        },
+        "Taoism": {
+          "relation": "independent",
+          "sources": [
+            "S129",
+            "S130"
+          ],
+          "note": "All things depend on the One. Zhuangzi's \"all things and I are one\" is at once undercut by its own author, so not a plain creed."
+        },
+        "Judaism": {
+          "relation": "resembles",
+          "sources": [
+            "S181"
+          ],
+          "note": "The oneness of God, which is not the oneness of all existence."
         }
       }
     },
@@ -94,9 +110,10 @@
           "relation": "independent",
           "sources": [
             "S56",
-            "S57"
+            "S57",
+            "S190"
           ],
-          "note": "Paths of action, knowledge and devotion for different temperaments. The fourfold scheme is modern (S58)."
+          "note": "Paths of action, knowledge and devotion for different temperaments. The fourfold scheme is Vivekananda's, from the winter of 1895 to 1896 (S190, read in snippets only; S58 is weaker)."
         },
         "Buddhism": {
           "relation": "independent",
@@ -188,6 +205,13 @@
             "S106"
           ],
           "note": "Work for what you eat and give some of what you have."
+        },
+        "Taoism": {
+          "relation": "independent",
+          "sources": [
+            "S129"
+          ],
+          "note": "Gentleness, economy and not putting oneself first; contentment; against delighting in war, while allowing force under necessity. Not pacifism."
         }
       }
     },
@@ -207,7 +231,43 @@
       ],
       "elaborated_in": [
         "content/4-way-of-life/family/README.md"
-      ]
+      ],
+      "held_by": {
+        "Christianity": {
+          "relation": "contrary",
+          "sources": [
+            "S140",
+            "S141",
+            "S134",
+            "S142",
+            "S143"
+          ],
+          "note": "Classically marriage is between a man and a woman. Some churches now marry same-sex couples, with protection for those who dissent: the Episcopal Church and the Methodist Church in Britain. So \"most churches, classically\", not \"Christianity\"."
+        },
+        "Islam": {
+          "relation": "contrary",
+          "sources": [
+            "S169"
+          ],
+          "note": "Classical teaching: marriage between a man and a woman. 4:1 is the textual anchor; 30:21 alone does not establish it. A small number of progressive voices dissent."
+        },
+        "Judaism": {
+          "relation": "contrary",
+          "sources": [
+            "S176",
+            "S177",
+            "S178"
+          ],
+          "note": "Classical law: a woman is betrothed to a man. The Reform movement affirms same-gender unions and leaves officiating to each rabbi; the Conservative movement approved rites in 2012 as distinct from classical betrothal. Orthodoxy does not permit them."
+        },
+        "Seicho-no-Ie": {
+          "relation": "independent",
+          "sources": [
+            "S116"
+          ],
+          "note": "Gratitude to parents and ancestors as a practice of the family."
+        }
+      }
     },
     "fitrah": {
       "label": "Innate goodness (Fitrah)",
@@ -219,16 +279,20 @@
         "Islam": {
           "relation": "origin",
           "sources": [
-            "S89"
+            "S89",
+            "S170",
+            "S171"
           ],
-          "note": "The word and the teaching as the page uses it. Cite the verse; the hadith (S90) names other traditions."
+          "note": "The word and the teaching as the page uses it. Adam was forgiven, and no soul bears another's burden. Cite the verse; the hadith (S90) names other traditions."
         },
         "Judaism": {
           "relation": "independent",
           "sources": [
-            "S22"
+            "S22",
+            "S174",
+            "S175"
           ],
-          "note": "Made in the image of God."
+          "note": "Made in the image of God; the soul placed within me is pure; no sin inherited from our ancestors. Judaism still teaches an inclination to evil."
         },
         "Seicho-no-Ie": {
           "relation": "independent",
@@ -240,10 +304,21 @@
         "Buddhism": {
           "relation": "resembles",
           "sources": [
-            "S83",
-            "S84"
+            "S124",
+            "S125",
+            "S83"
           ],
-          "note": "Buddha-nature is a Mahayana teaching of the potential for awakening, contested within Mahayana, and not the goodness of a soul. Needs a further source."
+          "note": "Buddha-nature is a Mahayana teaching of the potential for, or nature of, buddhahood in all beings. It is not a soul, it is not in early Buddhism in that form, and Mahayana schools disagree on what it is."
+        },
+        "Christianity": {
+          "relation": "contrary",
+          "sources": [
+            "S131",
+            "S134",
+            "S133",
+            "S132"
+          ],
+          "note": "Original sin, stated three ways that must be kept apart. Catholic: a transmitted state, sin only by analogy and not a personal fault, nature wounded and not destroyed. Reformed: the guilt of the first sin imputed. Orthodox: mortality inherited, guilt not. Christianity also holds the image of God (S147)."
         }
       }
     },
@@ -335,7 +410,9 @@
           "relation": "independent",
           "sources": [
             "S119",
-            "S120"
+            "S120",
+            "S187",
+            "S189"
           ],
           "note": "Māori kaitiakitanga; the Haudenosaunee Thanksgiving Address. Each is that people's own, not a general ethic."
         },
@@ -352,6 +429,13 @@
             "S117"
           ],
           "note": "Grand Harmony of God, Nature, and Human Beings."
+        },
+        "Bahá'í Faith": {
+          "relation": "independent",
+          "sources": [
+            "S185"
+          ],
+          "note": "The oneness of humanity, one human family."
         }
       }
     },
@@ -420,9 +504,12 @@
         "Islam": {
           "relation": "independent",
           "sources": [
-            "S93"
+            "S93",
+            "S166",
+            "S167",
+            "S168"
           ],
-          "note": "One community, said after a list of earlier prophets. Translations differ."
+          "note": "Honours earlier prophets and forbids compulsion in religion. Verses are read both inclusively (2:62) and exclusively (3:85); both are living positions and the page takes no side."
         },
         "Hinduism": {
           "relation": "resembles",
@@ -437,6 +524,35 @@
             "S81"
           ],
           "note": "The teaching as a raft, a means and not an end. It is about the Buddha's own teaching, not about other religions."
+        },
+        "Christianity": {
+          "relation": "resembles",
+          "sources": [
+            "S138",
+            "S137",
+            "S139",
+            "S135",
+            "S136",
+            "S134"
+          ],
+          "note": "A range. Catholic teaching rejects nothing true and holy in other religions and holds that those who do not know Christ may be saved, always through Christ: inclusivist, not pluralist. The Reformed confession excludes. Universal restoration is a minority hope (S159). None of these says what UPL says."
+        },
+        "Bahá'í Faith": {
+          "relation": "resembles",
+          "sources": [
+            "S183",
+            "S184",
+            "S186"
+          ],
+          "note": "The religions come from one source, as successive chapters of one religion. But Bahá'u'lláh is the latest Messenger with divine authority for this age, so it is not simple pluralism and must not be described as such."
+        },
+        "Judaism": {
+          "relation": "resembles",
+          "sources": [
+            "S179",
+            "S180"
+          ],
+          "note": "Chosenness is widely understood as responsibility and not superiority, though not by every Jewish thinker. Not a teaching about other religions."
         }
       }
     },
@@ -472,16 +588,22 @@
           "relation": "independent",
           "sources": [
             "S46",
-            "S47"
+            "S47",
+            "S155",
+            "S156"
           ],
-          "note": "Francis of Assisi, patron of those who promote ecology; the Canticle of the Creatures."
+          "note": "Francis of Assisi, patron of those who promote ecology, and his Canticle, which names Sir Brother Sun, Sister Moon, Brother Wind, Sister Water, Brother Fire, Sister Mother Earth and Sister Bodily Death."
         },
         "Indigenous traditions": {
           "relation": "independent",
           "sources": [
             "S119",
-            "S120"
-          ]
+            "S120",
+            "S187",
+            "S188",
+            "S189"
+          ],
+          "note": "Māori kaitiakitanga, a guardianship given by the local iwi to its own; the Mohawk Ohén:ton Karihwatéhkwen, \"the words that come before all else\". Each is that people's own and not a general ethic."
         },
         "Hawaiian tradition": {
           "relation": "independent",
@@ -563,9 +685,13 @@
         "Islam": {
           "relation": "independent",
           "sources": [
-            "S98"
+            "S98",
+            "S160",
+            "S161",
+            "S162",
+            "S163"
           ],
-          "note": "Gratitude, which is sourced. The page also credits Islam with positive conduct and mindful awareness, for which no source is recorded yet."
+          "note": "Gratitude; good character; ihsan; and taqwa, mindfulness of God, whose object is God and not the present moment. The author's claim that Islamic ethics encourage positive conduct and mindful awareness is sourced in this sense."
         },
         "Buddhism": {
           "relation": "resembles",
@@ -606,9 +732,11 @@
         "Indigenous traditions": {
           "relation": "independent",
           "sources": [
-            "S120"
+            "S120",
+            "S188",
+            "S189"
           ],
-          "note": "Thanks to each part of the natural world, before all else."
+          "note": "Thanks to each part of the natural world, said before anything important. Cite the Mohawk bodies (S188, S189) in place of the secondary S120."
         },
         "Seicho-no-Ie": {
           "relation": "independent",
@@ -617,6 +745,22 @@
             "S116"
           ],
           "note": "Reconciliation with all things; gratitude to ancestors. The English wording of the Grand Harmony message is not to be quoted yet."
+        },
+        "Judaism": {
+          "relation": "independent",
+          "sources": [
+            "S172",
+            "S173"
+          ],
+          "note": "The waking prayer of thanks, and grace after meals."
+        },
+        "Christianity": {
+          "relation": "independent",
+          "sources": [
+            "S148",
+            "S149"
+          ],
+          "note": "In everything give thanks; the psalms of thanksgiving."
         }
       }
     },
@@ -718,7 +862,41 @@
       "owner": "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md",
       "terms": [
         "god(['’]s)?"
-      ]
+      ],
+      "held_by": {
+        "Buddhism": {
+          "relation": "contrary",
+          "sources": [
+            "S126",
+            "S127",
+            "S128"
+          ],
+          "note": "Early Buddhism denies a creator, not the gods, and rejects the view that a creator causes all we experience because it removes responsibility. The poisoned arrow (S128) is about speculation in general and does not mention a creator."
+        },
+        "Taoism": {
+          "relation": "independent",
+          "sources": [
+            "S129",
+            "S112"
+          ],
+          "note": "The Tao of the Tao Te Ching is a source before Heaven and Earth, \"the Mother of all things\", and not a personal creator. Near to UPL's impersonal source. Later religious Daoism has gods."
+        },
+        "Judaism": {
+          "relation": "independent",
+          "sources": [
+            "S181"
+          ],
+          "note": "The Shema. \"The Eternal alone\" in the current JPS, exclusive loyalty; \"the Lord is one\" is the liturgical reading. A personal God, which UPL's is not."
+        },
+        "Islam": {
+          "relation": "independent",
+          "sources": [
+            "S88",
+            "S101"
+          ],
+          "note": "The oneness of God, and God as light. A personal God, which UPL's is not."
+        }
+      }
     },
     "quantum-physics": {
       "label": "Quantum physics",
@@ -772,9 +950,34 @@
         "Buddhism": {
           "relation": "contrary",
           "sources": [
-            "S82"
+            "S82",
+            "S124"
           ],
-          "note": "Nothing in body or mind is a permanent, unchanging self. UPL parts from Buddhism here and says so (decision D3)."
+          "note": "Nothing in body or mind is a permanent, unchanging self, and Buddha-nature is explicitly not a soul. UPL parts from Buddhism here and says so (decision D3)."
+        },
+        "Christianity": {
+          "relation": "resembles",
+          "sources": [
+            "S144",
+            "S145",
+            "S146"
+          ],
+          "note": "The soul is immortal, but the hope is the resurrection of the body, with which the soul is reunited. UPL's cocoon image, a body left behind, differs."
+        },
+        "Islam": {
+          "relation": "resembles",
+          "sources": [
+            "S164",
+            "S165"
+          ],
+          "note": "The spirit is breathed into the human being; the classical teaching is bodily resurrection and judgement. 17:85 may not be about the human soul at all."
+        },
+        "Judaism": {
+          "relation": "independent",
+          "sources": [
+            "S174"
+          ],
+          "note": "The soul placed within me is pure."
         }
       }
     },
@@ -864,9 +1067,14 @@
         "Christianity": {
           "relation": "contrary",
           "sources": [
-            "S38"
+            "S38",
+            "S157",
+            "S133",
+            "S134",
+            "S158",
+            "S159"
           ],
-          "note": "The passage on the least of these ends in eternal punishment, which UPL does not teach."
+          "note": "Eternal punishment is classical teaching, Catholic and Protestant. Orthodoxy speaks of hell as the experience of God's love by those who reject it. Universal restoration, held by Gregory of Nyssa, is a minority hope the confessions condemn. UPL does not teach eternal punishment."
         }
       }
     },
@@ -882,7 +1090,40 @@
       "owner": "content/3-practice/meditation/README.md",
       "terms": [
         "meditat\\w+"
-      ]
+      ],
+      "held_by": {
+        "Buddhism": {
+          "relation": "independent",
+          "sources": [
+            "S85",
+            "S73"
+          ]
+        },
+        "Seicho-no-Ie": {
+          "relation": "independent",
+          "sources": [
+            "S115"
+          ]
+        },
+        "Hawaiian tradition": {
+          "relation": "resembles",
+          "sources": [
+            "S122"
+          ],
+          "note": "Hoʻoponopono is a way of setting relationships right more than a meditation."
+        },
+        "Christianity": {
+          "relation": "independent",
+          "sources": [
+            "S150",
+            "S151",
+            "S152",
+            "S153",
+            "S154"
+          ],
+          "note": "Lectio Divina, four steps and then action; the Jesus Prayer, which asks for a spiritual guide; centering prayer, a method of the 1970s that some Catholics criticise. Not on any page yet."
+        }
+      }
     },
     "prayer": {
       "label": "Prayer",
@@ -1031,7 +1272,16 @@
         "scienc\\w+",
         "scientific",
         "technolog\\w+"
-      ]
+      ],
+      "held_by": {
+        "Bahá'í Faith": {
+          "relation": "independent",
+          "sources": [
+            "S182"
+          ],
+          "note": "Religion and science as the two wings on which human intelligence soars."
+        }
+      }
     },
     "arts": {
       "label": "Arts and creativity",

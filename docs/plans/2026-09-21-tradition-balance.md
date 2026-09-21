@@ -428,27 +428,46 @@ each other. Step 7 is last because the caps are set from the numbers the earlier
 Everything set aside while the steps were done, so none of it lives only in a conversation. Each
 line says who can move it.
 
-**Sourcing, which needs no decision from the author.** One pull request, like step 1.
+**Sourcing: done on 21 September 2026, as S124 to S194.** Four research agents, almost every page
+read directly and not through a summarising tool. What it settled:
 
-- A second, neutral source for Buddha-nature (S83 and S84 are an encyclopaedia and one critic), so
-  it can join belief 4.
-- A source for Christian contemplative prayer (Lectio Divina, the Jesus Prayer, centering prayer),
-  so it can be offered as a fourth form of meditation.
-- The text of the Canticle of the Creatures, to confirm the line in belief 8 on sun, wind and water
-  as brother and sister before the site is public.
-- A source for the claim the author made and the rewrite dropped from belief 10: that Islamic
-  ethics encourage positive conduct and mindful awareness.
-- The contrary cells the convergence map leaves out for want of a source: Western Christianity's
-  original sin against innate goodness; the exclusive claims within several traditions against
-  respect for all; the classical teaching of most traditions on marriage against inclusive family
-  structures; Christianity and Islam on the immortal soul; Buddhism and Taoism on a creator.
-- Cells for Taoism, which has two sources and none; the image of God in a Christian source;
-  gratitude in Judaism and Christianity.
-- The Bahá'í teaching on the harmony of science and religion, as a voice for decision D5.
-- Primary sources to replace the secondary rows: S04, S07, S58, S67, S83, S86, S87, S104, S120; and
-  Te Ara and the Haudenosaunee Confederacy's own site, which could not be opened.
-- The References entries not yet checked against a catalogue (R01 to R03, R05, R07, R10 to R12),
-  the two titles to confirm (R06, R09), and the doubtful entry R04, which the author may remove.
+- **Buddha-nature** has a scholarly source (S124, S125) and can join belief 4, worded as the
+  potential for, or nature of, buddhahood. It is explicitly not a soul.
+- **Christian contemplative prayer** is sourced (S150 to S154), so a fourth form of meditation is
+  possible, each practice with its caution: Lectio Divina ends in action; the Jesus Prayer asks
+  for a spiritual guide; centering prayer is a method of the 1970s that some Catholics criticise.
+- **The Canticle line in belief 8 is confirmed** (S155, S156).
+- **The claim dropped from belief 10 can return**: Islam on good character (S160, S161) and on
+  taqwa, mindfulness of God (S162, S163), whose object is God and not the present moment.
+- **The contrary cells are in the convergence map**, each in the tradition's own words: original
+  sin, stated three ways (S131 to S134); salvation through Christ, from exclusive to inclusive
+  (S135 to S139); marriage in classical Christian, Islamic and Jewish teaching, and the churches
+  and movements that now differ (S140 to S143, S169, S176 to S178); the resurrection of the body
+  against UPL's cocoon (S144 to S146, S164, S165); eternal punishment and the minority hope against
+  it (S157 to S159); Buddhism on a creator (S126 to S128).
+- **Innate goodness stands on more than was recorded**: Islam (S170, S171) and Judaism (S174, S175)
+  both reject inherited sin.
+- **Taoism has cells** (S129, S130), and **the Bahá'í Faith** joins the map (S182 to S186), with
+  the caution that it is not simple pluralism.
+- **Weak rows replaced**: Te Ara now read (S187); the Thanksgiving Address from two Mohawk bodies
+  (S188, S189), since the Confederacy's own site has no page on it; Vivekananda's four yogas
+  (S190); Guru Nanak's dates (S191). Image of God and gratitude in Christian sources (S147 to S149),
+  gratitude and chosenness in Jewish ones (S172, S173, S179, S180), the Shema (S181), the verses on
+  other religions (S166 to S168).
+- **The bibliography is checked against catalogues** (S192 to S194 and the Library of Congress).
+  Three entries are wrong as listed and one is not a book; corrections are proposed as Q14 to Q17.
+
+Corrections to what had been assumed, recorded so they are not repeated: the poisoned-arrow
+discourse does not mention a creator; "the West teaches inherited guilt" is how the Orthodox
+describe Rome and not how Rome describes itself; the Catholic position on other religions is
+inclusivist and its best-known sentence cannot be quoted without the one after it; Qur'an 17:85
+reads "domain" in Abdel Haleem and may not be about the human soul; the current JPS renders the
+Shema "the Eternal alone"; the Conservative movement's vote of 2012 was 15 to 0 with 1 abstaining.
+
+Still to source: the modern hope "that all may be saved" (Balthasar, Kallistos Ware); an Orthodox
+source on other religions; the classical Sufi texts on watchfulness; the method of centering
+prayer; pages 123 to 126 of De Michelis, read in full; primary sources in place of S04, S07, S67,
+S83, S86 and S87.
 
 **The author's own words, which a draft can prompt and cannot replace.**
 
