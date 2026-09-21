@@ -154,6 +154,21 @@ What the drafting had to respect:
 5. **This widens a core principle**, which locked decision 7 reserves to the author, and it is
    the author who is widening it. It adds no eleventh principle: it says what the sixth already
    meant, and brings it into line with the Continuous Learning section that elaborates it.
+6. **We learn, so we correct.** Shown the tension between the hopeful vision and the pages that
+   are wary of technology, the author answered: "industrial technology has damaged the earth,
+   but we're learning our mistakes and correcting as we go along and improve our knowledge about
+   our own impact on the planet we live in"; industrialised goods are "similar to the above, but
+   effects on the body rather than the planet"; and "Because we learn, we need to continuously
+   evaluate our stance and given evidence, correct our collective path." This resolves the
+   tension better than "guided by ethics" alone: it says how the steering works, and it makes
+   Environmental Stewardship and the warning on industrialised food read as corrections already
+   learned, not as doubts about technology. The last sentence is a principle about knowledge, so
+   it goes into belief 6 in nearly the author's words. One claim is drafted more carefully than
+   the author put it: "have begun to correct them" for "correcting as we go", because it is a
+   statement about the world and is true in some places (the ozone layer, clean energy) and not
+   yet in others. **A question for the author: does "our stance" include UPL's own teachings?**
+   Purpose calls UPL "dynamic, inclusive, and adaptable", which suggests it does, and the drafts
+   are worded so that it can be read either way.
 
 ## Wording approved and applied
 
@@ -649,7 +664,7 @@ between pages; the source gate passing.
   to continuous learning, reflection, and the integration of diverse spiritual insights."
 - After. Two versions, both carrying decision D5; the author chooses.
 
-  **Version B, recommended: the belief here, the vision on Sciences and Technology (with P28).** 343 words.
+  **Version B, recommended: the belief and the principle here, the vision on Sciences and Technology (with P28).** 360 words.
 
   > UPL holds that nothing in existence stands alone, and that to learn is to discover how
   > things are joined. It commits its followers to continuous learning, reflection, and the
@@ -663,7 +678,8 @@ between pages; the source gate passing.
   > attention, they carry what cannot be said plainly, and they let a person give something
   > back. UPL believes that the growth of science, engineering and the arts, and of the
   > technology that comes from them, is bound up with the spiritual evolution of our
-  > civilisation.
+  > civilisation. Because we learn, we must continually evaluate our stance and, given the
+  > evidence, correct our collective path.
   >
   > The Buddha taught that things arise in dependence on one another, and he taught it to
   > explain how suffering arises and how it ends. Later Buddhists drew a wider vision from
@@ -680,7 +696,7 @@ between pages; the source gate passing.
   > blameless and praised by the wise. The Bhagavad Gita names knowledge as one of the paths
   > to the divine.
 
-  **Version A: everything in belief 6.** 411 words, where the other core beliefs run from 80 to 180.
+  **Version A: everything in belief 6.** 471 words, where the other core beliefs run from 80 to 180.
 
   > UPL holds that nothing in existence stands alone, and that to learn is to discover how
   > things are joined. It commits its followers to continuous learning, reflection, and the
@@ -698,9 +714,13 @@ between pages; the source gate passing.
   > that comes from them, is bound up with the spiritual evolution of our civilisation. As
   > technology matures, guided by ethics, it can help us towards enlightenment and help us
   > to be better human beings: to share knowledge, to improve our medicines and our health,
-  > and to raise the quality of life. UPL holds the hope that through the continuous study
-  > and improvement of these fields we may in time transform the Earth into a paradise, a
-  > place without misery, hunger or disease.
+  > and to raise the quality of life. It has also done harm: industry has damaged the Earth,
+  > and industrialised goods have harmed the body. We are learning from these mistakes, and
+  > have begun to correct them, as our knowledge of our own impact on the planet and on
+  > ourselves improves. Because we learn, we must continually evaluate our stance and, given
+  > the evidence, correct our collective path. UPL holds the hope that through the
+  > continuous study and improvement of these fields we may in time transform the Earth into
+  > a paradise, a place without misery, hunger or disease.
   >
   > The Buddha taught that things arise in dependence on one another, and he taught it to
   > explain how suffering arises and how it ends. Later Buddhists drew a wider vision from
@@ -879,13 +899,18 @@ between pages; the source gate passing.
 
   > As technology matures, guided by ethics, it can help us towards enlightenment and help
   > us to be better human beings: to share knowledge, to improve our medicines and our
-  > health, and to raise the quality of life. UPL holds the hope that through the continuous
-  > study and improvement of these fields we may in time transform the Earth into a
-  > paradise, a place without misery, hunger or disease.
+  > health, and to raise the quality of life. It has also done harm: industry has damaged
+  > the Earth, and industrialised goods have harmed the body. We are learning from these
+  > mistakes, and have begun to correct them, as our knowledge of our own impact on the
+  > planet and on ourselves improves. UPL holds the hope that through the continuous study
+  > and improvement of these fields we may in time transform the Earth into a paradise, a
+  > place without misery, hunger or disease.
 
 - What is kept: the author's teaching of 21 September 2026 (D5), in the author's order and
   nearly the author's words: enlightenment, better human beings, shared knowledge, medicines and
   health, quality of life, and the Earth made a paradise without misery, hunger or disease.
+- Added on the author's answer about the tensions (D5, point 6): the two sentences on harm done
+  and mistakes being corrected, the Earth first and the body second, in the author's order.
 - **The drafter's:** "guided by ethics", and "can" for the author's "will". They keep the
   paragraph in agreement with the sentence just above it on the same page, which says technology
   enhances well-being "when used ethically". The author's own "may" is kept for the paradise.
