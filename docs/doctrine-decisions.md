@@ -113,8 +113,8 @@ Three things the drafting has to respect:
    near it, the astral body is a subtle body, a vehicle the spirit uses, and explicitly not the
    spirit itself. Equating it with the soul contradicts the source, brings in a tradition the
    teachings name nowhere, and sits oddly beside the cocoon image, where a body is what the soul
-   leaves behind. P11 names it as what some traditions call the astral body and leaves the
-   author to keep or drop it.
+   leaves behind. The author dropped the term on 21 September 2026: it is not one of UPL's
+   names for the essence.
 
 The place: the definition belongs on [The Immortal Soul](../content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md),
 which already owns the concept in the cross-reference matrix, not on a new page, so that there
@@ -162,8 +162,8 @@ locked.**
 - Why: the old sentence reads as if medicine were the fallback. The first sentence of the
   paragraph is kept as it is. Revised twice on 21 September 2026 to carry the refined D2. Two
   voices, as the balance rule asks: one speaks for faith, one for medicine.
-- To check: the Jewish principle is pikuach nefesh; confirm it against a source before it
-  lands.
+- Checked on 21 September 2026 (see the fact check below): the principle is pikuach nefesh, and
+  "almost every other duty" is accurate.
 
 ### For D3
 
@@ -221,7 +221,7 @@ locked.**
   When the teachings speak of God's love, they speak of the nature of the light itself and not of
   the feeling of a person. Other traditions have spoken of the same source: the Chandogya
   Upanishad says of the self and the ultimate reality, "you are that", and Seicho-No-Ie teaches
-  that the true image of every person is a child of God, perfect as its source is perfect. UPL
+  that every person is in reality a child of God, a spiritual being and already perfect. UPL
   offers this as spiritual teaching, in the language of light, and not as a claim of physics."
 - Why: D1, points 1, 2, 4 and 6, in the author's own image of 21 September 2026: "Pure light has
   many colors, love, forgiveness, gratitude and other positive feelings/actions are the colors
@@ -232,7 +232,8 @@ locked.**
   outside, which is what the guardrails ask for ("divides people or things into those inside
   the light and those outside it" is the deviation). It also leads into P7. Two kindred voices,
   as the balance rule asks.
-- To check: the Seicho-No-Ie sentence against the author's copy of Taniguchi.
+- Checked on 21 September 2026 (see the fact check below). The Seicho-No-Ie sentence now follows
+  the movement's own statement of its teaching.
 
 **P7. God, Quantum Physics, and the Light of Divinity. Addition, as the paragraph after P6.
 Locked.**
@@ -271,17 +272,40 @@ Locked.**
 - After: "Soul, spirit, consciousness and the true self are names for one thing: the essence of
   life experiencing this existence. Wherever the teachings use one of these names for what a
   person is, they mean the same. Other traditions have their own names for it. Seicho-No-Ie
-  speaks of the true image, the Upanishads of the atman, and some speak of the astral body. UPL
-  honours these names without taking on everything each tradition teaches with them."
+  speaks of the true image and the Upanishads of the atman. UPL honours these names without taking on everything each tradition teaches with them."
 - Why: D4. The author's definition is kept word for word. Two traditions are named, as the
   balance rule asks, and the borrowed names are given as borrowed.
-- For the author: keep or drop "and some speak of the astral body" (see D4, point 3).
+- The author dropped "and some speak of the astral body" on 21 September 2026 (see D4, point
+  3).
 
 **P12. Death as a Transformative Journey. Wording change. Locked.**
 
 - Before: "the soul's consciousness not only persists but evolves"
 - After: "the soul not only persists but evolves"
 - Why: D4. If soul and consciousness are one, the soul does not have a consciousness.
+
+### From the fact check
+
+**P13. The Immortal Soul. Wording change (attribution). Locked.**
+
+- Before: "Like the silkworm that crafts a cocoon from silk, humans use the thread of their minds
+  to shape their physical existence."
+- After: "In an image from the Nectarean Shower of Holy Doctrines, the holy sutra of
+  Seicho-No-Ie written by Masaharu Taniguchi: like the silkworm that crafts a cocoon from silk,
+  humans use the thread of their minds to shape their physical existence."
+- Why: the fact check confirmed that the silkworm and cocoon image, which runs through the whole
+  soul section, comes from that sutra, closely enough to be a paraphrase. The text does not say
+  so anywhere. Locked decision 6 asks for accuracy towards the traditions, and an uncredited
+  paraphrase of another religion's scripture is also a risk once the site is public.
+- Balance: this names one tradition on the page. With P11, which names Seicho-No-Ie and the
+  Upanishads, the page names two.
+
+**P14. References. Addition. Not locked.**
+
+- After, as a new entry: "Nectarean Shower of Holy Doctrines" (the Holy Sutra of Seicho-No-Ie) by
+  Masaharu Taniguchi
+- Why: P13. The list today has "Seicho-No-Ie" by Masaharu Taniguchi, which is the name of the
+  movement and its magazine, not of a book.
 
 **P10. Unity: no change proposed.**
 
@@ -304,3 +328,16 @@ The decisions were the precondition for drawing more widely on the traditions. W
   teaching that sickness is not real is not adopted (D1 point 5).
 - Further teachings from Buddhism can be taken up with the disagreement on the self already
   stated (D3).
+
+## Fact check of 21 September 2026
+
+Asked for by the author. Each line is a claim a proposal rests on, what was found, and where.
+
+| Claim | Used in | Result |
+| --- | --- | --- |
+| In Judaism, saving a life comes before almost every other duty | P2 | Confirmed. The principle is pikuach nefesh. It overrides nearly every commandment, the Sabbath included; the three exceptions are murder, idolatry and forbidden sexual relations, so "almost" is right. [My Jewish Learning](https://www.myjewishlearning.com/article/pikuach-nefesh-the-overriding-jewish-value-of-human-life/), [Wikipedia](https://en.wikipedia.org/wiki/Pikuach_nefesh) |
+| Seicho-No-Ie teaches that the person is a child of God and already perfect; "true image" is its term | P6, P11 | Confirmed. The movement states: "Man is in reality a child of God. Man is not matter but spiritual existence. Man is already a perfect being." The True Image (jissō) is the God-created perfect world, the only one that truly exists. The P6 sentence was reworded to follow this. [Seicho-No-Ie New York](https://www.sniny.com/mission-and-philosophy), [World Religions and Spirituality Project](https://wrldrels.org/2016/10/08/seicho-no-ie/) |
+| The silkworm and cocoon image comes from Seicho-No-Ie | The soul section; new P13 | Confirmed, and closer than expected. The Nectarean Shower of Holy Doctrines says that spiritual life "weaves its threads of mind to build a cocoon of flesh", that "the physical body is not man but merely man's cocoon", and that man will "break out of his body-cocoon and ascend to the spiritual world". The Immortal Soul uses the same image, the same "thread of their minds" and the same "body cocoon", without credit. [Wikiquote](https://en.wikiquote.org/wiki/Nectarean_Shower_of_Holy_Doctrines), [World Scripture](https://www.unification.net/ws/theme040.htm) |
+| The Chandogya Upanishad says of the self and the ultimate reality, "you are that" | P6 | Confirmed. "Tat tvam asi" is repeated through chapter 6, where Uddalaka Aruni teaches his son. Reading it as full identity is the Advaita school's; other schools read it as a close relation. The P6 wording does not take a side. [Britannica](https://www.britannica.com/topic/tat-tvam-asi) |
+| Belief and expectation bring real relief through the body's own means | P2 | Confirmed for pain. Naloxone, which blocks opioids, reverses placebo pain relief, so the relief is the body's own opioids at work (Levine, Gordon and Fields, 1978). [The Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-67367892762-9/fulltext), [history of the research](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9399436/) |
+| Science has yet to show that belief alone can cure a disease | P2 | Confirmed. The largest review of placebo against no treatment "did not find that placebo interventions have important clinical effects in general"; effects were on what patients report, above all pain, and not on the disease. In an asthma trial, patients on a placebo inhaler reported as much improvement as those on the drug, while measured lung function rose about 20 per cent on the drug and about 7 per cent on placebo, the same as with no treatment at all. [Cochrane review, 2010](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003974.pub3/information), [New England Journal of Medicine, 2011](https://www.nejm.org/doi/full/10.1056/NEJMoa1103319) |
