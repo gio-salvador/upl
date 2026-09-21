@@ -81,8 +81,10 @@ on the author's machine.
   CodeQL is skipped, as it is in CI while the repository is private. Nothing is published from
   a local run.
 - A pull request is merged only when that script passes on its head commit, rebased on `main`,
-  and the result is posted on the pull request as a comment, so the record sits where the red
-  marks are. The merge uses no override: if GitHub itself refuses the merge, it is not made.
+  and the script's output is written into the body of the merge commit, so the record sits in
+  the history beside the change. It is not posted as a comment: a guard in this repository keeps
+  an agent from publishing speech under the author's name. The merge uses no override: if GitHub
+  itself refuses the merge, it is not made.
 - What is lost: the run is on one machine and is not independent of the person merging; nothing
   deploys, because the deploy workflow cannot run; the weekly scheduled scans do not run. Run
   `scripts/ci-local.sh --all` on `main` from time to time in their place.
