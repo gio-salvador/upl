@@ -7,7 +7,8 @@ page. The plan that fixes what is found here is
 [plans/2026-09-21-page-clarity.md](plans/2026-09-21-page-clarity.md), and the "Step" column points
 into it. Nothing here changes a teaching: every fix is proposed to the author first.
 
-**Result:** 48 of 81 pages are good as they stand, 33 need a fix. Most fixes are one
+**Result:** at the time of the review, 48 of 81 pages were good as they stood and 33 needed a fix.
+Rows are updated as steps land. Most fixes are one
 sentence.
 
 ## What recurs
@@ -63,7 +64,7 @@ sentence.
 | ---- | ------- | ------- | ---- |
 | [Doctrine](../content/2-doctrine/README.md) | Good | One sentence, accurate. | - |
 | [God, Quantum Physics, and the Light of Divinity](../content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md) | Fix | The page argues with itself. One paragraph says the teaching is "not a claim of physics"; three others say light is a "literal" foundation, that existence "blurs into states of potentiality until observed", and that the observer effect shows consciousness shaping reality, which is not what physics says. It opens on a fragment, and the central paragraph runs to 170 words. | 3 |
-| [The Role of Enlightened Figures](../content/2-doctrine/enlightened-figures/README.md) | Fix | Opens without a subject ("To value…"). | 2 |
+| [The Role of Enlightened Figures](../content/2-doctrine/enlightened-figures/README.md) | Good | Opens without a subject ("To value…").  Mended in step 2. | - |
 | [Jesus and the Message of Love and Forgiveness](../content/2-doctrine/enlightened-figures/jesus.md) | Fix | 49 words. Says his teaching fits UPL, not what he taught. Laozi and Guru Nanak get twice the space and real content. | 5 |
 | [Muhammad and the Unity of God](../content/2-doctrine/enlightened-figures/muhammad.md) | Fix | 50 words, same pattern. | 5 |
 | [Buddha and the Path to Enlightenment](../content/2-doctrine/enlightened-figures/buddha.md) | Fix | 50 words. Credits him with "interconnectedness", which belief 6 now credits to later Buddhists. | 5 |
@@ -76,7 +77,7 @@ sentence.
 | [Karma: The Law of Ethical Cause and Effect](../content/2-doctrine/soul-karma-dharma-and-death/karma.md) | Good | Clear, and the last paragraph guards against the usual misuse. | - |
 | [Dharma: The Path of Righteousness and Duty](../content/2-doctrine/soul-karma-dharma-and-death/dharma.md) | Good | Clear about what UPL takes and what it leaves. | - |
 | [Integration of Karma and Dharma in the Soul's Liberation](../content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md) | Fix | 83 abstract words. Calls the cocoon "spiritual" where every other page calls it the body. "Liberation" is never defined, and what follows death is still an open question. | 5 |
-| [Death as a Transformative Journey](../content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md) | Fix | Opens on a command without a subject ("View death…"). Otherwise clear. | 2 |
+| [Death as a Transformative Journey](../content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md) | Good | Opens on a command without a subject ("View death…"). Otherwise clear.  Mended in step 2. | - |
 | [The Continuum of Life and Consciousness](../content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md) | Fix | The second sentence is hard to follow. It calls the view "dualism" while describing consciousness as "an intrinsic aspect of reality", which is a different position. | 3 |
 | [Ethical and Moral Development: The Cornerstone of UPL](../content/2-doctrine/ethical-and-moral-development/README.md) | Good | The registers and the five commitments are the clearest statement of what UPL asks. | - |
 | [The Fabric of Ethics](../content/2-doctrine/ethical-and-moral-development/fabric-of-ethics.md) | Fix | 50 words and one image. It adds nothing the introduction has not said. | 5 |
@@ -88,7 +89,7 @@ sentence.
 | Page | Verdict | Finding | Step |
 | ---- | ------- | ------- | ---- |
 | [Practices and Rituals](../content/3-practice/README.md) | Good | Clear. | - |
-| [The Integration of Positive Thinking, Gratefulness, and Mindful Action](../content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md) | Fix | Opens "To exert the transformative impact of…", which has no subject and an odd verb. | 2 |
+| [The Integration of Positive Thinking, Gratefulness, and Mindful Action](../content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md) | Good | Opens "To exert the transformative impact of…", which has no subject and an odd verb.  Mended in step 2. | - |
 | [Positive Thinking and the Power of Gratefulness](../content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md) | Good | Abstract, but it says one thing and says it plainly enough. | - |
 | [Mindful Action and the Embodiment of Gratitude](../content/3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action.md) | Good | The second paragraph makes the first concrete. | - |
 | [Gratitude Affirmations and Contemplative Practices](../content/3-practice/gratitude-affirmations/README.md) | Good | Clear. It promises affirmations that the four pages below do not yet give. | 7 |
@@ -112,7 +113,7 @@ sentence.
 | [The Family Dynamic: Embracing Diversity and Unity](../content/4-way-of-life/family/README.md) | Good | Clear and fair to the traditions. | - |
 | [Inclusive Familial Structures](../content/4-way-of-life/family/inclusive-familial-structures.md) | Good | Plain and aligned with belief 4. | - |
 | [Marriage as a Spiritual Union](../content/4-way-of-life/family/marriage.md) | Fix | Never says who may marry. Belief 4 implies any two adults; the page should say so or the author should say otherwise. | 7 |
-| [Cooperative Growth and Support](../content/4-way-of-life/family/cooperative-growth-and-support.md) | Fix | Opens without a subject ("To work on oneself…"); "traverse together on life's journey" is awkward. | 2 |
+| [Cooperative Growth and Support](../content/4-way-of-life/family/cooperative-growth-and-support.md) | Good | Opens without a subject ("To work on oneself…"); "traverse together on life's journey" is awkward.  Mended in step 2. | - |
 | [Divorce as a Respectable Ultimatum](../content/4-way-of-life/family/divorce.md) | Fix | The title says "ultimatum", which means a final demand. The page means a last resort. | 7 |
 | [Community and Fellowship: The Social Fabric](../content/4-way-of-life/community-and-fellowship/README.md) | Fix | One sentence of 70 words, and "Ho'oponopono" without its ʻokina. | 6 |
 | [The Role of Community in Spiritual Growth](../content/4-way-of-life/community-and-fellowship/role-of-community.md) | Good | Clear. | - |
@@ -120,15 +121,15 @@ sentence.
 | [Building a Global Spiritual Network](../content/4-way-of-life/community-and-fellowship/global-spiritual-network.md) | Good | Clear. | - |
 | [Environmental Stewardship and the Sacredness of Nature](../content/4-way-of-life/environmental-stewardship/README.md) | Good | "Demonstrate and perform a profound respect" is clumsy. The rest is clear. | 7 |
 | [The Principle of Interconnectedness](../content/4-way-of-life/environmental-stewardship/principle-of-interconnectedness.md) | Good | Short and clear. | - |
-| [Mindful Interaction with the Environment](../content/4-way-of-life/environmental-stewardship/mindful-interaction-with-the-environment.md) | Fix | First section opens without a subject ("To adopt lifestyles…"). | 2 |
+| [Mindful Interaction with the Environment](../content/4-way-of-life/environmental-stewardship/mindful-interaction-with-the-environment.md) | Good | First section opens without a subject ("To adopt lifestyles…").  Mended in step 2. | - |
 | [Education and Community Involvement](../content/4-way-of-life/environmental-stewardship/education-and-community-involvement.md) | Good | Clear. | - |
 | [The Spiritual Dimension of Environmental Stewardship](../content/4-way-of-life/environmental-stewardship/spiritual-dimension.md) | Good | Clear, and "divine order" follows decision D1. | - |
-| [Holistic Well-being: Embracing Health, Science, and Sobriety](../content/4-way-of-life/holistic-wellbeing/README.md) | Fix | Opens on a command ("Prioritise one's well-being…") and then says "its philosophy" with nothing for "its" to point to. | 2 |
+| [Holistic Well-being: Embracing Health, Science, and Sobriety](../content/4-way-of-life/holistic-wellbeing/README.md) | Good | Opens on a command ("Prioritise one's well-being…") and then says "its philosophy" with nothing for "its" to point to.  Mended in step 2. | - |
 | [Sobriety and the Avoidance of Recreational Drugs](../content/4-way-of-life/holistic-wellbeing/sobriety.md) | Fix | "And, thereafter, the world" is unclear. Drugs come up again under eating. It never says whether alcohol counts, which is the first thing a reader will ask. | 7 |
 | [Trust in Science and Modern Medicine](../content/4-way-of-life/holistic-wellbeing/science-and-modern-medicine.md) | Fix | The most important commitment in the text sits at the end of a single paragraph of 270 words, which opens by "advocating for natural remedies". Broken into four paragraphs in step 6, with the commitment standing alone. Done. | - |
-| [Continuous Learning: Expanding Knowledge and Creativity](../content/4-way-of-life/continuous-learning/README.md) | Fix | "Including professional, sciences, technology" is ungrammatical, and "fundamental" appears twice in two sentences. | 2 |
+| [Continuous Learning: Expanding Knowledge and Creativity](../content/4-way-of-life/continuous-learning/README.md) | Good | "Including professional, sciences, technology" is ungrammatical, and "fundamental" appears twice in two sentences.  Mended in step 2. | - |
 | [Professional Development](../content/4-way-of-life/continuous-learning/professional-development.md) | Good | Clear and concrete. | - |
-| [Sciences and Technology](../content/4-way-of-life/continuous-learning/sciences-and-technology.md) | Fix | Both sections open without a verb ("A commitment to…", "Technology as a powerful tool that…"). The closing paragraph is clear. | 2 |
+| [Sciences and Technology](../content/4-way-of-life/continuous-learning/sciences-and-technology.md) | Good | Both sections open without a verb ("A commitment to…", "Technology as a powerful tool that…"). The closing paragraph is clear.  Mended in step 2. | - |
 | [Arts and Creative Expression](../content/4-way-of-life/continuous-learning/arts-and-creative-expression.md) | Good | Clear. The second section switches to addressing the reader directly. | 7 |
 
 ## Context
