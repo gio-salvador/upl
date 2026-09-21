@@ -13,9 +13,12 @@ it. The teachings themselves are not here; they live in [content/](../content/RE
 | [sources.md](sources.md) | The register of every outside source used to check or support a statement, and the standing of each book the teachings cite. Gated. |
 | [cross-reference.md](cross-reference.md) | The matrix of concepts, their owner pages and the known overlaps between pages. Generated; updated before any merge that touches the teachings. |
 | [site-review.md](site-review.md) | A page-by-page review of the website from 18 September 2026, with proposed improvements. |
+| [page-clarity-review.md](page-clarity-review.md) | Every page read top to bottom on 21 September 2026 and judged for clarity, alignment, logic and ease, one line each. |
+| [page-descriptions.md](page-descriptions.md) | Draft one-sentence descriptions for every page, waiting for the author. |
 | [agents/](agents/README.md) | The Claude Code agents of this repository, starting with the steward of the teachings. |
 | [security.md](security.md) | What is protected and how to report a problem. |
 | [runbook-go-live.md](runbook-go-live.md) | The one-time steps that connect the repository to Cloudflare. |
 
 Working plans live in [plans/](plans/): [launch readiness](plans/2026-09-18-launch-readiness.md),
-in progress, and [tradition balance](plans/2026-09-21-tradition-balance.md), done.
+in progress, [tradition balance](plans/2026-09-21-tradition-balance.md), done, and
+[page clarity](plans/2026-09-21-page-clarity.md), proposed.
