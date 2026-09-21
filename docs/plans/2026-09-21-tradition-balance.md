@@ -1,6 +1,7 @@
 # Bring the traditions into balance across the whole text
 
-**Status: proposed.** Requested 2026-09-21. Nothing in this plan has been started. It records the
+**Status: decisions taken, not started.** Requested 2026-09-21. The author took decisions B1 to
+B7 the same day; no step has begun. It records the
 measurements, the design, the decisions that are the author's, and the sequence, so the work can
 be done a page at a time without losing the whole picture.
 
@@ -81,8 +82,7 @@ Non-goals:
 - **No quotas and no padding.** A tradition named in passing to move a number is a defect, not
   progress. If a belief has no true parallel in a tradition, that tradition is not named there.
 - **Islam is not removed.** Its voice stays wherever it is accurate. It becomes one voice among
-  several. Whether any existing Islamic sentence is shortened is the author's choice, page by
-  page (open decision B2).
+  several, of equal length with the others (decision B2).
 - **No new principle and no redefined principle.** The ten core beliefs keep their meaning.
   Voices illustrate a belief; they do not change it (locked decision 7).
 - **No wording written for search engines or language models** (locked decision 3).
@@ -108,7 +108,8 @@ Non-goals:
 3. Credit to Hinduism where karma, dharma and the soul are taught.
 4. Named indigenous traditions on the page that leans on them, and a fuller Historical Context.
 5. Primary sources in the register for every teaching to be named.
-6. A decision on how the contents list of the core beliefs is counted (open decision B3).
+6. A title for belief 4 that names no single tradition (decision B3), and dedicated pages for
+   Laozi and Guru Nanak (decision B4).
 7. Tighter caps once the text is in balance.
 
 ## The design
@@ -123,16 +124,25 @@ rotates. A voice is never added to a page only because the page needs a number.
 
 ### The assignment for the ten core beliefs (goals 1, 2, 4)
 
-Each belief keeps its Islamic voice and gains two or three others. The teachings named here were
-reviewed with the author on 18 to 21 September 2026; the wording is still to be written and
-approved. "First" is the tradition named first on the page, so the order rotates.
+Under decision B2 each of the ten pages is rewritten as one balanced passage: the belief stated
+first, in UPL's own words and keeping the author's sentence wherever the page already has one,
+then three or four voices of equal length, Islam among them. The "Keeps" column is the Islamic
+teaching that stays as one of those voices. The teachings named here were reviewed with the
+author on 18 to 21 September 2026; the wording is still to be written and approved. "First" is
+the tradition named first on the page, so the order rotates.
+
+Several of these pages today describe Islam more than they state the belief (beliefs 3 and 6
+most of all), and six open with a fragment carried over from the founding paper (W1 in
+[site-review.md](../site-review.md)). A rewrite is the moment to give each page a first sentence
+that states the belief. That sentence is doctrine, so it is the author's above all: the draft
+offers one, and the author writes the final one.
 
 | # | Belief | Keeps | Gains | First |
 | --- | --- | --- | --- | --- |
 | 1 | Unity | Tawhid | Hinduism: the self and the ultimate reality are one. Christianity: "you are the light of the world" | Hinduism |
 | 2 | Spiritual Evolution and Practice | prayer, fasting, pilgrimage | Hinduism: the four paths, for different temperaments. Buddhism: the path of practice | Buddhism |
 | 3 | Ethical and Moral Living | justice, Ummah, Zakat | Judaism: tzedakah, giving as justice. Hinduism: ahimsa, non-violence. Christianity: turn the other cheek, the peacemakers | Judaism |
-| 4 | Inclusive Family Structures and Fitrah | Fitrah | Seicho-no-Ie: the person as child of God, already perfect. Buddhism: Buddha-nature. Judaism and Christianity: made in the image of God | Seicho-no-Ie |
+| 4 | Inclusive Family Structures and Innate Goodness (renamed, decision B3) | Fitrah, now named in the body | Seicho-no-Ie: the person as child of God, already perfect. Buddhism: Buddha-nature. Judaism and Christianity: made in the image of God | Seicho-no-Ie |
 | 5 | Compassionate Action | helping those in need | Judaism: love your neighbour, and Hillel's rule. Christianity: love of enemies, the Good Samaritan. Buddhism: the four immeasurables | Christianity |
 | 6 | Interconnectedness and the Pursuit of Knowledge | Ilm | Buddhism: dependent origination, which also gives the text its missing definition of interconnectedness (finding X07). Judaism: study and honest disagreement | Buddhism |
 | 7 | Respect for the Wisdom of World Traditions | respect for the prophets | Hinduism: "truth is one; the wise call it by many names". Seicho-no-Ie: all religions come from one source | Hinduism |
@@ -140,8 +150,18 @@ approved. "First" is the tradition named first on the page, so the order rotates
 | 9 | Community and Social Welfare | Ummah | Buddhism: the Sangha. Christianity: "the least of these". Sikhism: the shared meal and service | Sikhism |
 | 10 | Positive Thinking, Gratefulness, and Mindful Action | gratitude and right conduct | Seicho-no-Ie: the power of words. Christianity: do not be anxious. Buddhism: the mind goes before all things | Seicho-no-Ie |
 
-This step also carries the two wording slips in beliefs 4 and 7 that were approved on 18 September
-2026 and could not land because those pages name Islam alone.
+The rewrite replaces the sentences that held the two wording slips in beliefs 4 and 7, approved
+on 18 September 2026, so those slips close with it.
+
+**Renaming belief 4 (decision B3).** The title becomes "Inclusive Family Structures and Innate
+Goodness", because innate goodness is what Fitrah, Buddha-nature, the image of God and the child
+of God each point at. The file becomes `inclusive-family-structures-and-innate-goodness.md` and
+its web address changes with it; the site is not public yet, so no address in use breaks. The
+rename touches the core beliefs index, `scripts/content-index.json`, the generated
+`docs/cross-reference.md` and `scripts/doctrine-baseline.json`, and it changes the name of a core
+principle without changing its meaning, which locked decision 7 reserves to the author and the
+author has decided. With "Fitrah" out of the title, the index page names no tradition and its
+recorded imbalance clears with no change to the gate.
 
 ### The other parts (goals 1, 3)
 
@@ -153,7 +173,7 @@ This step also carries the two wording slips in beliefs 4 and 7 that were approv
 | Practice | the four gratitude pages, Mindful Action | name none | Seicho-no-Ie: gratitude to parents and ancestors. Judaism: the ethics of speech. Buddhism: right speech and right intention |
 | Doctrine | Karma | names none | Hinduism: acting without attachment to the fruit. Judaism: return and repair after a wrong. And the safeguard that karma is never a verdict on a person who suffers |
 | Doctrine | Dharma | names none, and the concept is Hindu | Hinduism: one's own dharma. Buddhism: the Dhamma as the teaching |
-| Doctrine | Other Spiritual Leaders | two figures share one page | open decision B4: separate pages for Laozi and Guru Nanak |
+| Doctrine | Other Spiritual Leaders | two figures share one page | decision B4: a dedicated page each for Laozi and for Guru Nanak, listed under `dedicated` in the gate's rules; the shared page stays as a short pointer to figures still to come |
 | Way of Life | Environmental Stewardship (section page) | leans on "indigenous spiritualities" and names none: the thirteenth recorded imbalance | named indigenous traditions, with Judaism and Seicho-no-Ie |
 | Way of Life | Sobriety | cites no tradition | Buddhism: the fifth precept. Sikhism: abstaining from intoxicants |
 | Way of Life | the Family section | cites none | Seicho-no-Ie: gratitude to parents. Hinduism: the stages of life. Judaism: peace in the home |
@@ -197,33 +217,30 @@ When the text is in balance the caps are moved to where the text then is, so it 
 back: the whole-text cap from 35 to 30 per cent, the section cap from 50 to 40. A new report
 line shows how many traditions each part names and which tradition each page names first, so
 rotation can be seen. Changing `scripts/doctrine-gate.json` changes what may be published, so it
-is the author's decision (open decision B5) and is made last.
+is the author's decision (B5) and is made last.
 
-## Open decisions
+## Decisions
 
-All are the author's. None blocks writing the sources step.
+All taken by the author on 21 September 2026.
 
-- **B1 OPEN: the target range.** Recommendation: the ranges in goals 2 and 3. They describe a
-  religion that builds on five traditions and honours five more, which is what the text says it
-  is. A flatter target would force padding.
-- **B2 OPEN: are any Islamic sentences shortened?** Recommendation: no, in this plan. Adding
-  voices fixes every measure without rewording a sentence the author wrote, and a later reader
-  can still see the founding paper in the page.
-- **B3 OPEN: how the contents list of the core beliefs is counted.** The index page is recorded
-  as naming Islam alone because the title of belief 4 contains "Fitrah". No wording on that page
-  can fix it except renaming a core belief. Recommendation: the gate stops counting the titles in
-  a section page's contents list, since each is counted on its own page already. This corrects
-  double counting; it is still a change to the gate's rules, so it is the author's to make.
-- **B4 OPEN: separate pages for Laozi and Guru Nanak.** Recommendation: yes, in the step for
-  Doctrine, as two dedicated pages. Taoism and Sikhism then have a home, as the other four
-  figures do.
-- **B5 OPEN: the tighter caps.** Recommendation: 30 per cent for the whole text and 40 for a
-  section, decided when step 7 is reached and the real numbers are known.
-- **B6 OPEN: Judaism as a named source of the teachings.** It is named twice today. This plan
-  gives it a voice on six core beliefs. Recommendation: yes, and add it to the list of
-  traditions in section 2 of the guardrails, with its books in References.
-- **B7 OPEN: how approvals are batched.** About forty before-and-after proposals in all.
-  Recommendation: one batch per step, approved by id, as was done for P1 to P14.
+- **B1 TAKEN: ranges.** No tradition above 25 per cent; Christianity, Islam, Buddhism, Hinduism
+  and Seicho-no-Ie each between 12 and 25; the other five together at least 15, each named on
+  three pages or more.
+- **B2 TAKEN: rewrite each page.** Each core belief is redrafted as one balanced passage, the
+  belief first and then three or four voices of equal length. This was not the recommendation,
+  which was to keep every sentence and add to it. It gives the best reading result and changes
+  the most of the author's original words, so every page comes back to the author as a whole
+  before-and-after, and the founding paper in `paper/` remains the record of what was first
+  written.
+- **B3 TAKEN: rename belief 4** to "Inclusive Family Structures and Innate Goodness". This was
+  not the recommendation, which was a change to how the gate counts. The rename leaves the gate
+  alone and fixes the cause: a core belief whose name belongs to one tradition.
+- **B4 TAKEN: a page each** for Laozi and for Guru Nanak.
+- **B5 TAKEN: decide the tighter caps at the end**, from the real numbers. Today's proposal is 30
+  per cent for the whole text and 40 for a section.
+- **B6 TAKEN: Judaism is a named source tradition.** It joins the list in section 2 of the
+  guardrails, and its books join References.
+- **B7 TAKEN: one batch of proposals per step**, approved, changed or declined by id.
 
 ## Sequence
 
@@ -232,16 +249,15 @@ wording pull request, called out as such, with the matrix and the register updat
 
 | Step | Pull request | Needs from you | Status |
 | --- | --- | --- | --- |
-| 1 | Sources: the primary sources for every voice in this plan recorded in the register; References proposals drafted | B6 | not started |
-| 2 | Core beliefs 1, 4, 5, 7: proposals, then applied. Carries the two approved wording slips | approve by id; `--accept-core`; `--waive-imbalance` to remove the four cleared records | not started |
-| 3 | Core beliefs 2, 3, 6, 8, 9, 10: the same | the same, six records | not started |
-| 4 | The contents-list rule (B3), which clears the index page and the section record | B3; `--waive-imbalance` to remove the last two core-beliefs records | not started |
-| 5 | Practice: prayer, holy texts, the meditation introduction, gratitude and mindful action | approve by id | not started |
-| 6 | Doctrine and Way of Life: karma, dharma, the two new figures, environmental stewardship, sobriety, family, work and service | approve by id; B4; `--accept-core` for the doctrine pages; `--waive-imbalance` for the thirteenth record | not started |
-| 7 | Context: Historical Context and Comparative Analysis. Then the tighter caps and the new report lines | approve by id; B5 | not started |
+| 1 | Sources: the primary sources for every voice in this plan recorded in the register; Judaism added to the guardrails' list of traditions (B6); References proposals drafted | approve the References additions by id | not started |
+| 2 | Core beliefs 1, 4, 5, 7 rewritten, and belief 4 renamed (B3). Clears five records: the four pages and the index | approve each page by id; `--accept-core`; `--waive-imbalance` to remove the cleared records | not started |
+| 3 | Core beliefs 2, 3, 6, 8, 9, 10 rewritten. Clears six page records and the section record | the same | not started |
+| 4 | Practice: prayer, holy texts, the meditation introduction, gratitude and mindful action | approve by id | not started |
+| 5 | Doctrine and Way of Life: karma, dharma, the pages for Laozi and Guru Nanak (B4), environmental stewardship, sobriety, family, work and service | approve by id; `--accept-core` for the doctrine pages; `--waive-imbalance` for the thirteenth record | not started |
+| 6 | Context: Historical Context and Comparative Analysis. Then the tighter caps and the new report lines (B5) | approve by id; the caps | not started |
 
-Steps 2 and 3 can be drafted together and merged in either order. Steps 5 and 6 do not depend on
-each other. Step 7 is last because the caps are set from the numbers the earlier steps produce.
+Steps 2 and 3 can be drafted together and merged in either order. Steps 4 and 5 do not depend on
+each other. Step 6 is last because the caps are set from the numbers the earlier steps produce.
 
 ## Cross-dependencies
 
@@ -259,7 +275,9 @@ each other. Step 7 is last because the caps are set from the numbers the earlier
   `--accept-core`, and every step that clears a recorded imbalance needs the author's
   `--waive-imbalance` to remove the stale record. An agent runs either only on the author's
   explicit instruction for that change, and verifies what it rewrote.
-- **The three Foundations slips.** Beliefs 4 and 7 land in step 2. The Author Note slip
+- **The rename.** Belief 4's new file name has to change in the index page, the matrix and the
+  baseline in the same pull request, or three gates fail at once.
+- **The three Foundations slips.** Beliefs 4 and 7 close in step 2. The Author Note slip
   ("tranquillity") is independent and can go at any time with `--accept-core`.
 
 ## Risks
@@ -276,9 +294,12 @@ each other. Step 7 is last because the caps are set from the numbers the earlier
 - **Borrowing what is not ours to take.** Kabbalah, yoga and indigenous practice are often
   appropriated. Guard: describe and credit, do not absorb; name indigenous traditions
   specifically and from their own sources, or not at all.
-- **The core beliefs lose their voice.** Pages of forty words would triple. Guard: one to three
-  sentences per voice, the founding paper's sentence kept first where it opens the page, and the
-  author writes or rewrites every passage.
+- **The core beliefs lose the author's voice.** Under B2 these ten pages, the centre of the
+  religion, are rewritten, and a draft by anyone but the author will sound like the drafter.
+  Guard: the belief's own sentence is the author's to write; the author's existing words are
+  kept wherever they state the belief; each page comes back whole for the author to rework, not
+  only to approve; and the voices are held to one to three sentences each so a page of forty
+  words does not become an essay.
 - **A belief quietly changes meaning.** A strong voice can pull a belief towards its own
   tradition. Guard: locked decision 7, and the review lens for fidelity to the beliefs.
 - **The author's time.** About forty proposals. Guard: batches by step, and steps that can pause
@@ -289,8 +310,8 @@ each other. Step 7 is last because the caps are set from the numbers the earlier
 - It does not add, remove or redefine a core belief.
 - It does not decide whether UPL adopts any tradition's practices.
 - It does not fix the sentence fragments (W1) or the accuracy points (W3) recorded in
-  [site-review.md](../site-review.md), except where a page is being reworded anyway and the
-  author chooses to.
+  [site-review.md](../site-review.md) outside the ten core beliefs, where the rewrite (B2)
+  replaces them.
 - It does not write front-matter descriptions (S5 in the site review), though steps 2 and 3 are
   a natural moment for the author to add them, since those pages are being recorded anyway.
 - It does not loosen any gate.
@@ -315,7 +336,9 @@ otherwise.
    no new open finding of type `conflicting`.
 9. The caps in `scripts/doctrine-gate.json` are at or below 30 per cent for the whole text and 40
    for a section, and `bash scripts/check.sh` passes.
-10. No pull request in the sequence rewords a sentence the author did not approve by id.
+10. No pull request in the sequence changes a sentence the author did not approve by id, and
+    each rewritten core belief still states the same belief, by the author's own judgement.
+11. The core beliefs index names no tradition, and belief 4's title names none.
 
 ## Acceptance
 
