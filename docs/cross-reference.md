@@ -120,9 +120,10 @@ a source in the [source register](sources.md).
 | God | | H | | | | H | H | C | | | | 3 |
 | The immortal soul (also spirit, consciousness of the person, true self) | H | R | R | | H | | H | C | | | | 3 |
 | The silkworm and cocoon image | | | | | O | | | | | | | 1 |
-| Karma | O | | | | | | | | | | | 1 |
+| Karma | O | | | | | | R | | | R | | 1 |
 | Dharma | O | | | | | | | R | | | | 1 |
-| Death | | | C | | | | | | | | | 0 |
+| Death | H | | C | | O | | | | | | | 2 |
+| Consciousness | H | | | | O | | | | | | | 2 |
 | Meditation | | | H | | H | | | H | | R | | 3 |
 | Prayer | H | H | H | | | | | | | | | 3 |
 | Holy texts | H | | H | | | | | H | | | | 3 |
@@ -138,16 +139,16 @@ truly meets the teachings and where it does not.
 
 | Tradition | Shares in | Of which origin | Resembles only | Contrary |
 | --- | ---: | ---: | ---: | ---: |
-| Hinduism | 13 | 2 | 1 | |
+| Hinduism | 15 | 2 | 1 | |
 | Islam | 14 | 1 | 1 | 1 |
 | Christianity | 12 | | 4 | 3 |
 | Sikhism | 6 | | | |
-| Seicho-no-Ie | 14 | 3 | | 1 |
+| Seicho-no-Ie | 16 | 5 | | 1 |
 | Taoism | 3 | | | |
-| Judaism | 11 | 1 | 3 | 1 |
+| Judaism | 11 | 1 | 4 | 1 |
 | Buddhism | 10 | | 4 | 2 |
 | Indigenous traditions | 3 | | | |
-| Hawaiian tradition | 3 | 1 | 1 | |
+| Hawaiian tradition | 3 | 1 | 2 | |
 | Bahá'í Faith | 2 | | 1 | |
 
 ### The cells
@@ -339,6 +340,8 @@ truly meets the teachings and where it does not.
 | Tradition | Relation | Sources | Note |
 | --- | --- | --- | --- |
 | Hinduism | origin | S53 | Action and its fruit. |
+| Judaism | resembles | S25 | Teshuvah, return: a wrong done to a person is mended by making it good and seeking forgiveness. It is about repair, not about cause and effect. |
+| Hawaiian tradition | resembles | S122 | Hoʻoponopono sets right what has gone wrong within a family. Repair, not cause and effect. |
 
 **Dharma**, owned by [2-doctrine/soul-karma-dharma-and-death/dharma](../content/2-doctrine/soul-karma-dharma-and-death/dharma.md)
 
@@ -352,6 +355,15 @@ truly meets the teachings and where it does not.
 | Tradition | Relation | Sources | Note |
 | --- | --- | --- | --- |
 | Christianity | contrary | S38, S157, S133, S134, S158, S159 | Eternal punishment is classical teaching, Catholic and Protestant. Orthodoxy speaks of hell as the experience of God's love by those who reject it. Universal restoration, held by Gregory of Nyssa, is a minority hope the confessions condemn. UPL does not teach eternal punishment. |
+| Seicho-no-Ie | origin | S07, S08 | The author's source for these pages: a person leaves the body-cocoon and rises to the world of spirit, and the essence of a person is life. The sutra also calls death nonexistent; UPL teaches that death is real, a passage (decision D1, point 5). |
+| Hinduism | independent | S196, S195 | The soul lays aside a worn-out body as worn-out clothes, and takes another. The verse teaches rebirth; UPL's pages do not say whether the soul returns. |
+
+**Consciousness**, owned by [2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness](../content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md)
+
+| Tradition | Relation | Sources | Note |
+| --- | --- | --- | --- |
+| Seicho-no-Ie | origin | S07 | A person is not matter, not the body, not the cells of the brain or the nerves. |
+| Hinduism | independent | S195 | The soul is not destroyed when the body is destroyed. |
 
 **Meditation**, owned by [3-practice/meditation](../content/3-practice/meditation/README.md)
 

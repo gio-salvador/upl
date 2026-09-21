@@ -1467,11 +1467,81 @@ Taoism stays at 2 because a page dedicated to one figure is left out of the shar
 - Notes: Worded differently from belief 9, which already gives seva and the washing of feet.
 - Gates: Clean.
 
+### P58 to P60. The two pages that come from the Seicho-No-Ie sutra
+
+The first draft of this step left Death as a Transformative Journey and The Continuum of Life
+and Consciousness alone, because they name no tradition. The author then said, on 21 September
+2026, that both come mostly from the holy sutra of Seicho-No-Ie. That makes them the same case
+as the cocoon image (P13): a borrowing the page does not credit, which the guardrails ask to be
+credited (section 6, rule 5). The public excerpt of the sutra was read directly and bears the
+author out (S07): a person "leaves his body-cocoon and ascends to the spiritual world"; "the
+essence of man is Life, there can never be death for him"; man is "not matter, not the physical
+body, not brain cells, not nerve cells". It also says something UPL does not teach, that "sin,
+sickness and death are nonexistent", so the credit names the debt and the difference together.
+
+**P58. Death as a Transformative Journey. Addition, after the existing text. Locked page.**
+
+- Added:
+
+  > This teaching comes to UPL chiefly from Seicho-No-Ie. Its holy sutra, the Nectarean
+  > Shower of Holy Doctrines, says that when the time comes a person leaves the body as the
+  > silkworm leaves its cocoon and rises to the world of spirit, and that the essence of a
+  > person is life, for which there can be no death. The Bhagavad Gita says of the soul that
+  > it lays aside a worn-out body as a person lays aside worn-out clothes for new ones. UPL
+  > holds with both that the soul goes on. It differs from the sutra in one thing: the sutra
+  > calls death unreal, and UPL teaches that death is real, a passage in a journey that does
+  > not end.
+
+- Sources: S07, S08; S196.
+- Notes: the author's paragraph stays whole. The last sentence is the drafter's and is doctrine:
+  it states the difference the author decided in D1, point 5, that UPL does not call death or
+  suffering unreal. A second voice, as the balance rule asks, from the Bhagavad Gita, read
+  directly.
+- **A question for the author.** The Gita verse teaches rebirth: the soul casts off one body
+  "and enters a new one". UPL's pages speak of the soul emerging into "a broader, freer realm"
+  and never say whether it returns to another life. The draft keeps the verse's own words ("for
+  new ones") and does not settle it. Whether UPL teaches rebirth is a gap in the doctrine that
+  only the author can fill.
+
+**P59. The Continuum of Life and Consciousness. Addition, after the existing text. Locked page.**
+
+- Added:
+
+  > UPL did not reach this view by philosophy alone. The holy sutra of Seicho-No-Ie says
+  > that a person is not matter, not the body, and not the cells of the brain or the nerves,
+  > and that the body is only the cocoon. The Bhagavad Gita says that the soul is not born
+  > and does not die, and is not destroyed when the body is destroyed. UPL takes from both
+  > the conviction that life and consciousness do not end with the body, and sets it beside
+  > the philosopher's question as a second way of arriving at the same place.
+
+- Sources: S07; S195; and for the philosopher's question, S192.
+- Notes: the page rested the claim that consciousness does not arise from matter on philosophy
+  alone. The addition says where UPL actually has it from, and keeps the philosophical argument
+  as a second way to the same place.
+
+**P60. The Continuum of Life and Consciousness. Wording change. Locked page.**
+
+- Before: "Grounded in the empirically-based proposition called the "hard problem" of consciousness,"
+- After: "Grounded in the philosophical question called the "hard problem" of consciousness,"
+- Notes: the accuracy point W3 from the site review. The hard problem of consciousness is a
+  philosophical argument (Chalmers, a journal article, S192), not an empirical finding. One word
+  changes. Offered now because the page is being touched anyway; it stands or falls by itself.
+
+- Gates, for all three, run with the rest of step 6 applied: doctrine gate, only the locked
+  pages reported, each page two traditions and neither over the cap; matrix gate, failed on the
+  first run for want of cells for Seicho-no-Ie and Hinduism on the concept of death, which are
+  now recorded with their sources, and clean on the second; whole text Buddhism 16 per cent,
+  Islam 15, Hinduism 15, Seicho-no-Ie 13, Christianity 12, Judaism 11, Sikhism 8, Hawaiian 5,
+  indigenous 3, Taoism 2.
+
+- **For the author to check against the sutra itself**, which the author holds and which is the
+  primary source: that the three passages above are rendered fairly, and whether any wording on
+  these two pages follows the sutra closely enough to need quotation marks. The sutra and its
+  English translation are in copyright, so the pages paraphrase and credit, and do not quote at
+  length.
+
 ### Not in this step
 
-- **Death as a Transformative Journey and The Continuum of Life and Consciousness** name no
-  tradition and are left alone; nothing sourced belongs there that would not be padding. The
-  accuracy point on the hard problem of consciousness (W3) is still the author's.
 - **A Christian form of meditation** is sourced and would be a new page under Practice. It is a
   new teaching more than a matter of balance, so it is left for the author to ask for.
 

@@ -1015,6 +1015,20 @@
             "S53"
           ],
           "note": "Action and its fruit."
+        },
+        "Judaism": {
+          "relation": "resembles",
+          "sources": [
+            "S25"
+          ],
+          "note": "Teshuvah, return: a wrong done to a person is mended by making it good and seeking forgiveness. It is about repair, not about cause and effect."
+        },
+        "Hawaiian tradition": {
+          "relation": "resembles",
+          "sources": [
+            "S122"
+          ],
+          "note": "Hoʻoponopono sets right what has gone wrong within a family. Repair, not cause and effect."
         }
       }
     },
@@ -1075,6 +1089,22 @@
             "S159"
           ],
           "note": "Eternal punishment is classical teaching, Catholic and Protestant. Orthodoxy speaks of hell as the experience of God's love by those who reject it. Universal restoration, held by Gregory of Nyssa, is a minority hope the confessions condemn. UPL does not teach eternal punishment."
+        },
+        "Seicho-no-Ie": {
+          "relation": "origin",
+          "sources": [
+            "S07",
+            "S08"
+          ],
+          "note": "The author's source for these pages: a person leaves the body-cocoon and rises to the world of spirit, and the essence of a person is life. The sutra also calls death nonexistent; UPL teaches that death is real, a passage (decision D1, point 5)."
+        },
+        "Hinduism": {
+          "relation": "independent",
+          "sources": [
+            "S196",
+            "S195"
+          ],
+          "note": "The soul lays aside a worn-out body as worn-out clothes, and takes another. The verse teaches rebirth; UPL's pages do not say whether the soul returns."
         }
       }
     },
@@ -1083,7 +1113,23 @@
       "owner": "content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md",
       "terms": [
         "consciousness"
-      ]
+      ],
+      "held_by": {
+        "Seicho-no-Ie": {
+          "relation": "origin",
+          "sources": [
+            "S07"
+          ],
+          "note": "A person is not matter, not the body, not the cells of the brain or the nerves."
+        },
+        "Hinduism": {
+          "relation": "independent",
+          "sources": [
+            "S195"
+          ],
+          "note": "The soul is not destroyed when the body is destroyed."
+        }
+      }
     },
     "meditation": {
       "label": "Meditation",
