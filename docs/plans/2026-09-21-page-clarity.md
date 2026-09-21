@@ -60,7 +60,7 @@ The author's, before the step that needs each.
 | Step | What | Pages | Kind | Status |
 | ---- | ---- | ----: | ---- | ------ |
 | 1 | Descriptions into front matter (S5 in the site review). Showing them on the contents cards (S6) is a site change and goes in its own pull request | 81 | Metadata | Done |
-| 2 | Give each fragment its subject and verb | 8 | Wording | - |
+| 2 | Give each fragment its subject and verb. Proposals P74 to P81; the God page's opening goes with step 3 | 7 | Wording | Drafted |
 | 3 | Bring the God page, Abstract, Continuum page and Conclusion into line with D1, D2 and D5 | 4 | Wording | - |
 | 4 | Remove the ranking phrases from Purpose and Comparative Analysis; gloss Socinianism | 3 | Wording | - |
 | 5 | Give Jesus, Muhammad, the Buddha and Taniguchi what Laozi and Guru Nanak have; settle the liberation page and the Fabric of Ethics | 6 | Wording | - |
