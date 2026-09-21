@@ -9,7 +9,7 @@ This page is not a teaching. Where it and a page under `content/` disagree, the 
 proposal below is applied only when the author approves that exact wording (locked decision 2),
 in a pull request called out as a wording change.
 
-## Decisions of 18 September 2026
+## Decisions of 18 to 21 September 2026
 
 Taken by the author, Giovanni S. Salvador, in answer to the three conflicts recorded in the
 [cross-reference matrix](cross-reference.md) and the questions that followed from them.
@@ -41,11 +41,32 @@ The points settled with it:
    tradition is described. UPL's own term stays "light from the source" or "emanation of divine
    light".
 
-### D2. Medicine first; spiritual practice supports it (closes X01 when applied)
+### D2. UPL heals the spirit; medicine treats the body (closes X01 when applied)
 
-When a person is ill, medical care comes first. Prayer, meditation, natural remedies and
-healthy living support that care and never replace it. Any teaching on healing taken from
-another tradition is adopted only as a complement to medicine.
+First decided as "medicine first; spiritual practice supports it", then refined by the author on
+21 September 2026. The refined position:
+
+1. UPL's own work is the healing of the spirit.
+2. Illness of the body is met with science and medicine.
+3. Medical science still has much to learn, and many conditions are not understood at all. It
+   has proven effective wherever understanding has grown, and it will keep improving.
+4. A follower of UPL never relies on alternative or spiritual remedies alone.
+
+Two points in the author's statement are open, and P2 below is drafted on the cautious side of
+both until the author settles them:
+
+- **"Faith and belief can cure a person; Jesus cured solely with his words."** Read as a claim
+  about physical disease, this contradicts Engaging with Holy Texts (scripture is read as
+  teaching, not as literal record), D1 point 5 (illness is real; UPL parts from Seicho-No-Ie
+  here) and point 4 above. P2 says instead that faith heals the spirit and strengthens a person
+  in illness, and honours the healings of Jesus as teaching about the power of faith.
+- **"Especially when AI merges with quantum computing."** A prediction, not a belief. It would
+  date the page, and it adds a second speculative claim about quantum science to a text whose
+  physics page is the one sceptical readers test. P2 keeps "it will keep improving" and leaves
+  the forecast out.
+
+Any teaching on healing taken from another tradition is adopted only as a complement to
+medicine.
 
 ### D3. The disagreement with Buddhism is stated (closes X03 when applied)
 
@@ -76,11 +97,21 @@ locked.**
 
 - Before: "Trust in science and evidence-based medicine is considered complementary to spiritual
   practices, offering solutions where traditional methods may fall short."
-- After: "When a person is ill, medical care comes first: adherents are encouraged to seek it
-  without delay and to follow it. Prayer, meditation, natural remedies and healthy living
-  support that care and never replace it."
+- After: "UPL's own work is the healing of the spirit. Faith, prayer and a mind at peace
+  strengthen a person in illness, and the traditions honour this: the Gospels tell of Jesus
+  healing with a word, and Judaism holds that saving a life comes before almost every other
+  duty. UPL reads the accounts of healing as it reads all holy texts, as teaching about the
+  power of faith, and not as a promise that faith will cure a disease. Illness of the body is
+  met with science and medicine. Medical science still has much to learn, and many conditions
+  are not yet understood, but it has proven effective wherever understanding has grown, and it
+  will keep improving. A follower of UPL never relies on spiritual or alternative remedies
+  alone: when a person is ill, medical care is sought without delay and followed, and spiritual
+  practice walks beside it."
 - Why: the old sentence reads as if medicine were the fallback. The first sentence of the
-  paragraph is kept as it is.
+  paragraph is kept as it is. Revised on 21 September 2026 to carry the refined D2. Two voices,
+  as the balance rule asks: one speaks for faith, one for medicine.
+- To check: the Jewish principle is pikuach nefesh; confirm it against a source before it
+  lands.
 
 ### For D3
 
@@ -132,12 +163,15 @@ locked.**
 - After: "God is not a person but the source. From that source flows a pure light, and all that
   exists, ourselves included, is light from it. This light vibrates with many energies on one
   spectrum, and love is of that spectrum. When the teachings speak of God's love, they speak of
-  the nature of the light itself and not of the feeling of a person. UPL offers this as
-  spiritual teaching, in the language of light, and not as a claim of physics."
-- Why: D1, points 1, 2 and 4, kept close to the author's own words. No tradition is named, so
-  the balance of the page does not change.
-- To check: whether to add kindred voices here (Seicho-No-Ie's True Image, the Upanishads' "you
-  are that"). Under the balance rule it would have to be two or none. Left out for now.
+  the nature of the light itself and not of the feeling of a person. Other traditions have
+  spoken of the same source: the Chandogya Upanishad says of the self and the ultimate reality,
+  "you are that", and Seicho-No-Ie teaches that the true image of every person is a child of
+  God, perfect as its source is perfect. UPL offers this as spiritual teaching, in the language
+  of light, and not as a claim of physics."
+- Why: D1, points 1, 2, 4 and 6, kept close to the author's own words. The author asked on 21
+  September 2026 for the two kindred voices; two are named, as the balance rule asks, with
+  "child of God" given as Seicho-No-Ie's phrase and not UPL's.
+- To check: the Seicho-No-Ie sentence against the author's copy of Taniguchi.
 
 **P7. God, Quantum Physics, and the Light of Divinity. Addition, as the paragraph after P6.
 Locked.**
