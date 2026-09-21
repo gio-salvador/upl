@@ -18,4 +18,5 @@ it. The teachings themselves are not here; they live in [content/](../content/RE
 | [runbook-go-live.md](runbook-go-live.md) | The one-time steps that connect the repository to Cloudflare. |
 
 Working plans live in [plans/](plans/): [launch readiness](plans/2026-09-18-launch-readiness.md),
-in progress, and [tradition balance](plans/2026-09-21-tradition-balance.md), done.
+in progress, [tradition balance](plans/2026-09-21-tradition-balance.md), done, and
+[second paper](plans/2026-09-21-second-paper.md), planned.
