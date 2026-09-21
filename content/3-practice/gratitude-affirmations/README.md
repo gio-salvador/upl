@@ -12,6 +12,8 @@ Gratitude as a daily discipline is older than any one tradition. The Haudenosaun
 
 ## The affirmations
 
+Each page below ends with an example affirmation. It may be said aloud or in silence, and is meant to be changed to fit one's own life.
+
 1. [Gratitude for Relationships](relationships.md)
 2. [Gratitude for Life's Blessings](lifes-blessings.md)
 3. [Gratitude for Earth and Environmental Blessings](earth-and-environment.md)
