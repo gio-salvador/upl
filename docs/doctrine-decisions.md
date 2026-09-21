@@ -166,9 +166,9 @@ What the drafting had to respect:
    it goes into belief 6 in nearly the author's words. One claim is drafted more carefully than
    the author put it: "have begun to correct them" for "correcting as we go", because it is a
    statement about the world and is true in some places (the ozone layer, clean energy) and not
-   yet in others. **A question for the author: does "our stance" include UPL's own teachings?**
-   Purpose calls UPL "dynamic, inclusive, and adaptable", which suggests it does, and the drafts
-   are worded so that it can be read either way.
+   yet in others. **Asked whether "our stance" includes UPL's own
+   teachings, the author answered yes.** Purpose already calls UPL "dynamic, inclusive, and
+   adaptable". So belief 6 ends "and UPL holds its own teachings to the same rule".
 
 ## Wording approved and applied
 
@@ -562,10 +562,20 @@ Two things the gates caught when the pages were applied:
 - "Hebrew Bible" was being counted for Christianity, because "bible" is one of Christianity's
   words. The gate now leaves "bible" alone when "Hebrew" comes before it, under decision B8.
 
-## Tradition balance, step 4: proposed wording, waiting for the author
+## Tradition balance, step 4: wording approved and applied
 
 The other six core beliefs, rewritten under decision B2, and one sentence varied at the author's
-request. Same shape and same rules as step 3. Nothing here is applied.
+request. Same shape and same rules as step 3.
+
+The author approved P21 to P28 on 21 September 2026, choosing version B of P24 with P28, and the
+proposals were applied exactly as written, with one clause added on the author's answer (see
+P24). On the author's instruction the baseline was recorded with `--accept-core` and
+`--waive-imbalance`. Verified by comparing the baseline before and after: seven fingerprints
+changed (six beliefs and the God page), six page records were removed, and nothing was added.
+One known imbalance remains, the Environmental Stewardship section page, which belongs to step 6.
+The whole text now stands at Islam 18 per cent, Buddhism 17, Seicho-no-Ie 13, Christianity 13,
+Hinduism 12, Judaism 11, Sikhism 8, Hawaiian 3, indigenous 2, Taoism 2: every figure inside the
+plan's target ranges. Findings X07 and X20 are closed.
 
 **Checked before asking.** As the author asked on 21 September 2026, every draft below was applied
 in a scratch tree and run through the doctrine, matrix and source gates before being shown. What
@@ -679,7 +689,7 @@ between pages; the source gate passing.
   > back. UPL believes that the growth of science, engineering and the arts, and of the
   > technology that comes from them, is bound up with the spiritual evolution of our
   > civilisation. Because we learn, we must continually evaluate our stance and, given the
-  > evidence, correct our collective path.
+  > evidence, correct our collective path, and UPL holds its own teachings to the same rule.
   >
   > The Buddha taught that things arise in dependence on one another, and he taught it to
   > explain how suffering arises and how it ends. Later Buddhists drew a wider vision from

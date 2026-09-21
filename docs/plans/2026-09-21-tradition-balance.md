@@ -1,7 +1,7 @@
 # Bring the traditions into balance across the whole text
 
-**Status: in progress.** Steps 1 to 3 are done: the sources, the convergence map, and the first
-four core beliefs. Requested 2026-09-21. The author took decisions B1 to
+**Status: in progress.** Steps 1 to 4 are done: the sources, the convergence map, and all ten core
+beliefs. Requested 2026-09-21. The author took decisions B1 to
 B7 the same day; no step has begun. It records the
 measurements, the design, the decisions that are the author's, and the sequence, so the work can
 be done a page at a time without losing the whole picture.
@@ -415,7 +415,7 @@ wording pull request, called out as such, with the matrix and the register updat
 | 1 | Sources: the primary sources for every voice in this plan recorded in the register; Judaism added to the guardrails' list of traditions (B6); References proposals drafted | approve the References additions Q1 to Q13 by id; decision B8 | done 2026-09-21: 110 sources recorded, S14 to S123 |
 | 2 | The convergence map: how each tradition stands to each teaching, with sources, in the cross-reference matrix and gated | nothing | done 2026-09-21: 87 cells on 25 teachings |
 | 3 | Core beliefs 1, 4, 5, 7 rewritten, and belief 4 renamed (B3). Clears five records: the four pages and the index | approve each page by id; `--accept-core`; `--waive-imbalance` to remove the cleared records | done 2026-09-21, proposals P15 to P20: known imbalances 13 to 7, Islam 25 per cent of the whole text |
-| 4 | Core beliefs 2, 3, 6, 8, 9, 10 rewritten. Clears six page records and the section record | the same | not started |
+| 4 | Core beliefs 2, 3, 6, 8, 9, 10 rewritten. Clears six page records and the section record | the same | done 2026-09-21, proposals P21 to P28: known imbalances 7 to 1, Islam 18 per cent of the whole text, every tradition inside the target ranges |
 | 5 | Practice: prayer, holy texts, the meditation introduction, gratitude and mindful action | approve by id | not started |
 | 6 | Doctrine and Way of Life: karma, dharma, the pages for Laozi and Guru Nanak (B4), environmental stewardship, sobriety, family, work and service | approve by id; `--accept-core` for the doctrine pages; `--waive-imbalance` for the thirteenth record | not started |
 | 7 | Context: Historical Context and Comparative Analysis. Then the tighter caps and the new report lines (B5) | approve by id; the caps | not started |

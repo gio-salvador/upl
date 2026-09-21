@@ -1176,12 +1176,12 @@
     {
       "id": "X07",
       "type": "ambiguous",
-      "status": "open",
+      "status": "resolved",
       "pages": [
         "content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md",
         "content/4-way-of-life/environmental-stewardship/principle-of-interconnectedness.md"
       ],
-      "note": "Two pages are named for interconnectedness. The core belief names it only in its title and speaks of knowledge; the other treats it only for nature. No page states the concept in general.",
+      "note": "Resolved 21 September 2026 by proposal P24. The core belief now states the concept in general, \"nothing in existence stands alone, and… to learn is to discover how things are joined\", and credits the Huayan school and Thich Nhat Hanh for it. The environmental page remains its application to nature.",
       "concept": "interconnectedness"
     },
     {
@@ -1320,14 +1320,13 @@
     {
       "id": "X20",
       "type": "redundant",
-      "status": "accepted",
+      "status": "resolved",
       "pages": [
         "content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md",
         "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md"
       ],
-      "note": "Both pages give Seicho-No-Ie's teaching that every person is in reality a child of God, already perfect, in nearly the same words. Found by the wording check when belief 4 was rewritten.",
-      "concept": "fitrah",
-      "reason": "The author approved both wordings (P6 and P16). Each page names the teaching for a different belief, the source of light and innate goodness, and both follow the movement's own statement (S05). Keep the two in step if either changes."
+      "note": "Resolved 21 September 2026 by proposal P21. Both pages gave Seicho-No-Ie's teaching on the child of God in nearly the same words. The God page now says \"a being of spirit and not of matter\", and \"already perfect\" stays with belief 4, where it is about innate goodness.",
+      "concept": "fitrah"
     }
   ],
   "pages": {
@@ -1349,7 +1348,7 @@
     },
     "content/1-foundations/core-beliefs/community-and-social-welfare.md": {
       "status": "current",
-      "fingerprint": "25723429c9ee65c81393ecde336f4ae1676e09d1a8c2e690da75081b09481150"
+      "fingerprint": "6cf43c494634f0536a917eab7fcce8c74b952e4c9d41ce802de37d6ecad73f75"
     },
     "content/1-foundations/core-beliefs/compassionate-action.md": {
       "status": "current",
@@ -1357,11 +1356,11 @@
     },
     "content/1-foundations/core-beliefs/environmental-stewardship.md": {
       "status": "current",
-      "fingerprint": "9407b0c7285810baf5a7d6cc8c0ca3405ac08e95b53c797c4cb2f20dc4459ff6"
+      "fingerprint": "38b6b138d4570db1d5e8a56fc2bdd90f21823b8bd4172f630d087aa30bbb10ed"
     },
     "content/1-foundations/core-beliefs/ethical-and-moral-living.md": {
       "status": "current",
-      "fingerprint": "96fcdde168848787f351e537b9b37595bb253e5d1cf233fdd2dbe36444b78b96"
+      "fingerprint": "2d46f5f01197332708078607629f5562cdbee4dbc38dddd3fedc8cdd8120b3b9"
     },
     "content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md": {
       "status": "current",
@@ -1369,11 +1368,11 @@
     },
     "content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md": {
       "status": "current",
-      "fingerprint": "389ae99dd650c489f6c14536c0b606851b8d2154332c84b41432684d204fce10"
+      "fingerprint": "1e3dee9ee5cf4c5fc4304cf1532fbf9a03a6c5a73a6df53c49d8f1cd4a27f767"
     },
     "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md": {
       "status": "current",
-      "fingerprint": "8112f12e8dae3674a0c649efdb898552d6b3dacd852cbae16881f00f26895003"
+      "fingerprint": "e934f31819b6d00a8b8553c09bec92d265038cf74420e8cbad7ec0cf99cfd399"
     },
     "content/1-foundations/core-beliefs/respect-for-the-wisdom-of-world-traditions.md": {
       "status": "current",
@@ -1381,7 +1380,7 @@
     },
     "content/1-foundations/core-beliefs/spiritual-evolution-and-practice.md": {
       "status": "current",
-      "fingerprint": "b3e9b28dfc63b9bb7088d4e933459d026aac3884fce9cc039e58d8bcc664aa9b"
+      "fingerprint": "55acc4fed048ec709c4fc9e9e9991092796b24d80f02b3e1cbd4953e628bd78e"
     },
     "content/1-foundations/core-beliefs/unity.md": {
       "status": "current",
@@ -1441,7 +1440,7 @@
     },
     "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md": {
       "status": "current",
-      "fingerprint": "ffb4e1ed60cec61764a456bc658de25f918b4329ecc816296f6767dd1eb82d96"
+      "fingerprint": "19d260dd24ae2e3d36849dd06dbc3b3c726b9408960b270062dfbc0617b9c1de"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/README.md": {
       "status": "current",
@@ -1569,7 +1568,7 @@
     },
     "content/4-way-of-life/continuous-learning/sciences-and-technology.md": {
       "status": "current",
-      "fingerprint": "d90ac04adf6e3d7c2cc482b1236bed638269cf70522fd003f7c0e55e7f49c3a0"
+      "fingerprint": "29e198d80889300a26eec627672778e6b2a9d8adcd5e14eb6419b1c9fcafe4ba"
     },
     "content/4-way-of-life/environmental-stewardship/README.md": {
       "status": "current",
