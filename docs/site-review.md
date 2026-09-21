@@ -80,6 +80,9 @@ author to record the new baseline.
 
 #### S6. Contents cards show titles only
 
+**Done 21 September 2026:** `site/src/lib/describe-cards.mjs`, a build-time remark plugin, puts each
+page's description on its card. No client-side JavaScript, and the markdown stays a plain list.
+
 Section pages such as Core Beliefs show ten numbered cards with a title each. With S5 done, each
 card could carry its page's description. It depends on S5, because cut-off descriptions would
 look worse on a card than they do hidden in metadata.
