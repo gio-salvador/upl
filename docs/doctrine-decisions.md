@@ -935,6 +935,205 @@ between pages; the source gate passing.
 Hinduism (1), Buddhism (2, 6), Judaism (3), Seicho-no-Ie (4, 7), Christianity (5), the indigenous
 traditions (8), Sikhism (9), Islam (10). No tradition leads more than two pages.
 
+## Tradition balance, step 5: proposed wording, waiting for the author
+
+The Practice part. These pages are not locked. Decision B2, to rewrite, was taken for the core
+beliefs; here the author's text stays and the proposals add to it, except P32, which corrects an
+inaccuracy the source check found. Nothing here is applied.
+
+**Checked before asking.** Every draft was applied in a scratch tree and run through the doctrine,
+matrix and source gates and the markdown lint. The first run found three overlaps with core
+beliefs the author had already approved; the drafts were reworded and the second run is clean.
+With all eight applied: whole text Islam 17 per cent, Buddhism 17, Christianity 13, Seicho-no-Ie
+13, Hinduism 13, Judaism 11, Sikhism 7, Hawaiian 4, indigenous 3, Taoism 2. No page out of balance,
+no baseline change needed, source gate passing.
+
+### P29. Adopting Prayers from Various Traditions
+
+- Addition, after the existing text.
+- Added:
+
+  > Three prayers show the range. Jesus taught his followers to pray: "Our Father in heaven,
+  > may your name be kept holy. Let your Kingdom come. Let your will be done on earth as it
+  > is in heaven. Give us today our daily bread. Forgive us our debts, as we also forgive
+  > our debtors. Bring us not into temptation, but deliver us from the evil one" (Matthew
+  > 6:9-13, World English Bible). A prayer of the Brihadaranyaka Upanishad asks to be led
+  > from darkness to light, and from death to immortality. Muslims open each unit of their
+  > daily prayer with al-Fatiha, the first chapter of the Qur'an, which praises God as the
+  > Lord of Mercy and asks to be guided to the straight path.
+  >
+  > Each of these speaks to God as to someone. A follower of UPL may pray them as they
+  > stand, hearing in the first a wish to live rightly and to forgive, in the second a
+  > turning towards the light, and in the third a request to be kept on the path.
+
+- Sources: S33, S31; S52; S102, and al-Fatiha read directly in Abdel Haleem's translation.
+- Notes: The page named no prayer. The Lord's Prayer is quoted in full from the World English
+  Bible, which is in the public domain, and the text was read directly from the page, not
+  through a summarising tool. It ends before the doxology, which the critical text omits. The
+  Upanishad's prayer and al-Fatiha are described and not quoted: the first differs by translator
+  and the available translations of both are in copyright. The second paragraph applies decision
+  D1, prayer as attunement, and is the drafter's.
+- Gates: Doctrine gate: three traditions, none above the cap. Matrix gate: every tradition named
+  has a cell on the prayer concept. No overlap.
+
+### P30. Engaging with Holy Texts
+
+- Addition, after the existing text.
+- Added:
+
+  > The traditions themselves teach something of this way of reading. The Buddha advised the
+  > Kalamas to test a teaching for themselves: not to accept it because it is handed down,
+  > or written in scripture, or neatly argued, but to ask whether it is skilful and leads to
+  > welfare, as people of good sense would judge it. He likened his own teaching to a raft
+  > that carries a person over a river and is then left on the bank. Among the early
+  > Christians, Origen taught that scripture has a body, a soul and a spirit, and Augustine
+  > warned against taking a figure of speech literally, and equally against taking the
+  > literal for a figure. In the Upanishads the teaching comes as dialogue, a teacher
+  > answering a student's questions.
+  >
+  > UPL's reading is freer than any of these. None of them held that every sacred text is
+  > symbol, and UPL does not claim their authority for its own view. What it takes from them
+  > is that a text is a means and not an end, and that it asks to be read with judgement.
+
+- Sources: S79, S80; S81; S48; S49; S64 with S09.
+- Notes: The second paragraph is the honest line: none of these traditions held that every
+  sacred text is symbol, so the page says UPL's reading is freer than theirs and does not borrow
+  their authority. Augustine is given with both of his warnings. The Kalamas are told to reject
+  neat argument as well as tradition.
+- Gates: **Matrix gate failed on the first run**: the sentences on the Kalamas and on the raft
+  repeated wording already on beliefs 6 and 7. The draft was reworded, not the approved beliefs,
+  and the second run is clean. When applied, the holy-texts concept gains a cell for Hinduism
+  (S64).
+
+### P31. Incorporating Various Forms of Meditation
+
+- Addition, as an introduction before the list. The list entry for hoʻoponopono takes its ʻokina.
+- Added:
+
+  > UPL draws on three forms of meditation, each from a different tradition: the mindfulness
+  > and loving-kindness of Buddhism, the Shinsokan of Seicho-No-Ie, and the Hawaiian
+  > practice of hoʻoponopono, which is a way of setting relationships right more than a
+  > meditation in the usual sense. Each has its own page. A follower may take up any of
+  > them, or another practice that serves the same end.
+
+- Sources: S85, S73; S115; S122.
+- Notes: The only section page with no introduction, so its description on the site and in
+  `llms.txt` was a generic fallback. The introduction says plainly that hoʻoponopono is a way of
+  setting relationships right more than a meditation.
+- Gates: Doctrine gate: three traditions, balanced. Matrix gate: clean.
+
+### P32. Hoʻoponopono Meditation
+
+- Title and wording change. The title takes its ʻokina; the web address does not change.
+- Before: "The Ho'oponopono technique, which emphasises reconciliation and forgiveness, offers a
+  powerful practice for healing relationships and clearing negative energy. It aligns with UPL's
+  teachings regarding the power of forgiveness, gratitude, and the transformative qualities of
+  positive thinking."
+- After:
+
+  > Hoʻoponopono means to set right. In Hawaiian tradition it is a practice of the family:
+  > when relationships have gone wrong, the family gathers with a respected mediator, the
+  > haku, opens with prayer, speaks honestly of the hurt, and asks and gives forgiveness
+  > until the matter is released. The Hawaiian scholar Mary Kawena Pukui recorded it.
+  >
+  > In the late twentieth century the practice was adapted into one that a person can do
+  > alone. The four phrases many people know, "I'm sorry, please forgive me, thank you, I
+  > love you", come from that adaptation and not from the traditional form.
+  >
+  > Hoʻoponopono, which emphasises reconciliation and forgiveness, offers a powerful
+  > practice for healing relationships and clearing negative energy. It aligns with UPL's
+  > teachings regarding the power of forgiveness, gratitude, and the transformative
+  > qualities of positive thinking. A follower may use either form, knowing which is which,
+  > and with respect for the people whose practice it is.
+
+- Sources: S122.
+- Notes: An accuracy fix the source check asked for. The page called hoʻoponopono a "technique",
+  which describes the late twentieth-century adaptation and not the Hawaiian practice. The
+  author's two sentences are kept whole as the third paragraph, with "The Ho'oponopono
+  technique" becoming "Hoʻoponopono". The closing sentence, on using either form with respect,
+  is the drafter's. The source for the adaptation is secondary; the traditional form rests on a
+  Native Hawaiian scholar's paper citing Pukui.
+- Gates: Dedicated page, so it names its own tradition alone. Matrix gate: clean.
+
+### P33. Shinsokan Meditation
+
+- Addition, after the existing text.
+- Added:
+
+  > In practice a person sits upright, traditionally kneeling, joins the hands before the
+  > face, closes the eyes to the world of the senses, and contemplates the world of the True
+  > Image, the perfect world that Seicho-No-Ie teaches God created. A session lasts about
+  > thirty minutes. Seicho-No-Ie calls it a prayerful meditation. UPL takes up the practice
+  > and not the whole teaching behind it: it does not hold that illness or the material
+  > world is unreal.
+
+- Sources: S115.
+- Notes: The page did not say what the practice involves. The last sentence applies decision D1,
+  point 5: UPL takes the practice and not the teaching that illness and matter are unreal.
+- Gates: Dedicated page. Matrix gate: clean.
+
+### P34. Buddhist Meditation Practices
+
+- Addition, after the existing text.
+- Added:
+
+  > Two practices are the usual place to begin. In mindfulness of breathing a person sits
+  > and knows each breath as it comes in and as it goes out. The Buddha taught it in sixteen
+  > steps as a path to liberation, and not as a way to relax. In the cultivation of love a
+  > person wishes happiness and safety to all beings without exception. The familiar method
+  > of extending that wish by stages, to oneself, a friend, a stranger and an opponent,
+  > comes from a later commentary.
+
+- Sources: S85; S73.
+- Notes: The page gave no way to begin. Mindfulness of breathing is described as the path it is,
+  not as relaxation, and the staged method of loving-kindness is credited to the later
+  commentary.
+- Gates: Dedicated page. Matrix gate: clean.
+
+### P35. Gratitude Affirmations and Contemplative Practices
+
+- Addition, after the introduction and before the list.
+- Added:
+
+  > Gratitude as a daily discipline is older than any one tradition. The Haudenosaunee begin
+  > and end their gatherings by giving thanks, in turn, to the people, the earth, the
+  > waters, the plants, the animals, the winds, the sun and the moon. The Qur'an promises
+  > that the grateful will be given more. In Seicho-No-Ie, thanks are offered to one's
+  > ancestors as a regular practice.
+
+- Sources: S120; S98; S116.
+- Notes: This page owns the concept of gratitude, so the voices belong here in full; belief 10
+  names them briefly. Worded differently from belief 10 so the two do not repeat each other. The
+  Haudenosaunee list follows the source as far as it was read.
+- Gates: Doctrine gate: three traditions, one mention each. Matrix gate: clean, no overlap with
+  belief 10.
+
+### P36. Mindful Action and the Embodiment of Gratitude
+
+- Addition, after the existing text.
+- Added:
+
+  > Several traditions teach what it is to act mindfully. The Bhagavad Gita tells the one
+  > who acts to give themselves to the task and to let go of its reward, and warns just as
+  > firmly against doing nothing. The Buddha counted right speech among the parts of his
+  > path: no falsehood, no talk that divides, no harshness, no idle chatter. Jewish teaching
+  > forbids speaking ill of another person even when what is said is true. Jesus asked that
+  > giving, prayer and fasting be done quietly, where no one is watching.
+
+- Sources: S53; S70; S26; S33.
+- Notes: This page owns the concept of mindful action. Right speech is given with its four parts
+  from the sutta.
+- Gates: **Matrix gate failed on the first run**: the Gita sentence repeated belief 10. Reworded
+  in the draft; the second run is clean.
+
+### Left for later
+
+- **Other Practices** (finding X08) promises a list it does not contain. It needs the author to
+  say which practices it means; no draft is offered.
+- **The four gratitude affirmation pages** still give no example affirmation. An affirmation is
+  UPL's own words, so it is the author's to write.
+- **Christian contemplative prayer** as a fourth form of meditation has no recorded source yet.
+
 ## What these decisions open
 
 The decisions were the precondition for drawing more widely on the traditions. With them taken:
