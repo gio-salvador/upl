@@ -20,6 +20,13 @@ blockers and five majors, all applied here:
 - `site/scripts/check-seo.mjs` reads only the first scholarly article on the home page, and
   three repository documents describe `paper/` as holding one paper; both are now named in
   "Site" (two majors).
+- Round 2, process and sequencing: the optional mentions under `content/` moved out of step 7a
+  into their own wording pull request (row W2); "Open decisions" renamed; the edge from step 6
+  to 7a stated.
+- Round 2, supersession: the header rule for `/paper/*` and `docs/security.md` named, with no
+  rule changed; the two link rewriters recorded as needing no change.
+- Round 2, accuracy: the reference-list row recounted against the register (four corrected,
+  one retired, not "three and one"), and two cells' ids completed.
 - Minors applied: the contrary cells listed exactly, measurements given with their commands,
   machine state removed, paraphrase defined, one set of caps, step 5 as one pull request.
 
@@ -51,11 +58,11 @@ register ids that cell rests on.
 | Balance between traditions | Islam 40 per cent of mentions when first measured | no tradition above 17.4 per cent, by the doctrine report; the whole-text cap is 25 (`scripts/doctrine-gate.json`) |
 | What God is | left open between a person and a principle | decided: impersonal, the source of light (D1) |
 | Soul, consciousness, spirit, true image | used side by side, undefined | decided: one essence, several names (D4) |
-| Where UPL parts from a tradition | one sentence, which described Buddhism as affirming suffering as inherent to life; decision D3 withdrew it | the eight "contrary" cells, stated openly: non-self (D3; S82, S124), a creator (S126 to S128), original sin (S131 to S134), eternal punishment (S38, S157 to S159), marriage in classical Christian, Islamic and Jewish teaching (S140 to S143, S169, S176 to S178), and illness as unreal (D1, D2; S115). The resurrection of the body is a "resembles only" cell, not a contrary one (S144 to S146, S164, S165) |
+| Where UPL parts from a tradition | one sentence, which described Buddhism as affirming suffering as inherent to life; decision D3 withdrew it | the eight "contrary" cells, stated openly: non-self (D3; S82, S124), a creator (S126 to S128), original sin (S131 to S134), eternal punishment (S38, S133, S134, S157 to S159), marriage in classical Christian, Islamic and Jewish teaching (S134, S140 to S143, S169, S176 to S178), and illness as unreal (D1, D2; S115). The resurrection of the body is a "resembles only" cell, not a contrary one (S144 to S146, S164, S165) |
 | Healing | "cautious engagement" with medicine | decided: UPL heals the spirit, medicine treats the body, never spiritual remedies alone (D2) |
 | Knowledge, the arts and technology | a way of life | decided: they serve spiritual evolution (D5) |
 | How UPL addresses a follower | "expects", eight times, unclear | decided: four registers, belief, invitation, aspiration, commitment (D6) |
-| The reference list | 12 entries, three of them wrong as listed and one not a book (the References table in [sources.md](../sources.md); S01, S02, S192 to S194) | 24 entries, each checked against a catalogue |
+| The reference list | 12 entries, of which the catalogue check corrected four (R06, a word missing from the title; R08, listed under the wrong name, S01 and S02; R09, the work's spelling of its own name, S193; R10, a journal article and not a book, S192) and retired one as not a book at all (R04). The other seven stand as listed. All in the References table in [sources.md](../sources.md) | 24 entries, each checked against a catalogue |
 
 The decisions are in [doctrine-decisions.md](../doctrine-decisions.md). What the table says: the
 founding paper is a statement of the teaching by its author. It does not show its sources, it
@@ -184,7 +191,8 @@ are where the new reading is.
 as it is, the paper's source, the bibliographic data file and the traceability table would be
 served from the day step 2 merges, unapproved drafts included. So step 2 changes the copy to
 PDF files only, and adds a check, run from `bash scripts/check.sh`, that fails if anything
-other than a PDF is found in the copied folder. The working files stay in the repository under
+other than a PDF is found in the copied folder. It matters twice over, because the site lifts
+its Content-Security-Policy for that path (see "Site"). The working files stay in the repository under
 the licence that already covers `paper/**`, which is a decision to keep the work open to
 inspection; they are not served as pages of the site.
 
@@ -262,13 +270,26 @@ left pointing at the first alone by accident:
   would pass.
 - In the documents: `README.md`, `docs/architecture.md` and `docs/features-and-usage.md` each
   describe `paper/` as holding the founding paper. Each gains the second.
+- In the headers: `site/public/_headers` lifts the Content-Security-Policy and the embedder
+  policy for `/paper/*`, because browser PDF viewers need it, and `docs/security.md` records
+  that the policy is lifted there only. The rule is a path prefix, so it already covers a
+  second PDF and no rule changes: nothing is added, widened or loosened. Only the comment above
+  the rule, which speaks of the founding paper alone, is brought up to date, and
+  `docs/security.md` with it. This is also why "What the site serves" matters: anything served
+  under that path is served without the policy, so it must be PDFs and nothing else.
+- Needing no change, and checked: `site/src/lib/rewrite-links.mjs` and
+  `site/src/lib/machine-text.ts` match links by the `../paper/` prefix and not by file name, so
+  a page that links to the second paper resolves as it does for the first.
+  `site/scripts/check-links.mjs` and `site/scripts/generate-og.mjs` have no logic for the paper.
 - Under `content/`: `content/README.md` and `content/5-context/README.md` speak of "the
   founding paper" and "the paper's conclusion". Both stay true. Whether either should mention
-  the second paper is wording on a rendered page, so it is put to the author as a proposal in
-  step 7a and is not assumed.
+  the second paper is wording on a rendered page, so it is not assumed and is not part of step
+  7a. If the author wants it, it is row W2: proposals with ids through the `upl-teaching-steward`
+  agent in improve mode, in a wording pull request of its own, as locked decision 2 asks.
 
-A stale checkout sits under `.claude/worktrees/`. The gates do not descend into it, and it is
-not this plan's to remove; anyone verifying this plan by searching the tree should exclude it.
+A local checkout made by an agent session may exist under `.claude/worktrees/`. It is not
+tracked and the gates do not descend into it; anyone verifying this plan by searching the tree
+should exclude that path.
 
 ### Publication (goal 6)
 
@@ -290,7 +311,7 @@ pages in step 7b, before anything is relied on.
 | The review loop | the toolkit's content review with the `paper` content type |
 | The disclosure check before anything leaves the machine | the NDA check, surface `public` |
 
-## Open decisions
+## Decisions
 
 All TAKEN by the author on 21 September 2026, in these words: "A1 companion, go with all your
 recommendations". Each entry keeps the recommendation as the reasoning for the choice.
@@ -341,7 +362,8 @@ One pull request per row. Each leaves `main` green under `bash scripts/ci-local.
 | W | Outside this plan's own work, and tracked here because step 5 waits on it: the wording pull request that settles the two W3 accuracy points under `content/` (A8), through the teaching steward | approve the wording by id | not started |
 | 5 | Drafts: one pull request, with three approval batches inside it as checkpoints, each a set of proposals with ids: sections 2 to 5; sections 6 to 8, which wait for row W; sections 0, 1 and 9, which are the author's own | approve, change or decline by id | not started |
 | 6 | Review loop to a bounded cap, quotations checked by eye, the freeze: commit pinned, PDF built and committed, version 1.0 | read the PDF whole, once | not started |
-| 7a | Site wiring and the documents that name one paper; the disclosure check; merge and deploy, so the paper has a live address | the home page wording, or footer only; the two proposals under `content/`, if wanted | not started |
+| 7a | Site wiring and the documents that name one paper, nothing under `content/`; the disclosure check; merge and deploy, so the paper has a live address | the home page wording, or footer only | not started |
+| W2 | Optional, and outside this plan's own work like row W: whether `content/README.md` and `content/5-context/README.md` mention the second paper, as its own wording pull request through the teaching steward, after 7a | say whether it is wanted; approve the wording by id | not started |
 | 7b | After the author's deposit: the archive's terms verified, the identifier and the citation file into the repository and onto the site | the deposit; the ORCID | not started |
 
 Step 3 can run beside step 2, and row W beside both. Steps 4 and 5 cannot start before step 3 ends for the sections
@@ -357,6 +379,7 @@ that need new sources, and can start at once for sections 2 to 5.
 | Inside step 2: the data file before the gate extension | The gate checks the data file's keys against the register; it cannot pass on an absent file |
 | Inside step 5: the steward's review before the author is asked | The author should not spend an approval on a draft that contradicts a core belief |
 | Inside step 6: the pin after the last wording pull request to `content/` | A pin taken earlier reports a text that has since moved |
+| Step 6 (the PDF committed) before step 7a | The link check and the SEO check in 7a need a real, committed PDF to test |
 | The launch plan before step 7a | The paper links to the teachings by URL; A7 |
 | Step 2's narrowed copy before any working file lands under `paper/` on `main` | Otherwise the site serves working files on the next deploy |
 | Inside step 7a: the disclosure check before the deploy | The deploy is the first moment the paper is public |
@@ -392,12 +415,14 @@ that need new sources, and can start at once for sections 2 to 5.
 
 ## What this plan does not do
 
-- It does not change a word under `content/`. A8 and any teaching the paper turns out to need
-  are their own wording pull requests.
+- It does not change a word under `content/`. A8 (row W), the two optional mentions (row W2) and
+  any teaching the paper turns out to need are their own wording pull requests, tracked in the
+  Sequence only so that what waits on them is visible.
 - It does not edit the founding paper or the References page.
 - It does not change the doctrine baseline, the caps, or any rule of an existing gate; it adds
   coverage.
-- It does not add client-side script, a Pages Function or a build dependency to the site.
+- It does not add client-side script, a Pages Function or a build dependency to the site, and
+  it changes no header rule: in `site/public/_headers` only a comment is updated.
 - It does not submit to a journal, create an account, or deposit anything.
 - It does not create new agents or skills. If step 2 shows one is needed, it is named with the
   `upl-` prefix and recorded here first.
