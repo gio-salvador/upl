@@ -18,31 +18,28 @@
     "content/1-foundations/name-mission-and-vision.md": "2878b7d35c107142870523589eaeaab881c9f27efdcfef98826802599b198cf3",
     "content/1-foundations/purpose.md": "d13ef83b5d51cc188b9d76b41c5d1edc3c5867b7eab9cf18e9541bc0661ae478",
     "content/2-doctrine/README.md": "978ea3b6df0b97d71f1e879186a82600053a8aabc8be91cb9bb08b611574b432",
-    "content/2-doctrine/enlightened-figures/README.md": "56d0a1634647e749f60a9e2db86519ddadbc76523342f5c69e94d6102291cee8",
+    "content/2-doctrine/enlightened-figures/README.md": "5d1517a77fc31eab7947ca1b6da7640f8f79253cd7e2869b12482a7601cfd420",
     "content/2-doctrine/enlightened-figures/buddha.md": "6349fc1170e641f2e10ffa1664160c67c65b43c35d6127882005a0054a367eda",
+    "content/2-doctrine/enlightened-figures/guru-nanak.md": "4a56a72eb9dc6cc06f792f53b206521e12405c6cca46ac02bf57d9e0e6392d19",
     "content/2-doctrine/enlightened-figures/jesus.md": "ae8c21e89df2346f3fdcde2b8110cbeb0324774b60e64382b0866beffb5e63df",
+    "content/2-doctrine/enlightened-figures/laozi.md": "34fad27f9246ff2df6dd3f440b8a95daca746924572daa0d0eaed3c63e533677",
     "content/2-doctrine/enlightened-figures/masaharu-taniguchi.md": "8c00b54eea21d94a2df72ebd22647c2b840b01000f17ab04ace55ded1bb431b6",
     "content/2-doctrine/enlightened-figures/muhammad.md": "4cdf29072ca98c174f738404993068a30f4c47c92d594bc0346a2eb6c9821113",
-    "content/2-doctrine/enlightened-figures/other-spiritual-leaders.md": "92d9b210fd9de46356043f17bb38e1aca9a78c641505bb902b5f783cf4d56952",
-    "content/2-doctrine/ethical-and-moral-development/README.md": "b479fc2830ab22d64d9c715baa85edb10439f91de1735c23afe750886c3056a1",
+    "content/2-doctrine/enlightened-figures/other-spiritual-leaders.md": "7757672a75bc86cc7fb40ad1646da0346827992895e6635a02ed5f4a8759da26",
+    "content/2-doctrine/ethical-and-moral-development/README.md": "96bb35facfcc4e5c09ccae6a9777513bdf7fdc9380dd11a8def3f96ff900c26e",
     "content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md": "eaeea4aeabcd9100a3b4464884384b2e8b466bc7e36bd442e20cf2c6112c3812",
     "content/2-doctrine/ethical-and-moral-development/ethical-living-as-spiritual-practice.md": "b569cd8c7eb41a135f0416ac5868b7d6321ab1efd647a9a17a9c60feb7b07872",
     "content/2-doctrine/ethical-and-moral-development/fabric-of-ethics.md": "26224427a9c0288288df1eb8bcad4cf0dcaa0f37804b6a25b975b4967305d7ee",
     "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md": "19d260dd24ae2e3d36849dd06dbc3b3c726b9408960b270062dfbc0617b9c1de",
     "content/2-doctrine/soul-karma-dharma-and-death/README.md": "082062f2ed3220d153df7ef51a03c12c8cd89c60ba3112428da51d0a5dea76e2",
-    "content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md": "9c3971865016d786488c40245ee0f55135f771fd490011c16c626b364f3a5a26",
-    "content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md": "85cf90821ad9f1dfe3615acd3a6f42ce4e6cca1ed6732d963c41adb8e75d686b",
-    "content/2-doctrine/soul-karma-dharma-and-death/dharma.md": "3ccff9a45085dc9dec6667f7652425a51c050d86f09a1f45fc5c30d2fc043595",
+    "content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md": "2e8f7d1a815576f8baab07537d8ded8a9375d216f837029554f550c5397eb732",
+    "content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md": "84792f7de0a0f7d36b4eff45e8cc52cfeb7159e1fdfccd15fe5e76937c09ef37",
+    "content/2-doctrine/soul-karma-dharma-and-death/dharma.md": "2276f1a886433490c944062df96bd9f0d3cda15452b9d9cf2b65ce4493b08b5c",
     "content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md": "9e7a6d9ab035ba82396b5e50163884e377f2ea9217303c00e29eb9d3ab629784",
     "content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md": "2cd30d6d83c8ba00740adb331427cf40aa0f3d8fd1bdc02912b086e4b6251790",
-    "content/2-doctrine/soul-karma-dharma-and-death/karma.md": "deafd56a7915643a69c54f22f41d0cdd557c8698e501c915985da67af81fba16"
+    "content/2-doctrine/soul-karma-dharma-and-death/karma.md": "a3b1098f5f37b7fbdc99f88dd5a52aff84d2adb274a7fd7ee39b88da7fb1a44d"
   },
-  "pages": {
-    "content/4-way-of-life/environmental-stewardship/README.md": {
-      "tradition": "Indigenous traditions",
-      "sha256": "e2a3e1859b8918440f810ff640a80d3e02e21da54f98edc44e04b340dc5b0341"
-    }
-  },
+  "pages": {},
   "sections": {},
   "corpus": null
 }

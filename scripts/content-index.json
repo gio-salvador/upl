@@ -216,7 +216,7 @@
       }
     },
     "registers": {
-      "label": "How UPL speaks to its followers: belief, invitation, aspiration, commitment",
+      "label": "How UPL speaks to its followers: belief, invitation, aspiration, commitment (five commitments)",
       "owner": "content/2-doctrine/ethical-and-moral-development/README.md",
       "terms": [
         "speaks to its followers",
@@ -918,6 +918,48 @@
       "terms": [
         "enlightened figures?"
       ]
+    },
+    "laozi": {
+      "label": "Laozi and the Tao",
+      "owner": "content/2-doctrine/enlightened-figures/laozi.md",
+      "terms": [
+        "laozi",
+        "tao te ching"
+      ],
+      "held_by": {
+        "Taoism": {
+          "relation": "origin",
+          "sources": [
+            "S129",
+            "S111",
+            "S112"
+          ],
+          "note": "Legge's wording for the three things to hold dear is gentleness, economy and not taking precedence. Laozi may be legendary."
+        }
+      }
+    },
+    "guru-nanak": {
+      "label": "Guru Nanak",
+      "owner": "content/2-doctrine/enlightened-figures/guru-nanak.md",
+      "terms": [
+        "guru nanak"
+      ],
+      "held_by": {
+        "Sikhism": {
+          "relation": "origin",
+          "sources": [
+            "S103",
+            "S105",
+            "S106",
+            "S107",
+            "S108",
+            "S109",
+            "S110",
+            "S191"
+          ],
+          "note": "The three teachings and the langar are traditionally attributed to him. Cite years only for his dates."
+        }
+      }
     },
     "soul": {
       "label": "The immortal soul (also spirit, consciousness of the person, true self)",
@@ -1712,15 +1754,23 @@
     },
     "content/2-doctrine/enlightened-figures/README.md": {
       "status": "current",
-      "fingerprint": "56d0a1634647e749f60a9e2db86519ddadbc76523342f5c69e94d6102291cee8"
+      "fingerprint": "5d1517a77fc31eab7947ca1b6da7640f8f79253cd7e2869b12482a7601cfd420"
     },
     "content/2-doctrine/enlightened-figures/buddha.md": {
       "status": "current",
       "fingerprint": "6349fc1170e641f2e10ffa1664160c67c65b43c35d6127882005a0054a367eda"
     },
+    "content/2-doctrine/enlightened-figures/guru-nanak.md": {
+      "status": "current",
+      "fingerprint": "4a56a72eb9dc6cc06f792f53b206521e12405c6cca46ac02bf57d9e0e6392d19"
+    },
     "content/2-doctrine/enlightened-figures/jesus.md": {
       "status": "current",
       "fingerprint": "ae8c21e89df2346f3fdcde2b8110cbeb0324774b60e64382b0866beffb5e63df"
+    },
+    "content/2-doctrine/enlightened-figures/laozi.md": {
+      "status": "current",
+      "fingerprint": "34fad27f9246ff2df6dd3f440b8a95daca746924572daa0d0eaed3c63e533677"
     },
     "content/2-doctrine/enlightened-figures/masaharu-taniguchi.md": {
       "status": "current",
@@ -1732,11 +1782,11 @@
     },
     "content/2-doctrine/enlightened-figures/other-spiritual-leaders.md": {
       "status": "current",
-      "fingerprint": "92d9b210fd9de46356043f17bb38e1aca9a78c641505bb902b5f783cf4d56952"
+      "fingerprint": "7757672a75bc86cc7fb40ad1646da0346827992895e6635a02ed5f4a8759da26"
     },
     "content/2-doctrine/ethical-and-moral-development/README.md": {
       "status": "current",
-      "fingerprint": "b479fc2830ab22d64d9c715baa85edb10439f91de1735c23afe750886c3056a1"
+      "fingerprint": "96bb35facfcc4e5c09ccae6a9777513bdf7fdc9380dd11a8def3f96ff900c26e"
     },
     "content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md": {
       "status": "current",
@@ -1760,15 +1810,15 @@
     },
     "content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md": {
       "status": "current",
-      "fingerprint": "9c3971865016d786488c40245ee0f55135f771fd490011c16c626b364f3a5a26"
+      "fingerprint": "2e8f7d1a815576f8baab07537d8ded8a9375d216f837029554f550c5397eb732"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md": {
       "status": "current",
-      "fingerprint": "85cf90821ad9f1dfe3615acd3a6f42ce4e6cca1ed6732d963c41adb8e75d686b"
+      "fingerprint": "84792f7de0a0f7d36b4eff45e8cc52cfeb7159e1fdfccd15fe5e76937c09ef37"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/dharma.md": {
       "status": "current",
-      "fingerprint": "3ccff9a45085dc9dec6667f7652425a51c050d86f09a1f45fc5c30d2fc043595"
+      "fingerprint": "2276f1a886433490c944062df96bd9f0d3cda15452b9d9cf2b65ce4493b08b5c"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md": {
       "status": "current",
@@ -1780,7 +1830,7 @@
     },
     "content/2-doctrine/soul-karma-dharma-and-death/karma.md": {
       "status": "current",
-      "fingerprint": "deafd56a7915643a69c54f22f41d0cdd557c8698e501c915985da67af81fba16"
+      "fingerprint": "a3b1098f5f37b7fbdc99f88dd5a52aff84d2adb274a7fd7ee39b88da7fb1a44d"
     },
     "content/3-practice/README.md": {
       "status": "current",
@@ -1856,7 +1906,7 @@
     },
     "content/4-way-of-life/community-and-fellowship/community-engagement.md": {
       "status": "current",
-      "fingerprint": "33cfa74168442acaa8a55a06cc6f1253887d03db486822090ae8907acfe2d2fa"
+      "fingerprint": "79012eae6b5f8318b18d2e97cece55dd0661d79b44994973085c260a94403c16"
     },
     "content/4-way-of-life/community-and-fellowship/global-spiritual-network.md": {
       "status": "current",
@@ -1876,7 +1926,7 @@
     },
     "content/4-way-of-life/continuous-learning/professional-development.md": {
       "status": "current",
-      "fingerprint": "b8112ef941f1442f3f8f1be38a59da4ecb969d75fd4b7fa9519392d7fed5d436"
+      "fingerprint": "af2920f3a0a525dedffa331497261b2c3a53f8e9e6a9bffd3b1ab86f2cd46bee"
     },
     "content/4-way-of-life/continuous-learning/sciences-and-technology.md": {
       "status": "current",
@@ -1884,7 +1934,7 @@
     },
     "content/4-way-of-life/environmental-stewardship/README.md": {
       "status": "current",
-      "fingerprint": "e2a3e1859b8918440f810ff640a80d3e02e21da54f98edc44e04b340dc5b0341"
+      "fingerprint": "b9bc063a9233eca69567eb2801df9570cdb31258bbbb2f64d303453bc269c005"
     },
     "content/4-way-of-life/environmental-stewardship/education-and-community-involvement.md": {
       "status": "current",
@@ -1904,7 +1954,7 @@
     },
     "content/4-way-of-life/family/README.md": {
       "status": "current",
-      "fingerprint": "88716db6a92808a5bcbd2f24d71ed556eb25bfc66904b3c812550c9956bf23ee"
+      "fingerprint": "7c4e77be643313ef21fe5ce5a77056fe84f6084527532644dc5d18fadd94b4cf"
     },
     "content/4-way-of-life/family/cooperative-growth-and-support.md": {
       "status": "current",
@@ -1932,7 +1982,7 @@
     },
     "content/4-way-of-life/holistic-wellbeing/sobriety.md": {
       "status": "current",
-      "fingerprint": "f820eacb2c13c0565112887a88a4066b6c758c45e4b494737337b9331882af89"
+      "fingerprint": "5bc53ed66a13fce2d0a17231ae2f290d0d08fb20c1e5f8b6908af4902a6d0a06"
     },
     "content/5-context/README.md": {
       "status": "current",

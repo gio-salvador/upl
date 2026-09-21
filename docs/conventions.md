@@ -57,7 +57,7 @@ contributors.
 - Four registers, each with its own words (decision D6 in
   [doctrine-decisions.md](doctrine-decisions.md)): **belief** (holds, believes, teaches),
   **invitation** (may, can, invites), **aspiration** (encourages, asks, calls for) and
-  **commitment** (never, always, must). Commitment is kept for the four lines where someone would
+  **commitment** (never, always, must). Commitment is kept for the five lines where someone would
   otherwise be harmed. "Expects" and "should" are not used. Enforced by review.
 
 ## Sources

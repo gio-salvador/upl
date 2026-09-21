@@ -187,7 +187,7 @@ Four registers, each with its own words:
 | Aspiration | encourages, asks, calls for | The ethical life. A follower sets out to live it; falling short is part of the journey, not the breaking of a rule |
 | Commitment | never, always, must | A very few firm lines, kept for where someone would otherwise be harmed |
 
-**Commitments are reserved for harm, and there are four.** A follower who is ill never relies on
+**Commitments are reserved for harm, and there are five** (four at first; the fifth was added by the author on 21 September 2026, with step 6 of the tradition balance plan: no one's suffering is read as the wages of their past, which guards the teaching on karma against being turned on those who suffer). A follower who is ill never relies on
 spiritual or alternative remedies alone (D2). Because we learn, UPL and its followers evaluate
 their stance and correct it on the evidence, UPL's own teachings included (D5). No one is
 pressed, shamed or frightened into belief. Compassion is owed to every person, whether or not
@@ -1253,10 +1253,23 @@ they were applied exactly as written. On the author's instruction the baseline w
 - **Q17:** the entry "Seicho-No-Ie" by Masaharu Taniguchi is removed. It is the movement's
   periodical and not a book. In the source register it is retired as R04, not deleted; the source
   gate now knows a retired row, so an id is never reused and a removal always leaves its reason.
-## Tradition balance, step 6: proposed wording, waiting for the author
+
+## Tradition balance, step 6: wording approved and applied
 
 Doctrine and Way of Life, with the two new figures (decision B4). The author's text stays on every
-page and the proposals add to it, written in the registers of decision D6. Nothing here is applied.
+page and the proposals add to it, written in the registers of decision D6.
+
+The author approved P48 to P60 on 21 September 2026 and made the karma safeguard a fifth
+commitment under decision D6. The proposals were applied exactly as written. The fifth
+commitment joins the passage on the registers in Ethical and Moral Development as one sentence,
+between compassion and the rule of learning: "No one's suffering is read as the wages of their
+past." That sentence is the drafter's wording of the author's decision, shorter than the
+paragraph on the Karma page so the two do not repeat each other. On the author's instruction the
+baseline was recorded with `--accept-core` and `--waive-imbalance`. Verified by comparison: seven
+fingerprints changed, two pages were added (Laozi, Guru Nanak), the last imbalance record was
+removed, and nothing else moved. **No recorded imbalance remains**, from fourteen when the work
+began. Whole text: Buddhism 17 per cent, Islam 15, Hinduism 15, Seicho-no-Ie 12, Christianity 12,
+Judaism 10, Sikhism 8, Hawaiian 5, indigenous 3, Taoism 2.
 
 **Checked before asking.** Every draft was applied in a scratch tree, with the two new pages, and
 run through the doctrine, matrix and source gates, the lint, the site build and the link check.
@@ -1288,8 +1301,8 @@ Taoism stays at 2 because a page dedicated to one figure is left out of the shar
   recorded in the map as resemblances. **The second paragraph is the drafter's and is
   doctrine**: that karma is never a verdict on a person who suffers. It is the safeguard the
   plan names, and it parallels "Illness is never a verdict on the person who is ill", which the
-  author approved. **A question for the author:** whether this is a fifth commitment under
-  decision D6, since it exists to prevent harm. It is worded as one ("never", "no one may").
+  author approved. Asked whether this is a fifth commitment under decision D6, since it exists to
+  prevent harm, the author answered yes.
 - Gates: First run: the matrix gate failed, because the page names Judaism and the Hawaiian
   practice and the karma concept had no cell for either. Both are recorded as resemblances when
   this is applied. Second run clean. The Gita sentence is worded differently from belief 10 and
