@@ -186,6 +186,13 @@
         "quantum"
       ]
     },
+    "darkness": {
+      "label": "Darkness, the lack of light",
+      "owner": "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md",
+      "terms": [
+        "darkness"
+      ]
+    },
     "enlightened-figures": {
       "label": "Enlightened figures",
       "owner": "content/2-doctrine/enlightened-figures/README.md",
@@ -194,10 +201,14 @@
       ]
     },
     "soul": {
-      "label": "The immortal soul",
+      "label": "The immortal soul (also spirit, consciousness of the person, true self)",
       "owner": "content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md",
       "terms": [
-        "souls?(['’]s)?"
+        "souls?(['’]s)?",
+        "spirit",
+        "true (self|image)",
+        "atman",
+        "essence of life"
       ],
       "elaborated_in": [
         "content/2-doctrine/soul-karma-dharma-and-death/README.md"
@@ -399,35 +410,35 @@
     {
       "id": "X01",
       "type": "conflicting",
-      "status": "open",
+      "status": "resolved",
       "pages": [
         "content/4-way-of-life/holistic-wellbeing/README.md",
         "content/4-way-of-life/holistic-wellbeing/science-and-modern-medicine.md"
       ],
-      "note": "The section introduction asks for \"a cautious engagement with science and modern medicine\"; the page under it is titled \"Trust in Science and Modern Medicine\". The author decides which stance stands. Decided 18 September 2026 (D2): medicine first. Open until proposals P1 and P2 in docs/doctrine-decisions.md are applied.",
+      "note": "Resolved 21 September 2026 by decision D2 and proposals P1 and P2: the introduction now says \"trust in science and modern medicine\", and the page states that UPL heals the spirit, medicine treats the body, and a follower never relies on spiritual or alternative remedies alone.",
       "concept": "medicine"
     },
     {
       "id": "X02",
       "type": "conflicting",
-      "status": "open",
+      "status": "resolved",
       "pages": [
         "content/5-context/comparative-analysis.md",
         "content/1-foundations/core-beliefs/unity.md",
         "content/1-foundations/author-note.md"
       ],
-      "note": "Comparative Analysis says UPL \"doesn't focus on a singular personal deity\"; Unity reflects on \"the oneness and absolute sovereignty of God\" and the Author Note speaks of \"God's infinite love\". A reader can take these as two different ideas of God. Decided 18 September 2026 (D1): God is impersonal, the source of light. Open until proposals P4 to P9 in docs/doctrine-decisions.md are applied.",
+      "note": "Resolved 21 September 2026 by decision D1 and proposals P4 to P9: God is not a person but the source of light. Comparative Analysis and the God page now say so, \"God's love\" is explained as the nature of the light, \"divine will\" became \"divine order\", and prayer is attunement. Unity still describes Tawhid in Islam's own terms, which is a description of Islam and not of UPL's God.",
       "concept": "god"
     },
     {
       "id": "X03",
       "type": "conflicting",
-      "status": "open",
+      "status": "resolved",
       "pages": [
         "content/5-context/comparative-analysis.md",
         "content/2-doctrine/enlightened-figures/buddha.md"
       ],
-      "note": "Comparative Analysis says UPL refrains from \"affirming suffering as an inherent characteristic of life\"; the Buddha page honours his \"insights into the nature of suffering\". The two are compatible only if the first is read narrowly. Decided 18 September 2026 (D3): state the disagreement. Open until proposal P3 in docs/doctrine-decisions.md is applied."
+      "note": "Resolved 21 September 2026 by decision D3 and proposal P3: Comparative Analysis now honours the Buddha's teaching that suffering can be understood and ended, and states openly that UPL parts from Buddhism on the self."
     },
     {
       "id": "X04",
@@ -491,7 +502,7 @@
         "content/2-doctrine/soul-karma-dharma-and-death/README.md",
         "content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md"
       ],
-      "note": "The silkworm and cocoon image is given in full on both pages, a result of splitting the paper.",
+      "note": "The silkworm and cocoon image is given in full on both pages, a result of splitting the paper. The image is now credited on The Immortal Soul to Taniguchi's Nectarean Shower of Holy Doctrines (source S07).",
       "concept": "cocoon"
     },
     {
@@ -718,7 +729,7 @@
     },
     "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md": {
       "status": "current",
-      "fingerprint": "f427cd6e489b9c63c2a1071623e4265ad775ffe8ccbeb4c1552bff3aa8b511b0"
+      "fingerprint": "ffb4e1ed60cec61764a456bc658de25f918b4329ecc816296f6767dd1eb82d96"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/README.md": {
       "status": "current",
@@ -730,7 +741,7 @@
     },
     "content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md": {
       "status": "current",
-      "fingerprint": "57af6db82d00c7b96924fa1ce2714b5e61476cde47562afa27b9e0f3b54a95fa"
+      "fingerprint": "85cf90821ad9f1dfe3615acd3a6f42ce4e6cca1ed6732d963c41adb8e75d686b"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/dharma.md": {
       "status": "current",
@@ -738,7 +749,7 @@
     },
     "content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md": {
       "status": "current",
-      "fingerprint": "a77f081230a7e129c900cd869810451386df79ec7ed768914f456df0bc9ee3ea"
+      "fingerprint": "9e7a6d9ab035ba82396b5e50163884e377f2ea9217303c00e29eb9d3ab629784"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md": {
       "status": "current",
@@ -810,7 +821,7 @@
     },
     "content/3-practice/prayer.md": {
       "status": "current",
-      "fingerprint": "38d69b0b244aa4bd9667afbc00e35f00e20e1cada137a1120e5358ba70e56e2b"
+      "fingerprint": "2036ee12a697f6f1982fe913ab4dfd47aecd0fc3254acaacb7b6b3cead5fe4ad"
     },
     "content/4-way-of-life/README.md": {
       "status": "current",
@@ -866,7 +877,7 @@
     },
     "content/4-way-of-life/environmental-stewardship/spiritual-dimension.md": {
       "status": "current",
-      "fingerprint": "6b278494f9d87d3e4998cb957040f617011bd0d52a4ca46bd48d352901e654d3"
+      "fingerprint": "497ffef31a129a9365ae2eb81e4b917fcd86986264bd8d223aadab8b82757a65"
     },
     "content/4-way-of-life/family/README.md": {
       "status": "current",
@@ -890,11 +901,11 @@
     },
     "content/4-way-of-life/holistic-wellbeing/README.md": {
       "status": "current",
-      "fingerprint": "e335aee179be6e17049ed9c74f2ac3097ac98e043de6f11063f00a589fe67431"
+      "fingerprint": "f400586dd2f89cbf0afe6214e99de662a87e61fa291930c61a9e71344450d70e"
     },
     "content/4-way-of-life/holistic-wellbeing/science-and-modern-medicine.md": {
       "status": "current",
-      "fingerprint": "c59bda790edc82898933aba3da86922b3e0d590d5450beb571946ce2a569ff7a"
+      "fingerprint": "b0bad7ebf227a9afad66899eec02e405a6e91a7df57375397a839e4fafb942c9"
     },
     "content/4-way-of-life/holistic-wellbeing/sobriety.md": {
       "status": "current",
@@ -906,7 +917,7 @@
     },
     "content/5-context/comparative-analysis.md": {
       "status": "current",
-      "fingerprint": "17d4479a9c9ace0e69073e81d11d023061bff0c97dd6569d9dab065b675c48fb"
+      "fingerprint": "7cc217b6f65a6e9bbb0f497aa4fab8832600b25f33086ddba16f5af8ad67e129"
     },
     "content/5-context/conclusion.md": {
       "status": "current",
@@ -918,7 +929,7 @@
     },
     "content/5-context/references.md": {
       "status": "current",
-      "fingerprint": "e616256858e48995cc6082fbaeff0c1aef38c17dcb5af020dc456aa15a150460"
+      "fingerprint": "9ebda92f49a07efc5930cc4652e855e3f129a1d0de0cbc1b7b3bf8fd51bd4c11"
     },
     "content/README.md": {
       "status": "current",
