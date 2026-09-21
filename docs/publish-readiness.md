@@ -71,10 +71,10 @@ rebased; the local CI is run on the rebased head before every merge.
 | 2 | 55 | Step 5: what Jesus, Muhammad, the Buddha and Taniguchi taught; two thin doctrine pages | six pages |
 | 3 | 56 | Step 7: thirteen phrases polished, "follower", who may marry, the divorce page's title | five pages |
 | 4 | 57 | Step 7: an example affirmation on each gratitude page | untouched |
-| 5 | the pull request that adds this page | The fixes from the independent review, and this report | seven pages |
+| 5 | 59 | The fixes from the independent review, and this report | seven pages |
 | any | 58 | Site: descriptions on the contents cards | untouched |
 
-**About the baseline.** Pull requests 54 to 57 and the last one were prepared on the author's
+**About the baseline.** Pull requests 54 to 57 and 59 were prepared on the author's
 instruction of 21 September 2026 to proceed "as if I had accepted all your suggestions" and to
 review each one afterwards. Where a locked page changed, `--accept-core` was run under that
 instruction, and each pull request says which fingerprints changed and that nothing else did.
