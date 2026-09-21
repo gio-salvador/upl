@@ -1,6 +1,6 @@
 # Bring the traditions into balance across the whole text
 
-**Status: decisions taken, not started.** Requested 2026-09-21. The author took decisions B1 to
+**Status: in progress.** Step 1, sources, is done. Requested 2026-09-21. The author took decisions B1 to
 B7 the same day; no step has begun. It records the
 measurements, the design, the decisions that are the author's, and the sequence, so the work can
 be done a page at a time without losing the whole picture.
@@ -181,6 +181,99 @@ recorded imbalance clears with no change to the gate.
 | Context | Historical Context | names Islam, pantheism and Socinianism only | Buddhism, Hinduism and Seicho-no-Ie, which the text builds on throughout |
 | Context | Comparative Analysis | Hinduism appears only as the caste system | one fair sentence on what UPL shares with Hinduism beyond karma and dharma |
 
+### What the source check changed (step 1)
+
+Step 1 opened a primary source for every teaching named above and recorded 110 of them in the
+[source register](../sources.md), S14 to S123. Every reference given from memory held, with one
+number corrected. What did not hold was how several teachings are popularly worded. The voices
+are drafted from the register and carry its cautions. The changes to the assignment:
+
+| # | Voice | What the source says | What changes |
+| --- | --- | --- | --- |
+| 1 | Islam: Tawhid | The Light Verse, "God is the Light of the heavens and the earth" (S101), is a closer parallel to UPL's central image than the oneness surah (S88) | Offer the Light Verse as the Islamic voice on Unity, beside or in place of Tawhid |
+| 1 | Hinduism: "you are that" | The word Brahman is not in the verse; identity is one school's reading of three (S64) | Keep the wording already on the God page, which takes no side; do not strengthen it |
+| 1 | Christianity: the light of the world | Three different sayings with three different subjects: the disciples (S32), Jesus of himself (S42), God (S44) | Use "you are the light of the world" and do not merge it with the others |
+| 2 | Hinduism: the four paths | The Gita names action, knowledge and devotion, never as a set (S56, S57); the fourfold scheme is from the 1890s and is weakly sourced (S58) | The voice says "paths of action, knowledge and devotion, for different temperaments" |
+| 3 | Judaism: tzedakah | It means both righteousness and charity (S18, S19) | Never "justice, not charity" |
+| 3 | Hinduism: ahimsa | "Non-violence is the highest duty" is said in a discussion of eating meat, in an epic that endorses righteous war (S62); Patanjali's non-injury is the Yoga school's (S59, S61) | Name it as a virtue, not as pacifism, and say whose |
+| 3 | Christianity: the other cheek | "The second mile" is a paraphrase; the longer form of "love your enemies" is doubtful (S32) | Quote the World English Bible as it stands, or paraphrase without quotation marks (S31) |
+| 4 | Islam: Fitrah | The Qur'anic verse (S89) is the clean citation; the hadith goes on to say parents make the child a Jew, a Christian or a Magian (S90) | Cite the verse, not the hadith, on a page that honours those traditions |
+| 4 | Buddhism: Buddha-nature | A Mahayana teaching, contested within Mahayana, sourced so far to an encyclopaedia and one Theravada critic (S83, S84) | Needs one more neutral source before it is written; the safe wording is "Mahayana traditions teach that all beings have the potential for awakening" |
+| 4 | Judaism and Christianity: the image of God | The verse does not say what the image is (S22) | State the verse; leave the meaning open |
+| 5 | Judaism: love your neighbour | In context the neighbour is a fellow Israelite; the wider reach is the verse on the stranger (S14, S15, S16). Hillel's rule ends "go and study" (S17) | Cite both verses together, and quote Hillel whole. Jesus is quoting the Torah (S37), so the credit runs to Judaism first |
+| 5 | Christianity: love of enemies, the Samaritan | The word "good" is not in the parable, which is in Luke alone (S40); "love your enemies" in its short form (S32) | Tell the parable for what it shows: the neighbour is whoever shows mercy, across every boundary |
+| 5 | Buddhism: the four immeasurables | In their source they lead to a heavenly rebirth, not awakening, and the name is later (S72, S73) | Name them as love, compassion, rejoicing and equanimity, without claiming more |
+| 6 | Buddhism: dependent origination | In every early text it explains how suffering arises and ceases (S74). The reading as the interconnection of all things is the Huayan school's and Thich Nhat Hanh's (S75, S76) | The voice credits Huayan's net of Indra and interbeing for interconnectedness, and does not put it in the Buddha's mouth. This is the correction that matters most: the plan had proposed it as the text's definition |
+| 6 | Islam: Ilm | The well-known hadith has a very weak chain (S94); "My Lord, increase me in knowledge" is sound (S95) | Anchor Ilm in the verse |
+| 6 | Judaism: study and disagreement | Confirmed (S23, S24) | None |
+| 7 | Hinduism: "truth is one" | The verse says "To what is One, sages give many a title" and names Vedic gods; "truth" is not in it, and the reading as a statement about religions is modern (S51) | Say what the verse says, and credit the modern reading as modern. Seicho-No-Ie's "all religions emanate from one universal God" (S113) is the nearer match to UPL's premise and leads the page |
+| 8 | Islam: stewardship | The translations say "successors"; stewardship is a common modern reading (S96, S97) | "Often understood as stewardship" |
+| 8 | Judaism: do not destroy | A rabbinic extension of a verse about fruit trees in a siege; the environmental reading is modern (S20, S21) | "Derives from", and say the application is modern |
+| 8 | Indigenous traditions | Three can be named from their own bodies: Māori kaitiakitanga (S119), the Haudenosaunee Thanksgiving Address (S120), Hawaiian aloha ʻāina and mālama ʻāina (S121). Ecuador's constitution is a legal fact only (S123). The Lakota phrase is not used at all | Name these three, each as that people's own responsibility and not as a general ethic |
+| 8 | Christianity: Francis | "Patron of those who promote ecology", 29 November 1979 (S46); the Canticle, about 1225 (S47) | Use the exact title |
+| 8 | Seicho-No-Ie | "Grand Harmony of God, Nature, and Human Beings" (S117) | Use the movement's own formula |
+| 9 | Buddhism: the Sangha | In the early texts, the monastic order or the community of the awakened; the wider use is modern (S86, S78) | Say so. Community and Fellowship already uses the word loosely and inherits the caution |
+| 9 | Sikhism: the shared meal and service | Traditionally traced to Guru Nanak, with Sufi precedents (S105, S108); service and equality are in the scripture itself (S109, S110, S106, S107) | "Traditionally"; and Sikhism, not Hinduism, is the sourced home of seva |
+| 9 | Christianity: the least of these | "The least of these my brothers", in a passage that ends in eternal punishment (S38) | Quote verse 40 only, knowingly |
+| 10 | Buddhism: the mind goes first | The verse is about mind or intention leading speech and action. It does not say thoughts create reality (S68) | Keep it distinct from Seicho-No-Ie's law of the mind (S113), which does say that. Two voices that resemble each other and are not the same |
+| 10 | Christianity: do not be anxious | The passage turns on "seek first God's Kingdom" (S33) | Do not present it as a promise of provision |
+
+Findings for the later steps, recorded so they are not lost:
+
+- **Prayer.** The Lord's Prayer ends before the doxology in the critical text (S33). "Lead me from
+  darkness to light" differs by translator (S52). Al-Fatiha is recited in every unit of the
+  prayer (S102).
+- **Holy texts.** The Kalamas are told to reject bare reasoning as well as tradition (S79, S80);
+  the raft is set down only after the crossing (S81); allegory was one strand of early Christian
+  reading, and Augustine warns against it as well as for it (S48, S49, S50).
+- **Karma and dharma.** Acting without attachment to the fruit (S53). One's own dharma is bound to
+  caste in the text itself (S54, S55, S63, S67), so the Dharma page credits the Gita and says what
+  UPL does not take. Return and repair after a wrong (S25). The Buddhist sense of the word is
+  different (S87).
+- **Way of life.** The fifth precept (S77, S78) and the Sikh code (S107) on intoxicants; right speech
+  and livelihood (S70, S71) and the ethics of speech (S26); the stages and aims of life (S63);
+  peace in the home, which is mainly about marriage (S27); the day of rest (S28); gratitude to
+  ancestors (S116); forgiveness (S36, S41) and not judging, where the first-stone story is a later
+  insertion and still canonical (S34, S42, S45); service (S39, S43); giving in secret (S33).
+- **Ho'oponopono.** The traditional practice is a family process led by a respected mediator; the
+  four-phrase version is a modern adaptation (S122). The Ho'oponopono Meditation page calls it a
+  "technique", which describes the adaptation. A finding for step 4, and the word should carry
+  its ʻokina.
+- **Shinsokan.** What the practice involves is now sourced (S115), for the page that does not say.
+- **Buddhist meditation.** Mindfulness of breathing is sixteen steps on a path to liberation, not a
+  relaxation method (S85); the familiar loving-kindness method is from a later commentary (S73).
+- **Figures.** Laozi may be legendary (S111, S112); Guru Nanak's dates are uncertain (S103, S104).
+  The Taniguchi page should not read as endorsing his politics (S118), and the Grand Harmony
+  message is not to be quoted in English until the movement's own translation has been seen
+  (S114).
+- **Already on `main`.** "Buddhism teaches that there is no permanent self" in Comparative Analysis
+  is inside what the source supports (S82, S69). Healing with a word is confirmed as written
+  (S35). "The world is one family" is a late text about a detached sage (S65); Diwali is kept by
+  several traditions (S66); tikkun olam in its social sense dates from the 1950s (S29, S30); the
+  yamas and niyamas are Patanjali's (S59, S60); zakat, the five pillars, community, gratitude and
+  mercy are sourced (S91, S92, S93, S98, S99, S100).
+
+### References additions proposed (for the author's approval)
+
+The References page lists twelve books and none of the scriptures the teachings quote. Proposed
+new entries, each already in the register. Approve, change or decline by id. None is applied.
+
+- **Q1.** The Hebrew Bible, in the translation of the Jewish Publication Society (S14)
+- **Q2.** The Babylonian Talmud, tractate Shabbat (S17)
+- **Q3.** "Mishneh Torah" by Moses Maimonides (S18)
+- **Q4.** The World English Bible, a public-domain translation of the Bible (S31)
+- **Q5.** The Qur'an, in the translation of M. A. S. Abdel Haleem (S93)
+- **Q6.** The Upanishads (S64, S52)
+- **Q7.** The Bhagavad Gita (S53)
+- **Q8.** The Dhammapada and the discourses of the Pali Canon, in the translations of Bhikkhu
+  Sujato (S68)
+- **Q9.** The Guru Granth Sahib, in the translation of Sant Singh Khalsa (S103)
+- **Q10.** "Tao Te Ching", attributed to Laozi, in the translation of James Legge (S111)
+- **Q11.** "Truth of Life" (Seimei no Jissō) by Masaharu Taniguchi, to stand beside or replace the
+  doubtful entry "Seicho-No-Ie" (R04)
+- **Q12.** "Nānā i ke Kumu" by Mary Kawena Pukui, E. W. Haertig and Catherine A. Lee (S122)
+- **Q13.** Correct the entry for the Socinianism volume to its editors (R08)
+
 ### What the numbers become
 
 A projection, not a promise: about two mentions per new voice, from the two tables above.
@@ -241,6 +334,15 @@ All taken by the author on 21 September 2026.
 - **B6 TAKEN: Judaism is a named source tradition.** It joins the list in section 2 of the
   guardrails, and its books join References.
 - **B7 TAKEN: one batch of proposals per step**, approved, changed or declined by id.
+- **B8 OPEN: the words the gate counts.** The gate recognises a tradition by a list of words in
+  `scripts/doctrine-gate.json`. The new voices use words it does not know: Hillel, Maimonides,
+  tzedakah and Leviticus for Judaism; Samaritan for Christianity; Upanishad is known but Rig Veda
+  only as "Veda"; sutta, metta and Huayan for Buddhism; langar and Guru Granth Sahib for Sikhism;
+  Māori, Haudenosaunee and ʻāina for the indigenous and Hawaiian traditions. Without them the
+  gate under-counts exactly the traditions this plan adds, and the reported shares will be wrong.
+  Recommendation: add them in step 2, in the same pull request as the first voices. It makes the
+  count more accurate and does not loosen anything, but it changes the gate's rules, so it is the
+  author's to approve.
 
 ## Sequence
 
@@ -249,7 +351,7 @@ wording pull request, called out as such, with the matrix and the register updat
 
 | Step | Pull request | Needs from you | Status |
 | --- | --- | --- | --- |
-| 1 | Sources: the primary sources for every voice in this plan recorded in the register; Judaism added to the guardrails' list of traditions (B6); References proposals drafted | approve the References additions by id | not started |
+| 1 | Sources: the primary sources for every voice in this plan recorded in the register; Judaism added to the guardrails' list of traditions (B6); References proposals drafted | approve the References additions Q1 to Q13 by id; decision B8 | done 2026-09-21: 110 sources recorded, S14 to S123 |
 | 2 | Core beliefs 1, 4, 5, 7 rewritten, and belief 4 renamed (B3). Clears five records: the four pages and the index | approve each page by id; `--accept-core`; `--waive-imbalance` to remove the cleared records | not started |
 | 3 | Core beliefs 2, 3, 6, 8, 9, 10 rewritten. Clears six page records and the section record | the same | not started |
 | 4 | Practice: prayer, holy texts, the meditation introduction, gratitude and mindful action | approve by id | not started |

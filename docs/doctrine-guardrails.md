@@ -39,7 +39,7 @@ makes it.
 
 ## 2. Balance between the traditions
 
-The teachings draw on Christianity, Islam, Buddhism, Hinduism and Seicho-no-Ie, and name others
+The teachings draw on Christianity, Islam, Buddhism, Hinduism, Judaism and Seicho-no-Ie, and name others
 such as Taoism, Sikhism, the Hawaiian practice of Ho'oponopono and indigenous spiritualities.
 They stand side by side. None is the lens through which the others are read.
 

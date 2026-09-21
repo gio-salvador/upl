@@ -84,6 +84,15 @@ class SourceGate(unittest.TestCase):
         self.assertEqual(result.returncode, 1)
         self.assertIn("no longer in content/5-context/references.md", result.stdout)
 
+    def test_ids_past_ninety_nine_are_read(self):
+        rows = "".join(f"| S{n:02d} | [Study {n}](https://example.org/{n}) | primary | A claim | [notes.md](notes.md) | 2026-09-21 |\n"
+                       for n in range(1, 102))
+        self.write("docs/sources.md", "# Source register\n\n" + HEAD + rows + BOOKS)
+        self.write("docs/notes.md", "# Notes\n\n" + " ".join(f"S{n:02d}" for n in range(1, 102)) + "\n")
+        self.assertEqual(self.run_gate().returncode, 0, self.run_gate().stdout)
+        self.write("docs/notes.md", "# Notes\n\n" + " ".join(f"S{n:02d}" for n in range(1, 101)) + "\n")
+        self.assertIn("S101 is cited nowhere", self.run_gate().stdout)
+
     def test_old_source_is_a_note_not_a_failure(self):
         self.write("docs/sources.md", "# Source register\n\n" + HEAD + ROW.replace("2026-09-21", "2024-01-01") + BOOKS)
         result = self.run_gate()

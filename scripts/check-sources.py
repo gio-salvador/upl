@@ -43,7 +43,7 @@ CLAIM_PAGES = ["content/**/*.md", "docs/doctrine-decisions.md", "docs/site-revie
 CITING_PAGES = ["content/**/*.md", "docs/**/*.md"]
 URL_RE = re.compile(r"https?://[^\s)>\]\"']+")
 LINK_RE = re.compile(r"\[[^\]]*\]\((https?://[^)\s]+)\)")
-ID_RE = re.compile(r"\b([SR]\d{2})\b")
+ID_RE = re.compile(r"\b([SR]\d{2,3})\b")
 CODE_RE = re.compile(r"```.*?```|`[^`\n]*`", re.S)  # a link inside code is an example, not a source
 FILE_RE = re.compile(r"\]\(([^)#\s]+)\)|\b([\w./-]+\.md)\b")
 STALE_DAYS = 365
@@ -68,9 +68,9 @@ def parse_register(text):
         if not line.startswith("|"):
             continue
         row = cells(line)
-        if re.fullmatch(r"S\d{2}", row[0]):
+        if re.fullmatch(r"S\d{2,3}", row[0]):
             sources.append(row)
-        elif re.fullmatch(r"R\d{2}", row[0]):
+        elif re.fullmatch(r"R\d{2,3}", row[0]):
             books.append(row)
     return sources, books
 
