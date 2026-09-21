@@ -7,7 +7,7 @@ page. The plan that fixes what is found here is
 [plans/2026-09-21-page-clarity.md](plans/2026-09-21-page-clarity.md), and the "Step" column points
 into it. Nothing here changes a teaching: every fix is proposed to the author first.
 
-**Result:** 47 of 81 pages are good as they stand, 34 need a fix. Most fixes are one
+**Result:** 48 of 81 pages are good as they stand, 33 need a fix. Most fixes are one
 sentence.
 
 ## What recurs
@@ -51,7 +51,7 @@ sentence.
 | [Ethical and Moral Living](../content/1-foundations/core-beliefs/ethical-and-moral-living.md) | Good | Clear, and ends on what UPL itself takes. | - |
 | [Inclusive Family Structures and Innate Goodness](../content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md) | Good | The goodness half is full and the family half is two sentences. The closing paragraph joins them well. | - |
 | [Compassionate Action](../content/1-foundations/core-beliefs/compassionate-action.md) | Fix | Sound, but the middle is one paragraph of 150 words. Split it after Hillel. | 6 |
-| [Interconnectedness and the Pursuit of Knowledge](../content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md) | Fix | The longest belief. It states interconnectedness, turns to learning, then returns to interconnectedness. Moving the third paragraph up to second would follow the title. | 6 |
+| [Interconnectedness and the Pursuit of Knowledge](../content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md) | Good | The longest belief. It states interconnectedness, turns to learning, then returns to interconnectedness. On checking, the order holds: "This learning" points back to the sentence before it, so the paragraphs cannot swap. | - |
 | [Respect for the Wisdom of World Traditions](../content/1-foundations/core-beliefs/respect-for-the-wisdom-of-world-traditions.md) | Good | The most careful page in the text. | - |
 | [Environmental Stewardship](../content/1-foundations/core-beliefs/environmental-stewardship.md) | Good | Clear, and says whose teachings these are. | - |
 | [Community and Social Welfare](../content/1-foundations/core-beliefs/community-and-social-welfare.md) | Good | "A tightly-knit spiritual network with global outreach" is the one phrase of jargon. | 7 |

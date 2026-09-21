@@ -1781,6 +1781,67 @@ open finding left.
 
 - Gates: clean, apart from the locked-page notice.
 
+## Page clarity, step 6: structure only, waiting for the author
+
+Step 6 of the [page clarity plan](plans/2026-09-21-page-clarity.md): paragraph breaks, run-in
+headings and one spelling. **No word of any teaching changes**, and a script proved it: the
+sequence of words on each page is identical before and after. Four of the five pages are locked,
+so applying this still needs the author's `--accept-core`.
+
+**Checked before asking.** Applied in a scratch tree and run through the doctrine, matrix and
+source gates and the lint: clean, apart from the expected notice that four locked pages changed.
+No page goes out of balance.
+
+**One proposal withdrawn in the checking.** The review suggested moving the third paragraph of
+belief 6 up to second. Applied, it breaks the text: "This learning is not only spiritual" would
+no longer follow the sentence about learning that it points back to. The author's order holds and
+the page is left as it is.
+
+### P69. Trust in Science and Modern Medicine: the commitment stands on its own
+
+- Page: `content/4-way-of-life/holistic-wellbeing/science-and-modern-medicine.md`. Not locked.
+- The first section is one paragraph of about 270 words. Three breaks make four paragraphs:
+  1. after "…so both are always treated."
+  2. after "…as teaching about the power of faith."
+  3. after "…will carry that understanding further."
+- Result: spirit and body; faith, the placebo effect and the traditions; illness and medicine; and
+  then, alone, "A follower of UPL never relies on spiritual or alternative remedies alone: when a
+  person is ill, medical care is sought without delay and followed, and spiritual practice walks
+  beside it." Longest paragraph 102 words, from 270.
+
+### P70. God, Quantum Physics, and the Light of Divinity: the central paragraph in three
+
+- Page: `content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md`. Locked.
+- Two breaks in the paragraph that begins "God is not a person but the source.":
+  1. after "…further from darkness, which is only the lack of light."
+  2. after "…a being of spirit and not of matter."
+- Result: what God is and what practice does; God's love and the other traditions; and then, alone,
+  "UPL offers this as spiritual teaching, in the language of light, and not as a claim of
+  physics." Longest paragraph 106 words, from 170. The page's wording questions stay with step 3.
+
+### P71. Compassionate Action: one break
+
+- Page: `content/1-foundations/core-beliefs/compassionate-action.md`. Locked.
+- One break, after Hillel: "…the rest is its interpretation; go and study." The Buddha, Islam and
+  the Sikh Gurus then form their own paragraph. Longest paragraph 109 words, from 150.
+
+### P72. Incorporating Diverse Ethical Teachings: the four subjects in bold
+
+- Page: `content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md`. Locked.
+- The four paragraphs open with phrases written as titles ("Islamic Emphasis on Community and
+  Justice highlights…"), which read as headings that lost their place. Each opening phrase is set
+  in bold, so it reads as a run-in heading: **Buddhism's Eightfold Path**, **The moral teachings
+  of Jesus**, **Islamic Emphasis on Community and Justice**, **The Guiding Principles of
+  Dharma**. No word moves.
+- Not part of this proposal: the page names four traditions where belief 3 names six. Adding
+  Judaism and the Sikh Gurus would be new wording, for a later step if the author wants it.
+
+### P73. Community and Fellowship: the ʻokina
+
+- Page: `content/4-way-of-life/community-and-fellowship/README.md`. Not locked.
+- "Ho'oponopono" becomes "Hoʻoponopono", as everywhere else in the text. The 70-word sentence it
+  sits in cannot be shortened without changing words, so it waits for step 7.
+
 ## Open doctrinal questions
 
 Questions the text does not answer and the author has said are not yet decided. No page states or
