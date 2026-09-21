@@ -442,7 +442,8 @@ Negative criteria:
 - No check reported as passed that could not run.
 
 Rollback: steps 0 to 6 and row W are each a single revert. Step 7a is a single revert, before or
-after the deploy.
+after the deploy, though once deployed a copy may already have been fetched or cached, so the
+reading in step 6 is the real safeguard.
 From the deposit onwards the paper is public and permanently identified, and the only remedy is
 a corrected version.
 
