@@ -1690,6 +1690,97 @@ indigenous 3, Taoism 2.
 | 11. The core beliefs index and belief 4's title name no tradition | Met since step 3 |
 | 12, 13. Convergence cells for every tradition named; resemblance never written as agreement | Met; held by the matrix gate |
 
+## Matrix findings: wording approved and applied
+
+On 21 September 2026 the author chose how to close the twelve open findings in the cross-reference
+matrix. Seven closed without touching a sentence of a teaching (linking lines, one spelling, and
+glosses kept on purpose with their reasons). The five below need wording the author approves, and
+four of them sit on locked pages.
+
+**Checked before asking.** The drafts were applied in a scratch tree, on top of the structural
+change, and run through the doctrine, matrix and source gates and the lint. The matrix and source
+gates and the lint are clean. The doctrine gate reports exactly what is expected and nothing else:
+four locked pages changed (Purpose, two core beliefs, and the Ethical and Moral Development
+section page), each needing the author's `--accept-core`. No page goes out of balance, so
+`--waive-imbalance` is not needed.
+
+**Approved and applied.** The author approved P64 to P68 on 21 September 2026, with the verb
+repair in P68, and they were applied exactly as written. `--accept-core` was run on the author's
+explicit instruction. Verified by comparing the baseline before and after: the fingerprints of
+those four pages changed and nothing else did. `--waive-imbalance` was not run. The matrix has no
+open finding left.
+
+### P64. Purpose: one mission, stated once (finding X04)
+
+- Page: `content/1-foundations/purpose.md`. Locked.
+- One word. From "UPL's mission pivots around the enlightened principles of freedom, acceptance,
+  ethical living, love, and continuous spiritual growth." to:
+
+  > UPL's purpose pivots around the enlightened principles of freedom, acceptance, ethical
+  > living, love, and continuous spiritual growth.
+
+- Notes: Name, Mission, and Vision then holds the only statement of the mission, and the Purpose
+  page speaks of the purpose, as its title says. Nothing else on either page changes.
+- Gates: clean, apart from the locked-page notice.
+
+### P65. Positive Thinking, Gratefulness, and Mindful Action: a line to the practice (finding X05)
+
+- Page: `content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md`.
+  Locked.
+- Addition, as the last line of the page:
+
+  > This belief is lived out in The Integration of Positive Thinking, Gratefulness, and
+  > Mindful Action.
+
+  The section's title is the link, to
+  `content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md`.
+
+- Notes: the practice section already points back to the belief. With both lines a reader can
+  tell the statement from its elaboration.
+- Gates: clean, apart from the locked-page notice.
+
+### P66. Environmental Stewardship: a line to the way of life (finding X06)
+
+- Page: `content/1-foundations/core-beliefs/environmental-stewardship.md`. Locked.
+- Addition, as the last line of the page:
+
+  > This belief is lived out in Environmental Stewardship and the Sacredness of Nature.
+
+  The section's title is the link, to `content/4-way-of-life/environmental-stewardship/README.md`.
+
+- Gates: clean, apart from the locked-page notice.
+
+### P67. Other Practices: a title that matches the page (finding X08)
+
+- Page: `content/3-practice/other-practices.md`. Not locked.
+- The title and the heading, and the entry in the Practice part's list. From "Other Practices"
+  to:
+
+  > An Open Practice
+
+- Notes: the author's paragraph stays word for word. It describes how open UPL's practice is and
+  lists nothing, so the title now says that. The file name and the address stay as they are, so
+  no link breaks. If the author later names the practices a list would hold, the page can take
+  its old title back.
+- Gates: clean.
+
+### P68. Ethical and Moral Development: a closing phrase of its own (finding X19)
+
+- Page: `content/2-doctrine/ethical-and-moral-development/README.md`. Locked.
+- Replacement, in the first sentence. From "asserting that the cultivation of virtues is
+  essential for the soul's progression towards enlightenment and unity with the divine." to:
+
+  > asserting that the cultivation of virtues is essential to the soul's spiritual evolution.
+
+- Notes: the soul section's introduction keeps the shared phrase, where it closes the paragraph.
+  "Spiritual evolution" is UPL's own term, from the second core belief.
+- Also approved, in the same sentence, which opened without a verb (one of the fragments recorded
+  under W1). From "Ethical and moral development at the heart of its spiritual practice," to:
+
+  > UPL places ethical and moral development at the heart of its spiritual practice,
+
+- Gates: clean, apart from the locked-page notice.
+
 ## Open doctrinal questions
 
 Questions the text does not answer and the author has said are not yet decided. No page states or

@@ -15,4 +15,4 @@ freedom: adherents draw on gratitude, prayer, meditation, and sacred texts from 
 3. [Adopting Prayers from Various Traditions](prayer.md)
 4. [Incorporating Various Forms of Meditation](meditation/README.md)
 5. [Engaging with Holy Texts](holy-texts.md)
-6. [Other Practices](other-practices.md)
+6. [An Open Practice](other-practices.md)
