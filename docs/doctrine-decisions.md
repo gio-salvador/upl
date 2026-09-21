@@ -2080,6 +2080,80 @@ sentence is mended.
   meditation or the holy texts; adding a paragraph would lengthen a summary, so it is left for the
   author to ask for.
 
+## Page clarity, step 4: no ranking of other religions, applied for the author's review
+
+Step 4 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Belief 7 says every tradition
+carries light, and locked decision 6 says connecting text does not rank them. Two pages carry
+phrases from the founding paper that do, and a third names a movement most readers will not know.
+
+**Checked before asking.** Applied in a scratch tree and run through the doctrine, matrix and
+source gates: clean, apart from the expected notice that one locked page changed (Purpose), which
+needs the author's `--accept-core`. No page goes out of balance.
+
+**Applied ahead of review, on the author's instruction.** On 21 September 2026 the author, away
+from the desk, asked for the remaining pull requests to be prepared "as if I had accepted all
+your suggestions", to be reviewed one by one afterwards and changed as needed. So P86 to P88 are
+applied in this pull request as written, and `--accept-core` was run under that instruction: the
+baseline compared before and after shows the fingerprint of Purpose changed and nothing else.
+Nothing is merged. If the author changes or drops a proposal, the page and the baseline are
+redone before the merge.
+
+### P86. Purpose
+
+- Page: `content/1-foundations/purpose.md`. Locked.
+- (a) A tangled sentence. From "UPL fills the void left by this discontent, bridging the chasm
+  created by contrasting the extremes of rigid religious doctrines on the one hand and absolute
+  atheism on the other." to:
+
+  > UPL fills the void left by this discontent, offering a path between rigid religious
+  > doctrine on the one hand and absolute atheism on the other.
+
+- (b) From "UPL is not merely a reaction to the inadequacies of existing religious structures." to:
+
+  > UPL is not merely a reaction to what people have found wanting in existing religious
+  > structures.
+
+- (c) From "the spiritual thirst of the current ages," to:
+
+  > the spiritual thirst of the present age,
+
+- (d) From "It seeks to liberate spirituality from the chains of dogmatic tradition and outdated
+  worldviews, opening a path" to:
+
+  > It seeks to free spirituality from dogmatism, wherever it is found, opening a path
+
+- Notes: (b) and (d) keep the author's point, that many people find existing religion does not
+  fit them, and stop short of calling the traditions inadequate, chained or outdated, which the
+  rest of the text does not believe. "Wherever it is found" includes UPL, in line with decision D5.
+
+### P87. Comparative Analysis
+
+- Page: `content/5-context/comparative-analysis.md`. Not locked.
+- (a) The opening claims a uniqueness the page itself disproves four paragraphs later, where the
+  Bahá'í Faith also joins science and religion. From "UPL is unique in that it combines scientific
+  understanding with various spiritual traditions." to:
+
+  > UPL combines respect for scientific understanding with teachings drawn from many
+  > spiritual traditions.
+
+- (b) The last clause ranks pantheism. From "which distinguishes it from a mere philosophical
+  stance." to:
+
+  > which makes it a way of life as well as a philosophical view.
+
+### P88. Historical Context
+
+- Page: `content/5-context/historical-context.md`. Not locked.
+- Addition, at the end of the first paragraph, which names Socinianism and does not explain it:
+
+  > Socinianism, named after the theologian Faustus Socinus, was a Christian movement that
+  > flourished in Poland until 1660; it held that the Father alone is God and that Jesus was
+  > a human being.
+
+- Source: S199.
+- Notes: the source adds that the Socinians did not think Jesus a "mere man" but the unique Son of
+  God; the gloss says only what they denied of the Trinity, which is why the paper names them.
+
 ## Open doctrinal questions
 
 Questions the text does not answer and the author has said are not yet decided. No page states or

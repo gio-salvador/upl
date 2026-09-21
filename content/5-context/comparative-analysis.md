@@ -6,7 +6,7 @@ description: "Where UPL agrees with and differs from Christianity, Islam, Judais
 
 # Comparative Analysis
 
-UPL is unique in that it combines scientific understanding with various spiritual traditions.
+UPL combines respect for scientific understanding with teachings drawn from many spiritual traditions.
 
 Compared to monotheistic religions like Christianity, Islam, and Judaism, UPL does not understand God as a person. God is the one source of light, and all that exists is light from that source. Where these religions speak of obedience to God's will, UPL speaks of understanding divine principles and living in harmony with the light within oneself and the universe.
 
@@ -20,4 +20,4 @@ While both UPL and the New Age Movement approve of spiritual pluralism and self-
 
 The Bahá'í Faith also teaches that the religions come from one source, and that science and religion belong together. It differs in holding that its founder is the latest Messenger of God, with authority for this age. UPL names no latest or final messenger.
 
-UPL stands close to pantheism in viewing the divine as present in all of the universe. It differs in holding that God is also the source beyond the universe, from which the universe flows as light, and in joining this view to ethical living and continual learning, which distinguishes it from a mere philosophical stance.
+UPL stands close to pantheism in viewing the divine as present in all of the universe. It differs in holding that God is also the source beyond the universe, from which the universe flows as light, and in joining this view to ethical living and continual learning, which makes it a way of life as well as a philosophical view.
