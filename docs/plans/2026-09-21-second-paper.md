@@ -2,7 +2,26 @@
 
 **Status: planned, not built.** Requested 2026-09-21. This file records the design, the
 sequence and the open decisions, so "not yet" stays a decision rather than becoming forgetting.
-No step has begun. Nothing in it is wording for the paper: the paper's words are the author's.
+The author took decisions A1 to A8 the same day. Step 0 is under way; no later step has begun.
+Nothing in it is wording for the paper: the paper's words are the author's.
+
+**Amendments incorporated from review round 1, 21 September 2026.** Five lenses: accuracy,
+process and locked decisions, completeness and sequencing, public surface, supersession. Two
+blockers and five majors, all applied here:
+
+- Only a PDF under `paper/` may reach the site; the working source must not (blocker; design
+  "What the site serves", step 2, criterion 11).
+- New literature is recorded as S rows only, and the bibliographic data file is checked field
+  by field against its row, so no book is described in three places (blocker; "Sources and
+  citations").
+- The statements about traditions in "Where things stand" now cite their register ids (major).
+- Step 7 is split in two, since the identifier exists only after the first half is live (major).
+- The wording pull request for A8 has its own row in the Sequence (major).
+- `site/scripts/check-seo.mjs` reads only the first scholarly article on the home page, and
+  three repository documents describe `paper/` as holding one paper; both are now named in
+  "Site" (two majors).
+- Minors applied: the contrary cells listed exactly, measurements given with their commands,
+  machine state removed, paraphrase defined, one set of caps, step 5 as one pull request.
 
 ## What was asked for
 
@@ -18,21 +37,25 @@ is cheaper to say so now than after step 3.
 
 ## Where things stand
 
-Measured on `main` at `4027fd2`.
+Measured on `main` at `4027fd2`. Word counts are approximate: `pdftotext` and `wc -w` on the PDF,
+which includes the running heads, and `wc -w` over `content/**/*.md`, which includes front
+matter. Shares come from `python3 scripts/check-doctrine.py --report`. Every statement about a
+tradition in this table is a summary of a decision or a convergence-map cell, and cites the
+register ids that cell rests on.
 
 | | The founding paper | The teachings today |
 | --- | --- | --- |
 | Size | 24 pages, about 8,000 words | 81 pages under `content/`, about 13,000 words |
 | Citations in the text | none; a list of 12 titles at the end | every statement about a tradition, a figure, a book or science rests on a row in [sources.md](../sources.md): 196 rows, S01 to S196 |
 | How the traditions stand to each teaching | said in passing, mostly as agreement, and mostly through Islam in the ten core beliefs | the convergence map in [cross-reference.md](../cross-reference.md): over a hundred cells, each sourced, of which 17 are "resembles only" and 8 are "contrary" |
-| Balance between traditions | Islam 40 per cent of mentions when first measured | no tradition above about 17 per cent; the whole-text cap is 25 |
+| Balance between traditions | Islam 40 per cent of mentions when first measured | no tradition above 17.4 per cent, by the doctrine report; the whole-text cap is 25 (`scripts/doctrine-gate.json`) |
 | What God is | left open between a person and a principle | decided: impersonal, the source of light (D1) |
 | Soul, consciousness, spirit, true image | used side by side, undefined | decided: one essence, several names (D4) |
-| Where UPL parts from a tradition | one sentence, and it misdescribed Buddhism | stated openly: non-self (D3), original sin, the resurrection of the body, eternal punishment, a creator |
+| Where UPL parts from a tradition | one sentence, which described Buddhism as affirming suffering as inherent to life; decision D3 withdrew it | the eight "contrary" cells, stated openly: non-self (D3; S82, S124), a creator (S126 to S128), original sin (S131 to S134), eternal punishment (S38, S157 to S159), marriage in classical Christian, Islamic and Jewish teaching (S140 to S143, S169, S176 to S178), and illness as unreal (D1, D2; S115). The resurrection of the body is a "resembles only" cell, not a contrary one (S144 to S146, S164, S165) |
 | Healing | "cautious engagement" with medicine | decided: UPL heals the spirit, medicine treats the body, never spiritual remedies alone (D2) |
 | Knowledge, the arts and technology | a way of life | decided: they serve spiritual evolution (D5) |
 | How UPL addresses a follower | "expects", eight times, unclear | decided: four registers, belief, invitation, aspiration, commitment (D6) |
-| The reference list | 12 entries, three of them wrong as listed and one not a book | 24 entries, each checked against a catalogue |
+| The reference list | 12 entries, three of them wrong as listed and one not a book (the References table in [sources.md](../sources.md); S01, S02, S192 to S194) | 24 entries, each checked against a catalogue |
 
 The decisions are in [doctrine-decisions.md](../doctrine-decisions.md). What the table says: the
 founding paper is a statement of the teaching by its author. It does not show its sources, it
@@ -85,15 +108,14 @@ Non-goals:
 | Multi-lens review with a bounded loop | `.claude/content-review.yaml` and the toolkit's content review, with the citation, domain-accuracy, ip, consistency, audience-reader, scaffold and editor lenses |
 | Serving a PDF from the site | `site/scripts/sync-paper.mjs` copies all of `paper/`; `site/src/lib/site.ts` and `site/src/lib/structured-data.ts` describe the founding paper |
 | The licence | `LICENSE` section A already covers `paper/**` under CC BY-SA 4.0 |
-| A markdown to PDF converter on this machine | pandoc is installed. No PDF engine is (see "missing", item 2) |
 
 ## What is genuinely missing
 
 1. **A content brief for the paper.** Surface, reader, voice, length, scaffold, disclosure
    surface, goal. The global rules ask for one before any content task.
 2. **A source form and a build.** The founding paper exists only as a PDF. The second needs a
-   text source under version control and a repeatable build to PDF. pandoc needs a PDF engine,
-   and none is installed.
+   text source under version control and a repeatable build to PDF, with the converter and the
+   PDF engine named and their versions recorded (decision A6).
 3. **A citation format.** The register is a table of links with ids, not bibliographic records.
    A reference list needs author, year, title, publisher or journal, and for web sources the
    date read. Nothing holds those fields today.
@@ -148,9 +170,23 @@ are where the new reading is.
   section of the paper, the owner page under `content/`, and the decision id where there is
   one. A statement with no owner page is a blocker: it goes to the teaching steward as a
   proposed teaching first, or it leaves the paper.
+- A paraphrase written for the paper is new text that describes a teaching. It is not an edit
+  to a teaching page and gives no licence for one. If the work on the paper shows that a page
+  under `content/` should change, that is its own wording pull request, called out as locked
+  decision 2 asks.
 - Under `paper/`, the PDF is the published thing and the source is its working form. The
   architecture page gains one sentence saying so, so that a reader does not take the source for
   a second copy of the teachings.
+
+### What the site serves (goal 3)
+
+`site/scripts/sync-paper.mjs` copies the whole of `paper/` into the site's public folder. Left
+as it is, the paper's source, the bibliographic data file and the traceability table would be
+served from the day step 2 merges, unapproved drafts included. So step 2 changes the copy to
+PDF files only, and adds a check, run from `bash scripts/check.sh`, that fails if anything
+other than a PDF is found in the copied folder. The working files stay in the repository under
+the licence that already covers `paper/**`, which is a decision to keep the work open to
+inspection; they are not served as pages of the site.
 
 ### Sources and citations (goals 2, 4)
 
@@ -160,6 +196,16 @@ are where the new reading is.
   [sources.md](../sources.md) stays the one place a source is recorded, and the gate checks
   that every key in the data file is a live row). Only the sources the paper cites need
   fields, which will be a fraction of the 196.
+- One source, one description. New literature for the paper is recorded as S rows only, never
+  as R rows: the R table mirrors the References page entry for entry, the source gate enforces
+  that both ways, and References lists what the teachings cite, which this plan does not
+  change. Where the paper cites a book that is already an R row, the data file is keyed to
+  that row. The gate extension compares fields and not only keys: the title in the data file
+  must be the title in the register row, and for an R row the author and title must be those
+  of the References entry. The register wins any disagreement, and the data file is corrected.
+- The paper's reference list is generated for the paper and is not a second References page.
+  It lists what the paper cites; References lists what the teachings cite. They will differ,
+  and the paper says so in its method section.
 - A retired row or a row marked "secondary" cannot be cited in the paper. The parked list of
   rows still awaiting a primary source (S04, S07, S67, S83, S86, S87) is cleared for any of them
   the paper needs, before the section that needs it is drafted.
@@ -175,19 +221,23 @@ Extended, never loosened, and no change to `scripts/doctrine-baseline.json` or t
 
 - The source gate reads the paper source as a citing page and as a claim page.
 - The doctrine gate reports the balance of the paper source as its own figure, separate from
-  the whole-text figure for `content/`, against the same caps. The paper is not added to the
-  teachings' count, which would move the author's baseline.
+  the whole-text figure for `content/`, against the same caps. It reads the one `balance`
+  object in `scripts/doctrine-gate.json` and not a copy, so a later change to a cap cannot
+  reach the teachings and miss the paper. The new scan path in that file is a change to the
+  gate's rules, so it is the author's to approve in step 2, as decision B8 was. The paper is
+  not added to the teachings' count, which would move the author's baseline.
 - A new small check holds the traceability table: every row's owner page exists at the pinned
   commit, and the pinned commit is an ancestor of `main`.
-- All three run from `bash scripts/check.sh`, so `bash scripts/ci-local.sh` covers them.
+- All of these, and the served-files check above, run from `bash scripts/check.sh`, so `bash scripts/ci-local.sh` covers them.
 - A `paper` content type joins `.claude/content-review.yaml` with the lenses scaffold,
   citation, domain-accuracy, ip, consistency (against the guardrails and against `content/`),
   audience-reader, titles and editor. The editor lens may fix typos and broken sentences only,
-  as for a teaching.
+  as for a teaching. Its match is the paper source under `paper/`, which neither existing
+  content type matches, so no file is reviewed twice or not at all.
 
 ### Build (goal 6)
 
-Markdown source, pandoc, one PDF committed under `paper/` like the first, in the same page
+Markdown source, a converter such as pandoc, one PDF committed under `paper/` like the first, in the same page
 style so the two read as a pair. The build is a local script and is not part of the site
 build, so the site stays static and the Cloudflare build gains no dependency. The PDF engine is
 decision A6. The site needs no client-side script and no change to the Content-Security-Policy.
@@ -200,6 +250,26 @@ lists it, and the link, SEO and mobile checks cover the new link. The second par
 home page is already parked as the author's to write (S4 in the site review); the new link
 waits for that wording or goes in the footer only.
 
+The founding paper is kept on purpose, beside the second, and the author owns that decision
+(goal 7). So every place that assumes one paper has to learn there are two, and none may be
+left pointing at the first alone by accident:
+
+- In the site: `site/src/lib/site.ts` (one `paperPath`), `site/src/lib/structured-data.ts` (one
+  `paperSchema`), `site/src/layouts/Base.astro` (one footer link, one schema on the home page)
+  and `site/src/pages/llms.txt.ts` (one entry).
+- In the checks: `site/scripts/check-seo.mjs` finds the first scholarly article on the home
+  page and tests that one alone. It is changed to test every one, or a broken second paper
+  would pass.
+- In the documents: `README.md`, `docs/architecture.md` and `docs/features-and-usage.md` each
+  describe `paper/` as holding the founding paper. Each gains the second.
+- Under `content/`: `content/README.md` and `content/5-context/README.md` speak of "the
+  founding paper" and "the paper's conclusion". Both stay true. Whether either should mention
+  the second paper is wording on a rendered page, so it is put to the author as a proposal in
+  step 7a and is not assumed.
+
+A stale checkout sits under `.claude/worktrees/`. The gates do not descend into it, and it is
+not this plan's to remove; anyone verifying this plan by searching the tree should exclude it.
+
 ### Publication (goal 6)
 
 The site first, then a public research archive that issues a permanent identifier and accepts
@@ -207,7 +277,7 @@ CC BY-SA 4.0, with the author's ORCID. The deposit is made by the author from th
 account: an agent does not create accounts or publish under the author's name. The identifier
 then comes back into the repository in a citation file at the root and on the site. The
 archive's terms, its fit with the licence and how it handles versions are verified on its own
-pages in step 7, before anything is relied on.
+pages in step 7b, before anything is relied on.
 
 ### Who does what
 
@@ -222,35 +292,36 @@ pages in step 7, before anything is relied on.
 
 ## Open decisions
 
-All OPEN. Each carries a recommendation so the plan can move on the author's "go".
+All TAKEN by the author on 21 September 2026, in these words: "A1 companion, go with all your
+recommendations". Each entry keeps the recommendation as the reasoning for the choice.
 
-- **A1 OPEN: companion paper or second edition.** Recommendation: companion, as designed above.
+- **A1 TAKEN, as recommended: companion paper or second edition.** Recommendation: companion, as designed above.
   A second edition would restate what `content/` now says better than any PDF can, and would
   put two versions of the founding text in circulation.
-- **A2 OPEN: the thesis.** Recommendation: the paper's centre is sections 4 and 5, that UPL can
+- **A2 TAKEN, as recommended: the thesis.** Recommendation: the paper's centre is sections 4 and 5, that UPL can
   say precisely what it shares with each tradition and precisely where it parts, with sources,
   and that saying the second as plainly as the first is what separates a synthesis from a
   blend. The alternative centre is section 3, a doctrinal development paper; it is the easier
   paper and the less useful one to a reader outside UPL.
-- **A3 OPEN: voice.** Recommendation: scholarly first person. "I" for the author's decisions and
+- **A3 TAKEN, as recommended: voice.** Recommendation: scholarly first person. "I" for the author's decisions and
   position, plain description for the traditions, the author's own recorded words quoted where
   a decision is reported. Not the devotional voice of the founding paper, which a reader of
   this paper can find in the founding paper.
-- **A4 OPEN: where it is published.** Recommendation: the site and one open research archive
+- **A4 TAKEN, as recommended: where it is published.** Recommendation: the site and one open research archive
   with a permanent identifier, deposited by the author. Costs nothing and keeps the licence.
-- **A5 OPEN: a peer-reviewed journal afterwards.** Recommendation: decide after publication,
-  not before. Three things to weigh then, each to be verified and not assumed: many journals
+- **A5 TAKEN, as recommended: a peer-reviewed journal afterwards.** Recommendation: decide after publication,
+  not before. So this one is taken as a deferral: the question is still open, on purpose, until the paper is out. Three things to weigh then, each to be verified and not assumed: many journals
   ask for a licence other than CC BY-SA or for first publication; open-access journals often
   charge a fee; and a founder writing on the founder's own religion is an insider account,
   which some journals welcome as such and others do not take.
-- **A6 OPEN: the PDF engine.** Recommendation: install one small engine locally (Typst or
+- **A6 TAKEN, as recommended: the PDF engine.** Recommendation: install one small engine locally (Typst or
   Tectonic, each a single binary) and record the version in the build script. The alternative,
   pandoc to a word processor file and export by hand, matches how the first paper was probably
   made and is not repeatable.
-- **A7 OPEN: when.** The repository is private and the site is not yet live
+- **A7 TAKEN, as recommended: when.** The repository is private and the site is not yet live
   ([launch readiness](2026-09-18-launch-readiness.md)). Recommendation: write now, publish only
   after the site is public, so the paper's links to the teachings resolve on the day it appears.
-- **A8 OPEN: W3 first.** The two accuracy points on the doctrine pages, the hard problem of
+- **A8 TAKEN, as recommended: W3 first.** The two accuracy points on the doctrine pages, the hard problem of
   consciousness called "empirically-based" and the observer effect, are the author's to settle
   and are still parked. Recommendation: settle them as a wording pull request before step 5
   drafts section 6. Otherwise the paper either repeats a statement the site review has marked
@@ -258,20 +329,22 @@ All OPEN. Each carries a recommendation so the plan can move on the author's "go
 
 ## Sequence
 
-One pull request per step. Each leaves `main` green under `bash scripts/ci-local.sh`.
+One pull request per row. Each leaves `main` green under `bash scripts/ci-local.sh`.
 
 | Step | Pull request | Needs from you | Status |
 | --- | --- | --- | --- |
-| 0 | This plan, reviewed with the plan review | read it; A1 | open |
-| 1 | The brief and the decisions: the content brief, A1 to A8 recorded as taken, the scaffold fixed | A1 to A8 | not started |
-| 2 | Scaffolding: the paper source tree with headings only, the build, the bibliographic data file, the three gate extensions, the `paper` content type, the sentence in the architecture page | the engine install (A6) | not started |
-| 3 | Literature: register rows for sections 6, 7 and 8, and primary sources in place of any secondary row the paper will cite | nothing, unless a source has to be bought | not started |
+| 0 | This plan, reviewed with the plan review | read it; A1 to A8 | decisions taken 2026-09-21; review in progress |
+| 1 | The brief: the content brief written from decisions A1 to A8, the scaffold fixed | approve the brief | not started |
+| 2 | Scaffolding: the paper source tree with headings only, the build, the bibliographic data file, the copy narrowed to PDFs with its check, the three gate extensions, the `paper` content type, the sentence in the architecture page | the engine install (A6); approve the new scan path in the doctrine gate's rules | not started |
+| 3 | Literature: register rows (S rows only) for sections 6, 7 and 8, and primary sources in place of any secondary row the paper will cite | nothing, unless a source has to be bought | not started |
 | 4 | The annotated outline and the traceability table: for each section, the claims it will make, the owner page and the sources, no prose | approve the outline by section | not started |
-| 5 | Drafts, in three batches, each a set of proposals with ids: sections 2 to 5; sections 6 to 8; sections 0, 1 and 9, which are the author's own | approve, change or decline by id | not started |
+| W | Outside this plan's own work, and tracked here because step 5 waits on it: the wording pull request that settles the two W3 accuracy points under `content/` (A8), through the teaching steward | approve the wording by id | not started |
+| 5 | Drafts: one pull request, with three approval batches inside it as checkpoints, each a set of proposals with ids: sections 2 to 5; sections 6 to 8, which wait for row W; sections 0, 1 and 9, which are the author's own | approve, change or decline by id | not started |
 | 6 | Review loop to a bounded cap, quotations checked by eye, the freeze: commit pinned, PDF built and committed, version 1.0 | read the PDF whole, once | not started |
-| 7 | Site wiring, then the disclosure check, then publication: deploy, the author's deposit, the identifier and the citation file back into the repository | the deposit; the ORCID | not started |
+| 7a | Site wiring and the documents that name one paper; the disclosure check; merge and deploy, so the paper has a live address | the home page wording, or footer only; the two proposals under `content/`, if wanted | not started |
+| 7b | After the author's deposit: the archive's terms verified, the identifier and the citation file into the repository and onto the site | the deposit; the ORCID | not started |
 
-Step 3 can run beside step 2. Steps 4 and 5 cannot start before step 3 ends for the sections
+Step 3 can run beside step 2, and row W beside both. Steps 4 and 5 cannot start before step 3 ends for the sections
 that need new sources, and can start at once for sections 2 to 5.
 
 ## Cross-dependencies
@@ -280,12 +353,14 @@ that need new sources, and can start at once for sections 2 to 5.
 | --- | --- |
 | Step 1 before everything | A1 changes what is being written; A3 changes every sentence |
 | Sources before wording (step 3 before 4 and 5) | The source gate refuses a claim without a row, and the rule is that the row comes first. A draft written ahead of its sources gets bent to fit them |
-| A8 (W3) before section 6 | Goal 3: the paper cannot say about science what the teachings do not yet say |
+| Row W (A8, the W3 points) before the second batch of step 5 | Goal 3: the paper cannot say about science what the teachings do not yet say |
 | Inside step 2: the data file before the gate extension | The gate checks the data file's keys against the register; it cannot pass on an absent file |
 | Inside step 5: the steward's review before the author is asked | The author should not spend an approval on a draft that contradicts a core belief |
 | Inside step 6: the pin after the last wording pull request to `content/` | A pin taken earlier reports a text that has since moved |
-| The launch plan before step 7 | The paper links to the teachings by URL; A7 |
-| Inside step 7: the disclosure check before the deploy and before the deposit | A deposit with a permanent identifier cannot be taken back |
+| The launch plan before step 7a | The paper links to the teachings by URL; A7 |
+| Step 2's narrowed copy before any working file lands under `paper/` on `main` | Otherwise the site serves working files on the next deploy |
+| Inside step 7a: the disclosure check before the deploy | The deploy is the first moment the paper is public |
+| Step 7a before the deposit, and the deposit before step 7b | The deposit needs a live address to point to; the identifier does not exist until the deposit is made. A deposit with a permanent identifier cannot be taken back |
 
 ## Risks
 
@@ -295,7 +370,7 @@ that need new sources, and can start at once for sections 2 to 5.
   can be corrected in a pull request. Survivable because every such claim carries a row with
   its caution, the domain-accuracy lens checks it live, the quotations are checked by eye, and
   the archive chosen in A4 has to allow a corrected version under the same identifier family;
-  that is one of the things step 7 verifies.
+  that is one of the things step 7b verifies, before the deposit is relied on.
 - **An invented or half-remembered reference.** The failure that would cost the paper its
   standing. Survivable because research agents are told never to invent and to mark what they
   could not open, and the reference list is generated from rows a gate has checked, not typed.
@@ -311,9 +386,9 @@ that need new sources, and can start at once for sections 2 to 5.
 - **The author's time.** Step 5 is the largest reading task since the core beliefs were
   rewritten. Three batches, each reviewable in one sitting, is the mitigation. There is no
   deadline, which is a decision: nothing in the launch depends on this paper.
-- **Permanent publication of something later regretted.** Survivable up to step 7 by a revert;
+- **Permanent publication of something later regretted.** Survivable up to and including step 7a by a revert;
   from the deposit onwards it is not, which is why the whole-PDF reading in step 6 and the
-  disclosure check in step 7 come before it.
+  disclosure check in step 7a come before it.
 
 ## What this plan does not do
 
@@ -348,6 +423,13 @@ that need new sources, and can start at once for sections 2 to 5.
    with its output in the merge commit body.
 10. The published PDF is served by the site, passes the link check, and carries its permanent
     identifier once the deposit is made.
+11. The built site serves nothing from `paper/` but PDF files, and the check that holds this
+    fails when a markdown file is placed there as a test.
+12. No book is described differently in two places: the field comparison between the
+    bibliographic data file and the register passes, and `python3 scripts/check-sources.py`
+    still reports the register and References in step.
+13. The SEO check tests every scholarly article on the home page: breaking the second paper's
+    address in a scratch build makes it fail.
 
 Negative criteria:
 
@@ -359,7 +441,8 @@ Negative criteria:
 - No statement about a tradition appears in the paper and nowhere in the register.
 - No check reported as passed that could not run.
 
-Rollback: steps 0 to 6 are each a single revert. Step 7 is a single revert up to the deploy.
+Rollback: steps 0 to 6 and row W are each a single revert. Step 7a is a single revert, before or
+after the deploy.
 From the deposit onwards the paper is public and permanently identified, and the only remedy is
 a corrected version.
 
