@@ -170,6 +170,43 @@ What the drafting had to respect:
    teachings, the author answered yes.** Purpose already calls UPL "dynamic, inclusive, and
    adaptable". So belief 6 ends "and UPL holds its own teachings to the same rule".
 
+### D6. May, should and must: how UPL speaks to its followers (21 September 2026)
+
+The author asked: "what about may vs should for upl members?" The text had no answer. It never
+says "should"; it says "must" twice and "never" once as a command; its usual voice is
+"encourages" and "can"; and eight times it says "expects", which is stronger than encouragement,
+weaker than a rule, and leaves a reader unsure which is meant. The author accepted the
+recommendation that follows and said to go on it.
+
+Four registers, each with its own words:
+
+| Register | Words | What it covers |
+| --- | --- | --- |
+| Belief | holds, believes, teaches, reads | What UPL says is true. It asks assent of no one |
+| Invitation | may, can, is free to, invites | Practices: which prayers, which meditation, which texts. Plural and free |
+| Aspiration | encourages, asks, calls for | The ethical life. A follower sets out to live it; falling short is part of the journey, not the breaking of a rule |
+| Commitment | never, always, must | A very few firm lines, kept for where someone would otherwise be harmed |
+
+**Commitments are reserved for harm, and there are four.** A follower who is ill never relies on
+spiritual or alternative remedies alone (D2). Because we learn, UPL and its followers evaluate
+their stance and correct it on the evidence, UPL's own teachings included (D5). No one is
+pressed, shamed or frightened into belief. Compassion is owed to every person, whether or not
+they believe. All four are already implied by the text and the guardrails; none is new.
+
+**Recreational drugs are aspiration, not commitment.** UPL states its position plainly, as it
+does ("a clear stance against" on the section page is the belief register), and gives its
+reasons, and the Sobriety page already says such use "is discouraged", which is the aspiration
+register. So the two pages do not contradict each other once the registers are named, and no
+wording changes. A rule on substances with nothing behind it would read as the rigid code UPL
+says it is not.
+
+**"Expects" is retired.** Each of its eight uses becomes the word of the register it belongs to
+(P38 to P45).
+
+**Studying the sciences is aspiration.** The author's "everyone should study the sciences and
+engineering" was written into belief 6 as "encourages… each according to their gifts and their
+chances", because it is something not everyone can do.
+
 ## Wording approved and applied
 
 The author approved all fourteen proposals on 21 September 2026 ("accept and apply all"), and
@@ -1137,6 +1174,62 @@ no baseline change needed, source gate passing.
 - **The four gratitude affirmation pages** still give no example affirmation. An affirmation is
   UPL's own words, so it is the author's to write.
 - **Christian contemplative prayer** as a fourth form of meditation has no recorded source yet.
+
+## D6: wording approved and applied
+
+The author approved P37 to P45 on 21 September 2026 and they were applied exactly as written. On
+the author's instruction the baseline was recorded with `--accept-core` and `--waive-imbalance`.
+Verified by comparing the baseline before and after: three fingerprints changed (the Abstract,
+Name, Mission, and Vision, and the Ethical and Moral Development section page) and no imbalance
+record moved. The four registers are a new concept in the cross-reference matrix, owned by that
+section page.
+
+**Checked before asking.** The passage and the eight changes were applied in a scratch tree and
+run through the doctrine, matrix and source gates and the lint. Doctrine gate: only the three
+locked pages reported as changed, as expected; no page out of balance. Matrix gate: no overlap.
+Source gate: passing; the passage names no tradition. No use of "expects" remains.
+
+### P37. Ethical and Moral Development: the four registers
+
+- Addition, after the introduction and before the list of pages. Locked page.
+- Added:
+
+  > UPL speaks to its followers in four ways, and it matters which is which. What UPL holds
+  > or believes is its teaching about what is true, and it asks assent of no one. What a
+  > follower may do is free: which prayers, which meditation, which texts. What UPL
+  > encourages or asks for is the ethical life, in compassion, giving, learning and care for
+  > the Earth; a follower sets out to live it, and falling short is part of the journey and
+  > not the breaking of a rule.
+  >
+  > There are a few things UPL asks without exception, because someone would otherwise be
+  > harmed. A follower who is ill never relies on spiritual or alternative remedies alone.
+  > No one is pressed, shamed or frightened into belief. Compassion is owed to every person,
+  > whether or not they believe. And because we learn, UPL and its followers evaluate their
+  > stance and correct it when the evidence asks for it.
+
+- Why here: this section already says ethical living is "not… a set of rigid prescriptions but a
+  dynamic, personal journey". The passage says what that means for the words the teachings use.
+- The whole passage is the drafter's wording of the author's decision D6. The four commitments
+  are in the order: the body, belief, other people, knowledge. It is doctrine, because it says
+  what belonging to UPL asks of a person, so it is the author's to rework.
+
+### P38 to P45. The eight uses of "expects"
+
+| Id | Page | Register | Before | After |
+| --- | --- | --- | --- | --- |
+| P38 | Abstract (locked) | aspiration | "It expects positive thinking, gratitude, and lifelong learning," | "It encourages positive thinking, gratitude, and lifelong learning," |
+| P39 | Name, Mission, and Vision (locked) | aspiration | "It expects growth and transformation through" | "It encourages growth and transformation through" |
+| P40 | Gratitude Affirmations | invitation | "This practice expects adherents to consciously acknowledge" | "This practice invites adherents to consciously acknowledge" |
+| P41 | Engaging with Holy Texts | belief | "However, UPL expects reading these texts not as literal truths but as symbolic representations and teaching tools." | "However, UPL reads these texts not as literal truths but as symbolic representations and teaching tools." |
+| P42 | Mindful Action | aspiration | "informed by an attitude of thankfulness, expects behaviours that support" | "informed by an attitude of thankfulness, calls for behaviours that support" |
+| P43 | Practices of Community Engagement | aspiration | "UPL expects community initiatives aimed at" | "UPL encourages community initiatives aimed at" |
+| P44 | Holistic Well-being | aspiration | "UPL expects its followers to live in harmony with natural laws," | "UPL encourages its followers to live in harmony with natural laws," |
+| P45 | Trust in Science and Modern Medicine | aspiration | "This approach expects personal responsibility in health decisions," | "This approach asks for personal responsibility in health decisions," |
+
+- One word changes in each sentence and nothing else. P41 is the one that changes register most:
+  "UPL expects reading these texts not as literal truths" describes what UPL itself does, so it
+  becomes "UPL reads". P40 is invitation because it is a practice; the rest are aspiration.
+- P37, P38 and P39 are on locked pages, so applying them needs the author's `--accept-core`.
 
 ## What these decisions open
 

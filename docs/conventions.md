@@ -52,6 +52,14 @@ contributors.
 - A new or changed page under `content/` fails the gate until it has been re-read against the
   matrix and recorded with `--record`, so the matrix is updated before any merge.
 
+## How the teachings address a follower
+
+- Four registers, each with its own words (decision D6 in
+  [doctrine-decisions.md](doctrine-decisions.md)): **belief** (holds, believes, teaches),
+  **invitation** (may, can, invites), **aspiration** (encourages, asks, calls for) and
+  **commitment** (never, always, must). Commitment is kept for the four lines where someone would
+  otherwise be harmed. "Expects" and "should" are not used. Enforced by review.
+
 ## Sources
 
 - Every outside source used to check or support a statement is recorded once in

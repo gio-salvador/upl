@@ -191,6 +191,14 @@
         }
       }
     },
+    "registers": {
+      "label": "How UPL speaks to its followers: belief, invitation, aspiration, commitment",
+      "owner": "content/2-doctrine/ethical-and-moral-development/README.md",
+      "terms": [
+        "speaks to its followers",
+        "asks without exception"
+      ]
+    },
     "family": {
       "label": "Family",
       "owner": "content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md",
@@ -1344,7 +1352,7 @@
     },
     "content/1-foundations/abstract.md": {
       "status": "current",
-      "fingerprint": "a82f5bd5f9989cffb46f7930a81d8938fb8171885983eb39b54dbe2684f60afe"
+      "fingerprint": "fef05b1442ec343d1be6983aae8c30e0ff1b8f01c20e1cf39febf50df0dbdc27"
     },
     "content/1-foundations/author-note.md": {
       "status": "current",
@@ -1396,7 +1404,7 @@
     },
     "content/1-foundations/name-mission-and-vision.md": {
       "status": "current",
-      "fingerprint": "f0f98dfae8db8a422170855bcb0bb5bbbe0c2fdef885c966edae63a50feb74b3"
+      "fingerprint": "2878b7d35c107142870523589eaeaab881c9f27efdcfef98826802599b198cf3"
     },
     "content/1-foundations/purpose.md": {
       "status": "current",
@@ -1432,7 +1440,7 @@
     },
     "content/2-doctrine/ethical-and-moral-development/README.md": {
       "status": "current",
-      "fingerprint": "db5d4416d631f5358e13228f54fbbbd20cd0eb9c85239eb8aa41e53b0d92f01e"
+      "fingerprint": "b479fc2830ab22d64d9c715baa85edb10439f91de1735c23afe750886c3056a1"
     },
     "content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md": {
       "status": "current",
@@ -1484,7 +1492,7 @@
     },
     "content/3-practice/gratitude-affirmations/README.md": {
       "status": "current",
-      "fingerprint": "4fd937fcc0009349d0240a4b339a834e38371657c243124236447bb082a22fb8"
+      "fingerprint": "5904525ec03c64c2b5ccf428d253e522531f6b1095d5d9c7de37836213ad64ce"
     },
     "content/3-practice/gratitude-affirmations/earth-and-environment.md": {
       "status": "current",
@@ -1504,7 +1512,7 @@
     },
     "content/3-practice/holy-texts.md": {
       "status": "current",
-      "fingerprint": "d9db4632483eca7b679c632ec4c3c8d4489dc19719225e75c6a2959922b153cd"
+      "fingerprint": "05c451f3504493325bb5507ae98b04e8292df8d721212ad7e20783707dcbc9d3"
     },
     "content/3-practice/meditation/README.md": {
       "status": "current",
@@ -1532,7 +1540,7 @@
     },
     "content/3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action.md": {
       "status": "current",
-      "fingerprint": "3d5a02154c4aba6cd5b2b742783c375a6dffc1d0c37a5ac50470ab2a52621fd5"
+      "fingerprint": "7b1d7436862d8b1716b5d5224e5f30227026c18587e0699c5c9fe871498242f5"
     },
     "content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md": {
       "status": "current",
@@ -1552,7 +1560,7 @@
     },
     "content/4-way-of-life/community-and-fellowship/community-engagement.md": {
       "status": "current",
-      "fingerprint": "cf7e6d886f6ad4cd4e9c6abbcccb85682a5f873081a07ed31e34cc097eed64a2"
+      "fingerprint": "33cfa74168442acaa8a55a06cc6f1253887d03db486822090ae8907acfe2d2fa"
     },
     "content/4-way-of-life/community-and-fellowship/global-spiritual-network.md": {
       "status": "current",
@@ -1620,11 +1628,11 @@
     },
     "content/4-way-of-life/holistic-wellbeing/README.md": {
       "status": "current",
-      "fingerprint": "f400586dd2f89cbf0afe6214e99de662a87e61fa291930c61a9e71344450d70e"
+      "fingerprint": "32b6d3adb182be8f604b07cd8bec18559185629d8ae10f2287dddbc76c4c3b1a"
     },
     "content/4-way-of-life/holistic-wellbeing/science-and-modern-medicine.md": {
       "status": "current",
-      "fingerprint": "b0bad7ebf227a9afad66899eec02e405a6e91a7df57375397a839e4fafb942c9"
+      "fingerprint": "b1fbce065f94a8dfbda50a899d9cf412f84c8a8db58756af0a156a71cac656f1"
     },
     "content/4-way-of-life/holistic-wellbeing/sobriety.md": {
       "status": "current",

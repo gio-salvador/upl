@@ -11,7 +11,7 @@ While advocating for natural remedies and lifestyle choices that promote health,
 
 ## Integrative Health Practices
 
-UPL supports an integrative approach to health that combines the best of traditional wisdom and modern medical practices. This approach expects personal responsibility in health decisions, informed by scientific understanding and a deep respect for the body's natural healing capabilities.
+UPL supports an integrative approach to health that combines the best of traditional wisdom and modern medical practices. This approach asks for personal responsibility in health decisions, informed by scientific understanding and a deep respect for the body's natural healing capabilities.
 
 ## Education and Informed Decision-Making
 

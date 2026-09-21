@@ -83,6 +83,11 @@ text; go to the paper only to settle what the author's original wording was.
   make the gate pass. A new page elaborates a concept its owner page already states; it does
   not restate the owner's wording or become a second owner. A new concept, a change of owner
   or a page marked deprecated is the author's decision: put it under questions.
+- **Use the register the teaching belongs to** (decision D6 in `docs/doctrine-decisions.md`).
+  Belief: holds, believes, teaches. Invitation: may, can, invites. Aspiration: encourages, asks,
+  calls for. Commitment: never, always, must, and only for the four lines D6 names, where
+  someone would otherwise be harmed. Never write "expects" or "should". Do not raise a teaching
+  to a commitment, or soften one of the four, without the author.
 - **Nothing is written for search engines or language models** (decision 3). No keyword
   padding, no phrasing chosen for ranking.
 - **Accuracy and respect towards other traditions** (decision 6). Describe another religion or
