@@ -238,9 +238,21 @@ them; that is recorded in [site-review.md](site-review.md), W3.
 | R05 | "Quantum Physics and Theology: An Unexpected Kinship" by John Polkinghorne | Not checked |
 | R06 | "The Heart of Buddha's Teaching" by Thích Nhất Hạnh | To confirm: the title is usually given as "The Heart of the Buddha's Teaching" |
 | R07 | "The Essential Jesus" by John Dominic Crossan | Not checked |
-| R08 | "Socinianism and Its Role in the Culture of 16th to 18th Centuries" by Krystyna Łyczywek | Wrong as listed. Two catalogues give Lech Szczucki as editor, with Zbigniew Ogonowski and Janusz Tazbir, PWN, 1983 (S01, S02) |
+| R08 | "Socinianism and Its Role in the Culture of XVI-th to XVIII-th Centuries", edited by Lech Szczucki with Zbigniew Ogonowski and Janusz Tazbir | Corrected 21 September 2026 (Q13) from two catalogues: PWN, 1983 (S01, S02). It was listed under Krystyna Łyczywek |
 | R09 | "Stanford Encyclopaedia of Philosophy" | To confirm: the work spells its own name "Encyclopedia", and no article is named |
 | R10 | "Facing Up to the Problem of Consciousness" by David Chalmers | Not checked. It is the source of the "hard problem", which the Continuum of Life and Consciousness page calls "empirically-based"; it is a philosophical argument (site-review.md, W3) |
 | R11 | "Life After Life: The Investigation of a Phenomenon - Survival of Bodily Death" by Raymond Moody | Not checked |
 | R12 | "The Transcendent Unity of Religions" by Frithjof Schuon | Not checked |
 | R13 | "Nectarean Shower of Holy Doctrines" (the Holy Sutra of Seicho-No-Ie) by Masaharu Taniguchi | Added 21 September 2026 (proposal P14). The source of the silkworm and cocoon image, now credited on The Immortal Soul. Title and authorship confirmed (S07, S08); the wording quoted should be checked against the author's copy |
+| R14 | The Hebrew Bible, in the translation of the Jewish Publication Society | Added 21 September 2026 (Q1). The teachings quote it through Sefaria (S14) |
+| R15 | The Babylonian Talmud, tractate Shabbat | Added (Q2). Hillel's rule (S17) |
+| R16 | "Mishneh Torah" by Moses Maimonides | Added (Q3). Giving, repentance, speech, needless destruction (S18) |
+| R17 | The World English Bible, a public-domain translation of the Bible | Added (Q4). Public domain; text labelled WEB is quoted unchanged (S31) |
+| R18 | The Qur'an, in the translation of M. A. S. Abdel Haleem | Added (Q5). Name the translator with every quotation (S93) |
+| R19 | The Upanishads | Added (Q6). Chandogya and Brihadaranyaka are the two the teachings draw on (S64, S52) |
+| R20 | The Bhagavad Gita | Added (Q7) (S53) |
+| R21 | The Dhammapada and the discourses of the Pali Canon, in the translations of Bhikkhu Sujato | Added (Q8). Openly licensed translations (S68) |
+| R22 | The Guru Granth Sahib, in the translation of Sant Singh Khalsa | Added (Q9) (S103) |
+| R23 | "Tao Te Ching", attributed to Laozi, in the translation of James Legge | Added (Q10). Public domain. Laozi may be legendary (S112) (S111) |
+| R24 | "Truth of Life" (Seimei no Jissō) by Masaharu Taniguchi | Added (Q11), beside the doubtful entry R04, which the author may now remove. Taniguchi's principal work (S05, S06) |
+| R25 | "Nānā i ke Kumu" by Mary Kawena Pukui, E. W. Haertig and Catherine A. Lee | Added (Q12). The record of traditional hoʻoponopono; not itself opened, cited through S122 (S122) |

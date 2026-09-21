@@ -119,8 +119,8 @@ with a fragment, which is also what search engines and language models quote fir
 ### W2. Likely slips
 
 Status: the author asked for these to be fixed on 18 September 2026. The five in Way of Life and
-Context are fixed. The three in Foundations wait for the author, because those pages are locked
-by fingerprint and one of them needs the author's own words.
+Context are fixed. Of the three in Foundations, the Author Note was fixed on 21 September 2026; beliefs 4 and 7
+are replaced when those pages are rewritten (step 3 of the tradition balance plan).
 
 | Page | Text | Note |
 | ---- | ---- | ---- |
