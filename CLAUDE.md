@@ -29,7 +29,7 @@ apply in full. This file adds only what is specific to this repository.
    one.
 8. **The traditions are kept in balance.** No tradition is the default lens. A page that
    illustrates a belief through a tradition uses at least two, or none, and draws across the
-   range the teachings name (Christianity, Islam, Buddhism, Hinduism, Seicho-no-Ie and the
+   range the teachings name (Christianity, Islam, Buddhism, Hinduism, Judaism, Seicho-no-Ie and the
    others), varying which comes first. Pages dedicated to one figure or practice are the
    exception. The early text leans on Islam more than was intended; do not copy that pattern,
    and do not reword those pages unless the author asks (decision 2).

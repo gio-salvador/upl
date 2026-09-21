@@ -39,7 +39,7 @@ makes it.
 
 ## 2. Balance between the traditions
 
-The teachings draw on Christianity, Islam, Buddhism, Hinduism and Seicho-no-Ie, and name others
+The teachings draw on Christianity, Islam, Buddhism, Hinduism, Judaism and Seicho-no-Ie, and name others
 such as Taoism, Sikhism, the Hawaiian practice of Ho'oponopono and indigenous spiritualities.
 They stand side by side. None is the lens through which the others are read.
 
@@ -55,7 +55,11 @@ Rules for every new or changed page:
 4. **A tradition's own terms, used correctly.** Tawhid, the Eightfold Path, agape, dharma,
    Shinsokan: use a term as its tradition uses it, and do not claim two terms mean the same
    thing when they only resemble each other.
-5. **Dedicated pages are the exception.** A page whose subject is one figure or one practice,
+5. **Shared teachings are written as shared.** Where several traditions hold a teaching, the
+   page says so once, and credits the origin first where one tradition took it from another.
+   A sentence naming several traditions needs a source for each. The convergence map in
+   [cross-reference.md](cross-reference.md) records how each tradition stands to each teaching.
+6. **Dedicated pages are the exception.** A page whose subject is one figure or one practice,
    such as the page on the Buddha or on Shinsokan meditation, names that tradition alone. These
    pages are listed under `dedicated` in `scripts/doctrine-gate.json`.
 

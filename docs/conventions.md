@@ -44,6 +44,11 @@ contributors.
   pages is a recorded finding. The index is `scripts/content-index.json` and the readable view
   is [cross-reference.md](cross-reference.md). Enforced by `scripts/check-content-index.py` in
   `scripts/check.sh`.
+- Where a concept records which traditions hold it (`held_by`), every cell names a tradition, a
+  relation (origin, inherits, independent, resembles, contrary) and a source from
+  [sources.md](sources.md), and every tradition a page names is accounted for in the concepts
+  that page owns. This is the convergence map in [cross-reference.md](cross-reference.md).
+  Enforced by the same gate.
 - A new or changed page under `content/` fails the gate until it has been re-read against the
   matrix and recorded with `--record`, so the matrix is updated before any merge.
 
