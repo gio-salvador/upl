@@ -15,4 +15,4 @@ The traditions honour the family in their own ways. Seicho-No-Ie keeps gratitude
 1. [Inclusive Familial Structures](inclusive-familial-structures.md)
 2. [Marriage as a Spiritual Union](marriage.md)
 3. [Cooperative Growth and Support](cooperative-growth-and-support.md)
-4. [Divorce as a Respectable Ultimatum](divorce.md)
+4. [Divorce as a Last Resort](divorce.md)

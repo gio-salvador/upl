@@ -6,7 +6,7 @@ description: "Lifelong learning in work, the sciences, technology and the arts, 
 
 # Continuous Learning: Expanding Knowledge and Creativity
 
-Continuous learning across all domains of life, including professional life, the sciences, technology, and the arts, is fundamental for spiritual development. This commitment to lifelong education is seen as an essential aspect of personal growth, spiritual development, and active engagement with the world. By embracing a broad spectrum of knowledge and creative expression, adherents of UPL cultivate a deeper understanding of the divine, enhance their contribution to society, and foster a vibrant, evolving community.
+Continuous learning across all domains of life, including professional life, the sciences, technology, and the arts, is fundamental for spiritual development. This commitment to lifelong education is seen as an essential aspect of personal growth, spiritual development, and active engagement with the world. By embracing a broad spectrum of knowledge and creative expression, followers of UPL cultivate a deeper understanding of the divine, enhance their contribution to society, and foster a vibrant, evolving community.
 
 ## In this section
 

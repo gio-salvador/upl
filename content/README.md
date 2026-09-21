@@ -10,8 +10,8 @@ The Unified Path of Light (UPL), or Synphotodosism, is "the way of coming togeth
 spiritual framework blending diverse principles towards enlightenment, unity, and ethical
 living.
 
-This is the canonical text of the religion, organised as a hierarchy. It begins from the
-founding paper by Giovanni S. Salvador, kept in [`paper/`](../paper/unified-path-of-light-synphotodosism.pdf), and grows from there.
+This is the canonical text of the religion, arranged in five parts. It begins from the
+[founding paper](../paper/unified-path-of-light-synphotodosism.pdf) by Giovanni S. Salvador and grows from there.
 
 ## Contents
 
