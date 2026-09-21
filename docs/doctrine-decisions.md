@@ -52,18 +52,24 @@ First decided as "medicine first; spiritual practice supports it", then refined 
    has proven effective wherever understanding has grown, and it will keep improving.
 4. A follower of UPL never relies on alternative or spiritual remedies alone.
 
-Two points in the author's statement are open, and P2 below is drafted on the cautious side of
-both until the author settles them:
+The two points left open on the first refinement were settled by the author the same day:
 
-- **"Faith and belief can cure a person; Jesus cured solely with his words."** Read as a claim
-  about physical disease, this contradicts Engaging with Holy Texts (scripture is read as
-  teaching, not as literal record), D1 point 5 (illness is real; UPL parts from Seicho-No-Ie
-  here) and point 4 above. P2 says instead that faith heals the spirit and strengthens a person
-  in illness, and honours the healings of Jesus as teaching about the power of faith.
-- **"Especially when AI merges with quantum computing."** A prediction, not a belief. It would
-  date the page, and it adds a second speculative claim about quantum science to a text whose
-  physics page is the one sceptical readers test. P2 keeps "it will keep improving" and leaves
-  the forecast out.
+- **Where "faith can heal" comes from.** In the author's words: "faith and believe are related to
+  placebo medicine which has proven to heal people if they believe they are being healed, that's
+  where faith can heal comes from. Perhaps some diseases have a spiritual source, others
+  physical, but one affects the other and both should always be treated." So the teaching is not
+  that faith replaces treatment. It is that spirit and body affect each other, and both are
+  always treated.
+- **The forecast about AI and quantum computing** goes in as a hope, not as a statement of fact.
+
+Two cautions from the drafting, kept here so the wording stays honest:
+
+- What the placebo effect is shown to do is narrower than "heal". Belief and expectation
+  measurably change how a person feels and copes: pain, nausea, fatigue, anxiety. They are not
+  shown to cure infections or shrink tumours. P2 says what the evidence supports.
+- "Some diseases have a spiritual source" can be turned against the sick, as karma can: "you are
+  ill because your spirit is at fault". P2 states that spirit and body affect each other and
+  that illness is never a verdict on the person.
 
 Any teaching on healing taken from another tradition is adopted only as a complement to
 medicine.
@@ -74,6 +80,43 @@ UPL takes the path of mindfulness, ethical conduct and compassion, and karma, fr
 does not take the teaching of non-self: with Hinduism, UPL holds that the soul is real and
 immortal. The text says so openly, and no longer describes Buddhism as affirming suffering as
 inherent to life, because the Buddha's teaching on suffering is a diagnosis with a cure.
+
+### D4. One essence, several names (21 September 2026)
+
+In the author's words: "there should be a place that defines the equivalency of consciousness,
+the true image, spirit, soul and astral body, and wherever one or other is mentioned, it means
+the same thing. It means the essence of life experiencing this existence."
+
+What the text does today, counted on 21 September 2026: "soul" 38 times on 14 pages;
+"consciousness" 17 times on 11 pages; "spirit" twice; "true self" once, on the page about
+Masaharu Taniguchi; "true image" and "astral body" nowhere. "Essence" is already used ten times
+in the sense the author gives it ("the essence of man is spiritual, not material").
+
+Three things the drafting has to respect:
+
+1. **"Consciousness" is used in two senses.** On the soul pages it means the essence. Elsewhere
+   it means awareness: "ethical consciousness", "environmental consciousness", "a consciousness
+   about the needs of others", "the collective consciousness". The definition therefore speaks
+   of a person's consciousness, and cannot hold for every use of the word. One sentence works
+   against the equivalence: Death as a Transformative Journey says "the soul's consciousness",
+   as if the soul had a consciousness and were not one.
+2. **"True image" is Seicho-No-Ie's term.** There it means the perfect reality of the person as
+   a child of God, in which sickness is not real, and D1 point 5 parts from that. UPL may use
+   the phrase for its own meaning, but the page has to say it is borrowing the word and not the
+   whole teaching (balance rule 4: do not claim two terms mean the same when they only
+   resemble).
+3. **"Astral body" means something else in its own tradition.** In Theosophy and the teachings
+   near it, the astral body is a subtle body, a vehicle the spirit uses, and explicitly not the
+   spirit itself. Equating it with the soul contradicts the source, brings in a tradition the
+   teachings name nowhere, and sits oddly beside the cocoon image, where a body is what the soul
+   leaves behind. P11 names it as what some traditions call the astral body and leaves the
+   author to keep or drop it.
+
+The place: the definition belongs on [The Immortal Soul](../content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md),
+which already owns the concept in the cross-reference matrix, not on a new page, so that there
+is still one owner. In the matrix, "soul" and "consciousness" stay separate concepts because the
+Continuum page owns the philosophical argument, but the soul concept gains the other names as
+terms, so every page that uses any of them is indexed under it.
 
 ## Proposed wording, waiting for the author
 
@@ -97,19 +140,23 @@ locked.**
 
 - Before: "Trust in science and evidence-based medicine is considered complementary to spiritual
   practices, offering solutions where traditional methods may fall short."
-- After: "UPL's own work is the healing of the spirit. Faith, prayer and a mind at peace
-  strengthen a person in illness, and the traditions honour this: the Gospels tell of Jesus
+- After: "UPL's own work is the healing of the spirit. Spirit and body affect each other: a
+  troubled spirit can weigh on the body, and an illness of the body can weigh on the spirit, so
+  both are always treated. This is where the saying that faith can heal comes from. Medicine
+  itself has found that a person who believes they are being healed often feels and copes
+  better, and the traditions have long honoured the same truth: the Gospels tell of Jesus
   healing with a word, and Judaism holds that saving a life comes before almost every other
   duty. UPL reads the accounts of healing as it reads all holy texts, as teaching about the
-  power of faith, and not as a promise that faith will cure a disease. Illness of the body is
+  power of faith. Illness is never a verdict on the person who is ill. Illness of the body is
   met with science and medicine. Medical science still has much to learn, and many conditions
-  are not yet understood, but it has proven effective wherever understanding has grown, and it
-  will keep improving. A follower of UPL never relies on spiritual or alternative remedies
-  alone: when a person is ill, medical care is sought without delay and followed, and spiritual
-  practice walks beside it."
+  are not yet understood, but it has proven effective wherever understanding has grown, and UPL
+  holds the hope that new tools, among them artificial intelligence and quantum computing, will
+  carry that understanding further. A follower of UPL never relies on spiritual or alternative
+  remedies alone: when a person is ill, medical care is sought without delay and followed, and
+  spiritual practice walks beside it."
 - Why: the old sentence reads as if medicine were the fallback. The first sentence of the
-  paragraph is kept as it is. Revised on 21 September 2026 to carry the refined D2. Two voices,
-  as the balance rule asks: one speaks for faith, one for medicine.
+  paragraph is kept as it is. Revised twice on 21 September 2026 to carry the refined D2. Two
+  voices, as the balance rule asks: one speaks for faith, one for medicine.
 - To check: the Jewish principle is pikuach nefesh; confirm it against a source before it
   lands.
 
@@ -161,16 +208,21 @@ locked.**
 "God transcends anthropomorphic confines". Locked.**
 
 - After: "God is not a person but the source. From that source flows a pure light, and all that
-  exists, ourselves included, is light from it. This light vibrates with many energies on one
-  spectrum, and love is of that spectrum. When the teachings speak of God's love, they speak of
-  the nature of the light itself and not of the feeling of a person. Other traditions have
-  spoken of the same source: the Chandogya Upanishad says of the self and the ultimate reality,
-  "you are that", and Seicho-No-Ie teaches that the true image of every person is a child of
-  God, perfect as its source is perfect. UPL offers this as spiritual teaching, in the language
-  of light, and not as a claim of physics."
-- Why: D1, points 1, 2, 4 and 6, kept close to the author's own words. The author asked on 21
-  September 2026 for the two kindred voices; two are named, as the balance rule asks, with
-  "child of God" given as Seicho-No-Ie's phrase and not UPL's.
+  exists, ourselves included, is light from it. Pure light holds many colours. Love,
+  forgiveness, gratitude and every other positive feeling and action are the colours of God's
+  light, and whoever vibrates with any of them is vibrating in the light of God. No one stands
+  outside that light; what differs from moment to moment is how freely it shines through. When
+  the teachings speak of God's love, they speak of the nature of the light itself and not of
+  the feeling of a person. Other traditions have spoken of the same source: the Chandogya
+  Upanishad says of the self and the ultimate reality, "you are that", and Seicho-No-Ie teaches
+  that the true image of every person is a child of God, perfect as its source is perfect. UPL
+  offers this as spiritual teaching, in the language of light, and not as a claim of physics."
+- Why: D1, points 1, 2, 4 and 6, in the author's own image of 21 September 2026: "Pure light has
+  many colors, love, forgiveness, gratitude and other positive feelings/actions are the colors
+  of God's light. If you vibrate any of those feelings, you are vibrating in the light of God."
+  The sentence "No one stands outside that light" is added because the guardrails name as a
+  deviation any text that "divides people or things into those inside the light and those
+  outside it"; it also leads into P7. Two kindred voices, as the balance rule asks.
 - To check: the Seicho-No-Ie sentence against the author's copy of Taniguchi.
 
 **P7. God, Quantum Physics, and the Light of Divinity. Addition, as the paragraph after P6.
@@ -202,6 +254,25 @@ Locked.**
   prayer addresses God as a person, UPL reads those words as poetry: what is addressed is the
   light."
 - Why: D1, point 3.
+
+### For D4
+
+**P11. The Immortal Soul. Addition, as a new first paragraph. Locked.**
+
+- After: "Soul, spirit, consciousness and the true self are names for one thing: the essence of
+  life experiencing this existence. Wherever the teachings use one of these names for what a
+  person is, they mean the same. Other traditions have their own names for it. Seicho-No-Ie
+  speaks of the true image, the Upanishads of the atman, and some speak of the astral body. UPL
+  honours these names without taking on everything each tradition teaches with them."
+- Why: D4. The author's definition is kept word for word. Two traditions are named, as the
+  balance rule asks, and the borrowed names are given as borrowed.
+- For the author: keep or drop "and some speak of the astral body" (see D4, point 3).
+
+**P12. Death as a Transformative Journey. Wording change. Locked.**
+
+- Before: "the soul's consciousness not only persists but evolves"
+- After: "the soul not only persists but evolves"
+- Why: D4. If soul and consciousness are one, the soul does not have a consciousness.
 
 **P10. Unity: no change proposed.**
 
