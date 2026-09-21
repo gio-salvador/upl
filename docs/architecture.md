@@ -66,6 +66,32 @@ and the vendored
 toolkit gates in `.claude/toolkit/`. `CLAUDE.md` holds the locked decisions an agent or contributor must not
 break.
 
+## When GitHub Actions cannot run
+
+On 21 September 2026 GitHub stopped starting this repository's workflows: the account had no
+Actions budget left, and a private repository's minutes are metered. Every job ended in seconds
+with no step run, so the red marks on a pull request said nothing about the change. The author
+decided the same day that until Actions can run again, the gate before a merge is the same CI run
+on the author's machine.
+
+- `scripts/ci-local.sh` mirrors the jobs in `.github/workflows/` one for one, under the names
+  they carry on GitHub: the site gate, the rendering gate (skipped when nothing that affects
+  rendering changed, as in CI), the toolkit gates, the gitleaks secret scan, the OSV dependency
+  scan, and for a change under `infra/` the OpenTofu format and validation and the Trivy scan.
+  CodeQL is skipped, as it is in CI while the repository is private. Nothing is published from
+  a local run.
+- A pull request is merged only when that script passes on its head commit, rebased on `main`,
+  and the script's output is written into the body of the merge commit, so the record sits in
+  the history beside the change. It is not posted as a comment: a guard in this repository keeps
+  an agent from publishing speech under the author's name. The merge uses no override: if GitHub
+  itself refuses the merge, it is not made.
+- What is lost: the run is on one machine and is not independent of the person merging; nothing
+  deploys, because the deploy workflow cannot run; the weekly scheduled scans do not run. Run
+  `scripts/ci-local.sh --all` on `main` from time to time in their place.
+- This ends when Actions can run again. Making the repository public makes Actions free, which
+  the launch plan already intends; a self-hosted runner on the author's machine is the other way,
+  and must be removed before the repository is public.
+
 ## Rendering on phone and desktop
 
 The text is one fluid column capped at a reading measure of 42rem; the header and footer share

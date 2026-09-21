@@ -58,6 +58,11 @@ apply in full. This file adds only what is specific to this repository.
   invent a quotation or a reference. A change to the References page is recorded in the register
   in the same pull request. `python3 scripts/check-sources.py` holds this; the rule is in
   [docs/doctrine-guardrails.md](docs/doctrine-guardrails.md), section 6.
+- While GitHub Actions cannot run for this repository (decided by the author on 2026-09-21, see
+  [docs/architecture.md](docs/architecture.md)), the gate before a merge is
+  `bash scripts/ci-local.sh` passing on the pull request's head commit, rebased on `main`, with
+  the script's output written into the merge commit body. Never merge with an override, and never call the local
+  run green if any job failed.
 - The toolkit copy under `.claude/toolkit/` is vendored at a pinned version. Never edit it by
   hand; change it with `sct update`.
 - Every Claude Code file written for this repository starts with `upl-`: agents, skills, rules,

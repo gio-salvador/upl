@@ -77,6 +77,10 @@ site checks below, `bash scripts/check.sh mobile` only the rendering gate, and
 `bash scripts/check.sh gates` runs only the doctrine gate, the cross-reference gate, the
 infrastructure posture gate and the toolkit gates.
 
+`bash scripts/ci-local.sh` runs every job CI runs, under the names they carry on GitHub, the
+secret scan and the dependency scan included. It is the gate before a merge while GitHub Actions
+cannot run for this repository ([architecture.md](architecture.md)).
+
 ```bash
 npm --prefix site run lint:md
 npm --prefix site run build
