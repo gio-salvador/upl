@@ -2352,6 +2352,55 @@ Nothing is drafted, because there is nothing in the text to draw it from. The pa
 "recreational drugs" and the two traditions it cites both count alcohol as an intoxicant, but the
 page never names it, and a reader will ask. This one needs the author's answer.
 
+## Page clarity, step 7: the gratitude affirmations, drafted for the author's review (decision C7)
+
+The four gratitude pages describe an affirmation and give none, so a reader who comes for words
+to say finds none. An affirmation is what a follower says aloud, and is the author's more than
+any other text here. These four are **drafts to prompt the author's own**, applied in a pull
+request of their own on the author's instruction of 21 September 2026 to prepare the remaining
+work "as if I had accepted all your suggestions". Nothing is merged. No page is locked, so the
+baseline is untouched.
+
+Each draws only on what its page already says, names no tradition, and addresses no person, in
+keeping with decision D1. "I am light from the source" is belief 4's own phrase.
+
+**Checked.** The first run of the matrix gate found the same introductory line on all four pages;
+it now stands once, on the section page. Second run clean.
+
+### P99. The section page
+
+- Page: `content/3-practice/gratitude-affirmations/README.md`. Addition, under "The affirmations":
+
+  > Each page below ends with an example affirmation. It may be said aloud or in silence, and
+  > is meant to be changed to fit one's own life.
+
+### P100. Gratitude for Relationships
+
+  > I give thanks for the people in my life: for those who raised me, those who walk beside
+  > me, those I work with and those I meet. I am grateful for their love, their support and
+  > their wisdom, and for the difficulties between us, which teach me. May I be to them what
+  > they have been to me.
+
+### P101. Gratitude for Life's Blessings
+
+  > I give thanks for the food on my table, the roof over my head, the clothes I wear and the
+  > tools that ease my day. I do not take them for granted. I remember those who go without,
+  > and I will share what I have.
+
+### P102. Gratitude for Earth and Environmental Blessings
+
+  > I give thanks for the air I breathe, the water I drink, the soil that feeds me and the
+  > living world of which I am a part. I receive these as gifts, and I will care for the Earth
+  > that gives them.
+
+### P103. Gratitude for the Gift of Life and the Journey of Existence
+
+  > I give thanks for my life: for its joy and its sorrow, its successes and its failures, its
+  > loves and its losses. Each has taught me. I am light from the source, and I am grateful to
+  > be here.
+
+Each is added at the end of its page under the heading "An affirmation".
+
 ## Open doctrinal questions
 
 Questions the text does not answer and the author has said are not yet decided. No page states or
