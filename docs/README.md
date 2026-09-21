@@ -15,6 +15,7 @@ it. The teachings themselves are not here; they live in [content/](../content/RE
 | [site-review.md](site-review.md) | A page-by-page review of the website from 18 September 2026, with proposed improvements. |
 | [page-clarity-review.md](page-clarity-review.md) | Every page read top to bottom on 21 September 2026 and judged for clarity, alignment, logic and ease, one line each. |
 | [page-descriptions.md](page-descriptions.md) | The one-sentence description of every page, as the author approved them on 21 September 2026. |
+| [publish-readiness.md](publish-readiness.md) | Where the text and the site stand on the way to being published: what is done, the independent review, the open pull requests in merge order, and what only the author can do. |
 | [agents/](agents/README.md) | The Claude Code agents of this repository, starting with the steward of the teachings. |
 | [security.md](security.md) | What is protected and how to report a problem. |
 | [runbook-go-live.md](runbook-go-live.md) | The one-time steps that connect the repository to Cloudflare. |

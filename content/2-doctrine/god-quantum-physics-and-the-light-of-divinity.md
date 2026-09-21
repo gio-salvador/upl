@@ -14,7 +14,7 @@ God transcends anthropomorphic confines to embody the principle of light itself:
 
 God is not a person but the source. From that source flows a pure light, and all that exists, ourselves included, is light from it. Pure light holds many colours. Love, forgiveness, gratitude and every other positive feeling and action are the colours of God's light, and whoever vibrates with any of them is vibrating in the light of God. Everyone is light from God. To practise love, forgiveness and gratitude amplifies what a person already is: it brings them closer to God and further from darkness, which is only the lack of light.
 
-When the teachings speak of God's love, they speak of the nature of the light itself and not of the feeling of a person. Other traditions have spoken of the same source: the Chandogya Upanishad says of the self and the ultimate reality, "you are that", and Seicho-No-Ie speaks of each person as a child of God, a being of spirit and not of matter.
+When the teachings speak of God's love, they speak of the nature of the light itself and not of the feeling of a person. Other traditions have spoken of the same source: the Chandogya Upanishad says, "you are that", and Seicho-No-Ie speaks of each person as a child of God, a being of spirit and not of matter.
 
 UPL offers this as spiritual teaching, in the language of light, and not as a claim of physics.
 
