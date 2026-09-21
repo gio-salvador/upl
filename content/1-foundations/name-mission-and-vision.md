@@ -13,7 +13,7 @@ Emerging at a time marked by fragmentation, UPL, the Unified Path of Light, stan
 
 ## The mission
 
-The mission of UPL is to inspire a spiritual journey marked by compassion, wisdom, and enlightenment. It expects growth and transformation through an unwavering commitment to the principles of unity, ethical living, and continuous learning. It strengthens the spiritual fabric of a global community tied to divine light, encouraging individuals to explore the intricacies of their souls, share profound experiences, and uplift each other on the path of enlightenment.
+The mission of UPL is to inspire a spiritual journey marked by compassion, wisdom, and enlightenment. It encourages growth and transformation through an unwavering commitment to the principles of unity, ethical living, and continuous learning. It strengthens the spiritual fabric of a global community tied to divine light, encouraging individuals to explore the intricacies of their souls, share profound experiences, and uplift each other on the path of enlightenment.
 
 ## The vision
 

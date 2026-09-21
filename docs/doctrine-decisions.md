@@ -1175,7 +1175,14 @@ no baseline change needed, source gate passing.
   UPL's own words, so it is the author's to write.
 - **Christian contemplative prayer** as a fourth form of meditation has no recorded source yet.
 
-## D6: proposed wording, waiting for the author
+## D6: wording approved and applied
+
+The author approved P37 to P45 on 21 September 2026 and they were applied exactly as written. On
+the author's instruction the baseline was recorded with `--accept-core` and `--waive-imbalance`.
+Verified by comparing the baseline before and after: three fingerprints changed (the Abstract,
+Name, Mission, and Vision, and the Ethical and Moral Development section page) and no imbalance
+record moved. The four registers are a new concept in the cross-reference matrix, owned by that
+section page.
 
 **Checked before asking.** The passage and the eight changes were applied in a scratch tree and
 run through the doctrine, matrix and source gates and the lint. Doctrine gate: only the three

@@ -15,7 +15,7 @@ By engaging in shared study of sacred texts and spiritual discussions, members o
 
 ## Service and Philanthropy
 
-Emphasising the importance of karma and dharma, UPL expects community initiatives aimed at service, philanthropy, and environmental stewardship. Through acts of collective service, the community embodies the principles of mindful action and positive thinking, impacting wider society in meaningful ways.
+Emphasising the importance of karma and dharma, UPL encourages community initiatives aimed at service, philanthropy, and environmental stewardship. Through acts of collective service, the community embodies the principles of mindful action and positive thinking, impacting wider society in meaningful ways.
 
 ## Celebrations and Rituals
 
