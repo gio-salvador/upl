@@ -34,6 +34,8 @@ Ask Claude Code in this repository, in plain words:
   sure of. Unsure statements come back marked `[VERIFY]`.
 - Run `scripts/check-content-index.py --record` without having re-read the changed pages
   against [cross-reference.md](../cross-reference.md), or make itself the owner of a concept.
+- State something about another tradition, a figure, a book or science without a row in
+  [sources.md](../sources.md) to support it.
 - Write for search engines or language models.
 - Commit, push or open a pull request. Wording changes and structural changes are reported
   apart so they can go in separate pull requests.

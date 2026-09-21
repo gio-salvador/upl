@@ -134,4 +134,36 @@ and absent in spirit. That is what review is for.
    traditions the section has not leaned on already.
 3. Run `python3 scripts/check-doctrine.py --report` and read the counts for the page and its
    section.
-4. Run `bash scripts/check.sh`, then open the pull request.
+4. If the page says anything about another tradition, a figure, a book or science, record the
+   source first (section 6).
+5. Run `bash scripts/check.sh`, then open the pull request.
+
+## 6. Sources
+
+A teaching is believed, not proved, and needs no source. A statement about the world does: what
+another tradition teaches, what a figure said, what a book contains, what science has found.
+Such a statement is only as good as its source, and a religion that honours other traditions
+owes them accuracy.
+
+Rules for every new or changed page, under `content/` and under `docs/`:
+
+1. **Record before you rely.** A statement about another tradition, a named figure, a book or
+   science goes in only with a row in the [source register](sources.md) that supports it.
+2. **Cite by id.** Pages point at a source by its id, such as S07. The link itself lives in the
+   register and nowhere else, so it is corrected in one place.
+3. **Primary before secondary.** The scripture, the paper, the publisher, the tradition's own
+   body. An encyclopaedia is for orientation, and is replaced before the statement reaches a
+   teaching.
+4. **Quote exactly or not at all.** Never invent a quotation, a scripture reference or a
+   historical detail. If it cannot be checked, it is marked to verify and left out of the page.
+5. **Credit what is borrowed.** An image, a phrase or a passage taken from another tradition is
+   credited on the page that uses it.
+6. **The bibliography and the register move together.** A change to
+   [References](../content/5-context/references.md) is recorded in the register in the same
+   pull request.
+
+`scripts/check-sources.py`, run by `scripts/check.sh`, holds the mechanical part: complete rows,
+no outside link on a claim-bearing page that is not in the register, no cited id that does not
+exist, no recorded source that nothing cites, and References and the register entry for entry.
+It cannot tell whether a source is good or says what the row claims. That is for the `citation`
+and `domain-accuracy` lenses of the content review, and for the author.

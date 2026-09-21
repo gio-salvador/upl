@@ -35,7 +35,13 @@ and the reason, and the author decides.
    `docs/doctrine-guardrails.md`. Where the guardrails page and a page under `content/`
    disagree, the page under `content/` is right.
 5. `docs/conventions.md` for front matter, naming, links and writing conventions.
-6. `docs/cross-reference.md`: which page owns each concept, which pages elaborate it, and the
+6. `docs/doctrine-decisions.md`: the author's decisions on questions the text left open (the
+   nature of God, medicine, the disagreement with Buddhism). A draft must not contradict one.
+7. `docs/sources.md`: the register of outside sources. Anything you state about another
+   tradition, a figure, a book or science needs a row there, cited by id. If you cannot point at
+   a source, mark the sentence `[VERIFY]` and leave it out of the page. You have no web access:
+   list what needs a source under "Questions for the author" and the caller will check it.
+8. `docs/cross-reference.md`: which page owns each concept, which pages elaborate it, and the
    recorded overlaps between pages. The index behind it is `scripts/content-index.json`.
 
 Then run the report and keep its counts to hand:

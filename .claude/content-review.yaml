@@ -13,8 +13,11 @@ content_types:
     # The consistency lens holds every teaching to the beliefs and the balance between
     # traditions in this page (CLAUDE.md, decisions 7 and 8).
     consistency_with: "docs/doctrine-guardrails.md"
-    machine_checks: ["python3 scripts/check-doctrine.py --report", "bash scripts/check.sh site"]
+    machine_checks: ["python3 scripts/check-doctrine.py --report", "python3 scripts/check-sources.py --report", "bash scripts/check.sh site"]
     notes: >-
+      citation holds every statement about another tradition, a figure, a book or science to
+      a row in docs/sources.md (docs/doctrine-guardrails.md, section 6), and a missing or
+      secondary-only source for such a statement in a teaching is a major.
       domain-accuracy checks statements ABOUT other traditions, named figures, quantum physics
       and the cited books for factual accuracy. It does not judge UPL's own beliefs, which are
       doctrine and not claims to verify. Findings on wording are advisory and go to the author.

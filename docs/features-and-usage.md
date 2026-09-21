@@ -38,6 +38,13 @@ without the website.
    python3 scripts/check-content-index.py --record
    ```
 
+6. If the page says anything about another tradition, a figure, a book or science, add the
+   source to the [source register](sources.md) and cite it by id, then:
+
+   ```bash
+   python3 scripts/check-sources.py
+   ```
+
 The website picks the page up on the next build. Nothing in `site/` needs to change.
 
 ## Add a section

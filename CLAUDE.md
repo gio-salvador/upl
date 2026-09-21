@@ -53,6 +53,11 @@ apply in full. This file adds only what is specific to this repository.
   the page touches a concept or a finding, then run
   `python3 scripts/check-content-index.py --record`. `--record` states that the pages were
   re-read against the matrix; never run it just to make the gate pass.
+- Any statement about another tradition, a named figure, a book or science, under `content/` or
+  `docs/`, needs a row in [docs/sources.md](docs/sources.md) first, and is cited by its id. Never
+  invent a quotation or a reference. A change to the References page is recorded in the register
+  in the same pull request. `python3 scripts/check-sources.py` holds this; the rule is in
+  [docs/doctrine-guardrails.md](docs/doctrine-guardrails.md), section 6.
 - The toolkit copy under `.claude/toolkit/` is vendored at a pinned version. Never edit it by
   hand; change it with `sct update`.
 - Every Claude Code file written for this repository starts with `upl-`: agents, skills, rules,
