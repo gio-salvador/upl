@@ -1564,11 +1564,14 @@ sickness and death are nonexistent", so the credit names the debt and the differ
 - **A Christian form of meditation** is sourced and would be a new page under Practice. It is a
   new teaching more than a matter of balance, so it is left for the author to ask for.
 
-## Tradition balance, step 7: proposed wording and caps, waiting for the author
+## Tradition balance, step 7: wording and caps approved and applied
 
-The Context part, and the caps that keep the balance. These pages are not locked. Nothing here is
-applied, except two report-only lines in the doctrine gate, which cannot change what may be
-published: `--report` now shows how many traditions each part names and which tradition each core
+The Context part, and the caps that keep the balance. The author approved P61 to P63 on 21
+September 2026 and they were applied exactly as written; the whole-text cap in
+`scripts/doctrine-gate.json` is now 25 per cent. These pages are not locked and no recorded
+imbalance remained, so the gate asked for neither `--accept-core` nor `--waive-imbalance`, and
+neither was run: the doctrine baseline is untouched. Also applied, two report-only lines in the
+doctrine gate, which cannot change what may be published: `--report` now shows how many traditions each part names and which tradition each core
 belief names first.
 
 **Checked before asking.** The drafts were applied in a scratch tree and run through the doctrine,
