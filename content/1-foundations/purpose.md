@@ -1,6 +1,7 @@
 ---
 title: "Purpose"
 order: 4
+description: "Why the Unified Path of Light exists: a spiritual home for people drawn to faith but not to dogma, between rigid doctrine and atheism."
 ---
 
 # Purpose

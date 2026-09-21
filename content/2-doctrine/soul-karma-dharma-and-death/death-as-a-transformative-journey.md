@@ -1,6 +1,7 @@
 ---
 title: "Death as a Transformative Journey"
 order: 5
+description: "Death is not an end but a passage in the soul's journey, a teaching that comes to UPL chiefly from Seicho-No-Ie and the Bhagavad Gita."
 ---
 
 # Death as a Transformative Journey

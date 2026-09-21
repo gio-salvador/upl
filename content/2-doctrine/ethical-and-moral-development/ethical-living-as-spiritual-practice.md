@@ -1,6 +1,7 @@
 ---
 title: "Ethical Living as Spiritual Practice"
 order: 3
+description: "To choose kindness, integrity and generosity is itself a spiritual practice, one that advances both a person's growth and humanity's."
 ---
 
 # Ethical Living as Spiritual Practice

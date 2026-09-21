@@ -1,6 +1,7 @@
 ---
 title: "Gratitude for Relationships"
 order: 1
+description: "A daily affirmation of thanks for the people in one's life, for their love, support and wisdom and even the challenges they bring."
 ---
 
 # Gratitude for Relationships

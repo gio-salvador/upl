@@ -1,6 +1,6 @@
 # Make every page clear, consistent and easy to follow
 
-**Status: proposed, 21 September 2026.** No step has begun. The review behind it is
+**Status: in progress.** Step 1 is done, 21 September 2026. The review behind it is
 [page-clarity-review.md](../page-clarity-review.md); the description drafts are
 [page-descriptions.md](../page-descriptions.md).
 
@@ -46,7 +46,7 @@ The author's, before the step that needs each.
 
 | Id | Question | Needed by |
 | -- | -------- | --------- |
-| C1 | Approve, or edit, the 81 descriptions. | Step 1 |
+| C1 | Approve, or edit, the 81 descriptions. **Decided 21 September 2026: all approved.** | Step 1 |
 | C2 | The God page: keep quantum physics as analogy only, and drop "literal" and the observer-effect sentence? Recommended: yes, it is what D1 already says. | Step 3 |
 | C3 | One name for a follower. Recommended: "follower", already the most used, with "Synphotodosist" kept where the name itself is the point. | Step 7 |
 | C4 | Does sobriety include alcohol? | Step 7 |
@@ -59,7 +59,7 @@ The author's, before the step that needs each.
 
 | Step | What | Pages | Kind | Status |
 | ---- | ---- | ----: | ---- | ------ |
-| 1 | Descriptions into front matter; contents cards then show them (S5, S6 in the site review) | 81 | Metadata | Drafted |
+| 1 | Descriptions into front matter (S5 in the site review). Showing them on the contents cards (S6) is a site change and goes in its own pull request | 81 | Metadata | Done |
 | 2 | Give each fragment its subject and verb | 8 | Wording | - |
 | 3 | Bring the God page, Abstract, Continuum page and Conclusion into line with D1, D2 and D5 | 4 | Wording | - |
 | 4 | Remove the ranking phrases from Purpose and Comparative Analysis; gloss Socinianism | 3 | Wording | - |

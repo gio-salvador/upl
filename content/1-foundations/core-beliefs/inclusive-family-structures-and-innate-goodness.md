@@ -1,6 +1,7 @@
 ---
 title: "Inclusive Family Structures and Innate Goodness"
 order: 4
+description: "UPL recognises families of every form, and holds that every person is born with a disposition towards goodness: each of us is light from the source."
 ---
 
 # Inclusive Family Structures and Innate Goodness

@@ -1,6 +1,7 @@
 ---
 title: "The Family Dynamic: Embracing Diversity and Unity"
 order: 1
+description: "The family as a sacred institution in all the forms it takes today, and how UPL's teaching stands beside what the traditions have taught."
 ---
 
 # The Family Dynamic: Embracing Diversity and Unity

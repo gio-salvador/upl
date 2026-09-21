@@ -1,6 +1,7 @@
 ---
 title: "Arts and Creative Expression"
 order: 3
+description: "The arts as expressions of the human spirit and reflections of the divine, and creativity as part of daily and community life."
 ---
 
 # Arts and Creative Expression

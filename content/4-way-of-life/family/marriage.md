@@ -1,6 +1,7 @@
 ---
 title: "Marriage as a Spiritual Union"
 order: 2
+description: "Marriage in UPL is a spiritual union of mutual support and growth: encouraged, never required."
 ---
 
 # Marriage as a Spiritual Union

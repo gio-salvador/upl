@@ -1,6 +1,7 @@
 ---
 title: "Professional Development"
 order: 1
+description: "Work as part of the spiritual journey: learning in one's career, ethical practice, and an honest living that harms no one."
 ---
 
 # Professional Development

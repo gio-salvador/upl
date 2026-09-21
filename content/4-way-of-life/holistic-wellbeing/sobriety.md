@@ -1,6 +1,7 @@
 ---
 title: "Sobriety and the Avoidance of Recreational Drugs"
 order: 1
+description: "Why UPL values sobriety and discourages recreational drugs, with its guidance on eating well and on exercise."
 ---
 
 # Sobriety and the Avoidance of Recreational Drugs

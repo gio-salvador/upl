@@ -1,6 +1,7 @@
 ---
 title: "Other Spiritual Leaders"
 order: 7
+description: "UPL honours many teachers beyond those with a page of their own, and others will join them as the teachings grow."
 ---
 
 # Other Spiritual Leaders

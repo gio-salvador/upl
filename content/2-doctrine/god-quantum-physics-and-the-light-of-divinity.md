@@ -1,6 +1,7 @@
 ---
 title: "God, Quantum Physics, and the Light of Divinity"
 order: 1
+description: "God is not a person but the source of light, and all that exists is light from it. Quantum physics serves as an analogy, not as proof."
 ---
 
 # God, Quantum Physics, and the Light of Divinity

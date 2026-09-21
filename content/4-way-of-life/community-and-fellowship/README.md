@@ -1,6 +1,7 @@
 ---
 title: "Community and Fellowship: The Social Fabric"
 order: 2
+description: "Community is a vital part of the spiritual path in UPL: a network in which people support each other's growth and practise together."
 ---
 
 # Community and Fellowship: The Social Fabric

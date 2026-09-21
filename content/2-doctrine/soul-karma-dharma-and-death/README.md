@@ -1,6 +1,7 @@
 ---
 title: "Soul, Karma, Dharma, and Death: Ethical and Spiritual Principles"
 order: 3
+description: "UPL's teaching on the soul's journey: an immortal soul in a body like a cocoon, guided by karma and dharma, for which death is a passage."
 ---
 
 # Soul, Karma, Dharma, and Death: Ethical and Spiritual Principles

@@ -1,6 +1,7 @@
 ---
 title: "Laozi and the Way of Harmony"
 order: 5
+description: "Laozi is honoured for the Tao Te Ching and its teaching of the Way: a nameless source, action that does not force, gentleness and contentment."
 ---
 
 # Laozi and the Way of Harmony

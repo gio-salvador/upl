@@ -1,6 +1,7 @@
 ---
 title: "Spiritual Evolution and Practice"
 order: 2
+description: "UPL calls for continuous spiritual growth through practice, and leaves each person free to find the disciplines that serve it."
 ---
 
 # Spiritual Evolution and Practice

@@ -1,6 +1,7 @@
 ---
 title: "The Spiritual Dimension of Environmental Stewardship"
 order: 4
+description: "Caring for the environment is a spiritual duty: to heal the planet is a sacred act, and a healing of oneself."
 ---
 
 # The Spiritual Dimension of Environmental Stewardship

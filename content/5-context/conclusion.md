@@ -1,6 +1,7 @@
 ---
 title: "Conclusion"
 order: 3
+description: "The conclusion of the founding paper: a summary of UPL's teaching, from divine light and the soul to family, community, the Earth and learning."
 ---
 
 # Conclusion

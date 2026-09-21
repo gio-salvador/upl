@@ -1,6 +1,7 @@
 ---
 title: "Gratitude for the Gift of Life and the Journey of Existence"
 order: 4
+description: "A daily affirmation of thanks for life itself, its joy and sorrow, success and failure, each a part of spiritual growth."
 ---
 
 # Gratitude for the Gift of Life and the Journey of Existence

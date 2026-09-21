@@ -1,6 +1,7 @@
 ---
 title: "Foundations"
 order: 1
+description: "Where the Unified Path of Light comes from, what its name means, why it exists, and the ten core beliefs everything else builds on."
 ---
 
 # Foundations

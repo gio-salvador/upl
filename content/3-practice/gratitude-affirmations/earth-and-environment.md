@@ -1,6 +1,7 @@
 ---
 title: "Gratitude for Earth and Environmental Blessings"
 order: 3
+description: "A daily affirmation of thanks for the Earth: the air, the water, the soil and all that sustains us, inspiring care for the environment."
 ---
 
 # Gratitude for Earth and Environmental Blessings

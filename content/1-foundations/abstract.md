@@ -1,6 +1,7 @@
 ---
 title: "Abstract"
 order: 2
+description: "A one-paragraph summary of the Unified Path of Light: divine light, the soul's journey, karma and dharma, enlightened figures, and a life of gratitude and learning."
 ---
 
 # Abstract

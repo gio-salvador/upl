@@ -1,6 +1,7 @@
 ---
 title: "Historical Context"
 order: 1
+description: "The roots of UPL, and what it has received from Islam, Christianity, Judaism, Hinduism, Buddhism, Seicho-No-Ie and other traditions."
 ---
 
 # Historical Context

@@ -1,6 +1,7 @@
 ---
 title: "Engaging with Holy Texts"
 order: 5
+description: "UPL reads the holy texts of every tradition as symbol and teaching, not as literal truth: a text is a means and not an end."
 ---
 
 # Engaging with Holy Texts

@@ -1,6 +1,7 @@
 ---
 title: "Ethical and Moral Development: The Cornerstone of UPL"
 order: 4
+description: "Ethics is the cornerstone of UPL. This page sets out how UPL speaks to its followers, and the few things it asks without exception."
 ---
 
 # Ethical and Moral Development: The Cornerstone of UPL

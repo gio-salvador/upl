@@ -1,6 +1,7 @@
 ---
 title: "Gratitude for Life's Blessings"
 order: 2
+description: "A daily affirmation of thanks for food, shelter and comfort, mindful of the needs of others and of a fair sharing of resources."
 ---
 
 # Gratitude for Life's Blessings

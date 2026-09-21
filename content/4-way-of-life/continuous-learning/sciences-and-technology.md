@@ -1,6 +1,7 @@
 ---
 title: "Sciences and Technology"
 order: 2
+description: "UPL's commitment to science, and its hope that technology guided by ethics can help end misery, hunger and disease."
 ---
 
 # Sciences and Technology

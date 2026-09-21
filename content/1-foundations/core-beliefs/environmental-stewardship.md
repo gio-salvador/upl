@@ -1,6 +1,7 @@
 ---
 title: "Environmental Stewardship"
 order: 8
+description: "UPL asks its followers to live sustainably and protect the Earth, learning from indigenous peoples and from the scriptures."
 ---
 
 # Environmental Stewardship

@@ -1,6 +1,7 @@
 ---
 title: "Muhammad and the Unity of God"
 order: 2
+description: "Muhammad is honoured for teaching the oneness of God and for a life of dedication, compassion, social justice and the pursuit of knowledge."
 ---
 
 # Muhammad and the Unity of God

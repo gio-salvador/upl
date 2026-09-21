@@ -1,6 +1,7 @@
 ---
 title: "Masaharu Taniguchi and the Power of Positive Thinking"
 order: 4
+description: "Masaharu Taniguchi, founder of Seicho-No-Ie, is honoured for teaching the power of positive thinking and the divine nature of the true self."
 ---
 
 # Masaharu Taniguchi and the Power of Positive Thinking

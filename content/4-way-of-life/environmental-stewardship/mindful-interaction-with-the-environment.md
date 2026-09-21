@@ -1,6 +1,7 @@
 ---
 title: "Mindful Interaction with the Environment"
 order: 2
+description: "Sustainable living in practice, and the celebrations that follow the solstices, the equinoxes and the turning of the seasons."
 ---
 
 # Mindful Interaction with the Environment

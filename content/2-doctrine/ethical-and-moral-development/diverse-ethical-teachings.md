@@ -1,6 +1,7 @@
 ---
 title: "Incorporating Diverse Ethical Teachings"
 order: 2
+description: "What UPL's ethics draws from the Buddha's Eightfold Path, the moral teaching of Jesus, Islam's justice and charity, and the Hindu principle of dharma."
 ---
 
 # Incorporating Diverse Ethical Teachings

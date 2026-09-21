@@ -1,6 +1,7 @@
 ---
 title: "Shinsokan Meditation"
 order: 2
+description: "Shinsokan, the prayerful meditation of Seicho-No-Ie: how it is practised, and what UPL takes from it and what it does not."
 ---
 
 # Shinsokan Meditation

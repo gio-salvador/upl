@@ -63,6 +63,9 @@ where to start. The fix is in `content/README.md`, so it is the author's: a link
 
 #### S5. Most descriptions are a cut-off first sentence
 
+**Done 21 September 2026:** every page now carries a description the author approved
+([page-descriptions.md](page-descriptions.md)). S6 is now unblocked.
+
 69 of 80 meta descriptions are the first paragraph cut at 160 characters and ending in "…".
 These are what search results, link previews and `llms.txt` show. Where the first sentence is a
 fragment carried over from the paper (see W1 below), the description reads badly, for example

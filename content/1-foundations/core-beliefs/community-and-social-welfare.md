@@ -1,6 +1,7 @@
 ---
 title: "Community and Social Welfare"
 order: 9
+description: "UPL envisages a community whose members support one another in spirit and body, where no one is turned away and to lead is to serve."
 ---
 
 # Community and Social Welfare

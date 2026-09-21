@@ -1,6 +1,7 @@
 ---
 title: "The Role of Enlightened Figures"
 order: 2
+description: "UPL honours teachers from many traditions as embodiments of divine light, among them Jesus, Muhammad, the Buddha, Masaharu Taniguchi, Laozi and Guru Nanak."
 ---
 
 # The Role of Enlightened Figures

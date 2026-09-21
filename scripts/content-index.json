@@ -1691,327 +1691,327 @@
   "pages": {
     "content/1-foundations/README.md": {
       "status": "current",
-      "fingerprint": "66275d70a4486fd57cf0f7e358f222e2d35085d9652465853234cef911fd3da7"
+      "fingerprint": "035e787d5a591c7611434bc3236bef366402331641a9eb536a0d2a69fd4012de"
     },
     "content/1-foundations/abstract.md": {
       "status": "current",
-      "fingerprint": "fef05b1442ec343d1be6983aae8c30e0ff1b8f01c20e1cf39febf50df0dbdc27"
+      "fingerprint": "292b72dc3be80f5ba0f650ed2b9bc6060b9f442bd2585f3b6282bbc0a8ad02aa"
     },
     "content/1-foundations/author-note.md": {
       "status": "current",
-      "fingerprint": "f13bd22a0c45428bdd5d2f7dff14b01cef557d6b731305aec0c15265812bba68"
+      "fingerprint": "179e11ef92805d0d1108c60ed04a91da056fff25e308a9b8ccf94d1d8f15f510"
     },
     "content/1-foundations/core-beliefs/README.md": {
       "status": "current",
-      "fingerprint": "1e40605f2844841a21069875f5a1e594b95725be78770c4c9113b02e00e2ee4b"
+      "fingerprint": "1a9f32403a7079a45af369e5aee74fd9b809a69dcd9bc37c6af4836aa5ea13c9"
     },
     "content/1-foundations/core-beliefs/community-and-social-welfare.md": {
       "status": "current",
-      "fingerprint": "6cf43c494634f0536a917eab7fcce8c74b952e4c9d41ce802de37d6ecad73f75"
+      "fingerprint": "a6352b5330360d16f6c48aa51cfe070031b7416290ecc13fbd318539822bacdb"
     },
     "content/1-foundations/core-beliefs/compassionate-action.md": {
       "status": "current",
-      "fingerprint": "b372b7f7b827e5a97508e244665e6eb2834f3e4b9e58bab9f44ee9a80cc5d494"
+      "fingerprint": "ee400266c05746390e30aaaf1dc8288b39726f7f31289d237b7e44d00dc178e9"
     },
     "content/1-foundations/core-beliefs/environmental-stewardship.md": {
       "status": "current",
-      "fingerprint": "f17616ccc546dcfa0750e75ea6b2086822e9a8975955ed91da68081ba0a39f63"
+      "fingerprint": "4c9ba21f1b458326c7672b5a35b3f062af917f9a3b9c5f1039a0fae1b28de10d"
     },
     "content/1-foundations/core-beliefs/ethical-and-moral-living.md": {
       "status": "current",
-      "fingerprint": "2d46f5f01197332708078607629f5562cdbee4dbc38dddd3fedc8cdd8120b3b9"
+      "fingerprint": "478f4ae4988201328943586a88b0f49507df24c75ec5dda5d4ac7d77a511284f"
     },
     "content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md": {
       "status": "current",
-      "fingerprint": "a74c04390d6a33b86050fa8380c821710f65422665e0f3db1446b4704217ec2a"
+      "fingerprint": "23477b72bc6be7f781e6e633585b6dd0a11852665fc0dcf6e0a02e4fce624467"
     },
     "content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md": {
       "status": "current",
-      "fingerprint": "1e3dee9ee5cf4c5fc4304cf1532fbf9a03a6c5a73a6df53c49d8f1cd4a27f767"
+      "fingerprint": "1664e17c692926be9b81fa82b04ba221ea341d41064b2cb9f48c37bd03bbccf9"
     },
     "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md": {
       "status": "current",
-      "fingerprint": "493cdc852c3f64ad1212c7dbf6520aaee6b8878f449d16323f06a80ebcb69c77"
+      "fingerprint": "02301b5beefbf8a6ee0786be243dcdfbf8ea233e38721138a1f3c1eb0225c881"
     },
     "content/1-foundations/core-beliefs/respect-for-the-wisdom-of-world-traditions.md": {
       "status": "current",
-      "fingerprint": "eee39e2dc9660cd7d57fb14e0379253a66cc3c9416c913d3e98db2f1d883727e"
+      "fingerprint": "f75fcc48673a90766dffb4220be3c159012d6f3a6c5d13f394eb6dd12e7a0f52"
     },
     "content/1-foundations/core-beliefs/spiritual-evolution-and-practice.md": {
       "status": "current",
-      "fingerprint": "55acc4fed048ec709c4fc9e9e9991092796b24d80f02b3e1cbd4953e628bd78e"
+      "fingerprint": "404a9a542b7b4aca388a92714289163db018de5778eeaca6d735da78d7926664"
     },
     "content/1-foundations/core-beliefs/unity.md": {
       "status": "current",
-      "fingerprint": "0997a5d91297ca4d54c5de9084e49f89d14f6a1793c472028e03363e3e6496da"
+      "fingerprint": "b70cb480c4aeb9d8ec77a5d9e268b91a504d39c308d033445cd3951a12b65f77"
     },
     "content/1-foundations/name-mission-and-vision.md": {
       "status": "current",
-      "fingerprint": "2878b7d35c107142870523589eaeaab881c9f27efdcfef98826802599b198cf3"
+      "fingerprint": "90a6462dc69ed23009244371df1e892fdc35f96abf7382ae8f5108d1e98bfa30"
     },
     "content/1-foundations/purpose.md": {
       "status": "current",
-      "fingerprint": "e1aad68828bfdc6f2e7c1f91da7860958e94f313411ab33f107d7757b6415f0d"
+      "fingerprint": "591f919876a08c18c310d33853311581d1389e6c8f74030a537c6640725751a9"
     },
     "content/2-doctrine/README.md": {
       "status": "current",
-      "fingerprint": "978ea3b6df0b97d71f1e879186a82600053a8aabc8be91cb9bb08b611574b432"
+      "fingerprint": "20efbd7dfa2299dc4d047692bde0b9d9a698b301656f5eb1f309c581ac2845fa"
     },
     "content/2-doctrine/enlightened-figures/README.md": {
       "status": "current",
-      "fingerprint": "5d1517a77fc31eab7947ca1b6da7640f8f79253cd7e2869b12482a7601cfd420"
+      "fingerprint": "918931648b20048d19677b265d434d7c914c24b373517a1ba45cdd34dce78007"
     },
     "content/2-doctrine/enlightened-figures/buddha.md": {
       "status": "current",
-      "fingerprint": "6349fc1170e641f2e10ffa1664160c67c65b43c35d6127882005a0054a367eda"
+      "fingerprint": "85a8efb0a9d6cbc3d32611fe8fc302b48876418116c82c12cb3fb06373570bc6"
     },
     "content/2-doctrine/enlightened-figures/guru-nanak.md": {
       "status": "current",
-      "fingerprint": "4a56a72eb9dc6cc06f792f53b206521e12405c6cca46ac02bf57d9e0e6392d19"
+      "fingerprint": "e1d2f5567ec9a7bc4bf90577c856b0304a4d9c6370291d75642d378adcb68cb1"
     },
     "content/2-doctrine/enlightened-figures/jesus.md": {
       "status": "current",
-      "fingerprint": "ae8c21e89df2346f3fdcde2b8110cbeb0324774b60e64382b0866beffb5e63df"
+      "fingerprint": "6b94db8d6d06482808fb76ce8a50d802a66e4bc7f03d134cff4604ab81da6455"
     },
     "content/2-doctrine/enlightened-figures/laozi.md": {
       "status": "current",
-      "fingerprint": "34fad27f9246ff2df6dd3f440b8a95daca746924572daa0d0eaed3c63e533677"
+      "fingerprint": "891914873288ec017f6ccde6c634da84faaf235e6a079d86a10b4cc38f7c59dd"
     },
     "content/2-doctrine/enlightened-figures/masaharu-taniguchi.md": {
       "status": "current",
-      "fingerprint": "8c00b54eea21d94a2df72ebd22647c2b840b01000f17ab04ace55ded1bb431b6"
+      "fingerprint": "d3bd41a25644add013669efea21646df818590e7dc8d09ce05e55c1604fe585a"
     },
     "content/2-doctrine/enlightened-figures/muhammad.md": {
       "status": "current",
-      "fingerprint": "4cdf29072ca98c174f738404993068a30f4c47c92d594bc0346a2eb6c9821113"
+      "fingerprint": "0f5cd2796d6eae83dfc855434a4efa391b6d6bff7efb13cc41e2e2f22a2b5910"
     },
     "content/2-doctrine/enlightened-figures/other-spiritual-leaders.md": {
       "status": "current",
-      "fingerprint": "7757672a75bc86cc7fb40ad1646da0346827992895e6635a02ed5f4a8759da26"
+      "fingerprint": "846a512e8eed292ee5afa15b716c33184dae432b3caa7c6e973bc3975a174d28"
     },
     "content/2-doctrine/ethical-and-moral-development/README.md": {
       "status": "current",
-      "fingerprint": "da45a1b60e31c173aef78683b1737bee7a16122a387f9280b711a713bfa31774"
+      "fingerprint": "1df32a848ff361b3e60bd346a79e58b3ed1e6b8e154e37f641ee98813820175c"
     },
     "content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md": {
       "status": "current",
-      "fingerprint": "eaeea4aeabcd9100a3b4464884384b2e8b466bc7e36bd442e20cf2c6112c3812"
+      "fingerprint": "211c82e60db30213e2d346d311a09856e0e04e3fee3eafeae3785bf6f09b4828"
     },
     "content/2-doctrine/ethical-and-moral-development/ethical-living-as-spiritual-practice.md": {
       "status": "current",
-      "fingerprint": "b569cd8c7eb41a135f0416ac5868b7d6321ab1efd647a9a17a9c60feb7b07872"
+      "fingerprint": "50694fed91f8dc6c954278ef29ae958290a958c9f2f8329a5cdadb4d68e9ae40"
     },
     "content/2-doctrine/ethical-and-moral-development/fabric-of-ethics.md": {
       "status": "current",
-      "fingerprint": "26224427a9c0288288df1eb8bcad4cf0dcaa0f37804b6a25b975b4967305d7ee"
+      "fingerprint": "48a1055e9e66b81cedfd8333d23706b69f825d4e9ebb707181158b148d1ce20e"
     },
     "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md": {
       "status": "current",
-      "fingerprint": "19d260dd24ae2e3d36849dd06dbc3b3c726b9408960b270062dfbc0617b9c1de"
+      "fingerprint": "7d48c58ecf08fc95dfea209f5c587e14e659f0276dc834f5c6e8393af3a835e1"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/README.md": {
       "status": "current",
-      "fingerprint": "082062f2ed3220d153df7ef51a03c12c8cd89c60ba3112428da51d0a5dea76e2"
+      "fingerprint": "6757a049f4cca36bb9bd0d947fe4102d7029030a8cac7fac5d5441e62416ab84"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md": {
       "status": "current",
-      "fingerprint": "2e8f7d1a815576f8baab07537d8ded8a9375d216f837029554f550c5397eb732"
+      "fingerprint": "948dd8ddfe58ce0af792a5d1748e2c01bd194cf654c259ab4f4e7f5d7c0c1a8b"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md": {
       "status": "current",
-      "fingerprint": "84792f7de0a0f7d36b4eff45e8cc52cfeb7159e1fdfccd15fe5e76937c09ef37"
+      "fingerprint": "9af1699fe7e4222474149f76a394fa442474b51932fb9028f5e5a56659b0f8b8"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/dharma.md": {
       "status": "current",
-      "fingerprint": "2276f1a886433490c944062df96bd9f0d3cda15452b9d9cf2b65ce4493b08b5c"
+      "fingerprint": "32a16e46fb2f282df2b4c53de01b42113b87b8b4a4e7c598f0a1d7816eb0f82b"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md": {
       "status": "current",
-      "fingerprint": "9e7a6d9ab035ba82396b5e50163884e377f2ea9217303c00e29eb9d3ab629784"
+      "fingerprint": "2b44c30cbf04a1002a39647c57a4cd2a0f3553aaadbe660922a83860b45aac28"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md": {
       "status": "current",
-      "fingerprint": "2cd30d6d83c8ba00740adb331427cf40aa0f3d8fd1bdc02912b086e4b6251790"
+      "fingerprint": "88c55e2212f74c331207fe9d096ff790e0a01e34ad9a398430411603f2a73d2e"
     },
     "content/2-doctrine/soul-karma-dharma-and-death/karma.md": {
       "status": "current",
-      "fingerprint": "a3b1098f5f37b7fbdc99f88dd5a52aff84d2adb274a7fd7ee39b88da7fb1a44d"
+      "fingerprint": "be1b4df8c5c1f5d9b31e424601b9c0b3ea73c46d643656e0ea4209ab659d7ba8"
     },
     "content/3-practice/README.md": {
       "status": "current",
-      "fingerprint": "c07e3fd2fd20af2de32bb43c5e265ca9cc590921c3eae122d7556919ce2b70de"
+      "fingerprint": "0f8c366b9a47e956edb7d2b733d5a1ceee9ba6edc664cce24d42382e7e9d35b3"
     },
     "content/3-practice/gratitude-affirmations/README.md": {
       "status": "current",
-      "fingerprint": "5904525ec03c64c2b5ccf428d253e522531f6b1095d5d9c7de37836213ad64ce"
+      "fingerprint": "8e58857892e2beadd5cc9430a5e8c7539edd718f845ddeb9b0692e691fc8b4c6"
     },
     "content/3-practice/gratitude-affirmations/earth-and-environment.md": {
       "status": "current",
-      "fingerprint": "7c5b8dfddf7e00008f7db004d2973c53d2ce7fa60746fc050226919e3dc0b7c6"
+      "fingerprint": "138365152271b207957378257fd0d1b99db3e011926ba74b21f3a5100b284126"
     },
     "content/3-practice/gratitude-affirmations/gift-of-life.md": {
       "status": "current",
-      "fingerprint": "08b6a0deb19f17f78cb534347d98e60bd16a63a9055960b8de2c5d33b200a50b"
+      "fingerprint": "431c67c2ef8a8d9ec579334d595654b1121c354a7017505d48507b2a2af6912c"
     },
     "content/3-practice/gratitude-affirmations/lifes-blessings.md": {
       "status": "current",
-      "fingerprint": "7a01986147341971912cd038f20229e96c1c73f02954bb2d0356c2aed8107904"
+      "fingerprint": "87decfd08d8e77877c44bfe02e30ba4c3b55dd3e4cf63a6765e3b1dc532b0cae"
     },
     "content/3-practice/gratitude-affirmations/relationships.md": {
       "status": "current",
-      "fingerprint": "6b15b149aaf494871b5f8cc3ddf02a0e00b474a1393964575158434562662ee3"
+      "fingerprint": "a2fd1289ae40f838aff7ba051f3e61ee535b99312826668869a9239e0b38fec8"
     },
     "content/3-practice/holy-texts.md": {
       "status": "current",
-      "fingerprint": "05c451f3504493325bb5507ae98b04e8292df8d721212ad7e20783707dcbc9d3"
+      "fingerprint": "cbfd1e9c1c9d28dfa590032230ce41b19ce50ce24a773645c5fa238b7d4f283f"
     },
     "content/3-practice/meditation/README.md": {
       "status": "current",
-      "fingerprint": "b1fce85b3ffd0f19be7b4c920dbeccd100056ce846fa078365864dabb4cec307"
+      "fingerprint": "70625733785a9317bf10c81aff7b8aef6990a0e62378853bf762108aa2e0fc5f"
     },
     "content/3-practice/meditation/buddhist-meditation.md": {
       "status": "current",
-      "fingerprint": "a61a28f0f226065c66b1a7a6fc19b688e26771aabda09e69d2b201a1a5001ad3"
+      "fingerprint": "4ab24e7a93a616abcab9f604f4ca84c2d9ddd24dfe2d536c00cf009e95afe568"
     },
     "content/3-practice/meditation/hooponopono-meditation.md": {
       "status": "current",
-      "fingerprint": "579e988971ec7234c987f1f728af45075f3a166f55782e54807b72f346b4f537"
+      "fingerprint": "d163da9a09c316e96248bc387c4f5a33a0a4f7cf69e746db8f1da255089367d1"
     },
     "content/3-practice/meditation/shinsokan-meditation.md": {
       "status": "current",
-      "fingerprint": "3f124564c817061872bf7cb7ccaf0ef9e1ff0c9203dbaf742dbddde90f5632a7"
+      "fingerprint": "0d791aceda47f19b1096cc1cd1cce48d60d3f6a5770da19fac79fe7933bfeb0c"
     },
     "content/3-practice/other-practices.md": {
       "status": "current",
-      "fingerprint": "483ab884da9743c49d0de672bcf6df022f1804c5777173170c6bb41f69b455ee"
+      "fingerprint": "400428da9c6a42e0f01489901931f5f5b1a6424a90a74a15a019737700bc950d"
     },
     "content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md": {
       "status": "current",
-      "fingerprint": "563d306e4e409ebdcca53bb371aeb772bdb30d7d976c4b4a81f69fa71754a943"
+      "fingerprint": "715067d30c06a4b1024382ce8dafae480f32000f817e21b70c41a17ac1645d93"
     },
     "content/3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action.md": {
       "status": "current",
-      "fingerprint": "7b1d7436862d8b1716b5d5224e5f30227026c18587e0699c5c9fe871498242f5"
+      "fingerprint": "fbad4c13bb23da15fa9e6acfa92951730c1d726f73397db429729e758ca3a2eb"
     },
     "content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md": {
       "status": "current",
-      "fingerprint": "c3332a8ba2638701a210875357bfa16941c4419494332a84e0b2b5f78333be38"
+      "fingerprint": "d1a40b1d3bebab23c38d144fc9bce79b811efa1bd5250b7d83252cdac43328f7"
     },
     "content/3-practice/prayer.md": {
       "status": "current",
-      "fingerprint": "0900bafe1812a6c4399b6dfaffbccb1b26131fbbf0939db0b809e240eb055493"
+      "fingerprint": "fffb224f894b55504a27d8407357f3099d7dda631a688f95bc2176063f92aee8"
     },
     "content/4-way-of-life/README.md": {
       "status": "current",
-      "fingerprint": "3c60df37917823bc5ede8a8a12131babb3fae394c839a1d8f87704eef0a00129"
+      "fingerprint": "a4eaacf0c63058fcb2a35d3daaa09d31432cc8fde5dd6bc463fe38d439589e86"
     },
     "content/4-way-of-life/community-and-fellowship/README.md": {
       "status": "current",
-      "fingerprint": "dafc6bfef920fde8b70447dbbb6286c60a37f065e2246783941dcbf09c4bb17a"
+      "fingerprint": "72c420d32910e34c916a2b63d31b858c58113b339e9db636fedac7de88eb22f8"
     },
     "content/4-way-of-life/community-and-fellowship/community-engagement.md": {
       "status": "current",
-      "fingerprint": "0de8d51514657324d22150bf147542ffb7820026b455d6c9ddb23a138bf97b70"
+      "fingerprint": "eb5bec32ff66db4927740ce2f79b1b3d88bd2c04a69f68c2e3be0f1833940425"
     },
     "content/4-way-of-life/community-and-fellowship/global-spiritual-network.md": {
       "status": "current",
-      "fingerprint": "0a5dae55b241189029a89e8f2e10abc52bb7bf45181dd4c24dbb2ecff39616ca"
+      "fingerprint": "1ce9f6e4413760efbf2a223930616efc453b17525167dd72da729668871bd3e9"
     },
     "content/4-way-of-life/community-and-fellowship/role-of-community.md": {
       "status": "current",
-      "fingerprint": "7441e55eeafb2da1d46d8c06943fd2c57445c81f41da037c348649cb2b43de95"
+      "fingerprint": "05fe12d0e5dfae266131da54bf9e13f40166ffa12caa373418b15e123f47d066"
     },
     "content/4-way-of-life/continuous-learning/README.md": {
       "status": "current",
-      "fingerprint": "e7857834a2b17c9a855ffdff5bc1e9adab61e5f374130de3ab087623dcdab7cc"
+      "fingerprint": "9a7197905cd57c829fe924b09cee88d14852b370bfc7f7622ca711866dc3b5e2"
     },
     "content/4-way-of-life/continuous-learning/arts-and-creative-expression.md": {
       "status": "current",
-      "fingerprint": "da85af15d8237e76878e18f637647890c40a738f8333e83b265f5d74619730be"
+      "fingerprint": "62a88c4424c24a31443774a1b11dc44245d4639b7b02b9afbd8ae7a57ef31814"
     },
     "content/4-way-of-life/continuous-learning/professional-development.md": {
       "status": "current",
-      "fingerprint": "af2920f3a0a525dedffa331497261b2c3a53f8e9e6a9bffd3b1ab86f2cd46bee"
+      "fingerprint": "084372fe5f219840e85816c6d2155cf829734eec72660480cc3ddacf4308806c"
     },
     "content/4-way-of-life/continuous-learning/sciences-and-technology.md": {
       "status": "current",
-      "fingerprint": "29e198d80889300a26eec627672778e6b2a9d8adcd5e14eb6419b1c9fcafe4ba"
+      "fingerprint": "42311515ddda0a8b2849b379b0a693927c6cef4b62afa304420610d747b95a87"
     },
     "content/4-way-of-life/environmental-stewardship/README.md": {
       "status": "current",
-      "fingerprint": "c8605c4131249ead6a3a5c99edd18b82558f69c8899b45ab19ca79ba274d8425"
+      "fingerprint": "8b6eaabd74d3bc495e9d34aa255f7f97156d779de90404ad8dd269824bd78ad4"
     },
     "content/4-way-of-life/environmental-stewardship/education-and-community-involvement.md": {
       "status": "current",
-      "fingerprint": "f0e534cdcf0418b4ffba82041adc37f67396ef363c458ad9c945ae5a3e159932"
+      "fingerprint": "49af8eb08fc324639675dd112de36b3b3ccc24475b19cd40ef5c3b1ac8704a4d"
     },
     "content/4-way-of-life/environmental-stewardship/mindful-interaction-with-the-environment.md": {
       "status": "current",
-      "fingerprint": "437e90259a1a4bc0ff866d164261348b785f925000350104997b3c057af9e9bb"
+      "fingerprint": "a598844e0d9db1ef077bd4ebb16222f6cb91f1f4b86c0fa2401adcd83ecbc148"
     },
     "content/4-way-of-life/environmental-stewardship/principle-of-interconnectedness.md": {
       "status": "current",
-      "fingerprint": "920eb0705af40977cd540f38f50c73f1d540fc0206110b6c3ba0b78394ea3b42"
+      "fingerprint": "b5df5a241c4643f42a538e8ea235484e9dd0f3c7439307486df4d8401911c64e"
     },
     "content/4-way-of-life/environmental-stewardship/spiritual-dimension.md": {
       "status": "current",
-      "fingerprint": "497ffef31a129a9365ae2eb81e4b917fcd86986264bd8d223aadab8b82757a65"
+      "fingerprint": "b6d928d3615fedff7e6bfe934a88cbd776fcc0f0985af29822cb31ebe01234b5"
     },
     "content/4-way-of-life/family/README.md": {
       "status": "current",
-      "fingerprint": "7c4e77be643313ef21fe5ce5a77056fe84f6084527532644dc5d18fadd94b4cf"
+      "fingerprint": "f59d52b9e2bf3de017a7d89ad28ef00feefbd8d09cc9c0139800dd34883d265e"
     },
     "content/4-way-of-life/family/cooperative-growth-and-support.md": {
       "status": "current",
-      "fingerprint": "5e7cf2a2c763377651d44eb2dbed3de0de5b1d9f2ae7f51f4e859d7fc278d4f4"
+      "fingerprint": "caac42e73f98269171c0869e97536feec111639c0421df2dae8e799ff3dbc2c2"
     },
     "content/4-way-of-life/family/divorce.md": {
       "status": "current",
-      "fingerprint": "ffc5907b27e587d8e49551455e16fc857323d7cf3ccc24ef812bcfd719fa4936"
+      "fingerprint": "c303ebeaec51fe396fe4d53810aba5a604bf1f41a98fdccb6c8cf87da19223d6"
     },
     "content/4-way-of-life/family/inclusive-familial-structures.md": {
       "status": "current",
-      "fingerprint": "7a7ac2dc83cea68afdd5da131d461efbdbccf83d7422e725f086dd0c6c9ad15c"
+      "fingerprint": "4778690743ea6f6419321edd9d41b2b8092bf6a11553e3ab9d2ed00c72328234"
     },
     "content/4-way-of-life/family/marriage.md": {
       "status": "current",
-      "fingerprint": "bb568e812c65ae7b1eeef658b102422510c75cd59dfc2926def58a7cb54725ff"
+      "fingerprint": "8768a50b5c42c69e6e51a12aff1f05e2f5267de6f6d75e545876bed67e948649"
     },
     "content/4-way-of-life/holistic-wellbeing/README.md": {
       "status": "current",
-      "fingerprint": "32b6d3adb182be8f604b07cd8bec18559185629d8ae10f2287dddbc76c4c3b1a"
+      "fingerprint": "85cdd8377661dfd0f0258f20e486b88f889d04fc709410150e3f2cfd91c8a4e4"
     },
     "content/4-way-of-life/holistic-wellbeing/science-and-modern-medicine.md": {
       "status": "current",
-      "fingerprint": "b1fbce065f94a8dfbda50a899d9cf412f84c8a8db58756af0a156a71cac656f1"
+      "fingerprint": "a2d8fce8d13804e3c6c03d679e8dc37c3c69b596cd911b4be4c09a7d04be350c"
     },
     "content/4-way-of-life/holistic-wellbeing/sobriety.md": {
       "status": "current",
-      "fingerprint": "5bc53ed66a13fce2d0a17231ae2f290d0d08fb20c1e5f8b6908af4902a6d0a06"
+      "fingerprint": "f256ff0fbe8dfe6bdf8f749b3b4633bb85f7fa2f5035ad5c8f71ee5f672d6ebf"
     },
     "content/5-context/README.md": {
       "status": "current",
-      "fingerprint": "eccc3d1bfc811be9620f494a0892f165ce46ef55d060b31ae63cd26adfa08e90"
+      "fingerprint": "7041dd0b006ef116e41cbbdc1ca20b06bc6c3703bd69363a76a14a6ab0064f66"
     },
     "content/5-context/comparative-analysis.md": {
       "status": "current",
-      "fingerprint": "c91e5c8d22f9a2b3a90fbe8dbe604c5e258c05cc624d294d4f6a70944a9795b2"
+      "fingerprint": "689c8e4910f47bb1ff302248a77bb4b036cc9193dd79e16dad8b779e44de0ad0"
     },
     "content/5-context/conclusion.md": {
       "status": "current",
-      "fingerprint": "8ef48f11416a7014ff914028fa4cd93f2c3c7660bdf97dafdbd8be2ba628298e"
+      "fingerprint": "0c082e52aba229f74e717fc383ea087fa88fdb2f6711f14524abd37801daae37"
     },
     "content/5-context/historical-context.md": {
       "status": "current",
-      "fingerprint": "d341e197d16ce28280bfc07ee4447606cd01b96448c0079406905b0de60b2927"
+      "fingerprint": "b883c22276f7baf4c9ecf1e7054f8ab6e6e2d2e4d406686ca98c82a45dbb91bc"
     },
     "content/5-context/references.md": {
       "status": "current",
-      "fingerprint": "7c3707433bcfc8baf764a67f06d17b6435a2575b1f75ef1dc7298ea6b5d2ce82"
+      "fingerprint": "1e3b49976b9b88d4edbb29ba24ba6f4736862d9ce7567acc5baa97628c53e65a"
     },
     "content/README.md": {
       "status": "current",
-      "fingerprint": "9d69538d79d79f8a11ecc16d1b41c8e1a496e930be479c527b28081d20b79988"
+      "fingerprint": "63f4fe5d1e0d1d3b3cedbbbf4caaf34c25aa12a46f2ba033f7632b987d74a9c6"
     }
   }
 }
