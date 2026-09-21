@@ -8,13 +8,13 @@ description: "Why UPL values sobriety and discourages recreational drugs, with i
 
 ## Promotion of Sobriety
 
-Sobriety is a virtue; clarity of the mind and body is essential for spiritual awareness and growth. The use of recreational drugs is discouraged, as these substances can cloud judgement, hinder spiritual progress, and negatively impact physical health and, thereafter, the world.
+Sobriety is a virtue; clarity of the mind and body is essential for spiritual awareness and growth. The use of recreational drugs is discouraged, as these substances can cloud judgement, hinder spiritual progress, and negatively impact physical health and, through the person, the world around them.
 
 Two traditions ask the same of their followers. The fifth of the Buddhist precepts is to refrain from intoxicants that lead to carelessness, and the Sikh code of conduct asks a Sikh to take no intoxicant at all. UPL gives its reasons and leaves the choice with the person.
 
 ## Ethical Eating and Conscious Consumption
 
-The diet focuses on whole, unprocessed foods and ethically sourced meats, advocating for a mindful approach to eating that respects the body and the environment. Adherents are encouraged to avoid industrialised food products and substances that detract from health, including the consumption of recreational and illegal drugs.
+The diet focuses on whole, unprocessed foods and ethically sourced meats, advocating for a mindful approach to eating that respects the body and the environment. Followers are encouraged to avoid industrialised food products and substances that detract from health.
 
 ## Exercise and Physical Well-being
 

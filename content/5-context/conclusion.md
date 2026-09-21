@@ -20,7 +20,7 @@ The integration of positive thinking, gratitude, and mindful action offers a pat
 
 Community and fellowship in UPL embody interconnectedness, compassion, and collective growth. This spiritual-social infrastructure serves as a blueprint for manifesting spiritual principles within social relationships and community life.
 
-Environmental stewardship, as championed by UPL, reflects the core values of respect for all life and the pursuit of harmony. Advocating for sustainable practices and active participation in restoration efforts, UPL empowers adherents to contribute to the well-being of the planet.
+Environmental stewardship, as championed by UPL, reflects the core values of respect for all life and the pursuit of harmony. Advocating for sustainable practices and active participation in restoration efforts, UPL empowers followers to contribute to the well-being of the planet.
 
 UPL's philosophy comprises a life of virtue, sobriety, and mindful living, promoting an integrative approach to health. UPL heals the spirit and trusts medicine with the body, and a follower who is ill never sets medical care aside for spiritual or alternative remedies. It guides individuals towards a harmonious existence, deeply connected to their spiritual essence.
 

@@ -6,7 +6,7 @@ description: "UPL's teaching on the soul's journey: an immortal soul in a body l
 
 # Soul, Karma, Dharma, and Death: Ethical and Spiritual Principles
 
-UPL articulates a comprehensive understanding of the soul's journey, underpinned by the principles of karma and dharma, and emphasises the non-material essence of human existence. It posits that, akin to a silkworm spinning its cocoon, humans weave their physical existence through the threads of thought and intention, yet are not defined by this material cocoon but by their eternal soul. This belief system integrates philosophical dualism, viewing the soul as a divine spark beyond physicality, and employs the concepts of karma and dharma from Buddhist and Hindu traditions as guiding forces for the soul's progression towards enlightenment and unity with the divine.
+UPL articulates a comprehensive understanding of the soul's journey, underpinned by the principles of karma and dharma, and emphasises the non-material essence of human existence. It posits that, akin to a silkworm spinning its cocoon, humans weave their physical existence through the threads of thought and intention, yet are not defined by this material cocoon but by their eternal soul. This belief system integrates philosophical dualism, the view that mind and body are different kinds of thing, viewing the soul as a divine spark beyond physicality, and employs the concepts of karma and dharma from Buddhist and Hindu traditions as guiding forces for the soul's progression towards enlightenment and unity with the divine.
 
 ## In this section
 

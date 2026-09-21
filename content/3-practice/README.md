@@ -7,7 +7,7 @@ description: "The spiritual practices of the Unified Path of Light: gratitude, p
 # Practices and Rituals
 
 The spiritual practices of the Unified Path of Light. They embrace diversity and personal
-freedom: adherents draw on gratitude, prayer, meditation, and sacred texts from many traditions.
+freedom: followers draw on gratitude, prayer, meditation, and sacred texts from many traditions.
 
 ## In this section
 

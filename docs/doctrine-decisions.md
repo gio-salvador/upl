@@ -2281,6 +2281,77 @@ baseline are redone before the merge.
   in different words. If the author prefers to fold the page away, that is a structural change
   with a redirect, and this proposal is dropped.
 
+## Page clarity, step 7: small polish and four of the author's decisions, applied for the author's review
+
+Step 7 of the [page clarity plan](plans/2026-09-21-page-clarity.md), first part. The gratitude
+affirmations (C7) are in a pull request of their own, because they are the author's words more
+than any other page.
+
+**Applied ahead of review, on the author's instruction.** On 21 September 2026 the author, away
+from the desk, asked for the remaining pull requests to be prepared "as if I had accepted all
+your suggestions", to be reviewed one by one afterwards and changed as needed. So P95 to P98 are
+applied in this pull request as written, and `--accept-core` was run under that instruction: the
+baseline compared before and after shows the fingerprints of five locked pages changed (two core
+beliefs, the soul section page, The Immortal Soul, Ethical Living as Spiritual Practice) and
+nothing else. Nothing is merged.
+
+**Checked.** Doctrine, matrix and source gates and the lint: clean. No page goes out of balance
+and no new overlap appears.
+
+### P95. Small polish, one phrase each
+
+| Page | From | To |
+| ---- | ---- | -- |
+| Home | "organised as a hierarchy… kept in `paper/`" | "arranged in five parts. It begins from the founding paper by Giovanni S. Salvador", with "founding paper" as the link |
+| Community and Social Welfare (locked) | "building a tightly-knit spiritual network with global outreach" | "building a close spiritual community that reaches across the world" |
+| Positive Thinking, Gratefulness, and Mindful Action (locked) | "asks its followers to perform practices of positive thinking" | "asks its followers to practise positive thinking" |
+| Soul, Karma, Dharma, and Death (locked) | "integrates philosophical dualism, viewing the soul" | "integrates philosophical dualism, the view that mind and body are different kinds of thing, viewing the soul" (S200) |
+| The Immortal Soul (locked) | "the essence of man is spiritual" | "the essence of a person is spiritual" |
+| Gratitude for Life's Blessings | "In addition to personal relationships, gratitude affirmations extend to" | "Gratitude affirmations extend beyond personal relationships to", so the page stands on its own |
+| Buddhist Meditation Practices | "align with UPL's core emphasis on mindfulness, compassion, and spiritual evolution" | "align with UPL's own emphasis on the same qualities and on spiritual evolution" |
+| Community and Fellowship | one sentence of 70 words | two: "UPL draws upon… Hoʻoponopono practices. It views its community as…" |
+| Practices of Community Engagement | "Emphasising the importance of karma and dharma, UPL encourages" | "Because right action is at the heart of karma and dharma, UPL encourages" |
+| Environmental Stewardship and the Sacredness of Nature | "to demonstrate and perform a profound respect" | "to show a profound respect" |
+| Sobriety | "and, thereafter, the world" | "and, through the person, the world around them" |
+| Sobriety, under eating | "substances that detract from health, including the consumption of recreational and illegal drugs" | "substances that detract from health" (drugs are dealt with in the section above) |
+| Arts and Creative Expression | "Explore your own creativity in…" | "Followers are invited to explore their own creativity in…" |
+
+Left as they are, on reflection: "community unity" in belief 2 and "clearing negative energy" on
+the hoʻoponopono page, which are the author's phrases and do no harm; and editions and years on
+the References page, which need catalogue work of their own.
+
+### P96. One name for a follower (decision C3)
+
+- "Adherent" becomes "follower" in all twelve places, on eleven pages, one of them locked
+  (Ethical Living as Spiritual Practice). "Follower" was already the most used.
+- Kept: "Synphotodosist", the religion's own name for a follower, in its three places; "members"
+  where it means the members of a community or a family; "believers" in Purpose, where the
+  sentence is about people who believe before they have found UPL.
+
+### P97. Who may marry (decision C5)
+
+- Page: `content/4-way-of-life/family/marriage.md`. Not locked.
+- Addition, after the second sentence:
+
+  > Marriage in UPL is open to any two adults, whatever their gender.
+
+- Notes: this follows from belief 4 and from Inclusive Familial Structures, which already names
+  families headed by same-sex couples. It is still a statement of doctrine, and the author's to
+  confirm or reword.
+
+### P98. The divorce page's title (decision C6)
+
+- Page: `content/4-way-of-life/family/divorce.md`. Not locked.
+- "Divorce as a Respectable Ultimatum" becomes "Divorce as a Last Resort", in the title, the
+  heading and the section's list. An ultimatum is a final demand; the page's own words are "as a
+  last resort". The address does not change.
+
+### Left open: does sobriety include alcohol? (decision C4)
+
+Nothing is drafted, because there is nothing in the text to draw it from. The page discourages
+"recreational drugs" and the two traditions it cites both count alcohol as an intoxicant, but the
+page never names it, and a reader will ask. This one needs the author's answer.
+
 ## Open doctrinal questions
 
 Questions the text does not answer and the author has said are not yet decided. No page states or
