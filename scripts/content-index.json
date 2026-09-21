@@ -584,7 +584,8 @@
         "thankful\\w*"
       ],
       "elaborated_in": [
-        "content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md"
+        "content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md",
+        "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md"
       ],
       "held_by": {
         "Islam": {
@@ -646,7 +647,10 @@
           ],
           "note": "The ethics of speech."
         }
-      }
+      },
+      "elaborated_in": [
+        "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md"
+      ]
     },
     "divine-light": {
       "label": "Divine light",

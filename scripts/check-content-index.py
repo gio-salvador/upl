@@ -27,7 +27,7 @@ Checks:
                    tradition, a relation and at least one source that exists in the source
                    register; an inherited teaching names where it comes from; a resemblance or a
                    contrary teaching says why; and every tradition a page names is accounted for
-                   in the concepts that page owns
+                   in the concepts that page owns or elaborates
   9. rendering     docs/cross-reference.md matches the index
 
   scripts/check-content-index.py            run the gate
@@ -141,9 +141,11 @@ def check_convergence(root, index, pages):
         if not cells:
             continue
         mapped_pages.add(concept["owner"])
+        # A page that elaborates a concept speaks for it too, so the concept's cells cover it.
+        for page in [concept["owner"]] + concept.get("elaborated_in", []):
+            held_on_page[page].update(cells)
         for tradition, cell in cells.items():
             where = f"concept {cid}, {tradition}"
-            held_on_page[concept["owner"]].add(tradition)
             if traditions and tradition not in traditions:
                 problems.append(f"{where}: not a tradition named in {TRADITIONS}")
             relation = cell.get("relation")

@@ -514,6 +514,257 @@ Two things the gates caught when the pages were applied:
 - "Hebrew Bible" was being counted for Christianity, because "bible" is one of Christianity's
   words. The gate now leaves "bible" alone when "Hebrew" comes before it, under decision B8.
 
+## Tradition balance, step 4: proposed wording, waiting for the author
+
+The other six core beliefs, rewritten under decision B2, and one sentence varied at the author's
+request. Same shape and same rules as step 3. Nothing here is applied.
+
+**Checked before asking.** As the author asked on 21 September 2026, every draft below was applied
+in a scratch tree and run through the doctrine, matrix and source gates before being shown. What
+each gate found is given under each proposal. With all seven applied the scratch tree reported:
+whole text Islam 18 per cent, Buddhism 17, Seicho-no-Ie 13, Christianity 13, Hinduism 12, Judaism
+11, Sikhism 8, Hawaiian 3, indigenous 2, Taoism 2; six recorded imbalances cleared, leaving one
+(the Environmental Stewardship section page, step 6); no page out of balance; no new overlap
+between pages; the source gate passing.
+
+### P21. God, Quantum Physics, and the Light of Divinity: one sentence varied
+
+- Before: "…and Seicho-No-Ie teaches that every person is in reality a child of God, a spiritual being and already perfect."
+- After: "…and Seicho-No-Ie speaks of each person as a child of God, a being of spirit and not of matter."
+- Why: the author asked for one of the two Seicho-No-Ie sentences to be varied, after the matrix
+  gate found nearly the same words on this page and on belief 4 (finding X20). Belief 4 is about
+  innate goodness, so "already perfect" stays there. This page is about the source, so the
+  sentence now gives the other half of the movement's own statement, that the person is spirit
+  and not matter (S05). It agrees with the soul section ("the essence of man is spiritual, not
+  material") and does not say matter is unreal, which UPL does not teach (decision D1, point 5).
+- Locked page. Gate result: the wording check no longer reports the overlap, so X20 closes when this is applied.
+
+### P22. Spiritual Evolution and Practice
+
+- Before: "Continuous spiritual growth and discipline. It emphasises the importance of prayer,
+  fasting, pilgrimage, meditation, mindfulness, and community unity, drawing parallels with
+  related practices in Islamic tradition."
+- After:
+
+  > UPL calls for continuous spiritual growth and discipline. It emphasises the importance
+  > of prayer, fasting, pilgrimage, meditation, mindfulness, and community unity.
+  >
+  > Every tradition the teachings draw on gives its followers a discipline to grow by. The
+  > Buddha set out a path of eight parts, among them right effort, right mindfulness and the
+  > stilling of the mind. The Bhagavad Gita teaches paths of action, of knowledge and of
+  > devotion, for people of different temperaments. Islam rests on five practices, among
+  > them daily prayer, the fast and the pilgrimage. Jesus taught his followers to give, to
+  > pray and to fast quietly and not for show. Judaism keeps a day of rest each week and
+  > holds study to be a lifelong duty. Seicho-No-Ie practises Shinsokan, a prayerful
+  > meditation.
+  >
+  > The forms differ and are not interchangeable. What they share is the conviction that the
+  > spirit grows by practice, steadily kept. UPL leaves each person free to find the
+  > practices that serve that growth.
+
+- What is kept: the author's two sentences, joined to a subject ("UPL calls for"). The closing
+  clause about Islamic tradition becomes one voice among six.
+- First named: Buddhism. Sources: S69, S85; S56, S57; S92; S33; S28, S24; S115.
+- Cautions carried: The Gita's paths are given as three, without the modern fourth. "The
+  stilling of the mind" stands for the eighth factor, which translators render as concentration
+  or immersion. The last paragraph is the drafter's and is doctrine-shaped; it restates the
+  freedom of practice the guardrails already record.
+- Gates: Doctrine gate: the page comes into balance and its recorded imbalance clears. Matrix
+  gate: every tradition named has a sourced cell. No overlap with another page.
+
+### P23. Ethical and Moral Living
+
+- Before: "Justice, compassion, fairness, and the importance of community (Ummah) as emphasised
+  in Islam strongly resonate with UPL's focus on ethical conduct, moral responsibility, and
+  community service. The Islamic principle of Zakat, or charitable giving, can be integrated
+  into UPL's ethical guidelines."
+- After:
+
+  > UPL's focus is ethical conduct, moral responsibility and community service, with
+  > justice, compassion and fairness in all dealings.
+  >
+  > The traditions agree that a good life is owed to others as well as to oneself. Judaism
+  > calls giving tzedakah, a word that means both righteousness and charity, and Maimonides
+  > set out eight levels of it, the highest being to help a person stand on their own. Islam
+  > makes Zakat, or charitable giving, an obligation, and places justice and the community,
+  > the Ummah, at the centre of a good life. Jesus taught that what is done for the least of
+  > his brothers is done for him, and blessed the merciful and the peacemakers. The Yoga
+  > tradition of Hinduism counts non-injury, ahimsa, first among its restraints, and the
+  > Buddha asked his followers to refrain from taking life, from taking what is not given
+  > and from false speech. The Sikh Gurus teach that the one who works for what they eat,
+  > and gives some of what they have, knows the path.
+  >
+  > UPL takes regular giving into its own ethical guidelines, and takes from all these
+  > traditions that ethics is lived and not only believed, and that it grows with practice.
+
+- What is kept: the author's own list, "ethical conduct, moral responsibility, and community
+  service" and "justice, compassion, fairness", now stated as UPL's and not as Islam's. "Zakat,
+  or charitable giving" and "the community (Ummah)" are kept in the author's words. The author's
+  sentence that Zakat "can be integrated into UPL's ethical guidelines" becomes "UPL takes
+  regular giving into its own ethical guidelines", which turns a possibility into a commitment:
+  **the author should confirm that is meant.**
+- First named: Judaism. Sources: S18, S19; S91, S93; S38, S32; S59, S61; S77, S70; S106.
+- Cautions carried: Tzedakah is given as both righteousness and charity. "The least of his
+  brothers" keeps the text's own word and leaves out the judgement that follows it. Ahimsa is
+  named as a virtue of the Yoga tradition, not as pacifism and not as all of Hinduism. The Sikh
+  line paraphrases Ang 1245.
+- Gates: Doctrine gate: comes into balance, record clears. Matrix gate: clean.
+
+### P24. Interconnectedness and the Pursuit of Knowledge
+
+- Before: "The Islamic emphasis on Ilm, or knowledge-seeking, aligns well with UPL's commitment
+  to continuous learning, reflection, and the integration of diverse spiritual insights."
+- After:
+
+  > UPL holds that nothing in existence stands alone, and commits its followers to
+  > continuous learning, reflection, and the integration of diverse spiritual insights.
+  >
+  > The Buddha taught that things arise in dependence on one another, and he taught it to
+  > explain how suffering arises and how it ends. Later Buddhists drew a wider vision from
+  > it. The Huayan school of China pictured the world as the net of Indra, in which every
+  > jewel reflects every other, and in our own time Thich Nhat Hanh called this interbeing.
+  > It is from these that UPL takes its sense of a world in which nothing stands alone. A
+  > late Upanishad says that for the generous of heart the whole world is one family.
+  >
+  > On knowledge the traditions speak almost with one voice. Islam calls the seeking of
+  > knowledge Ilm, and the Qur'an teaches the believer to pray for an increase in it.
+  > Judaism holds the study of Torah equal to all other duties, and honours a dispute
+  > carried on for the sake of Heaven. The Buddha told the Kalamas not to rely on tradition,
+  > scripture or clever reasoning alone, but to take up what they find to be wholesome,
+  > blameless and praised by the wise. The Bhagavad Gita names knowledge as one of the paths
+  > to the divine.
+
+- What is kept: the author's "continuous learning, reflection, and the integration of diverse
+  spiritual insights" and "Ilm, or knowledge-seeking". **The opening clause, "UPL holds that
+  nothing in existence stands alone", is the drafter's**: the page is named for
+  interconnectedness and has never stated it (finding X07). It is doctrine and is the author's
+  to write.
+- First named: Buddhism. Sources: S74; S75, S76; S65; S95; S24, S23; S79, S80; S56.
+- Cautions carried: This is the page the source check changed most. Dependent origination is
+  given for what it is in the early texts, an account of suffering, and the wider vision is
+  credited to the Huayan school and to Thich Nhat Hanh, not to the Buddha. Ilm is anchored in
+  the Qur'anic prayer and not in the hadith with the weak chain. The Kalamas are told to reject
+  bare reasoning too, and the test includes the praise of the wise. The Upanishad is called
+  late, which it is.
+- Gates: Doctrine gate: comes into balance, record clears. Matrix gate: clean. When applied this
+  closes finding X07, since the text will at last state the concept.
+
+### P25. Environmental Stewardship
+
+- Before: "Practice sustainable living, environmental education, and active ecological
+  preservation. This is consistent with parts of Islamic tradition that emphasise respect for
+  the natural world as part of God's creation."
+- After:
+
+  > UPL asks its followers to practise sustainable living, environmental education, and
+  > active ecological preservation.
+  >
+  > The peoples who have lived longest with their lands carry the oldest teaching on this.
+  > For the Māori, kaitiakitanga is the guardianship a people holds for its own land and
+  > waters. The Haudenosaunee open and close their gatherings with words of thanks to each
+  > part of the natural world, from the waters to the sun and the moon. Native Hawaiians
+  > speak of aloha ʻāina, love of the land, and mālama ʻāina, the responsibility to care for
+  > it. These teachings belong to those peoples. UPL learns from them and does not claim
+  > them.
+  >
+  > The scriptures carry the same respect for the natural world as part of God's creation.
+  > The Qur'an calls humankind successors upon the earth, often understood as its stewards,
+  > and warns against excess. Jewish teaching draws from a law against cutting down fruit
+  > trees in wartime a wider ban on needless destruction, which many now apply to the care
+  > of the earth. Francis of Assisi sang of the sun, the wind and the water as brother and
+  > sister, and the Catholic Church has named him patron of those who promote ecology.
+  > Seicho-No-Ie speaks of the grand harmony of God, nature and human beings.
+
+- What is kept: the author's first sentence, given a subject, and the author's phrase "respect
+  for the natural world as part of God's creation".
+- First named: Indigenous traditions. Sources: S119, S120, S121; S96, S97; S20, S21; S47, S46; S117.
+- Cautions carried: Each indigenous teaching is named as that people's own, and the page says
+  UPL does not claim them. "Successors" is the Qur'an's word and "stewards" is marked as an
+  understanding of it. The Jewish teaching is given as drawn from a verse about fruit trees,
+  with the environmental reading marked as modern. Francis's title is the exact one. **To check
+  against the text before publishing:** that the Canticle names sun, wind and water as brother
+  and sister, which the recorded source confirms only in general.
+- Gates: Doctrine gate: comes into balance, record clears. Matrix gate: clean.
+
+### P26. Community and Social Welfare
+
+- Before: "Drawing from Islam's concept of Ummah, UPL envisages a community where members
+  support each other's spiritual and physical well-being, fostering an environment for mutual
+  growth and social engagement. This aligns with UPL's focus on building a tightly-knit
+  spiritual network with global outreach."
+- After:
+
+  > UPL envisages a community where members support each other's spiritual and physical
+  > well-being, fostering an environment for mutual growth and social engagement. This
+  > aligns with UPL's focus on building a tightly-knit spiritual network with global
+  > outreach.
+  >
+  > The traditions have each built such a community. In the Sikh gurdwara the langar, a free
+  > kitchen traditionally traced to Guru Nanak, seats everyone together whatever their
+  > caste, faith or standing, and seva, selfless service, is a central part of Sikh life.
+  > Islam speaks of the Ummah, one community whose members are bound to care for one
+  > another. Jesus washed his disciples' feet and told them that whoever would be great
+  > among them must be their servant. The Buddha's followers take refuge in the Sangha,
+  > which in the early texts means the community of monks, nuns and the awakened.
+  >
+  > UPL's community is open in the same spirit. No one is turned away from the table, and to
+  > lead is to serve.
+
+- What is kept: both of the author's sentences, whole, less the opening words "Drawing from
+  Islam's concept of Ummah"; the Ummah returns as one voice.
+- First named: Sikhism. Sources: S107, S108, S109; S93; S43, S39; S86, S78.
+- Cautions carried: The langar and the three pillars are "traditionally traced" to Guru Nanak.
+  The Sangha is described as the early texts mean it. "Whoever would be great… must be their
+  servant" stops before the verse on ransom, which UPL does not adopt. The last paragraph is the
+  drafter's and is doctrine-shaped.
+- Gates: Doctrine gate: comes into balance, record clears; Sikhism is half of the page's
+  mentions, under the cap of six tenths. Matrix gate: clean.
+
+### P27. Positive Thinking, Gratefulness, and Mindful Action
+
+- Before: "Perform practices for personal enrichment and collective growth, resonating with
+  aspects of Islamic ethics that encourage gratitude, positive conduct, and mindful awareness."
+- After:
+
+  > UPL asks its followers to perform practices of positive thinking, gratefulness and
+  > mindful action, for personal enrichment and collective growth.
+  >
+  > Gratitude is the most widely shared of the three. The Qur'an teaches that gratitude is
+  > met with increase. The Haudenosaunee give thanks to each part of the natural world
+  > before anything else is said. Seicho-No-Ie's founding message is one of grand harmony
+  > with all things, and it keeps gratitude to one's ancestors as a practice.
+  >
+  > Positive thinking comes to UPL chiefly from Seicho-No-Ie, which teaches that thought,
+  > word and deed shape the world a person lives in. Other teachings stand near it without
+  > being the same. The Dhammapada opens by saying that mind comes first and that speech and
+  > action follow from it. Jesus told his followers not to be anxious about tomorrow, and
+  > his ground for it was trust in God, not the power of thought.
+  >
+  > Mindful action is where the traditions meet again. The Bhagavad Gita teaches a right to
+  > the work and not to its fruits. The Buddha taught right speech and right action. Jesus
+  > asked that good be done quietly and not for show, and Jewish teaching guards against
+  > harmful speech even when what is said is true.
+
+- What is kept: the author's sentence, given a subject and the three names from the title. The
+  author's claim that Islamic ethics encourage "positive conduct, and mindful awareness" is
+  dropped, because only gratitude has a source; it can return when one is found.
+- First named: Islam. Sources: S98; S120; S114, S116; S113; S68; S33; S53; S70; S26.
+- Cautions carried: The page says plainly that positive thinking comes chiefly from Seicho-No-Ie
+  and that the Dhammapada and "do not be anxious" stand near it without being the same: the two
+  resemblance cells in the map, worded as their notes say. The Grand Harmony message is
+  described and not quoted, because its English wording has not been seen. Islam leads this
+  page, the first of the ten it leads; the plan had Seicho-No-Ie, which already leads two.
+- Gates: Doctrine gate: comes into balance, record clears. **Matrix gate: failed on the first
+  run**, because the page names traditions for gratitude and mindful action, which are owned by
+  practice pages. Fixed in the matrix, not in the wording: the belief is now recorded as
+  elaborating those two concepts, and the gate lets a page that elaborates a concept be covered
+  by its cells. Clean on the second run.
+
+### First-named traditions across the ten
+
+Hinduism (1), Buddhism (2, 6), Judaism (3), Seicho-no-Ie (4, 7), Christianity (5), the indigenous
+traditions (8), Sikhism (9), Islam (10). No tradition leads more than two pages.
+
 ## What these decisions open
 
 The decisions were the precondition for drawing more widely on the traditions. With them taken:
