@@ -23,7 +23,12 @@ Checks:
   6. redundancy    two pages that share a run of identical wording need a finding that covers
                    both
   7. findings      every finding is well formed and points at files that exist
-  8. rendering     docs/cross-reference.md matches the index
+  8. convergence   where a concept records which traditions hold it, every cell names a known
+                   tradition, a relation and at least one source that exists in the source
+                   register; an inherited teaching names where it comes from; a resemblance or a
+                   contrary teaching says why; and every tradition a page names is accounted for
+                   in the concepts that page owns
+  9. rendering     docs/cross-reference.md matches the index
 
   scripts/check-content-index.py            run the gate
   scripts/check-content-index.py --record   after re-reading the changed pages against the
@@ -49,6 +54,16 @@ from pathlib import Path
 
 INDEX = "scripts/content-index.json"
 VIEW = "docs/cross-reference.md"
+SOURCES = "docs/sources.md"
+TRADITIONS = "scripts/doctrine-gate.json"
+# How a tradition stands to a teaching. "origin": the teaching comes from it. "inherits": it took
+# the teaching from another tradition, named in "from". "independent": it holds the teaching in
+# its own right. "resembles": it has something that looks alike and is not the same. "contrary":
+# it teaches otherwise.
+RELATIONS = ("origin", "inherits", "independent", "resembles", "contrary")
+SHARES = ("origin", "inherits", "independent")
+LETTER = {"origin": "O", "inherits": "I", "independent": "H", "resembles": "R", "contrary": "C"}
+SOURCE_ID_RE = re.compile(r"^\| ([SR]\d{2,3}) \|", re.M)
 SCAN = "content/**/*.md"
 FRONT_MATTER_RE = re.compile(r"\A---\n(.*?)\n---\n", re.S)
 TITLE_RE = re.compile(r'^title:\s*"?(.*?)"?\s*$', re.M)
@@ -102,6 +117,60 @@ def mentions(index, pages):
             if count:
                 found[cid][path] = count
     return found
+
+
+def load_traditions(root):
+    """Tradition name -> pattern, from the doctrine gate's rules. Empty when the file is absent."""
+    path = root / TRADITIONS
+    if not path.is_file():
+        return {}
+    config = json.loads(path.read_text(encoding="utf-8"))
+    return {name: re.compile(r"\b(?:" + "|".join(markers) + r")\b", re.I)
+            for name, markers in config.get("traditions", {}).items()}
+
+
+def check_convergence(root, index, pages):
+    problems = []
+    traditions = load_traditions(root)
+    register = root / SOURCES
+    known_sources = set(SOURCE_ID_RE.findall(register.read_text(encoding="utf-8"))) if register.is_file() else None
+    held_on_page = defaultdict(set)
+    mapped_pages = set()
+    for cid, concept in index["concepts"].items():
+        cells = concept.get("held_by")
+        if not cells:
+            continue
+        mapped_pages.add(concept["owner"])
+        for tradition, cell in cells.items():
+            where = f"concept {cid}, {tradition}"
+            held_on_page[concept["owner"]].add(tradition)
+            if traditions and tradition not in traditions:
+                problems.append(f"{where}: not a tradition named in {TRADITIONS}")
+            relation = cell.get("relation")
+            if relation not in RELATIONS:
+                problems.append(f"{where}: relation must be one of {', '.join(RELATIONS)}")
+            if not cell.get("sources"):
+                problems.append(f"{where}: a cell needs at least one source id from {SOURCES}")
+            for sid in cell.get("sources", []):
+                if known_sources is not None and sid not in known_sources:
+                    problems.append(f"{where}: source {sid} is not in {SOURCES}")
+            if relation == "inherits":
+                origin = cells.get(cell.get("from", ""), {})
+                if origin.get("relation") not in SHARES:
+                    problems.append(f"{where}: an inherited teaching names in \"from\" a tradition that holds it in this concept")
+            elif cell.get("from"):
+                problems.append(f"{where}: only an inherited teaching has \"from\"")
+            if relation in ("resembles", "contrary") and not cell.get("note"):
+                problems.append(f"{where}: a {relation} cell needs a note saying how it differs")
+    for path in sorted(mapped_pages):
+        if path not in pages:
+            continue
+        text = prose(pages[path])
+        for tradition, pattern in traditions.items():
+            if pattern.search(text) and tradition not in held_on_page[path]:
+                problems.append(f"{path}: names {tradition}, which has no cell in the convergence map of any "
+                                "concept this page owns. Add the cell with its source, or the page claims more than is recorded")
+    return problems
 
 
 def covered(index, kinds, *paths):
@@ -179,6 +248,8 @@ def check(root, index, pages):
             problems.append(f"{a} and {b}: share {shared} runs of identical wording (\"{example}...\"). "
                             "Keep it in one place or record a redundant finding")
 
+    problems += check_convergence(root, index, pages)
+
     seen = set()
     for f in index["findings"]:
         fid = f.get("id", "?")
@@ -212,6 +283,48 @@ def link(path):
 def row(*cells):
     """A table row in markdownlint's compact style: an empty cell is a single space."""
     return "|" + "|".join(f" {c} " if c else " " for c in cells) + "|"
+
+
+def render_convergence(index):
+    mapped = {cid: c for cid, c in index["concepts"].items() if c.get("held_by")}
+    if not mapped:
+        return []
+    names = []
+    for concept in mapped.values():
+        names += [n for n in concept["held_by"] if n not in names]
+    out = ["", "## Convergence map", "",
+           "Which traditions hold each teaching, and how. A teaching shared by several traditions is",
+           "one teaching, not several voices, and the pages are written that way. Every cell rests on",
+           "a source in the [source register](sources.md).", "",
+           "- **O, origin.** The teaching comes from this tradition.",
+           "- **I, inherits.** This tradition took it from another, which is credited first.",
+           "- **H, holds independently.** This tradition teaches it in its own right.",
+           "- **R, resembles only.** It has something that looks alike and is not the same. Never",
+           "  written as agreement.",
+           "- **C, contrary.** It teaches otherwise. Said openly, in Comparative Analysis.", "",
+           row("Teaching", *names, "Shared by"), row("---", *[":---:" for _ in names], "---:")]
+    for concept in mapped.values():
+        cells = concept["held_by"]
+        shared = sum(1 for c in cells.values() if c.get("relation") in SHARES)
+        out.append(row(concept["label"], *[LETTER.get(cells.get(n, {}).get("relation"), "") for n in names], str(shared)))
+    out += ["", "How many of these teachings each tradition shares in, resembles or stands against. This is",
+            "the second measure of balance, beside the count of mentions: it shows where a tradition",
+            "truly meets the teachings and where it does not.", "",
+            row("Tradition", "Shares in", "Of which origin", "Resembles only", "Contrary"),
+            row("---", "---:", "---:", "---:", "---:")]
+    for name in names:
+        kinds = [c["held_by"][name].get("relation") for c in mapped.values() if name in c["held_by"]]
+        out.append(row(name, str(sum(k in SHARES for k in kinds)), str(kinds.count("origin") or ""),
+                       str(kinds.count("resembles") or ""), str(kinds.count("contrary") or "")))
+    out += ["", "### The cells", ""]
+    for concept in mapped.values():
+        out += [f"**{concept['label']}**, owned by {link(concept['owner'])}", "",
+                row("Tradition", "Relation", "Sources", "Note"), row("---", "---", "---", "---")]
+        for name, cell in concept["held_by"].items():
+            relation = cell.get("relation", "?") + (f" from {cell['from']}" if cell.get("from") else "")
+            out.append(row(name, relation, ", ".join(cell.get("sources", [])), cell.get("note", "")))
+        out.append("")
+    return out[:-1]
 
 
 def render(index, pages):
@@ -264,6 +377,7 @@ def render(index, pages):
         elaborated = ", ".join(link(p) for p in concept.get("elaborated_in", []))
         out.append(row(concept["label"], link(concept["owner"]), elaborated, *per_part, str(len(hits))))
 
+    out += render_convergence(index)
     out += ["", "## Findings", ""]
     for status in FINDING_STATUS:
         rows = [f for f in index["findings"] if f["status"] == status]

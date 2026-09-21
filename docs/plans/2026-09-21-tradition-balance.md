@@ -1,6 +1,6 @@
 # Bring the traditions into balance across the whole text
 
-**Status: in progress.** Step 1, sources, is done. Requested 2026-09-21. The author took decisions B1 to
+**Status: in progress.** Steps 1 and 2, the sources and the convergence map, are done. Requested 2026-09-21. The author took decisions B1 to
 B7 the same day; no step has begun. It records the
 measurements, the design, the decisions that are the author's, and the sequence, so the work can
 be done a page at a time without losing the whole picture.
@@ -122,6 +122,64 @@ the two are the same, and (d) rest on a source already in the register. Each pag
 two voices that it does not have today, or none. Across a section the first-named tradition
 rotates. A voice is never added to a page only because the page needs a number.
 
+Two further rules come from the convergence map. A sentence that names several traditions
+together needs a source for each one it names, so "Judaism, Christianity and Islam all teach…"
+cannot be written to score three mentions with one unsourced claim. And a teaching one tradition
+took from another names the origin first: Jesus's "love your neighbour" is credited to
+Leviticus, which he is quoting.
+
+### The convergence map (goals 1, 5)
+
+The author asked on 21 September 2026 how the plan accounts for beliefs shared between more than
+one religion. It did not. The gate counts names and the assignment lists voices side by side,
+and both treat the traditions as separate columns. For a religion whose premise is that many
+traditions see one light, the intersections are the strongest evidence it has, and a page that
+lists "one says, another says" hides them.
+
+The map records, for each teaching, how each tradition stands to it: **origin**, **inherits**
+(naming from where), **holds independently**, **resembles only**, or **contrary**. Every cell
+carries source ids. It lives in the cross-reference matrix, as `held_by` on each concept in
+`scripts/content-index.json`, and is rendered in [cross-reference.md](../cross-reference.md).
+`scripts/check-content-index.py` holds it: a cell needs a known tradition, a relation and a
+source that exists in the register; an inherited teaching names an origin that holds it; a
+resemblance or a contrary teaching says how it differs; and every tradition a page names has to
+be accounted for in the concepts that page owns. On its first run that last check found that
+belief 10 credits Islam with positive conduct and mindful awareness, for which no source is
+recorded.
+
+As built: 87 cells on 25 teachings, the ten beliefs among them. What it shows:
+
+- **Six beliefs are held by five or six traditions each**: spiritual practice, ethical living,
+  compassion, environmental stewardship, unity and interconnectedness. These are the real common
+  ground, and their pages lead with what is held in common.
+- **Compassion is one teaching with a lineage.** Judaism is its origin, Christianity inherits it,
+  and four other traditions hold it independently.
+- **Respect for world traditions and positive thinking are held by only two.** Most of what looks
+  like agreement there is resemblance: the Rig Veda verse and the Buddha's raft for the first, the
+  Dhammapada and "do not be anxious" for the second. Those pages say less about other traditions
+  than the assignment proposed, and say it more carefully.
+- **Buddhism resembles more than it shares** on four teachings and stands contrary on the soul.
+  It meets UPL in practice, ethics and compassion, not in doctrine. That is a truer account of
+  the relation than its 19 per cent of mentions.
+- **Three contrary cells are recorded**, all already decided: Buddhism on the self (D3),
+  Seicho-No-Ie on the reality of illness (D1, D2), and the Christian passage that ends in eternal
+  punishment.
+
+How it shapes a rewritten belief: the belief first, in the author's words; then one sentence on
+what several traditions hold in common, with the lineage where there is one; then one or two
+voices that are distinctive and not repetitive; and, where it matters, an honest line on who
+sees it differently, pointing to Comparative Analysis.
+
+The map also gives a second measure of balance beside the count of mentions: how many teachings
+each tradition truly shares in, resembles or stands against. It is reported in the rendered view.
+
+Cells left out because no source is recorded yet, to be sourced before the page that needs them:
+Western Christianity's original sin against innate goodness; the exclusive claims within
+several traditions against respect for all; the classical teaching of most traditions on
+marriage against inclusive family structures; Christianity and Islam on the immortal soul;
+Buddhism and Taoism on a creator; the image of God in a Christian source; gratitude in Judaism
+and Christianity; Taoism throughout, which has its sources (S111, S112) and no cell yet.
+
 ### The assignment for the ten core beliefs (goals 1, 2, 4)
 
 Under decision B2 each of the ten pages is rewritten as one balanced passage: the belief stated
@@ -237,7 +295,7 @@ Findings for the later steps, recorded so they are not lost:
   insertion and still canonical (S34, S42, S45); service (S39, S43); giving in secret (S33).
 - **Ho'oponopono.** The traditional practice is a family process led by a respected mediator; the
   four-phrase version is a modern adaptation (S122). The Ho'oponopono Meditation page calls it a
-  "technique", which describes the adaptation. A finding for step 4, and the word should carry
+  "technique", which describes the adaptation. A finding for step 5, and the word should carry
   its ʻokina.
 - **Shinsokan.** What the practice involves is now sourced (S115), for the page that does not say.
 - **Buddhist meditation.** Mindfulness of breathing is sixteen steps on a path to liberation, not a
@@ -302,7 +360,7 @@ Sutta, the raft simile, the five precepts, the four immeasurables, dependent ori
 Taniguchi's Truth of Life and the Nectarean Shower; Maimonides on giving; the Guru Granth Sahib
 on service; and a named source for each indigenous tradition cited. Each becomes a row, and the
 References page gains the books the teachings then rely on. The chapter and verse numbers in
-this list are from memory and are not yet checked; confirming each one is what step 1 is for.
+this list were from memory when the plan was written; step 1 has since checked each one.
 
 ### Keeping it (goal 6)
 
@@ -310,7 +368,7 @@ When the text is in balance the caps are moved to where the text then is, so it 
 back: the whole-text cap from 35 to 30 per cent, the section cap from 50 to 40. A new report
 line shows how many traditions each part names and which tradition each page names first, so
 rotation can be seen. Changing `scripts/doctrine-gate.json` changes what may be published, so it
-is the author's decision (B5) and is made last.
+is the author's decision (B5) and is made last, in step 7.
 
 ## Decisions
 
@@ -340,26 +398,27 @@ All taken by the author on 21 September 2026.
   only as "Veda"; sutta, metta and Huayan for Buddhism; langar and Guru Granth Sahib for Sikhism;
   Māori, Haudenosaunee and ʻāina for the indigenous and Hawaiian traditions. Without them the
   gate under-counts exactly the traditions this plan adds, and the reported shares will be wrong.
-  Recommendation: add them in step 2, in the same pull request as the first voices. It makes the
+  Recommendation: add them in step 3, in the same pull request as the first voices. It makes the
   count more accurate and does not loosen anything, but it changes the gate's rules, so it is the
   author's to approve.
 
 ## Sequence
 
-One pull request per step. Each leaves `main` green. Every step that touches `content/` is a
+One pull request per step, except that steps 1 and 2 share one. Each leaves `main` green. Every step that touches `content/` is a
 wording pull request, called out as such, with the matrix and the register updated in it.
 
 | Step | Pull request | Needs from you | Status |
 | --- | --- | --- | --- |
 | 1 | Sources: the primary sources for every voice in this plan recorded in the register; Judaism added to the guardrails' list of traditions (B6); References proposals drafted | approve the References additions Q1 to Q13 by id; decision B8 | done 2026-09-21: 110 sources recorded, S14 to S123 |
-| 2 | Core beliefs 1, 4, 5, 7 rewritten, and belief 4 renamed (B3). Clears five records: the four pages and the index | approve each page by id; `--accept-core`; `--waive-imbalance` to remove the cleared records | not started |
-| 3 | Core beliefs 2, 3, 6, 8, 9, 10 rewritten. Clears six page records and the section record | the same | not started |
-| 4 | Practice: prayer, holy texts, the meditation introduction, gratitude and mindful action | approve by id | not started |
-| 5 | Doctrine and Way of Life: karma, dharma, the pages for Laozi and Guru Nanak (B4), environmental stewardship, sobriety, family, work and service | approve by id; `--accept-core` for the doctrine pages; `--waive-imbalance` for the thirteenth record | not started |
-| 6 | Context: Historical Context and Comparative Analysis. Then the tighter caps and the new report lines (B5) | approve by id; the caps | not started |
+| 2 | The convergence map: how each tradition stands to each teaching, with sources, in the cross-reference matrix and gated | nothing | done 2026-09-21: 87 cells on 25 teachings |
+| 3 | Core beliefs 1, 4, 5, 7 rewritten, and belief 4 renamed (B3). Clears five records: the four pages and the index | approve each page by id; `--accept-core`; `--waive-imbalance` to remove the cleared records | not started |
+| 4 | Core beliefs 2, 3, 6, 8, 9, 10 rewritten. Clears six page records and the section record | the same | not started |
+| 5 | Practice: prayer, holy texts, the meditation introduction, gratitude and mindful action | approve by id | not started |
+| 6 | Doctrine and Way of Life: karma, dharma, the pages for Laozi and Guru Nanak (B4), environmental stewardship, sobriety, family, work and service | approve by id; `--accept-core` for the doctrine pages; `--waive-imbalance` for the thirteenth record | not started |
+| 7 | Context: Historical Context and Comparative Analysis. Then the tighter caps and the new report lines (B5) | approve by id; the caps | not started |
 
-Steps 2 and 3 can be drafted together and merged in either order. Steps 4 and 5 do not depend on
-each other. Step 6 is last because the caps are set from the numbers the earlier steps produce.
+Steps 3 and 4 can be drafted together and merged in either order. Steps 5 and 6 do not depend on
+each other. Step 7 is last because the caps are set from the numbers the earlier steps produce.
 
 ## Cross-dependencies
 
@@ -379,7 +438,7 @@ each other. Step 6 is last because the caps are set from the numbers the earlier
   explicit instruction for that change, and verifies what it rewrote.
 - **The rename.** Belief 4's new file name has to change in the index page, the matrix and the
   baseline in the same pull request, or three gates fail at once.
-- **The three Foundations slips.** Beliefs 4 and 7 close in step 2. The Author Note slip
+- **The three Foundations slips.** Beliefs 4 and 7 close in step 3. The Author Note slip
   ("tranquillity") is independent and can go at any time with `--accept-core`.
 
 ## Risks
@@ -414,7 +473,7 @@ each other. Step 6 is last because the caps are set from the numbers the earlier
 - It does not fix the sentence fragments (W1) or the accuracy points (W3) recorded in
   [site-review.md](../site-review.md) outside the ten core beliefs, where the rewrite (B2)
   replaces them.
-- It does not write front-matter descriptions (S5 in the site review), though steps 2 and 3 are
+- It does not write front-matter descriptions (S5 in the site review), though steps 3 and 4 are
   a natural moment for the author to add them, since those pages are being recorded anyway.
 - It does not loosen any gate.
 
@@ -441,6 +500,10 @@ otherwise.
 10. No pull request in the sequence changes a sentence the author did not approve by id, and
     each rewritten core belief still states the same belief, by the author's own judgement.
 11. The core beliefs index names no tradition, and belief 4's title names none.
+12. Every tradition named on a rewritten page has a cell in the convergence map with a source,
+    and `python3 scripts/check-content-index.py` passes.
+13. No page presents a resemblance or a contrary teaching as agreement: each `resembles` and
+    `contrary` cell that a page draws on is worded as the cell's note says.
 
 ## Acceptance
 

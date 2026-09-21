@@ -101,6 +101,37 @@ class ContentIndexGate(unittest.TestCase):
         self.assertIn("must name a current page in replaced_by", result.stdout)
         self.assertIn("links to deprecated page", result.stdout)
 
+    def map_setup(self, cells, body="Karma is the law of moral cause and effect, as Hinduism teaches.\n"):
+        self.write(KARMA, page("Karma", body))
+        self.write("scripts/doctrine-gate.json", json.dumps({"traditions": {"Hinduism": ["hindu\\w*"], "Buddhism": ["buddh\\w*"]}}))
+        self.write("docs/sources.md", "| Id | Source |\n| --- | --- |\n| S01 | A text |\n")
+        self.reload()
+        self.index["concepts"]["karma"]["held_by"] = cells
+        self.save()
+        return self.run_gate("--record")
+
+    def test_convergence_map_passes_when_sourced(self):
+        result = self.map_setup({"Hinduism": {"relation": "origin", "sources": ["S01"]}})
+        self.assertEqual(result.returncode, 0, result.stdout)
+        view = (self.root / "docs/cross-reference.md").read_text(encoding="utf-8")
+        self.assertIn("## Convergence map", view)
+
+    def test_convergence_cell_needs_a_known_source_and_a_note(self):
+        result = self.map_setup({"Hinduism": {"relation": "origin", "sources": ["S09"]},
+                                 "Buddhism": {"relation": "resembles", "sources": ["S01"]}})
+        self.assertIn("source S09 is not in docs/sources.md", result.stdout)
+        self.assertIn("needs a note saying how it differs", result.stdout)
+
+    def test_inherited_teaching_names_its_origin(self):
+        result = self.map_setup({"Hinduism": {"relation": "origin", "sources": ["S01"]},
+                                 "Buddhism": {"relation": "inherits", "sources": ["S01"], "from": "Taoism"}})
+        self.assertIn("names in \"from\" a tradition that holds it", result.stdout)
+
+    def test_tradition_named_on_the_page_needs_a_cell(self):
+        result = self.map_setup({"Hinduism": {"relation": "origin", "sources": ["S01"]}},
+                                body="Karma, as Hinduism and Buddhism teach.\n")
+        self.assertIn("names Buddhism, which has no cell", result.stdout)
+
     def test_stale_view_fails(self):
         (self.root / "docs/cross-reference.md").write_text("stale\n", encoding="utf-8")
         result = self.run_gate()

@@ -29,7 +29,48 @@
       "terms": [
         "unity",
         "oneness"
-      ]
+      ],
+      "held_by": {
+        "Hinduism": {
+          "relation": "independent",
+          "sources": [
+            "S64"
+          ],
+          "note": "\"That thou art\". Identity of self and ultimate reality is one school's reading of three."
+        },
+        "Islam": {
+          "relation": "independent",
+          "sources": [
+            "S88",
+            "S101"
+          ],
+          "note": "The oneness of God, and God as the Light of the heavens and the earth."
+        },
+        "Christianity": {
+          "relation": "independent",
+          "sources": [
+            "S32",
+            "S44"
+          ],
+          "note": "\"You are the light of the world\" and \"God is light\" are different sayings with different subjects."
+        },
+        "Sikhism": {
+          "relation": "independent",
+          "sources": [
+            "S103",
+            "S110"
+          ],
+          "note": "One creator, and the Lord's Light within all."
+        },
+        "Seicho-no-Ie": {
+          "relation": "independent",
+          "sources": [
+            "S05",
+            "S06"
+          ],
+          "note": "Only the perfect world God created truly exists."
+        }
+      }
     },
     "spiritual-evolution": {
       "label": "Spiritual evolution and practice",
@@ -40,7 +81,54 @@
       ],
       "elaborated_in": [
         "content/3-practice/README.md"
-      ]
+      ],
+      "held_by": {
+        "Islam": {
+          "relation": "independent",
+          "sources": [
+            "S92"
+          ],
+          "note": "Prayer, fasting and pilgrimage among the five."
+        },
+        "Hinduism": {
+          "relation": "independent",
+          "sources": [
+            "S56",
+            "S57"
+          ],
+          "note": "Paths of action, knowledge and devotion for different temperaments. The fourfold scheme is modern (S58)."
+        },
+        "Buddhism": {
+          "relation": "independent",
+          "sources": [
+            "S69",
+            "S85"
+          ],
+          "note": "The eightfold path; mindfulness of breathing as a path to liberation."
+        },
+        "Christianity": {
+          "relation": "independent",
+          "sources": [
+            "S33"
+          ],
+          "note": "Giving, prayer and fasting, done in secret."
+        },
+        "Judaism": {
+          "relation": "independent",
+          "sources": [
+            "S28",
+            "S24"
+          ],
+          "note": "The day of rest; study."
+        },
+        "Seicho-no-Ie": {
+          "relation": "independent",
+          "sources": [
+            "S115"
+          ],
+          "note": "Shinsokan, a prayerful meditation."
+        }
+      }
     },
     "ethical-living": {
       "label": "Ethical and moral living",
@@ -52,7 +140,56 @@
       "elaborated_in": [
         "content/2-doctrine/ethical-and-moral-development/README.md",
         "content/2-doctrine/ethical-and-moral-development/ethical-living-as-spiritual-practice.md"
-      ]
+      ],
+      "held_by": {
+        "Judaism": {
+          "relation": "independent",
+          "sources": [
+            "S18",
+            "S19"
+          ],
+          "note": "Tzedakah: righteousness and charity, both."
+        },
+        "Islam": {
+          "relation": "independent",
+          "sources": [
+            "S91"
+          ],
+          "note": "Zakat, an obligation, and not only relief of the poor."
+        },
+        "Christianity": {
+          "relation": "independent",
+          "sources": [
+            "S38",
+            "S32"
+          ],
+          "note": "The least of these; the merciful and the peacemakers."
+        },
+        "Hinduism": {
+          "relation": "independent",
+          "sources": [
+            "S59",
+            "S61",
+            "S62"
+          ],
+          "note": "Non-injury as a virtue. Not general pacifism."
+        },
+        "Buddhism": {
+          "relation": "independent",
+          "sources": [
+            "S70",
+            "S77"
+          ],
+          "note": "Right speech and action; the five precepts."
+        },
+        "Sikhism": {
+          "relation": "independent",
+          "sources": [
+            "S106"
+          ],
+          "note": "Work for what you eat and give some of what you have."
+        }
+      }
     },
     "family": {
       "label": "Family",
@@ -65,18 +202,101 @@
       ]
     },
     "fitrah": {
-      "label": "Fitrah",
+      "label": "Innate goodness (Fitrah)",
       "owner": "content/1-foundations/core-beliefs/inclusive-family-structures-and-fitrah.md",
       "terms": [
         "fitrah"
-      ]
+      ],
+      "held_by": {
+        "Islam": {
+          "relation": "origin",
+          "sources": [
+            "S89"
+          ],
+          "note": "The word and the teaching as the page uses it. Cite the verse; the hadith (S90) names other traditions."
+        },
+        "Judaism": {
+          "relation": "independent",
+          "sources": [
+            "S22"
+          ],
+          "note": "Made in the image of God."
+        },
+        "Seicho-no-Ie": {
+          "relation": "independent",
+          "sources": [
+            "S05"
+          ],
+          "note": "Already perfect, a child of God."
+        },
+        "Buddhism": {
+          "relation": "resembles",
+          "sources": [
+            "S83",
+            "S84"
+          ],
+          "note": "Buddha-nature is a Mahayana teaching of the potential for awakening, contested within Mahayana, and not the goodness of a soul. Needs a further source."
+        }
+      }
     },
     "compassion": {
       "label": "Compassionate action",
       "owner": "content/1-foundations/core-beliefs/compassionate-action.md",
       "terms": [
         "compassion\\w*"
-      ]
+      ],
+      "held_by": {
+        "Judaism": {
+          "relation": "origin",
+          "sources": [
+            "S14",
+            "S15",
+            "S16",
+            "S17"
+          ],
+          "note": "Love your neighbour, read with love the stranger; Hillel's rule, quoted whole."
+        },
+        "Christianity": {
+          "relation": "inherits",
+          "sources": [
+            "S37",
+            "S40",
+            "S32"
+          ],
+          "from": "Judaism",
+          "note": "Jesus quotes Leviticus; the Samaritan widens the neighbour; love of enemies."
+        },
+        "Islam": {
+          "relation": "independent",
+          "sources": [
+            "S99",
+            "S100"
+          ],
+          "note": "Against those who drive away the orphan; the merciful are shown mercy."
+        },
+        "Buddhism": {
+          "relation": "independent",
+          "sources": [
+            "S72",
+            "S73"
+          ],
+          "note": "Love, compassion, rejoicing and equanimity."
+        },
+        "Hinduism": {
+          "relation": "independent",
+          "sources": [
+            "S61",
+            "S62"
+          ]
+        },
+        "Sikhism": {
+          "relation": "independent",
+          "sources": [
+            "S109"
+          ],
+          "note": "Seva."
+        }
+      }
     },
     "interconnectedness": {
       "label": "Interconnectedness",
@@ -86,7 +306,46 @@
       ],
       "elaborated_in": [
         "content/4-way-of-life/environmental-stewardship/principle-of-interconnectedness.md"
-      ]
+      ],
+      "held_by": {
+        "Buddhism": {
+          "relation": "independent",
+          "sources": [
+            "S75",
+            "S76"
+          ],
+          "note": "The Huayan school's net of Indra and Thich Nhat Hanh's interbeing. Early dependent origination (S74) explains the arising of suffering and only resembles this."
+        },
+        "Hinduism": {
+          "relation": "independent",
+          "sources": [
+            "S65"
+          ],
+          "note": "The whole world as a family: a late text about a detached sage."
+        },
+        "Indigenous traditions": {
+          "relation": "independent",
+          "sources": [
+            "S119",
+            "S120"
+          ],
+          "note": "Māori kaitiakitanga; the Haudenosaunee Thanksgiving Address. Each is that people's own, not a general ethic."
+        },
+        "Hawaiian tradition": {
+          "relation": "independent",
+          "sources": [
+            "S121"
+          ],
+          "note": "Aloha ʻāina and mālama ʻāina, political as well as ecological."
+        },
+        "Seicho-no-Ie": {
+          "relation": "independent",
+          "sources": [
+            "S117"
+          ],
+          "note": "Grand Harmony of God, Nature, and Human Beings."
+        }
+      }
     },
     "learning": {
       "label": "Pursuit of knowledge and continuous learning",
@@ -97,7 +356,39 @@
       ],
       "elaborated_in": [
         "content/4-way-of-life/continuous-learning/README.md"
-      ]
+      ],
+      "held_by": {
+        "Islam": {
+          "relation": "independent",
+          "sources": [
+            "S95"
+          ],
+          "note": "\"My Lord, increase me in knowledge\". The well-known hadith (S94) has a very weak chain."
+        },
+        "Judaism": {
+          "relation": "independent",
+          "sources": [
+            "S23",
+            "S24"
+          ],
+          "note": "Study, and dispute for the sake of Heaven."
+        },
+        "Buddhism": {
+          "relation": "independent",
+          "sources": [
+            "S79",
+            "S80"
+          ],
+          "note": "Test a teaching by its fruits and by what the wise praise. Not a licence to believe what one likes."
+        },
+        "Hinduism": {
+          "relation": "independent",
+          "sources": [
+            "S56"
+          ],
+          "note": "The path of knowledge."
+        }
+      }
     },
     "world-traditions": {
       "label": "Respect for the wisdom of world traditions",
@@ -109,7 +400,37 @@
         "content/2-doctrine/enlightened-figures/README.md",
         "content/3-practice/holy-texts.md",
         "content/3-practice/prayer.md"
-      ]
+      ],
+      "held_by": {
+        "Seicho-no-Ie": {
+          "relation": "independent",
+          "sources": [
+            "S113"
+          ],
+          "note": "All religions emanate from one universal God. The nearest statement of UPL's own premise."
+        },
+        "Islam": {
+          "relation": "independent",
+          "sources": [
+            "S93"
+          ],
+          "note": "One community, said after a list of earlier prophets. Translations differ."
+        },
+        "Hinduism": {
+          "relation": "resembles",
+          "sources": [
+            "S51"
+          ],
+          "note": "\"To what is One, sages give many a title\" names Vedic gods. Reading it as a statement about all religions is modern."
+        },
+        "Buddhism": {
+          "relation": "resembles",
+          "sources": [
+            "S81"
+          ],
+          "note": "The teaching as a raft, a means and not an end. It is about the Buddha's own teaching, not about other religions."
+        }
+      }
     },
     "environment": {
       "label": "Environmental stewardship",
@@ -121,7 +442,52 @@
       ],
       "elaborated_in": [
         "content/4-way-of-life/environmental-stewardship/README.md"
-      ]
+      ],
+      "held_by": {
+        "Islam": {
+          "relation": "independent",
+          "sources": [
+            "S96",
+            "S97"
+          ],
+          "note": "Successors upon the earth, often understood as stewardship; do not be excessive."
+        },
+        "Judaism": {
+          "relation": "independent",
+          "sources": [
+            "S20",
+            "S21"
+          ],
+          "note": "Do not destroy: a rabbinic extension of a verse on fruit trees. The environmental reading is modern."
+        },
+        "Christianity": {
+          "relation": "independent",
+          "sources": [
+            "S46",
+            "S47"
+          ],
+          "note": "Francis of Assisi, patron of those who promote ecology; the Canticle of the Creatures."
+        },
+        "Indigenous traditions": {
+          "relation": "independent",
+          "sources": [
+            "S119",
+            "S120"
+          ]
+        },
+        "Hawaiian tradition": {
+          "relation": "independent",
+          "sources": [
+            "S121"
+          ]
+        },
+        "Seicho-no-Ie": {
+          "relation": "independent",
+          "sources": [
+            "S117"
+          ]
+        }
+      }
     },
     "community": {
       "label": "Community and fellowship",
@@ -132,7 +498,41 @@
       ],
       "elaborated_in": [
         "content/4-way-of-life/community-and-fellowship/README.md"
-      ]
+      ],
+      "held_by": {
+        "Islam": {
+          "relation": "independent",
+          "sources": [
+            "S93"
+          ],
+          "note": "The ummah."
+        },
+        "Buddhism": {
+          "relation": "independent",
+          "sources": [
+            "S86",
+            "S78"
+          ],
+          "note": "The Sangha: in the early texts the monastic order or the community of the awakened."
+        },
+        "Christianity": {
+          "relation": "independent",
+          "sources": [
+            "S43",
+            "S39"
+          ],
+          "note": "Washing one another's feet; whoever would be great shall serve."
+        },
+        "Sikhism": {
+          "relation": "independent",
+          "sources": [
+            "S107",
+            "S108",
+            "S109"
+          ],
+          "note": "The shared meal open to all, and seva. Traditionally traced to Guru Nanak."
+        }
+      }
     },
     "positive-thinking": {
       "label": "Positive thinking",
@@ -143,7 +543,37 @@
       "elaborated_in": [
         "content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md",
         "content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md"
-      ]
+      ],
+      "held_by": {
+        "Seicho-no-Ie": {
+          "relation": "origin",
+          "sources": [
+            "S113"
+          ],
+          "note": "The law of the mind: thought, word and deed shape the phenomenal world."
+        },
+        "Islam": {
+          "relation": "independent",
+          "sources": [
+            "S98"
+          ],
+          "note": "Gratitude, which is sourced. The page also credits Islam with positive conduct and mindful awareness, for which no source is recorded yet."
+        },
+        "Buddhism": {
+          "relation": "resembles",
+          "sources": [
+            "S68"
+          ],
+          "note": "Mind or intention comes first, leading speech and action. It does not say thoughts create reality."
+        },
+        "Christianity": {
+          "relation": "resembles",
+          "sources": [
+            "S33"
+          ],
+          "note": "Do not be anxious: trust, turning on \"seek first God's Kingdom\", not the power of thought."
+        }
+      }
     },
     "gratitude": {
       "label": "Gratitude",
@@ -155,14 +585,68 @@
       ],
       "elaborated_in": [
         "content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md"
-      ]
+      ],
+      "held_by": {
+        "Islam": {
+          "relation": "independent",
+          "sources": [
+            "S98"
+          ],
+          "note": "Gratitude is met with increase."
+        },
+        "Indigenous traditions": {
+          "relation": "independent",
+          "sources": [
+            "S120"
+          ],
+          "note": "Thanks to each part of the natural world, before all else."
+        },
+        "Seicho-no-Ie": {
+          "relation": "independent",
+          "sources": [
+            "S114",
+            "S116"
+          ],
+          "note": "Reconciliation with all things; gratitude to ancestors. The English wording of the Grand Harmony message is not to be quoted yet."
+        }
+      }
     },
     "mindful-action": {
       "label": "Mindful action",
       "owner": "content/3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action.md",
       "terms": [
         "mindful action"
-      ]
+      ],
+      "held_by": {
+        "Hinduism": {
+          "relation": "independent",
+          "sources": [
+            "S53"
+          ],
+          "note": "A right to the work, not to its fruits."
+        },
+        "Buddhism": {
+          "relation": "independent",
+          "sources": [
+            "S70",
+            "S71"
+          ]
+        },
+        "Christianity": {
+          "relation": "independent",
+          "sources": [
+            "S33"
+          ],
+          "note": "Done in secret, not for show."
+        },
+        "Judaism": {
+          "relation": "independent",
+          "sources": [
+            "S26"
+          ],
+          "note": "The ethics of speech."
+        }
+      }
     },
     "divine-light": {
       "label": "Divine light",
@@ -170,7 +654,52 @@
       "terms": [
         "divine light",
         "light of divinity"
-      ]
+      ],
+      "held_by": {
+        "Islam": {
+          "relation": "independent",
+          "sources": [
+            "S101"
+          ],
+          "note": "The Light Verse."
+        },
+        "Christianity": {
+          "relation": "independent",
+          "sources": [
+            "S32",
+            "S42",
+            "S44"
+          ]
+        },
+        "Sikhism": {
+          "relation": "independent",
+          "sources": [
+            "S110"
+          ]
+        },
+        "Hinduism": {
+          "relation": "independent",
+          "sources": [
+            "S64",
+            "S52"
+          ],
+          "note": "From darkness lead me to light."
+        },
+        "Seicho-no-Ie": {
+          "relation": "independent",
+          "sources": [
+            "S05"
+          ],
+          "note": "The person as a child of God. UPL credits the phrase and keeps its own (decision D1)."
+        },
+        "Judaism": {
+          "relation": "resembles",
+          "sources": [
+            "S22"
+          ],
+          "note": "Humankind in the image of God. The verse does not say what the image is; the mystical teaching of divine sparks is not recorded here and is to be described, not absorbed."
+        }
+      }
     },
     "god": {
       "label": "God",
@@ -212,7 +741,30 @@
       ],
       "elaborated_in": [
         "content/2-doctrine/soul-karma-dharma-and-death/README.md"
-      ]
+      ],
+      "held_by": {
+        "Hinduism": {
+          "relation": "independent",
+          "sources": [
+            "S64"
+          ],
+          "note": "The atman."
+        },
+        "Seicho-no-Ie": {
+          "relation": "independent",
+          "sources": [
+            "S05"
+          ],
+          "note": "Man is not matter but spiritual existence."
+        },
+        "Buddhism": {
+          "relation": "contrary",
+          "sources": [
+            "S82"
+          ],
+          "note": "Nothing in body or mind is a permanent, unchanging self. UPL parts from Buddhism here and says so (decision D3)."
+        }
+      }
     },
     "cocoon": {
       "label": "The silkworm and cocoon image",
@@ -220,7 +772,17 @@
       "terms": [
         "cocoons?",
         "silkworm"
-      ]
+      ],
+      "held_by": {
+        "Seicho-no-Ie": {
+          "relation": "origin",
+          "sources": [
+            "S07",
+            "S08"
+          ],
+          "note": "The silkworm and the cocoon, from the Nectarean Shower of Holy Doctrines."
+        }
+      }
     },
     "karma": {
       "label": "Karma",
@@ -230,7 +792,16 @@
       ],
       "elaborated_in": [
         "content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md"
-      ]
+      ],
+      "held_by": {
+        "Hinduism": {
+          "relation": "origin",
+          "sources": [
+            "S53"
+          ],
+          "note": "Action and its fruit."
+        }
+      }
     },
     "dharma": {
       "label": "Dharma",
@@ -240,7 +811,26 @@
       ],
       "elaborated_in": [
         "content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md"
-      ]
+      ],
+      "held_by": {
+        "Hinduism": {
+          "relation": "origin",
+          "sources": [
+            "S54",
+            "S55",
+            "S63",
+            "S67"
+          ],
+          "note": "One's own dharma is bound to the four classes in the text. UPL takes the path of right action and not the assignment by birth."
+        },
+        "Buddhism": {
+          "relation": "resembles",
+          "sources": [
+            "S87"
+          ],
+          "note": "In Buddhism the dharma is the teaching and the truth it points to. The same word, a different sense."
+        }
+      }
     },
     "liberation": {
       "label": "Liberation",
@@ -257,7 +847,16 @@
       ],
       "elaborated_in": [
         "content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md"
-      ]
+      ],
+      "held_by": {
+        "Christianity": {
+          "relation": "contrary",
+          "sources": [
+            "S38"
+          ],
+          "note": "The passage on the least of these ends in eternal punishment, which UPL does not teach."
+        }
+      }
     },
     "consciousness": {
       "label": "Consciousness",
@@ -278,14 +877,53 @@
       "owner": "content/3-practice/prayer.md",
       "terms": [
         "prayers?"
-      ]
+      ],
+      "held_by": {
+        "Christianity": {
+          "relation": "independent",
+          "sources": [
+            "S33"
+          ],
+          "note": "The Lord's Prayer, without the later doxology."
+        },
+        "Islam": {
+          "relation": "independent",
+          "sources": [
+            "S102"
+          ]
+        },
+        "Hinduism": {
+          "relation": "independent",
+          "sources": [
+            "S52"
+          ]
+        }
+      }
     },
     "holy-texts": {
       "label": "Holy texts",
       "owner": "content/3-practice/holy-texts.md",
       "terms": [
         "(holy|sacred) texts?"
-      ]
+      ],
+      "held_by": {
+        "Buddhism": {
+          "relation": "independent",
+          "sources": [
+            "S79",
+            "S81"
+          ]
+        },
+        "Christianity": {
+          "relation": "independent",
+          "sources": [
+            "S48",
+            "S49",
+            "S50"
+          ],
+          "note": "Allegorical reading: one major strand, and Augustine warns against it as well as for it."
+        }
+      }
     },
     "rituals": {
       "label": "Rituals and celebrations",
@@ -315,7 +953,24 @@
       "terms": [
         "sobriety",
         "drugs?"
-      ]
+      ],
+      "held_by": {
+        "Buddhism": {
+          "relation": "independent",
+          "sources": [
+            "S77",
+            "S78"
+          ],
+          "note": "The fifth precept."
+        },
+        "Sikhism": {
+          "relation": "independent",
+          "sources": [
+            "S107"
+          ],
+          "note": "No intoxicant, in the Sikh code of conduct."
+        }
+      }
     },
     "medicine": {
       "label": "Science and modern medicine",
@@ -323,7 +978,31 @@
       "terms": [
         "medicine",
         "medical"
-      ]
+      ],
+      "held_by": {
+        "Judaism": {
+          "relation": "independent",
+          "sources": [
+            "S03",
+            "S04"
+          ],
+          "note": "Saving a life comes before almost every other duty."
+        },
+        "Christianity": {
+          "relation": "resembles",
+          "sources": [
+            "S35"
+          ],
+          "note": "Healing with a word, read as teaching about faith and not as a technique."
+        },
+        "Seicho-no-Ie": {
+          "relation": "contrary",
+          "sources": [
+            "S115"
+          ],
+          "note": "In the True Image there is no disease. UPL holds that illness is real and is treated (decisions D1 and D2)."
+        }
+      }
     },
     "science": {
       "label": "Science and technology",
@@ -382,14 +1061,31 @@
       "owner": "content/3-practice/meditation/shinsokan-meditation.md",
       "terms": [
         "shinsokan"
-      ]
+      ],
+      "held_by": {
+        "Seicho-no-Ie": {
+          "relation": "origin",
+          "sources": [
+            "S115"
+          ]
+        }
+      }
     },
     "hooponopono": {
       "label": "Ho'oponopono",
       "owner": "content/3-practice/meditation/hooponopono-meditation.md",
       "terms": [
         "ho['ʻ’]?oponopono"
-      ]
+      ],
+      "held_by": {
+        "Hawaiian tradition": {
+          "relation": "origin",
+          "sources": [
+            "S122"
+          ],
+          "note": "To set right: a family process led by a respected mediator. The four-phrase form is a modern adaptation."
+        }
+      }
     },
     "pantheism": {
       "label": "Pantheism",
