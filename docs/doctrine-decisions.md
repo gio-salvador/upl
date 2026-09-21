@@ -1231,6 +1231,29 @@ Source gate: passing; the passage names no tradition. No use of "expects" remain
   becomes "UPL reads". P40 is invitation because it is a practice; the rest are aspiration.
 - P37, P38 and P39 are on locked pages, so applying them needs the author's `--accept-core`.
 
+## After the second sourcing round: wording approved and applied
+
+The second round of sourcing made six small changes possible. They were run through the gates in
+a scratch tree before the author was asked. The author approved all six on 21 September 2026 and
+they were applied exactly as written. On the author's instruction the baseline was recorded with
+`--accept-core` and `--waive-imbalance`; verified by comparison, two fingerprints changed (beliefs
+4 and 10) and no imbalance record moved.
+
+- **P46, belief 10, addition to the last paragraph:** "Islam asks for good character, and for taqwa,
+  a steady mindfulness of God." It restores the author's original claim that Islamic ethics
+  encourage positive conduct and mindful awareness, in the sense the sources support (S160, S161,
+  S162, S163): the object of taqwa is God, not the present moment.
+- **P47, belief 4, addition after the sentence on the image of God:** "Mahayana Buddhism speaks of
+  Buddha-nature, the potential for awakening in every being, which is not a soul and which
+  Buddhists understand in more than one way." Sourced to S124 and S125.
+- **Q14:** the References entry reads "The Heart of the Buddha's Teaching"; "the" was missing.
+- **Q15:** "Stanford Encyclopedia of Philosophy", the work's own spelling of its name.
+- **Q16:** the Chalmers entry is marked as the journal article it is: "Journal of Consciousness
+  Studies, 1995".
+- **Q17:** the entry "Seicho-No-Ie" by Masaharu Taniguchi is removed. It is the movement's
+  periodical and not a book. In the source register it is retired as R04, not deleted; the source
+  gate now knows a retired row, so an id is never reused and a removal always leaves its reason.
+
 ## What these decisions open
 
 The decisions were the precondition for drawing more widely on the traditions. With them taken:

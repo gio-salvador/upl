@@ -15,6 +15,8 @@ consulted since.
 - A statement about another tradition, a named figure, a book or science goes into a teaching or
   a page under `docs/` only with a row here that supports it. Beliefs of the Unified Path of
   Light itself are doctrine and need no source.
+- A source or a book that is no longer used is retired, not deleted: its standing begins
+  "Retired", with the date and the reason, and its id is never reused.
 - One row per source. If a source is used again, add to its "Supports" and "Used in" cells; do
   not add a second row.
 - Ids are permanent. Other pages cite a source by id, such as S07, and keep the link here only.
@@ -344,13 +346,13 @@ them; that is recorded in [site-review.md](site-review.md), W3.
 | R01 | "The World's Religions" by Huston Smith | Checked 21 September 2026 (Library of Congress catalogue). Full title "The World's Religions: Our Great Wisdom Traditions", HarperSanFrancisco, 1991, the revised edition of "The Religions of Man" (Harper, 1958). Correct as listed, without its subtitle |
 | R02 | "Modern Physics and Ancient Faith" by Stephen M. Barr | Checked (Library of Congress catalogue). University of Notre Dame Press, 2003. Correct as listed |
 | R03 | "The Prophet Muhammad" by Barnaby Rogerson | Checked (Library of Congress catalogue). The United States edition is "The Prophet Muhammad: A Biography" (HiddenSpring, 2003); the British editions carry no subtitle. Correct as listed |
-| R04 | "Seicho-No-Ie" by Masaharu Taniguchi | Not a book. In the Library of Congress catalogue "Seichō no ie" (1930 onwards) is the organisation's periodical, and no book of that bare title by Taniguchi was found. His principal work is listed in its own right as R24. Removal proposed as Q17 |
+| R04 | "Seicho-No-Ie" by Masaharu Taniguchi | Retired 21 September 2026 (Q17) and removed from the References page. It is not a book: in the Library of Congress catalogue "Seichō no ie" (1930 onwards) is the organisation's periodical, and no book of that bare title by Taniguchi was found. His principal work is listed as R24. The id is kept, because ids are permanent |
 | R05 | "Quantum Physics and Theology: An Unexpected Kinship" by John Polkinghorne | Checked (Library of Congress catalogue). Yale University Press, 2007. Correct as listed |
-| R06 | "The Heart of Buddha's Teaching" by Thích Nhất Hạnh | Wrong as listed: "the" is missing. The title is "The Heart of the Buddha's Teaching: Transforming Suffering into Peace, Joy & Liberation" (Parallax Press, 1998). Checked (Library of Congress catalogue). Correction proposed as Q14 |
+| R06 | "The Heart of the Buddha's Teaching" by Thích Nhất Hạnh | Corrected 21 September 2026 (Q14): "the" was missing. Full title "The Heart of the Buddha's Teaching: Transforming Suffering into Peace, Joy & Liberation" (Parallax Press, 1998), checked against the Library of Congress catalogue |
 | R07 | "The Essential Jesus" by John Dominic Crossan | Checked (Library of Congress catalogue). Full title "The Essential Jesus: Original Sayings and Earliest Images", HarperSanFrancisco, 1994. Correct as listed, without its subtitle |
 | R08 | "Socinianism and Its Role in the Culture of XVI-th to XVIII-th Centuries", edited by Lech Szczucki with Zbigniew Ogonowski and Janusz Tazbir | Corrected 21 September 2026 (Q13) from two catalogues: PWN, 1983 (S01, S02). It was listed under Krystyna Łyczywek |
-| R09 | "Stanford Encyclopaedia of Philosophy" | Wrong as listed: the work spells its own name "Stanford Encyclopedia of Philosophy" (S193), and a proper name keeps its spelling in British prose. No article is named. Correction proposed as Q15 |
-| R10 | "Facing Up to the Problem of Consciousness" by David Chalmers | Wrong in kind: a journal article, not a book. Journal of Consciousness Studies 2(3), 1995, pages 200 to 219 (S192). It is the source of the "hard problem", which the Continuum of Life and Consciousness page calls "empirically-based"; it is a philosophical argument (site-review.md, W3). Correction proposed as Q16 |
+| R09 | "Stanford Encyclopedia of Philosophy" | Corrected (Q15) to the work's own spelling of its name (S193). No article is named; the entries used are S75 and S112 |
+| R10 | "Facing Up to the Problem of Consciousness" by David Chalmers, Journal of Consciousness Studies, 1995 | Corrected (Q16): a journal article, volume 2(3), pages 200 to 219 (S192), not a book. It is the source of the "hard problem", which the Continuum of Life and Consciousness page calls "empirically-based"; it is a philosophical argument (site-review.md, W3) |
 | R11 | "Life After Life: The Investigation of a Phenomenon - Survival of Bodily Death" by Raymond Moody | Checked (Library of Congress catalogue). Title and subtitle correct. The earliest record held is Stackpole Books, 1976; 1975 (Mockingbird) rests on one catalogue only |
 | R12 | "The Transcendent Unity of Religions" by Frithjof Schuon | Checked (Library of Congress catalogue and S194). Pantheon and Faber, 1953; the French original is "De l'unité transcendante des religions" (Gallimard, 1948). Correct as listed |
 | R13 | "Nectarean Shower of Holy Doctrines" (the Holy Sutra of Seicho-No-Ie) by Masaharu Taniguchi | Added 21 September 2026 (proposal P14). The source of the silkworm and cocoon image, now credited on The Immortal Soul. Title and authorship confirmed (S07, S08); the wording quoted should be checked against the author's copy |
@@ -364,5 +366,5 @@ them; that is recorded in [site-review.md](site-review.md), W3.
 | R21 | The Dhammapada and the discourses of the Pali Canon, in the translations of Bhikkhu Sujato | Added (Q8). Openly licensed translations (S68) |
 | R22 | The Guru Granth Sahib, in the translation of Sant Singh Khalsa | Added (Q9) (S103) |
 | R23 | "Tao Te Ching", attributed to Laozi, in the translation of James Legge | Added (Q10). Public domain. Laozi may be legendary (S112) (S111) |
-| R24 | "Truth of Life" (Seimei no Jissō) by Masaharu Taniguchi | Added (Q11), beside the doubtful entry R04, which the author may now remove. Taniguchi's principal work (S05, S06) |
+| R24 | "Truth of Life" (Seimei no Jissō) by Masaharu Taniguchi | Added (Q11). The doubtful entry "Seicho-No-Ie", now retired as R04, was removed from the References page on 21 September 2026 (Q17): it is the movement's periodical and not a book. Taniguchi's principal work (S05, S06) |
 | R25 | "Nānā i ke Kumu" by Mary Kawena Pukui, E. W. Haertig and Catherine A. Lee | Added (Q12). The record of traditional hoʻoponopono; not itself opened, cited through S122 (S122) |

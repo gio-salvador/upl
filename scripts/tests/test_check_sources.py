@@ -93,6 +93,14 @@ class SourceGate(unittest.TestCase):
         self.write("docs/notes.md", "# Notes\n\n" + " ".join(f"S{n:02d}" for n in range(1, 101)) + "\n")
         self.assertIn("S101 is cited nowhere", self.run_gate().stdout)
 
+    def test_retired_book_may_leave_the_page_but_not_stay_on_it(self):
+        retired = BOOKS.replace("| Not checked |", "| Retired 2026-09-21: not a book |")
+        self.write("docs/sources.md", "# Source register\n\n" + HEAD + ROW + retired)
+        self.write("content/5-context/references.md", REFERENCES.replace('- "A Book" by An Author\n', ""))
+        self.assertEqual(self.run_gate().returncode, 0, self.run_gate().stdout)
+        self.write("content/5-context/references.md", REFERENCES)
+        self.assertIn("is retired but its entry is still in", self.run_gate().stdout)
+
     def test_old_source_is_a_note_not_a_failure(self):
         self.write("docs/sources.md", "# Source register\n\n" + HEAD + ROW.replace("2026-09-21", "2024-01-01") + BOOKS)
         result = self.run_gate()

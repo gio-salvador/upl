@@ -15,7 +15,8 @@ in docs/doctrine-guardrails.md, section 6. Checks:
   4. no orphans    every source in the register is cited by id from at least one other page
   5. used in       every file a row names under "Used in" exists
   6. references    the register's list of the books the teachings cite matches the References
-                   page entry for entry, so a change to the bibliography is always re-recorded
+                   page entry for entry, so a change to the bibliography is always re-recorded;
+                   an entry taken off the page is retired in the register, never deleted
 
   scripts/check-sources.py            run the gate
   scripts/check-sources.py --report   also list every source with the pages that cite it
@@ -161,7 +162,11 @@ def check(root, today):
     references = root / REFERENCES
     if references.is_file():
         listed = reference_entries(references.read_text(encoding="utf-8"))
-        recorded = [row[1] for row in books if len(row) == 3]
+        # A retired row keeps its id and its history, and no longer has to be on the page.
+        recorded = [row[1] for row in books if len(row) == 3 and not row[2].startswith("Retired")]
+        for row in books:
+            if len(row) == 3 and row[2].startswith("Retired") and row[1] in listed:
+                problems.append(f"{REGISTER}: {row[0]} is retired but its entry is still in {REFERENCES}")
         for entry in listed:
             if entry not in recorded:
                 problems.append(f"{REFERENCES}: the entry {entry} has no row in {REGISTER}. Add one with its standing")
