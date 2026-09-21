@@ -9,6 +9,7 @@ order: 4
 - "Modern Physics and Ancient Faith" by Stephen M. Barr
 - "The Prophet Muhammad" by Barnaby Rogerson
 - "Seicho-No-Ie" by Masaharu Taniguchi
+- "Nectarean Shower of Holy Doctrines" (the Holy Sutra of Seicho-No-Ie) by Masaharu Taniguchi
 - "Quantum Physics and Theology: An Unexpected Kinship" by John Polkinghorne
 - "The Heart of Buddha's Teaching" by Thích Nhất Hạnh
 - "The Essential Jesus" by John Dominic Crossan

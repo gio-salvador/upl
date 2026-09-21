@@ -14,7 +14,7 @@ in a pull request called out as a wording change.
 Taken by the author, Giovanni S. Salvador, in answer to the three conflicts recorded in the
 [cross-reference matrix](cross-reference.md) and the questions that followed from them.
 
-### D1. God is impersonal: the source of light (closes X02 when applied)
+### D1. God is impersonal: the source of light (closed X02)
 
 In the author's words: "Impersonal, although god is the source of light, and we are light from
 the source, this light is pure and vibrates multiple energies on the same spectrum as love.
@@ -43,7 +43,7 @@ The points settled with it:
    tradition is described. UPL's own term stays "light from the source" or "emanation of divine
    light".
 
-### D2. UPL heals the spirit; medicine treats the body (closes X01 when applied)
+### D2. UPL heals the spirit; medicine treats the body (closed X01)
 
 First decided as "medicine first; spiritual practice supports it", then refined by the author on
 21 September 2026. The refined position:
@@ -78,7 +78,7 @@ Two cautions from the drafting, kept here so the wording stays honest:
 Any teaching on healing taken from another tradition is adopted only as a complement to
 medicine.
 
-### D3. The disagreement with Buddhism is stated (closes X03 when applied)
+### D3. The disagreement with Buddhism is stated (closed X03)
 
 UPL takes the path of mindfulness, ethical conduct and compassion, and karma, from Buddhism. It
 does not take the teaching of non-self: with Hinduism, UPL holds that the soul is real and
@@ -122,11 +122,18 @@ is still one owner. In the matrix, "soul" and "consciousness" stay separate conc
 Continuum page owns the philosophical argument, but the soul concept gains the other names as
 terms, so every page that uses any of them is indexed under it.
 
-## Proposed wording, waiting for the author
+## Wording approved and applied
 
-Each proposal stands alone. Approve, change or decline each by its id. "Locked" means the page
-is under `content/1-foundations/` or `content/2-doctrine/`, so after it is applied the author
-records the new baseline with `--accept-core`.
+The author approved all fourteen proposals on 21 September 2026 ("accept and apply all"), and
+instructed that the core baseline be recorded with `--accept-core` for them. They were applied
+exactly as written below, in one wording pull request. P10 proposed no change. The new baseline
+changed the fingerprints of three locked pages and nothing else: God, Quantum Physics, and the
+Light of Divinity (P6, P7), The Immortal Soul (P11, P13) and Death as a Transformative Journey
+(P12).
+
+The proposals are kept as the record of what changed and why. "Locked" means the page is under
+`content/1-foundations/` or `content/2-doctrine/`. A later change to any of these passages is a
+new proposal, not an edit to this record.
 
 ### For D2
 
@@ -307,7 +314,7 @@ Locked.**
 - Why: P13. The list today has "Seicho-No-Ie" by Masaharu Taniguchi, which is the name of the
   movement and its magazine, not of a book.
 
-**P10. Unity: no change proposed.**
+**P10. Unity: no change proposed. Nothing was applied.**
 
 The page speaks of "Tawhid, Islam's concept of the oneness and absolute sovereignty of God".
 That sentence describes Islam's concept in Islam's terms, not UPL's God, and rewording

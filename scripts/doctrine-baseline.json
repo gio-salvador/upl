@@ -28,12 +28,12 @@
     "content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md": "eaeea4aeabcd9100a3b4464884384b2e8b466bc7e36bd442e20cf2c6112c3812",
     "content/2-doctrine/ethical-and-moral-development/ethical-living-as-spiritual-practice.md": "b569cd8c7eb41a135f0416ac5868b7d6321ab1efd647a9a17a9c60feb7b07872",
     "content/2-doctrine/ethical-and-moral-development/fabric-of-ethics.md": "26224427a9c0288288df1eb8bcad4cf0dcaa0f37804b6a25b975b4967305d7ee",
-    "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md": "f427cd6e489b9c63c2a1071623e4265ad775ffe8ccbeb4c1552bff3aa8b511b0",
+    "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md": "ffb4e1ed60cec61764a456bc658de25f918b4329ecc816296f6767dd1eb82d96",
     "content/2-doctrine/soul-karma-dharma-and-death/README.md": "082062f2ed3220d153df7ef51a03c12c8cd89c60ba3112428da51d0a5dea76e2",
     "content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md": "9c3971865016d786488c40245ee0f55135f771fd490011c16c626b364f3a5a26",
-    "content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md": "57af6db82d00c7b96924fa1ce2714b5e61476cde47562afa27b9e0f3b54a95fa",
+    "content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md": "85cf90821ad9f1dfe3615acd3a6f42ce4e6cca1ed6732d963c41adb8e75d686b",
     "content/2-doctrine/soul-karma-dharma-and-death/dharma.md": "3ccff9a45085dc9dec6667f7652425a51c050d86f09a1f45fc5c30d2fc043595",
-    "content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md": "a77f081230a7e129c900cd869810451386df79ec7ed768914f456df0bc9ee3ea",
+    "content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md": "9e7a6d9ab035ba82396b5e50163884e377f2ea9217303c00e29eb9d3ab629784",
     "content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md": "2cd30d6d83c8ba00740adb331427cf40aa0f3d8fd1bdc02912b086e4b6251790",
     "content/2-doctrine/soul-karma-dharma-and-death/karma.md": "deafd56a7915643a69c54f22f41d0cdd557c8698e501c915985da67af81fba16"
   },
@@ -93,8 +93,5 @@
       "share": 1.0
     }
   },
-  "corpus": {
-    "tradition": "Islam",
-    "share": 0.4028
-  }
+  "corpus": null
 }

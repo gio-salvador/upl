@@ -34,7 +34,7 @@ consulted since.
 | S04 | [Wikipedia: Pikuach nefesh](https://en.wikipedia.org/wiki/Pikuach_nefesh) | secondary | The three exceptions: murder, idolatry, forbidden sexual relations | doctrine-decisions.md, P2 | 2026-09-21 |
 | S05 | [Seicho-No-Ie New York: Mission and Philosophy](https://www.sniny.com/mission-and-philosophy) | the tradition's own body | "Man is in reality a child of God. Man is not matter but spiritual existence. Man is already a perfect being." | doctrine-decisions.md, D1 point 6, P6, P11 | 2026-09-21 |
 | S06 | [World Religions and Spirituality Project: Seicho no Ie](https://wrldrels.org/2016/10/08/seicho-no-ie/) | academic | The True Image (jissō); the three principles of the teaching; "all religions emanate from one universal God"; the founding in 1930 | doctrine-decisions.md, D1, D4, P6, P11 | 2026-09-21 |
-| S07 | [Wikiquote: Nectarean Shower of Holy Doctrines](https://en.wikiquote.org/wiki/Nectarean_Shower_of_Holy_Doctrines) | secondary, quoting the scripture | The silkworm and cocoon passage: "the physical body is not man but merely man's cocoon"; man will "break out of his body-cocoon" | doctrine-decisions.md, P13, P14; the soul section of the teachings | 2026-09-21 |
+| S07 | [Wikiquote: Nectarean Shower of Holy Doctrines](https://en.wikiquote.org/wiki/Nectarean_Shower_of_Holy_Doctrines) | secondary, quoting the scripture | The silkworm and cocoon passage: "the physical body is not man but merely man's cocoon"; man will "break out of his body-cocoon" | doctrine-decisions.md, P13, P14; [The Immortal Soul](../content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md) | 2026-09-21 |
 | S08 | [World Scripture: The Immortal Soul](https://www.unification.net/ws/theme040.htm) | anthology, quoting the scripture | The same passage: spiritual life "weaves its threads of mind to build a cocoon of flesh" | the same | 2026-09-21 |
 | S09 | [Britannica: Tat tvam asi](https://www.britannica.com/topic/tat-tvam-asi) | secondary | "You are that" is in chapter 6 of the Chandogya Upanishad, taught by Uddalaka Aruni to his son; reading it as full identity is the Advaita school's | doctrine-decisions.md, P6 | 2026-09-21 |
 | S10 | [The Lancet: Levine, Gordon and Fields, The Mechanism of Placebo Analgesia (1978)](https://www.thelancet.com/journals/lancet/article/PIIS0140-67367892762-9/fulltext) | primary, peer reviewed | Naloxone reverses placebo pain relief, so the relief is the body's own opioids at work | doctrine-decisions.md, D2, P2 | 2026-09-21 |
@@ -57,7 +57,7 @@ them; that is recorded in [site-review.md](site-review.md), W3.
 | R01 | "The World's Religions" by Huston Smith | Not checked |
 | R02 | "Modern Physics and Ancient Faith" by Stephen M. Barr | Not checked |
 | R03 | "The Prophet Muhammad" by Barnaby Rogerson | Not checked |
-| R04 | "Seicho-No-Ie" by Masaharu Taniguchi | Doubtful. Seicho-No-Ie is the name of the movement and of its magazine. Taniguchi's principal work is "Seimei no Jissō" (Truth of Life), and the cocoon image comes from the "Nectarean Shower of Holy Doctrines" (S05, S06, S07). Proposal P14 adds the sutra |
+| R04 | "Seicho-No-Ie" by Masaharu Taniguchi | Doubtful. Seicho-No-Ie is the name of the movement and of its magazine. Taniguchi's principal work is "Seimei no Jissō" (Truth of Life) (S05, S06). The sutra the cocoon image comes from is now listed in its own right |
 | R05 | "Quantum Physics and Theology: An Unexpected Kinship" by John Polkinghorne | Not checked |
 | R06 | "The Heart of Buddha's Teaching" by Thích Nhất Hạnh | To confirm: the title is usually given as "The Heart of the Buddha's Teaching" |
 | R07 | "The Essential Jesus" by John Dominic Crossan | Not checked |
@@ -66,3 +66,4 @@ them; that is recorded in [site-review.md](site-review.md), W3.
 | R10 | "Facing Up to the Problem of Consciousness" by David Chalmers | Not checked. It is the source of the "hard problem", which the Continuum of Life and Consciousness page calls "empirically-based"; it is a philosophical argument (site-review.md, W3) |
 | R11 | "Life After Life: The Investigation of a Phenomenon - Survival of Bodily Death" by Raymond Moody | Not checked |
 | R12 | "The Transcendent Unity of Religions" by Frithjof Schuon | Not checked |
+| R13 | "Nectarean Shower of Holy Doctrines" (the Holy Sutra of Seicho-No-Ie) by Masaharu Taniguchi | Added 21 September 2026 (proposal P14). The source of the silkworm and cocoon image, now credited on The Immortal Soul. Title and authorship confirmed (S07, S08); the wording quoted should be checked against the author's copy |
