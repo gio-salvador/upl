@@ -1,6 +1,6 @@
 # Make every page clear, consistent and easy to follow
 
-**Status: in progress.** Step 1 is done, 21 September 2026. The review behind it is
+**Status: in progress.** Steps 1 and 6 are done, 21 September 2026. The review behind it is
 [page-clarity-review.md](../page-clarity-review.md); the description drafts are
 [page-descriptions.md](../page-descriptions.md).
 
@@ -64,7 +64,7 @@ The author's, before the step that needs each.
 | 3 | Bring the God page, Abstract, Continuum page and Conclusion into line with D1, D2 and D5 | 4 | Wording | - |
 | 4 | Remove the ranking phrases from Purpose and Comparative Analysis; gloss Socinianism | 3 | Wording | - |
 | 5 | Give Jesus, Muhammad, the Buddha and Taniguchi what Laozi and Guru Nanak have; settle the liberation page and the Fabric of Ethics | 6 | Wording | - |
-| 6 | Break the long paragraphs, set the four lost headings in bold, fix one ʻokina. No word changes. Proposals P69 to P73; the reordering of belief 6 was withdrawn when checked | 5 | Structure | Drafted |
+| 6 | Break the long paragraphs, set the four lost headings in bold, fix one ʻokina. No word changes. Proposals P69 to P73; the reordering of belief 6 was withdrawn when checked | 5 | Structure | Done |
 | 7 | Small polish on 12 good pages, and the author's own words: follower naming, alcohol, marriage, the divorce title, the affirmations, the home page | 20 | Wording | - |
 
 Step 6 touches locked pages, so it too needs `--accept-core`, although no word changes.

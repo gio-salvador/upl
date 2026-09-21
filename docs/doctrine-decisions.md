@@ -1781,16 +1781,22 @@ open finding left.
 
 - Gates: clean, apart from the locked-page notice.
 
-## Page clarity, step 6: structure only, waiting for the author
+## Page clarity, step 6: structure only, approved and applied
 
 Step 6 of the [page clarity plan](plans/2026-09-21-page-clarity.md): paragraph breaks, run-in
 headings and one spelling. **No word of any teaching changes**, and a script proved it: the
-sequence of words on each page is identical before and after. Four of the five pages are locked,
-so applying this still needs the author's `--accept-core`.
+sequence of words on each page is identical before and after. Three of the five pages are locked
+(the God page, Compassionate Action and Diverse Ethical Teachings), so applying it needed the
+author's `--accept-core`.
 
 **Checked before asking.** Applied in a scratch tree and run through the doctrine, matrix and
-source gates and the lint: clean, apart from the expected notice that four locked pages changed.
+source gates and the lint: clean, apart from the expected notice that the locked pages changed.
 No page goes out of balance.
+
+**Approved and applied.** The author approved P69 to P73 on 21 September 2026 and they were
+applied as written; the word-sequence check was run again on the real pages and passed.
+`--accept-core` was run on the author's explicit instruction. The baseline compared before and
+after shows the fingerprints of those three pages changed and nothing else.
 
 **One proposal withdrawn in the checking.** The review suggested moving the third paragraph of
 belief 6 up to second. Applied, it breaks the text: "This learning is not only spiritual" would
