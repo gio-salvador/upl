@@ -22,4 +22,4 @@ it. The teachings themselves are not here; they live in [content/](../content/RE
 
 Working plans live in [plans/](plans/): [launch readiness](plans/2026-09-18-launch-readiness.md),
 in progress, [tradition balance](plans/2026-09-21-tradition-balance.md), done, and
-[page clarity](plans/2026-09-21-page-clarity.md), in progress.
+[page clarity](plans/2026-09-21-page-clarity.md), done.

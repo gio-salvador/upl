@@ -2080,7 +2080,12 @@ sentence is mended.
   meditation or the holy texts; adding a paragraph would lengthen a summary, so it is left for the
   author to ask for.
 
-## Page clarity, step 4: no ranking of other religions, applied for the author's review
+## Page clarity, step 4: no ranking of other religions, approved and applied
+
+**Accepted.** On the author's return the same day, 21 September 2026, the author accepted every
+proposal prepared in their absence, P86 to P110, with the words "accept and merge all", which also
+confirms the `--accept-core` runs made under the earlier instruction. Decision C4, whether
+sobriety includes alcohol, stays open.
 
 Step 4 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Belief 7 says every tradition
 carries light, and locked decision 6 says connecting text does not rank them. Two pages carry
@@ -2154,7 +2159,7 @@ redone before the merge.
 - Notes: the source adds that the Socinians did not think Jesus a "mere man" but the unique Son of
   God; the gloss says only what they denied of the Trinity, which is why the paper names them.
 
-## Page clarity, step 5: the thin pages, applied for the author's review
+## Page clarity, step 5: the thin pages, approved and applied
 
 Step 5 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Jesus, Muhammad, the Buddha
 and Masaharu Taniguchi each had 50 to 74 words that said their teaching fits UPL and not what it
@@ -2281,7 +2286,7 @@ baseline are redone before the merge.
   in different words. If the author prefers to fold the page away, that is a structural change
   with a redirect, and this proposal is dropped.
 
-## Page clarity, step 7: small polish and four of the author's decisions, applied for the author's review
+## Page clarity, step 7: small polish and four of the author's decisions, approved and applied
 
 Step 7 of the [page clarity plan](plans/2026-09-21-page-clarity.md), first part. The gratitude
 affirmations (C7) are in a pull request of their own, because they are the author's words more
@@ -2352,7 +2357,7 @@ Nothing is drafted, because there is nothing in the text to draw it from. The pa
 "recreational drugs" and the two traditions it cites both count alcohol as an intoxicant, but the
 page never names it, and a reader will ask. This one needs the author's answer.
 
-## Page clarity, step 7: the gratitude affirmations, drafted for the author's review (decision C7)
+## Page clarity, step 7: the gratitude affirmations, approved and applied (decision C7)
 
 The four gratitude pages describe an affirmation and give none, so a reader who comes for words
 to say finds none. An affirmation is what a follower says aloud, and is the author's more than
@@ -2401,7 +2406,7 @@ it now stands once, on the section page. Second run clean.
 
 Each is added at the end of its page under the heading "An affirmation".
 
-## Independent review before publishing: fixes applied for the author's review
+## Independent review before publishing: fixes approved and applied
 
 On 21 September 2026 four independent reviewers read the release candidate (every open page
 clarity pull request combined): factual accuracy, consistency, a newcomer's reading, and

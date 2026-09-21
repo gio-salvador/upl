@@ -1,6 +1,7 @@
 # Make every page clear, consistent and easy to follow
 
-**Status: in progress.** Steps 1, 2, 3 and 6 are done, 21 September 2026. The review behind it is
+**Status: done, 21 September 2026.** All seven steps are merged. One decision is still open, C4:
+whether sobriety includes alcohol.
 [page-clarity-review.md](../page-clarity-review.md); the description drafts are
 [page-descriptions.md](../page-descriptions.md).
 
@@ -62,10 +63,10 @@ The author's, before the step that needs each.
 | 1 | Descriptions into front matter (S5 in the site review). Showing them on the contents cards (S6) is a site change and goes in its own pull request | 81 | Metadata | Done |
 | 2 | Give each fragment its subject and verb. Proposals P74 to P81; the God page's opening goes with step 3 | 8 | Wording | Done |
 | 3 | Bring the God page, Abstract, Continuum page and Conclusion into line with D1, D2 and D5. Proposals P82 to P85 | 4 | Wording | Done |
-| 4 | Remove the ranking phrases from Purpose and Comparative Analysis; gloss Socinianism. Proposals P86 to P88 | 3 | Wording | Applied, awaiting review |
-| 5 | Give Jesus, Muhammad, the Buddha and Taniguchi what Laozi and Guru Nanak have; settle the liberation page and the Fabric of Ethics. Proposals P89 to P94 | 6 | Wording | Applied, awaiting review |
+| 4 | Remove the ranking phrases from Purpose and Comparative Analysis; gloss Socinianism. Proposals P86 to P88 | 3 | Wording | Done |
+| 5 | Give Jesus, Muhammad, the Buddha and Taniguchi what Laozi and Guru Nanak have; settle the liberation page and the Fabric of Ethics. Proposals P89 to P94 | 6 | Wording | Done |
 | 6 | Break the long paragraphs, set the four lost headings in bold, fix one ʻokina. No word changes. Proposals P69 to P73; the reordering of belief 6 was withdrawn when checked | 5 | Structure | Done |
-| 7 | Small polish on good pages, and the author's own words: follower naming, marriage, the divorce title, the home page (P95 to P98); the affirmations in their own pull request; alcohol (C4) still open | 20 | Wording | Applied, awaiting review |
+| 7 | Small polish on good pages, and the author's own words: follower naming, marriage, the divorce title, the home page (P95 to P98); the affirmations in their own pull request; alcohol (C4) still open | 20 | Wording | Done |
 
 Step 6 touches locked pages, so it too needs `--accept-core`, although no word changes.
 Steps 1 and 6 can go first and together; 2 to 5 in any order; 7 last, because C3 touches many pages.
