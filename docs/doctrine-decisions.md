@@ -614,10 +614,19 @@ between pages; the source gate passing.
 
 - Before: "The Islamic emphasis on Ilm, or knowledge-seeking, aligns well with UPL's commitment
   to continuous learning, reflection, and the integration of diverse spiritual insights."
-- After:
+- After (revised 21 September 2026 on the author's teaching):
 
-  > UPL holds that nothing in existence stands alone, and commits its followers to
-  > continuous learning, reflection, and the integration of diverse spiritual insights.
+  > UPL holds that nothing in existence stands alone, and that to learn is to discover how
+  > things are joined. It commits its followers to continuous learning, reflection, and the
+  > integration of diverse spiritual insights.
+  >
+  > This learning is not only spiritual. UPL encourages everyone to study the sciences and
+  > engineering, each according to their gifts and their chances. Greater knowledge brings
+  > wisdom, and helps its followers to better understand our world and this life, and
+  > perhaps even to contribute to them. The arts belong here too. Music, painting, poetry,
+  > dance and every other art are ways of knowing as well as of making: they train
+  > attention, they carry what cannot be said plainly, and they let a person give something
+  > back.
   >
   > The Buddha taught that things arise in dependence on one another, and he taught it to
   > explain how suffering arises and how it ends. Later Buddhists drew a wider vision from
@@ -626,28 +635,53 @@ between pages; the source gate passing.
   > It is from these that UPL takes its sense of a world in which nothing stands alone. A
   > late Upanishad says that for the generous of heart the whole world is one family.
   >
-  > On knowledge the traditions speak almost with one voice. Islam calls the seeking of
-  > knowledge Ilm, and the Qur'an teaches the believer to pray for an increase in it.
-  > Judaism holds the study of Torah equal to all other duties, and honours a dispute
+  > On the seeking of knowledge the traditions speak almost with one voice. Islam calls the
+  > seeking of knowledge Ilm, and the Qur'an teaches the believer to pray for an increase in
+  > it. Judaism holds the study of Torah equal to all other duties, and honours a dispute
   > carried on for the sake of Heaven. The Buddha told the Kalamas not to rely on tradition,
   > scripture or clever reasoning alone, but to take up what they find to be wholesome,
   > blameless and praised by the wise. The Bhagavad Gita names knowledge as one of the paths
   > to the divine.
 
+- The author's teaching, given when the first draft was shown: "UPL also preaches that everyone
+  should study the sciences and engineering, that greater knowledge brings wisdom and helps its
+  followers better understand our world, this life, and perhaps even contribute to it." The
+  author asked whether the continuous pursuit of art belongs here too (music, painting, poetry,
+  dance), and how the belief could reach beyond spiritual learning.
+- Why the arts belong: the Continuous Learning section, which elaborates this belief, already
+  names "professional, sciences, technology, and the arts" and has a page for each. The belief
+  was narrower than its own elaboration. This brings them into line. It widens what a core
+  principle says, which locked decision 7 reserves to the author, and the author is the one
+  doing it.
+- Why the two halves share a belief: the page has never said. The second paragraph's opening,
+  and "to learn is to discover how things are joined", give the reason the author's teaching
+  implies: to study the world is to study how it is connected.
 - What is kept: the author's "continuous learning, reflection, and the integration of diverse
-  spiritual insights" and "Ilm, or knowledge-seeking". **The opening clause, "UPL holds that
-  nothing in existence stands alone", is the drafter's**: the page is named for
-  interconnectedness and has never stated it (finding X07). It is doctrine and is the author's
-  to write.
+  spiritual insights" and "Ilm, or knowledge-seeking"; and, in the second paragraph, the
+  author's new teaching in nearly the author's words.
+- **The drafter's, for the author to keep, change or drop:** "UPL holds that nothing in
+  existence stands alone, and that to learn is to discover how things are joined" (doctrine,
+  never stated before; finding X07); "each according to their gifts and their chances", added so
+  that "everyone should study" reads as encouragement and not as a demand some cannot meet,
+  since the teachings invite and do not command; and the two sentences on what the arts do. The
+  author's "preaches" and "should" became "encourages" for the same reason.
+- No tradition is named in the new paragraph: it is UPL's own teaching, and the balance rule
+  asks for two traditions or none. No source is recorded yet for science or the arts in any
+  tradition; if the author wants voices there, they are sourced first.
 - First named: Buddhism. Sources: S74; S75, S76; S65; S95; S24, S23; S79, S80; S56.
-- Cautions carried: This is the page the source check changed most. Dependent origination is
+- Cautions carried: this is the page the source check changed most. Dependent origination is
   given for what it is in the early texts, an account of suffering, and the wider vision is
   credited to the Huayan school and to Thich Nhat Hanh, not to the Buddha. Ilm is anchored in
   the Qur'anic prayer and not in the hadith with the weak chain. The Kalamas are told to reject
   bare reasoning too, and the test includes the praise of the wise. The Upanishad is called
   late, which it is.
-- Gates: Doctrine gate: comes into balance, record clears. Matrix gate: clean. When applied this
-  closes finding X07, since the text will at last state the concept.
+- Gates, run on the revised draft before it was shown: doctrine gate, the page comes into
+  balance and its record clears, and no contrary-language pattern matches; matrix gate, clean,
+  with no shared wording against the Sciences and Technology or the Arts pages; source gate,
+  passing. When applied this closes finding X07.
+- A structural suggestion, separate from the wording: the page could end with a link to the
+  Continuous Learning section, which would also answer the review's finding that belief and
+  elaboration do not point at each other.
 
 ### P25. Environmental Stewardship
 
