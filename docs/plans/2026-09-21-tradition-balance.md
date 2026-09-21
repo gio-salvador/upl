@@ -311,10 +311,12 @@ Findings for the later steps, recorded so they are not lost:
   yamas and niyamas are Patanjali's (S59, S60); zakat, the five pillars, community, gratitude and
   mercy are sourced (S91, S92, S93, S98, S99, S100).
 
-### References additions proposed (for the author's approval)
+### References additions (approved and applied)
 
 The References page lists twelve books and none of the scriptures the teachings quote. Proposed
-new entries, each already in the register. Approve, change or decline by id. None is applied.
+new entries, each already in the register. The author approved Q1 to Q13 on 21 September 2026 and
+they were applied as written, with R14 to R25 recorded in the register. For Q11 the new entry
+stands beside the doubtful one (R04), which the author may now remove.
 
 - **Q1.** The Hebrew Bible, in the translation of the Jewish Publication Society (S14)
 - **Q2.** The Babylonian Talmud, tractate Shabbat (S17)
@@ -392,7 +394,7 @@ All taken by the author on 21 September 2026.
 - **B6 TAKEN: Judaism is a named source tradition.** It joins the list in section 2 of the
   guardrails, and its books join References.
 - **B7 TAKEN: one batch of proposals per step**, approved, changed or declined by id.
-- **B8 OPEN: the words the gate counts.** The gate recognises a tradition by a list of words in
+- **B8 TAKEN, 21 September 2026: add the words, in step 3.** The words the gate counts. The gate recognises a tradition by a list of words in
   `scripts/doctrine-gate.json`. The new voices use words it does not know: Hillel, Maimonides,
   tzedakah and Leviticus for Judaism; Samaritan for Christianity; Upanishad is known but Rig Veda
   only as "Veda"; sutta, metta and Huayan for Buddhism; langar and Guru Granth Sahib for Sikhism;
@@ -439,7 +441,7 @@ each other. Step 7 is last because the caps are set from the numbers the earlier
 - **The rename.** Belief 4's new file name has to change in the index page, the matrix and the
   baseline in the same pull request, or three gates fail at once.
 - **The three Foundations slips.** Beliefs 4 and 7 close in step 3. The Author Note slip
-  ("tranquillity") is independent and can go at any time with `--accept-core`.
+  ("tranquillity") was fixed on 21 September 2026, with the References entries.
 
 ## Risks
 
