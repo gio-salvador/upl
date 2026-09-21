@@ -47,6 +47,14 @@ contributors.
 - A new or changed page under `content/` fails the gate until it has been re-read against the
   matrix and recorded with `--record`, so the matrix is updated before any merge.
 
+## Sources
+
+- Every outside source used to check or support a statement is recorded once in
+  [sources.md](sources.md) under a permanent id, and pages cite it by that id. The rule is in
+  [doctrine-guardrails.md](doctrine-guardrails.md), section 6. Enforced by
+  `scripts/check-sources.py` in `scripts/check.sh`, and by the `citation` lens of the content
+  review.
+
 ## Locked decisions
 
 The ten decisions that must not be broken (among them: single source, no rewording of

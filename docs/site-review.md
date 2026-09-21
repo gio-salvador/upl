@@ -144,7 +144,7 @@ by fingerprint and one of them needs the author's own words.
   is the one sceptical readers will test.
 - References: "Socinianism and Its Role in the Culture of 16th to 18th Centuries" is credited to
   Krystyna Łyczywek. Catalogues list it as edited by Lech Szczucki with Zbigniew Ogonowski and
-  Janusz Tazbir (PWN, 1983). The Thích Nhất Hạnh title is "The Heart of the Buddha's Teaching".
+  Janusz Tazbir (PWN, 1983); sources S01 and S02 in the [source register](sources.md). The Thích Nhất Hạnh title is "The Heart of the Buddha's Teaching".
   The Stanford work spells itself "Encyclopedia". "Seicho-No-Ie" is the movement; Taniguchi's
   main work is usually cited as "Truth of Life".
 - References gives no years, publishers or links, and no page cites a reference. Fuller

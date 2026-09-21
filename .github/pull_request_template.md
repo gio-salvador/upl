@@ -14,6 +14,8 @@
 - [ ] New or changed text under `content/` stays true to the core beliefs and draws on the
       traditions in balance (`docs/doctrine-guardrails.md`); `scripts/doctrine-baseline.json`
       is changed only by the author
+- [ ] Any statement about another tradition, a figure, a book or science has a row in
+      `docs/sources.md` and is cited by id; a change to References is recorded there too
 - [ ] Docs under `docs/` updated if behaviour or layout changed
 - [ ] No secrets, tokens, or personal data added
 

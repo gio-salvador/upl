@@ -60,7 +60,9 @@ below when something visual changed, the doctrine gate
 between traditions, see [doctrine-guardrails.md](doctrine-guardrails.md)) the cross-reference gate
 (`scripts/check-content-index.py`, which keeps one owner page per concept and a register of
 overlaps between pages, see [cross-reference.md](cross-reference.md)), the infrastructure
-posture gate (`scripts/check-infra.py`, described under Infrastructure) and the vendored
+posture gate (`scripts/check-infra.py`, described under Infrastructure) the source gate (`scripts/check-sources.py`, which keeps
+the [source register](sources.md) complete, cited by id and in step with the References page)
+and the vendored
 toolkit gates in `.claude/toolkit/`. `CLAUDE.md` holds the locked decisions an agent or contributor must not
 break.
 
