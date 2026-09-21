@@ -33,7 +33,9 @@ The points settled with it:
 4. **Spiritual language, not physics.** Light, energy and spectrum are UPL's spiritual imagery.
    The text does not claim that physics proves them, which keeps to the existing rule that
    quantum physics is offered as an analogy.
-5. **Darkness is the absence of light.** Darkness has no source of its own. It is where the
+5. **Darkness is the absence of light.** Everyone is light from God, so no one is outside the
+   light; a person is nearer to the source or further from it. Practising love, forgiveness and
+   gratitude amplifies what a person already is. Darkness has no source of its own. It is where the
    light is obscured, by ignorance, fear or harmful action. Suffering and illness are real and
    are met with real help. This is where UPL parts from Seicho-No-Ie, which teaches that they
    are not ultimately real.
@@ -210,9 +212,10 @@ locked.**
 - After: "God is not a person but the source. From that source flows a pure light, and all that
   exists, ourselves included, is light from it. Pure light holds many colours. Love,
   forgiveness, gratitude and every other positive feeling and action are the colours of God's
-  light, and whoever vibrates with any of them is vibrating in the light of God. No one stands
-  outside that light; what differs from moment to moment is how freely it shines through. When
-  the teachings speak of God's love, they speak of the nature of the light itself and not of
+  light, and whoever vibrates with any of them is vibrating in the light of God. Everyone is
+  light from God. To practise love, forgiveness and gratitude amplifies what a person already
+  is: it brings them closer to God and further from darkness, which is only the lack of light.
+  When the teachings speak of God's love, they speak of the nature of the light itself and not of
   the feeling of a person. Other traditions have spoken of the same source: the Chandogya
   Upanishad says of the self and the ultimate reality, "you are that", and Seicho-No-Ie teaches
   that the true image of every person is a child of God, perfect as its source is perfect. UPL
@@ -220,9 +223,12 @@ locked.**
 - Why: D1, points 1, 2, 4 and 6, in the author's own image of 21 September 2026: "Pure light has
   many colors, love, forgiveness, gratitude and other positive feelings/actions are the colors
   of God's light. If you vibrate any of those feelings, you are vibrating in the light of God."
-  The sentence "No one stands outside that light" is added because the guardrails name as a
-  deviation any text that "divides people or things into those inside the light and those
-  outside it"; it also leads into P7. Two kindred voices, as the balance rule asks.
+  The author added the same day: "everyone is light from God. Practicing love, forgiveness and
+  gratitude amplifies what you already have/are. Makes you closer to God. Makes you further from
+  darkness, lack of light." This is a gradient, nearer or further, and never an inside and an
+  outside, which is what the guardrails ask for ("divides people or things into those inside
+  the light and those outside it" is the deviation). It also leads into P7. Two kindred voices,
+  as the balance rule asks.
 - To check: the Seicho-No-Ie sentence against the author's copy of Taniguchi.
 
 **P7. God, Quantum Physics, and the Light of Divinity. Addition, as the paragraph after P6.
