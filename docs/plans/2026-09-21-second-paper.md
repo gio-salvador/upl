@@ -25,6 +25,10 @@ blockers and five majors, all applied here:
   to 7a stated.
 - Round 2, supersession: the header rule for `/paper/*` and `docs/security.md` named, with no
   rule changed; the two link rewriters recorded as needing no change.
+- Round 3: accuracy, process and sequencing, and supersession passed. The security-posture
+  lens, newly applicable once the header rule was named, asked for a check on what is inside
+  the built PDF, and for the identifier to be a plain link; both added ("Build",
+  "Publication", step 6, Risks, criterion 14).
 - Round 2, accuracy: the reference-list row recounted against the register (four corrected,
   one retired, not "three and one"), and two cells' ids completed.
 - Minors applied: the contrary cells listed exactly, measurements given with their commands,
@@ -250,6 +254,25 @@ style so the two read as a pair. The build is a local script and is not part of 
 build, so the site stays static and the Cloudflare build gains no dependency. The PDF engine is
 decision A6. The site needs no client-side script and no change to the Content-Security-Policy.
 
+The PDF is a binary built on one machine, committed, and served from the one path where the
+site lifts its policy, and after the deposit it cannot be withdrawn. So what is inside it is
+checked before the freeze in step 6, by a script kept beside the build and with the result
+written into the pull request:
+
+- no JavaScript, no launch or submit action, no embedded file and no form in the PDF;
+- every link in it is a plain address that also appears in the paper's source, and nothing is
+  fetched from outside when it is opened;
+- the document properties hold the title, the author's public name, the licence and the
+  converter's name, and nothing else: no local path, no account name, no machine name;
+- fonts are embedded, so the file reads the same everywhere, and each font's licence allows it;
+- the build is repeatable: the same source and the same recorded versions give the same text
+  and the same reference list, which is how a reader can trust that the PDF is the source.
+
+The check is run by hand at the freeze, since it needs the build tools. So that a later change
+to the PDF cannot skip it, the check records the SHA-256 of the file it passed, and
+`bash scripts/check.sh` fails if the second paper's committed PDF does not match the recorded
+value. The founding paper is outside this: it is kept as published.
+
 ### Site (goal 6)
 
 A structural pull request, no teaching touched: the footer and the home page list both papers,
@@ -296,7 +319,9 @@ should exclude that path.
 The site first, then a public research archive that issues a permanent identifier and accepts
 CC BY-SA 4.0, with the author's ORCID. The deposit is made by the author from the author's own
 account: an agent does not create accounts or publish under the author's name. The identifier
-then comes back into the repository in a citation file at the root and on the site. The
+then comes back into the repository in a citation file at the root and on the site, where it
+and the ORCID are plain text links. No badge, icon or script is loaded from another origin,
+which the site's policy would refuse in any case. The
 archive's terms, its fit with the licence and how it handles versions are verified on its own
 pages in step 7b, before anything is relied on.
 
@@ -354,14 +379,14 @@ One pull request per row. Each leaves `main` green under `bash scripts/ci-local.
 
 | Step | Pull request | Needs from you | Status |
 | --- | --- | --- | --- |
-| 0 | This plan, reviewed with the plan review | read it; A1 to A8 | decisions taken 2026-09-21; review in progress |
+| 0 | This plan, reviewed with the plan review | read it; A1 to A8 | decisions taken 2026-09-21; plan review passed on all six lenses after three rounds; waiting for `bash scripts/ci-local.sh` and the merge |
 | 1 | The brief: the content brief written from decisions A1 to A8, the scaffold fixed | approve the brief | not started |
 | 2 | Scaffolding: the paper source tree with headings only, the build, the bibliographic data file, the copy narrowed to PDFs with its check, the three gate extensions, the `paper` content type, the sentence in the architecture page | the engine install (A6); approve the new scan path in the doctrine gate's rules | not started |
 | 3 | Literature: register rows (S rows only) for sections 6, 7 and 8, and primary sources in place of any secondary row the paper will cite | nothing, unless a source has to be bought | not started |
 | 4 | The annotated outline and the traceability table: for each section, the claims it will make, the owner page and the sources, no prose | approve the outline by section | not started |
 | W | Outside this plan's own work, and tracked here because step 5 waits on it: the wording pull request that settles the two W3 accuracy points under `content/` (A8), through the teaching steward | approve the wording by id | not started |
 | 5 | Drafts: one pull request, with three approval batches inside it as checkpoints, each a set of proposals with ids: sections 2 to 5; sections 6 to 8, which wait for row W; sections 0, 1 and 9, which are the author's own | approve, change or decline by id | not started |
-| 6 | Review loop to a bounded cap, quotations checked by eye, the freeze: commit pinned, PDF built and committed, version 1.0 | read the PDF whole, once | not started |
+| 6 | Review loop to a bounded cap, quotations checked by eye, the freeze: commit pinned, PDF built, its contents checked (see "Build") and committed, version 1.0 | read the PDF whole, once | not started |
 | 7a | Site wiring and the documents that name one paper, nothing under `content/`; the disclosure check; merge and deploy, so the paper has a live address | the home page wording, or footer only | not started |
 | W2 | Optional, and outside this plan's own work like row W: whether `content/README.md` and `content/5-context/README.md` mention the second paper, as its own wording pull request through the teaching steward, after 7a | say whether it is wanted; approve the wording by id | not started |
 | 7b | After the author's deposit: the archive's terms verified, the identifier and the citation file into the repository and onto the site | the deposit; the ORCID | not started |
@@ -400,6 +425,10 @@ that need new sources, and can start at once for sections 2 to 5.
 - **The scholarly section turns into a defence of UPL, or ranks traditions.** Survivable
   because section 8 is in the scaffold from the start, the consistency lens treats ranking as a
   major, and the paper's balance is counted.
+- **Something unwanted inside the PDF.** Active content, or a local path or account name in the
+  document properties, in a file served without the site's policy and then deposited for good.
+  Survivable because the contents check in "Build" runs before the freeze and its result is
+  in the pull request, and because the file is built from a text source anyone can rebuild.
 - **Quotation beyond what copyright allows.** Survivable: the ip lens, short quotations, open
   translations preferred.
 - **Borrowing from living peoples.** The Hawaiian and indigenous material is the most exposed
@@ -455,6 +484,9 @@ that need new sources, and can start at once for sections 2 to 5.
     still reports the register and References in step.
 13. The SEO check tests every scholarly article on the home page: breaking the second paper's
     address in a scratch build makes it fail.
+14. The contents check on the frozen PDF reports no active content, no outside fetch and no
+    document property beyond title, author, licence and converter, and its output is in the
+    step 6 pull request.
 
 Negative criteria:
 
