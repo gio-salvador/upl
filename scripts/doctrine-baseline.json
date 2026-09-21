@@ -5,15 +5,15 @@
     "content/1-foundations/abstract.md": "a82f5bd5f9989cffb46f7930a81d8938fb8171885983eb39b54dbe2684f60afe",
     "content/1-foundations/author-note.md": "f13bd22a0c45428bdd5d2f7dff14b01cef557d6b731305aec0c15265812bba68",
     "content/1-foundations/core-beliefs/README.md": "1e40605f2844841a21069875f5a1e594b95725be78770c4c9113b02e00e2ee4b",
-    "content/1-foundations/core-beliefs/community-and-social-welfare.md": "25723429c9ee65c81393ecde336f4ae1676e09d1a8c2e690da75081b09481150",
+    "content/1-foundations/core-beliefs/community-and-social-welfare.md": "6cf43c494634f0536a917eab7fcce8c74b952e4c9d41ce802de37d6ecad73f75",
     "content/1-foundations/core-beliefs/compassionate-action.md": "b372b7f7b827e5a97508e244665e6eb2834f3e4b9e58bab9f44ee9a80cc5d494",
-    "content/1-foundations/core-beliefs/environmental-stewardship.md": "9407b0c7285810baf5a7d6cc8c0ca3405ac08e95b53c797c4cb2f20dc4459ff6",
-    "content/1-foundations/core-beliefs/ethical-and-moral-living.md": "96fcdde168848787f351e537b9b37595bb253e5d1cf233fdd2dbe36444b78b96",
+    "content/1-foundations/core-beliefs/environmental-stewardship.md": "38b6b138d4570db1d5e8a56fc2bdd90f21823b8bd4172f630d087aa30bbb10ed",
+    "content/1-foundations/core-beliefs/ethical-and-moral-living.md": "2d46f5f01197332708078607629f5562cdbee4dbc38dddd3fedc8cdd8120b3b9",
     "content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md": "b1b05bdaf34eea26f2221c4a3baa6b23e7f82b3c12aeef46fd37cfd1b39bc9a5",
-    "content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md": "389ae99dd650c489f6c14536c0b606851b8d2154332c84b41432684d204fce10",
-    "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md": "8112f12e8dae3674a0c649efdb898552d6b3dacd852cbae16881f00f26895003",
+    "content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md": "1e3dee9ee5cf4c5fc4304cf1532fbf9a03a6c5a73a6df53c49d8f1cd4a27f767",
+    "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md": "e934f31819b6d00a8b8553c09bec92d265038cf74420e8cbad7ec0cf99cfd399",
     "content/1-foundations/core-beliefs/respect-for-the-wisdom-of-world-traditions.md": "eee39e2dc9660cd7d57fb14e0379253a66cc3c9416c913d3e98db2f1d883727e",
-    "content/1-foundations/core-beliefs/spiritual-evolution-and-practice.md": "b3e9b28dfc63b9bb7088d4e933459d026aac3884fce9cc039e58d8bcc664aa9b",
+    "content/1-foundations/core-beliefs/spiritual-evolution-and-practice.md": "55acc4fed048ec709c4fc9e9e9991092796b24d80f02b3e1cbd4953e628bd78e",
     "content/1-foundations/core-beliefs/unity.md": "0997a5d91297ca4d54c5de9084e49f89d14f6a1793c472028e03363e3e6496da",
     "content/1-foundations/name-mission-and-vision.md": "f0f98dfae8db8a422170855bcb0bb5bbbe0c2fdef885c966edae63a50feb74b3",
     "content/1-foundations/purpose.md": "d13ef83b5d51cc188b9d76b41c5d1edc3c5867b7eab9cf18e9541bc0661ae478",
@@ -28,7 +28,7 @@
     "content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md": "eaeea4aeabcd9100a3b4464884384b2e8b466bc7e36bd442e20cf2c6112c3812",
     "content/2-doctrine/ethical-and-moral-development/ethical-living-as-spiritual-practice.md": "b569cd8c7eb41a135f0416ac5868b7d6321ab1efd647a9a17a9c60feb7b07872",
     "content/2-doctrine/ethical-and-moral-development/fabric-of-ethics.md": "26224427a9c0288288df1eb8bcad4cf0dcaa0f37804b6a25b975b4967305d7ee",
-    "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md": "ffb4e1ed60cec61764a456bc658de25f918b4329ecc816296f6767dd1eb82d96",
+    "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md": "19d260dd24ae2e3d36849dd06dbc3b3c726b9408960b270062dfbc0617b9c1de",
     "content/2-doctrine/soul-karma-dharma-and-death/README.md": "082062f2ed3220d153df7ef51a03c12c8cd89c60ba3112428da51d0a5dea76e2",
     "content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md": "9c3971865016d786488c40245ee0f55135f771fd490011c16c626b364f3a5a26",
     "content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md": "85cf90821ad9f1dfe3615acd3a6f42ce4e6cca1ed6732d963c41adb8e75d686b",
@@ -38,30 +38,6 @@
     "content/2-doctrine/soul-karma-dharma-and-death/karma.md": "deafd56a7915643a69c54f22f41d0cdd557c8698e501c915985da67af81fba16"
   },
   "pages": {
-    "content/1-foundations/core-beliefs/community-and-social-welfare.md": {
-      "tradition": "Islam",
-      "sha256": "25723429c9ee65c81393ecde336f4ae1676e09d1a8c2e690da75081b09481150"
-    },
-    "content/1-foundations/core-beliefs/environmental-stewardship.md": {
-      "tradition": "Islam",
-      "sha256": "9407b0c7285810baf5a7d6cc8c0ca3405ac08e95b53c797c4cb2f20dc4459ff6"
-    },
-    "content/1-foundations/core-beliefs/ethical-and-moral-living.md": {
-      "tradition": "Islam",
-      "sha256": "96fcdde168848787f351e537b9b37595bb253e5d1cf233fdd2dbe36444b78b96"
-    },
-    "content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md": {
-      "tradition": "Islam",
-      "sha256": "389ae99dd650c489f6c14536c0b606851b8d2154332c84b41432684d204fce10"
-    },
-    "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md": {
-      "tradition": "Islam",
-      "sha256": "8112f12e8dae3674a0c649efdb898552d6b3dacd852cbae16881f00f26895003"
-    },
-    "content/1-foundations/core-beliefs/spiritual-evolution-and-practice.md": {
-      "tradition": "Islam",
-      "sha256": "b3e9b28dfc63b9bb7088d4e933459d026aac3884fce9cc039e58d8bcc664aa9b"
-    },
     "content/4-way-of-life/environmental-stewardship/README.md": {
       "tradition": "Indigenous traditions",
       "sha256": "e2a3e1859b8918440f810ff640a80d3e02e21da54f98edc44e04b340dc5b0341"

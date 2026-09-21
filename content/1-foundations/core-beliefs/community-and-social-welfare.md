@@ -5,4 +5,8 @@ order: 9
 
 # Community and Social Welfare
 
-Drawing from Islam's concept of Ummah, UPL envisages a community where members support each other's spiritual and physical well-being, fostering an environment for mutual growth and social engagement. This aligns with UPL's focus on building a tightly-knit spiritual network with global outreach.
+UPL envisages a community where members support each other's spiritual and physical well-being, fostering an environment for mutual growth and social engagement. This aligns with UPL's focus on building a tightly-knit spiritual network with global outreach.
+
+The traditions have each built such a community. In the Sikh gurdwara the langar, a free kitchen traditionally traced to Guru Nanak, seats everyone together whatever their caste, faith or standing, and seva, selfless service, is a central part of Sikh life. Islam speaks of the Ummah, one community whose members are bound to care for one another. Jesus washed his disciples' feet and told them that whoever would be great among them must be their servant. The Buddha's followers take refuge in the Sangha, which in the early texts means the community of monks, nuns and the awakened.
+
+UPL's community is open in the same spirit. No one is turned away from the table, and to lead is to serve.
