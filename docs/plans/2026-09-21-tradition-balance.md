@@ -1,7 +1,7 @@
 # Bring the traditions into balance across the whole text
 
-**Status: in progress.** Steps 1 to 4 are done: the sources, the convergence map, and all ten core
-beliefs. Requested 2026-09-21. The author took decisions B1 to
+**Status: in progress.** Steps 1 to 5 are done: the sources, the convergence map, all ten core
+beliefs, and the Practice part. Requested 2026-09-21. The author took decisions B1 to
 B7 the same day; no step has begun. It records the
 measurements, the design, the decisions that are the author's, and the sequence, so the work can
 be done a page at a time without losing the whole picture.
@@ -416,12 +416,60 @@ wording pull request, called out as such, with the matrix and the register updat
 | 2 | The convergence map: how each tradition stands to each teaching, with sources, in the cross-reference matrix and gated | nothing | done 2026-09-21: 87 cells on 25 teachings |
 | 3 | Core beliefs 1, 4, 5, 7 rewritten, and belief 4 renamed (B3). Clears five records: the four pages and the index | approve each page by id; `--accept-core`; `--waive-imbalance` to remove the cleared records | done 2026-09-21, proposals P15 to P20: known imbalances 13 to 7, Islam 25 per cent of the whole text |
 | 4 | Core beliefs 2, 3, 6, 8, 9, 10 rewritten. Clears six page records and the section record | the same | done 2026-09-21, proposals P21 to P28: known imbalances 7 to 1, Islam 18 per cent of the whole text, every tradition inside the target ranges |
-| 5 | Practice: prayer, holy texts, the meditation introduction, gratitude and mindful action | approve by id | not started |
+| 5 | Practice: prayer, holy texts, the meditation introduction, gratitude and mindful action | approve by id | done 2026-09-21, proposals P29 to P36: eight pages, no baseline change |
 | 6 | Doctrine and Way of Life: karma, dharma, the pages for Laozi and Guru Nanak (B4), environmental stewardship, sobriety, family, work and service | approve by id; `--accept-core` for the doctrine pages; `--waive-imbalance` for the thirteenth record | not started |
 | 7 | Context: Historical Context and Comparative Analysis. Then the tighter caps and the new report lines (B5) | approve by id; the caps | not started |
 
 Steps 3 and 4 can be drafted together and merged in either order. Steps 5 and 6 do not depend on
 each other. Step 7 is last because the caps are set from the numbers the earlier steps produce.
+
+## Parked items
+
+Everything set aside while the steps were done, so none of it lives only in a conversation. Each
+line says who can move it.
+
+**Sourcing, which needs no decision from the author.** One pull request, like step 1.
+
+- A second, neutral source for Buddha-nature (S83 and S84 are an encyclopaedia and one critic), so
+  it can join belief 4.
+- A source for Christian contemplative prayer (Lectio Divina, the Jesus Prayer, centering prayer),
+  so it can be offered as a fourth form of meditation.
+- The text of the Canticle of the Creatures, to confirm the line in belief 8 on sun, wind and water
+  as brother and sister before the site is public.
+- A source for the claim the author made and the rewrite dropped from belief 10: that Islamic
+  ethics encourage positive conduct and mindful awareness.
+- The contrary cells the convergence map leaves out for want of a source: Western Christianity's
+  original sin against innate goodness; the exclusive claims within several traditions against
+  respect for all; the classical teaching of most traditions on marriage against inclusive family
+  structures; Christianity and Islam on the immortal soul; Buddhism and Taoism on a creator.
+- Cells for Taoism, which has two sources and none; the image of God in a Christian source;
+  gratitude in Judaism and Christianity.
+- The Bahá'í teaching on the harmony of science and religion, as a voice for decision D5.
+- Primary sources to replace the secondary rows: S04, S07, S58, S67, S83, S86, S87, S104, S120; and
+  Te Ara and the Haudenosaunee Confederacy's own site, which could not be opened.
+- The References entries not yet checked against a catalogue (R01 to R03, R05, R07, R10 to R12),
+  the two titles to confirm (R06, R09), and the doubtful entry R04, which the author may remove.
+
+**The author's own words, which a draft can prompt and cannot replace.**
+
+- Example affirmations for the four gratitude pages. An affirmation is what a follower says aloud.
+- What Other Practices is meant to list (finding X08).
+- The openings that are still fragments outside the ten core beliefs (W1 in the site review), and
+  the two accuracy points on the doctrine pages (W3): the hard problem of consciousness called
+  "empirically-based", and the observer effect.
+- The home page's second paragraph and its link text, `paper/` (S4 in the site review).
+- One-sentence `description` front matter for each page (S5), which then lets the contents cards
+  carry descriptions (S6).
+
+**Open findings in the cross-reference matrix,** each needing the author's decision: two statements
+of the mission (X04); the core belief and the section that share a name, for positive thinking
+(X05) and for environmental stewardship (X06); the cocoon image given in full on two pages (X09);
+Ummah, Zakat and Tawhid each explained more than once (X10, X11, X12); rituals and celebrations on
+two pages with no list of observances (X13); gratitude defined twice (X14); hoʻoponopono glossed
+twice (X15); two section introductions ending on the same phrase (X19).
+
+**Still ahead in this plan:** step 6 (doctrine and way of life, with the pages for Laozi and Guru
+Nanak), and step 7 (context, then the tighter caps).
 
 ## Cross-dependencies
 

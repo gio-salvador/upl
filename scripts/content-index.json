@@ -926,6 +926,14 @@
             "S50"
           ],
           "note": "Allegorical reading: one major strand, and Augustine warns against it as well as for it."
+        },
+        "Hinduism": {
+          "relation": "independent",
+          "sources": [
+            "S64",
+            "S09"
+          ],
+          "note": "The Upanishads teach by dialogue, a teacher answering a student."
         }
       }
     },
@@ -1476,7 +1484,7 @@
     },
     "content/3-practice/gratitude-affirmations/README.md": {
       "status": "current",
-      "fingerprint": "84a2e002e02e7fa8e7434b8fda63da9ba161846861be833a5c6afbbc064e5c92"
+      "fingerprint": "4fd937fcc0009349d0240a4b339a834e38371657c243124236447bb082a22fb8"
     },
     "content/3-practice/gratitude-affirmations/earth-and-environment.md": {
       "status": "current",
@@ -1496,23 +1504,23 @@
     },
     "content/3-practice/holy-texts.md": {
       "status": "current",
-      "fingerprint": "d86d0337f67ee4385dfe30f7a58bc5737c2e617dfcd13a1a6ad8976bfbabd2de"
+      "fingerprint": "d9db4632483eca7b679c632ec4c3c8d4489dc19719225e75c6a2959922b153cd"
     },
     "content/3-practice/meditation/README.md": {
       "status": "current",
-      "fingerprint": "37bd8d142aa9a4a42c01a673310a9adea94064849a03b936b43b3230b37d0e83"
+      "fingerprint": "b1fce85b3ffd0f19be7b4c920dbeccd100056ce846fa078365864dabb4cec307"
     },
     "content/3-practice/meditation/buddhist-meditation.md": {
       "status": "current",
-      "fingerprint": "8ef012c8d1594fea15409c48603a7959c8e4f52b2d3039283e590df4171b5d1c"
+      "fingerprint": "a61a28f0f226065c66b1a7a6fc19b688e26771aabda09e69d2b201a1a5001ad3"
     },
     "content/3-practice/meditation/hooponopono-meditation.md": {
       "status": "current",
-      "fingerprint": "435148b6ca940aa41372d2eaa65b472132371ab2932262081349797e176690da"
+      "fingerprint": "579e988971ec7234c987f1f728af45075f3a166f55782e54807b72f346b4f537"
     },
     "content/3-practice/meditation/shinsokan-meditation.md": {
       "status": "current",
-      "fingerprint": "17dc23e6148b53821f89428117eb7ec0b265b0de78043cb35ff6bde748aad408"
+      "fingerprint": "3f124564c817061872bf7cb7ccaf0ef9e1ff0c9203dbaf742dbddde90f5632a7"
     },
     "content/3-practice/other-practices.md": {
       "status": "current",
@@ -1524,7 +1532,7 @@
     },
     "content/3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action.md": {
       "status": "current",
-      "fingerprint": "546b412a20dda139b9ba629a38516c1b640e8a7357f9d360b02b0c7efbaab28e"
+      "fingerprint": "3d5a02154c4aba6cd5b2b742783c375a6dffc1d0c37a5ac50470ab2a52621fd5"
     },
     "content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md": {
       "status": "current",
@@ -1532,7 +1540,7 @@
     },
     "content/3-practice/prayer.md": {
       "status": "current",
-      "fingerprint": "2036ee12a697f6f1982fe913ab4dfd47aecd0fc3254acaacb7b6b3cead5fe4ad"
+      "fingerprint": "0900bafe1812a6c4399b6dfaffbccb1b26131fbbf0939db0b809e240eb055493"
     },
     "content/4-way-of-life/README.md": {
       "status": "current",
