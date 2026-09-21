@@ -2080,7 +2080,7 @@ sentence is mended.
   meditation or the holy texts; adding a paragraph would lengthen a summary, so it is left for the
   author to ask for.
 
-## Page clarity, step 4: no ranking of other religions, waiting for the author
+## Page clarity, step 4: no ranking of other religions, applied for the author's review
 
 Step 4 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Belief 7 says every tradition
 carries light, and locked decision 6 says connecting text does not rank them. Two pages carry
@@ -2089,6 +2089,14 @@ phrases from the founding paper that do, and a third names a movement most reade
 **Checked before asking.** Applied in a scratch tree and run through the doctrine, matrix and
 source gates: clean, apart from the expected notice that one locked page changed (Purpose), which
 needs the author's `--accept-core`. No page goes out of balance.
+
+**Applied ahead of review, on the author's instruction.** On 21 September 2026 the author, away
+from the desk, asked for the remaining pull requests to be prepared "as if I had accepted all
+your suggestions", to be reviewed one by one afterwards and changed as needed. So P86 to P88 are
+applied in this pull request as written, and `--accept-core` was run under that instruction: the
+baseline compared before and after shows the fingerprint of Purpose changed and nothing else.
+Nothing is merged. If the author changes or drops a proposal, the page and the baseline are
+redone before the merge.
 
 ### P86. Purpose
 
