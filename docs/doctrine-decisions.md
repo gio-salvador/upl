@@ -325,6 +325,183 @@ made for D1.
 
 **The Author Note: no change proposed.** "God's infinite love" stays, under D1 point 2.
 
+## Tradition balance, step 3: proposed wording, waiting for the author
+
+Four core beliefs rewritten under decision B2 of the
+[tradition balance plan](plans/2026-09-21-tradition-balance.md), and the rename under B3. Each
+page follows the shape the convergence map gives: the belief first, then what several
+traditions hold in common, with the lineage where there is one, then an honest line where the
+traditions differ. Every tradition named has a cell in the map in
+[cross-reference.md](cross-reference.md), with its sources.
+
+How to read these. The **first sentence of each page states the belief, and it is doctrine, so
+it is the author's to write.** Each draft below keeps the author's existing sentence wherever it
+states the belief, completed only where it was a fragment, and says so. Everything after it is
+offered for the author to rework, not only to approve. Approve, change or decline by id.
+
+Nothing here is applied. When it is, the four pages are locked pages, so the baseline is recorded
+with `--accept-core`, and the cleared imbalance records are removed with `--waive-imbalance`; the
+author gave that instruction on 21 September 2026 for the wording approved from this list.
+
+### P15. Unity
+
+- Before: "Faith in the inherent unity of all existence, viewing the universe as a manifestation
+  of divine light and consciousness. This belief is further strengthened by a reflection on
+  Tawhid, Islam's concept of the oneness and absolute sovereignty of God, offering a deeper
+  perspective on the singular, ultimate source behind the myriad expressions of divinity."
+- After:
+
+  > UPL holds faith in the inherent unity of all existence, viewing the universe as a
+  > manifestation of divine light and consciousness.
+  >
+  > Many traditions have looked towards this one source and named it in their own way. The
+  > Chandogya Upanishad teaches, "That thou art." Islam affirms Tawhid, the oneness of God, and
+  > the Qur'an speaks of God as the light of the heavens and the earth. Jesus tells those who
+  > follow him, "You are the light of the world." The Sikh Gurus teach that the one Light is
+  > within all. Seicho-No-Ie teaches that only the perfect world created by God truly exists.
+  >
+  > These are not one teaching in different words. Each tradition understands the source in its
+  > own way, and UPL honours each as a view of the singular, ultimate source behind the myriad
+  > expressions of divinity.
+
+- What is kept: the author's first sentence, given the subject it lacked ("UPL holds"), and the
+  author's closing phrase. "Absolute sovereignty" goes, because under decision D1 a source that
+  is not a person is not a sovereign; Tawhid stays, described in fewer words.
+- First named: Hinduism. Sources: S64; S88, S101; S32; S103, S110; S05, S06.
+- Cautions carried: "That thou art" is quoted without saying it means identity, which is one
+  school's reading. The Qur'an is paraphrased, not quoted, because translations differ.
+  "You are the light of the world" is the World English Bible's wording, unchanged.
+
+### P16. Inclusive Family Structures and Innate Goodness (renamed)
+
+- Before, title: "Inclusive Family Structures and the Concept of Fitrah". Body: "UPL recognises
+  diverse family structures and includes a notion similar to Fitrah, the innate disposition or
+  natural constitution of humans towards goodness, inherent's belief system."
+- After, title: "Inclusive Family Structures and Innate Goodness". Body:
+
+  > UPL recognises diverse family structures, and holds that every person is born with an innate
+  > disposition towards goodness.
+  >
+  > Several traditions teach this trust in what a person is at birth. Seicho-No-Ie teaches that
+  > every person is in reality a child of God, already perfect. Islam calls this inborn nature
+  > Fitrah, the natural constitution on which God created all people. The Hebrew Bible says that
+  > humankind is made in the image of God. UPL says it in its own words: each of us is light from
+  > the source.
+  >
+  > Goodness that is inborn does not depend on the shape of the family a person is born into or
+  > chooses. A family of any form can nurture it.
+
+- What is kept: the author's two ideas, family and innate goodness, and the author's gloss of
+  Fitrah ("the innate disposition or natural constitution of humans towards goodness"), reworded
+  only to fit the sentence. The broken ending ("inherent's belief system") is replaced, so the
+  slip approved on 18 September closes here.
+- **A question for the author.** The last paragraph is mine: it joins the two halves of the belief
+  by saying inborn goodness does not depend on the form of a family. The page has never said why
+  the two ideas share a belief. If that is not the reason, this paragraph should go or be
+  replaced with the author's.
+- First named: Seicho-no-Ie. Sources: S05; S89; S22.
+- Cautions carried: Fitrah is cited to the Qur'anic verse, not the hadith, which goes on to name
+  other traditions. The verse on the image of God is stated without saying what the image is.
+  Buddha-nature is left out until it has a further source. Most traditions' classical teaching
+  on marriage differs from UPL's on family; that contrary cell has no source yet and belongs in
+  Comparative Analysis, not here.
+- The rename changes the file name and the web address to
+  `inclusive-family-structures-and-innate-goodness`; the site is not public, so nothing in use
+  breaks. It touches the index page, the matrix and the baseline in the same pull request.
+
+### P17. Compassionate Action
+
+- Before: "Compassionate behaviour towards all beings. This aligns with Islamic principles of
+  helping those in need and demonstrating kindness and understanding, particularly within the
+  context of familial and community relationships."
+- After:
+
+  > UPL calls for compassionate behaviour towards all beings.
+  >
+  > No teaching is held more widely among the traditions. Asked which commandment is the greatest,
+  > Jesus answered with two, love of God and love of neighbour, and the second is a verse of the
+  > Torah: love your neighbour as yourself (Leviticus 19:18), which the same chapter extends to the
+  > stranger. Asked who the neighbour is, he told of a Samaritan, a man of another people, who
+  > stopped for a wounded stranger when others passed by. The sage Hillel gave the same teaching
+  > in his own way: what is hateful to you, do not do to another; that is the whole Torah, the rest
+  > is its interpretation; go and study. The Buddha taught the cultivation of love, compassion,
+  > joy in the good of others, and equanimity, towards all beings. Islam teaches that the merciful
+  > are shown mercy, and asks for kindness, understanding and help for those in need, within the
+  > family and the community. The Sikh Gurus ask for seva, selfless service, in the midst of the
+  > world.
+  >
+  > Compassion in UPL begins with those nearest and does not stop there. It reaches the stranger,
+  > the opponent and every living being.
+
+- What is kept: the author's first sentence, given a subject, and the author's account of the
+  Islamic teaching, in nearly the same words.
+- First named: Christianity, with the credit running to Judaism first, because Jesus is quoting
+  Leviticus. In the map Judaism is the origin and Christianity inherits.
+- Sources: S37, S14, S15, S40; S17; S72, S73; S100, S99; S109.
+- Cautions carried: Leviticus 19:18 is read with the verse on the stranger, because in its own
+  context the neighbour is a fellow Israelite. Hillel is given whole, ending "go and study". The
+  word "good" is not used of the Samaritan, because it is not in the text. The Buddhist four are
+  named without the later label and without claiming they are the whole path. All scripture is
+  paraphrased, not quoted.
+- The last paragraph is mine and is doctrine-shaped; it is the author's to keep, change or drop.
+
+### P18. Respect for the Wisdom of World Traditions
+
+- Before: "Honour enlightened figures and appreciates wisdom from diverse religious and
+  philosophical traditions, an approach that could encompass respect for Islamic prophets and
+  appreciation for their moral and spiritual guidance."
+- After:
+
+  > UPL honours enlightened figures and appreciates wisdom from diverse religious and
+  > philosophical traditions.
+  >
+  > Seicho-No-Ie teaches that all religions emanate from one universal God, and this is UPL's own
+  > starting point. Islam honours a long line of prophets before Muhammad and values their moral
+  > and spiritual guidance.
+  >
+  > Other traditions come near to this without saying the same thing. A hymn of the Rig Veda says
+  > that to what is One the sages give many names; it speaks of the gods of its own tradition,
+  > and later readers have heard in it a word about all religions. The Buddha compared his
+  > teaching to a raft, made for crossing over and not for holding on to.
+  >
+  > UPL does not claim that the traditions all teach the same thing, or that each would accept
+  > this view of itself. It holds that each carries light, and it learns from each with respect
+  > for what that tradition says in its own terms.
+
+- What is kept: the author's first sentence, with the subject it lacked, so that "Honour… and
+  appreciates" becomes "UPL honours… and appreciates", and the author's words on the Islamic
+  prophets. The slip approved on 18 September closes here.
+- First named: Seicho-no-Ie. Sources: S113; S93; S51; S81.
+- Cautions carried: this is the belief where the map found least agreement. Only two traditions
+  hold it; the Rig Veda and the raft only resemble it, and the page says so instead of enlisting
+  them. "Truth is one" is not used, because the word truth is not in the verse.
+- The last paragraph is mine. It states the limit of UPL's own claim, which protects the page
+  from the charge that it speaks for religions that would not agree. The author's to keep or
+  change.
+
+### P19. The core beliefs index
+
+- The fourth entry's link text and target change with the rename: "Inclusive Family Structures
+  and Innate Goodness". Structural. With "Fitrah" out of the title the page names no tradition,
+  and its recorded imbalance clears.
+
+### P20. The words the gate counts (decision B8)
+
+- Add to `scripts/doctrine-gate.json`, so the traditions these pages name are counted:
+  Judaism: "hebrew bible", "leviticus", "hillel", "maimonides", "tzedakah", "mishneh torah".
+  Christianity: "samaritan". Hinduism: "rig veda". Buddhism: "sutta", "huayan". Sikhism: "gurus?",
+  "guru granth sahib", "langar", "seva". Indigenous traditions: "m[aā]ori", "haudenosaunee".
+  Hawaiian tradition: "[ʻ']?[āa]ina".
+- Two cautions. "Leviticus" and "Hebrew Bible" are counted for Judaism although Christians read
+  the same book; on these pages it is named as the Torah. "Seva" is counted for Sikhism, where
+  it is sourced, though Hinduism uses the word too.
+
+### What the four pages do to the numbers
+
+Counted with the words in P20: the core beliefs section goes from Islam alone to Islam at about a
+quarter, and five recorded imbalances clear (the four pages and the index). The exact figures are
+reported when the change is applied, not estimated here.
+
 ## What these decisions open
 
 The decisions were the precondition for drawing more widely on the traditions. With them taken:
