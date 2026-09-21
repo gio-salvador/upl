@@ -68,7 +68,9 @@ Two cautions from the drafting, kept here so the wording stays honest:
 
 - What the placebo effect is shown to do is narrower than "heal". Belief and expectation
   measurably change how a person feels and copes: pain, nausea, fatigue, anxiety. They are not
-  shown to cure infections or shrink tumours. P2 says what the evidence supports.
+  shown to cure infections or shrink tumours. P2 says what the evidence supports, names the
+  placebo effect as the example, and ends softly at the author's request: science "has yet to
+  show" that belief and faith alone can cure, which is true and leaves the question open.
 - "Some diseases have a spiritual source" can be turned against the sick, as karma can: "you are
   ill because your spirit is at fault". P2 states that spirit and body affect each other and
   that illness is never a verdict on the person.
@@ -145,10 +147,11 @@ locked.**
 - After: "UPL's own work is the healing of the spirit. Spirit and body affect each other: a
   troubled spirit can weigh on the body, and an illness of the body can weigh on the spirit, so
   both are always treated. This is where the saying that faith can heal comes from. Medicine
-  itself has found that a person who believes they are being healed often feels and copes
-  better, and the traditions have long honoured the same truth: the Gospels tell of Jesus
-  healing with a word, and Judaism holds that saving a life comes before almost every other
-  duty. UPL reads the accounts of healing as it reads all holy texts, as teaching about the
+  itself has found, in what it calls the placebo effect, that belief and expectation bring real
+  relief, easing pain and distress through the body's own means, though science has yet to show
+  that belief and faith alone can cure a disease. The traditions have long honoured the same
+  truth: the Gospels tell of Jesus healing with a word, and Judaism holds that saving a life
+  comes before almost every other duty. UPL reads the accounts of healing as it reads all holy texts, as teaching about the
   power of faith. Illness is never a verdict on the person who is ill. Illness of the body is
   met with science and medicine. Medical science still has much to learn, and many conditions
   are not yet understood, but it has proven effective wherever understanding has grown, and UPL
