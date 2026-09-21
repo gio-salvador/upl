@@ -8,14 +8,13 @@ order: 4
 - "The World's Religions" by Huston Smith
 - "Modern Physics and Ancient Faith" by Stephen M. Barr
 - "The Prophet Muhammad" by Barnaby Rogerson
-- "Seicho-No-Ie" by Masaharu Taniguchi
 - "Nectarean Shower of Holy Doctrines" (the Holy Sutra of Seicho-No-Ie) by Masaharu Taniguchi
 - "Quantum Physics and Theology: An Unexpected Kinship" by John Polkinghorne
-- "The Heart of Buddha's Teaching" by Thích Nhất Hạnh
+- "The Heart of the Buddha's Teaching" by Thích Nhất Hạnh
 - "The Essential Jesus" by John Dominic Crossan
 - "Socinianism and Its Role in the Culture of XVI-th to XVIII-th Centuries", edited by Lech Szczucki with Zbigniew Ogonowski and Janusz Tazbir
-- "Stanford Encyclopaedia of Philosophy"
-- "Facing Up to the Problem of Consciousness" by David Chalmers
+- "Stanford Encyclopedia of Philosophy"
+- "Facing Up to the Problem of Consciousness" by David Chalmers, Journal of Consciousness Studies, 1995
 - "Life After Life: The Investigation of a Phenomenon - Survival of Bodily Death" by Raymond Moody
 - "The Transcendent Unity of Religions" by Frithjof Schuon
 - The Hebrew Bible, in the translation of the Jewish Publication Society
