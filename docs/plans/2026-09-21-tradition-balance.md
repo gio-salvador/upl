@@ -1,7 +1,9 @@
 # Bring the traditions into balance across the whole text
 
-**Status: in progress.** Steps 1 to 6 are done: the sources, the convergence map, all ten core
-beliefs, the Practice part, and Doctrine and Way of Life. Only Context and the tighter caps remain. Requested 2026-09-21. The author took decisions B1 to
+**Status: done, 21 September 2026.** All seven steps are merged. No recorded imbalance remains, from
+fourteen; no tradition holds more than 17 per cent of the whole text, from Islam at 40; and the
+whole-text cap is 25 per cent, from 35. What is left is in "Parked items" below and is not part
+of this plan's goals. Requested 2026-09-21. The author took decisions B1 to
 B7 the same day; no step has begun. It records the
 measurements, the design, the decisions that are the author's, and the sequence, so the work can
 be done a page at a time without losing the whole picture.
@@ -390,8 +392,10 @@ All taken by the author on 21 September 2026.
   not the recommendation, which was a change to how the gate counts. The rename leaves the gate
   alone and fixes the cause: a core belief whose name belongs to one tradition.
 - **B4 TAKEN: a page each** for Laozi and for Guru Nanak.
-- **B5 TAKEN: decide the tighter caps at the end**, from the real numbers. Today's proposal is 30
-  per cent for the whole text and 40 for a section.
+- **B5 TAKEN: decide the tighter caps at the end**, from the real numbers. Decided on 21 September
+  2026: 25 per cent for the whole text, measured against a highest share of 17.4; the section cap
+  stays at 50, because 40 would fail the soul section (Hinduism, for karma and dharma) and
+  Environmental Stewardship (indigenous voices), which are rightly where they are.
 - **B6 TAKEN: Judaism is a named source tradition.** It joins the list in section 2 of the
   guardrails, and its books join References.
 - **B7 TAKEN: one batch of proposals per step**, approved, changed or declined by id.
@@ -418,7 +422,7 @@ wording pull request, called out as such, with the matrix and the register updat
 | 4 | Core beliefs 2, 3, 6, 8, 9, 10 rewritten. Clears six page records and the section record | the same | done 2026-09-21, proposals P21 to P28: known imbalances 7 to 1, Islam 18 per cent of the whole text, every tradition inside the target ranges |
 | 5 | Practice: prayer, holy texts, the meditation introduction, gratitude and mindful action | approve by id | done 2026-09-21, proposals P29 to P36: eight pages, no baseline change |
 | 6 | Doctrine and Way of Life: karma, dharma, the pages for Laozi and Guru Nanak (B4), environmental stewardship, sobriety, family, work and service | approve by id; `--accept-core` for the doctrine pages; `--waive-imbalance` for the thirteenth record | done 2026-09-21, proposals P48 to P60: no recorded imbalance remains; Laozi and Guru Nanak have pages; the two pages on death credit the Seicho-No-Ie sutra |
-| 7 | Context: Historical Context and Comparative Analysis. Then the tighter caps and the new report lines (B5) | approve by id; the caps | not started |
+| 7 | Context: Historical Context and Comparative Analysis. Then the tighter caps and the new report lines (B5) | approve by id; the caps | done 2026-09-21, proposals P61 to P63: whole-text cap 25 per cent; the section cap stays at 50, on the measurements |
 
 Steps 3 and 4 can be drafted together and merged in either order. Steps 5 and 6 do not depend on
 each other. Step 7 is last because the caps are set from the numbers the earlier steps produce.

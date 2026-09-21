@@ -10,7 +10,7 @@
     "page_min_mentions": 5,
     "section_cap": 0.5,
     "section_min_mentions": 6,
-    "corpus_cap": 0.35
+    "corpus_cap": 0.25
   },
 
   "_traditions": "Words that name a tradition, its figures, its scriptures or its own terms of art. Karma and dharma are not listed: the teachings have adopted them as their own concepts. Matching ignores case and respects word boundaries.",

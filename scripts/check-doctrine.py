@@ -17,7 +17,9 @@ An existing imbalance is recorded in doctrine-baseline.json against the exact te
 Editing that page voids the record, so an updated page has to come into balance.
 
   scripts/check-doctrine.py                   run the gate
-  scripts/check-doctrine.py --report          also print the mentions per page
+  scripts/check-doctrine.py --report          also print the mentions per page, how many traditions
+                                              each part names, and which tradition each core
+                                              belief names first
   scripts/check-doctrine.py --accept-core     record the current core pages (author's decision)
   scripts/check-doctrine.py --waive-imbalance record the current imbalances (author's decision)
 
@@ -258,6 +260,28 @@ def main(argv):
         total = sum(corpus.values())
         print("  whole text, dedicated pages left out: "
               + ", ".join(f"{k} {percent(v / total)}" for k, v in corpus.most_common()))
+        # Breadth and rotation, which the caps cannot see: how many traditions each part names,
+        # and which tradition each core belief names first. Report only; nothing here can fail.
+        by_part = defaultdict(Counter)
+        for rel, (_, _, counts) in pages.items():
+            if rel not in dedicated and rel.count("/") > 1:
+                by_part[rel.split("/")[1]].update(counts)
+        for part in sorted(by_part):
+            named = +by_part[part]
+            top, most = named.most_common(1)[0]
+            print(f"  {part}: {len(named)} traditions named, {top} most at "
+                  f"{percent(most / sum(named.values()))}")
+        first = Counter()
+        for rel, (text, _, counts) in pages.items():
+            if "/core-beliefs/" not in rel or rel.endswith("README.md"):
+                continue
+            hits = [(m.start(), name) for name, pattern in traditions.items()
+                    for m in [pattern.search(prose(text))] if m]
+            if hits:
+                first[min(hits)[1]] += 1
+        if first:
+            print("  named first on the core beliefs: "
+                  + ", ".join(f"{k} {v}" for k, v in first.most_common()))
 
     if args.accept_core or args.waive_imbalance:
         if args.accept_core:

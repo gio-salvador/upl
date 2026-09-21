@@ -85,7 +85,7 @@ push through the local hook and in CI on every pull request. It fails on:
 - **A page out of balance.** A page that names one tradition and no other, or where one
   tradition carries more than 60 per cent of five or more mentions.
 - **A section or the whole text out of balance.** One tradition above 50 per cent of a
-  section, or above 35 per cent of the whole text. A recorded imbalance may shrink. It may
+  section, or above 25 per cent of the whole text (35 until 21 September 2026, when the text had come into balance and the author lowered it). A recorded imbalance may shrink. It may
   never grow.
 - **A changed page that is still out of balance.** An existing imbalance is recorded against
   the exact text of the page. Edit the page and the record no longer applies, so the page has
