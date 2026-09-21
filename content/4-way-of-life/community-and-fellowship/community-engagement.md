@@ -22,3 +22,5 @@ In Sikh practice service is given with one's own hands, in the kitchen and the h
 ## Celebrations and Rituals
 
 Marking significant spiritual dates, transitions, and achievements with communal celebrations and rituals strengthens the bonds within the community, creating shared memories and reinforcing the collective identity as a spiritual family.
+
+The celebrations that follow the cycles of nature are described in [Mindful Interaction with the Environment](../environmental-stewardship/mindful-interaction-with-the-environment.md).

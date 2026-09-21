@@ -1513,7 +1513,7 @@
         "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md",
         "content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md"
       ],
-      "note": "The core belief and the practice section carry almost the same title and do not link to each other. A reader or a search engine cannot tell which is the statement and which the elaboration.",
+      "note": "The core belief and the practice section carry almost the same title and do not link to each other. A reader or a search engine cannot tell which is the statement and which the elaboration. 21 September 2026: the section now links to the core belief. The link from the core belief, a locked page, is proposed separately and the finding stays open until it lands.",
       "concept": "positive-thinking"
     },
     {
@@ -1524,7 +1524,7 @@
         "content/1-foundations/core-beliefs/environmental-stewardship.md",
         "content/4-way-of-life/environmental-stewardship/README.md"
       ],
-      "note": "The core belief and the way-of-life section share a name and do not link to each other.",
+      "note": "The core belief and the way-of-life section share a name and do not link to each other. 21 September 2026: the section now links to the core belief. The link from the core belief, a locked page, is proposed separately and the finding stays open until it lands.",
       "concept": "environment"
     },
     {
@@ -1551,80 +1551,85 @@
     {
       "id": "X09",
       "type": "redundant",
-      "status": "open",
+      "status": "accepted",
       "pages": [
         "content/2-doctrine/soul-karma-dharma-and-death/README.md",
         "content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md"
       ],
       "note": "The silkworm and cocoon image is given in full on both pages, a result of splitting the paper. The image is now credited on The Immortal Soul to Taniguchi's Nectarean Shower of Holy Doctrines (source S07).",
-      "concept": "cocoon"
+      "concept": "cocoon",
+      "reason": "Accepted by the author on 21 September 2026. The three sentences do different jobs: the section introduction keeps the author's original sentence, The Immortal Soul gives the image in full with its credit and owns it, and the Death page reports what the sutra says."
     },
     {
       "id": "X10",
       "type": "redundant",
-      "status": "open",
+      "status": "accepted",
       "pages": [
         "content/1-foundations/core-beliefs/community-and-social-welfare.md",
         "content/1-foundations/core-beliefs/ethical-and-moral-living.md"
       ],
       "note": "Ummah is explained on both pages.",
-      "concept": "ummah"
+      "concept": "ummah",
+      "reason": "Accepted by the author on 21 September 2026. After the rewrites each page glosses the term in a few words; a reader who lands on one page needs it explained there."
     },
     {
       "id": "X11",
       "type": "redundant",
-      "status": "open",
+      "status": "accepted",
       "pages": [
         "content/1-foundations/core-beliefs/ethical-and-moral-living.md",
         "content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md"
       ],
       "note": "Zakat is explained on both pages.",
-      "concept": "zakat"
+      "concept": "zakat",
+      "reason": "Accepted by the author on 21 September 2026. Each page glosses the term in a few words; a reader who lands on one page needs it explained there."
     },
     {
       "id": "X12",
       "type": "redundant",
-      "status": "open",
+      "status": "accepted",
       "pages": [
         "content/1-foundations/core-beliefs/unity.md",
         "content/2-doctrine/enlightened-figures/muhammad.md",
         "content/5-context/historical-context.md"
       ],
       "note": "Tawhid is explained on the first two pages and named again on the third.",
-      "concept": "tawhid"
+      "concept": "tawhid",
+      "reason": "Accepted by the author on 21 September 2026. Each page glosses the term in a few words; a reader who lands on one page needs it explained there."
     },
     {
       "id": "X13",
       "type": "redundant",
-      "status": "open",
+      "status": "resolved",
       "pages": [
         "content/4-way-of-life/community-and-fellowship/community-engagement.md",
         "content/4-way-of-life/environmental-stewardship/mindful-interaction-with-the-environment.md"
       ],
-      "note": "Both pages have a subsection on rituals and celebrations. They do not disagree, but neither points to the other, and no page lists the observances.",
+      "note": "Resolved 21 September 2026: each subsection now points to the other. A page listing the observances waits for the author to name them (parked in the tradition balance plan).",
       "concept": "rituals"
     },
     {
       "id": "X14",
       "type": "redundant",
-      "status": "open",
+      "status": "resolved",
       "pages": [
         "content/3-practice/gratitude-affirmations/README.md",
         "content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md"
       ],
-      "note": "Both pages define gratitude as a spiritual discipline in similar words.",
+      "note": "Resolved 21 September 2026: the Gratitude section owns the definition, and Positive Thinking and the Power of Gratefulness now links to it. No existing wording changed.",
       "concept": "gratitude"
     },
     {
       "id": "X15",
       "type": "redundant",
-      "status": "open",
+      "status": "accepted",
       "pages": [
         "content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md",
         "content/3-practice/meditation/hooponopono-meditation.md"
       ],
       "note": "Ho'oponopono is glossed as reconciliation and forgiveness on both pages.",
-      "concept": "hooponopono"
+      "concept": "hooponopono",
+      "reason": "Accepted by the author on 21 September 2026. The section introduction glosses the practice in a few words and the dedicated page owns it. The introduction's spelling now takes the ʻokina, as the page title does."
     },
     {
       "id": "X19",
@@ -1882,7 +1887,7 @@
     },
     "content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md": {
       "status": "current",
-      "fingerprint": "701027a536e0546d63f04055cc7072cc7a2c162d0d755b1fbfb99e28c22f8fee"
+      "fingerprint": "563d306e4e409ebdcca53bb371aeb772bdb30d7d976c4b4a81f69fa71754a943"
     },
     "content/3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action.md": {
       "status": "current",
@@ -1890,7 +1895,7 @@
     },
     "content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md": {
       "status": "current",
-      "fingerprint": "5b5b4fb1c37b333c5c901adacc61064647110f2e8ed970d0c98c9e0dbba796f4"
+      "fingerprint": "c3332a8ba2638701a210875357bfa16941c4419494332a84e0b2b5f78333be38"
     },
     "content/3-practice/prayer.md": {
       "status": "current",
@@ -1906,7 +1911,7 @@
     },
     "content/4-way-of-life/community-and-fellowship/community-engagement.md": {
       "status": "current",
-      "fingerprint": "79012eae6b5f8318b18d2e97cece55dd0661d79b44994973085c260a94403c16"
+      "fingerprint": "0de8d51514657324d22150bf147542ffb7820026b455d6c9ddb23a138bf97b70"
     },
     "content/4-way-of-life/community-and-fellowship/global-spiritual-network.md": {
       "status": "current",
@@ -1934,7 +1939,7 @@
     },
     "content/4-way-of-life/environmental-stewardship/README.md": {
       "status": "current",
-      "fingerprint": "b9bc063a9233eca69567eb2801df9570cdb31258bbbb2f64d303453bc269c005"
+      "fingerprint": "c8605c4131249ead6a3a5c99edd18b82558f69c8899b45ab19ca79ba274d8425"
     },
     "content/4-way-of-life/environmental-stewardship/education-and-community-involvement.md": {
       "status": "current",
@@ -1942,7 +1947,7 @@
     },
     "content/4-way-of-life/environmental-stewardship/mindful-interaction-with-the-environment.md": {
       "status": "current",
-      "fingerprint": "0c4f5d006ac94bc2585583b42f0bc8bb5572ff97bdfda9cccd0e963e4a7c31c4"
+      "fingerprint": "437e90259a1a4bc0ff866d164261348b785f925000350104997b3c057af9e9bb"
     },
     "content/4-way-of-life/environmental-stewardship/principle-of-interconnectedness.md": {
       "status": "current",
