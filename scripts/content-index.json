@@ -1497,34 +1497,34 @@
     {
       "id": "X04",
       "type": "ambiguous",
-      "status": "open",
+      "status": "resolved",
       "pages": [
         "content/1-foundations/name-mission-and-vision.md",
         "content/1-foundations/purpose.md"
       ],
-      "note": "Two statements of the mission. Name, Mission, and Vision names compassion, wisdom and enlightenment through unity, ethical living and continuous learning; Purpose says the mission \"pivots around\" freedom, acceptance, ethical living, love and continuous spiritual growth.",
+      "note": "Resolved 21 September 2026 by proposal P64: Purpose now says \"UPL's purpose pivots around\", so the mission is stated once, on Name, Mission, and Vision.",
       "concept": "mission-and-vision"
     },
     {
       "id": "X05",
       "type": "ambiguous",
-      "status": "open",
+      "status": "resolved",
       "pages": [
         "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md",
         "content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md"
       ],
-      "note": "The core belief and the practice section carry almost the same title and do not link to each other. A reader or a search engine cannot tell which is the statement and which the elaboration. 21 September 2026: the section now links to the core belief. The link from the core belief, a locked page, is proposed separately and the finding stays open until it lands.",
+      "note": "Resolved 21 September 2026: the practice section links to the core belief, and by proposal P65 the core belief links to the section, so a reader can tell the statement from its elaboration.",
       "concept": "positive-thinking"
     },
     {
       "id": "X06",
       "type": "ambiguous",
-      "status": "open",
+      "status": "resolved",
       "pages": [
         "content/1-foundations/core-beliefs/environmental-stewardship.md",
         "content/4-way-of-life/environmental-stewardship/README.md"
       ],
-      "note": "The core belief and the way-of-life section share a name and do not link to each other. 21 September 2026: the section now links to the core belief. The link from the core belief, a locked page, is proposed separately and the finding stays open until it lands.",
+      "note": "Resolved 21 September 2026: the way-of-life section links to the core belief, and by proposal P66 the core belief links to the section.",
       "concept": "environment"
     },
     {
@@ -1541,12 +1541,12 @@
     {
       "id": "X08",
       "type": "ambiguous",
-      "status": "open",
+      "status": "resolved",
       "pages": [
         "content/3-practice/other-practices.md",
         "content/3-practice/README.md"
       ],
-      "note": "Other Practices is a general statement about practice, which the part introduction already gives. Its title promises a list it does not contain."
+      "note": "Resolved 21 September 2026 by proposal P67: the page is retitled An Open Practice, which is what its paragraph describes. The file name and address are unchanged. If the author later names the practices a list would hold, the page can take its old title back."
     },
     {
       "id": "X09",
@@ -1634,12 +1634,12 @@
     {
       "id": "X19",
       "type": "redundant",
-      "status": "open",
+      "status": "resolved",
       "pages": [
         "content/2-doctrine/ethical-and-moral-development/README.md",
         "content/2-doctrine/soul-karma-dharma-and-death/README.md"
       ],
-      "note": "Both section introductions end on the same phrase, \"the soul's progression towards enlightenment and unity with the divine\". Found by the wording check, not by reading.",
+      "note": "Resolved 21 September 2026 by proposal P68: the Ethical and Moral Development introduction now closes on \"the soul's spiritual evolution\"; the soul section keeps the shared phrase. The same proposal gave the sentence its missing verb.",
       "concept": "soul"
     },
     {
@@ -1715,7 +1715,7 @@
     },
     "content/1-foundations/core-beliefs/environmental-stewardship.md": {
       "status": "current",
-      "fingerprint": "38b6b138d4570db1d5e8a56fc2bdd90f21823b8bd4172f630d087aa30bbb10ed"
+      "fingerprint": "f17616ccc546dcfa0750e75ea6b2086822e9a8975955ed91da68081ba0a39f63"
     },
     "content/1-foundations/core-beliefs/ethical-and-moral-living.md": {
       "status": "current",
@@ -1731,7 +1731,7 @@
     },
     "content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md": {
       "status": "current",
-      "fingerprint": "312951f0fc7d6b610f83deb72e6b7cc221259f9107d175b191d8c026f6bd9c59"
+      "fingerprint": "493cdc852c3f64ad1212c7dbf6520aaee6b8878f449d16323f06a80ebcb69c77"
     },
     "content/1-foundations/core-beliefs/respect-for-the-wisdom-of-world-traditions.md": {
       "status": "current",
@@ -1751,7 +1751,7 @@
     },
     "content/1-foundations/purpose.md": {
       "status": "current",
-      "fingerprint": "d13ef83b5d51cc188b9d76b41c5d1edc3c5867b7eab9cf18e9541bc0661ae478"
+      "fingerprint": "e1aad68828bfdc6f2e7c1f91da7860958e94f313411ab33f107d7757b6415f0d"
     },
     "content/2-doctrine/README.md": {
       "status": "current",
@@ -1791,7 +1791,7 @@
     },
     "content/2-doctrine/ethical-and-moral-development/README.md": {
       "status": "current",
-      "fingerprint": "96bb35facfcc4e5c09ccae6a9777513bdf7fdc9380dd11a8def3f96ff900c26e"
+      "fingerprint": "da45a1b60e31c173aef78683b1737bee7a16122a387f9280b711a713bfa31774"
     },
     "content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md": {
       "status": "current",
@@ -1839,7 +1839,7 @@
     },
     "content/3-practice/README.md": {
       "status": "current",
-      "fingerprint": "4e2dc67d41f0996075ef4e1d0938ca615a5d31e4a5aabfa16d01f920d611635e"
+      "fingerprint": "c07e3fd2fd20af2de32bb43c5e265ca9cc590921c3eae122d7556919ce2b70de"
     },
     "content/3-practice/gratitude-affirmations/README.md": {
       "status": "current",
@@ -1883,7 +1883,7 @@
     },
     "content/3-practice/other-practices.md": {
       "status": "current",
-      "fingerprint": "422e6b865626e4e1511a75b38107d710806eb49a4e876039fe9ea468fc51df00"
+      "fingerprint": "483ab884da9743c49d0de672bcf6df022f1804c5777173170c6bb41f69b455ee"
     },
     "content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md": {
       "status": "current",

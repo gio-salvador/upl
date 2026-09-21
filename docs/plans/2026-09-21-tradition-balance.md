@@ -476,7 +476,8 @@ S83, S86 and S87.
 **The author's own words, which a draft can prompt and cannot replace.**
 
 - Example affirmations for the four gratitude pages. An affirmation is what a follower says aloud.
-- What Other Practices is meant to list (finding X08).
+- What practices An Open Practice, formerly Other Practices, would list if it becomes a list
+  again (finding X08, resolved by retitling).
 - The openings that are still fragments outside the ten core beliefs (W1 in the site review), and
   the two accuracy points on the doctrine pages (W3): the hard problem of consciousness called
   "empirically-based", and the observer effect.
@@ -484,12 +485,11 @@ S83, S86 and S87.
 - One-sentence `description` front matter for each page (S5), which then lets the contents cards
   carry descriptions (S6).
 
-**Open findings in the cross-reference matrix,** each needing the author's decision: two statements
-of the mission (X04); the core belief and the section that share a name, for positive thinking
-(X05) and for environmental stewardship (X06); the cocoon image given in full on two pages (X09);
-Ummah, Zakat and Tawhid each explained more than once (X10, X11, X12); rituals and celebrations on
-two pages with no list of observances (X13); gratitude defined twice (X14); hoʻoponopono glossed
-twice (X15); two section introductions ending on the same phrase (X19).
+**Open findings in the cross-reference matrix:** none. The author decided all twelve on 21
+September 2026: seven closed with linking lines or as glosses kept on purpose, five with proposals
+P64 to P68 (`docs/doctrine-decisions.md`). Two things those decisions left for later: a page
+listing UPL's observances (X13), and a list for the page now titled An Open Practice (X08), each
+waiting for the author to name what belongs on it.
 
 **Still ahead in this plan:** step 6 (doctrine and way of life, with the pages for Laozi and Guru
 Nanak), and step 7 (context, then the tighter caps).

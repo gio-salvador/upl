@@ -1690,7 +1690,7 @@ indigenous 3, Taoism 2.
 | 11. The core beliefs index and belief 4's title name no tradition | Met since step 3 |
 | 12, 13. Convergence cells for every tradition named; resemblance never written as agreement | Met; held by the matrix gate |
 
-## Matrix findings: wording proposed, waiting for the author
+## Matrix findings: wording approved and applied
 
 On 21 September 2026 the author chose how to close the twelve open findings in the cross-reference
 matrix. Seven closed without touching a sentence of a teaching (linking lines, one spelling, and
@@ -1703,6 +1703,12 @@ gates and the lint are clean. The doctrine gate reports exactly what is expected
 four locked pages changed (Purpose, two core beliefs, and the Ethical and Moral Development
 section page), each needing the author's `--accept-core`. No page goes out of balance, so
 `--waive-imbalance` is not needed.
+
+**Approved and applied.** The author approved P64 to P68 on 21 September 2026, with the verb
+repair in P68, and they were applied exactly as written. `--accept-core` was run on the author's
+explicit instruction. Verified by comparing the baseline before and after: the fingerprints of
+those four pages changed and nothing else did. `--waive-imbalance` was not run. The matrix has no
+open finding left.
 
 ### P64. Purpose: one mission, stated once (finding X04)
 
@@ -1767,11 +1773,12 @@ section page), each needing the author's `--accept-core`. No page goes out of ba
   > asserting that the cultivation of virtues is essential to the soul's spiritual evolution.
 
 - Notes: the soul section's introduction keeps the shared phrase, where it closes the paragraph.
-  "Spiritual evolution" is UPL's own term, from the second core belief. Not part of this
-  proposal: the same sentence opens without a verb ("Ethical and moral development at the heart
-  of its spiritual practice"), one of the fragments recorded under W1. If the author wants it
-  mended in the same change, the smallest repair is "UPL places ethical and moral development at
-  the heart of its spiritual practice".
+  "Spiritual evolution" is UPL's own term, from the second core belief.
+- Also approved, in the same sentence, which opened without a verb (one of the fragments recorded
+  under W1). From "Ethical and moral development at the heart of its spiritual practice," to:
+
+  > UPL places ethical and moral development at the heart of its spiritual practice,
+
 - Gates: clean, apart from the locked-page notice.
 
 ## Open doctrinal questions
