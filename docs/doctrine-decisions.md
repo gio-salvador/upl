@@ -2080,7 +2080,12 @@ sentence is mended.
   meditation or the holy texts; adding a paragraph would lengthen a summary, so it is left for the
   author to ask for.
 
-## Page clarity, step 4: no ranking of other religions, applied for the author's review
+## Page clarity, step 4: no ranking of other religions, approved and applied
+
+**Accepted.** On the author's return the same day, 21 September 2026, the author accepted every
+proposal prepared in their absence, P86 to P110, with the words "accept and merge all", which also
+confirms the `--accept-core` runs made under the earlier instruction. Decision C4, whether
+sobriety includes alcohol, stays open.
 
 Step 4 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Belief 7 says every tradition
 carries light, and locked decision 6 says connecting text does not rank them. Two pages carry
@@ -2154,7 +2159,7 @@ redone before the merge.
 - Notes: the source adds that the Socinians did not think Jesus a "mere man" but the unique Son of
   God; the gloss says only what they denied of the Trinity, which is why the paper names them.
 
-## Page clarity, step 5: the thin pages, applied for the author's review
+## Page clarity, step 5: the thin pages, approved and applied
 
 Step 5 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Jesus, Muhammad, the Buddha
 and Masaharu Taniguchi each had 50 to 74 words that said their teaching fits UPL and not what it
@@ -2281,7 +2286,7 @@ baseline are redone before the merge.
   in different words. If the author prefers to fold the page away, that is a structural change
   with a redirect, and this proposal is dropped.
 
-## Page clarity, step 7: small polish and four of the author's decisions, applied for the author's review
+## Page clarity, step 7: small polish and four of the author's decisions, approved and applied
 
 Step 7 of the [page clarity plan](plans/2026-09-21-page-clarity.md), first part. The gratitude
 affirmations (C7) are in a pull request of their own, because they are the author's words more
@@ -2352,7 +2357,7 @@ Nothing is drafted, because there is nothing in the text to draw it from. The pa
 "recreational drugs" and the two traditions it cites both count alcohol as an intoxicant, but the
 page never names it, and a reader will ask. This one needs the author's answer.
 
-## Page clarity, step 7: the gratitude affirmations, drafted for the author's review (decision C7)
+## Page clarity, step 7: the gratitude affirmations, approved and applied (decision C7)
 
 The four gratitude pages describe an affirmation and give none, so a reader who comes for words
 to say finds none. An affirmation is what a follower says aloud, and is the author's more than
@@ -2400,6 +2405,93 @@ it now stands once, on the section page. Second run clean.
   > be here.
 
 Each is added at the end of its page under the heading "An affirmation".
+
+## Independent review before publishing: fixes approved and applied
+
+On 21 September 2026 four independent reviewers read the release candidate (every open page
+clarity pull request combined): factual accuracy, consistency, a newcomer's reading, and
+intellectual property. The full results are in
+[publish-readiness.md](publish-readiness.md). Intellectual property passed. The other three found
+no blocker and nine points worth fixing, each checked before it was accepted. They are applied
+here on the author's instruction of the same day to prepare the remaining work "as if I had
+accepted all your suggestions"; `--accept-core` was run under that instruction, and the baseline
+compared before and after shows the fingerprints of the seven locked pages named below changed
+and nothing else. Nothing is merged.
+
+### P104. The washing of the feet: Jesus did not kneel in the text
+
+- Pages: `content/2-doctrine/enlightened-figures/jesus.md` (locked; the sentence is from P89) and
+  `content/4-way-of-life/community-and-fellowship/community-engagement.md`.
+- John 13 in the World English Bible, read directly (S43): he rose from supper, wrapped a towel
+  around his waist, poured water and began to wash. It does not say he knelt. From "he knelt and
+  washed his disciples' feet" and "Jesus knelt to wash his disciples' feet" to:
+
+  > he washed his disciples' feet
+
+  and
+
+  > Jesus washed his disciples' feet
+
+### P105. "You are that": no side taken
+
+- Page: `content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md`. Locked.
+- The register says of this verse that identity is one reading of three, that the word for the
+  ultimate reality is not in it, and that the sentence "must not be strengthened" (S64). From
+  "the Chandogya Upanishad says of the self and the ultimate reality, "you are that"," to:
+
+  > the Chandogya Upanishad says, "you are that",
+
+### P106. Guru Nanak and the scripture
+
+- Page: `content/2-doctrine/enlightened-figures/guru-nanak.md`. Locked.
+- He composed hymns that the scripture gathers (S109); he did not begin it as a book. From "The
+  scripture he began opens by naming one creator," to:
+
+  > The Sikh scripture, in which his hymns are gathered, opens by naming one creator,
+
+### P107. Death: the Gita's image without its rebirth
+
+- Page: `content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md`.
+  Locked.
+- "For new ones" carries the verse's teaching of rebirth (S196), which the author has left "yet
+  to be defined", while the page says UPL "holds with both". From "as a person lays aside
+  worn-out clothes for new ones." to:
+
+  > as a person lays aside worn-out clothes.
+
+- Notes: the author approved the longer sentence in P58 knowing the caution. This is the
+  reviewer's point, offered for the author to take or leave.
+
+### P108. Other Spiritual Leaders, and the section page
+
+- `content/2-doctrine/enlightened-figures/other-spiritual-leaders.md` (locked) says "beyond those
+  named in this section" and then names two who are in this section. To:
+
+  > UPL honours many teachers beyond the four named in the founding paper.
+
+- `content/2-doctrine/enlightened-figures/README.md` (locked) names four figures "and others"
+  above a list of six. To:
+
+  > Esteemed figures such as Jesus, Muhammad, Buddha, Masaharu Taniguchi, Laozi, Guru Nanak,
+  > and others are revered
+
+### P109. One spelling
+
+- `content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md` (locked):
+  "wellbeing" becomes "well-being", as everywhere else in the text.
+
+### P110. The home page: where to begin
+
+- Page: `content/README.md`. Not locked. The newcomer's review found that the home page is a table
+  of contents and does not say where to start, and that nothing tells a convinced reader what to
+  do next. Addition, before "Contents":
+
+  > **Where to begin.** New here? Read Purpose and the ten Core Beliefs: together they take a
+  > few minutes and say what UPL holds. Then see how UPL speaks to its followers, which lists
+  > the few things it asks without exception, and try one practice, such as a gratitude
+  > affirmation.
+
+  "Where to begin" is a heading, and the four page names are links.
 
 ## Open doctrinal questions
 

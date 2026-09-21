@@ -13,6 +13,10 @@ living.
 This is the canonical text of the religion, arranged in five parts. It begins from the
 [founding paper](../paper/unified-path-of-light-synphotodosism.pdf) by Giovanni S. Salvador and grows from there.
 
+## Where to begin
+
+New here? Read [Purpose](1-foundations/purpose.md) and the ten [Core Beliefs](1-foundations/core-beliefs/README.md): together they take a few minutes and say what UPL holds. Then see [how UPL speaks to its followers](2-doctrine/ethical-and-moral-development/README.md), which lists the few things it asks without exception, and try one practice, such as a [gratitude affirmation](3-practice/gratitude-affirmations/README.md).
+
 ## Contents
 
 1. [Foundations](1-foundations/README.md)

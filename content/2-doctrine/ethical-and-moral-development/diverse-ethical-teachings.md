@@ -12,4 +12,4 @@ description: "What UPL's ethics draws from the Buddha's Eightfold Path, the mora
 
 **Islamic Emphasis on Community and Justice** highlights the value of social responsibility, charity (Zakat), and equity, encouraging Synphotodosists to contribute positively to society and uphold principles of fairness and compassion.
 
-**The Guiding Principles of Dharma** in Hinduism and the broader Vedic tradition stress the significance of duty, righteousness, and living in harmony with cosmic laws, guiding individuals to act in ways that support the balance and wellbeing of the universe.
+**The Guiding Principles of Dharma** in Hinduism and the broader Vedic tradition stress the significance of duty, righteousness, and living in harmony with cosmic laws, guiding individuals to act in ways that support the balance and well-being of the universe.
