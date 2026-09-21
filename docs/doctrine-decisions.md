@@ -1253,6 +1253,227 @@ they were applied exactly as written. On the author's instruction the baseline w
 - **Q17:** the entry "Seicho-No-Ie" by Masaharu Taniguchi is removed. It is the movement's
   periodical and not a book. In the source register it is retired as R04, not deleted; the source
   gate now knows a retired row, so an id is never reused and a removal always leaves its reason.
+## Tradition balance, step 6: proposed wording, waiting for the author
+
+Doctrine and Way of Life, with the two new figures (decision B4). The author's text stays on every
+page and the proposals add to it, written in the registers of decision D6. Nothing here is applied.
+
+**Checked before asking.** Every draft was applied in a scratch tree, with the two new pages, and
+run through the doctrine, matrix and source gates, the lint, the site build and the link check.
+The first run found two problems, both fixed in the drafts and given under the proposals they
+concern. With everything applied: no page out of balance; the last recorded imbalance clears; 82
+pages build and every link resolves; whole text Buddhism 17 per cent, Islam 15, Hinduism 14,
+Seicho-no-Ie 13, Christianity 12, Judaism 11, Sikhism 9, Hawaiian 5, indigenous 3, Taoism 2.
+Taoism stays at 2 because a page dedicated to one figure is left out of the shares by design.
+
+### P48. Karma: The Law of Ethical Cause and Effect
+
+- Addition, after the existing text. Locked page.
+- Added:
+
+  > UPL takes the word and the teaching from the traditions of India. The Bhagavad Gita
+  > teaches action done because it is right, without clinging to what it will bring. Two
+  > other traditions add what karma alone does not say, how a wrong is mended: in Jewish
+  > teaching a wrong done to another person is put right by making it good and seeking their
+  > forgiveness, and in the Hawaiian practice of hoʻoponopono a family sets right what has
+  > gone wrong between its members.
+  >
+  > Karma is never a verdict on a person who suffers. No one may read another's illness,
+  > poverty or grief as the wages of their past. Karma is a teaching for one's own conduct,
+  > and not a judgement on anyone else's.
+
+- Sources: S53; S25; S122.
+- Notes: The author's paragraph stays whole. The first added paragraph credits the source of the
+  word, and says openly that the two other traditions speak of repair and not of karma: they are
+  recorded in the map as resemblances. **The second paragraph is the drafter's and is
+  doctrine**: that karma is never a verdict on a person who suffers. It is the safeguard the
+  plan names, and it parallels "Illness is never a verdict on the person who is ill", which the
+  author approved. **A question for the author:** whether this is a fifth commitment under
+  decision D6, since it exists to prevent harm. It is worded as one ("never", "no one may").
+- Gates: First run: the matrix gate failed, because the page names Judaism and the Hawaiian
+  practice and the karma concept had no cell for either. Both are recorded as resemblances when
+  this is applied. Second run clean. The Gita sentence is worded differently from belief 10 and
+  Mindful Action, so there is no overlap.
+
+### P49. Dharma: The Path of Righteousness and Duty
+
+- Addition, after the existing text. Locked page.
+- Added:
+
+  > The word comes from Hinduism, where dharma is the order that holds the world together
+  > and the conduct that upholds it. Its best-known scripture teaches that it is better to
+  > follow one's own dharma imperfectly than another's well, and in that scripture the duty
+  > is bound to the class a person is born into. UPL takes the first teaching and not the
+  > second: each person has a path of right action that is their own, found by conscience
+  > and not assigned by birth. In Buddhism the same word, as Dhamma, means the Buddha's
+  > teaching and the truth it points to.
+
+- Sources: S67; S54, S55, S63; S87.
+- Notes: The page takes a Hindu word and has never said so. The addition credits it, says
+  plainly that in its scripture one's own dharma is bound to the class a person is born into,
+  and says which part UPL takes: a path of right action that is one's own, "found by conscience
+  and not assigned by birth". That clause is the drafter's and is doctrine. The Buddhist sense
+  of the word is given as different, not as the same.
+- Gates: First run: the doctrine gate failed, Hinduism carrying four of six mentions because the
+  scripture was named twice. The draft now says "its best-known scripture" and "that scripture";
+  second run clean.
+
+### P50. New page: Laozi and the Way of Harmony
+
+- A new dedicated page under Enlightened Figures, in position 5. Locked part, so it needs `--accept-core`; and it is listed under `dedicated` in `scripts/doctrine-gate.json`, which is a change to the gate's rules that decision B4 already covers.
+- Text:
+
+  > Laozi is honoured as the sage to whom tradition attributes the Tao Te Ching. Whether he
+  > lived as one man is uncertain, and the book speaks for itself. It teaches the Tao, the
+  > Way: a source before heaven and earth that cannot be named, from which all things come.
+  > It praises water, which benefits all things and keeps to the low place; action that does
+  > not force; contentment; and three things to hold dear, which are gentleness, economy and
+  > not putting oneself first. Its trust in a nameless source, and in a life lived in
+  > harmony with it, stands close to UPL's teaching of the divine light.
+
+- Sources: S129, S111, S112.
+- Notes: Follows the pattern of the four existing pages: who the figure is, what they taught,
+  how it meets UPL. "Whether he lived as one man is uncertain" is what the scholarship says. The
+  three things to hold dear are in Legge's words, not the more familiar "compassion, frugality,
+  humility", which are later renderings. "A source… that cannot be named" is near UPL's
+  impersonal source, and the page says "stands close to", not "is".
+- Gates: clean. A new concept in the matrix, owned by this page.
+
+### P51. New page: Guru Nanak and the One Light in All
+
+- A new dedicated page under Enlightened Figures, in position 6. Locked part, so it needs `--accept-core`; and it is listed under `dedicated` in `scripts/doctrine-gate.json`, which is a change to the gate's rules that decision B4 already covers.
+- Text:
+
+  > Guru Nanak (1469 to 1539) is honoured as the first of the Sikh Gurus. The scripture he
+  > began opens by naming one creator, and it teaches that the one Light is within all, so
+  > that no one is to be judged by class or standing. Sikh tradition gathers his teaching
+  > into three: remember the divine Name, earn an honest living, and share what you have.
+  > The langar, the free kitchen where all sit and eat together, is traditionally traced to
+  > him, and seva, selfless service, remains central to Sikh life. His joining of devotion,
+  > equality and service reflects UPL's emphasis on unity, ethical living and community.
+
+- Sources: S103, S191, S110, S105, S106, S107, S108, S109.
+- Notes: Dates as years only, since the Sikh sources disagree on the day. The three teachings
+  and the langar are given as tradition gives them ("Sikh tradition gathers", "traditionally
+  traced"). "No one is to be judged by class or standing" paraphrases the scripture.
+- Gates: clean. A new concept in the matrix, owned by this page.
+
+### P52. Other Spiritual Leaders
+
+- Wording change. Locked page. It moves to position 7, after the two new pages.
+- Before: "The teachings of additional figures, such as Laozi, with his insights on harmony with
+  the Tao, and Guru Nanak, who advocated for the oneness of God, equality among humans, and the
+  importance of service and devotion. These leaders offer diverse yet harmonious perspectives on
+  aligning with the divine light and living in accordance with its guiding principles."
+- After:
+
+  > UPL honours many teachers beyond those named in this section. `[Laozi](laozi.md)`, with
+  > his insights on harmony with the Tao, and `[Guru Nanak](guru-nanak.md)`, who advocated for
+  > the oneness of God, equality among humans, and the importance of service and devotion,
+  > each have a page. These leaders offer diverse yet harmonious perspectives on aligning
+  > with the divine light and living in accordance with its guiding principles, and others
+  > will join them as the teachings grow.
+
+- Notes: the author's words on both figures are kept and now link to their pages. The opening
+  fragment, which had no verb, takes a subject. "And others will join them as the teachings
+  grow" is the drafter's.
+- Gates: clean.
+
+### P53. Environmental Stewardship and the Sacredness of Nature
+
+- Wording change to the first sentence, and an addition before the list. Not locked.
+- Before, first sentence: "Demonstrate and perform a profound respect for the environment,…"
+- After, first sentence: "UPL asks its followers to demonstrate and perform a profound respect for the environment,…"
+- Added:
+
+  > The peoples UPL learns from here include the Māori, whose kaitiaki are guardians named
+  > by their own iwi; the Mohawk and the other Haudenosaunee nations, whose Ohén:ton
+  > Karihwatéhkwen, the words that come before all else, gives thanks to the living world;
+  > and Native Hawaiians, for whom mālama ʻāina is a duty of care owed to the land. The same
+  > reverence is found elsewhere: in the Jewish rule against needless destruction, in
+  > Francis of Assisi's song to Brother Sun and Sister Water, and in Seicho-No-Ie's harmony
+  > of God, nature and humankind.
+
+- Sources: S187, S119; S188, S189; S121; S20, S21; S155, S156; S117.
+- Notes: The page leaned on "indigenous spiritualities" and named none, which was the last
+  recorded imbalance. It now names three peoples, each from its own body's words, and then three
+  other traditions. It is worded differently from belief 8, which names the same peoples. The
+  opening fragment "Demonstrate and perform…" takes a subject in the aspiration register
+  (decision D6): "UPL asks its followers to demonstrate and perform…".
+- Gates: Doctrine gate: the recorded imbalance clears, so `--waive-imbalance` is needed to
+  remove the stale record. Matrix gate: clean, no overlap with belief 8.
+
+### P54. Sobriety and the Avoidance of Recreational Drugs
+
+- Addition, after the first paragraph of "Promotion of Sobriety". Not locked.
+- Added:
+
+  > Two traditions ask the same of their followers. The fifth of the Buddhist precepts is to
+  > refrain from intoxicants that lead to carelessness, and the Sikh code of conduct asks a
+  > Sikh to take no intoxicant at all. UPL gives its reasons and leaves the choice with the
+  > person.
+
+- Sources: S77, S78; S107.
+- Notes: The page cited no tradition. The closing sentence, "UPL gives its reasons and leaves
+  the choice with the person", states the register the author chose for this teaching in
+  decision D6: aspiration, not commitment. It is the drafter's wording.
+- Gates: Clean.
+
+### P55. The Family Dynamic: Embracing Diversity and Unity
+
+- Addition, before the list. Not locked.
+- Added:
+
+  > The traditions honour the family in their own ways. Seicho-No-Ie keeps gratitude to
+  > parents and ancestors as a practice. Hindu teaching sees a life in stages, the
+  > householder's among them, each with its own duties. The Talmud holds that peace in the
+  > home comes before other observances. Most traditions have classically taught that
+  > marriage joins a man and a woman, and some of their communities now teach otherwise.
+  > UPL's own teaching is set out in the pages of this section.
+
+- Sources: S116; S63; S27; S140, S169, S176; S142, S143, S177, S178.
+- Notes: Three traditions on the family, then an honest line: most traditions have classically
+  taught that marriage joins a man and a woman, and some of their communities now teach
+  otherwise. The contrary cells recorded in the second sourcing round are what make that
+  sentence sayable. "Peace in the home" is given without claiming more than the source, which is
+  mainly about marriage.
+- Gates: Clean.
+
+### P56. Professional Development
+
+- Addition, after the existing text. Not locked.
+- Added:
+
+  > Several traditions treat work as part of the path. The Buddha counted right livelihood
+  > among the parts of his path, a living that harms no one. Hindu teaching names prosperity
+  > rightly gained as one of the four aims of a good life. The Sikh tradition asks for an
+  > honest living, earned by one's own effort.
+
+- Sources: S70, S71; S63; S105, S106.
+- Notes: Right livelihood is given as "a living that harms no one", which is how it is
+  traditionally read; the sutta that lists the five trades does not use the term.
+- Gates: Clean.
+
+### P57. Practices of Community Engagement
+
+- Addition, after the paragraph under "Service and Philanthropy". Not locked.
+- Added:
+
+  > In Sikh practice service is given with one's own hands, in the kitchen and the hall, to
+  > whoever comes. Jesus knelt to wash his disciples' feet and told them to do the same for
+  > one another.
+
+- Sources: S107, S109; S43.
+- Notes: Worded differently from belief 9, which already gives seva and the washing of feet.
+- Gates: Clean.
+
+### Not in this step
+
+- **Death as a Transformative Journey and The Continuum of Life and Consciousness** name no
+  tradition and are left alone; nothing sourced belongs there that would not be padding. The
+  accuracy point on the hard problem of consciousness (W3) is still the author's.
+- **A Christian form of meditation** is sourced and would be a new page under Practice. It is a
+  new teaching more than a matter of balance, so it is left for the author to ask for.
 
 ## What these decisions open
 
