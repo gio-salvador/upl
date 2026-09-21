@@ -935,11 +935,15 @@ between pages; the source gate passing.
 Hinduism (1), Buddhism (2, 6), Judaism (3), Seicho-no-Ie (4, 7), Christianity (5), the indigenous
 traditions (8), Sikhism (9), Islam (10). No tradition leads more than two pages.
 
-## Tradition balance, step 5: proposed wording, waiting for the author
+## Tradition balance, step 5: wording approved and applied
 
 The Practice part. These pages are not locked. Decision B2, to rewrite, was taken for the core
 beliefs; here the author's text stays and the proposals add to it, except P32, which corrects an
-inaccuracy the source check found. Nothing here is applied.
+inaccuracy the source check found.
+
+The author approved P29 to P36 on 21 September 2026 and they were applied exactly as written. No
+page here is locked and no recorded imbalance was involved, so the doctrine baseline is
+untouched. The holy-texts concept gained a cell for Hinduism in the convergence map.
 
 **Checked before asking.** Every draft was applied in a scratch tree and run through the doctrine,
 matrix and source gates and the markdown lint. The first run found three overlaps with core

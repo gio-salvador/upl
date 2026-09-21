@@ -43,7 +43,7 @@ Counts are the number of pages in each part that name the concept.
 | Unity | [1-foundations/core-beliefs/unity](../content/1-foundations/core-beliefs/unity.md) | | 6 | 6 | 3 | 4 | 2 | 22 |
 | Spiritual evolution and practice | [1-foundations/core-beliefs/spiritual-evolution-and-practice](../content/1-foundations/core-beliefs/spiritual-evolution-and-practice.md) | [3-practice](../content/3-practice/README.md) | 5 | 4 | 4 | 10 | 2 | 25 |
 | Ethical and moral living | [1-foundations/core-beliefs/ethical-and-moral-living](../content/1-foundations/core-beliefs/ethical-and-moral-living.md) | [2-doctrine/ethical-and-moral-development](../content/2-doctrine/ethical-and-moral-development/README.md), [2-doctrine/ethical-and-moral-development/ethical-living-as-spiritual-practice](../content/2-doctrine/ethical-and-moral-development/ethical-living-as-spiritual-practice.md) | 5 | 10 | 1 | 1 | 2 | 19 |
-| Family | [1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness](../content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md) | [4-way-of-life/family](../content/4-way-of-life/family/README.md) | 4 | | 1 | 6 | 1 | 12 |
+| Family | [1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness](../content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md) | [4-way-of-life/family](../content/4-way-of-life/family/README.md) | 4 | | 2 | 6 | 1 | 13 |
 | Innate goodness (Fitrah) | [1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness](../content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md) | | 1 | | | | | 1 |
 | Compassionate action | [1-foundations/core-beliefs/compassionate-action](../content/1-foundations/core-beliefs/compassionate-action.md) | | 4 | 6 | 2 | 2 | 2 | 16 |
 | Interconnectedness | [1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge](../content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md) | [4-way-of-life/environmental-stewardship/principle-of-interconnectedness](../content/4-way-of-life/environmental-stewardship/principle-of-interconnectedness.md) | 4 | 3 | 1 | 4 | 1 | 13 |
@@ -55,19 +55,19 @@ Counts are the number of pages in each part that name the concept.
 | Gratitude | [3-practice/gratitude-affirmations](../content/3-practice/gratitude-affirmations/README.md) | [3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness](../content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md), [1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action](../content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md) | 4 | 1 | 11 | | 1 | 17 |
 | Mindful action | [3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action](../content/3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action.md) | [1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action](../content/1-foundations/core-beliefs/positive-thinking-gratefulness-and-mindful-action.md) | 3 | 1 | 3 | 1 | 1 | 9 |
 | Divine light | [2-doctrine/god-quantum-physics-and-the-light-of-divinity](../content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md) | | 2 | 8 | 2 | | 1 | 13 |
-| God | [2-doctrine/god-quantum-physics-and-the-light-of-divinity](../content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md) | | 7 | 5 | 1 | | 1 | 14 |
+| God | [2-doctrine/god-quantum-physics-and-the-light-of-divinity](../content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md) | | 7 | 5 | 2 | | 1 | 15 |
 | Quantum physics | [2-doctrine/god-quantum-physics-and-the-light-of-divinity](../content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md) | | 1 | 2 | | 1 | 2 | 6 |
-| Darkness, the lack of light | [2-doctrine/god-quantum-physics-and-the-light-of-divinity](../content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md) | | | 1 | | | | 1 |
+| Darkness, the lack of light | [2-doctrine/god-quantum-physics-and-the-light-of-divinity](../content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md) | | | 1 | 1 | | | 2 |
 | Enlightened figures | [2-doctrine/enlightened-figures](../content/2-doctrine/enlightened-figures/README.md) | | 1 | 2 | | | 1 | 4 |
-| The immortal soul (also spirit, consciousness of the person, true self) | [2-doctrine/soul-karma-dharma-and-death/immortal-soul](../content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md) | [2-doctrine/soul-karma-dharma-and-death](../content/2-doctrine/soul-karma-dharma-and-death/README.md) | 4 | 11 | 1 | 3 | 2 | 21 |
+| The immortal soul (also spirit, consciousness of the person, true self) | [2-doctrine/soul-karma-dharma-and-death/immortal-soul](../content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md) | [2-doctrine/soul-karma-dharma-and-death](../content/2-doctrine/soul-karma-dharma-and-death/README.md) | 4 | 11 | 3 | 3 | 2 | 23 |
 | The silkworm and cocoon image | [2-doctrine/soul-karma-dharma-and-death/immortal-soul](../content/2-doctrine/soul-karma-dharma-and-death/immortal-soul.md) | | | 6 | | | | 6 |
 | Karma | [2-doctrine/soul-karma-dharma-and-death/karma](../content/2-doctrine/soul-karma-dharma-and-death/karma.md) | [2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation](../content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md) | 1 | 5 | | 1 | 2 | 9 |
 | Dharma | [2-doctrine/soul-karma-dharma-and-death/dharma](../content/2-doctrine/soul-karma-dharma-and-death/dharma.md) | [2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation](../content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md) | 1 | 7 | | 1 | 2 | 11 |
-| Liberation | [2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation](../content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md) | | 1 | 2 | | | 1 | 4 |
-| Death | [2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey](../content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md) | [2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness](../content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md) | | 5 | | | 1 | 6 |
+| Liberation | [2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation](../content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md) | | 1 | 2 | 1 | | 1 | 5 |
+| Death | [2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey](../content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md) | [2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness](../content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md) | | 5 | 1 | | 1 | 7 |
 | Consciousness | [2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness](../content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md) | | 3 | 4 | 2 | 1 | 1 | 11 |
 | Meditation | [3-practice/meditation](../content/3-practice/meditation/README.md) | | 1 | | 6 | 3 | | 10 |
-| Prayer | [3-practice/prayer](../content/3-practice/prayer.md) | | 1 | | 2 | 2 | | 5 |
+| Prayer | [3-practice/prayer](../content/3-practice/prayer.md) | | 1 | | 4 | 2 | | 7 |
 | Holy texts | [3-practice/holy-texts](../content/3-practice/holy-texts.md) | | | | 2 | 2 | | 4 |
 | Rituals and celebrations | [4-way-of-life/community-and-fellowship/community-engagement](../content/4-way-of-life/community-and-fellowship/community-engagement.md) | | | | 1 | 3 | | 5 |
 | Marriage | [4-way-of-life/family/marriage](../content/4-way-of-life/family/marriage.md) | | | | | 2 | | 2 |
@@ -80,7 +80,7 @@ Counts are the number of pages in each part that name the concept.
 | Ummah | [1-foundations/core-beliefs/community-and-social-welfare](../content/1-foundations/core-beliefs/community-and-social-welfare.md) | | 2 | | | | | 2 |
 | Zakat | [1-foundations/core-beliefs/ethical-and-moral-living](../content/1-foundations/core-beliefs/ethical-and-moral-living.md) | | 1 | 1 | | | | 2 |
 | Eightfold Path | [2-doctrine/ethical-and-moral-development/diverse-ethical-teachings](../content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md) | | | 2 | | | | 2 |
-| Seicho-No-Ie | [2-doctrine/enlightened-figures/masaharu-taniguchi](../content/2-doctrine/enlightened-figures/masaharu-taniguchi.md) | | 6 | 3 | 2 | 1 | 1 | 13 |
+| Seicho-No-Ie | [2-doctrine/enlightened-figures/masaharu-taniguchi](../content/2-doctrine/enlightened-figures/masaharu-taniguchi.md) | | 6 | 3 | 4 | 1 | 1 | 15 |
 | Shinsokan | [3-practice/meditation/shinsokan-meditation](../content/3-practice/meditation/shinsokan-meditation.md) | | 1 | | 2 | | | 3 |
 | Ho'oponopono | [3-practice/meditation/hooponopono-meditation](../content/3-practice/meditation/hooponopono-meditation.md) | | | | 3 | 1 | | 4 |
 | Pantheism | [5-context/comparative-analysis](../content/5-context/comparative-analysis.md) | | | | | | 2 | 2 |
@@ -121,7 +121,7 @@ a source in the [source register](sources.md).
 | Dharma | O | | | | | R | | | | 1 |
 | Death | | | C | | | | | | | 0 |
 | Prayer | H | H | H | | | | | | | 3 |
-| Holy texts | | | H | | | H | | | | 2 |
+| Holy texts | H | | H | | | H | | | | 3 |
 | Sobriety | | | | H | | H | | | | 2 |
 | Science and modern medicine | | | R | | C | | H | | | 1 |
 | Shinsokan | | | | | O | | | | | 1 |
@@ -133,7 +133,7 @@ truly meets the teachings and where it does not.
 
 | Tradition | Shares in | Of which origin | Resembles only | Contrary |
 | --- | ---: | ---: | ---: | ---: |
-| Hinduism | 12 | 2 | 1 | |
+| Hinduism | 13 | 2 | 1 | |
 | Islam | 13 | 1 | | |
 | Christianity | 10 | | 2 | 1 |
 | Sikhism | 6 | | | |
@@ -329,6 +329,7 @@ truly meets the teachings and where it does not.
 | --- | --- | --- | --- |
 | Buddhism | independent | S79, S81 | |
 | Christianity | independent | S48, S49, S50 | Allegorical reading: one major strand, and Augustine warns against it as well as for it. |
+| Hinduism | independent | S64, S09 | The Upanishads teach by dialogue, a teacher answering a student. |
 
 **Sobriety**, owned by [4-way-of-life/holistic-wellbeing/sobriety](../content/4-way-of-life/holistic-wellbeing/sobriety.md)
 
@@ -434,21 +435,21 @@ truly meets the teachings and where it does not.
 | [2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation](../content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md) | current | Liberation | The immortal soul (also spirit, consciousness of the person, true self), The silkworm and cocoon image, Karma, Dharma |
 | [2-doctrine/soul-karma-dharma-and-death/karma](../content/2-doctrine/soul-karma-dharma-and-death/karma.md) | current | Karma | Ethical and moral living, The immortal soul (also spirit, consciousness of the person, true self), The silkworm and cocoon image |
 | [3-practice](../content/3-practice/README.md) | current | | Spiritual evolution and practice, Respect for the wisdom of world traditions, Positive thinking, Gratitude, Mindful action, Meditation, Prayer, Holy texts, Rituals and celebrations |
-| [3-practice/gratitude-affirmations](../content/3-practice/gratitude-affirmations/README.md) | current | Gratitude | Unity, Environmental stewardship |
+| [3-practice/gratitude-affirmations](../content/3-practice/gratitude-affirmations/README.md) | current | Gratitude | Unity, Environmental stewardship, Seicho-No-Ie |
 | [3-practice/gratitude-affirmations/earth-and-environment](../content/3-practice/gratitude-affirmations/earth-and-environment.md) | current | | Environmental stewardship, Gratitude |
 | [3-practice/gratitude-affirmations/gift-of-life](../content/3-practice/gratitude-affirmations/gift-of-life.md) | current | | Spiritual evolution and practice, Gratitude |
 | [3-practice/gratitude-affirmations/lifes-blessings](../content/3-practice/gratitude-affirmations/lifes-blessings.md) | current | | Gratitude, Consciousness, Science and technology |
 | [3-practice/gratitude-affirmations/relationships](../content/3-practice/gratitude-affirmations/relationships.md) | current | | Family, Community and fellowship, Gratitude |
-| [3-practice/holy-texts](../content/3-practice/holy-texts.md) | current | Holy texts | Respect for the wisdom of world traditions |
-| [3-practice/meditation](../content/3-practice/meditation/README.md) | current | Meditation | Shinsokan, Ho'oponopono |
-| [3-practice/meditation/buddhist-meditation](../content/3-practice/meditation/buddhist-meditation.md) | current | | Spiritual evolution and practice, Compassionate action, Meditation |
-| [3-practice/meditation/hooponopono-meditation](../content/3-practice/meditation/hooponopono-meditation.md) | current | Ho'oponopono | Positive thinking, Gratitude, Meditation |
-| [3-practice/meditation/shinsokan-meditation](../content/3-practice/meditation/shinsokan-meditation.md) | current | Shinsokan | Unity, Interconnectedness, Meditation, Seicho-No-Ie |
+| [3-practice/holy-texts](../content/3-practice/holy-texts.md) | current | Holy texts | Respect for the wisdom of world traditions, The immortal soul (also spirit, consciousness of the person, true self) |
+| [3-practice/meditation](../content/3-practice/meditation/README.md) | current | Meditation | Seicho-No-Ie, Shinsokan, Ho'oponopono |
+| [3-practice/meditation/buddhist-meditation](../content/3-practice/meditation/buddhist-meditation.md) | current | | Spiritual evolution and practice, Compassionate action, Liberation, Meditation |
+| [3-practice/meditation/hooponopono-meditation](../content/3-practice/meditation/hooponopono-meditation.md) | current | Ho'oponopono | Family, Positive thinking, Gratitude, Meditation, Prayer |
+| [3-practice/meditation/shinsokan-meditation](../content/3-practice/meditation/shinsokan-meditation.md) | current | Shinsokan | Unity, Interconnectedness, God, The immortal soul (also spirit, consciousness of the person, true self), Meditation, Seicho-No-Ie |
 | [3-practice/other-practices](../content/3-practice/other-practices.md) | current | | Spiritual evolution and practice, Ethical and moral living, Respect for the wisdom of world traditions |
 | [3-practice/positive-thinking-gratefulness-and-mindful-action](../content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md) | current | | Respect for the wisdom of world traditions, Positive thinking, Gratitude, Mindful action, Consciousness, Meditation, Seicho-No-Ie, Ho'oponopono |
-| [3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action](../content/3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action.md) | current | Mindful action | Compassionate action, Positive thinking, Gratitude, Divine light |
+| [3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action](../content/3-practice/positive-thinking-gratefulness-and-mindful-action/mindful-action.md) | current | Mindful action | Compassionate action, Positive thinking, Gratitude, Divine light, Prayer |
 | [3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness](../content/3-practice/positive-thinking-gratefulness-and-mindful-action/positive-thinking-and-gratefulness.md) | current | | Positive thinking, Gratitude, The immortal soul (also spirit, consciousness of the person, true self) |
-| [3-practice/prayer](../content/3-practice/prayer.md) | current | Prayer | Unity, Respect for the wisdom of world traditions, Gratitude, Divine light, God |
+| [3-practice/prayer](../content/3-practice/prayer.md) | current | Prayer | Unity, Respect for the wisdom of world traditions, Gratitude, Divine light, God, Darkness, the lack of light, Death |
 | [4-way-of-life](../content/4-way-of-life/README.md) | current | | Unity, Family, Pursuit of knowledge and continuous learning, Environmental stewardship, Community and fellowship, Sobriety, Science and technology, Arts and creativity |
 | [4-way-of-life/community-and-fellowship](../content/4-way-of-life/community-and-fellowship/README.md) | current | | Spiritual evolution and practice, Interconnectedness, Community and fellowship, Prayer, Seicho-No-Ie, Ho'oponopono |
 | [4-way-of-life/community-and-fellowship/community-engagement](../content/4-way-of-life/community-and-fellowship/community-engagement.md) | current | Rituals and celebrations | Family, Environmental stewardship, Community and fellowship, Positive thinking, Mindful action, Karma, Dharma, Meditation, Prayer, Holy texts |
