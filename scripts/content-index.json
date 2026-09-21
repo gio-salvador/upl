@@ -193,7 +193,7 @@
     },
     "family": {
       "label": "Family",
-      "owner": "content/1-foundations/core-beliefs/inclusive-family-structures-and-fitrah.md",
+      "owner": "content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md",
       "terms": [
         "famil(y|ies|ial)"
       ],
@@ -203,7 +203,7 @@
     },
     "fitrah": {
       "label": "Innate goodness (Fitrah)",
-      "owner": "content/1-foundations/core-beliefs/inclusive-family-structures-and-fitrah.md",
+      "owner": "content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md",
       "terms": [
         "fitrah"
       ],
@@ -1312,6 +1312,18 @@
       ],
       "note": "The site configuration holds its own one-paragraph summary of the religion, used in llms.txt and structured data. It is a description, not a teaching, but it is doctrine-shaped text outside content/ and can drift from it.",
       "reason": "Machine-facing metadata, allowed by locked decision 3. Re-read it whenever the home page or the Abstract changes."
+    },
+    {
+      "id": "X20",
+      "type": "redundant",
+      "status": "accepted",
+      "pages": [
+        "content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md",
+        "content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md"
+      ],
+      "note": "Both pages give Seicho-No-Ie's teaching that every person is in reality a child of God, already perfect, in nearly the same words. Found by the wording check when belief 4 was rewritten.",
+      "concept": "fitrah",
+      "reason": "The author approved both wordings (P6 and P16). Each page names the teaching for a different belief, the source of light and innate goodness, and both follow the movement's own statement (S05). Keep the two in step if either changes."
     }
   ],
   "pages": {
@@ -1329,7 +1341,7 @@
     },
     "content/1-foundations/core-beliefs/README.md": {
       "status": "current",
-      "fingerprint": "46130f365c6a82a663be7db6f193bb95db28e1222ec8fe1b88f3bd8fdc3ef0f0"
+      "fingerprint": "1e40605f2844841a21069875f5a1e594b95725be78770c4c9113b02e00e2ee4b"
     },
     "content/1-foundations/core-beliefs/community-and-social-welfare.md": {
       "status": "current",
@@ -1337,7 +1349,7 @@
     },
     "content/1-foundations/core-beliefs/compassionate-action.md": {
       "status": "current",
-      "fingerprint": "477692d5ba3f304760e52f88b940a3ab58201943e0ccfab36c84e71536a7bb93"
+      "fingerprint": "b372b7f7b827e5a97508e244665e6eb2834f3e4b9e58bab9f44ee9a80cc5d494"
     },
     "content/1-foundations/core-beliefs/environmental-stewardship.md": {
       "status": "current",
@@ -1347,9 +1359,9 @@
       "status": "current",
       "fingerprint": "96fcdde168848787f351e537b9b37595bb253e5d1cf233fdd2dbe36444b78b96"
     },
-    "content/1-foundations/core-beliefs/inclusive-family-structures-and-fitrah.md": {
+    "content/1-foundations/core-beliefs/inclusive-family-structures-and-innate-goodness.md": {
       "status": "current",
-      "fingerprint": "235056832d310e2a878e6cb2e60bb837caa66f0fe7e3705eb80e9b83b14ef3a6"
+      "fingerprint": "b1b05bdaf34eea26f2221c4a3baa6b23e7f82b3c12aeef46fd37cfd1b39bc9a5"
     },
     "content/1-foundations/core-beliefs/interconnectedness-and-the-pursuit-of-knowledge.md": {
       "status": "current",
@@ -1361,7 +1373,7 @@
     },
     "content/1-foundations/core-beliefs/respect-for-the-wisdom-of-world-traditions.md": {
       "status": "current",
-      "fingerprint": "63be103c438025e7f35ab1be743b2a27b4f2d0f47f42bdd9f8e177bb4c883580"
+      "fingerprint": "eee39e2dc9660cd7d57fb14e0379253a66cc3c9416c913d3e98db2f1d883727e"
     },
     "content/1-foundations/core-beliefs/spiritual-evolution-and-practice.md": {
       "status": "current",
@@ -1369,7 +1381,7 @@
     },
     "content/1-foundations/core-beliefs/unity.md": {
       "status": "current",
-      "fingerprint": "bd2b8a12f37c7653fd92cd338a4b57522ab49fb2d6135d21586b884e9867f1ab"
+      "fingerprint": "0997a5d91297ca4d54c5de9084e49f89d14f6a1793c472028e03363e3e6496da"
     },
     "content/1-foundations/name-mission-and-vision.md": {
       "status": "current",
