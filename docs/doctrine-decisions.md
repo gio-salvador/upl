@@ -1948,7 +1948,7 @@ compared before and after shows the fingerprints of those two pages changed and 
 
   > UPL sees technology as a powerful tool that, when used ethically, can enhance…
 
-## Page clarity, step 3: physics as analogy, waiting for the author
+## Page clarity, step 3: physics as analogy, approved and applied
 
 Step 3 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Decision D1 says the teaching
 about light is given "in the language of light, and not as a claim of physics". Four pages still
@@ -1961,6 +1961,10 @@ source gates and the lint: clean, apart from the expected notice that three lock
 (the God page, the Abstract, the Continuum page), which needs the author's `--accept-core`. No
 page goes out of balance and no new overlap appears. The physics was read directly from the
 Stanford Encyclopedia of Philosophy (S197, S198) before a word was drafted.
+
+**Approved and applied.** The author approved P82 to P85 on 21 September 2026 and they were
+applied as written. `--accept-core` was run on the author's explicit instruction; the baseline
+compared before and after shows the fingerprints of those three pages changed and nothing else.
 
 **One finding withdrawn in the checking.** The review said the Continuum page names its own
 position wrongly, calling it dualism while describing consciousness as intrinsic to reality. The
