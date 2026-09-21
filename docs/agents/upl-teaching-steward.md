@@ -36,6 +36,8 @@ Ask Claude Code in this repository, in plain words:
   against [cross-reference.md](../cross-reference.md), or make itself the owner of a concept.
 - State something about another tradition, a figure, a book or science without a row in
   [sources.md](../sources.md) to support it.
+- Use "expects" or "should", turn an invitation into a rule, or soften one of the four
+  commitments the author has named (decision D6).
 - Write for search engines or language models.
 - Commit, push or open a pull request. Wording changes and structural changes are reported
   apart so they can go in separate pull requests.
