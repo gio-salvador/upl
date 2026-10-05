@@ -1,6 +1,7 @@
 ---
 title: "Mindful Action and the Embodiment of Gratitude"
 order: 2
+description: "Mindful action turns gratitude into conduct: giving oneself to the task, guarding one's speech, and doing good quietly."
 ---
 
 # Mindful Action and the Embodiment of Gratitude

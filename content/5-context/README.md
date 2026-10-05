@@ -1,6 +1,7 @@
 ---
 title: "Context"
 order: 5
+description: "Where the Unified Path of Light sits among other traditions, the conclusion of the founding paper, and its references."
 ---
 
 # Context

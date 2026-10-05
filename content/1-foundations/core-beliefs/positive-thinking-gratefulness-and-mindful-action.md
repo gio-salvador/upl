@@ -1,11 +1,12 @@
 ---
 title: "Positive Thinking, Gratefulness, and Mindful Action"
 order: 10
+description: "UPL asks its followers to practise positive thinking, gratefulness and mindful action, and says where each comes from among the traditions."
 ---
 
 # Positive Thinking, Gratefulness, and Mindful Action
 
-UPL asks its followers to perform practices of positive thinking, gratefulness and mindful action, for personal enrichment and collective growth.
+UPL asks its followers to practise positive thinking, gratefulness and mindful action, for personal enrichment and collective growth.
 
 Gratitude is the most widely shared of the three. The Qur'an teaches that gratitude is met with increase. The Haudenosaunee give thanks to each part of the natural world before anything else is said. Seicho-No-Ie's founding message is one of grand harmony with all things, and it keeps gratitude to one's ancestors as a practice.
 

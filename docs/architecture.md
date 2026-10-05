@@ -156,6 +156,11 @@ link, the `license` property of the JSON-LD, and the head of `llms.txt` and `llm
   site reuses them as section pages, so there is one table of contents, not two.
 - **Order lives in front matter; only the top-level parts carry numeric prefixes.** Pages can
   be reordered without renaming files or breaking URLs.
+- **Contents cards are built, not scripted.** `site/src/lib/describe-cards.mjs` is a second remark
+  plugin, run before the link rewriter. Where a heading is followed by a numbered list of links to
+  pages, it marks the list as `contents` and adds each linked page's `description` front matter to
+  its item. The stylesheet turns that list into cards. The markdown stays a plain list, and no
+  JavaScript reaches the browser.
 - **The link rewriter is a remark plugin**, so the site depends on `@astrojs/markdown-remark`
   in addition to Astro.
 - **Static output only.** The site is built to plain files with no adapter and no server code,

@@ -1,6 +1,7 @@
 ---
 title: "Karma: The Law of Ethical Cause and Effect"
 order: 2
+description: "Karma is the law of moral cause and effect: a teaching for one's own conduct, and never a verdict on a person who suffers."
 ---
 
 # Karma: The Law of Ethical Cause and Effect

@@ -1,6 +1,7 @@
 ---
 title: "References"
 order: 4
+description: "The books, scriptures and translations the teachings of the Unified Path of Light draw on."
 ---
 
 # References

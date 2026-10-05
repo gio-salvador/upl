@@ -1,6 +1,7 @@
 ---
 title: "Core Beliefs and Principles"
 order: 5
+description: "The ten principles at the heart of the Unified Path of Light, from unity and compassion to learning, care for the Earth and gratitude."
 ---
 
 # Core Beliefs and Principles

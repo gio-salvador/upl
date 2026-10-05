@@ -1,6 +1,7 @@
 ---
 title: "Inclusive Familial Structures"
 order: 1
+description: "A family may be headed by a same-sex couple or a single parent, or span generations: what makes it a family is commitment, love and shared growth."
 ---
 
 # Inclusive Familial Structures

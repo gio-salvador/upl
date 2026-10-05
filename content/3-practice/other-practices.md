@@ -1,6 +1,7 @@
 ---
 title: "An Open Practice"
 order: 6
+description: "UPL's practice is adaptive and inclusive: members are free to draw on elements of any tradition that accord with its core values."
 ---
 
 # An Open Practice

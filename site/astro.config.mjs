@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import { unified } from '@astrojs/markdown-remark';
 import sitemap from '@astrojs/sitemap';
 import { rewriteContentLinks } from './src/lib/rewrite-links.mjs';
+import { describeContentsCards } from './src/lib/describe-cards.mjs';
 
 // The canonical text lives in ../content as plain markdown. The site only renders it.
 // Fully static output (no adapter, no server code), so it deploys to Cloudflare Pages as is.
@@ -18,5 +19,5 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'always',
   build: { format: 'directory', inlineStylesheets: 'never' },
-  markdown: { processor: unified({ remarkPlugins: [rewriteContentLinks] }) },
+  markdown: { processor: unified({ remarkPlugins: [describeContentsCards, rewriteContentLinks] }) },
 });

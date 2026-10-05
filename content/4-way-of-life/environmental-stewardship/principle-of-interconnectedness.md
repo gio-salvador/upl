@@ -1,6 +1,7 @@
 ---
 title: "The Principle of Interconnectedness"
 order: 1
+description: "Humans are part of the Earth's ecosystem and not apart from it, which makes us responsible for the life that sustains us."
 ---
 
 # The Principle of Interconnectedness

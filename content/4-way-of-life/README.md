@@ -1,6 +1,7 @@
 ---
 title: "Way of Life"
 order: 4
+description: "How the teachings are lived: in the family, in community, in care for the Earth, in health, and in lifelong learning."
 ---
 
 # Way of Life

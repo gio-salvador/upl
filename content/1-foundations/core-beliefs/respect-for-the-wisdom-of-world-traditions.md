@@ -1,6 +1,7 @@
 ---
 title: "Respect for the Wisdom of World Traditions"
 order: 7
+description: "UPL holds that every tradition carries light, and learns from each in its own terms without claiming they all teach the same thing."
 ---
 
 # Respect for the Wisdom of World Traditions

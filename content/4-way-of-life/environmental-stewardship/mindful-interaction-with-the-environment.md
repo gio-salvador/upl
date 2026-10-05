@@ -1,13 +1,14 @@
 ---
 title: "Mindful Interaction with the Environment"
 order: 2
+description: "Sustainable living in practice, and the celebrations that follow the solstices, the equinoxes and the turning of the seasons."
 ---
 
 # Mindful Interaction with the Environment
 
 ## Sustainable Living Practices
 
-To adopt lifestyles that minimise harm to the environment and contribute to its regeneration. This includes sustainable consumption, supporting renewable energy sources, and engaging in practices such as recycling, conservation, and organic gardening.
+UPL encourages its followers to adopt lifestyles that minimise harm to the environment and contribute to its regeneration. This includes sustainable consumption, supporting renewable energy sources, and engaging in practices such as recycling, conservation, and organic gardening.
 
 ## Rituals and Celebrations
 

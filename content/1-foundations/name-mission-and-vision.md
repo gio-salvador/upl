@@ -1,6 +1,7 @@
 ---
 title: "Name, Mission, and Vision"
 order: 3
+description: "What Synphotodosism means, \"the way of coming together in light\", and the mission and vision of the Unified Path of Light."
 ---
 
 # Name, Mission, and Vision

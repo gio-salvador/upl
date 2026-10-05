@@ -1,6 +1,7 @@
 ---
 title: "Doctrine"
 order: 2
+description: "What the Unified Path of Light teaches about God and the universe, the enlightened figures it honours, the soul's journey, and ethical development."
 ---
 
 # Doctrine

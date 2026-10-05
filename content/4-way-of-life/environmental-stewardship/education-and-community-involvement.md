@@ -1,6 +1,7 @@
 ---
 title: "Education and Community Involvement"
 order: 3
+description: "Learning about ecology, and workshops and shared projects that restore and protect the places where we live."
 ---
 
 # Education and Community Involvement

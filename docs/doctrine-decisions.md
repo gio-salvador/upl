@@ -1781,6 +1781,718 @@ open finding left.
 
 - Gates: clean, apart from the locked-page notice.
 
+## Page clarity, step 6: structure only, approved and applied
+
+Step 6 of the [page clarity plan](plans/2026-09-21-page-clarity.md): paragraph breaks, run-in
+headings and one spelling. **No word of any teaching changes**, and a script proved it: the
+sequence of words on each page is identical before and after. Three of the five pages are locked
+(the God page, Compassionate Action and Diverse Ethical Teachings), so applying it needed the
+author's `--accept-core`.
+
+**Checked before asking.** Applied in a scratch tree and run through the doctrine, matrix and
+source gates and the lint: clean, apart from the expected notice that the locked pages changed.
+No page goes out of balance.
+
+**Approved and applied.** The author approved P69 to P73 on 21 September 2026 and they were
+applied as written; the word-sequence check was run again on the real pages and passed.
+`--accept-core` was run on the author's explicit instruction. The baseline compared before and
+after shows the fingerprints of those three pages changed and nothing else.
+
+**One proposal withdrawn in the checking.** The review suggested moving the third paragraph of
+belief 6 up to second. Applied, it breaks the text: "This learning is not only spiritual" would
+no longer follow the sentence about learning that it points back to. The author's order holds and
+the page is left as it is.
+
+### P69. Trust in Science and Modern Medicine: the commitment stands on its own
+
+- Page: `content/4-way-of-life/holistic-wellbeing/science-and-modern-medicine.md`. Not locked.
+- The first section is one paragraph of about 270 words. Three breaks make four paragraphs:
+  1. after "…so both are always treated."
+  2. after "…as teaching about the power of faith."
+  3. after "…will carry that understanding further."
+- Result: spirit and body; faith, the placebo effect and the traditions; illness and medicine; and
+  then, alone, "A follower of UPL never relies on spiritual or alternative remedies alone: when a
+  person is ill, medical care is sought without delay and followed, and spiritual practice walks
+  beside it." Longest paragraph 102 words, from 270.
+
+### P70. God, Quantum Physics, and the Light of Divinity: the central paragraph in three
+
+- Page: `content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md`. Locked.
+- Two breaks in the paragraph that begins "God is not a person but the source.":
+  1. after "…further from darkness, which is only the lack of light."
+  2. after "…a being of spirit and not of matter."
+- Result: what God is and what practice does; God's love and the other traditions; and then, alone,
+  "UPL offers this as spiritual teaching, in the language of light, and not as a claim of
+  physics." Longest paragraph 106 words, from 170. The page's wording questions stay with step 3.
+
+### P71. Compassionate Action: one break
+
+- Page: `content/1-foundations/core-beliefs/compassionate-action.md`. Locked.
+- One break, after Hillel: "…the rest is its interpretation; go and study." The Buddha, Islam and
+  the Sikh Gurus then form their own paragraph. Longest paragraph 109 words, from 150.
+
+### P72. Incorporating Diverse Ethical Teachings: the four subjects in bold
+
+- Page: `content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md`. Locked.
+- The four paragraphs open with phrases written as titles ("Islamic Emphasis on Community and
+  Justice highlights…"), which read as headings that lost their place. Each opening phrase is set
+  in bold, so it reads as a run-in heading: **Buddhism's Eightfold Path**, **The moral teachings
+  of Jesus**, **Islamic Emphasis on Community and Justice**, **The Guiding Principles of
+  Dharma**. No word moves.
+- Not part of this proposal: the page names four traditions where belief 3 names six. Adding
+  Judaism and the Sikh Gurus would be new wording, for a later step if the author wants it.
+
+### P73. Community and Fellowship: the ʻokina
+
+- Page: `content/4-way-of-life/community-and-fellowship/README.md`. Not locked.
+- "Ho'oponopono" becomes "Hoʻoponopono", as everywhere else in the text. The 70-word sentence it
+  sits in cannot be shortened without changing words, so it waits for step 7.
+
+## Page clarity, step 2: the openings without a subject, approved and applied
+
+Step 2 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Eight openings on seven pages
+began as headings or instructions in the founding paper and became first sentences when it was
+split: "To value…", "View death…", "Prioritise…". Each gets the fewest words that make it a
+sentence, and nothing else in it changes. An eighth page, Continuous Learning, has a grammatical
+slip of the same origin. The verb follows the registers of decision D6: what UPL
+holds is "values", "views", "teaches", "sees"; what it asks of conduct is "encourages". The God
+page opens the same way and is left to step 3, where the rest of that page is settled.
+
+**Checked before asking.** Applied in a scratch tree and run through the doctrine, matrix and
+source gates and the lint: clean, apart from the expected notice that two locked pages changed
+(The Role of Enlightened Figures and Death as a Transformative Journey), which needs the author's
+`--accept-core`. No page goes out of balance and no new overlap appears.
+
+**Approved and applied.** The author approved P74 to P81 on 21 September 2026 and they were
+applied as written. `--accept-core` was run on the author's explicit instruction; the baseline
+compared before and after shows the fingerprints of those two pages changed and nothing else.
+
+### P74. The Role of Enlightened Figures
+
+- Page: `content/2-doctrine/enlightened-figures/README.md`. Locked.
+- From "To value the profound impact of enlightened figures from various spiritual traditions,
+  recognising them as…" to:
+
+  > UPL values the profound impact of enlightened figures from various spiritual traditions,
+  > recognising them as…
+
+### P75. Death as a Transformative Journey
+
+- Page: `content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md`.
+  Locked.
+- From "View death not as an end but as a significant transition…" to:
+
+  > UPL views death not as an end but as a significant transition…
+
+### P76. The Integration of Positive Thinking, Gratefulness, and Mindful Action
+
+- Page: `content/3-practice/positive-thinking-gratefulness-and-mindful-action/README.md`.
+- From "To exert the transformative impact of positive thinking, gratefulness, and mindful action
+  as pivotal practices…" to:
+
+  > UPL teaches the transformative impact of positive thinking, gratefulness, and mindful
+  > action as pivotal practices…
+
+- Notes: the next sentence begins "It draws upon", and "It" now has UPL to point to.
+
+### P77. Cooperative Growth and Support
+
+- Page: `content/4-way-of-life/family/cooperative-growth-and-support.md`.
+- (a) From "To work on oneself as a means to enhance family relationships." to:
+
+  > UPL encourages its followers to work on themselves as a means to enhance family
+  > relationships.
+
+- (b) In the last sentence, from "as they traverse together on life's journey" to:
+
+  > as they travel together on life's journey
+
+### P78. Mindful Interaction with the Environment
+
+- Page: `content/4-way-of-life/environmental-stewardship/mindful-interaction-with-the-environment.md`.
+- From "To adopt lifestyles that minimise harm to the environment…" to:
+
+  > UPL encourages its followers to adopt lifestyles that minimise harm to the environment…
+
+### P79. Holistic Well-being
+
+- Page: `content/4-way-of-life/holistic-wellbeing/README.md`.
+- From "Prioritise one's well-being, physical health, mental clarity, spiritual growth, and
+  ethical living." to:
+
+  > UPL encourages its followers to prioritise their well-being, physical health, mental
+  > clarity, spiritual growth, and ethical living.
+
+- Notes: the next sentence says "Central to its philosophy", and "its" now has UPL to point to.
+
+### P80. Continuous Learning
+
+- Page: `content/4-way-of-life/continuous-learning/README.md`.
+- (a) From "including professional, sciences, technology, and the arts," to:
+
+  > including professional life, the sciences, technology, and the arts,
+
+- (b) "Fundamental" appears twice in two sentences. In the second, from "is seen as a fundamental
+  aspect of" to:
+
+  > is seen as an essential aspect of
+
+### P81. Sciences and Technology
+
+- Page: `content/4-way-of-life/continuous-learning/sciences-and-technology.md`.
+- (a) From "A commitment to understanding the natural world…" to:
+
+  > UPL encourages a commitment to understanding the natural world…
+
+- (b) From "Technology as a powerful tool that, when used ethically, can enhance…" to:
+
+  > UPL sees technology as a powerful tool that, when used ethically, can enhance…
+
+## Page clarity, step 3: physics as analogy, approved and applied
+
+Step 3 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Decision D1 says the teaching
+about light is given "in the language of light, and not as a claim of physics". Four pages still
+said otherwise, or left the later decisions out. On 21 September 2026 the author decided C2:
+quantum physics stays on the God page as analogy only, and "literal" and the observer-effect
+sentence go.
+
+**Checked before asking.** Applied in a scratch tree and run through the doctrine, matrix and
+source gates and the lint: clean, apart from the expected notice that three locked pages changed
+(the God page, the Abstract, the Continuum page), which needs the author's `--accept-core`. No
+page goes out of balance and no new overlap appears. The physics was read directly from the
+Stanford Encyclopedia of Philosophy (S197, S198) before a word was drafted.
+
+**Approved and applied.** The author approved P82 to P85 on 21 September 2026 and they were
+applied as written. `--accept-core` was run on the author's explicit instruction; the baseline
+compared before and after shows the fingerprints of those three pages changed and nothing else.
+
+**One finding withdrawn in the checking.** The review said the Continuum page names its own
+position wrongly, calling it dualism while describing consciousness as intrinsic to reality. The
+paper the page cites does exactly that: Chalmers takes experience as fundamental and calls the
+view "naturalistic dualism" (S192). The page is consistent with its source, and only its tangled
+sentence is mended.
+
+### P82. God, Quantum Physics, and the Light of Divinity
+
+- Page: `content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md`. Locked.
+- (a) The opening, which has no subject. From "To envision the universe as an intricate
+  tapestry…" to:
+
+  > UPL envisions the universe as an intricate tapestry…
+
+- (b) Second paragraph, its second and third sentences. From "Quantum physics uncovers a reality
+  where distances collapse under the phenomenon of entanglement and existence blurs into states
+  of potentiality until observed, mirroring the omnipresence and creative dynamism of the divine
+  light. These scientific insights do not contradict but rather complement the spiritual
+  intuition of a universe created and sustained by a singular, unifying light." to:
+
+  > Quantum physics describes a reality where particles that have once interacted remain
+  > correlated however far apart they are, which it calls entanglement, and where, until a
+  > measurement is made, the theory gives only the probabilities of what it will find. UPL
+  > finds in these an image of the omnipresence and creative dynamism of the divine light.
+  > These scientific insights do not prove the spiritual intuition of a universe created and
+  > sustained by a singular, unifying light, and they do not contradict it.
+
+- (c) Third paragraph. From "the light that underpins and unites the cosmos through the laws and
+  mysterious principles quantum physics begins to reveal. This divine light serves both as a
+  literal and metaphorical foundation for existence," to:
+
+  > the light that underpins and unites the cosmos. This divine light is the foundation of
+  > existence,
+
+- (d) Last paragraph, first sentence. From "such as non-locality, reflecting the divine light's
+  omnipresence; potentiality, echoing the limitless creative possibilities of the divine; and
+  the observer effect, highlighting human consciousness's role in shaping reality, serve as
+  scientific analogies for spiritual truths." to:
+
+  > such as non-locality, reflecting the divine light's omnipresence, and potentiality,
+  > echoing the limitless creative possibilities of the divine, serve as analogies for
+  > spiritual truths.
+
+- (e) Last sentence. From "The intertwining of quantum mechanics and the concept of divine light
+  affirms a holistic view of existence," to:
+
+  > Setting quantum mechanics beside the concept of divine light offers a holistic view of
+  > existence,
+
+- Sources: S197, S198.
+- Notes: entanglement does not make distance collapse, and the theory does not say that existence
+  blurs until someone looks: it gives probabilities for what a measurement will find (S197,
+  S198). That consciousness shapes physical reality was one physicist's proposal and is not the
+  theory (S198), so the clause goes, as C2 decided. The title keeps "Quantum Physics": the page
+  still draws the analogy, and now says that it is one.
+
+### P83. Abstract
+
+- Page: `content/1-foundations/abstract.md`. Locked.
+- (a) From "drawing from quantum physics and ancient and contemporary spiritual teachings." to:
+
+  > drawing on ancient and contemporary spiritual teachings and finding parallels in quantum
+  > physics.
+
+- (b) From "the karma law," to:
+
+  > the law of karma,
+
+### P84. The Continuum of Life and Consciousness
+
+- Page: `content/2-doctrine/soul-karma-dharma-and-death/continuum-of-life-and-consciousness.md`.
+  Locked.
+- One word, in the sentence that has "question" and "questions" side by side. From "which
+  questions how physical processes" to:
+
+  > which asks how physical processes
+
+- Source: S192, for leaving the rest alone.
+
+### P85. Conclusion
+
+- Page: `content/5-context/conclusion.md`. Not locked.
+- (a) The first sentence. From "The Unified Path of Light (UPL) offers a compelling synthesis of
+  quantum physics and spiritual wisdom, promoting unity, enlightenment, and ethical harmony." to:
+
+  > The Unified Path of Light (UPL) brings together spiritual wisdom from many traditions and
+  > sets it beside the discoveries of modern science, promoting unity, enlightenment, and
+  > ethical harmony.
+
+- (b) Decision D2, which the Conclusion leaves out. Added to the paragraph on health, after
+  "…promoting an integrative approach to health.":
+
+  > UPL heals the spirit and trusts medicine with the body, and a follower who is ill never
+  > sets medical care aside for spiritual or alternative remedies.
+
+- (c) Decision D5. Added at the end of the paragraph on learning:
+
+  > What is learned is put to use: UPL keeps its own teachings open to correction by the
+  > evidence.
+
+- (d) "At UPL" twice makes a teaching sound like an institution. From "Community and fellowship
+  at UPL" and "Continuous learning at UPL" to:
+
+  > Community and fellowship in UPL
+
+  and
+
+  > Continuous learning in UPL
+
+- Notes: (b) and (c) are worded afresh so that they do not repeat the pages that own those
+  commitments, which the matrix gate would flag. The Conclusion also says nothing of prayer,
+  meditation or the holy texts; adding a paragraph would lengthen a summary, so it is left for the
+  author to ask for.
+
+## Page clarity, step 4: no ranking of other religions, approved and applied
+
+**Accepted.** On the author's return the same day, 21 September 2026, the author accepted every
+proposal prepared in their absence, P86 to P110, with the words "accept and merge all", which also
+confirms the `--accept-core` runs made under the earlier instruction. Decision C4, whether
+sobriety includes alcohol, stays open.
+
+Step 4 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Belief 7 says every tradition
+carries light, and locked decision 6 says connecting text does not rank them. Two pages carry
+phrases from the founding paper that do, and a third names a movement most readers will not know.
+
+**Checked before asking.** Applied in a scratch tree and run through the doctrine, matrix and
+source gates: clean, apart from the expected notice that one locked page changed (Purpose), which
+needs the author's `--accept-core`. No page goes out of balance.
+
+**Applied ahead of review, on the author's instruction.** On 21 September 2026 the author, away
+from the desk, asked for the remaining pull requests to be prepared "as if I had accepted all
+your suggestions", to be reviewed one by one afterwards and changed as needed. So P86 to P88 are
+applied in this pull request as written, and `--accept-core` was run under that instruction: the
+baseline compared before and after shows the fingerprint of Purpose changed and nothing else.
+Nothing is merged. If the author changes or drops a proposal, the page and the baseline are
+redone before the merge.
+
+### P86. Purpose
+
+- Page: `content/1-foundations/purpose.md`. Locked.
+- (a) A tangled sentence. From "UPL fills the void left by this discontent, bridging the chasm
+  created by contrasting the extremes of rigid religious doctrines on the one hand and absolute
+  atheism on the other." to:
+
+  > UPL fills the void left by this discontent, offering a path between rigid religious
+  > doctrine on the one hand and absolute atheism on the other.
+
+- (b) From "UPL is not merely a reaction to the inadequacies of existing religious structures." to:
+
+  > UPL is not merely a reaction to what people have found wanting in existing religious
+  > structures.
+
+- (c) From "the spiritual thirst of the current ages," to:
+
+  > the spiritual thirst of the present age,
+
+- (d) From "It seeks to liberate spirituality from the chains of dogmatic tradition and outdated
+  worldviews, opening a path" to:
+
+  > It seeks to free spirituality from dogmatism, wherever it is found, opening a path
+
+- Notes: (b) and (d) keep the author's point, that many people find existing religion does not
+  fit them, and stop short of calling the traditions inadequate, chained or outdated, which the
+  rest of the text does not believe. "Wherever it is found" includes UPL, in line with decision D5.
+
+### P87. Comparative Analysis
+
+- Page: `content/5-context/comparative-analysis.md`. Not locked.
+- (a) The opening claims a uniqueness the page itself disproves four paragraphs later, where the
+  Bahá'í Faith also joins science and religion. From "UPL is unique in that it combines scientific
+  understanding with various spiritual traditions." to:
+
+  > UPL combines respect for scientific understanding with teachings drawn from many
+  > spiritual traditions.
+
+- (b) The last clause ranks pantheism. From "which distinguishes it from a mere philosophical
+  stance." to:
+
+  > which makes it a way of life as well as a philosophical view.
+
+### P88. Historical Context
+
+- Page: `content/5-context/historical-context.md`. Not locked.
+- Addition, at the end of the first paragraph, which names Socinianism and does not explain it:
+
+  > Socinianism, named after the theologian Faustus Socinus, was a Christian movement that
+  > flourished in Poland until 1660; it held that the Father alone is God and that Jesus was
+  > a human being.
+
+- Source: S199.
+- Notes: the source adds that the Socinians did not think Jesus a "mere man" but the unique Son of
+  God; the gloss says only what they denied of the Trinity, which is why the paper names them.
+
+## Page clarity, step 5: the thin pages, approved and applied
+
+Step 5 of the [page clarity plan](plans/2026-09-21-page-clarity.md). Jesus, Muhammad, the Buddha
+and Masaharu Taniguchi each had 50 to 74 words that said their teaching fits UPL and not what it
+was, while Laozi and Guru Nanak had 115 words of content. Each of the four gains one paragraph,
+after the author's, built only from sources already in the register. Two more doctrine pages are
+settled. Every page stays under 200 words.
+
+**Checked before asking.** Applied in a scratch tree and run through the doctrine, matrix and
+source gates and the lint. The first run found one overlap, the Samaritan sentence repeating
+Compassionate Action; the draft was reworded and the second run was clean, apart from the expected
+notice that six locked pages changed, which needs the author's `--accept-core`. Dedicated pages
+are outside the balance shares, and no page goes out of balance.
+
+**Applied ahead of review, on the author's instruction.** On 21 September 2026 the author, away
+from the desk, asked for the remaining pull requests to be prepared "as if I had accepted all
+your suggestions", to be reviewed one by one afterwards and changed as needed. So P89 to P94 are
+applied in this pull request as written, and `--accept-core` was run under that instruction: the
+baseline compared before and after shows the fingerprints of the six pages named here changed
+and nothing else. Nothing is merged. If the author changes or drops a proposal, the page and the
+baseline are redone before the merge.
+
+### P89. Jesus and the Message of Love and Forgiveness
+
+- Page: `content/2-doctrine/enlightened-figures/jesus.md`. Locked. Addition, after the author's paragraph:
+
+  > He summed up the law in two commandments, love of God and love of neighbour, and when
+  > asked who the neighbour is he answered with a story, in which the one who cares for a
+  > stranger left wounded on the road is a Samaritan, an outsider to those listening. He
+  > taught his followers to love their enemies, to forgive without keeping count, and to
+  > give, pray and fast where no one is watching. At the last supper he knelt and washed his
+  > disciples' feet. UPL honours him as a teacher of the light. It does not take up the
+  > doctrines the churches hold about him, which the Comparative Analysis sets out.
+
+- "Comparative Analysis" links to that page.
+- Sources: S37, S40, S32, S36, S33, S43.
+
+### P90. Muhammad and the Unity of God
+
+- Page: `content/2-doctrine/enlightened-figures/muhammad.md`. Locked. Addition:
+
+  > The Qur'an teaches that God is one and is the Light of the heavens and the earth, that
+  > there is no compulsion in religion, and that no soul bears the burden of another.
+  > Muhammad taught that the best people are those best in character, and that the merciful
+  > are shown mercy. He said that Islam is built on five things, among them daily prayer,
+  > the giving of alms, the fast and the pilgrimage, and these still shape the life of
+  > Muslims.
+
+- Sources: S88, S101, S167, S171, S160, S100, S92.
+- Notes: no dates are given, because none is in the register. The five are named as his saying
+  (S92), a Sunni formulation.
+
+### P91. Buddha and the Path to Enlightenment
+
+- Page: `content/2-doctrine/enlightened-figures/buddha.md`. Locked.
+- (a) The author's second sentence credits him with "the interconnectedness of existence", which
+  belief 6 now credits to later Buddhists (S74, S75). From "His emphasis on the
+  interconnectedness of existence and personal spiritual development" to:
+
+  > His emphasis on the way all things arise in dependence on one another, and on personal
+  > spiritual development,
+
+- (b) Addition:
+
+  > In his first discourse he set out four noble truths: that there is suffering, that it
+  > has an origin, that it can cease, and that there is a path to its ceasing. That path has
+  > eight parts and is a middle way between indulgence and self-mortification. He taught
+  > mindfulness of breathing as a path to liberation, and the cultivation of love for all
+  > beings. He asked that a teaching be tested and not simply accepted, and spoke of his own
+  > as a raft, to be used and then set down.
+
+- Sources: S69, S85, S73, S79, S81, S74.
+- Notes: the four truths are given in the words of the discourse, which never says "life is
+  suffering" (S69).
+
+### P92. Masaharu Taniguchi and the Power of Positive Thinking
+
+- Page: `content/2-doctrine/enlightened-figures/masaharu-taniguchi.md`. Locked. Addition:
+
+  > He founded Seicho-No-Ie in Japan in 1930. At the centre of his teaching is the True
+  > Image: the perfect world created by God, in which every person is a child of God. He
+  > taught that all religions emanate from one universal God, that what a person thinks,
+  > says and does shapes the world they meet, and that gratitude, to parents and ancestors
+  > above all, opens the way to harmony with all things. His holy sutra, the Nectarean
+  > Shower of Holy Doctrines, gives UPL its image of the body as the soul's cocoon. UPL
+  > honours this teaching without taking up everything he said: it holds that illness and
+  > the material world are real, and his political views are no part of it.
+
+- Sources: S06, S05, S113, S116, S114, S07, S115, S118.
+- Notes: the last sentence carries decision D2 and the caution recorded with S118, so that the
+  page never reads as endorsing everything he said.
+
+### P93. Integration of Karma and Dharma in the Soul's Liberation
+
+- Page: `content/2-doctrine/soul-karma-dharma-and-death/karma-and-dharma-in-liberation.md`.
+  Locked.
+- (a) Every other page calls the cocoon the body; this one calls it "spiritual". From "individuals
+  refine their spiritual 'cocoons,'" to:
+
+  > individuals refine their 'cocoons,'
+
+- (b) "Liberation" is never defined. Addition, as a second paragraph:
+
+  > By liberation UPL means the soul's freedom from what obscures its light. What form the
+  > soul's journey takes after death, UPL has not yet defined.
+
+- Notes: the second sentence of (b) states the open doctrinal question as the author answered it
+  on 21 September 2026, "yet to be defined". It is honest, and it is the author's to include or
+  leave out; (a) and the first sentence stand without it.
+
+### P94. The Fabric of Ethics (decision C8)
+
+- Page: `content/2-doctrine/ethical-and-moral-development/fabric-of-ethics.md`. Locked.
+- The page is 50 words and one image. C8 asks whether to fold it into the section introduction
+  or give it a second paragraph. Drafted here is the second paragraph, which draws out what the
+  image already implies and names no tradition:
+
+  > The image says three things about an ethical life. No single thread makes the cloth:
+  > character is built from many small choices. A thread once woven stays: what is done
+  > becomes part of who one is. And a flaw can be worked into the pattern: a wrong that is
+  > mended, by making it good and seeking forgiveness, is not the ruin of the cloth but part
+  > of its weave.
+
+- Notes: the mending of a wrong "by making it good and seeking forgiveness" echoes the Karma page
+  in different words. If the author prefers to fold the page away, that is a structural change
+  with a redirect, and this proposal is dropped.
+
+## Page clarity, step 7: small polish and four of the author's decisions, approved and applied
+
+Step 7 of the [page clarity plan](plans/2026-09-21-page-clarity.md), first part. The gratitude
+affirmations (C7) are in a pull request of their own, because they are the author's words more
+than any other page.
+
+**Applied ahead of review, on the author's instruction.** On 21 September 2026 the author, away
+from the desk, asked for the remaining pull requests to be prepared "as if I had accepted all
+your suggestions", to be reviewed one by one afterwards and changed as needed. So P95 to P98 are
+applied in this pull request as written, and `--accept-core` was run under that instruction: the
+baseline compared before and after shows the fingerprints of five locked pages changed (two core
+beliefs, the soul section page, The Immortal Soul, Ethical Living as Spiritual Practice) and
+nothing else. Nothing is merged.
+
+**Checked.** Doctrine, matrix and source gates and the lint: clean. No page goes out of balance
+and no new overlap appears.
+
+### P95. Small polish, one phrase each
+
+| Page | From | To |
+| ---- | ---- | -- |
+| Home | "organised as a hierarchy… kept in `paper/`" | "arranged in five parts. It begins from the founding paper by Giovanni S. Salvador", with "founding paper" as the link |
+| Community and Social Welfare (locked) | "building a tightly-knit spiritual network with global outreach" | "building a close spiritual community that reaches across the world" |
+| Positive Thinking, Gratefulness, and Mindful Action (locked) | "asks its followers to perform practices of positive thinking" | "asks its followers to practise positive thinking" |
+| Soul, Karma, Dharma, and Death (locked) | "integrates philosophical dualism, viewing the soul" | "integrates philosophical dualism, the view that mind and body are different kinds of thing, viewing the soul" (S200) |
+| The Immortal Soul (locked) | "the essence of man is spiritual" | "the essence of a person is spiritual" |
+| Gratitude for Life's Blessings | "In addition to personal relationships, gratitude affirmations extend to" | "Gratitude affirmations extend beyond personal relationships to", so the page stands on its own |
+| Buddhist Meditation Practices | "align with UPL's core emphasis on mindfulness, compassion, and spiritual evolution" | "align with UPL's own emphasis on the same qualities and on spiritual evolution" |
+| Community and Fellowship | one sentence of 70 words | two: "UPL draws upon… Hoʻoponopono practices. It views its community as…" |
+| Practices of Community Engagement | "Emphasising the importance of karma and dharma, UPL encourages" | "Because right action is at the heart of karma and dharma, UPL encourages" |
+| Environmental Stewardship and the Sacredness of Nature | "to demonstrate and perform a profound respect" | "to show a profound respect" |
+| Sobriety | "and, thereafter, the world" | "and, through the person, the world around them" |
+| Sobriety, under eating | "substances that detract from health, including the consumption of recreational and illegal drugs" | "substances that detract from health" (drugs are dealt with in the section above) |
+| Arts and Creative Expression | "Explore your own creativity in…" | "Followers are invited to explore their own creativity in…" |
+
+Left as they are, on reflection: "community unity" in belief 2 and "clearing negative energy" on
+the hoʻoponopono page, which are the author's phrases and do no harm; and editions and years on
+the References page, which need catalogue work of their own.
+
+### P96. One name for a follower (decision C3)
+
+- "Adherent" becomes "follower" in all twelve places, on eleven pages, one of them locked
+  (Ethical Living as Spiritual Practice). "Follower" was already the most used.
+- Kept: "Synphotodosist", the religion's own name for a follower, in its three places; "members"
+  where it means the members of a community or a family; "believers" in Purpose, where the
+  sentence is about people who believe before they have found UPL.
+
+### P97. Who may marry (decision C5)
+
+- Page: `content/4-way-of-life/family/marriage.md`. Not locked.
+- Addition, after the second sentence:
+
+  > Marriage in UPL is open to any two adults, whatever their gender.
+
+- Notes: this follows from belief 4 and from Inclusive Familial Structures, which already names
+  families headed by same-sex couples. It is still a statement of doctrine, and the author's to
+  confirm or reword.
+
+### P98. The divorce page's title (decision C6)
+
+- Page: `content/4-way-of-life/family/divorce.md`. Not locked.
+- "Divorce as a Respectable Ultimatum" becomes "Divorce as a Last Resort", in the title, the
+  heading and the section's list. An ultimatum is a final demand; the page's own words are "as a
+  last resort". The address does not change.
+
+### Left open: does sobriety include alcohol? (decision C4)
+
+Nothing is drafted, because there is nothing in the text to draw it from. The page discourages
+"recreational drugs" and the two traditions it cites both count alcohol as an intoxicant, but the
+page never names it, and a reader will ask. This one needs the author's answer.
+
+## Page clarity, step 7: the gratitude affirmations, approved and applied (decision C7)
+
+The four gratitude pages describe an affirmation and give none, so a reader who comes for words
+to say finds none. An affirmation is what a follower says aloud, and is the author's more than
+any other text here. These four are **drafts to prompt the author's own**, applied in a pull
+request of their own on the author's instruction of 21 September 2026 to prepare the remaining
+work "as if I had accepted all your suggestions". Nothing is merged. No page is locked, so the
+baseline is untouched.
+
+Each draws only on what its page already says, names no tradition, and addresses no person, in
+keeping with decision D1. "I am light from the source" is belief 4's own phrase.
+
+**Checked.** The first run of the matrix gate found the same introductory line on all four pages;
+it now stands once, on the section page. Second run clean.
+
+### P99. The section page
+
+- Page: `content/3-practice/gratitude-affirmations/README.md`. Addition, under "The affirmations":
+
+  > Each page below ends with an example affirmation. It may be said aloud or in silence, and
+  > is meant to be changed to fit one's own life.
+
+### P100. Gratitude for Relationships
+
+  > I give thanks for the people in my life: for those who raised me, those who walk beside
+  > me, those I work with and those I meet. I am grateful for their love, their support and
+  > their wisdom, and for the difficulties between us, which teach me. May I be to them what
+  > they have been to me.
+
+### P101. Gratitude for Life's Blessings
+
+  > I give thanks for the food on my table, the roof over my head, the clothes I wear and the
+  > tools that ease my day. I do not take them for granted. I remember those who go without,
+  > and I will share what I have.
+
+### P102. Gratitude for Earth and Environmental Blessings
+
+  > I give thanks for the air I breathe, the water I drink, the soil that feeds me and the
+  > living world of which I am a part. I receive these as gifts, and I will care for the Earth
+  > that gives them.
+
+### P103. Gratitude for the Gift of Life and the Journey of Existence
+
+  > I give thanks for my life: for its joy and its sorrow, its successes and its failures, its
+  > loves and its losses. Each has taught me. I am light from the source, and I am grateful to
+  > be here.
+
+Each is added at the end of its page under the heading "An affirmation".
+
+## Independent review before publishing: fixes approved and applied
+
+On 21 September 2026 four independent reviewers read the release candidate (every open page
+clarity pull request combined): factual accuracy, consistency, a newcomer's reading, and
+intellectual property. The full results are in
+[publish-readiness.md](publish-readiness.md). Intellectual property passed. The other three found
+no blocker and nine points worth fixing, each checked before it was accepted. They are applied
+here on the author's instruction of the same day to prepare the remaining work "as if I had
+accepted all your suggestions"; `--accept-core` was run under that instruction, and the baseline
+compared before and after shows the fingerprints of the seven locked pages named below changed
+and nothing else. Nothing is merged.
+
+### P104. The washing of the feet: Jesus did not kneel in the text
+
+- Pages: `content/2-doctrine/enlightened-figures/jesus.md` (locked; the sentence is from P89) and
+  `content/4-way-of-life/community-and-fellowship/community-engagement.md`.
+- John 13 in the World English Bible, read directly (S43): he rose from supper, wrapped a towel
+  around his waist, poured water and began to wash. It does not say he knelt. From "he knelt and
+  washed his disciples' feet" and "Jesus knelt to wash his disciples' feet" to:
+
+  > he washed his disciples' feet
+
+  and
+
+  > Jesus washed his disciples' feet
+
+### P105. "You are that": no side taken
+
+- Page: `content/2-doctrine/god-quantum-physics-and-the-light-of-divinity.md`. Locked.
+- The register says of this verse that identity is one reading of three, that the word for the
+  ultimate reality is not in it, and that the sentence "must not be strengthened" (S64). From
+  "the Chandogya Upanishad says of the self and the ultimate reality, "you are that"," to:
+
+  > the Chandogya Upanishad says, "you are that",
+
+### P106. Guru Nanak and the scripture
+
+- Page: `content/2-doctrine/enlightened-figures/guru-nanak.md`. Locked.
+- He composed hymns that the scripture gathers (S109); he did not begin it as a book. From "The
+  scripture he began opens by naming one creator," to:
+
+  > The Sikh scripture, in which his hymns are gathered, opens by naming one creator,
+
+### P107. Death: the Gita's image without its rebirth
+
+- Page: `content/2-doctrine/soul-karma-dharma-and-death/death-as-a-transformative-journey.md`.
+  Locked.
+- "For new ones" carries the verse's teaching of rebirth (S196), which the author has left "yet
+  to be defined", while the page says UPL "holds with both". From "as a person lays aside
+  worn-out clothes for new ones." to:
+
+  > as a person lays aside worn-out clothes.
+
+- Notes: the author approved the longer sentence in P58 knowing the caution. This is the
+  reviewer's point, offered for the author to take or leave.
+
+### P108. Other Spiritual Leaders, and the section page
+
+- `content/2-doctrine/enlightened-figures/other-spiritual-leaders.md` (locked) says "beyond those
+  named in this section" and then names two who are in this section. To:
+
+  > UPL honours many teachers beyond the four named in the founding paper.
+
+- `content/2-doctrine/enlightened-figures/README.md` (locked) names four figures "and others"
+  above a list of six. To:
+
+  > Esteemed figures such as Jesus, Muhammad, Buddha, Masaharu Taniguchi, Laozi, Guru Nanak,
+  > and others are revered
+
+### P109. One spelling
+
+- `content/2-doctrine/ethical-and-moral-development/diverse-ethical-teachings.md` (locked):
+  "wellbeing" becomes "well-being", as everywhere else in the text.
+
+### P110. The home page: where to begin
+
+- Page: `content/README.md`. Not locked. The newcomer's review found that the home page is a table
+  of contents and does not say where to start, and that nothing tells a convinced reader what to
+  do next. Addition, before "Contents":
+
+  > **Where to begin.** New here? Read Purpose and the ten Core Beliefs: together they take a
+  > few minutes and say what UPL holds. Then see how UPL speaks to its followers, which lists
+  > the few things it asks without exception, and try one practice, such as a gratitude
+  > affirmation.
+
+  "Where to begin" is a heading, and the four page names are links.
+
 ## Open doctrinal questions
 
 Questions the text does not answer and the author has said are not yet decided. No page states or

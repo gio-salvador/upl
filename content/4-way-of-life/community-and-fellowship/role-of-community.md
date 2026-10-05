@@ -1,6 +1,7 @@
 ---
 title: "The Role of Community in Spiritual Growth"
 order: 1
+description: "The spiritual journey is personal, and it is enriched by fellowship: support, shared wisdom and a sense of belonging."
 ---
 
 # The Role of Community in Spiritual Growth

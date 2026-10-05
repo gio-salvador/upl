@@ -1,6 +1,7 @@
 ---
 title: "Arts and Creative Expression"
 order: 3
+description: "The arts as expressions of the human spirit and reflections of the divine, and creativity as part of daily and community life."
 ---
 
 # Arts and Creative Expression
@@ -11,4 +12,4 @@ The arts are revered as essential expressions of the human spirit and reflection
 
 ## Integration of Creativity in Daily Life
 
-Explore your own creativity in personal and community projects. This approach fosters an environment where innovation and artistic expression are valued and nurtured, enhancing the communal experience and contributing to a rich, dynamic culture within the UPL community.
+Followers are invited to explore their own creativity in personal and community projects. This approach fosters an environment where innovation and artistic expression are valued and nurtured, enhancing the communal experience and contributing to a rich, dynamic culture within the UPL community.

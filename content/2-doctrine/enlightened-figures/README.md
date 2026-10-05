@@ -1,11 +1,12 @@
 ---
 title: "The Role of Enlightened Figures"
 order: 2
+description: "UPL honours teachers from many traditions as embodiments of divine light, among them Jesus, Muhammad, the Buddha, Masaharu Taniguchi, Laozi and Guru Nanak."
 ---
 
 # The Role of Enlightened Figures
 
-To value the profound impact of enlightened figures from various spiritual traditions, recognising them as embodiments of divine light who illuminate the path towards greater wisdom, compassion, and ethical living. Esteemed figures such as Jesus, Muhammad, Buddha, Masaharu Taniguchi, and others are revered for their teachings that deeply align with the foundational tenets of UPL.
+UPL values the profound impact of enlightened figures from various spiritual traditions, recognising them as embodiments of divine light who illuminate the path towards greater wisdom, compassion, and ethical living. Esteemed figures such as Jesus, Muhammad, Buddha, Masaharu Taniguchi, Laozi, Guru Nanak, and others are revered for their teachings that deeply align with the foundational tenets of UPL.
 
 ## The figures
 

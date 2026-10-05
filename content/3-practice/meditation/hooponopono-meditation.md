@@ -1,6 +1,7 @@
 ---
 title: "Hoʻoponopono Meditation"
 order: 3
+description: "Hoʻoponopono, the Hawaiian family practice of setting relationships right, and the modern four-phrase form adapted from it."
 ---
 
 # Hoʻoponopono Meditation

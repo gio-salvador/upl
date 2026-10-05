@@ -1,6 +1,7 @@
 ---
 title: "Unity"
 order: 1
+description: "UPL holds that all existence is one, a manifestation of divine light, and honours how each tradition has named that single source."
 ---
 
 # Unity

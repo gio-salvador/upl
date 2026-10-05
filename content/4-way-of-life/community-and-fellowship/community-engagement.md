@@ -1,6 +1,7 @@
 ---
 title: "Practices of Community Engagement"
 order: 2
+description: "How a UPL community gathers: group meditation and prayer, study circles, service and philanthropy, and shared celebrations."
 ---
 
 # Practices of Community Engagement
@@ -15,9 +16,9 @@ By engaging in shared study of sacred texts and spiritual discussions, members o
 
 ## Service and Philanthropy
 
-Emphasising the importance of karma and dharma, UPL encourages community initiatives aimed at service, philanthropy, and environmental stewardship. Through acts of collective service, the community embodies the principles of mindful action and positive thinking, impacting wider society in meaningful ways.
+Because right action is at the heart of karma and dharma, UPL encourages community initiatives aimed at service, philanthropy, and environmental stewardship. Through acts of collective service, the community embodies the principles of mindful action and positive thinking, impacting wider society in meaningful ways.
 
-In Sikh practice service is given with one's own hands, in the kitchen and the hall, to whoever comes. Jesus knelt to wash his disciples' feet and told them to do the same for one another.
+In Sikh practice service is given with one's own hands, in the kitchen and the hall, to whoever comes. Jesus washed his disciples' feet and told them to do the same for one another.
 
 ## Celebrations and Rituals
 
