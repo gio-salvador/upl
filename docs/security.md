@@ -49,7 +49,7 @@ The main risks are an unwanted change to the canonical text and a compromised si
 | OpenTofu format and validate, and a Trivy scan for misconfiguration and secrets; plan and apply once enabled | `.github/workflows/iac.yml` |
 | Infrastructure posture: sensitive variables, no literal credentials or state location, exact provider pin and lock file, state locking, DNSSEC and the no-email records | `scripts/check-infra.py`, run by `scripts/check.sh gates` |
 | Secret scan of the full history (gitleaks) | `.github/workflows/ci.yml`, job `gitleaks` |
-| Dependency CVE scan (OSV-Scanner), weekly, on every push to `main` and on every pull request from a branch of this repository; fails on a finding | `.github/workflows/security.yml` |
+| Dependency CVE scan (OSV-Scanner), weekly, on every push to `main` and on every pull request from a branch of this repository; fails on a finding. An advisory is passed over only by an entry in `site/osv-scanner.toml` that names it, gives a reason and expires within a month | `.github/workflows/security.yml` |
 | CodeQL (weekly, on `main` and on pull requests) and OpenSSF Scorecard | `security.yml` and `scorecard.yml`; both run only once the repository is public |
 
 All actions are pinned by commit SHA, and no checkout leaves credentials behind.
