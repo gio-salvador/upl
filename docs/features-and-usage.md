@@ -164,7 +164,9 @@ per file; the build is about 250 files). Direct uploads do not use the plan's mo
 allowance.
 
 The Pages project itself is defined in `infra/` and managed by `.github/workflows/iac.yml`. The
-one-time account setup is in [runbook-go-live.md](runbook-go-live.md). Until it is done, the
+one-time account setup is in [runbook-go-live.md](runbook-go-live.md):
+`scripts/bootstrap-cloudflare.sh` builds the Cloudflare side from one root token, and
+`scripts/iac.sh` runs OpenTofu locally with the same variables CI uses. Until it is done, the
 workflow builds and checks the site, skips the upload with a notice, and stays green.
 
 The public origin comes from the `SITE` repository variable; canonical URLs, the sitemap and
