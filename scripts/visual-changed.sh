@@ -17,7 +17,7 @@ cd "$(git rev-parse --show-toplevel)" || exit 0
 
 VISUAL='^(content/|site/|scripts/visual-changed\.sh$|scripts/check\.sh$|\.github/workflows/ci\.yml$)'
 # Inside site/, files that cannot affect a rendered page.
-NOT_VISUAL='^site/(scripts/(check-links|check-seo|generate-og|sync-paper|clear-content-cache)\.mjs|src/pages/(robots|llms|llms-full)\.txt\.ts|src/pages/.*index\.md\.ts|src/lib/(machine-text|structured-data|describe)\.ts|src/components/seo/|public/(_headers|\.well-known/|og-default\.png)|\.npmrc|\.gitignore)'
+NOT_VISUAL='^site/(scripts/(check-links|check-seo|check-contrast|generate-og|sync-paper|clear-content-cache)\.mjs|src/pages/(robots|llms|llms-full)\.txt\.ts|src/pages/.*index\.md\.ts|src/lib/(machine-text|structured-data|describe)\.ts|src/components/seo/|public/(_headers|\.well-known/|og-default\.png)|osv-scanner\.toml|\.npmrc|\.gitignore)'
 
 base="${1:-origin/main}"
 if ! mb="$(git merge-base "$base" HEAD 2>/dev/null)"; then

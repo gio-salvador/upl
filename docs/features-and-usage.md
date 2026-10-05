@@ -99,8 +99,9 @@ needs Chromium once: `npx --prefix site playwright install chromium`. It is the 
 it is skipped when nothing that can affect rendering has changed: `scripts/visual-changed.sh`
 compares against `main` and counts the teachings, the site's pages, layouts, styles, config and
 dependencies as visual, and docs, plans, infrastructure, SEO metadata and response headers as
-not. It fails open: if it cannot tell, the gate runs. Pushes to `main` always run it, and
-`bash scripts/check.sh mobile` forces it.
+not. It fails open: if it cannot tell, the gate runs. CI applies the same test to a pull
+request and to a push to `main`; a manual run of the workflow and
+`bash scripts/check.sh mobile` force it.
 
 `check:seo` fails
 if any page lacks a title, a single H1, a description of 50 to 200 characters, a canonical URL,
