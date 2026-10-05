@@ -124,7 +124,10 @@ jobs:
           TF_VAR_pages_project_name: ${{ vars.PAGES_PROJECT_NAME }}
           TF_VAR_site_origin: ${{ vars.SITE }}
           TF_VAR_site_domain: ${{ vars.SITE_DOMAIN }}
-        run: tofu plan -input=false -no-color -lock=false | tee tfplan.txt
+        # pipefail, so a failed plan fails the step: without it the pipe reports tee's status.
+        run: |
+          set -o pipefail
+          tofu plan -input=false -no-color -lock=false | tee tfplan.txt
 
       - name: Post plan to the pull request
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
