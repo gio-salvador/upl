@@ -12,8 +12,3 @@
 id = "GHSA-vfj7-8cjw-p6xm"
 ignoreUntil = 2026-11-05T00:00:00Z
 reason = "braces <= 3.0.3, stack exhaustion on deeply nested patterns. No fixed version exists. Development only: it arrives through markdownlint-cli2 (globby, fast-glob, micromatch) and only expands the glob patterns this repository passes to the linter. Nothing from it is built into the site. Remove when a fixed braces is released."
-
-[[IgnoredVulns]]
-id = "GHSA-ch52-4w7c-c8xp"
-ignoreUntil = 2026-10-19T00:00:00Z
-reason = "http-cache-semantics <= 4.2.0, max-stale and shared cache entries. Disputed by the maintainer as not a vulnerability (kornelski/http-cache-semantics issue 56, closed as not planned), and no release changes the behaviour it describes. Build time only: it arrives through astro, and the site is served as static files with no shared cache of its own. 4.3.0 falls outside the advisory's range and clears the 7-day cooldown on 2026-10-11; remove this entry once the lockfile has it."
