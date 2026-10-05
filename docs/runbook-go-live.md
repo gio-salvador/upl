@@ -2,8 +2,47 @@
 
 The one-time steps that connect this repository to Cloudflare, for the repository owner. Until
 they are done, the deploy workflow builds and checks the site but uploads nothing, and the IaC
-workflow only formats and validates. Every credential here is created and entered by you; none
-is ever written to a file in this repository.
+workflow only formats and validates. Every credential here is yours; none is ever committed.
+The only file that holds any is the git-ignored `.env` the scripts below write.
+
+## The short way: two scripts and one root token
+
+Steps 1 to 4 below can be done by script. Create one Cloudflare API token that may mint others
+(the root token), and the scripts build the rest: the state bucket, a narrow deploy token, a
+narrow state token, the Pages project, and the GitHub secrets and variables.
+
+The root token needs four permissions: User, API Tokens, Edit; Account, Workers R2 Storage,
+Edit; Account, Account Settings, Read; and Zone, Zone, Read. Give it a short expiry. If R2 has
+never been used on the account, turn it on once in the dashboard first; the API cannot do that.
+
+```bash
+bash scripts/bootstrap-cloudflare.sh --dry-run   # asks for the root token; creates nothing
+bash scripts/bootstrap-cloudflare.sh             # bucket, two narrow tokens, the .env file
+bash scripts/iac.sh apply                        # the Pages project: one resource to add
+bash scripts/iac.sh github                       # secrets, variables, IAC_ENABLED=true
+bash scripts/iac.sh status                       # everything agrees, or it says what does not
+```
+
+Then revoke the root token. It is asked for without echo (or read from `CLOUDFLARE_ROOT_TOKEN`),
+and is never written to a file, passed on a command line or printed. What is kept is a
+git-ignored `.env` at the repository root holding only the narrow credentials; `.env.example`
+lists its keys. The script refuses to touch an `.env` that holds any other key, so another
+project's file is never overwritten or mixed in.
+
+If the root token sees more than one account, the script lists them and stops; pass
+`--account`. If the domain's zone is in the chosen account, the deploy token is created with the
+two zone permissions of step 8 already, so step 8.1 is done. Running the bootstrap again is
+safe: it corrects the tokens' permissions in place and keeps their values while the ones in
+`.env` still work. `--rotate` rolls both; run `bash scripts/iac.sh github` afterwards so GitHub
+holds the new values.
+
+For the custom domain, the order in step 8 still holds, with the scripts doing the typing:
+clear the colliding records (8.2), set `SITE_DOMAIN` in `.env`, `bash scripts/iac.sh apply`,
+publish the DS record from `bash scripts/iac.sh output dnssec_ds` (8.5), wait until
+`bash scripts/iac.sh status` shows both domains active, then set `SITE` in `.env`, run
+`bash scripts/iac.sh github` and redeploy.
+
+The rest of this page is the same work by hand, and the reference for what the scripts do.
 
 ## What you need
 

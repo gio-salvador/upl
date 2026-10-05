@@ -36,6 +36,7 @@ The licence of this repository's own work is in [LICENSE](LICENSE).
   `.github/workflows/scorecard.yml`
 - `infra/providers.tf`, `infra/backend.tf`, `infra/pages.tf`, `.github/workflows/iac.yml`,
   `.github/workflows/deploy.yml`
+- `scripts/bootstrap-cloudflare.sh` (the token-minting approach)
 - `.editorconfig`, `.gitattributes`
 
 ## Licence of the adapted files
