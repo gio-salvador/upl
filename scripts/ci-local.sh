@@ -42,9 +42,8 @@ fi
 job "Toolkit gates (docs, claims, plans, hardcoding, public readiness)" bash scripts/check.sh gates
 job "Secret scan (gitleaks)" gitleaks detect --source . --redact --no-banner
 
-# security.yml (CodeQL runs only once the repository is public)
+# security.yml (CodeQL is GitHub's code scanning default setup, not a workflow job)
 job "OSV-Scanner (dependency CVEs)" osv-scanner scan source --lockfile=site/package-lock.json
-skip "CodeQL JavaScript / TypeScript" "runs only when the repository is public, as in CI"
 
 # deploy.yml: the build and the gate are the site gate above; the upload needs Cloudflare
 # credentials and GitHub, so nothing is published from here.

@@ -87,9 +87,9 @@ a deep page, its markdown alternate, and the redirect for a page address without
 
 Once the repository is public (or on a paid GitHub plan), add a branch ruleset on `main`: pull
 request required, the four CI checks (site gate, rendering gate, toolkit gates, gitleaks) and
-the Deploy check required, signed commits, no force push, no deletion. Add the OSV-Scanner and
-CodeQL checks from the Security workflow to the required set once each has run on a pull
-request. On a private repository on the free plan GitHub refuses this; that is a recorded gap,
+the Deploy check required, signed commits, no force push, no deletion. Add the OSV-Scanner
+check from the Security workflow and the CodeQL checks from code scanning default setup to
+the required set once each has run on a pull request. On a private repository on the free plan GitHub refuses this; that is a recorded gap,
 not a pass.
 
 In the same sitting, under Settings, Code security, turn on secret scanning and push
