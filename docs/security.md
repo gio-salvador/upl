@@ -43,7 +43,7 @@ The main risks are an unwanted change to the canonical text and a compromised si
 | Gate | Where |
 | ---- | ----- |
 | Markdown lint, site build, link gate and SEO gate (`scripts/check.sh site`) | `.github/workflows/ci.yml`, job `build` |
-| Every page rendered at four widths: overflow, viewport, landmark, touch targets. Skipped on a pull request that changes nothing visual; always run on `main` | `.github/workflows/ci.yml`, job `mobile` |
+| Every page rendered at four widths: overflow, viewport, landmark, touch targets. Skipped on a pull request or a push to `main` that changes nothing visual | `.github/workflows/ci.yml`, job `mobile` |
 | Toolkit gates: docs, doc claims, plan structure, hardcoded paths and secrets, and public readiness. The sensitive-token scan is not part of this job: it runs on the author's machine, in `scripts/check.sh` and in the pre-push hook | `.github/workflows/ci.yml`, job `gates`, running `scripts/check.sh gates` |
 | Site gate before any upload, then a smoke test of the live headers and key addresses | `.github/workflows/deploy.yml` |
 | OpenTofu format and validate, and a Trivy scan for misconfiguration and secrets; plan and apply once enabled | `.github/workflows/iac.yml` |

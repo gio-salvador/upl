@@ -53,29 +53,37 @@ jobs:
           persist-credentials: false
           fetch-depth: 0 # the decision below compares against the base branch
 
-      # On a pull request the gate runs only if something that can change rendering changed.
+      # The gate runs only if something that can change rendering changed: on a pull request,
+      # since the base branch; on a push to main, since the commit main pointed at before it.
       # The skip happens here, inside the job, and not with a workflow `paths` filter: a job
       # that never starts never reports, and would block every docs-only pull request forever
-      # once this check is required on main. Pushes to main and manual runs always run it.
+      # once this check is required on main. A manual run has no change to compare, and is a
+      # request for the gate, so it always runs it.
       - name: Decide whether rendering can have changed
         id: visual
         env:
           EVENT: ${{ github.event_name }}
           BASE_REF: ${{ github.base_ref }}
+          BEFORE: ${{ github.event.before }}
         run: |
-          if [ "$EVENT" != "pull_request" ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "Not a pull request: running the full rendering gate." >> "$GITHUB_STEP_SUMMARY"
-            exit 0
-          fi
+          case "$EVENT" in
+            pull_request) base="origin/${BASE_REF}" ;;
+            # The script fails open: a first push, where there is no earlier commit, runs the gate.
+            push) base="${BEFORE}" ;;
+            *)
+              echo "run=true" >> "$GITHUB_OUTPUT"
+              echo "Manual run: running the full rendering gate." >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+              ;;
+          esac
           # The decision is the script's own exit status, so its output is captured, not piped:
           # this shell runs without pipefail, and a pipe to tee reports tee's status, which
           # made the gate run on every pull request.
-          if out="$(bash scripts/visual-changed.sh "origin/${BASE_REF}")"; then run=true; else run=false; fi
+          if out="$(bash scripts/visual-changed.sh "$base")"; then run=true; else run=false; fi
           printf '%s\n' "$out" | tee -a "$GITHUB_STEP_SUMMARY"
           echo "run=${run}" >> "$GITHUB_OUTPUT"
           if [ "$run" = false ]; then
-            echo "::notice title=Rendering gate skipped::No file that can affect rendering changed in this pull request."
+            echo "::notice title=Rendering gate skipped::No file that can affect rendering changed."
           fi
 
       - name: Setup Node
