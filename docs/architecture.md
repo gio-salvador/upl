@@ -78,8 +78,8 @@ on the author's machine.
   they carry on GitHub: the site gate, the rendering gate (skipped when nothing that affects
   rendering changed, as in CI), the toolkit gates, the gitleaks secret scan, the OSV dependency
   scan, and for a change under `infra/` the OpenTofu format and validation and the Trivy scan.
-  CodeQL is skipped, as it is in CI while the repository is private. Nothing is published from
-  a local run.
+  CodeQL has no local counterpart: it is GitHub's code scanning default setup, not a workflow
+  job. Nothing is published from a local run.
 - A pull request is merged only when that script passes on its head commit, rebased on `main`,
   and the script's output is written into the body of the merge commit, so the record sits in
   the history beside the change. It is not posted as a comment: a guard in this repository keeps

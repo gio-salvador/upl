@@ -44,13 +44,14 @@ The main risks are an unwanted change to the canonical text and a compromised si
 | ---- | ----- |
 | Markdown lint, site build, link gate and SEO gate (`scripts/check.sh site`) | `.github/workflows/ci.yml`, job `build` |
 | Every page rendered at four widths: overflow, viewport, landmark, touch targets. Skipped on a pull request that changes nothing visual; always run on `main` | `.github/workflows/ci.yml`, job `mobile` |
-| Toolkit gates: docs, doc claims, plan structure, hardcoded paths and secrets, public readiness, and the sensitive-token scan when the `SENSITIVE_TOKENS` secret is set. Once the repository is public the job fails if the secret is missing | `.github/workflows/ci.yml`, job `gates`, running `scripts/check.sh gates` |
+| Toolkit gates: docs, doc claims, plan structure, hardcoded paths and secrets, and public readiness. The sensitive-token scan is not part of this job: it runs on the author's machine, in `scripts/check.sh` and in the pre-push hook | `.github/workflows/ci.yml`, job `gates`, running `scripts/check.sh gates` |
 | Site gate before any upload, then a smoke test of the live headers and key addresses | `.github/workflows/deploy.yml` |
 | OpenTofu format and validate, and a Trivy scan for misconfiguration and secrets; plan and apply once enabled | `.github/workflows/iac.yml` |
 | Infrastructure posture: sensitive variables, no literal credentials or state location, exact provider pin and lock file, state locking, DNSSEC and the no-email records | `scripts/check-infra.py`, run by `scripts/check.sh gates` |
 | Secret scan of the full history (gitleaks) | `.github/workflows/ci.yml`, job `gitleaks` |
-| Dependency CVE scan (OSV-Scanner), weekly, on every push to `main` and on every pull request from a branch of this repository; fails on a finding | `.github/workflows/security.yml` |
-| CodeQL (weekly, on `main` and on pull requests) and OpenSSF Scorecard | `security.yml` and `scorecard.yml`; both run only once the repository is public |
+| Dependency CVE scan (OSV-Scanner), weekly, on every push to `main` and on every pull request from a branch of this repository; fails on a finding. An advisory is passed over only by an entry in `site/osv-scanner.toml` that names it, gives a reason and expires within a month | `.github/workflows/security.yml` |
+| CodeQL (weekly, on `main` and on pull requests) for JavaScript and TypeScript, Python and the workflows | GitHub code scanning default setup, in the repository settings; no workflow file |
+| OpenSSF Scorecard | `scorecard.yml`; runs only once the repository is public |
 
 All actions are pinned by commit SHA, and no checkout leaves credentials behind.
 
@@ -61,9 +62,12 @@ Recorded by the security and gitops audits of 2026-09-18, and closed by the owne
 - **No server-side protection of `main`.** GitHub refuses rulesets, secret scanning and push
   protection on a private repository on the free plan. Until the repository is public, only the
   local hooks enforce pull-request-only and signed commits.
-- **Sensitive-token scan in CI is off until the `SENSITIVE_TOKENS` secret is set.** The local
-  pre-push hook runs the scan meanwhile. The gap cannot outlive the private period: once the
-  repository is public, the CI job fails until the secret exists.
+- **The sensitive-token scan does not run in CI.** The list of client names and personal
+  identifiers stays on the author's machine and is not given to GitHub as a secret. The scan
+  runs locally in `scripts/check.sh` and in the pre-push hook, which blocks the push on this
+  public repository when the scan cannot run. What CI cannot see: a commit pushed from a
+  machine without the hooks, or with the hook bypassed, and a pull request from a fork.
+  Review of what is merged is the control for those.
 - **Recorded exception: deploys use long-lived Cloudflare credentials, not OIDC.** The fleet
   standard asks for short-lived, federated credentials in CI. Cloudflare offers no OIDC
   federation for Pages uploads or for R2, so the deploy and infrastructure workflows hold an
