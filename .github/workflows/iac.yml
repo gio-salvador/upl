@@ -22,7 +22,7 @@ concurrency:
   cancel-in-progress: false # never cancel an apply mid-flight
 
 env:
-  TOFU_VERSION: "1.11.6"
+  TOFU_VERSION: "1.12.6"
 
 jobs:
   fmt-validate:
