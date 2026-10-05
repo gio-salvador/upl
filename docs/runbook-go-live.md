@@ -68,14 +68,8 @@ Variables (same page, Variables tab):
 `gh secret set <NAME>` prompts for each value without echoing it, which keeps secrets out of
 your shell history.
 
-Required before the repository is public, and recommended now: a `SENSITIVE_TOKENS` secret
-holding your sensitive-token list, one token per line. CI then scans every tracked file against
-it on every pull request. The list itself never enters the repository. Once the repository is
-public, the toolkit gates job fails until this secret exists.
-
-```bash
-gh secret set SENSITIVE_TOKENS < path/to/your-token-list.txt
-```
+The sensitive-token list is not one of these secrets. It stays on your machine, and the scan
+against it runs there: in `scripts/check.sh` and in the pre-push hook. CI does not run it.
 
 ## 5. Deploy
 
