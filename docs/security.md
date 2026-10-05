@@ -50,7 +50,8 @@ The main risks are an unwanted change to the canonical text and a compromised si
 | Infrastructure posture: sensitive variables, no literal credentials or state location, exact provider pin and lock file, state locking, DNSSEC and the no-email records | `scripts/check-infra.py`, run by `scripts/check.sh gates` |
 | Secret scan of the full history (gitleaks) | `.github/workflows/ci.yml`, job `gitleaks` |
 | Dependency CVE scan (OSV-Scanner), weekly, on every push to `main` and on every pull request from a branch of this repository; fails on a finding | `.github/workflows/security.yml` |
-| CodeQL (weekly, on `main` and on pull requests) and OpenSSF Scorecard | `security.yml` and `scorecard.yml`; both run only once the repository is public |
+| CodeQL (weekly, on `main` and on pull requests) for JavaScript and TypeScript, Python and the workflows | GitHub code scanning default setup, in the repository settings; no workflow file |
+| OpenSSF Scorecard | `scorecard.yml`; runs only once the repository is public |
 
 All actions are pinned by commit SHA, and no checkout leaves credentials behind.
 
