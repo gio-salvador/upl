@@ -50,7 +50,7 @@ class InfraGate(unittest.TestCase):
         self.assert_fails_with("api_token is set to a literal")
 
     def test_a_provider_version_range_fails(self):
-        self.edit("providers.tf", 'version = "5.18.0"', 'version = "~> 5.18"')
+        self.edit("providers.tf", 'version = "5.26.0"', 'version = "~> 5.18"')
         self.assert_fails_with("is a range")
 
     def test_a_missing_lock_file_fails(self):
