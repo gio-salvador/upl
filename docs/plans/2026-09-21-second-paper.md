@@ -2,7 +2,8 @@
 
 **Status: planned, not built.** Requested 2026-09-21. This file records the design, the
 sequence and the open decisions, so "not yet" stays a decision rather than becoming forgetting.
-The author took decisions A1 to A8 the same day. Step 0 is under way; no later step has begun.
+The author took decisions A1 to A8 the same day. Step 0 is done: the plan was merged on 2026-10-05 (#49) after three review rounds. No later
+step has begun.
 Nothing in it is wording for the paper: the paper's words are the author's.
 
 **Amendments incorporated from review round 1, 21 September 2026.** Five lenses: accuracy,
@@ -231,7 +232,11 @@ inspection; they are not served as pages of the site.
 Extended, never loosened, and no change to `scripts/doctrine-baseline.json` or the caps in
 `scripts/doctrine-gate.json`:
 
-- The source gate reads the paper source as a citing page and as a claim page.
+- The source gate reads the paper source as a citing page and as a claim page. It does not
+  read this plan, or any plan, as a claim page: `docs/plans/**` is outside the claim pages in
+  `scripts/check-sources.py`, so a statement about a tradition in a plan is held by the plan
+  review's lenses and by citing the register id, not by the gate. Bringing plans under the gate
+  is a change to the source gate's scope and is left to the author, not folded in here.
 - The doctrine gate reports the balance of the paper source as its own figure, separate from
   the whole-text figure for `content/`, against the same caps. It reads the one `balance`
   object in `scripts/doctrine-gate.json` and not a copy, so a later change to a cap cannot
@@ -375,11 +380,12 @@ recommendations". Each entry keeps the recommendation as the reasoning for the c
 
 ## Sequence
 
-One pull request per row. Each leaves `main` green under `bash scripts/ci-local.sh`.
+One pull request per row. Each leaves `main` green: CI on GitHub passes on its head commit,
+and `bash scripts/ci-local.sh` runs the same jobs beforehand.
 
 | Step | Pull request | Needs from you | Status |
 | --- | --- | --- | --- |
-| 0 | This plan, reviewed with the plan review | read it; A1 to A8 | decisions taken 2026-09-21; plan review passed on all six lenses after three rounds; waiting for `bash scripts/ci-local.sh` and the merge |
+| 0 | This plan, reviewed with the plan review | read it; A1 to A8 | done 2026-10-05: decisions taken 2026-09-21; plan review passed on all six lenses after three rounds; merged as #49 with CI green |
 | 1 | The brief: the content brief written from decisions A1 to A8, the scaffold fixed | approve the brief | not started |
 | 2 | Scaffolding: the paper source tree with headings only, the build, the bibliographic data file, the copy narrowed to PDFs with its check, the three gate extensions, the `paper` content type, the sentence in the architecture page | the engine install (A6); approve the new scan path in the doctrine gate's rules | not started |
 | 3 | Literature: register rows (S rows only) for sections 6, 7 and 8, and primary sources in place of any secondary row the paper will cite | nothing, unless a source has to be bought | not started |
@@ -473,8 +479,8 @@ that need new sources, and can start at once for sections 2 to 5.
 6. The content review of the `paper` type ends with no blocker and no major open.
 7. The first page states that the author is the founder of what the paper describes.
 8. The author approved every section by id, and the step 5 and step 6 pull requests say so.
-9. `bash scripts/ci-local.sh` passes on the head commit of every pull request in the sequence,
-   with its output in the merge commit body.
+9. The CI run on GitHub passes on the head commit of every pull request in the sequence, and
+   no run is called green with a job failed.
 10. The published PDF is served by the site, passes the link check, and carries its permanent
     identifier once the deposit is made.
 11. The built site serves nothing from `paper/` but PDF files, and the check that holds this
