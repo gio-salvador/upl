@@ -68,6 +68,10 @@ break.
 
 ## When GitHub Actions cannot run
 
+**Ended.** The repository has since been made public, GitHub Actions run again and the deploy
+workflow has succeeded, so the gate before a merge is the CI run on GitHub. `scripts/ci-local.sh`
+stays as a pre-push check. What follows is the record of the decision and how it worked.
+
 On 21 September 2026 GitHub stopped starting this repository's workflows: the account had no
 Actions budget left, and a private repository's minutes are metered. Every job ended in seconds
 with no step run, so the red marks on a pull request said nothing about the change. The author
