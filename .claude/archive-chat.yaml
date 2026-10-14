@@ -1,0 +1,78 @@
+# Where transcript-only outcomes go before a session in this repository is archived.
+# Schema: .claude/toolkit/schemas/manifests/archive-chat.schema.json
+#
+# Read by the sc-archive-chat skill. Without this file the skill has no authority to write
+# anywhere, so it drops to a dry run and refuses to archive.
+#
+# Every destination is a store this repository already maintains and already reads. Nothing here
+# creates a new file to hold findings. Decisions 2 and 9 in CLAUDE.md still apply to anything
+# routed: wording of a teaching is the author's, and the doctrine baseline is never edited to
+# make a gate pass.
+version: 1
+
+# One gate entry point, as CLAUDE.md says. The merge gate is the heavier scripts/ci-local.sh.
+delivery: pr
+gate: "bash scripts/check.sh"
+gate_timeout_s: 900
+concurrent_agents: true
+
+scratch:
+  - "*.orig"
+  - "*.rej"
+  - "*.bak"
+
+# Never staged, cleaned or reverted by the archive skill.
+protected_paths:
+  - scripts/doctrine-baseline.json   # the author's baseline (locked decision 9)
+  - scripts/doctrine-gate.json       # never loosened to pass (locked decision 9)
+  - .claude/toolkit/                 # vendored at a pinned version, changed only by `sct update`
+
+extra_checks:
+  - id: wording-own-pr
+    when: "a file under content/ changed"
+    require: "a change to the wording of a teaching is in its own pull request and called out in the body (locked decision 2)"
+  - id: matrix-recorded
+    when: "a file under content/ changed"
+    require: "scripts/content-index.json updated and `python3 scripts/check-content-index.py --record` run because the pages were re-read, never just to pass the gate"
+
+destinations:
+  # An exposure, a defect, or a divergence between what a system claims and what it does.
+  finding:
+    system: "session memory for this repository"
+    path: "the auto-memory directory Claude Code keeps for this working directory, with MEMORY.md as the index"
+    note: >-
+      One file per fact with frontmatter, plus a one-line pointer in MEMORY.md. It is the only
+      store attached to this repository that is read at the start of every session. Memory is
+      outside the repository, so nothing about an external account or a person reaches a
+      public-tier file.
+
+  # An approach chosen or rejected, and why. Especially a rejection.
+  decision:
+    route_to: artefact
+    fallback: pr_body
+    note: >-
+      Next to the thing it justifies: a site or infrastructure decision in the Decisions section
+      of docs/architecture.md, a doctrine decision in docs/doctrine-decisions.md (author's
+      approval first), a go-live decision in docs/runbook-go-live.md. Where there is no
+      artefact, the pull request body carries it.
+
+  # Work deliberately left for later, or scope narrowed on the agent's own initiative.
+  deferral:
+    route_to: pr_body
+    note: >-
+      Stated in the pull request that would otherwise look complete without it. What only the
+      author can do before go-live is kept in docs/publish-readiness.md, which is the author's
+      list and is not added to by an agent without being asked.
+
+  # Anything put to the author and left unanswered.
+  question:
+    external: true
+    create: never
+    note: "Goes back to the author in the session. It is not filed in the repository."
+
+  # Background tasks, watches, scheduled tasks, dev servers, browser tabs.
+  machinery:
+    create: never
+    note: "Disposition is taken in the session: stop it before archiving, or name who reads the result and when."
+
+unroutable: blocker
