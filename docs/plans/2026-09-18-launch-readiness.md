@@ -216,10 +216,17 @@ go-live, Always Use HTTPS is turned on by hand in the dashboard and recorded her
   cannot run the link gate first and conflicts with an IaC-managed direct-upload project.
 - **D2 TAKEN: OpenTofu with the Cloudflare provider, state in R2.** Matches the reference
   implementation, and R2's free allowance covers a state file many times over.
-- **D3 OPEN: which Cloudflare account, and what project name.** Recommendation: a project named
-  unified-path-of-light in your personal Cloudflare account, not the Salvador Cloud Ltd one,
-  with its own state bucket. A religion's site should not sit inside a company's account or
-  share its state. The code takes both as variables, so this blocks only the first apply.
+- **D3 TAKEN 2026-09-22, against the recommendation: the Pages project is in the Cloudflare
+  account that holds the unifiedpathoflight.com zone, which is also the company site's account.**
+  The recommendation was a project named unified-path-of-light in a personal account, so that a
+  religion's site would not sit inside a company's account or share its state. The zone was
+  already in this account, and a Pages custom domain and its DNS records have to be in the same
+  account as the zone, so the choice was this account or moving the zone first. The first apply
+  went ahead here. What keeps the two apart instead: UPL has its own state bucket
+  (`upl-tofu-state`) and state key (`upl/terraform.tfstate`), a deploy token limited to Pages on
+  the account plus this one zone, and a state token limited to that bucket, so nothing UPL holds
+  can reach salvador.cloud or the company site's state. To separate them fully later, move the
+  zone and run `scripts/bootstrap-cloudflare.sh --account <new account id>`.
 - **D4 TAKEN by the author, 2026-09-18: the domain is unifiedpathoflight.com, with DNS on
   Cloudflare.** The nameservers already point at Cloudflare, so the zone is in the same account
   as the Pages project. This unblocks step 8.
@@ -258,7 +265,7 @@ One pull request per step. Each leaves `main` green.
 | 4 | Security: security.txt, both audits run and every code finding fixed; LICENSE waits on D7 | D7 | merged 2026-09-18, pull request 12; LICENSE added afterwards, once D7 was taken |
 | 5 | IaC: infra folder, iac workflow (fmt and validate live; plan and apply gated off) | nothing to merge | merged 2026-09-18, pull request 10 |
 | 6 | Deploy workflow with credential skip, preview deployments, smoke test; docs updated to the new model | nothing to merge | merged 2026-09-18, pull request 11; upload and smoke test not yet exercised |
-| 7 | Go live: create the API token, account id and state secrets; first apply; enable the gates; set the branch ruleset | D3, and the secrets, which only you can create | next; steps in docs/runbook-go-live.md |
+| 7 | Go live: create the API token, account id and state secrets; first apply; enable the gates; set the branch ruleset | the branch ruleset (runbook step 6), which only you can set | first apply, secrets and variables done 2026-09-22 (D3); all 12 deploys to main since 2026-10-05 passed their smoke test; branch ruleset not set, checked 2026-10-14; steps in docs/runbook-go-live.md |
 | 8 | Custom domain as code: Pages domains for the apex and www, proxied DNS records, DNSSEC, no-email records, the `SITE_DOMAIN` variable in the iac workflow, the runbook's domain step. HSTS is not upgraded; its conditions are recorded | to merge: nothing. To take effect, after step 7: widen the token, clear colliding zone records, set `SITE_DOMAIN`, apply, publish the DS record, then set `SITE` and redeploy | code in this pull request; inert until `SITE_DOMAIN` is set |
 
 Load-bearing order: 1 before everything (nothing can be reviewed until it is committed). 5
