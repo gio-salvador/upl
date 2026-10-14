@@ -10,7 +10,8 @@
 # make a gate pass.
 version: 1
 
-# One gate entry point, as CLAUDE.md says. The merge gate is the heavier scripts/ci-local.sh.
+# One gate entry point, as CLAUDE.md says. CI on GitHub is the merge gate; scripts/ci-local.sh is
+# the heavier local run of the same jobs, for before a push.
 delivery: pr
 gate: "bash scripts/check.sh"
 gate_timeout_s: 900
