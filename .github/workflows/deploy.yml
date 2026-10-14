@@ -108,11 +108,18 @@ jobs:
           ORIGIN: ${{ steps.target.outputs.origin }}
         run: |
           set -euo pipefail
-          # Wait for the new deployment to be the one answering.
-          for _ in $(seq 1 12); do
-            curl -sf "${ORIGIN}/llms.txt" -o /dev/null && break
-            sleep 10
-          done
+          # A new deployment can reach the edge path by path, and a new custom domain has a
+          # certificate to come up as well, so every check waits for its own answer. One path
+          # answering is not proof that the rest has: the first deploy to a new project failed
+          # on /robots.txt a minute after /llms.txt was already serving.
+          reachable() {
+            for _ in $(seq 1 12); do
+              curl -sf "$1" -o /dev/null && return 0
+              sleep 10
+            done
+            return 1
+          }
+          reachable "${ORIGIN}/llms.txt" || { echo "::error::/llms.txt is not reachable"; exit 1; }
           headers="$(curl -sI "${ORIGIN}/")"
           check() { printf '%s' "$headers" | grep -iq "$1" || { echo "::error::missing or weak header: $2"; exit 1; }; }
           check "content-security-policy: default-src 'none'" "Content-Security-Policy"
@@ -120,10 +127,15 @@ jobs:
           check "x-frame-options: deny" "X-Frame-Options"
           check "x-content-type-options: nosniff" "X-Content-Type-Options"
           for path in /sitemap-index.xml /robots.txt /llms.txt /llms-full.txt /foundations/purpose/ /foundations/purpose/index.md; do
-            curl -sf "${ORIGIN}${path}" -o /dev/null || { echo "::error::${path} is not reachable"; exit 1; }
+            reachable "${ORIGIN}${path}" || { echo "::error::${path} is not reachable"; exit 1; }
           done
           curl -sI "${ORIGIN}/llms-full.txt" | grep -i '^content-type:' | grep -iq 'utf-8' || { echo "::error::llms-full.txt is not served as UTF-8"; exit 1; }
           # A page link without its slash must redirect, not 404.
-          code="$(curl -s -o /dev/null -w '%{http_code}' "${ORIGIN}/foundations")"
+          code=000
+          for _ in $(seq 1 12); do
+            code="$(curl -s -o /dev/null -w '%{http_code}' "${ORIGIN}/foundations")"
+            case "$code" in 301|308) break ;; esac
+            sleep 10
+          done
           case "$code" in 301|308) ;; *) echo "::error::/foundations returned ${code}, expected a redirect to /foundations/"; exit 1 ;; esac
           echo "Smoke test passed for ${ORIGIN}" >> "$GITHUB_STEP_SUMMARY"
