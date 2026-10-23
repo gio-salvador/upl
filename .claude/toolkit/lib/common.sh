@@ -104,10 +104,35 @@ sct_yaml_get() {
 }
 
 # The newest RELEASE, which is what a repository can actually be behind. While the toolkit is
-# developed unreleased (TK-064) `main` moves constantly, so comparing a pin against `main` marks
+# developed between releases (TK-127) `main` moves constantly, so comparing a pin against `main` marks
 # every repository stale the moment anything merges. A signal that is always on is not a signal.
+#
+# Read from the toolkit checkout's tags, unless a caller that has read the remote has set
+# SCT_LATEST_RELEASE (`audit --all --fetch` does), because a tag that exists only in this checkout
+# is not a release anyone can vendor. One awk over a here-string, not `tags | grep | head -1`:
+# under a caller's pipefail that pipeline fails whenever head closes early.
 sct_latest_release() {
-  git -C "$(sct_home)" tag --sort=-v:refname 2>/dev/null | grep -E '^v?[0-9]+\.[0-9]+\.[0-9]+$' | head -1
+  [ -n "${SCT_LATEST_RELEASE:-}" ] && { printf '%s' "$SCT_LATEST_RELEASE"; return 0; }
+  local tags; tags="$(sct_home_git tag --sort=-v:refname 2>/dev/null)"
+  awk '/^v?[0-9]+\.[0-9]+\.[0-9]+$/{print; exit}' <<<"$tags"
+}
+
+# The newest release tag ON THE TOOLKIT'S REMOTE. Fails when the remote cannot be read, so a
+# caller can tell "there is no release" from "I could not ask".
+sct_remote_latest_release() {
+  local tags; tags="$(sct_home_git ls-remote --tags --refs --sort=-v:refname origin 'v*' 2>/dev/null)" || return 1
+  awk '{sub(/.*refs\/tags\//, "")} /^v[0-9]+\.[0-9]+\.[0-9]+$/{print; exit}' <<<"$tags"
+}
+
+# Git against the TOOLKIT CHECKOUT, whatever repository the caller's environment names. git
+# exports GIT_DIR (and friends) to every hook it runs, and GIT_DIR beats `git -C`: from a linked
+# worktree's pre-push, `git -C "$(sct_home)" tag` listed the tags of the repository being pushed,
+# found no release, and the drift gate switched itself off with a message blaming the pin. The
+# suite already clears these for every fixture for the same reason; this is the library's half.
+sct_home_git() {
+  env -u GIT_DIR -u GIT_WORK_TREE -u GIT_INDEX_FILE -u GIT_COMMON_DIR -u GIT_OBJECT_DIRECTORY \
+      -u GIT_ALTERNATE_OBJECT_DIRECTORIES -u GIT_PREFIX -u GIT_NAMESPACE \
+      git -C "$(sct_home)" "$@"
 }
 
 # Classify a pinned version against the newest release. Echoes one of:
@@ -115,6 +140,16 @@ sct_latest_release() {
 # `current+<n>` means the pin is the newest release plus n unreleased commits: expected while
 # developing, and deliberately NOT called stale, because there is nothing for the operator to do
 # about it until a release happens (TK-072).
+# The version `sct vendor` would record right now: the newest release, unless the caller has
+# chosen the checkout (SCT_VENDOR_FROM=checkout), in which case VERSION. Branch names and commit
+# messages that announce a vendor take their number from here, so they cannot name a version the
+# lockfile then contradicts (TK-126).
+sct_vendor_version() {
+  if [ "${SCT_VENDOR_FROM:-}" = checkout ]; then sct_version; return; fi
+  local latest; latest="$(sct_latest_release)"
+  [ -n "$latest" ] && printf '%s' "${latest#v}" || sct_version
+}
+
 sct_pin_state() {
   local pin="$1" latest; latest="$(sct_latest_release)"
   [ -n "$pin" ] || { printf 'not-covered'; return; }
@@ -126,6 +161,20 @@ sct_pin_state() {
   nb="$(printf '%s' "${base#v}" | awk -F. '{printf "%d%03d%03d", $1, $2, $3}')"
   nl="$(printf '%s' "${latest#v}" | awk -F. '{printf "%d%03d%03d", $1, $2, $3}')"
   if [ "$nb" -lt "$nl" ] 2>/dev/null; then printf 'behind %s' "$latest"; return; fi
+  # A PIN PAST THE RELEASE IS ONLY "current+N" IF ITS COMMIT IS ON MAIN. One vendored from a
+  # feature branch named code that main never held, and after a squash merge never will: a client
+  # repository read `current+31` for a commit that existed only on an unmerged branch. Answered
+  # only when both the commit and the default branch can be read here; otherwise the old reading
+  # stands, because "I could not check" is not "it is unmerged".
+  if [ "$ahead" != "0" ]; then
+    local sha="${pin##*-g}" def
+    def="$(sct_home_git symbolic-ref --quiet --short refs/remotes/origin/HEAD 2>/dev/null)"; [ -n "$def" ] || def=origin/main
+    if sct_home_git rev-parse --verify --quiet "$def^{commit}" >/dev/null 2>&1 \
+       && sct_home_git cat-file -e "$sha^{commit}" 2>/dev/null \
+       && ! sct_home_git merge-base --is-ancestor "$sha" "$def" 2>/dev/null; then
+      printf 'unmerged %s' "$sha"; return
+    fi
+  fi
   [ "$ahead" = "0" ] && printf 'current' || printf 'current+%s' "$ahead"
 }
 
@@ -241,10 +290,11 @@ sct_ci_gates() {
   local files; files="$(git -C "$repo" ls-tree -r --name-only "$ref" -- .github/workflows 2>/dev/null |
     grep -E '\.ya?ml$' || true)"
   [ -n "$files" ] || { printf 'hooks only'; return; }
-  local f
+  local f body
   while IFS= read -r f; do
     [ -n "$f" ] || continue
-    if git -C "$repo" show "$ref:$f" 2>/dev/null | grep -q '\.claude/toolkit'; then
+    body="$(git -C "$repo" show "$ref:$f" 2>/dev/null)" || continue
+    if grep -q '\.claude/toolkit' <<<"$body"; then
       printf 'ci gates'; return
     fi
   done <<< "$files"

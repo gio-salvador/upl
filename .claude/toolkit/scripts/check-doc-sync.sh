@@ -78,10 +78,10 @@ while IFS= read -r src; do
   esac
   # A source added or removed in this range is the parity gate's business, not this one's.
   [ -f "$src" ] && [ -f "$ref" ] || continue
-  printf '%s\n' "$changed" | grep -qx "$ref" && continue
+  grep -qx "$ref" <<<"$changed" && continue
 
   # Did the identity the reference doc restates change?
-  if git diff "$range" -- "$src" | grep -Eq '^[+-](name|description):'; then
+  if grep -Eq '^[+-](name|description):' <<<"$(git diff "$range" -- "$src")"; then
     sct_block "$src changed its name or description; $ref did not change with it"
     sct_note "the reference doc restates them, so they cannot disagree and both be right"
     blocks=$((blocks+1))

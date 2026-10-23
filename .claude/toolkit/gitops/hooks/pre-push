@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 # Shared gitops hook (both tiers): signed-commit verify + gitleaks secret scan +
-# NDA forbidden-token scan + optional repo check, over the range being pushed.
-# Attached via core.hooksPath by claude/gitops/setup-gitops.sh.
+# NDA forbidden-token scan + hardcoding and secret-placement linter + optional repo check,
+# over the range being pushed.
+# Attached via core.hooksPath by gitops/setup-gitops.sh.
 #
 # Tier and config are read from per-repo git config (set by the installer):
 #   gitops.tier        public | private
 #   gitops.repocheck   optional shell command run before push (e.g. "make check")
+#   gitops.hardcoding  warn | block | block-all: what step 3b refuses (see lib/push-hardcoding.sh)
 # Fail-closed on the security-critical steps; never weaken to pass.
 set -euo pipefail
 
@@ -13,17 +15,22 @@ root="$(git rev-parse --show-toplevel)"
 tier="$(git config --get gitops.tier || echo private)"
 repocheck="$(git config --get gitops.repocheck || true)"
 
-# Resolve the canonical NDA scanner's REPO ROOT from projects.json (fallback to $HOME path).
-# The scanner derives its config via `git rev-parse --show-toplevel`, so it must be invoked
-# with cwd inside the site repo.
-resolve_site_root() {
-  local cfg="$HOME/.claude/config/projects.json" base=""
-  if [ -r "$cfg" ] && command -v jq >/dev/null 2>&1; then
-    base="$(jq -r '.projects.salvador_cloud_site // empty' "$cfg" 2>/dev/null || true)"
-    base="${base/#\~/$HOME}"
-  fi
-  [ -n "$base" ] || base="$HOME/projects/salvador-cloud-site"
-  printf '%s' "$base"
+# The toolkit copy this hook belongs to, by its PHYSICAL location. Steps 3 and 3b run the scripts
+# beside the hook, never a vendored copy: the hook git runs is the toolkit checkout, and a
+# consuming repository's vendored scripts are older until it re-vendors (TK-119). The config home
+# is the second candidate, for a hook reached through a per-file link.
+hook_src="$0"
+while [ -L "$hook_src" ]; do
+  hook_d="$(cd -P "$(dirname "$hook_src")" && pwd)"; hook_src="$(readlink "$hook_src")"
+  case "$hook_src" in /*) ;; *) hook_src="$hook_d/$hook_src" ;; esac
+done
+hook_dir="$(cd -P "$(dirname "$hook_src")" 2>/dev/null && pwd || true)"
+beside_hook() { # script name under gitops/lib -> its path, or empty
+  local cand
+  for cand in "$hook_dir/../lib/$1" "${CLAUDE_CONFIG_HOME:-$HOME/.claude}/gitops/lib/$1"; do
+    [ -r "$cand" ] && { printf '%s' "$cand"; return 0; }
+  done
+  return 0
 }
 
 # Determine the commit range being pushed: read stdin (git's pre-push protocol);
@@ -32,7 +39,7 @@ ranges=()
 while read -r _local_ref local_sha _remote_ref remote_sha; do
   [ -z "${local_sha:-}" ] && continue
   case "$local_sha" in *[!0]*) ;; *) continue ;; esac   # all-zero = branch delete
-  if printf '%s' "$remote_sha" | grep -q '[^0]'; then
+  if grep -q '[^0]' <<<"$remote_sha"; then
     ranges+=("$remote_sha..$local_sha")
   else
     # New branch (no remote ref yet): gate only the commits THIS push introduces,
@@ -106,9 +113,30 @@ done
 #            names in content are violations too).
 #    private: scan commit MESSAGES only — file content may legitimately name clients
 #            (e.g. the facts ledger, book research notes); messages must never name them.
-site_root="$(resolve_site_root)"
+#
+#    WHERE THE SCANNER IS comes from lib/resolve-scanner-root.sh: the path registry, then a
+#    declared variable, and never a guessed path. Three answers, and only one runs the scanner:
+#      0  declared, and the scanner is there.
+#      1  undeclared. Said so, then the toolkit's generic gate below (TK-027).
+#      2  declared, and nothing is there. Refused: a registry entry that went stale when a
+#         repository moved used to land silently on the generic gate (TK-121).
+#    The scanner derives its config via `git rev-parse --show-toplevel`, so it is invoked with
+#    cwd inside its own repository.
+site_root="" rc_sr=0
+resolver="$(beside_hook resolve-scanner-root.sh)"
+if [ -n "$resolver" ]; then
+  resolved="$(bash "$resolver" --root "$root")" || rc_sr=$?
+  site_root="${resolved%%$'\t'*}"
+else
+  echo "pre-push: the scanner resolver is not beside this hook - treating the canonical scanner as undeclared." >&2
+  rc_sr=1
+fi
+if [ "$rc_sr" -ne 0 ] && [ "$rc_sr" -ne 1 ]; then
+  echo "pre-push: the declared token scanner cannot be used. Push refused." >&2
+  exit 1
+fi
 scanner="$site_root/scripts/lib/scan-forbidden-tokens.sh"
-if [ -x "$scanner" ]; then
+if [ "$rc_sr" -eq 0 ]; then
   if [ "$tier" = "public" ]; then
     feed() { for r in "${ranges[@]}"; do git log --format='%B' "$r" 2>/dev/null || true; git diff "$r" 2>/dev/null || true; done; }
   else
@@ -137,6 +165,16 @@ else
   else
     echo "pre-push: no token scanner available - skipping (private tier, advisory)." >&2
   fi
+fi
+
+# 3b) HARDCODING AND SECRET PLACEMENT over what the branch adds. The step is a script so the
+#     suite can run it; what it refuses is the repository's declared mode (gitops.hardcoding).
+step="$(beside_hook push-hardcoding.sh)"
+if [ -n "$step" ]; then
+  bash "$step" --root "$root" "${ranges[@]}" || { echo "pre-push: hardcoding and secret-placement check failed. Push refused." >&2; exit 1; }
+else
+  echo "pre-push: the hardcoding step is not beside this hook - check DEGRADED TO OFF (not skipped silently)." >&2
+  [ "${GITOPS_STRICT:-0}" = "1" ] && { echo "pre-push: strict mode: a check that cannot run is a failure." >&2; exit 1; }
 fi
 
 # 4) Optional repo check (full local CI parity), if configured.
@@ -210,7 +248,13 @@ if [ -d "$root/.claude/toolkit" ]; then
         echo "pre-push: so a stale copy does not lag, it SHADOWS the fixed gates while reporting success." >&2
         echo "pre-push: run 'sct vendor' and commit the result as a reviewable diff." >&2
         exit 1 ;;
-      current|current+*)
+      current|current+*|unmerged*)
+        # A pin from a commit that is not on the toolkit's default branch names code main never
+        # held. Not superseded, so not a refusal, but said, with the fix (TK-126).
+        case "$state" in unmerged*)
+          echo "pre-push: the vendored toolkit is pinned to ${state#unmerged }, a commit not on the toolkit's default branch." >&2
+          echo "pre-push: it names code no release holds; run 'sct vendor' to pin the newest release." >&2 ;;
+        esac
         # NOT STALE. Whether the content diff is meaningful now depends on something the pin
         # state cannot see: `sct_pin_state` compares the pin to the newest RELEASE, so it says
         # `current` for a pin of 0.6.6 even while the toolkit CHECKOUT sits at 0.6.7-unreleased.
@@ -253,7 +297,10 @@ if [ -d "$root/.claude/toolkit" ]; then
           esac
         fi ;;
       *)
-        echo "pre-push: cannot classify the vendored toolkit pin ('${pin:-unset}') - drift check DEGRADED TO OFF." >&2
+        # Name the step that failed. This used to blame the pin, so the first reading was a
+        # malformed lockfile, when the pin was fine and the release lookup had been handed the
+        # wrong repository.
+        echo "pre-push: the toolkit's newest release could not be read, so the pin ('${pin:-unset}') cannot be classified - drift check DEGRADED TO OFF." >&2
         [ "${GITOPS_STRICT:-0}" = "1" ] && { echo "pre-push: strict mode: a check that cannot run is a failure." >&2; exit 1; } ;;
     esac
   else

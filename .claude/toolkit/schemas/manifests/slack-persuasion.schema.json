@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sc-slack-persuasion manifest",
+  "description": "Optional manifest for sc-slack-persuasion. Every key has a default, so nothing is required and the skill runs with no file at all.",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "cadence_seconds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 60
+      },
+      "minItems": 1,
+      "default": [60, 120, 300, 600],
+      "description": "Poll interval ladder in seconds, fastest first. 60 is the floor the wakeup scheduler allows."
+    },
+    "idle_stop_minutes": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 45,
+      "description": "Stop after this many minutes with no new message."
+    },
+    "nda_surface": {
+      "type": "string",
+      "enum": ["cv", "pitch", "site_context_a", "site_context_b", "book", "linkedin", "public", "client_workspace"],
+      "default": "public",
+      "description": "Surface passed to sc-nda-check for each draft. public by default, which over-blocks names that are fine inside a client's workspace; client_workspace when the discussions live in a client's own tenant (the tenant is the registry entity whose entry declares that surface)."
+    },
+    "voice_profile": {
+      "type": "string",
+      "default": "byline",
+      "description": "Name of a voice file under ~/.claude/config/voice/, applied on top of core.md."
+    },
+    "evidence_sources": {
+      "type": "array",
+      "items": {
+        "enum": ["dns", "web", "inbox"]
+      },
+      "default": ["dns", "web"],
+      "description": "What the skill may use to check a peer example before it goes in a draft. inbox reads the operator's own mail and is opt-in."
+    }
+  }
+}

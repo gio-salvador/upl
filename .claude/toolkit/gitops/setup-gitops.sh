@@ -4,8 +4,11 @@
 #   setup-gitops.sh <repo-path> [tier]     # tier: public|private (else read registry / gh)
 #   setup-gitops.sh --all                  # install across every repo in the registry
 #
-# Sets core.hooksPath -> ~/.claude/gitops/hooks, records gitops.tier (+ gitops.repocheck)
-# in the repo's git config, and verifies signing + gitleaks. SKIPS repos flagged
+# Sets core.hooksPath -> ~/.claude/gitops/hooks, records gitops.tier (+ gitops.repocheck and
+# gitops.hardcoding, each when the registry holds a value) in the repo's git config, and verifies
+# signing + gitleaks. The hooks read git config, never the registry, so a registry edit takes
+# effect only when this is run again for that repo. A value removed from the registry is not
+# unset here: `git config --unset` does that. SKIPS repos flagged
 # self_managed_hooks (e.g. salvador-cloud-site keeps its committed .githooks/).
 set -euo pipefail
 
@@ -74,6 +77,9 @@ install_one() {
   git -C "$repo" config gitops.tier "$tier"
   local repocheck; repocheck="$(registry_get "$key" repo_check)"
   if [ -n "$repocheck" ]; then git -C "$repo" config gitops.repocheck "$repocheck"; fi
+  # What the pre-push hardcoding step refuses: warn | block | block-all (lib/push-hardcoding.sh).
+  local hardcoding; hardcoding="$(registry_get "$key" hardcoding)"
+  if [ -n "$hardcoding" ]; then git -C "$repo" config gitops.hardcoding "$hardcoding"; fi
 
   if [ "$self_managed" = "true" ]; then
     echo "ok ($tier, self-managed hooks — not touching core.hooksPath): $repo"

@@ -23,7 +23,7 @@ while IFS= read -r pth; do
   [ -n "$pth" ] || continue
   [ -e "$root/$pth" ] || continue          # absence is the audit's finding, not this one's
   checked=$((checked+1))
-  if head -8 "$root/$pth" 2>/dev/null | grep -qiE "generated|do not edit|never hand-edit|append-only"; then
+  if grep -qiE "generated|do not edit|never hand-edit|append-only" <<<"$(head -8 "$root/$pth" 2>/dev/null)"; then
     continue
   fi
   sct_block "$pth is declared generated but does not say so in its first lines"

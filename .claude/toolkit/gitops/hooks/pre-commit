@@ -4,7 +4,9 @@
 set -euo pipefail
 
 root="$(git rev-parse --show-toplevel)"
-branch="$(git rev-parse --abbrev-ref HEAD)"
+# symbolic-ref works on an unborn branch (a repository with no commits yet); rev-parse does not,
+# which made the very first commit of every new repository fail before the guard even ran.
+branch="$(git symbolic-ref --quiet --short HEAD 2>/dev/null || git rev-parse --abbrev-ref HEAD)"
 
 # PR-only everywhere: refuse direct commits on the default branch.
 # Emergency bypass: GITOPS_ALLOW_MAIN=1 (logged loudly).
