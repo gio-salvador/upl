@@ -10,7 +10,7 @@
 # tool people stop trusting with anything. So this is a separate, explicit wrapper the operator
 # composes when they want it:
 #
-#   with-container-runtime.sh sct adopt ~/projects/some-repo
+#   with-container-runtime.sh sct adopt <path-to-repo>
 #
 # THE CONTRACT: if the runtime was already up, this changes nothing and leaves it up. If it was
 # down, this starts it, runs the command, and stops it again, whatever the command's exit status.

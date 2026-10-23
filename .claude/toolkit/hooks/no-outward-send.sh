@@ -73,14 +73,37 @@
 #              walked straight past it to the same API with the same authority.
 #              Atlassian reads over HTTP stay open, as every read here does.
 #
-# THE ONE DECLARED ROUTE. Everything above is denied outright. A Confluence PAGE
-# is the single exception: it is denied by default and allowed when the caller
-# declares itself as the governance-publishing skill. The reasoning, the shape
-# of the declaration, and an honest account of how strong it is and is not are
-# recorded at GOV_DOC_SKILLS below. Read that before widening it. The exception
-# covers a page and stops there -- not a comment, not Jira, not a space, not a
-# permission -- and the tests assert each of those boundaries by name, because
-# the way a narrow exception fails is by quietly becoming a general one.
+# THE DECLARED ROUTES. Everything above is denied outright, with two exceptions,
+# each denied by default and allowed only when the caller declares itself.
+#
+#   1. A Confluence PAGE, for the governance-publishing skill. The reasoning, the
+#      shape of the declaration, and an honest account of how strong it is and is
+#      not are recorded at GOV_DOC_SKILLS below. It covers a page and stops there
+#      -- not a comment, not Jira, not a space, not a permission.
+#   2. For incident coordination, recorded at OPERATOR_SKILLS below: a PRIVATE
+#      SLACK CHANNEL, a MESSAGE TO A CHANNEL, and a JIRA WRITE INSIDE ONE
+#      PROJECT whose key the operator names at launch. It stops there -- not a
+#      message to a person, not a public channel, not a scheduled message, not
+#      an edit to an existing comment, not a write to any other project, and
+#      nothing through the shell.
+#
+# THE CONNECTOR RENAMES ITS TOOLS, AND THIS GUARD DOES NOT HEAR ABOUT IT. The case
+# table below matches the names the Atlassian connector had when it was written. It
+# has since renamed several write tools, and a renamed tool is a name this guard has
+# never heard of, which it ALLOWS: a hole that is silent, open to every session
+# declared or not, and invisible to a test suite that only asserts the old names. Found
+# on 2026-10-23 by feeding the hook synthetic payloads for the connector's live tool
+# list. So every renamed tool is denied in the same branch as its old spelling and both
+# spellings are kept, because the connector may present either. The Confluence pair
+# (createConfluenceContent, updateConfluenceContent) honours the governance-publishing
+# declaration exactly as createConfluencePage does, although those two tools reach more
+# than a document; the reasoning is at their branch below. The standing remedy is outside this file: a consuming
+# repository mirrors these names into its permissions.deny second layer, and the next
+# connector rename is found by diffing the connector's tool list against this table.
+#
+# Read both before widening either. The two declarations do not cross: neither
+# opens what the other opens. The tests assert every boundary of both by name,
+# because the way a narrow exception fails is by quietly becoming a general one.
 # Commands are matched as actual invocations, anchored at a command position,
 # so a heredoc or a comment that merely mentions curl is not a send.
 #
@@ -167,7 +190,97 @@ GOV_DOC_SKILLS='sc-publish-gov-doc'
 gov_doc_declared() {
   local v="${SCT_VIA:-}"
   [ -n "$v" ] || return 1
-  printf '%s' "$v" | grep -qxE "(${GOV_DOC_SKILLS})"
+  grep -qxE "(${GOV_DOC_SKILLS})" <<<"$v"
+}
+
+# --- The register-operator declaration --------------------------------
+#
+# A SECOND declared route, in the same shape as the first: read from the hook's
+# own environment, so it is granted by the operator when the session is launched
+# and cannot be minted from inside it.
+#
+# What it is for. A security function that keeps its registers in Jira and runs
+# its incidents in Slack asks a session for a stream of small writes: an item
+# created, a comment appended, a stage moved, a private channel opened, an
+# announcement posted. Under the default deny the operator makes every one by
+# hand from text the session prepares. The declaration lets the session that
+# keeps the record make them, as the operator and on the operator's instruction.
+#
+# THE VALUE IS A ROLE, NOT A PROJECT'S SKILL NAME. This file is shared by every
+# repository on the machine and carries none of their names, keys or channels. A
+# repository that operates registers says in its own manifest which of its
+# skills act under this declaration and what each may do with it. The projects
+# are named by the operator at launch, never here.
+#
+# WHAT IT OPENS, AND NOTHING ELSE.
+#
+# In Slack:
+#   slack_create_conversation  - a PRIVATE CHANNEL only. A channel_name is
+#                                required and is_private must be boolean true. A
+#                                DM or group DM (user_ids with no channel_name)
+#                                and a public channel stay denied.
+#   slack_send_message         - to a CHANNEL only. A channel_id that is a user
+#                                id or a DM id stays denied, declared or not: a
+#                                message to a person is never operating a register.
+#
+# In Jira, and only in the projects the operator lists at launch in a second
+# variable, SCT_JIRA_PROJECTS (comma-separated plain keys, e.g. ROR,INC,SEC):
+#   createJiraIssue            - projectKey equal to one of the listed keys.
+#   editJiraIssue              - issueIdOrKey of the form <KEY>-<digits>, KEY listed.
+#   transitionJiraIssue        - the same.
+#   addOrEditJiraIssueComment  - the same, AND no commentId: a new comment is an
+#                                append, an edit of an existing one is forbidden
+#                                by any register whose comments are evidence.
+#
+# WHAT IT DOES NOT OPEN: a delete of anything, an issue link (createIssueLink,
+# createJiraIssueLink, createJiraIssueRemoteIssueLink), a worklog (addWorklogToJiraIssue,
+# addOrEditJiraIssueWorklog), an attachment (uploadAttachmentToJiraIssue), a watch
+# (watchJiraIssue), an entity property (editJiraEntityProperty), a change of issue
+# hierarchy (convertJiraIssueHierarchy), a write to the shared catalogue or the
+# graph (the Compass tools, addTeamworkGraphContext, addGraphContext), any project not listed, a numeric issue id in place of a key (the
+# project cannot be read off it), scheduling, reactions, canvases, mail,
+# calendar, Confluence, the generic execute runners (denied to everyone, below),
+# and every shell route. The shell layer is untouched, so `curl chat.postMessage`
+# and `acli jira workitem create` are denied to a declared session exactly as
+# before. A project list that is not plain keys denies everything, so a
+# malformed or empty variable opens nothing.
+#
+# HOW STRONG THIS IS, HONESTLY. In Jira the guard CAN hold the boundary: every
+# write names its target, and the target is matched exactly against the list.
+# In Slack it cannot: the guard sees a channel id, not a channel name, and has
+# no way to know which channel is the incident's, so a declared session CAN post
+# in any channel the operator's account can post in. There the skill that
+# carries the declaration confines itself, and the operator who granted it is
+# trusting that skill. What the guard holds in Slack, mechanically, is the line
+# that matters most: no message to an individual, no DM, no public channel.
+# Like the governance route this is a STANDING grant for the session.
+OPERATOR_SKILLS='sc-register-operator'
+
+operator_declared() {
+  local v="${SCT_VIA:-}"
+  [ -n "$v" ] || return 1
+  grep -qxE "(${OPERATOR_SKILLS})" <<<"$v"
+}
+
+# The listed project keys as a jq array, if the operator listed any and every
+# one is the plain Jira form. Returns 1 otherwise, and every caller then denies.
+# Commas only: a space, a lower-case letter, a hyphen or a regex character
+# anywhere makes the whole list invalid rather than partly valid.
+named_projects() {
+  local v="${SCT_JIRA_PROJECTS:-}"
+  [ -n "$v" ] || return 1
+  grep -qxE '[A-Z][A-Z0-9]{1,9}(,[A-Z][A-Z0-9]{1,9})*' <<<"$v" || return 1
+  jq -cn --arg v "$v" '$v | split(",")'
+}
+
+# <KEY>-<digits>, the whole string, for a listed KEY. jq anchors with \A and
+# \z: grep -x matches per line and let a second line through once already.
+in_named_project() { # in_named_project <jq path to the key field>
+  local ks; ks=$(named_projects) || return 1
+  # `$ks[] as $p` binds the project; inside `select($k | test(...))` a bare `.`
+  # would be the key, not the project, which is how the first version denied
+  # every key and its own positive tests caught it.
+  jq -e --argjson ks "$ks" "$1"' as $k | ($k | type) == "string" and ([$ks[] as $p | select($k | test("\\A" + $p + "-[0-9]+\\z"))] | length) > 0' >/dev/null 2>&1 <<<"$payload"
 }
 
 # --- 0. Parse, or deny ------------------------------------------------
@@ -189,7 +302,43 @@ suffix="${tool##*__}"
 
 case "$suffix" in
 
-  slack_send_message|slack_schedule_message|slack_add_reaction|slack_create_canvas|slack_update_canvas|slack_create_conversation)
+  slack_create_conversation)
+    # Default deny. Declared: a private channel, and only that. Both reads are
+    # exact: a missing channel_name is a DM, and anything but boolean true for
+    # is_private, including the string "true" and an absent key, is not private.
+    if operator_declared; then
+      chname=$(jq -r '.tool_input.channel_name // "" | if type == "string" then . else "" end' <<<"$payload")
+      priv=$(jq -r 'if .tool_input.is_private == true then "yes" else "no" end' <<<"$payload")
+      [ -n "$chname" ] || deny "Refused: '$suffix' with no channel_name opens a direct message, and the register-operator declaration does not reach a message to a person. It opens a private channel and nothing else. $RULE"
+      [ "$priv" = "yes" ] || deny "Refused: '$suffix' would create a channel that is not private. The register-operator declaration opens a PRIVATE channel only: is_private must be true. $RULE"
+    else
+      deny "Refused: '$suffix' puts something into Slack where other people see it. This repository drafts Slack messages and the operator sends them. Use slack_send_message_draft, or write the draft into the repository for approval. If you are a register-operator skill, the session must carry the declaration in its environment: SCT_VIA=sc-register-operator. It cannot be set from inside the session. Reading and searching Slack are unaffected. $RULE"
+    fi ;;
+
+  slack_send_message)
+    # Default deny. Declared: a channel, never a person. Slack channel ids begin
+    # C (a public or private channel) or G (a legacy private group); a user id
+    # begins U or W and a DM id begins D. Anything else, an empty id and a
+    # lower-case one included, denies.
+    #
+    # THE TEST IS DONE IN jq, ANCHORED WITH \A AND \z, NOT WITH grep -x. grep
+    # matches per LINE, so a value carrying a user id on one line and a channel
+    # id on the next satisfied `grep -x` on its second line and was allowed. The
+    # first version of this branch did exactly that and its own negative test
+    # caught it. \A and \z anchor the whole string; ^ and $ would not, because
+    # they are line anchors in jq's regex engine as well.
+    if operator_declared; then
+      if ! jq -e '.tool_input.channel_id | type == "string" and test("\\A[CG][A-Z0-9]{2,}\\z")' >/dev/null 2>&1 <<<"$payload"; then
+        deny "Refused: '$suffix' is not addressed to a channel. The register-operator declaration reaches a channel and nothing else; a message to an individual stays the operator's to send. $RULE"
+      fi
+    else
+      deny "Refused: '$suffix' puts something into Slack where other people see it. This repository drafts Slack messages and the operator sends them. Use slack_send_message_draft, or write the draft into the repository for approval. If you are a register-operator skill, the session must carry the declaration in its environment: SCT_VIA=sc-register-operator. It cannot be set from inside the session. Reading and searching Slack are unaffected. $RULE"
+    fi ;;
+
+  slack_schedule_message|slack_add_reaction|slack_create_canvas|slack_update_canvas)
+    # NOT covered by the incident declaration, deliberately. A scheduled message
+    # sends when nobody is watching, and no incident step needs a reaction or a
+    # canvas.
     deny "Refused: '$suffix' puts something into Slack where other people see it. This repository drafts Slack messages and the operator sends them. Use slack_send_message_draft, or write the draft into the repository for approval. Reading and searching Slack are unaffected. $RULE" ;;
 
   send_message|reply|forward)
@@ -217,13 +366,75 @@ case "$suffix" in
   # Unlike `reply` or `send_message`, no other connector plausibly offers a
   # tool called `transitionJiraIssue`, so this branch has none of the
   # deliberate over-denial the generic names carry.
-  createJiraIssue|editJiraIssue|transitionJiraIssue|addCommentToJiraIssue|addWorklogToJiraIssue|createIssueLink)
-    deny "Refused: '$suffix' writes to Jira. A comment, a transition, an assignment or a worklog is a statement about somebody's work and it belongs to the operator, not to a session. The tracker rule binds the project whichever repository the session was opened in, and it binds the MCP route exactly as it binds 'acli jira workitem'. Every Jira read (search, get, transitions listing, metadata) is unaffected. $RULE" ;;
+  createJiraIssue)
+    # Default deny. Declared, with projects listed at launch: a create in one of
+    # them and no other. The projectKey is matched exactly against the list.
+    if operator_declared && ks=$(named_projects) \
+       && jq -e --argjson ks "$ks" '.tool_input.projectKey as $p | ($p | type) == "string" and ($ks | index($p)) != null' >/dev/null 2>&1 <<<"$payload"; then
+      :
+    else
+      deny "Refused: '$suffix' writes to Jira. A create is a statement about somebody's work and it belongs to the operator, not to a session. The tracker rule binds the project whichever repository the session was opened in, and it binds the MCP route exactly as it binds 'acli jira workitem'. If you are a register-operator skill, the session must carry SCT_VIA=sc-register-operator and SCT_JIRA_PROJECTS=<KEY[,KEY]> in its environment, and the create must be in a listed project. Every Jira read is unaffected. $RULE"
+    fi ;;
 
-  createConfluencePage|updateConfluencePage)
+  editJiraIssue|transitionJiraIssue)
+    # Default deny. Declared: an issue of the named project, by key, and no other.
+    if operator_declared && in_named_project '.tool_input.issueIdOrKey'; then
+      :
+    else
+      deny "Refused: '$suffix' writes to Jira. An edit or a transition is a statement about somebody's work and it belongs to the operator, not to a session. If you are a register-operator skill, the session must carry SCT_VIA=sc-register-operator and SCT_JIRA_PROJECTS=<key>, and the issue must be named by a key in that project. Every Jira read is unaffected. $RULE"
+    fi ;;
+
+  addOrEditJiraIssueComment)
+    # Default deny. Declared: a NEW comment on an issue of the named project. An
+    # edit (commentId present) is denied whatever is declared: a register whose
+    # comments are evidence is append-only, and the guard holds that line rather
+    # than trusting the skill to.
+    if operator_declared && in_named_project '.tool_input.issueIdOrKey' \
+       && jq -e '.tool_input | has("commentId") | not' >/dev/null 2>&1 <<<"$payload"; then
+      :
+    else
+      deny "Refused: '$suffix' writes to Jira. A comment is a statement about somebody's work and it belongs to the operator, not to a session; an edit of an existing comment is denied to every session, declared or not, because a register's comments are evidence and evidence is append-only. If you are a register-operator skill, the session must carry SCT_VIA=sc-register-operator and SCT_JIRA_PROJECTS=<key>, the issue must be in that project, and no commentId may be set. $RULE"
+    fi ;;
+
+  addCommentToJiraIssue|addWorklogToJiraIssue|createIssueLink|addOrEditJiraIssueWorklog|createJiraIssueLink|createJiraIssueRemoteIssueLink|uploadAttachmentToJiraIssue|watchJiraIssue|editJiraEntityProperty|convertJiraIssueHierarchy)
+    # The connector renamed several of these after this branch was written, and
+    # the old spellings are kept because it may present either: addWorklogToJiraIssue
+    # is now addOrEditJiraIssueWorklog, createIssueLink is now createJiraIssueLink,
+    # and addCommentToJiraIssue is now addOrEditJiraIssueComment (handled above,
+    # with its append-only declared route). The rest are write tools the connector
+    # added and this guard had never heard of: a remote link to an outside URL, an
+    # attachment, a watch (it subscribes the operator, or someone they name, to an
+    # issue's mail), an entity property (a hidden field other tooling reads), and a
+    # hierarchy conversion (it changes what an issue IS, and what sits under it).
+    # None is opened by the register-operator declaration, so none gets an
+    # exception here: denied to every session, declared or not.
+    deny "Refused: '$suffix' writes to Jira. A comment, a link, a worklog, an attachment, a watch, a property or a change of issue type is a statement about somebody's work and it belongs to the operator, not to a session. The tracker rule binds the project whichever repository the session was opened in, and it binds the MCP route exactly as it binds 'acli jira workitem'. Every Jira read (search, get, transitions listing, metadata) is unaffected. $RULE" ;;
+
+  executeWrite|executeDestructive)
+    # The Atlassian server's generic runners take an operation NAME and run it.
+    # They reach every write above, and every write this file has never heard
+    # of, under one tool name the suffix layer could not see until 2026-10-13.
+    # Denied to everyone, declared or not: a declared route is a named tool with
+    # a shape the guard can read, and a runner that takes any operation is not.
+    # executeRead and discover are reads and stay open.
+    deny "Refused: '$suffix' runs an arbitrary Atlassian write or delete by operation name, which this guard cannot inspect. It is denied to every session, including a declared one: the declared routes are the named tools, whose inputs the guard reads. Use createJiraIssue, editJiraIssue, transitionJiraIssue or addOrEditJiraIssueComment under the declaration, or leave the act to the operator. executeRead and discover are unaffected. $RULE" ;;
+
+  createConfluencePage|updateConfluencePage|createConfluenceContent|updateConfluenceContent)
     # A page is a document with the operator's name on it, so the default is
     # still deny. The declared route above is the exception, and it is the only
     # one: comments fall through to the branch below and do not get it.
+    #
+    # createConfluenceContent and updateConfluenceContent are the connector's
+    # current primary tools and replaced the two Page names; both spellings are
+    # kept because it may present either. They are WIDER than the tools they
+    # replaced: createConfluenceContent also makes whiteboards, databases,
+    # embeds, smart links, folders and slides, and updateConfluenceContent can
+    # transfer a page's ownership (ownerId). The declaration is given plain
+    # parity with the Page names anyway, by the operator's decision of
+    # 2026-10-23 (PR 168). It stays a standing grant to the one skill the
+    # operator launches, and that skill, not this guard, confines what it
+    # publishes. A declared session can therefore reach the wider surface
+    # through these two names; an undeclared one reaches none of it.
     if gov_doc_declared; then
       :
     else
@@ -236,7 +447,7 @@ case "$suffix" in
     # somebody else's page is a different one, and no gov-doc workflow needs it.
     deny "Refused: '$suffix' is speech in somebody else's space, attributed to the operator. The governance-publishing declaration does not reach this: it authorises a document, not a remark on someone's page. Put the text in the working tree. Reading comments is unaffected. $RULE" ;;
 
-  createCompassComponent|createCompassComponentRelationship|createCompassCustomFieldDefinition|addTeamworkGraphContext)
+  createCompassComponent|createCompassComponentRelationship|createCompassCustomFieldDefinition|addTeamworkGraphContext|addGraphContext)
     deny "Refused: '$suffix' writes to the shared Atlassian catalogue that other teams read as a description of the estate. It is not a message, but it is the same class of act: a session changing a record other people rely on without a person deciding to. $RULE" ;;
 
 esac
@@ -263,20 +474,20 @@ PRE='(sudo[[:space:]]+|env[[:space:]]+[^[:space:]]+=[^[:space:]]*[[:space:]]+|[A
 if [ -n "$cmd" ]; then
 
   http_client=0
-  if printf '%s' "$cmd" | grep -qE "${POS}${PRE}(curl|wget|http|https|httpie|xh|lwp-request)([[:space:]]|$)"; then
+  if grep -qE "${POS}${PRE}(curl|wget|http|https|httpie|xh|lwp-request)([[:space:]]|$)" <<<"$cmd"; then
     http_client=1
   fi
 
   if [ "$http_client" = 1 ]; then
 
     # 2a. Endpoints that exist only to send. No method check needed.
-    if printf '%s' "$cmd" | grep -qiE 'chat\.postMessage|chat\.scheduleMessage|chat\.postEphemeral|chat\.meMessage|chat\.update|chat\.delete|hooks\.slack\.com/services|files\.upload|conversations\.invite|conversations\.create|messages/send|drafts/send|sendMail'; then
+    if grep -qiE 'chat\.postMessage|chat\.scheduleMessage|chat\.postEphemeral|chat\.meMessage|chat\.update|chat\.delete|hooks\.slack\.com/services|files\.upload|conversations\.invite|conversations\.create|messages/send|drafts/send|sendMail' <<<"$cmd"; then
       deny "Refused: this is an HTTP call to a send endpoint. Reaching Slack or mail through curl is the same act as reaching it through the connector, and the guard treats it the same way. Reads against the same APIs are allowed. $RULE"
     fi
 
     # 2b. Any mutating call against a messaging or agreement API.
-    if printf '%s' "$cmd" | grep -qiE 'slack\.com/api/|hooks\.slack\.com|gmail\.googleapis\.com|googleapis\.com/gmail|googleapis\.com/calendar|calendar\.googleapis\.com|graph\.microsoft\.com|docusign\.(net|com)'; then
-      if printf '%s' "$cmd" | grep -qE '(-X|--request)[[:space:]]*(POST|PUT|PATCH|DELETE)|--data|(^|[[:space:]])-d([[:space:]]|$)|--form|(^|[[:space:]])-F([[:space:]]|$)|--post-data|--upload-file|(^|[[:space:]])-T([[:space:]]|$)'; then
+    if grep -qiE 'slack\.com/api/|hooks\.slack\.com|gmail\.googleapis\.com|googleapis\.com/gmail|googleapis\.com/calendar|calendar\.googleapis\.com|graph\.microsoft\.com|docusign\.(net|com)' <<<"$cmd"; then
+      if grep -qE '(-X|--request)[[:space:]]*(POST|PUT|PATCH|DELETE)|--data|(^|[[:space:]])-d([[:space:]]|$)|--form|(^|[[:space:]])-F([[:space:]]|$)|--post-data|--upload-file|(^|[[:space:]])-T([[:space:]]|$)' <<<"$cmd"; then
         deny "Refused: this is a write against a messaging, calendar or agreement API. A GET against the same host is fine and is how this repository is meant to read. $RULE"
       fi
     fi
@@ -297,17 +508,17 @@ if [ -n "$cmd" ]; then
     # line, so it is spelled the way gitops-via-skills.sh spells one. It only
     # opens Confluence CONTENT paths: a declared publish is still not a licence
     # to write Jira, move a space or change permissions.
-    if printf '%s' "$cmd" | grep -qiE 'atlassian\.net|atlassian\.com/ex/(jira|confluence)'; then
-      if printf '%s' "$cmd" | grep -qE '(-X|--request)[[:space:]]*(POST|PUT|PATCH|DELETE)|--data|(^|[[:space:]])-d([[:space:]]|$)|--form|(^|[[:space:]])-F([[:space:]]|$)|--post-data|--upload-file|(^|[[:space:]])-T([[:space:]]|$)'; then
+    if grep -qiE 'atlassian\.net|atlassian\.com/ex/(jira|confluence)' <<<"$cmd"; then
+      if grep -qE '(-X|--request)[[:space:]]*(POST|PUT|PATCH|DELETE)|--data|(^|[[:space:]])-d([[:space:]]|$)|--form|(^|[[:space:]])-F([[:space:]]|$)|--post-data|--upload-file|(^|[[:space:]])-T([[:space:]]|$)' <<<"$cmd"; then
 
         declared_here=0
-        if printf '%s' "$cmd" | grep -qE "(^|[;&|(\`]|&&|\|\|)[[:space:]]*([A-Za-z_][A-Za-z0-9_]*=[^[:space:]]*[[:space:]]+)*SCT_VIA=(${GOV_DOC_SKILLS})[[:space:]]"; then
+        if grep -qE "(^|[;&|(\`]|&&|\|\|)[[:space:]]*([A-Za-z_][A-Za-z0-9_]*=[^[:space:]]*[[:space:]]+)*SCT_VIA=(${GOV_DOC_SKILLS})[[:space:]]" <<<"$cmd"; then
           declared_here=1
         fi
         # A Confluence page write, and only that. Jira REST, space admin and
         # permission paths are not content and never ride the declaration.
         page_path=0
-        if printf '%s' "$cmd" | grep -qiE '/wiki/(api/v2/(pages|blogposts)|rest/api/content)'; then
+        if grep -qiE '/wiki/(api/v2/(pages|blogposts)|rest/api/content)' <<<"$cmd"; then
           page_path=1
         fi
 
@@ -323,20 +534,20 @@ if [ -n "$cmd" ]; then
   fi
 
   # 2c. Jira writes. A Jira write is a person's act.
-  if printf '%s' "$cmd" | grep -qE "${POS}${PRE}acli[[:space:]]+jira[[:space:]]+workitem[[:space:]]+(comment|transition|assign|create|edit|delete)([[:space:]]|$)"; then
+  if grep -qE "${POS}${PRE}acli[[:space:]]+jira[[:space:]]+workitem[[:space:]]+(comment|transition|assign|create|edit|delete)([[:space:]]|$)" <<<"$cmd"; then
     deny "Refused: 'acli jira workitem' write. Comments, transitions and assignments are statements about somebody's work and they belong to the operator, not to a session. See the repository's own jira-write-safety rule, which binds the tracker project whichever repository the session was opened in. acli jira workitem search and view are unaffected. $RULE"
   fi
 
   # 2d. AppleScript driving Mail or Messages.
-  if printf '%s' "$cmd" | grep -qE "${POS}${PRE}osascript([[:space:]]|$)"; then
-    if printf '%s' "$cmd" | grep -qiE '\b(Mail|Messages|iMessage)\b' \
-       && printf '%s' "$cmd" | grep -qiE 'send|deliver|outgoing message|reply|forward'; then
+  if grep -qE "${POS}${PRE}osascript([[:space:]]|$)" <<<"$cmd"; then
+    if grep -qiE '\b(Mail|Messages|iMessage)\b' <<<"$cmd" \
+       && grep -qiE 'send|deliver|outgoing message|reply|forward' <<<"$cmd"; then
       deny "Refused: this is osascript driving Mail or Messages to send. The route is different, the act is identical. $RULE"
     fi
   fi
 
   # 2e. Outward speech in someone else's repository.
-  if printf '%s' "$cmd" | grep -qE "${POS}${PRE}gh[[:space:]]+((pr|issue)[[:space:]]+comment|pr[[:space:]]+review)([[:space:]]|$)"; then
+  if grep -qE "${POS}${PRE}gh[[:space:]]+((pr|issue)[[:space:]]+comment|pr[[:space:]]+review)([[:space:]]|$)" <<<"$cmd"; then
     deny "Refused: 'gh pr comment', 'gh issue comment' and 'gh pr review' are published speech attributed to the operator in a repository other people read. Put the text in the working tree and let them post it. gh reads are unaffected. $RULE"
   fi
   # Scope the test to the `gh api` invocation itself, not to the whole command.
@@ -359,8 +570,8 @@ if [ -n "$cmd" ]; then
     | tr ';&|' '\n' \
     | grep -E "(^|[[:space:]])gh[[:space:]]+api([[:space:]]|$)" || true)"
   if [ -n "$gh_api_segment" ] \
-     && printf '%s' "$gh_api_segment" | grep -qE '(-X|--method)[[:space:]]*(POST|PUT|PATCH|DELETE)|(^|[[:space:]])(-f|-F|--field|--raw-field)([[:space:]]|$)' \
-     && printf '%s' "$gh_api_segment" | grep -qiE 'comment|review'; then
+     && grep -qE '(-X|--method)[[:space:]]*(POST|PUT|PATCH|DELETE)|(^|[[:space:]])(-f|-F|--field|--raw-field)([[:space:]]|$)' <<<"$gh_api_segment" \
+     && grep -qiE 'comment|review' <<<"$gh_api_segment"; then
     deny "Refused: this is 'gh api' posting to a comment or review endpoint, which is the same act as gh pr comment spelled differently. $RULE"
   fi
 
@@ -376,27 +587,27 @@ if [ -n "$cmd" ]; then
   # conveniences over `users.messages.send` and `users.drafts.send`; a guard that
   # stops the shorthand and passes the real method looks present and is not, which
   # this file's header names as the worst state a control can be in. Both go.
-  if printf '%s' "$cmd" | grep -qE "${POS}${PRE}gws([[:space:]]|$)"; then
+  if grep -qE "${POS}${PRE}gws([[:space:]]|$)" <<<"$cmd"; then
 
     # The `+` helpers whose entire purpose is to put mail in front of a person.
-    if printf '%s' "$cmd" | grep -qE '[[:space:]]\+(send|reply|reply-all|forward)([[:space:]]|$)'; then
+    if grep -qE '[[:space:]]\+(send|reply|reply-all|forward)([[:space:]]|$)' <<<"$cmd"; then
       deny "Refused: 'gws' mail helpers (+send, +reply, +reply-all, +forward) send mail as the operator from their own account. Draft it instead with 'gws gmail users drafts create', which is untouched, and leave it for them to send. $RULE"
     fi
 
     # The API methods the helpers wrap, plus the destructive mailbox verbs that
     # sit in the same class as the connector's trash and spam tools.
-    if printf '%s' "$cmd" | grep -qE '(messages|drafts|threads)[[:space:]]+(send|insert|import|delete|batchDelete|trash)([[:space:]]|$)'; then
+    if grep -qE '(messages|drafts|threads)[[:space:]]+(send|insert|import|delete|batchDelete|trash)([[:space:]]|$)' <<<"$cmd"; then
       deny "Refused: this is a 'gws' send or destructive mailbox call. 'send' and 'insert' put mail in front of somebody; 'delete', 'batchDelete' and 'trash' change the state of a real mailbox without a person deciding to. Reads (list, get) and drafting (drafts create, drafts update) are unaffected. $RULE"
     fi
 
     # A calendar write mails every attendee. Same reasoning as the connector layer.
-    if printf '%s' "$cmd" | grep -qE '(events|acl)[[:space:]]+(insert|update|patch|delete|import|move|quickAdd)([[:space:]]|$)'; then
+    if grep -qE '(events|acl)[[:space:]]+(insert|update|patch|delete|import|move|quickAdd)([[:space:]]|$)' <<<"$cmd"; then
       deny "Refused: a 'gws' calendar write mails everyone on the invitation, so it is a message that happens to look like a data change. events list, get and instances are unaffected. $RULE"
     fi
 
     # Chat posts are published speech; a Drive permission grant hands a client
     # document to somebody and emails them to say so.
-    if printf '%s' "$cmd" | grep -qE '(spaces[[:space:]]+messages|permissions)[[:space:]]+(create|update|patch|delete)([[:space:]]|$)'; then
+    if grep -qE '(spaces[[:space:]]+messages|permissions)[[:space:]]+(create|update|patch|delete)([[:space:]]|$)' <<<"$cmd"; then
       deny "Refused: this is a 'gws' Chat post or Drive permission change. Both are outward: one is speech attributed to the operator, the other hands a document to somebody and mails them about it. Reads are unaffected. $RULE"
     fi
   fi
@@ -410,8 +621,8 @@ fi
 if [ "$suffix" = "osascript" ]; then
   blob=$(jq -r '[.tool_input | .. | strings] | join(" ")' <<<"$payload" 2>/dev/null || echo "")
   if [ -n "$blob" ] \
-     && printf '%s' "$blob" | grep -qiE '\b(Mail|Messages|iMessage)\b' \
-     && printf '%s' "$blob" | grep -qiE 'send|deliver|outgoing message|reply|forward'; then
+     && grep -qiE '\b(Mail|Messages|iMessage)\b' <<<"$blob" \
+     && grep -qiE 'send|deliver|outgoing message|reply|forward' <<<"$blob"; then
     deny "Refused: this AppleScript drives Mail or Messages to send. Reaching them through the osascript connector is the same act as reaching them through the shell. $RULE"
   fi
 fi

@@ -18,7 +18,14 @@
     "version": {
       "type": "string",
       "pattern": "^v?[0-9]+\\.[0-9]+\\.[0-9]+(-[0-9]+-g[0-9a-f]+)?$",
-      "description": "A released version, or a git describe of a checkout ahead of its newest tag (v0.5.2-5-g99d2c68). The bare version would send a reader to a tag holding different code while the toolkit is developed unreleased."
+      "description": "A released version (0.8.0) when the vendored tree is that release's tag, which is the default. A git describe of the toolkit checkout (v0.8.0-5-g99d2c68) only when it was vendored unreleased on purpose, and then channel says so (TK-126)."
+    },
+    "channel": {
+      "enum": [
+        "release",
+        "unreleased"
+      ],
+      "description": "release: the tree is the tag named by version. unreleased: the tree is a toolkit checkout ahead of a release, vendored with --unreleased. Absent in lockfiles written before this field existed, which are read from the form of version."
     },
     "commit": {
       "type": "string",

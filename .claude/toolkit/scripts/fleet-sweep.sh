@@ -31,7 +31,7 @@ reg="${CLAUDE_CONFIG_HOME:-$HOME/.claude}/config/gitops-tiers.json"
 [ -r "$reg" ] || { sct_block "no repository registry at $reg"; exit 1; }
 sct_need jq || exit 2
 
-printf 'fleet sweep, toolkit %s\n' "$(sct_version)"
+printf 'fleet sweep, toolkit checkout %s, newest release %s\n' "$(sct_version)" "$(sct_latest_release || true)"
 
 # The sweep reports on the fleet using whatever this checkout has. Scheduled, that checkout may
 # be sitting on somebody's feature branch, and the report would then describe the fleet through
@@ -51,7 +51,22 @@ bash "$home/bin/sct" audit --all || true
   exit 0
 }
 
-printf '\npreparing update branches\n'
+# A SWEEP MOVES REPOSITORIES TO A RELEASE, AND ONLY TO A RELEASE (TK-126). On 2026-09-03 a
+# --prepare run while VERSION led the tag committed "update to 0.7.1" into four repositories whose
+# lockfiles recorded v0.7.0-5-gcdac84d, code that was never released. `sct vendor` now reads the
+# newest release tag's own tree, so the branch name, the commit message and the lockfile all
+# carry the same number. The one way round that is the checkout override, refused here because
+# this is the caller that writes into many repositories at once.
+if [ "${SCT_VENDOR_FROM:-}" = checkout ]; then
+  sct_block "SCT_VENDOR_FROM=checkout is set, and a sweep vendors releases only"
+  sct_note "unset it; a repository that wants unreleased code runs 'sct vendor --unreleased' itself"
+  exit 1
+fi
+latest="$(sct_latest_release)"
+[ -n "$latest" ] || { sct_block "the toolkit has no release tag, so there is nothing to sweep to"; sct_note "cut one with: sct release"; exit 1; }
+rel="${latest#v}"
+
+printf '\npreparing update branches to %s\n' "$rel"
 prepared=0
 while IFS= read -r repo; do
   repo="${repo/#\~/$HOME}"
@@ -69,7 +84,7 @@ while IFS= read -r repo; do
     sct_note "a sweep must never commit somebody else's in-progress work"
     continue
   fi
-  branch="chore/toolkit-$(sct_version)"
+  branch="chore/toolkit-$rel"
   git -C "$repo" switch -q -c "$branch" 2>/dev/null || { sct_warn "$name: branch $branch exists, skipped"; continue; }
   ( cd "$repo" && bash "$home/bin/sct" vendor >/dev/null ) || { sct_warn "$name: vendor failed"; continue; }
 
@@ -81,11 +96,11 @@ while IFS= read -r repo; do
     verdict="no gate configured"
   fi
   git -C "$repo" add -A >/dev/null
-  git -C "$repo" commit -q -m "chore(toolkit): update to $(sct_version)
+  git -C "$repo" commit -q -m "chore(toolkit): update to $rel
 
 Prepared by the fleet sweep. $verdict.
-Changelog entries between $have and $(sct_version) are in the toolkit repository." || true
-  printf '  %-40s %s -> %s  (%s)\n' "$name" "$have" "$(sct_version)" "$verdict"
+Changelog entries between $have and $rel are in the toolkit repository." || true
+  printf '  %-40s %s -> %s  (%s)\n' "$name" "$have" "$rel" "$verdict"
   prepared=$((prepared+1))
 done < <(jq -r '.repos | keys[]' "$reg" 2>/dev/null)
 

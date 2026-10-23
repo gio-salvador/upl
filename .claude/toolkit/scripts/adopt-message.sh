@@ -19,7 +19,7 @@ wt="${1:?work tree required}"; profile="${2:?profile required}"; ver="${3:?versi
 
 staged="$(git -C "$wt" diff --cached --name-status 2>/dev/null)"
 
-if printf '%s\n' "$staged" | grep -qE '^A[[:space:]]+\.claude/profile\.yaml$'; then
+if grep -qE '^A[[:space:]]+\.claude/profile\.yaml$' <<<"$staged"; then
   cat <<EOF
 chore(toolkit): adopt salvadorcloud-ai-toolkit $ver
 
@@ -38,7 +38,7 @@ prev="$(git -C "$wt" show HEAD:.claude/toolkit.lock 2>/dev/null |
         sed -n 's/^version:[[:space:]]*//p' | tr -d '"'\''' | head -1)"
 n="$(printf '%s\n' "$staged" | grep -c '^[A-Z]')" || n=0
 
-if printf '%s\n' "$staged" | grep -qE '^[AM][[:space:]]+\.claude/profile\.yaml$'; then
+if grep -qE '^[AM][[:space:]]+\.claude/profile\.yaml$' <<<"$staged"; then
   prof="This repository's .claude/profile.yaml is modified by this commit; review it."
 else
   prof="This repository's .claude/profile.yaml is untouched: a refresh re-vendors the toolkit,

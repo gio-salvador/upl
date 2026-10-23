@@ -18,7 +18,7 @@ cd "$root" || exit 2
 # surface pattern | the gate that owns it
 owned=(
   "*.md|check-docs.sh, check-style.sh"
-  "*.sh|tests/run.sh syntax, check-hardcoding.sh"
+  "*.sh|tests/run.sh syntax, check-hardcoding.sh (which also judges every other text surface for paths)"
   "*.py|tests/run.sh syntax"
   "*.json|validate.py where a schema exists"
   "*.yaml|validate.py where a schema exists"
@@ -35,6 +35,7 @@ owned=(
   "sc-env|tests/run.sh syntax"
   "VERSION|toolkit-lock.schema.json pattern, via the lockfile it is written into"
   "*.lock|toolkit-lock.schema.json"
+  "hardcoding-allow|check-hardcoding.sh reads it, and tests/run.sh requires a justification on every line"
   "*.txt|reviewed, not machine-validated"
   "*.css|not validated: no styling ships from this repository"
   ".gitleaks.toml|the secrets gate reads it, and CI proves it: a commit whose only

@@ -82,7 +82,7 @@ cmd=$(jq -r '.tool_input.command // ""' <<<"$payload")
 # ordinary as the plain form.
 PREFIX='((sudo|env)[[:space:]]+|[A-Za-z_][A-Za-z0-9_]*=[^[:space:]]*[[:space:]]+)*'
 invokes() { # <regex tail after `gh `>
-  printf '%s' "$cmd" | grep -Eq "(^|[;&|]|&&|\|\||\bthen\b|\bdo\b|\(|\`|\\\$\()[[:space:]]*${PREFIX}gh[[:space:]]+$1"
+  grep -Eq "(^|[;&|]|&&|\|\||\bthen\b|\bdo\b|\(|\`|\\\$\()[[:space:]]*${PREFIX}gh[[:space:]]+$1" <<<"$cmd"
 }
 
 # ---------------------------------------------------------------- forge account
@@ -115,10 +115,10 @@ invokes() { # <regex tail after `gh `>
 # that most needs checking wears one: `SCT_VIA=sc-open-pr gh pr create`. `invokes` deliberately
 # does not allow it -- the gates below it never see an SCT_VIA command -- so this needs its own.
 invokes_gh() { # any `gh` invocation, with or without env-assignment prefixes; <regex tail or ''>
-  printf '%s' "$cmd" | grep -Eq "(^|[;&|]|&&|\|\||\bthen\b|\bdo\b|\(|\`|\\\$\()[[:space:]]*([A-Za-z_][A-Za-z0-9_]*=[^[:space:]]*[[:space:]]+)*gh[[:space:]]+$1"
+  grep -Eq "(^|[;&|]|&&|\|\||\bthen\b|\bdo\b|\(|\`|\\\$\()[[:space:]]*([A-Za-z_][A-Za-z0-9_]*=[^[:space:]]*[[:space:]]+)*gh[[:space:]]+$1" <<<"$cmd"
 }
 
-if invokes_gh '' && ! printf '%s' "$cmd" | grep -Eq '(GH_TOKEN|GITHUB_TOKEN)='; then
+if invokes_gh '' && ! grep -Eq '(GH_TOKEN|GITHUB_TOKEN)=' <<<"$cmd"; then
   # `gh auth ...` is how you inspect and mint the pin. Pinning it would be circular.
   if ! invokes_gh 'auth\b'; then
     # WHICH REPOSITORY IS THIS CALL ACTUALLY FOR? The hook runs before the command does, so the
@@ -202,13 +202,13 @@ fi
 SCT_VIA_SKILLS='sc-open-pr|sc-land-pr|sc-split-to-prs'
 DECLARED_RE="(^|[;&|]|&&|\|\||\bthen\b|\bdo\b|\(|\`|\\\$\()[[:space:]]*([A-Za-z_][A-Za-z0-9_]*=[^[:space:]]*[[:space:]]+)*SCT_VIA=(${SCT_VIA_SKILLS})[[:space:]]+${PREFIX}gh[[:space:]]"
 
-if printf '%s' "$cmd" | grep -Eq "$DECLARED_RE"; then
+if grep -Eq "$DECLARED_RE" <<<"$cmd"; then
   # Record it. A declaration that no skill run accounts for should be findable
   # later; that is the whole value of an honour-system control being logged.
   # Never let logging failure change the decision — a full disk must not turn a
   # permitted call into a denied one, nor the reverse.
   {
-    _via=$(printf '%s' "$cmd" | grep -Eo "SCT_VIA=(${SCT_VIA_SKILLS})" | head -1 | cut -d= -f2)
+    _via=$(grep -Eo "SCT_VIA=(${SCT_VIA_SKILLS})" <<<"$cmd" | head -1 | cut -d= -f2)
     _log="${SCT_LOG_DIR:-$HOME/.claude}/gitops-declarations.log"
     mkdir -p "$(dirname "$_log")" 2>/dev/null &&
       printf '%s\t%s\t%s\t%.200s\n' \
